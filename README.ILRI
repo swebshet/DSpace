@@ -1,0 +1,7 @@
+Important ILRI-specific notes for DSpace development using git
+
+1. Be careful to not commit sensitive information to the repository.  Files with passwords, for example, should be set to "unchanged" in git:
+
+	git update-index --assume-unchanged dspace/config/dspace.cfg
+
+This is different than an ignore, as we want DSpace to track that the file exists, just not our changes!
