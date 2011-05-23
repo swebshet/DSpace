@@ -315,7 +315,7 @@
                         <xsl:text>/</xsl:text>
                     </xsl:attribute>
                     <span id="ds-header-logo">&#160;</span>
-                    <span id="ds-header-logo-text">mirage</span>
+                    <span id="ds-header-logo-text">CGSpace</span>
                 </a>
                 <h1 class="pagetitle visuallyhidden">
                     <xsl:choose>
