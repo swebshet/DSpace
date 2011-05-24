@@ -1,7 +1,18 @@
-Important ILRI-specific notes for DSpace development using git
+ILRI-specific README for DSpace
+===============================
+Notes about ILRI's DSpace modifications.
 
-1. Be careful to not commit sensitive information to the repository.  Files with passwords, for example, should be set to "unchanged" in git:
+===============================
+Sensitive information in git
+===============================
+Files with system / database passwords (like dspace.cfg) should not be
+committed to the git repository! Instead, use a local, ILRI-specific
+configuration file which is NOT tracked by the repository.
 
-	git update-index --assume-unchanged dspace/config/dspace.cfg
+For example, use a config/ilri_dspace.cfg instead. The git ignore file
+".gitignore" has already been set up to ignore changes made to this file,
+so you may use it locally without worrying.
 
-This is different than an ignore, as we want DSpace to track that the file exists, just not our changes!
+When building and installing DSpace, tell ant about your custom config like
+this:
+	sudo ant -Dconfig=../../config/ilri_dspace.cfg -Doverwrite=true update
