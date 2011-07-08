@@ -40,8 +40,8 @@
     - The XMLUI (Manakin Release) configuration file
     -
     - Authors: Scott Phillips
-    - Version: $Revision$
-    - Date:    $Date$
+    - Version: $Revision: 5689 $
+    - Date:    $Date: 2010-10-29 12:16:34 -0400 (Fri, 29 Oct 2010) $
 -->
 
 <xmlui>
@@ -116,11 +116,23 @@
         <!-- <theme name="Test Theme 1" handle="123456789/1" path="theme1/"/>    -->
         <!-- <theme name="Test Theme 2" regex="community-list" path="theme2/"/> -->
 
-        <!-- Default theme -->
+        <theme name="ILRI" handle="10568/1" path="ILRI/"/>
+        <theme name="ICRAF" handle="10568/3194" path="ICRAF/"/>
+        <theme name="CPWF" handle="10568/2983" path="CPWF/"/>
+        <theme name="SLP" handle="10568/133" path="SLP/"/>
+        <theme name="RMG" handle="10568/173" path="RMG/"/>
+        <theme name="EADD" handle="10568/2347" path="EADD/"/>
+        <theme name="CCAFS" handle="10568/3530" path="CCAFS/"/>
+        <theme name="AnGR" handle="10568/3545" path="AnGR/"/>
+
+        <!--Default theme for the top-level CGSPACE-->
+        <theme name="CGSPACE" regex=".*" path="CGSPACE/"/>
+
+        <!--Default theme -->
         <!--<theme name="Default Reference Theme" regex=".*" path="Reference/" />-->
 
         <!-- Mirage theme, @mire contribution of new theme to support easier development and branding -->
-        <theme name="Atmire Mirage Theme" regex=".*" path="Mirage/" />
+        <!--<theme name="Atmire Mirage Theme" regex=".*" path="Mirage/" />-->
 
         <!-- Classic theme, inspired by the JSP UI -->
         <!-- <theme name="Classic" regex=".*" path="Classic/" /> -->
