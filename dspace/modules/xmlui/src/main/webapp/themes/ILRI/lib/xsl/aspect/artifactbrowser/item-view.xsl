@@ -544,11 +544,16 @@
 	                	<hr class="metadata-seperator"/>
 	                </xsl:if>
 	                <xsl:for-each select="dim:field[@element='identifier' and @qualifier='url']">
-		                <xsl:copy-of select="./node()"/>
-		                <xsl:if test="count(following-sibling::dim:field[@element='title' and @qualifier='url']) != 0">
-	                    	<hr class="metadata-seperator"/>
-	                    </xsl:if>
-	              	</xsl:for-each>
+		                    <a>
+		                        <xsl:attribute name="href">
+		                            <xsl:copy-of select="./node()"/>
+		                        </xsl:attribute>
+		                        <xsl:copy-of select="./node()"/>
+		                    </a>
+		                    <xsl:if test="count(following-sibling::dim:field[@element='identifier' and @qualifier='url']) != 0">
+		                    	<br/>
+		                    </xsl:if>
+	                    </xsl:for-each>
 	              	<xsl:if test="count(dim:field[@element='identifier' and @qualifier='url']) &gt; 1">
 	                	<hr class="metadata-seperator"/>
 	                </xsl:if>
@@ -620,11 +625,16 @@
 	                	<hr class="metadata-seperator"/>
 	                </xsl:if>
 	                <xsl:for-each select="dim:field[@element='identifier' and @qualifier='googleurl']">
-		                <xsl:copy-of select="./node()"/>
-		                <xsl:if test="count(following-sibling::dim:field[@element='identifier' and @qualifier='googleurl']) != 0">
-	                    	<hr class="metadata-seperator"/>
-	                    </xsl:if>
-	              	</xsl:for-each>
+		                    <a>
+		                        <xsl:attribute name="href">
+		                            <xsl:copy-of select="./node()"/>
+		                        </xsl:attribute>
+		                        <xsl:copy-of select="./node()"/>
+		                    </a>
+		                    <xsl:if test="count(following-sibling::dim:field[@element='identifier' and @qualifier='googleurl']) != 0">
+		                    	<br/>
+		                    </xsl:if>
+	                    </xsl:for-each>
 	              	<xsl:if test="count(dim:field[@element='identifier' and @qualifier='googleurl']) &gt; 1">
 	                	<hr class="metadata-seperator"/>
 	                </xsl:if>
@@ -882,7 +892,7 @@
           <!-- recurse without changing phase if we didn't output anything -->
           <xsl:otherwise>
             <!-- IMPORTANT: This test should be updated if clauses are added! -->
-            <xsl:if test="$clause &lt; 7">
+            <xsl:if test="$clause &lt; 29">
               <xsl:call-template name="itemSummaryView-DIM-fields">
                 <xsl:with-param name="clause" select="($clause + 1)"/>
                 <xsl:with-param name="phase" select="$phase"/>
