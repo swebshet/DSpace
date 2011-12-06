@@ -340,7 +340,8 @@ ol {
 th,
 td {
     font-family: verdana;
-    padding: 5px;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
     vertical-align: top;
     margin-left: 15px;
 }
@@ -761,27 +762,39 @@ span.field-help {
     padding-bottom: 15px;
 }
 
-.ds-artifact-item.collection,
+.ds-artifact-item.collection
+{
+    padding-top: 2px;
+    padding-bottom: 2px ;
+    font-size: 10px;
+    color: #0e71a8;
+}
 .ds-artifact-item.community {
-    padding-top: 1px;
+    padding-top: 0px;
     padding-bottom: 1px;
+    font-size: 10px;
+    color: #0e71a8;
 }
 
 .community .artifact-title a {
     font-weight: normal;
-   margin-top: 25px;
-   margin-bottom: 25px;
+    margin-top: 10px;
+    margin-bottom: 1px;
+    color: #00a950;
+    font-size: 12px;
 }
 
 .collection .artifact-title a {
     font-weight: normal;
     margin-top: 25px;
     margin-bottom: 25px;
+    color:#00a950;
+    font-size: 12px;
 }
 
 #aspect_artifactbrowser_CommunityBrowser_div_comunity-browser
 {
-color: #000000
+color: #000000;
 }
 .short-description{
 display: none;
