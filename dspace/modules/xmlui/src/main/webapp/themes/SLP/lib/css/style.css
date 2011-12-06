@@ -105,13 +105,13 @@ select.multiple {
 }
 /* bread cramb */
 #ds-trail-wrapper {
-    background-color: #e3d7d7;/*702d3e;*/
+    background-color: #e3d7d7;
     width: 980px;
     postion: relative;
     margin: auto;
     padding: 0;
-    border-top: 1px solid #e3d7d7; /*702d3e;*/ 
-    border-bottom: 1px solid #e3d7d7; /*702d3e;*/ 
+    border-top: 1px solid #e3d7d7;  
+    border-bottom: 1px solid #e3d7d7; 
 }
 
 #ds-trail {
@@ -130,7 +130,7 @@ select.multiple {
 
 #ds-trail a {
     font-family: verdana;
-    color: #000000; /* ffffff;*/
+    color: #000000; 
     margin-left:15px;
     text-decoration: none;
     font-size: 11px;
@@ -339,7 +339,7 @@ ol {
 
 th,
 td {
-    padding: 5px;
+    padding: 5px 5px 5px 15px;
     vertical-align: middle;
 }
 
@@ -759,22 +759,33 @@ span.field-help {
     padding-bottom: 15px;
 }
 
-.ds-artifact-item.collection,
+.ds-artifact-item.collection{
+   padding-top: 2px;
+   padding-bottom: 2px;
+   font-size: 10px;
+   color: #808080;
+}
 .ds-artifact-item.community {
     padding-top: 1px;
     padding-bottom: 1px;
+    font-size: 10px;
+    color: #808080;
 }
 
 .community .artifact-title a {
     font-weight: normal;
-   margin-top: 25px;
-   margin-bottom: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 12px;
+    color:#187f38;
 }
 
 .collection .artifact-title a {
     font-weight: normal;
     margin-top: 25px;
     margin-bottom: 25px;
+    font-size: 12px;
+    color: #187f38;
 }
 
 #aspect_artifactbrowser_CommunityBrowser_div_comunity-browser
