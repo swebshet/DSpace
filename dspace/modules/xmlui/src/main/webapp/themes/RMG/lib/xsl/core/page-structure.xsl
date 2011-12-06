@@ -309,11 +309,12 @@
         <div id="ds-header-wrapper">
             <div id="ds-header" class="clearfix">
                 <a id="ds-header-logo-link">
-                    <xsl:attribute name="href">
+			<a href="http://www.ilri.org/rmg" target="_blank"></a>
+                 <!-- <xsl:attribute name="href">
                         <xsl:value-of
                                 select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]"/>
                         <xsl:text>/</xsl:text>
-                    </xsl:attribute>
+                    </xsl:attribute> -->
                     <span id="ds-header-logo">&#160;</span>
                    
                 </a>
