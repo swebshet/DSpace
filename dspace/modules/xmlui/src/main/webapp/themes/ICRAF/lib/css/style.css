@@ -340,7 +340,7 @@ ol {
 
 th,
 td {
-    padding: 5px;
+    padding: 5px 5px 5px 15px;
     vertical-align: middle;
 }
 
@@ -760,22 +760,33 @@ span.field-help {
     padding-bottom: 15px;
 }
 
-.ds-artifact-item.collection,
+.ds-artifact-item.collection{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 10px;
+    color: #000000;
+}
 .ds-artifact-item.community {
     padding-top: 1px;
     padding-bottom: 1px;
+    font-size: 10px;
+    color: #000000;   
 }
 
 .community .artifact-title a {
     font-weight: normal;
    margin-top: 25px;
    margin-bottom: 25px;
+   font-size: 12px;
+   color: #660000;
 }
 
 .collection .artifact-title a {
     font-weight: normal;
     margin-top: 25px;
     margin-bottom: 25px;
+    font-size: 12px;
+    color: #660000;
 }
 
 #aspect_artifactbrowser_CommunityBrowser_div_comunity-browser
