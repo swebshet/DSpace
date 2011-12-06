@@ -15,48 +15,160 @@
 
  <form-map>
    <name-map collection-handle="default" form-name="traditional"/>
+
+   <!--ILRI submssion form-->
    <name-map collection-handle="10568/3" form-name="Journal Article ILRI"/>
-   <name-map collection-handle="10568/3195" form-name="Journal Article ICRAF"/>
-   <name-map collection-handle="10568/3252" form-name="Journal Article CPWF"/>
+   <name-map collection-handle="10568/2703" form-name="ILRI"/>
    <name-map collection-handle="10568/786" form-name="ILRI"/>
    <name-map collection-handle="10568/131" form-name="ILRI"/>
-   <name-map collection-handle="10568/931" form-name="ILRI"/>
+   <name-map collection-handle="10568/3892" form-name="ILRI"/>
+   <name-map collection-handle="10568/913" form-name="ILRI"/>
    <name-map collection-handle="10568/61" form-name="ILRI"/>
    <name-map collection-handle="10568/132" form-name="ILRI"/>
    <name-map collection-handle="10568/3033" form-name="ILRI"/>
    <name-map collection-handle="10568/64" form-name="ILRI"/>
+   <name-map collection-handle="10568/3083" form-name="ILRI"/>
+   <name-map collection-handle="10568/912" form-name="ILRI"/>
    <name-map collection-handle="10568/66" form-name="ILRI"/>
    <name-map collection-handle="10568/53" form-name="ILRI"/>
    <name-map collection-handle="10568/78" form-name="ILRI"/>
    <name-map collection-handle="10568/2" form-name="ILRI"/>
    <name-map collection-handle="10568/62" form-name="ILRI"/>
-   <name-map collection-handle="10568/3083" form-name="ILRI"/>
-   <name-map collection-handle="10568/912" form-name="ILRI"/>
    <name-map collection-handle="10568/67" form-name="ILRI"/>
    <name-map collection-handle="10568/65" form-name="ILRI"/>
+
    <!--ICRAF submssion form-->
-   <name-map collection-handle="10568/3234" form-name="ICRAF"/>
-   <name-map collection-handle="10568/3196" form-name="ICRAF"/>
-   <name-map collection-handle="10568/3212" form-name="ICRAF"/>
-   <name-map collection-handle="10568/3215" form-name="ICRAF"/>
-   <name-map collection-handle="10568/3226" form-name="ICRAF"/>
-   <name-map collection-handle="10568/3224" form-name="ICRAF"/>
-   <name-map collection-handle="10568/3265" form-name="ICRAF"/>
-   <name-map collection-handle="10568/3291" form-name="ICRAF"/>
-   <name-map collection-handle="10568/3232" form-name="ICRAF"/>
-   <name-map collection-handle="10568/3230" form-name="ICRAF"/>
-   <name-map collection-handle="10568/3235" form-name="ICRAF"/>
-   <name-map collection-handle="10568/3283" form-name="ICRAF"/>
-   <name-map collection-handle="10568/3237" form-name="ICRAF"/>
-   <name-map collection-handle="10568/3219" form-name="ICRAF"/>
-   <name-map collection-handle="10568/3221" form-name="ICRAF"/>
-    <!--CPWF submssion form-->
+   <name-map collection-handle="10568/4092" form-name="Journal Article ICRAF"/>
+   <name-map collection-handle="10568/4144" form-name="ICRAF"/>
+   <name-map collection-handle="10568/4105" form-name="ICRAF"/>
+   <name-map collection-handle="10568/4106" form-name="ICRAF"/>
+   <name-map collection-handle="10568/4116" form-name="ICRAF"/>
+   <name-map collection-handle="10568/4118" form-name="ICRAF"/>
+   <name-map collection-handle="10568/4119" form-name="ICRAF"/>
+   <name-map collection-handle="10568/4114" form-name="ICRAF"/>
+   <name-map collection-handle="10568/4113" form-name="ICRAF"/>
+   <name-map collection-handle="10568/4109" form-name="ICRAF"/>
+   <name-map collection-handle="10568/4111" form-name="ICRAF"/>
+   <name-map collection-handle="10568/4086" form-name="ICRAF"/>
+   <name-map collection-handle="10568/4088" form-name="ICRAF"/>
+   <name-map collection-handle="10568/4089" form-name="ICRAF"/>
+   <name-map collection-handle="10568/4123" form-name="ICRAF"/>
+   <name-map collection-handle="10568/4090" form-name="ICRAF"/>
+   <name-map collection-handle="10568/4126" form-name="ICRAF"/>
+   <name-map collection-handle="10568/4124" form-name="ICRAF"/>
+   <name-map collection-handle="10568/4121" form-name="ICRAF"/>
+   <name-map collection-handle="10568/4122" form-name="ICRAF"/>
+   <name-map collection-handle="10568/4128" form-name="ICRAF"/>
+   <name-map collection-handle="10568/4093" form-name="ICRAF"/>
+   <name-map collection-handle="10568/4087" form-name="ICRAF"/>
+   <name-map collection-handle="10568/4094" form-name="ICRAF"/>
+   <name-map collection-handle="10568/4100" form-name="ICRAF"/>
+   <name-map collection-handle="10568/4095" form-name="ICRAF"/>
+   <name-map collection-handle="10568/4096" form-name="ICRAF"/>
+   <name-map collection-handle="10568/4127" form-name="ICRAF"/>
+   <name-map collection-handle="10568/4125" form-name="ICRAF"/>
+   <name-map collection-handle="10568/4097" form-name="ICRAF"/>
+
+   <!--ICRAF submssion DEC 2011 form-->
+   <name-map collection-handle="10568/10937" form-name="ICRAF"/>
+   <name-map collection-handle="10568/11116" form-name="ICRAF"/>
+   <name-map collection-handle="10568/11117" form-name="ICRAF"/>
+   <name-map collection-handle="10568/11118" form-name="ICRAF"/>
+   <name-map collection-handle="10568/11119" form-name="ICRAF"/>
+   <name-map collection-handle="10568/11120" form-name="ICRAF"/>
+   <name-map collection-handle="10568/11121" form-name="ICRAF"/>
+   <name-map collection-handle="10568/10666" form-name="ICRAF"/>
+   <name-map collection-handle="10568/11122" form-name="ICRAF"/>
+   <name-map collection-handle="10568/11123" form-name="ICRAF"/>
+   <name-map collection-handle="10568/11124" form-name="ICRAF"/>
+   <name-map collection-handle="10568/11125" form-name="ICRAF"/>
+   <name-map collection-handle="10568/11126" form-name="ICRAF"/>
+   <name-map collection-handle="10568/11127" form-name="ICRAF"/>
+   <name-map collection-handle="10568/11128" form-name="ICRAF"/>
+   <name-map collection-handle="10568/11129" form-name="ICRAF"/>
+   <name-map collection-handle="10568/11130" form-name="ICRAF"/>
+   <name-map collection-handle="10568/7100" form-name="ICRAF"/>
+   <name-map collection-handle="10568/11131" form-name="ICRAF"/>
+
+   <!--CPWF submssion form-->
+   <name-map collection-handle="10568/3252" form-name="Journal Article CPWF"/>
+   <name-map collection-handle="10568/3695" form-name="CPWF"/>
+   <name-map collection-handle="10568/3622" form-name="CPWF"/>
    <name-map collection-handle="10568/3203" form-name="CPWF"/>
    <name-map collection-handle="10568/3208" form-name="CPWF"/>
+   <name-map collection-handle="10568/3725" form-name="CPWF"/>
+   <name-map collection-handle="10568/3652" form-name="CPWF"/>
    <name-map collection-handle="10568/3204" form-name="CPWF"/>
    <name-map collection-handle="10568/3209" form-name="CPWF"/>
-    <!--CCAFS submssion form-->
-    <name-map collection-handle="10568/3289" form-name="CCAFS"/>
+   <name-map collection-handle="10568/3653" form-name="CPWF"/>
+   <name-map collection-handle="10568/3718" form-name="CPWF"/>
+   <name-map collection-handle="10568/3726" form-name="CPWF"/>
+   <name-map collection-handle="10568/3720" form-name="CPWF"/>
+   <name-map collection-handle="10568/3705" form-name="CPWF"/>
+   <name-map collection-handle="10568/3341" form-name="CPWF"/>
+   <name-map collection-handle="10568/3343" form-name="CPWF"/>
+   <name-map collection-handle="10568/3340" form-name="CPWF"/>
+   <name-map collection-handle="10568/3342" form-name="CPWF"/>
+   <name-map collection-handle="10568/3719" form-name="CPWF"/>
+   <name-map collection-handle="10568/3714" form-name="CPWF"/>
+   <name-map collection-handle="10568/4145" form-name="CPWF"/>
+   <name-map collection-handle="10568/3715" form-name="CPWF"/>
+   <name-map collection-handle="10568/3669" form-name="CPWF"/>
+   <name-map collection-handle="10568/3668" form-name="CPWF"/>
+   <name-map collection-handle="10568/3361" form-name="CPWF"/>
+   <name-map collection-handle="10568/3362" form-name="CPWF"/>
+   <name-map collection-handle="10568/3359" form-name="CPWF"/>
+   <name-map collection-handle="10568/3358" form-name="CPWF"/>
+   <name-map collection-handle="10568/3360" form-name="CPWF"/>
+   <name-map collection-handle="10568/3729" form-name="CPWF"/>
+   <name-map collection-handle="10568/3352" form-name="CPWF"/>
+   <name-map collection-handle="10568/3350" form-name="CPWF"/>
+   <name-map collection-handle="10568/3349" form-name="CPWF"/>
+   <name-map collection-handle="10568/5387" form-name="CPWF"/>
+   <name-map collection-handle="10568/4760" form-name="CPWF"/>
+   <name-map collection-handle="10568/5392" form-name="CPWF"/>
+   <name-map collection-handle="10568/7019" form-name="CPWF"/>
+   <!-- new cpwf since sep 2011-->
+   <name-map collection-handle="10568/3689" form-name="CPWF"/>
+   <name-map collection-handle="10568/3691" form-name="CPWF"/>
+   <name-map collection-handle="10568/3684" form-name="CPWF"/>
+   <name-map collection-handle="10568/3348" form-name="CPWF"/>
+   <name-map collection-handle="10568/3351" form-name="CPWF"/>
+   <name-map collection-handle="10568/3347" form-name="CPWF"/>
+   <name-map collection-handle="10568/4012" form-name="CPWF"/>
+   <name-map collection-handle="10568/3344" form-name="CPWF"/>
+   <name-map collection-handle="10568/3345" form-name="CPWF"/>
+   <name-map collection-handle="10568/3346" form-name="CPWF"/>
+   <name-map collection-handle="10568/3145" form-name="CPWF"/>
+   <name-map collection-handle="10568/2300" form-name="CPWF"/>
+   <name-map collection-handle="10568/2298" form-name="CPWF"/>
+   <name-map collection-handle="10568/2550" form-name="CPWF"/>
+   <name-map collection-handle="10568/2299" form-name="CPWF"/>
+   <name-map collection-handle="10568/2297" form-name="CPWF"/>
+   <name-map collection-handle="10568/3921" form-name="CPWF"/>
+   <name-map collection-handle="10568/3354" form-name="CPWF"/>
+   <name-map collection-handle="10568/3355" form-name="CPWF"/>
+   <name-map collection-handle="10568/3356" form-name="CPWF"/>
+   <name-map collection-handle="10568/3353" form-name="CPWF"/>
+   <name-map collection-handle="10568/10373" form-name="CPWF"/>
+
+   <!--CCAFS submssion form-->
+   <name-map collection-handle="10568/3547" form-name="CCAFS"/>
+   <name-map collection-handle="10568/3549" form-name="CCAFS"/>
+   <name-map collection-handle="10568/3531" form-name="CCAFS"/>
+   <name-map collection-handle="10568/3546" form-name="CCAFS"/>
+   <name-map collection-handle="10568/3548" form-name="CCAFS"/>
+   <name-map collection-handle="10568/3554" form-name="CCAFS"/>
+   <name-map collection-handle="10568/3553" form-name="CCAFS"/>
+   <name-map collection-handle="10568/3555" form-name="CCAFS"/>
+   <name-map collection-handle="10568/3556" form-name="CCAFS"/>
+   <!--CCAFS submssion form in Dece 2011-->
+   <name-map collection-handle="10568/5472" form-name="CCAFS"/>
+   <name-map collection-handle="10568/5473" form-name="CCAFS"/>
+   <name-map collection-handle="10568/10288" form-name="CCAFS"/>
+   <name-map collection-handle="10568/5470" form-name="CCAFS"/>
+   <name-map collection-handle="10568/5469" form-name="CCAFS"/>
+   <name-map collection-handle="10568/5468" form-name="CCAFS"/>
  </form-map>
 
 
@@ -112,8 +224,71 @@
          <hint>If the item has any alternative titles, please enter them below.</hint>
          <required></required>
        </field>
-	   
+
 	    <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>other</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Barcode</label>
+         <input-type>onebox</input-type>
+         <hint>Enter Barcode.</hint>
+         <required></required>
+       </field>
+
+        <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>ddc</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Call number</label>
+         <input-type>onebox</input-type>
+         <hint>Enter Call number.</hint>
+         <required></required>
+       </field>
+
+	    <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>isijournal</dc-element>
+		 <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>ISI Journal</label>
+         <input-type value-pairs-name="ISI_Journal">dropdown</input-type>
+         <required></required>
+         </field>
+
+	     <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>fulltextstatus</dc-element>
+		 <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Grey Literature</label>
+         <input-type value-pairs-name="GREY_LITERATURE">dropdown</input-type>
+         <required></required>
+         </field>
+
+	     <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>targetaudience</dc-element>
+		 <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Target Audience</label>
+         <input-type value-pairs-name="TARGET_AUDIENCE">dropdown</input-type>
+         <required></required>
+         </field>
+
+		 <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>editon</dc-element>
+		 <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Edition</label>
+         <input-type>onebox</input-type>
+         <required></required>
+         </field>
+
+
+       <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>title</dc-element>
          <dc-qualifier>jtitle</dc-qualifier>
@@ -123,7 +298,8 @@
          <hint>Enter Journal Title.</hint>
          <required></required>
        </field>
-	   
+
+
 	   <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -133,9 +309,9 @@
          <input-type>onebox</input-type>
          <hint>Enter the URL.</hint>
          <required></required>
-       </field> 
-	   
-	   
+       </field>
+
+
 	     <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -145,10 +321,21 @@
          <input-type>onebox</input-type>
          <hint>Enter the Google book URL.</hint>
          <required></required>
-       </field> 
-	   
-	   
-	   
+       </field>
+
+
+
+	     <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>dataurl</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>URL for datafile</label>
+         <input-type>onebox</input-type>
+         <hint>Enter URL for datafile.</hint>
+         <required></required>
+       </field>
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -159,9 +346,9 @@
          <hint>Please select  either Open Access or Limited Access.</hint>
          <required></required>
        </field>
-		
-	   
-	    
+
+
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -172,8 +359,8 @@
          <hint>Append http://dx.doi.org/  before the doi.</hint>
          <required></required>
        </field>
-	   
-	   
+
+
 
        <field>
 		 <dc-schema>dc</dc-schema>
@@ -195,7 +382,18 @@
          <repeatable>false</repeatable>
          <label>Publisher</label>
          <input-type>onebox</input-type>
-         <hint>Enter the full name of the publisher.</hint>
+         <hint>Enter the full name of the publisher (reports and books only).</hint>
+         <required></required>
+       </field>
+
+        <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>place</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Publication place</label>
+         <input-type>onebox</input-type>
+         <hint>Enter the city and country eg: Nairobi, Kenya</hint>
          <required></required>
        </field>
 
@@ -270,8 +468,8 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <required></required>
          <vocabulary>srsc</vocabulary>
         </field>
-	   
-	   
+
+
 	      <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>isubject</dc-element>
@@ -282,7 +480,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint></hint>
          <required></required>
          </field>
-		 
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>icsubject</dc-element>
@@ -292,9 +490,69 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <input-type value-pairs-name="icrafsubject">dropdown</input-type>
          <hint></hint>
          <required></required>
-         </field>  
-		 
-		 
+         </field>
+
+		 <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>GRP</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>ICRAF GRP</label>
+         <input-type value-pairs-name="ICRAF_GRP">dropdown</input-type>
+         <hint></hint>
+         <required></required>
+         </field>
+
+		 <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>Species</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Plant species</label>
+         <input-type>twobox</input-type>
+         <hint>Enter a full Scientific or Latin name:</hint>
+         <required></required>
+         </field>
+
+
+		 <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>Species</dc-element>
+         <dc-qualifier>animal</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Animal species</label>
+         <input-type>twobox</input-type>
+         <hint>Enter a full Scientific or Latin name:</hint>
+         <required></required>
+         </field>
+
+
+
+		<field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>whatwasknown</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>ICRAF What was known:</label>
+         <input-type>textarea</input-type>
+         <hint></hint>
+         <required></required>
+        </field>
+
+
+
+	   <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>whatisnew</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>ICRAF What is new:</label>
+         <input-type>textarea</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+
 	     <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>cpsubject</dc-element>
@@ -305,7 +563,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
 		 <hint></hint>
          <required></required>
          </field>
-	   
+
 	   	 <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>ccsubject</dc-element>
@@ -316,8 +574,8 @@ it, please enter the types and the actual numbers or codes below.</hint>
 		 <hint></hint>
          <required></required>
          </field>
-		 
-		 
+
+
 		 <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>crsubject</dc-element>
@@ -329,7 +587,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <required></required>
          </field>
 
-		 
+
         <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>description</dc-element>
@@ -340,7 +598,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint> Enter the abstract of the item below. </hint>
          <required></required>
        </field>
-       
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>description</dc-element>
@@ -351,9 +609,9 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint> Enter Sponsor or Sponsors in the box.</hint>
          <required></required>
        </field>
-	   
-     
-	   
+
+
+
 	     <field>
 	     <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -364,8 +622,8 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint> Enter  funding codes in the box below. </hint>
          <required></required>
         </field>
-	   
-	       	   	    
+
+
 	     <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>river</dc-element>
@@ -376,7 +634,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>To select more than one,you may have to hold down the "CTRL" or "Shift" key.</hint>
          <required></required>
          </field>
-		 
+
 	      <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>rplace</dc-element>
@@ -386,7 +644,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <input-type value-pairs-name="region_types">dropdown</input-type>
          <hint>To select more than one region, you may have to hold down the "CTRL" or "Shift" key.</hint>
          <required></required>
-         </field>     
+         </field>
 
            <field>
 		 <dc-schema>dc</dc-schema>
@@ -424,7 +682,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>Enter the names of the authors of this item below.</hint>
          <required></required>
        </field>
-	   
+
 	       <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>title</dc-element>
@@ -446,7 +704,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>If the item has any alternative titles, please enter them below.</hint>
          <required></required>
        </field>
-	   
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>title</dc-element>
@@ -457,7 +715,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>Enter Journal Title.</hint>
          <required></required>
        </field>
-	   
+
 	   <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -467,10 +725,18 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <input-type>onebox</input-type>
          <hint>Enter the URL.</hint>
          <required></required>
-       </field> 
-	   
-	 
-	   
+       </field>
+
+	    <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>isijournal</dc-element>
+		 <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>ISI Journal</label>
+         <input-type value-pairs-name="ISI_Journal">dropdown</input-type>
+         <required></required>
+         </field>
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -478,12 +744,12 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Status</label>
           <input-type value-pairs-name="common_status_identifier">dropdown</input-type>
-         <hint>Please select  either Open Access or Limited Access.</hint>
+         <hint>Please select either Open Access or Limited Access.</hint>
          <required></required>
        </field>
-		
-	   
-	    
+
+
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -494,8 +760,8 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>Append http://dx.doi.org/  before the doi.</hint>
          <required></required>
        </field>
-	   
-	   
+
+
 
        <field>
 		 <dc-schema>dc</dc-schema>
@@ -517,7 +783,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Publisher</label>
          <input-type>onebox</input-type>
-         <hint>Enter the full name of the publisher.</hint>
+         <hint>Enter the full name of the publisher (reports and books only).</hint>
          <required></required>
        </field>
 
@@ -532,21 +798,32 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <required>Required</required>
        </field>
 
-      
+
 
         <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
-         <dc-qualifier>journal</dc-qualifier>
-         <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+         <dc-qualifier>issn</dc-qualifier>
          <repeatable>true</repeatable>
-         <label>Identifiers</label>
-         <input-type value-pairs-name="journal_Identifier">qualdrop_value</input-type>
-         <hint>Please select the default vlaue.</hint>
+         <label>ISSN</label>
+         <input-type>onebox</input-type>
+         <hint> Please select the default vlaue.</hint>
          <required></required>
        </field>
 
-     
+
+        <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>type</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Type</label>
+         <input-type value-pairs-name="common_types">dropdown</input-type>
+         <hint> Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <required></required>
+       </field>
+
+
        <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>language</dc-element>
@@ -572,8 +849,8 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <required></required>
          <vocabulary>srsc</vocabulary>
        </field>
-	   
-	   
+
+
 	     <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>isubject</dc-element>
@@ -583,8 +860,8 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <input-type value-pairs-name="ilrisubject">dropdown</input-type>
          <hint></hint>
          <required></required>
-         </field>  
-		 
+         </field>
+
 	     <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>crsubject</dc-element>
@@ -607,7 +884,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint> Enter the abstract of the item below. </hint>
          <required></required>
        </field>
-       
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>description</dc-element>
@@ -618,9 +895,9 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint> Enter Sponsor or Sponsors in the box.</hint>
          <required></required>
        </field>
-	   
-     
-	   
+
+
+
 	     <field>
 	     <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -631,7 +908,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint> Enter  funding codes in the box below. </hint>
          <required></required>
         </field>
-	   
+
 	     <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>river</dc-element>
@@ -642,8 +919,8 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>To select more than one,you may have to hold down the "CTRL" or "Shift" key.</hint>
          <required></required>
          </field>
-	   
-	   
+
+
 	     <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>rplace</dc-element>
@@ -654,7 +931,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>To select more than one region, you may have to hold down the "CTRL" or "Shift" key.</hint>
          <required></required>
          </field>
-	   
+
 	     <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>cplace</dc-element>
@@ -665,7 +942,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>Enter a country or Countries</hint>
          <required></required>
          </field>
-	 
+
 
         <field>
 		 <dc-schema>dc</dc-schema>
@@ -677,11 +954,11 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint> Enter any Notes or comments in this box. </hint>
          <required></required>
        </field>
-	      	   
+
       </page>
     </form>
-	
-	
+
+	 <!--ICRAF Journal Template-->
 	 <form name="Journal Article ICRAF">
      <page number="1">
        <field>
@@ -694,7 +971,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>Enter the names of the authors of this item below.</hint>
          <required></required>
        </field>
-	   
+
 	       <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>title</dc-element>
@@ -716,7 +993,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>If the item has any alternative titles, please enter them below.</hint>
          <required></required>
        </field>
-	   
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>title</dc-element>
@@ -727,7 +1004,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>Enter Journal Title.</hint>
          <required></required>
        </field>
-	   
+
 	   <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -737,10 +1014,10 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <input-type>onebox</input-type>
          <hint>Enter the URL.</hint>
          <required></required>
-       </field> 
-	   
-	 
-	   
+       </field>
+
+
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -751,9 +1028,9 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>Please select  either Open Access or Limited Access.</hint>
          <required></required>
        </field>
-		
-	   
-	    
+
+
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -764,8 +1041,8 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>Append http://dx.doi.org/  before the doi.</hint>
          <required></required>
        </field>
-	   
-	   
+
+
 
        <field>
 		 <dc-schema>dc</dc-schema>
@@ -787,7 +1064,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Publisher</label>
          <input-type>onebox</input-type>
-         <hint>Enter the full name of the publisher.</hint>
+         <hint>Enter the full name of the publisher (reports and books only).</hint>
          <required></required>
        </field>
 
@@ -805,16 +1082,26 @@ it, please enter the types and the actual numbers or codes below.</hint>
         <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
-         <dc-qualifier>journal</dc-qualifier>
-         <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+         <dc-qualifier>issn</dc-qualifier>
          <repeatable>true</repeatable>
-         <label>Identifiers</label>
-         <input-type value-pairs-name="journal_Identifier">qualdrop_value</input-type>
-         <hint>Please select the default vlaue.</hint>
+         <label>ISSN</label>
+         <input-type>onebox</input-type>
+         <hint> Please select the default vlaue.</hint>
          <required></required>
        </field>
 
-     
+
+
+       <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>type</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Type</label>
+         <input-type value-pairs-name="common_types">dropdown</input-type>
+         <hint> Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <required></required>
+       </field>
 
 	     <field>
 		 <dc-schema>dc</dc-schema>
@@ -841,8 +1128,8 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <required></required>
          <vocabulary>srsc</vocabulary>
        </field>
-	   
-	   
+
+
 	     <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>icsubject</dc-element>
@@ -852,8 +1139,8 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <input-type value-pairs-name="icrafsubject">dropdown</input-type>
          <hint></hint>
          <required></required>
-         </field>   
-	  
+         </field>
+
          <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>crsubject</dc-element>
@@ -875,7 +1162,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint> Enter the abstract of the item below. </hint>
          <required></required>
        </field>
-       
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>description</dc-element>
@@ -886,9 +1173,9 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint> Enter  Sponsor or Sponsors in the box.</hint>
          <required></required>
        </field>
-	   
-     
-	   
+
+
+
 	     <field>
 	     <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -899,7 +1186,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint> Enter  funding codes in the box below. </hint>
          <required></required>
         </field>
-	   
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>river</dc-element>
@@ -910,8 +1197,8 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>To select more than one,you may have to hold down the "CTRL" or "Shift" key.</hint>
          <required></required>
          </field>
-	   
-	   
+
+
 	     <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>rplace</dc-element>
@@ -922,7 +1209,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>To select more than one region, you may have to hold down the "CTRL" or "Shift" key.</hint>
          <required></required>
          </field>
-	   
+
 	     <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>cplace</dc-element>
@@ -933,7 +1220,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>Enter a country or Countries</hint>
          <required></required>
          </field>
-	 
+
 
         <field>
 		 <dc-schema>dc</dc-schema>
@@ -945,11 +1232,11 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint> Enter any Notes or comments in this box. </hint>
          <required></required>
        </field>
-	      	   
+
       </page>
     </form>
-	
-	
+
+<!--CPWF Journal Template!-->
 	 <form name="Journal Article CPWF">
      <page number="1">
        <field>
@@ -962,7 +1249,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>Enter the names of the authors of this item below.</hint>
          <required></required>
        </field>
-	   
+
 	       <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>title</dc-element>
@@ -984,7 +1271,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>If the item has any alternative titles, please enter them below.</hint>
          <required></required>
        </field>
-	   
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>title</dc-element>
@@ -995,7 +1282,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>Enter Journal Title.</hint>
          <required></required>
        </field>
-	   
+
 	   <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -1005,10 +1292,10 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <input-type>onebox</input-type>
          <hint>Enter the URL.</hint>
          <required></required>
-       </field> 
-	   
-	 
-	   
+       </field>
+
+
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -1019,9 +1306,9 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>Please select  either Open Access or Limited Access.</hint>
          <required></required>
        </field>
-		
-	   
-	    
+
+
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -1032,8 +1319,8 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>Append http://dx.doi.org/  before the doi.</hint>
          <required></required>
        </field>
-	   
-	   
+
+
 
        <field>
 		 <dc-schema>dc</dc-schema>
@@ -1055,7 +1342,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Publisher</label>
          <input-type>onebox</input-type>
-         <hint>Enter the full name of the publisher.</hint>
+         <hint>Enter the full name of the publisher (reports and books only).</hint>
          <required></required>
        </field>
 
@@ -1070,19 +1357,31 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <required>Required</required>
        </field>
 
-      
+
 
         <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
-         <dc-qualifier>journal</dc-qualifier>
-         <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+         <dc-qualifier>issn</dc-qualifier>
          <repeatable>true</repeatable>
-         <label>Identifiers</label>
-         <input-type value-pairs-name="journal_Identifier">qualdrop_value</input-type>
-         <hint>Please select the default vlaue.</hint>
+         <label>ISSN</label>
+         <input-type>onebox</input-type>
+         <hint> Please select the default vlaue.</hint>
          <required></required>
        </field>
+
+
+       <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>type</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Type</label>
+         <input-type value-pairs-name="common_types">dropdown</input-type>
+         <hint> Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <required></required>
+       </field>
+
 
        <field>
 		 <dc-schema>dc</dc-schema>
@@ -1109,7 +1408,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <required></required>
          <vocabulary>srsc</vocabulary>
        </field>
-	   
+
 	     <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>cpsubject</dc-element>
@@ -1120,7 +1419,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
 		 <hint></hint>
          <required></required>
          </field>
-	     
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>crsubject</dc-element>
@@ -1143,9 +1442,9 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint> Enter the abstract of the item below. </hint>
          <required></required>
        </field>
-       
-	   
-	   
+
+
+
 	     <field>
 	     <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -1156,8 +1455,8 @@ it, please enter the types and the actual numbers or codes below.</hint>
 		 <hint></hint>
          <required></required>
         </field>
-	   
-     	   	   	    
+
+
 	     <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>river</dc-element>
@@ -1168,7 +1467,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>To select more than one,you may have to hold down the "CTRL" or "Shift" key.</hint>
          <required></required>
          </field>
-	          
+
 
            <field>
 		 <dc-schema>dc</dc-schema>
@@ -1180,7 +1479,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>Enter a country or Countries</hint>
          <required></required>
          </field>
-	 
+
 
         <field>
 		 <dc-schema>dc</dc-schema>
@@ -1192,14 +1491,11 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint> Enter any Notes or comments in this box. </hint>
          <required></required>
        </field>
-	      	   
+
       </page>
     </form>
-	
-	
-	
-	
-	
+
+	<!--ILRI submssion form-->
 	<form name="ILRI">
      <page number="1">
        <field>
@@ -1234,7 +1530,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>If the item has any alternative titles, please enter them below.</hint>
          <required></required>
        </field>
-	   
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>title</dc-element>
@@ -1245,7 +1541,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>Enter Journal Title.</hint>
          <required></required>
        </field>
-	   
+
 	   <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -1255,9 +1551,9 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <input-type>onebox</input-type>
          <hint>Enter the URL.</hint>
          <required></required>
-       </field> 
-	   
-	   
+       </field>
+
+
 	     <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -1267,10 +1563,10 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <input-type>onebox</input-type>
          <hint>Enter the Google book URL.</hint>
          <required></required>
-       </field> 
-	   
-	   
-	   
+       </field>
+
+
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -1281,9 +1577,9 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>Please select  either Open Access or Limited Access.</hint>
          <required></required>
        </field>
-		
-	   
-	    
+
+
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -1294,8 +1590,8 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>Append http://dx.doi.org/  before the doi.</hint>
          <required></required>
        </field>
-	   
-	   
+
+
 
        <field>
 		 <dc-schema>dc</dc-schema>
@@ -1317,7 +1613,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Publisher</label>
          <input-type>onebox</input-type>
-         <hint>Enter the full name of the publisher.</hint>
+         <hint>Enter the full name of the publisher (reports and books only).</hint>
          <required></required>
        </field>
 
@@ -1331,6 +1627,18 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>Enter the standard citation.</hint>
          <required>Required</required>
        </field>
+
+	    <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>Species</dc-element>
+         <dc-qualifier>animal</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Animal species:</label>
+         <input-type>twobox</input-type>
+         <hint>Enter a full Scientific or Latin name:</hint>
+         <required></required>
+         </field>
+
 
        <field>
 		 <dc-schema>dc</dc-schema>
@@ -1392,8 +1700,8 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <required></required>
          <vocabulary>srsc</vocabulary>
        </field>
-	   
-	   
+
+
 	      <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>isubject</dc-element>
@@ -1403,8 +1711,8 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <input-type value-pairs-name="ilrisubject">dropdown</input-type>
          <hint></hint>
          <required></required>
-         </field>   
-	   
+         </field>
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>crsubject</dc-element>
@@ -1427,7 +1735,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint> Enter the abstract of the item below. </hint>
          <required></required>
        </field>
-       
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>description</dc-element>
@@ -1438,9 +1746,9 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint> Enter  Sponsor or Sponsors in the box.</hint>
          <required></required>
        </field>
-	   
-     
-	   
+
+
+
 	     <field>
 	     <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -1451,8 +1759,8 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint> Enter  funding codes in the box below. </hint>
          <required></required>
         </field>
-	   
-	   	   
+
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>river</dc-element>
@@ -1463,8 +1771,8 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>To select more than one,you may have to hold down the "CTRL" or "Shift" key.</hint>
          <required></required>
          </field>
-		 
-		 
+
+
 	     <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>rplace</dc-element>
@@ -1475,7 +1783,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>To select more than one region, you may have to hold down the "CTRL" or "Shift" key.</hint>
          <required></required>
          </field>
-	           
+
 
            <field>
 		 <dc-schema>dc</dc-schema>
@@ -1500,7 +1808,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
        </field>
      </page>
    </form>
-	
+	<!--ICRAF submssion form-->
 	<form name="ICRAF">
      <page number="1">
        <field>
@@ -1535,7 +1843,59 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>If the item has any alternative titles, please enter them below.</hint>
          <required></required>
        </field>
-	   
+
+	    <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>isijournal</dc-element>
+		 <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>ISI Journal</label>
+         <input-type value-pairs-name="ISI_Journal">dropdown</input-type>
+         <required></required>
+         </field>
+
+	      <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>other</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Barcode</label>
+         <input-type>onebox</input-type>
+         <hint>Enter Barcode.</hint>
+         <required></required>
+       </field>
+
+        <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>ddc</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Call number</label>
+         <input-type>onebox</input-type>
+         <hint>Enter Call number.</hint>
+         <required></required>
+       </field>
+
+	    <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>fulltextstatus</dc-element>
+		 <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Grey Literature</label>
+         <input-type value-pairs-name="GREY_LITERATURE">dropdown</input-type>
+         <required></required>
+         </field>
+
+		 <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>targetaudience</dc-element>
+		 <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Target Audience</label>
+         <input-type value-pairs-name="TARGET_AUDIENCE">dropdown</input-type>
+         <required></required>
+         </field>
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>title</dc-element>
@@ -1546,7 +1906,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>Enter Journal Title.</hint>
          <required></required>
        </field>
-	   
+
 	   <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -1556,9 +1916,20 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <input-type>onebox</input-type>
          <hint>Enter the URL.</hint>
          <required></required>
-       </field> 
-	   
-	   
+       </field>
+
+	    <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>editon</dc-element>
+		 <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Edition</label>
+         <input-type>onebox</input-type>
+         <required></required>
+         </field>
+
+
+
 	     <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -1568,10 +1939,21 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <input-type>onebox</input-type>
          <hint>Enter the Google book URL.</hint>
          <required></required>
-       </field> 
-	   
-	   
-	   
+       </field>
+
+
+
+	     <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>dataurl</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>URL for datafile</label>
+         <input-type>onebox</input-type>
+         <hint>Enter URL for datafile.</hint>
+         <required></required>
+       </field>
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -1582,9 +1964,9 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>Please select  either Open Access or Limited Access.</hint>
          <required></required>
        </field>
-		
-	   
-	    
+
+
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -1595,8 +1977,8 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>Append http://dx.doi.org/  before the doi.</hint>
          <required></required>
        </field>
-	   
-	   
+
+
 
        <field>
 		 <dc-schema>dc</dc-schema>
@@ -1618,9 +2000,19 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Publisher</label>
          <input-type>onebox</input-type>
-         <hint>Enter the full name of the publisher.</hint>
+         <hint>Enter the full name of the publisher (reports and books only).</hint>
          <required></required>
        </field>
+        <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>place</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Publication Place:</label>
+         <input-type>onebox</input-type>
+         <hint>Enter the city and country eg: Nairobi, Kenya</hint>
+         <required></required>
+        </field>
 
        <field>
 		 <dc-schema>dc</dc-schema>
@@ -1693,8 +2085,8 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <required></required>
          <vocabulary>srsc</vocabulary>
        </field>
-	   
-	   
+
+
 	      <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>icsubject</dc-element>
@@ -1704,8 +2096,55 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <input-type value-pairs-name="icrafsubject">dropdown</input-type>
          <hint></hint>
          <required></required>
-         </field>   
-	   
+         </field>
+
+	   <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>GRP</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>ICRAF GRP</label>
+         <input-type value-pairs-name="ICRAF_GRP">dropdown</input-type>
+         <hint></hint>
+         <required></required>
+         </field>
+
+		  <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>Species</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Plant Species:</label>
+         <input-type>twobox</input-type>
+         <hint>Enter a full Scientific or Latin name:</hint>
+         <required></required>
+         </field>
+
+		<field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>whatwasknown</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>ICRAF What was known:</label>
+         <input-type>textarea</input-type>
+         <hint></hint>
+         <required></required>
+        </field>
+
+
+
+	   <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>whatisnew</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>ICRAF What is new:</label>
+         <input-type>textarea</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>crsubject</dc-element>
@@ -1728,7 +2167,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint> Enter the abstract of the item below. </hint>
          <required></required>
        </field>
-       
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>description</dc-element>
@@ -1739,9 +2178,9 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint> Enter Sponsor or Sponsors in the box.</hint>
          <required></required>
        </field>
-	   
-     
-	   
+
+
+
 	     <field>
 	     <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -1749,11 +2188,11 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Sponsor Project Number</label>
          <input-type >onebox</input-type>
-         <hint> Enter  funding codes in the box below. </hint>
+         <hint> Enter funding codes in the box below. </hint>
          <required></required>
         </field>
-	   
-	   
+
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>river</dc-element>
@@ -1764,24 +2203,24 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>To select more than one,you may have to hold down the "CTRL" or "Shift" key.</hint>
          <required></required>
          </field>
-		 
+
 	     <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>rplace</dc-element>
          <dc-qualifier>region</dc-qualifier>
          <repeatable>true</repeatable>
-		 <label>Region Focus </label>
+		 <label>Region Focus:</label>
          <input-type value-pairs-name="region_types">dropdown</input-type>
          <hint>To select more than one region, you may have to hold down the "CTRL" or "Shift" key.</hint>
          <required></required>
          </field>
-	   
+
 	     <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>cplace</dc-element>
          <dc-qualifier>country</dc-qualifier>
          <repeatable>true</repeatable>
-         <label>Country Focus</label>
+         <label>Country Focus:</label>
          <input-type value-pairs-name="countrylist">dropdown</input-type>
          <hint>Enter a country or Countries</hint>
          <required></required>
@@ -1799,7 +2238,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
        </field>
      </page>
    </form>
-	
+<!--CPWF submssion form-->
 	<form name="CPWF">
      <page number="1">
        <field>
@@ -1834,7 +2273,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>If the item has any alternative titles, please enter them below.</hint>
          <required></required>
        </field>
-	   
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>title</dc-element>
@@ -1845,7 +2284,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>Enter Journal Title.</hint>
          <required></required>
        </field>
-	   
+
 	   <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -1855,9 +2294,9 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <input-type>onebox</input-type>
          <hint>Enter the URL.</hint>
          <required></required>
-       </field> 
-	   
-	   
+       </field>
+
+
 	     <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -1867,10 +2306,10 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <input-type>onebox</input-type>
          <hint>Enter the Google book URL.</hint>
          <required></required>
-       </field> 
-	   
-	   
-	   
+       </field>
+
+
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -1881,9 +2320,9 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>Please select  either Open Access or Limited Access.</hint>
          <required></required>
        </field>
-		
-	   
-	    
+
+
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -1894,8 +2333,8 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>Append http://dx.doi.org/  before the doi.</hint>
          <required></required>
        </field>
-	   
-	   
+
+
 
        <field>
 		 <dc-schema>dc</dc-schema>
@@ -1917,7 +2356,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Publisher</label>
          <input-type>onebox</input-type>
-         <hint>Enter the full name of the publisher.</hint>
+         <hint>Enter the full name of the publisher (reports and books only).</hint>
          <required></required>
        </field>
 
@@ -1992,7 +2431,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <required></required>
          <vocabulary>srsc</vocabulary>
        </field>
-	   
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>cpsubject</dc-element>
@@ -2003,7 +2442,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
 		 <hint></hint>
          <required></required>
          </field>
-		 
+
 	     <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>crsubject</dc-element>
@@ -2026,20 +2465,20 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint> Enter the abstract of the item below. </hint>
          <required></required>
        </field>
-       
+
 	     <field>
 	     <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
          <dc-qualifier>fund</dc-qualifier>
          <repeatable>false</repeatable>
-         <label>Sponsor Project Number</label>
+         <label>Project Number</label>
          <input-type value-pairs-name="cpwfundno">dropdown</input-type>
-		 <hint>Enter  funding codes in the box below</hint>
+		 <hint></hint>
          <required></required>
         </field>
-	     	   
-	     
-	   	   	    
+
+
+
 	     <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>river</dc-element>
@@ -2050,7 +2489,19 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>To select more than one,you may have to hold down the "CTRL" or "Shift" key.</hint>
          <required></required>
          </field>
-	          
+
+         <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>rplace</dc-element>
+         <dc-qualifier>region</dc-qualifier>
+         <repeatable>true</repeatable>
+		 <label>Region Focus </label>
+         <input-type value-pairs-name="region_types">dropdown</input-type>
+         <hint>To select more than one region, you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <required></required>
+         </field>
+
+
 
          <field>
 		 <dc-schema>dc</dc-schema>
@@ -2110,7 +2561,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>If the item has any alternative titles, please enter them below.</hint>
          <required></required>
        </field>
-	   
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>title</dc-element>
@@ -2121,7 +2572,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>Enter Journal Title.</hint>
          <required></required>
        </field>
-	   
+
 	   <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -2131,9 +2582,9 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <input-type>onebox</input-type>
          <hint>Enter the URL.</hint>
          <required></required>
-       </field> 
-	   
-	   
+       </field>
+
+
 	     <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -2143,10 +2594,10 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <input-type>onebox</input-type>
          <hint>Enter the Google book URL.</hint>
          <required></required>
-       </field> 
-	   
-	   
-	   
+       </field>
+
+
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -2157,9 +2608,9 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>Please select  either Open Access or Limited Access.</hint>
          <required></required>
        </field>
-		
-	   
-	    
+
+
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -2170,8 +2621,8 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>Append http://dx.doi.org/  before the doi.</hint>
          <required></required>
        </field>
-	   
-	   
+
+
 
        <field>
 		 <dc-schema>dc</dc-schema>
@@ -2193,7 +2644,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Publisher</label>
          <input-type>onebox</input-type>
-         <hint>Enter the full name of the publisher.</hint>
+         <hint>Enter the full name of the publisher (reports and books only).</hint>
          <required></required>
        </field>
 
@@ -2268,21 +2719,21 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <required></required>
          <vocabulary>srsc</vocabulary>
         </field>
-	   
-	   
-	   
+
+
+
 		 <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>ccsubject</dc-element>
          <dc-qualifier>ccafsubject</dc-qualifier>
          <repeatable>true</repeatable>
-		 <label>CCAFS Subject</label>
+		 <label>CCAFS Subject Focus </label>
          <input-type value-pairs-name="ccafsubject">dropdown</input-type>
 		 <hint></hint>
          <required></required>
          </field>
-		 
-	  
+
+
 	     <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>crsubject</dc-element>
@@ -2294,8 +2745,8 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <required></required>
          </field>
 
-	   
-	   
+
+
 
         <field>
 		 <dc-schema>dc</dc-schema>
@@ -2307,7 +2758,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint> Enter the abstract of the item below. </hint>
          <required></required>
        </field>
-       
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>description</dc-element>
@@ -2318,9 +2769,35 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint> Enter Sponsor or Sponsors in the box.</hint>
          <required></required>
        </field>
-	   
-     	 
-	      <field>
+
+
+
+	     <field>
+	     <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>fund</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Sponsor Project Number</label>
+         <input-type >onebox</input-type>
+         <hint> Enter  funding codes in the box below. </hint>
+         <required></required>
+        </field>
+
+
+
+
+	     <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>river</dc-element>
+         <dc-qualifier>basin</dc-qualifier>
+         <repeatable>true</repeatable>
+		 <label>River Basin Focus</label>
+         <input-type value-pairs-name="riverbasin">dropdown</input-type>
+         <hint>To select more than one,you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <required></required>
+         </field>
+
+        <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>rplace</dc-element>
          <dc-qualifier>region</dc-qualifier>
@@ -2329,7 +2806,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <input-type value-pairs-name="region_types">dropdown</input-type>
          <hint>To select more than one region, you may have to hold down the "CTRL" or "Shift" key.</hint>
          <required></required>
-         </field>     
+         </field>
 
            <field>
 		 <dc-schema>dc</dc-schema>
@@ -2354,14 +2831,14 @@ it, please enter the types and the actual numbers or codes below.</hint>
        </field>
      </page>
    </form>
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
  </form-definitions>
 
 
@@ -2406,26 +2883,8 @@ it, please enter the types and the actual numbers or codes below.</hint>
      </pair>
    </value-pairs>
 
-   <value-pairs value-pairs-name="journal_Identifier" dc-term="identifier_journal">
-     <pair>
-       <displayed-value>ISSN</displayed-value>
-       <stored-value>ISSN</stored-value>
-     </pair>
-  </value-pairs>
-    
- <value-pairs value-pairs-name="journal_types" dc-term="type_journal">
-     <pair>
-       <displayed-value>Journal Article</displayed-value>
-       <stored-value>Journal Article</stored-value>
-     </pair>
-  </value-pairs>
-    
+    <value-pairs value-pairs-name="common_types" dc-term="type">
 
-   
-   
-   
-   <value-pairs value-pairs-name="common_types" dc-term="type">
-     
        <pair>
        <displayed-value>Audio</displayed-value>
        <stored-value>Audio</stored-value>
@@ -2445,13 +2904,18 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>Blog</displayed-value>
        <stored-value>Blog</stored-value>
      </pair>
-	 
-   <pair>
-       <displayed-value>Brochure or Flyer
 
-   </displayed-value>
-       <stored-value>Brochure</stored-value>
+   <pair>
+       <displayed-value>Brochure or Flyer</displayed-value>
+	  <stored-value>Brochure</stored-value>
      </pair>
+
+
+	 <pair>
+       <displayed-value>Case Study</displayed-value>
+       <stored-value>Case Study</stored-value>
+     </pair>
+
 
 
      <pair>
@@ -2472,39 +2936,51 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>Image</displayed-value>
        <stored-value>Image</stored-value>
      </pair>
+
+
       <pair>
        <displayed-value>Journal Article</displayed-value>
        <stored-value>Journal Article</stored-value>
      </pair>
 
+     <pair>
+       <displayed-value>Internal Document</displayed-value>
+       <stored-value>Internal Document</stored-value>
+     </pair>
 
-   
       <pair>
        <displayed-value>Manual</displayed-value>
        <stored-value>Manual</stored-value>
      </pair>
-    
+
           <pair>
        <displayed-value>Manuscript-unpublished </displayed-value>
        <stored-value>Manuscript</stored-value>
      </pair>
 
-     
+
      <pair>
        <displayed-value>Map</displayed-value>
        <stored-value>Map</stored-value>
      </pair>
+
+
+    <pair>
+  <displayed-value>News item</displayed-value>
+       <stored-value>News item</stored-value>
+     </pair>
+
  <pair>
   <displayed-value>Newsletter</displayed-value>
        <stored-value>Newsletter</stored-value>
      </pair>
-     
-    
+
+
 
 
 	<pair>
        <displayed-value>Policy Brief</displayed-value>
-       <stored-value>policy Brief</stored-value>
+       <stored-value>Policy Brief</stored-value>
        </pair>
 
 
@@ -2521,12 +2997,12 @@ it, please enter the types and the actual numbers or codes below.</hint>
 
 
 
-    
+
      <pair>
        <displayed-value>Presentation</displayed-value>
        <stored-value>Presentation</stored-value>
      </pair>
-    
+
      <pair>
        <displayed-value>Project Report</displayed-value>
        <stored-value>Project Report</stored-value>
@@ -2563,15 +3039,15 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>Working Paper</displayed-value>
        <stored-value>Working Paper</stored-value>
      </pair>
-	 
 
-	 
+
+
      <pair>
        <displayed-value>Wiki</displayed-value>
        <stored-value>Wiki</stored-value>
      </pair>
 
- 
+
 
 
 
@@ -2580,14 +3056,14 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <stored-value>Other</stored-value>
      </pair>
    </value-pairs>
-   
-   
-   
-   
-   
-   
-   
-   
+
+
+
+
+
+
+
+
 
    <!-- default language order: (from dspace 1.2.1)
         "en_US", "en", "es", "de", "fr", "it", "ja", "zh", "other", ""
@@ -2603,14 +3079,14 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>Amharic</displayed-value>
        <stored-value>am</stored-value>
      </pair>
-     
-	 
+
+
 	 <pair>
        <displayed-value>Chinese</displayed-value>
        <stored-value>zh</stored-value>
      </pair>
-	 
-	 	 
+
+
      <pair>
        <displayed-value>English</displayed-value>
        <stored-value>en</stored-value>
@@ -2627,6 +3103,13 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>French</displayed-value>
        <stored-value>fr</stored-value>
      </pair>
+
+	  <pair>
+       <displayed-value>Indonesian</displayed-value>
+       <stored-value>id</stored-value>
+     </pair>
+
+
      <pair>
        <displayed-value>Italian</displayed-value>
        <stored-value>it</stored-value>
@@ -2635,7 +3118,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>Japanese</displayed-value>
        <stored-value>ja</stored-value>
      </pair>
-     
+
 
    <pair>
        <displayed-value>Oromiffa</displayed-value>
@@ -2653,7 +3136,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>(Other)</displayed-value>
        <stored-value>other</stored-value>
      </pair>
-	 </value-pairs> 
+	 </value-pairs>
 
 
       <value-pairs value-pairs-name="common_status_identifier" dc-term="identifier_status">
@@ -2671,58 +3154,63 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <stored-value>Limited Access</stored-value>
      </pair>
 
-     </value-pairs>  
-	 
+     </value-pairs>
+
 <value-pairs value-pairs-name="ilrisubject" dc-term="isubject_ilrisubject">
       <pair>
        <displayed-value>AGRICULTURE</displayed-value>
        <stored-value>AGRICULTURE</stored-value>
      </pair>
-	 
+
 	  <pair>
+       <displayed-value>AGRI-HEALTH</displayed-value>
+       <stored-value>AGRI-HEALTH</stored-value>
+      </pair>
+
+	 	  <pair>
        <displayed-value>ANIMAL BREEDING</displayed-value>
        <stored-value>ANIMAL BREEDING</stored-value>
      </pair>
-   
-   
+
+
    <pair>
        <displayed-value>ANIMAL DISEASES</displayed-value>
        <stored-value>ANIMAL DISEASES</stored-value>
      </pair>
-   
-   
+
+
    <pair>
        <displayed-value>ANIMAL FEEDING</displayed-value>
        <stored-value>ANIMAL FEEDING</stored-value>
      </pair>
-   
+
    <pair>
        <displayed-value>ANIMAL HEALTH</displayed-value>
        <stored-value>ANIMAL HEALTH</stored-value>
      </pair>
-   
+
      <pair>
        <displayed-value>ANIMAL PRODUCTION</displayed-value>
        <stored-value>ANIMAL PRODUCTION</stored-value>
      </pair>
-   
-   
+
+
     <pair>
        <displayed-value>ANIMAL PRODUCTS</displayed-value>
        <stored-value>ANIMAL PRODUCTS</stored-value>
      </pair>
-   
-   
+
+
     <pair>
        <displayed-value>BIODIVERSITY</displayed-value>
        <stored-value>BIODIVERSITY</stored-value>
      </pair>
-   
+
     <pair>
        <displayed-value>BIOTECHNOLOGY</displayed-value>
        <stored-value>BIOTECHNOLOGY</stored-value>
      </pair>
-   
+
     <pair>
        <displayed-value>BREEDS</displayed-value>
        <stored-value>BREEDS</stored-value>
@@ -2731,29 +3219,29 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>CAPACITY STRENGTHENING</displayed-value>
        <stored-value>CAPACITY STRENGTHENING</stored-value>
      </pair>
-   
+
     <pair>
        <displayed-value>CATTLE</displayed-value>
        <stored-value>CATTLE</stored-value>
      </pair>
-   
-   
+
+
     <pair>
-       <displayed-value>CLIMATE ADAPTATION</displayed-value>
-       <stored-value>CLIMATE ADAPTATION</stored-value>
+       <displayed-value>CLIMATE CHANGE</displayed-value>
+       <stored-value>CLIMATE CHANGE</stored-value>
      </pair>
-   
+
     <pair>
        <displayed-value>CONSUMPTION</displayed-value>
        <stored-value>CONSUMPTION</stored-value>
      </pair>
-   
+
     <pair>
        <displayed-value>CROP RESIDUES</displayed-value>
        <stored-value>CROP RESIDUES</stored-value>
      </pair>
-   
-   
+
+
     <pair>
        <displayed-value>CROP-LIVESTOCK</displayed-value>
        <stored-value>CROP-LIVESTOCK</stored-value>
@@ -2786,23 +3274,23 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>ENVIRONMENT</displayed-value>
        <stored-value>ENVIRONMENT</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>EPIDEMIOLOGY</displayed-value>
        <stored-value>EPIDEMIOLOGY</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>EXTENSION</displayed-value>
        <stored-value>EXTENSION</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>FARMING SYSTEMS</displayed-value>
        <stored-value>FARMING SYSTEMS</stored-value>
      </pair>
-	 
-	 
+
+
 	   <pair>
        <displayed-value>FEEDS</displayed-value>
        <stored-value>FEEDS</stored-value>
@@ -2811,74 +3299,89 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>FISH</displayed-value>
        <stored-value>FISH</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>FODDER</displayed-value>
        <stored-value>FODDER</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>FOOD SAFETY</displayed-value>
        <stored-value>FOOD SAFETY</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>FOOD SECURITY</displayed-value>
        <stored-value>FOOD SECURITY</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>FORAGES</displayed-value>
        <stored-value>FORAGES</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>GENETICS</displayed-value>
        <stored-value>GENETICS</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>GEODATA</displayed-value>
        <stored-value>GEODATA</stored-value>
      </pair>
-	 
+
 	   <pair>
        <displayed-value>GOATS</displayed-value>
        <stored-value>GOATS</stored-value>
      </pair>
-	 
+
+	  <pair>
+       <displayed-value>HEALTH</displayed-value>
+       <stored-value>HEALTH</stored-value>
+     </pair>
+
 	  <pair>
        <displayed-value>HIV-AIDS</displayed-value>
        <stored-value>HIV-AIDS</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>IMPACT ASSESSMENT</displayed-value>
        <stored-value>IMPACT ASSESSMENT</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>INDIGENOUS BREEDS</displayed-value>
        <stored-value>INDIGENOUS BREEDS</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>INNOVATION SYSTEMS</displayed-value>
        <stored-value>INNOVATION SYSTEMS</stored-value>
      </pair>
-	 
+
+
+
+
+	 <pair>
+       <displayed-value>INTENSIFCATION</displayed-value>
+       <stored-value>INTENSIFCATION</stored-value>
+     </pair>
+
+
+
 	  <pair>
        <displayed-value>INSURANCE</displayed-value>
        <stored-value>INSURANCE</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>KNOWLEDGE AND INFORMATION</displayed-value>
        <stored-value>KNOWLEDGE AND INFORMATION</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>LIVELIHOODS</displayed-value>
        <stored-value>LIVELIHOODS</stored-value>
@@ -2895,17 +3398,17 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>LIVESTOCK-WATER</displayed-value>
        <stored-value>LIVESTOCK-WATER</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>MARKETS</displayed-value>
        <stored-value>MARKETS</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>NRM</displayed-value>
        <stored-value>NRM</stored-value>
        </pair>
-	 
+
 	   <pair>
        <displayed-value>NUTRITION</displayed-value>
        <stored-value>NUTRITION</stored-value>
@@ -2918,14 +3421,25 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>PESTS</displayed-value>
        <stored-value>PESTS</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>PIGS</displayed-value>
        <stored-value>PIGS</stored-value>
      </pair>
-	 
-	  
-	   <pair>
+
+
+	  <pair>
+       <displayed-value>POULTRY</displayed-value>
+       <stored-value>POULTRY</stored-value>
+     </pair>
+
+	  <pair>
+       <displayed-value>POLICY</displayed-value>
+       <stored-value>POLICY</stored-value>
+     </pair>
+
+
+	  <pair>
        <displayed-value>PRO-POOR LIVESTOCK</displayed-value>
        <stored-value>PRO-POOR LIVESTOCK</stored-value>
      </pair>
@@ -2933,16 +3447,23 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>RESEARCH</displayed-value>
        <stored-value>RESEARCH</stored-value>
      </pair>
+
+	 <pair>
+       <displayed-value>RESILIENCE</displayed-value>
+       <stored-value>RESILIENCE</stored-value>
+     </pair>
+
+
 	   <pair>
        <displayed-value>SEEDS</displayed-value>
        <stored-value>SEEDS</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>SHEEP</displayed-value>
        <stored-value>SHEEP</stored-value>
      </pair>
-	 
+
 	   <pair>
        <displayed-value>SOILS</displayed-value>
        <stored-value>SOILS</stored-value>
@@ -2959,579 +3480,603 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>VALUE CHAINS</displayed-value>
        <stored-value>VALUE CHAINS</stored-value>
      </pair>
+
+	  <pair>
+       <displayed-value>VULNERABILITY</displayed-value>
+       <stored-value>VULNERABILITY</stored-value>
+     </pair>
+
 	   <pair>
        <displayed-value>WATER</displayed-value>
        <stored-value>WATER</stored-value>
      </pair>
-	 
-	 
+
+
 	 <pair>
        <displayed-value>WILDLIFE</displayed-value>
        <stored-value>WILDLIFE</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>WOMEN</displayed-value>
        <stored-value>WOMEN</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>ZOONOTIC DISEASES</displayed-value>
        <stored-value>ZOONOTIC DISEASES</stored-value>
      </pair>
-	 
-	  	 
- </value-pairs>  
-	 
+
+
+ </value-pairs>
+
 <value-pairs value-pairs-name="icrafsubject" dc-term="icsubject_icrafsubject">
-    
+
     <pair>
        <displayed-value>AFFORESTATION</displayed-value>
        <stored-value>AFFORESTATION</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>AGRICULTURE</displayed-value>
        <stored-value>AGRICULTURE</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>AGROFORESTRY</displayed-value>
        <stored-value>AGROFORESTRY</stored-value>
-     </pair> 
-	 
-	 
+     </pair>
+
+
 	  <pair>
        <displayed-value>AGRO-SYLVO-PASTORAL</displayed-value>
        <stored-value>AGRO-SYLVO-PASTORAL</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>ALLOMETRICS</displayed-value>
        <stored-value>ALLOMETRICS</stored-value>
-     </pair> 
-	 
-	 
+     </pair>
+
+
 	  <pair>
        <displayed-value>BIODIVERSITY</displayed-value>
        <stored-value>BIODIVERSITY</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>BIOTECHNOLOGY</displayed-value>
        <stored-value>BIOTECHNOLOGY</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>CAPACITY BUILDING</displayed-value>
        <stored-value>CAPACITY BUILDING</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>CARBON</displayed-value>
        <stored-value>CARBON</stored-value>
-     </pair> 
-	 
-	 
+     </pair>
+
+
 	  <pair>
        <displayed-value>CATCHMENT</displayed-value>
        <stored-value>CATCHMENT</stored-value>
-     </pair> 
-	 
-	 
+     </pair>
+
+
 	  <pair>
        <displayed-value>CERTIFICATION</displayed-value>
        <stored-value>CERTIFICATION</stored-value>
-     </pair> 
-	 
-	 
+     </pair>
+
+
 	  <pair>
        <displayed-value>COLLECTIVE ACTION</displayed-value>
        <stored-value>COLLECTIVE ACTION</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>CONFLICT RESOLUTION</displayed-value>
        <stored-value>CONFLICT RESOLUTION</stored-value>
-     </pair> 
-	 
-	 
+     </pair>
+
+
 	  <pair>
        <displayed-value>CONSERVATION</displayed-value>
        <stored-value>CONSERVATION</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>CROPS</displayed-value>
        <stored-value>CROPS</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>DEGRADATION</displayed-value>
        <stored-value>DEGRADATION</stored-value>
-     </pair> 
-	 
-	 
+     </pair>
+
+
 	  <pair>
        <displayed-value>DEMAND STUDIES</displayed-value>
        <stored-value>DEMAND STUDIES</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>DENDROCHRONOLOGY</displayed-value>
        <stored-value>DENDROCHRONOLOGY</stored-value>
-     </pair> 
+     </pair>
 	  <pair>
        <displayed-value>DISEASE</displayed-value>
        <stored-value>DISEASE</stored-value>
-     </pair> 
-	 
-	 
+     </pair>
+
+
 	  <pair>
        <displayed-value>DRIVERS OF LAND USE CHANGE</displayed-value>
        <stored-value>DRIVERS OF LAND USE CHANGE</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>ECOLOGY</displayed-value>
        <stored-value>ECOLOGY</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>ECOSYSTEMS</displayed-value>
        <stored-value>ECOSYSTEMS</stored-value>
-     </pair> 
-	 
-	 
+     </pair>
+
+
 	  <pair>
        <displayed-value>EMISSIONS</displayed-value>
        <stored-value>EMISSIONS</stored-value>
-     </pair> 
-	 
-	 
+     </pair>
+
+
 	  <pair>
        <displayed-value>ENVIRONMENT</displayed-value>
        <stored-value>ENVIRONMENT</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>ENVIRONMENTAL SERVICES</displayed-value>
        <stored-value>ENVIRONMENTAL SERVICES</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>EPIDEMIOLOGY  IN GENERAL</displayed-value>
        <stored-value>EPIDEMIOLOGY  IN GENERAL</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>EXTENSION</displayed-value>
        <stored-value>EXTENSION</stored-value>
-     </pair> 
-	 
-	 
+     </pair>
+
+
 	  <pair>
        <displayed-value>FARMING SYSTEMS</displayed-value>
        <stored-value>FARMING SYSTEMS</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>FERTILISER</displayed-value>
        <stored-value>FERTILISER</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>FISH</displayed-value>
        <stored-value>FISH</stored-value>
-     </pair> 
-	 
-	 
+     </pair>
+
+
 	  <pair>
        <displayed-value>FODDER</displayed-value>
        <stored-value>FODDER</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>FOOD SAFETY</displayed-value>
        <stored-value>FOOD SAFETY</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>FOOD SECURITY</displayed-value>
        <stored-value>FOOD SECURITY</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>FORAGE</displayed-value>
        <stored-value>FORAGE</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>FOREST MARGINS</displayed-value>
        <stored-value>FOREST MARGINS</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>FORESTRY</displayed-value>
        <stored-value>FORESTRY</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>FRUITS</displayed-value>
        <stored-value>FRUITS</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>FUELWOOD</displayed-value>
        <stored-value>FUELWOOD</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>GENDER</displayed-value>
        <stored-value>GENDER</stored-value>
-     </pair> 
-	 
-	 
+     </pair>
+
+
 	  <pair>
        <displayed-value>GENETICS</displayed-value>
        <stored-value>GENETICS</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>GERMPLASM</displayed-value>
        <stored-value>GERMPLASM</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>GOVERNANCE</displayed-value>
        <stored-value>GOVERNANCE</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>GREENHOUSE GASES (GHG)</displayed-value>
        <stored-value>GREENHOUSE GASES (GHG)</stored-value>
-     </pair> 
-	 
+     </pair>
+
+
+
 	  <pair>
        <displayed-value>HYDROLOGY</displayed-value>
        <stored-value>HYDROLOGY</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>IMPACT ASSESSMENT </displayed-value>
        <stored-value>IMPACT ASSESSMENT </stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>IMPACT PATHWAYS</displayed-value>
        <stored-value>IMPACT PATHWAYS</stored-value>
-     </pair> 
-	 
+     </pair>
+
+
 	  <pair>
        <displayed-value>KNOWLEDGE AND INFORMATION </displayed-value>
        <stored-value>KNOWLEDGE AND INFORMATION </stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>LAND DEGRADATION</displayed-value>
        <stored-value>LAND DEGRADATION</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>LAND REHABILITATION</displayed-value>
        <stored-value>LAND REHABILITATION</stored-value>
-     </pair> 
-	 
-	 
+     </pair>
+
+
 	  <pair>
        <displayed-value>LAND USE</displayed-value>
        <stored-value>LAND USE</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>LANDSCAPE</displayed-value>
        <stored-value>LANDSCAPE</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>LIVELIHOODS</displayed-value>
        <stored-value>LIVELIHOODS</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>LIVESTOCK</displayed-value>
        <stored-value>LIVESTOCK</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>MANAGEMENT</displayed-value>
        <stored-value>MANAGEMENT</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>MARKET INFORMATION SYSTEMS</displayed-value>
        <stored-value>MARKET INFORMATION SYSTEMS</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>MARKETING STRATEGIES</displayed-value>
        <stored-value>MARKETING STRATEGIES</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>MARKETS</displayed-value>
        <stored-value>MARKETS</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>MEDICINALS</displayed-value>
        <stored-value>MEDICINALS</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>MITIGATION</displayed-value>
        <stored-value>MITIGATION</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>MODEL</displayed-value>
        <stored-value>MODEL</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>NATURAL RESOURCE MANAGEMENT</displayed-value>
        <stored-value>NATURAL RESOURCE MANAGEMENT</stored-value>
-     </pair> 
-	 
-	 
+     </pair>
+
+
 	  <pair>
        <displayed-value>NON-TIMBER FOREST PRODUCTS (NTFP)</displayed-value>
        <stored-value>NON-TIMBER FOREST PRODUCTS (NTFP)</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>NUTRITION</displayed-value>
        <stored-value>NUTRITION</stored-value>
-     </pair> 
-	 
-	 
+     </pair>
+
+
 	  <pair>
        <displayed-value>PASTORALISM</displayed-value>
        <stored-value>PASTORALISM</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>PLANNING</displayed-value>
        <stored-value>PLANNING</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>PLANT PROPAGATION</displayed-value>
        <stored-value>PLANT PROPAGATION</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>POLICY</displayed-value>
        <stored-value>POLICY</stored-value>
-     </pair> 
-	 
-	 
+     </pair>
+
+
 	  <pair>
        <displayed-value>POST HARVEST TECHNOLOGY</displayed-value>
        <stored-value>POST HARVEST TECHNOLOGY</stored-value>
-     </pair> 
-	 
-	 
+     </pair>
+
+
 	  <pair>
        <displayed-value>POVERTY</displayed-value>
        <stored-value>POVERTY</stored-value>
-     </pair> 
-	 
-	 
+     </pair>
+
+
 	  <pair>
        <displayed-value>PROCESSING</displayed-value>
        <stored-value>PROCESSING</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>PRODUCTS</displayed-value>
        <stored-value>PRODUCTS</stored-value>
-     </pair> 
-	 
-	 
+     </pair>
+
+
 	  <pair>
        <displayed-value>QUALITY</displayed-value>
        <stored-value>QUALITY</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>REFORESTATION</displayed-value>
        <stored-value>REFORESTATION</stored-value>
-     </pair> 
-	 
+     </pair>
+
+
+
+
 	  <pair>
        <displayed-value>SOIL FERTILITY</displayed-value>
        <stored-value>SOIL FERTILITY</stored-value>
-     </pair> 
-	 
-	 
+     </pair>
+
+
 	  <pair>
        <displayed-value>SOIL HEALTH</displayed-value>
        <stored-value>SOIL HEALTH</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>SOILS</displayed-value>
        <stored-value>SOILS</stored-value>
-     </pair> 
+     </pair>
 	  <pair>
        <displayed-value>SUPPLY STUDIES</displayed-value>
        <stored-value>SUPPLY STUDIES</stored-value>
-     </pair> 
-	 
-	 
+     </pair>
+
+
 	  <pair>
        <displayed-value>SWIDDEN SYSTEMS</displayed-value>
        <stored-value>SWIDDEN SYSTEMS</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>SYLVO-PASTORAL</displayed-value>
        <stored-value>SYLVO-PASTORAL</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>SYSTEMS</displayed-value>
        <stored-value>SYSTEMS</stored-value>
-     </pair> 
-	 
-	 
+     </pair>
+
+
 	  <pair>
        <displayed-value>TENURE</displayed-value>
        <stored-value>TENURE</stored-value>
-     </pair> 
-	 
-	 
+     </pair>
+
+
 	  <pair>
        <displayed-value>TRADE</displayed-value>
        <stored-value>TRADE</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>TREE DOMESTICATION</displayed-value>
        <stored-value>TREE DOMESTICATION</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>TREE ECOPHYSIOLOGY</displayed-value>
        <stored-value>TREE ECOPHYSIOLOGY</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>TREE GROWTH MODELS</displayed-value>
        <stored-value>TREE GROWTH MODELS</stored-value>
-     </pair> 
-	 
-	 
+     </pair>
+
+
 	  <pair>
        <displayed-value>TREE PROPERTIES</displayed-value>
        <stored-value>TREE PROPERTIES</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>VALUE CHAINS</displayed-value>
        <stored-value>VALUE CHAINS</stored-value>
-     </pair> 
-	 
+     </pair>
+
+	   <pair>
+       <displayed-value>VULNREABLITY</displayed-value>
+       <stored-value>VULNREABLITY</stored-value>
+     </pair>
+
+
 	  <pair>
        <displayed-value>WATER</displayed-value>
        <stored-value>WATER</stored-value>
-     </pair> 
-	 
-	 
+     </pair>
+
+
 	  <pair>
        <displayed-value>WILDLIFE</displayed-value>
        <stored-value>WILDLIFE</stored-value>
-     </pair> 
-	 
+     </pair>
+
 	  <pair>
        <displayed-value>WOOD</displayed-value>
        <stored-value>WOOD</stored-value>
-     </pair> 
-</value-pairs>  	 
-	 
-	 
+     </pair>
+</value-pairs>
+
+
  <value-pairs value-pairs-name="cpwfsubject" dc-term="cpsubject_cpwfsubject">
      <pair>
        <displayed-value>AGRICULTURE</displayed-value>
        <stored-value>AGRICULTURE</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>AQUACULTURE</displayed-value>
        <stored-value>AQUACULTURE</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>BENEFIT SHARING MECHANISMS</displayed-value>
        <stored-value>BENEFIT SHARING MECHANISMS</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>BIODIVERSITY</displayed-value>
        <stored-value>BIODIVERSITY</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>CAPACITY DEVELOPMENT</displayed-value>
        <stored-value>CAPACITY DEVELOPMENT</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>CLIMATE CHANGE</displayed-value>
        <stored-value>CLIMATE CHANGE</stored-value>
      </pair>
-	 
+
+	 <pair>
+       <displayed-value>DECISON SUPPORT SYSTEMS</displayed-value>
+       <stored-value>DECISON SUPPORT SYSTEMS</stored-value>
+     </pair>
+
+
+
 	  <pair>
        <displayed-value>DEVELOPMENT</displayed-value>
        <stored-value>DEVELOPMENT</stored-value>
      </pair>
-	 
-	 
-	 
+
+
 	  <pair>
        <displayed-value>ECOSYSTEM SERVICES</displayed-value>
        <stored-value>ECOSYSTEM SERVICES</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>ENVIRONMENT</displayed-value>
        <stored-value>ENVIRONMENT</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>EXTENSION</displayed-value>
        <stored-value>EXTENSION</stored-value>
      </pair>
-	 
+
 	   <pair>
        <displayed-value>FARMING SYSTEMS</displayed-value>
        <stored-value>FARMING SYSTEMS</stored-value>
      </pair>
-	 
+
 	   <pair>
        <displayed-value>FODDER</displayed-value>
        <stored-value>FODDER</stored-value>
      </pair>
-	 
-	 
+
+
 	   <pair>
        <displayed-value>FOOD SAFETY</displayed-value>
        <stored-value>FOOD SAFETY</stored-value>
      </pair>
-	 
+
 	   <pair>
        <displayed-value>FOOD SECURITY</displayed-value>
        <stored-value>FOOD SECURITY</stored-value>
@@ -3556,7 +4101,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>IMPACT ASSESSMENT</displayed-value>
        <stored-value>IMPACT ASSESSMENT</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>INNOVATION SYSTEMS</displayed-value>
        <stored-value>INNOVATION SYSTEMS</stored-value>
@@ -3565,8 +4110,8 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>INSTITUTIONS</displayed-value>
        <stored-value>INSTITUTIONS</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>INTEGRATED WATER RESOURCE </displayed-value>
        <stored-value>INTEGRATED WATER RESOURCE </stored-value>
@@ -3579,147 +4124,207 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>IRRIGATION</displayed-value>
        <stored-value>IRRIGATION</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>KNOWLEDGE AND INFORMATION</displayed-value>
        <stored-value>KNOWLEDGE AND INFORMATION</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>LAND MANAGEMENT</displayed-value>
        <stored-value>LAND MANAGEMENT</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>LIVELIHOODS</displayed-value>
        <stored-value>LIVELIHOODS</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>LIVESTOCK SYSTEMS</displayed-value>
        <stored-value>LIVESTOCK SYSTEMS</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>LIVESTOCK-WATER</displayed-value>
        <stored-value>LIVESTOCK-WATER</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>MARKETS</displayed-value>
        <stored-value>MARKETS</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>MULTIPLE USE</displayed-value>
        <stored-value>MULTIPLE USE</stored-value>
      </pair>
-	 
+
+
+	  <pair>
+       <displayed-value>POLICY RESEARCH</displayed-value>
+       <stored-value>POLICY RESEARCH</stored-value>
+     </pair>
+
+
 	  <pair>
        <displayed-value>POVERTY</displayed-value>
        <stored-value>POVERTY</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>RAINFED SYSTEMS</displayed-value>
        <stored-value>RAINFED SYSTEMS</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>RAINWATER MANAGEMENT</displayed-value>
        <stored-value>RAINWATER MANAGEMENT</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>RESEARCH</displayed-value>
        <stored-value>RESEARCH</stored-value>
      </pair>
-	 
-	 
-	  <pair>
-       <displayed-value>RESILIENCE</displayed-value>
-       <stored-value>RESILIENCE</stored-value>
-     </pair>
-	 
-	 
+
+
+
+
+
 	  <pair>
        <displayed-value>RIVER BASIN</displayed-value>
        <stored-value>RIVER BASIN</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>SEEDS</displayed-value>
        <stored-value>SEEDS</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>SOILS</displayed-value>
        <stored-value>SOILS</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>SPATIAL ANALYSIS</displayed-value>
        <stored-value>SPATIAL ANALYSIS</stored-value>
      </pair>
-	 
-	 
-	 
+
+
+
 	  <pair>
        <displayed-value>TRADE</displayed-value>
        <stored-value>TRADE</stored-value>
      </pair>
-	 
-	 
+
+
+	  <pair>
+       <displayed-value>TREES</displayed-value>
+       <stored-value>TREES</stored-value>
+     </pair>
+
 	  <pair>
        <displayed-value>WATER ALLOCATION</displayed-value>
        <stored-value>WATER ALLOCATION</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>WATER MANAGEMENT</displayed-value>
        <stored-value>WATER MANAGEMENT</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>WATER PRODUCTIVITY</displayed-value>
        <stored-value>WATER PRODUCTIVITY</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>WATER RESOURCES</displayed-value>
        <stored-value>WATER RESOURCES </stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>WATER USE</displayed-value>
        <stored-value>WATER USE</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>WETLANDS</displayed-value>
        <stored-value>WETLANDS </stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>WOMEN</displayed-value>
        <stored-value>WOMEN</stored-value>
      </pair>
- </value-pairs>  
- 
+ </value-pairs>
+
+ <value-pairs value-pairs-name="ccafsubject" dc-term="ccsubject_ccafsubject">
+     <pair>
+       <displayed-value>ADAPTATION TO FUTURE CLIMATE</displayed-value>
+       <stored-value>ADAPTATION TO FUTURE CLIMATE</stored-value>
+     </pair>
+
+	  <pair>
+       <displayed-value>CLIMATE SCIENCE</displayed-value>
+       <stored-value>CLIMATE SCIENCE</stored-value>
+     </pair>
+
+	  <pair>
+       <displayed-value>DATA AND TOOLS FOR ANALYSIS AND PLANNING</displayed-value>
+       <stored-value>DATA AND TOOLS FOR ANALYSIS AND PLANNING</stored-value>
+     </pair>
+
+	  <pair>
+       <displayed-value>EDUCATION AND OUTREACH</displayed-value>
+       <stored-value>EDUCATION AND OUTREACH</stored-value>
+     </pair>
+
+	  <pair>
+       <displayed-value>FRAMEWORKS FOR POLICY ANALYSIS</displayed-value>
+       <stored-value>FRAMEWORKS FOR POLICY ANALYSIS</stored-value>
+     </pair>
+
+	  <pair>
+       <displayed-value>LINKING KNOWLEDGE TO ACTION</displayed-value>
+       <stored-value>LINKING KNOWLEDGE TO ACTION</stored-value>
+     </pair>
+
+	  <pair>
+       <displayed-value>MANAGING CLIMATE RISK</displayed-value>
+       <stored-value>MANAGING CLIMATE RISK</stored-value>
+     </pair>
+
+	  <pair>
+       <displayed-value>PRO-POOR MITIGATION</displayed-value>
+       <stored-value>PRO-POOR MITIGATION</stored-value>
+     </pair>
+
+	  <pair>
+       <displayed-value>SYNTHESIS AND OVERVIEWS</displayed-value>
+       <stored-value>SYNTHESIS AND OVERVIEWS</stored-value>
+     </pair>
+
+
+
+ </value-pairs>
+
+
  <value-pairs value-pairs-name="crpsubject" dc-term="crsubject_crpsubject">
-    
+
 
      <pair>
        <displayed-value>CRP1.1: DRY AREAS</displayed-value>
        <stored-value>CRP1.1: DRY AREAS</stored-value>
      </pair>
- 
- 
+
+
  <pair>
        <displayed-value>CRP1.2: HUMID TROPICS</displayed-value>
        <stored-value>CRP1.2: HUMID TROPICS</stored-value>
@@ -3728,40 +4333,40 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>CRP1.3: AQUATIC AGRICULTURAL SYSTEMS</displayed-value>
        <stored-value>CRP1.3: AQUATIC AGRICULTURAL SYSTEMS</stored-value>
      </pair>
- 
+
     <pair>
        <displayed-value>CRP2: POLICIES, INSTITUTIONS, AND MARKETS</displayed-value>
        <stored-value>CRP2: POLICIES, INSTITUTIONS, AND MARKETS</stored-value>
      </pair>
-	 
-	 
+
+
 	 <pair>
        <displayed-value>CRP3.1: WHEAT</displayed-value>
        <stored-value>CRP3.1: WHEAT</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>CRP3.2: MAIZE</displayed-value>
        <stored-value>CRP3.2: MAIZE</stored-value>
      </pair>
-	 
-	 
+
+
 	 <pair>
        <displayed-value>CRP3.3: RICE</displayed-value>
        <stored-value>CRP3.3: RICE</stored-value>
      </pair>
-	 
-	 
+
+
 	 <pair>
        <displayed-value>CRP3.4: ROOTS, TUBERS AND BANANAS</displayed-value>
        <stored-value>CRP3.4: ROOTS, TUBERS AND BANANAS</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>CRP3.5: GRAIN LEGUMES</displayed-value>
        <stored-value>CRP3.5: GRAIN LEGUMES</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>CRP3.6: DRYLAND CEREALS</displayed-value>
        <stored-value>CRP3.6: DRYLAND CEREALS</stored-value>
@@ -3770,13 +4375,13 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>CRP3.7: LIVESTOCK AND FISH</displayed-value>
        <stored-value>CRP3.7: LIVESTOCK AND FISH</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>CRP4: AGRICULTURE FOR IMPROVED NUTRITION AND HEALTH</displayed-value>
        <stored-value>CRP4: AGRICULTURE FOR IMPROVED NUTRITION AND HEALTH </stored-value>
      </pair>
-	 
-	 
+
+
 	 <pair>
        <displayed-value>CRP5: WATER AND LAND</displayed-value>
        <stored-value>CRP5: WATER AND LAND</stored-value>
@@ -3785,90 +4390,107 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>CRP6: FORESTS AND TREES</displayed-value>
        <stored-value>CRP6: FORESTS AND TREES</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>CRP7: CLIMATE CHANGE, AGRICULTURE AND FOOD SECURITY</displayed-value>
        <stored-value>CRP7: CLIMATE CHANGE, AGRICULTURE AND FOOD SECURITY</stored-value>
      </pair>
-	 
- </value-pairs>  
- 
+
+ </value-pairs>
+
  <value-pairs value-pairs-name="ccafsubject" dc-term="ccsubject_ccafsubject">
-    
+
 
   <pair>
        <displayed-value>ADAPTATION TO FUTURE CLIMATE</displayed-value>
        <stored-value>ADAPTATION TO FUTURE CLIMATE</stored-value>
      </pair>
- 
+
     <pair>
        <displayed-value>CLIMATE SCIENCE</displayed-value>
        <stored-value>CLIMATE SCIENCE</stored-value>
      </pair>
- 
- 
+
+
  	  <pair>
        <displayed-value>DATA AND TOOLS FOR ANALYSIS AND PLANNING</displayed-value>
        <stored-value>DATA AND TOOLS FOR ANALYSIS AND PLANNING</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>EDUCATION AND OUTREACH</displayed-value>
        <stored-value>EDUCATION AND OUTREACH</stored-value>
      </pair>
-	 
-	 
+
+
 	   <pair>
        <displayed-value>FRAMEWORKS FOR POLICY ANALYSIS </displayed-value>
        <stored-value>FRAMEWORKS FOR POLICY ANALYSIS </stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>LINKING KNOWLEDGE TO ACTION</displayed-value>
        <stored-value>LINKING KNOWLEDGE TO ACTION</stored-value>
      </pair>
-	 
-	 
+
+
      <pair>
        <displayed-value>MANAGING CLIMATE RISK</displayed-value>
        <stored-value>MANAGING CLIMATE RISK</stored-value>
      </pair>
-     
+
+	 <pair>
+       <displayed-value> MODELING</displayed-value>
+       <stored-value>MODELING</stored-value>
+     </pair>
+
+	 <pair>
+       <displayed-value>MONITORING</displayed-value>
+       <stored-value>MONITORING</stored-value>
+     </pair>
+
+
 	  <pair>
        <displayed-value>PRO-POOR MITIGATION</displayed-value>
        <stored-value>PRO-POOR MITIGATION</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>SYNTHESIS AND OVERVIEWS</displayed-value>
        <stored-value>SYNTHESIS AND OVERVIEWS</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>VULNERABILITY</displayed-value>
        <stored-value>VULNERABILITY</stored-value>
      </pair>
- 
- </value-pairs>  
- 
- 
- 
- 
+
+ </value-pairs>
+
+
+
+
  <value-pairs value-pairs-name="cpwfundno" dc-term="identifier_fund">
-    
 
-     <pair>
-       <displayed-value>CBA</displayed-value>
-       <stored-value>CBA</stored-value>
+
+	<pair>
+       <displayed-value>PHASE 1</displayed-value>
+       <stored-value>PHASE 1</stored-value>
      </pair>
-	 
 
-    <pair>
+
+	 <pair>
        <displayed-value>PHASE 2</displayed-value>
        <stored-value>PHASE 2</stored-value>
      </pair>
-	 
-    <pair>
+
+	 <pair>
+       <displayed-value>CBA</displayed-value>
+       <stored-value>CBA</stored-value>
+     </pair>
+
+
+        <pair>
        <displayed-value>IA</displayed-value>
        <stored-value>IA</stored-value>
      </pair>
@@ -3876,17 +4498,17 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>PN01</displayed-value>
        <stored-value>PN01</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>PN02</displayed-value>
        <stored-value>PN02</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>PN05</displayed-value>
        <stored-value>PN05</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>PN06</displayed-value>
        <stored-value>PN06</stored-value>
@@ -3895,202 +4517,202 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>PN07</displayed-value>
        <stored-value>PN07</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>PN08</displayed-value>
        <stored-value>PN08</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>PN10</displayed-value>
        <stored-value>PN10</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>PN11</displayed-value>
        <stored-value>PN11</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>PN12</displayed-value>
        <stored-value>PN12</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>PN15</displayed-value>
        <stored-value>PN15</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>PN16</displayed-value>
        <stored-value>PN16</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>PN17</displayed-value>
        <stored-value>PN17</stored-value>
      </pair>
-	  
-	 
+
+
 	  <pair>
        <displayed-value>PN19</displayed-value>
        <stored-value>PN19</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>PN20</displayed-value>
        <stored-value>PN20</stored-value>
      </pair>
-	  
+
 	  <pair>
        <displayed-value>PN22</displayed-value>
        <stored-value>PN22</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>PN23</displayed-value>
        <stored-value>PN23</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>PN24</displayed-value>
        <stored-value>PN24</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>PN25</displayed-value>
        <stored-value>PN25</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>PN28</displayed-value>
        <stored-value>PN28</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>PN30</displayed-value>
        <stored-value>PN30</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>PN34</displayed-value>
        <stored-value>PN34</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>PN35</displayed-value>
        <stored-value>PN35</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>PN36</displayed-value>
        <stored-value>PN36</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>PN37</displayed-value>
        <stored-value>PN37</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>PN38</displayed-value>
        <stored-value>PN38</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>PN40</displayed-value>
        <stored-value>PN40</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>PN42</displayed-value>
        <stored-value>PN42</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>PN46</displayed-value>
        <stored-value>PN46</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>PN47</displayed-value>
        <stored-value>PN47</stored-value>
      </pair>
-	 
-	 
-	 
+
+
+
 	  <pair>
        <displayed-value>PN48</displayed-value>
        <stored-value>PN48</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>PN50</displayed-value>
        <stored-value>PN50</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>PN51</displayed-value>
        <stored-value>PN51</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>PN52</displayed-value>
        <stored-value>PN52</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>PN53</displayed-value>
        <stored-value>PN53</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>PN54</displayed-value>
        <stored-value>PN54</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>PN55</displayed-value>
        <stored-value>PN55</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>PN56</displayed-value>
        <stored-value>PN56</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>PN57</displayed-value>
        <stored-value>PN57</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>PN58</displayed-value>
        <stored-value>PN58</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>PN59</displayed-value>
        <stored-value>PN59</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>PN60</displayed-value>
        <stored-value>PN60</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>PN61</displayed-value>
        <stored-value>PN61</stored-value>
@@ -4103,98 +4725,98 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>PN63</displayed-value>
        <stored-value>PN63</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>PN64</displayed-value>
        <stored-value>PN64</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>PN65</displayed-value>
        <stored-value>PN65</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>PN66</displayed-value>
        <stored-value>PN66</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>PN67</displayed-value>
        <stored-value>PN67</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>PN68</displayed-value>
        <stored-value>PN68</stored-value>
      </pair>
-	 
-	 
-	 
+
+
+
 	  <pair>
        <displayed-value>PN69</displayed-value>
        <stored-value>PN69</stored-value>
      </pair>
-	 
-	 
-	 
+
+
+
 	  <pair>
        <displayed-value>PN70</displayed-value>
        <stored-value>PN70</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>PN71</displayed-value>
        <stored-value>PN71</stored-value>
      </pair>
-	 
+
 	   <pair>
        <displayed-value>PN72</displayed-value>
        <stored-value>PN72</stored-value>
      </pair>
-	 
+
 	   <pair>
        <displayed-value>SG501</displayed-value>
        <stored-value>SG501</stored-value>
      </pair>
-	  
+
 	   <pair>
        <displayed-value>SG502</displayed-value>
        <stored-value>SG502</stored-value>
      </pair>
-	 
+
 	   <pair>
        <displayed-value>SG503</displayed-value>
        <stored-value>SG503</stored-value>
      </pair>
-	 
-	 
+
+
 	   <pair>
        <displayed-value>SG504</displayed-value>
        <stored-value>SG504</stored-value>
      </pair>
-	 
-	 
+
+
 	   <pair>
        <displayed-value>SG505</displayed-value>
        <stored-value>SG505</stored-value>
      </pair>
-	 
-	 
+
+
 	   <pair>
        <displayed-value>SG506</displayed-value>
        <stored-value>SG506</stored-value>
      </pair>
-	 
-	 
+
+
 	   <pair>
        <displayed-value>SG508</displayed-value>
        <stored-value>SG508</stored-value>
      </pair>
-	 
-	 
+
+
 	   <pair>
        <displayed-value>SG509</displayed-value>
        <stored-value>SG509</stored-value>
@@ -4207,36 +4829,36 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>SG511</displayed-value>
        <stored-value>SG511</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>SG512</displayed-value>
        <stored-value>SG512</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>SG513</displayed-value>
        <stored-value>SG513</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>SG514</displayed-value>
        <stored-value>SG514</stored-value>
      </pair>
-	 
-	
-	 
- </value-pairs>  
- 
- 
- 
- 
-	 
+
+
+
+ </value-pairs>
+
+
+
+
+
 <value-pairs value-pairs-name="region_types" dc-term="place_region">
-	
-	
-			
+
+
+
 	  <pair>
        <displayed-value>AFRICA</displayed-value>
        <stored-value>AFRICA</stored-value>
@@ -4245,13 +4867,13 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>ASIA</displayed-value>
        <stored-value>ASIA</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>CARIBBEAN</displayed-value>
        <stored-value>CARIBBEAN</stored-value>
      </pair>
-	 
-	 	 
+
+
      <pair>
        <displayed-value>CENTRAL AFRICA</displayed-value>
        <stored-value>CENTRAL AFRICA</stored-value>
@@ -4260,59 +4882,55 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>CENTRAL AMERICA</displayed-value>
        <stored-value>CENTRAL AMERICA</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>CENTRAL ASIA</displayed-value>
        <stored-value>CENTRAL ASIA</stored-value>
      </pair>
-	 
+
      <pair>
        <displayed-value>EAST AFRICA</displayed-value>
        <stored-value>EAST AFRICA</stored-value>
      </pair>
-     
-	 
+
+
 	 <pair>
        <displayed-value>EUROPE</displayed-value>
        <stored-value>EUROPE</stored-value>
      </pair>
-	 
-	 
-	 <pair>
-       <displayed-value>HORN OF AFRICA</displayed-value>
-       <stored-value>HORN OF AFRICA</stored-value>
-     </pair>
-	 
-	 
+
+
+
+
 	 <pair>
        <displayed-value>LATIN AMERICA</displayed-value>
        <stored-value>LATIN AMERICA</stored-value>
      </pair>
-	 
-	 
-	 
+
+
+
 	 <pair>
        <displayed-value>MIDDLE EAST</displayed-value>
        <stored-value>MIDDLE EAST</stored-value>
      </pair>
-	 
-    	 
+
+
 	 <pair>
        <displayed-value>NORTH AFRICA</displayed-value>
        <stored-value>NORTH AFRICA</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>NORTH AMERICA</displayed-value>
        <stored-value>NORTH AMERICA</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>PACIFIC</displayed-value>
        <stored-value>PACIFIC</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>SOUTH ASIA</displayed-value>
        <stored-value>SOUTH ASIA</stored-value>
@@ -4325,53 +4943,60 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>SOUTHERN AFRICA</displayed-value>
        <stored-value>SOUTHERN AFRICA</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>SOUTH AMERICA</displayed-value>
        <stored-value>SOUTH AMERICA</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>WEST AFRICA</displayed-value>
        <stored-value>WEST AFRICA</stored-value>
      </pair>
-	 	 
+
+	  <pair>
+       <displayed-value>WEST AND CENTRAL AFRICA</displayed-value>
+       <stored-value>WEST AND CENTRAL AFRICA</stored-value>
+     </pair>
+
+
+
    </value-pairs>
     <value-pairs value-pairs-name="countrylist" dc-term="cplace_country">
-			
+
 	 <pair>
        <displayed-value>AFGHANISTAN</displayed-value>
        <stored-value>AFGHANISTAN</stored-value>
      </pair>
-	 
+
 	   <pair>
        <displayed-value>ALBANIA</displayed-value>
        <stored-value>ALBANIA</stored-value>
      </pair>
-	 
-	 		
+
+
 	  <pair>
        <displayed-value>ALGERIA</displayed-value>
        <stored-value>ALGERIA</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>AMERICAN SAMOA</displayed-value>
        <stored-value>AMERICAN SAMOA</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>ANDORRA</displayed-value>
        <stored-value>ANDORRA</stored-value>
      </pair>
-	 
-	 	 		
+
+
 	  <pair>
        <displayed-value>ANGOLA</displayed-value>
        <stored-value>ANGOLA</stored-value>
      </pair>
-	 
-	 
+
+
        <pair>
        <displayed-value>ANGUILLA</displayed-value>
        <stored-value>ANGUILLA</stored-value>
@@ -4389,12 +5014,12 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <stored-value>ANTIGUA AND BARBUDA</stored-value>
      </pair>
 
- 
+
 	  <pair>
        <displayed-value>ARGENTINA</displayed-value>
        <stored-value>ARGENTINA</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>ARMENIA</displayed-value>
        <stored-value>ARMENIA</stored-value>
@@ -4405,573 +5030,573 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <stored-value>ARUBA</stored-value>
      </pair>
 
-		
+
 	  <pair>
        <displayed-value>AUSTRALIA</displayed-value>
        <stored-value>AUSTRALIA</stored-value>
      </pair>
-	 
-	 
-	 		
+
+
+
 	  <pair>
        <displayed-value>AUSTRIA</displayed-value>
        <stored-value>AUSTRIA</stored-value>
      </pair>
-	 
-	 		
+
+
 	  <pair>
        <displayed-value>AZERBAIJAN</displayed-value>
        <stored-value>AZERBAIJAN</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>BAHAMAS</displayed-value>
        <stored-value>BAHAMAS</stored-value>
      </pair>
-	 
-	  		
+
+
 	  <pair>
        <displayed-value>BAHRAIN</displayed-value>
        <stored-value>BAHRAIN</stored-value>
      </pair>
-	 
-	 		
+
+
 	  <pair>
        <displayed-value>BANGLADESH</displayed-value>
        <stored-value>BANGLADESH</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>BARBADOS</displayed-value>
        <stored-value>BARBADOS</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>BELARUS</displayed-value>
        <stored-value>BELARUS</stored-value>
      </pair>
-	 
-	  		
+
+
 	  <pair>
        <displayed-value>BELGIUM</displayed-value>
        <stored-value>BELGIUM</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>BELIZE</displayed-value>
        <stored-value>BELIZE</stored-value>
      </pair>
-	 
-	 		
+
+
 	  <pair>
        <displayed-value>BENIN</displayed-value>
        <stored-value>BENIN</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>BERMUDA</displayed-value>
        <stored-value>BERMUDA</stored-value>
      </pair>
-	 
-	   		
+
+
 	  <pair>
        <displayed-value>BHUTAN</displayed-value>
        <stored-value>BHUTAN</stored-value>
      </pair>
-	 
-	 		
+
+
 	  <pair>
        <displayed-value>BOLIVIA</displayed-value>
        <stored-value>BOLIVIA</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>BOSNIA AND HERZEGOVINA</displayed-value>
        <stored-value>BOSNIA AND HERZEGOVINA</stored-value>
      </pair>
-	 
-	   		
+
+
 	  <pair>
        <displayed-value>BOTSWANA</displayed-value>
        <stored-value>BOTSWANA</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>BOUVET ISLAND</displayed-value>
        <stored-value>BOUVET ISLAND</stored-value>
      </pair>
-	 
-	   		
+
+
 	  <pair>
        <displayed-value>BRAZIL</displayed-value>
        <stored-value>BRAZIL</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>BRUNEI DARUSSALAM</displayed-value>
        <stored-value>BRUNEI DARUSSALAM</stored-value>
      </pair>
-	 
-	   		
+
+
 	  <pair>
        <displayed-value>BULGARIA</displayed-value>
        <stored-value>BULGARIA</stored-value>
      </pair>
-	 
-	 
-	  		
+
+
+
 	  <pair>
        <displayed-value>BURKINA FASO</displayed-value>
        <stored-value>BURKINA FASO</stored-value>
      </pair>
-	 
-	 
-	  		
+
+
+
 	  <pair>
        <displayed-value>BURUNDI</displayed-value>
        <stored-value>BURUNDI</stored-value>
      </pair>
-	 
-	 	 
-	  		
+
+
+
 	  <pair>
        <displayed-value>CAMBODIA</displayed-value>
        <stored-value>CAMBODIA</stored-value>
      </pair>
-	 
-	   		
+
+
 	  <pair>
        <displayed-value>CAMEROON</displayed-value>
        <stored-value>CAMEROON</stored-value>
      </pair>
-	 
-	 
-	  		
+
+
+
 	  <pair>
        <displayed-value>CANADA</displayed-value>
        <stored-value>CANADA</stored-value>
 	  </pair>
-	  
+
 	   <pair>
        <displayed-value>CAPE VERDE</displayed-value>
        <stored-value>CAPE VERDE</stored-value>
      </pair>
-	  
-	 
-	  		
+
+
+
 	  <pair>
        <displayed-value>CENTRAL AFRICAN REPUBLIC</displayed-value>
        <stored-value>CENTRAL AFRICAN REPUBLIC</stored-value>
      </pair>
-	 
-	 
-	  		
+
+
+
 	  <pair>
        <displayed-value>CHAD</displayed-value>
        <stored-value>CHAD</stored-value>
      </pair>
-	 
-	  		
+
+
 	  <pair>
        <displayed-value>CHILE</displayed-value>
        <stored-value>CHILE</stored-value>
      </pair>
-	  		
+
 	  <pair>
        <displayed-value>CHINA</displayed-value>
        <stored-value>CHINA</stored-value>
      </pair>
-	  		
+
 	  <pair>
        <displayed-value>COLOMBIA</displayed-value>
        <stored-value>COLOMBIA</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>COMOROS</displayed-value>
        <stored-value>COMOROS</stored-value>
      </pair>
-	 
-	 	
+
+
 	  <pair>
        <displayed-value>CONGO</displayed-value>
        <stored-value>CONGO</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>CONGO,DR</displayed-value>
        <stored-value>CONGO,DR</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>COOK ISLANDS</displayed-value>
        <stored-value>COOK ISLANDS</stored-value>
      </pair>
-	 
-	  
+
+
 	  <pair>
        <displayed-value>COSTA RICA</displayed-value>
        <stored-value>COSTA RICA</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>COTE D'IVOIRE</displayed-value>
        <stored-value>COTE D'IVOIRE</stored-value>
      </pair>
-	 
-	  		
+
+
 	  <pair>
        <displayed-value>CROATIA</displayed-value>
        <stored-value>CROATIA</stored-value>
      </pair>
-	 
-	  		
+
+
 	  <pair>
        <displayed-value>CUBA</displayed-value>
        <stored-value>CUBA</stored-value>
      </pair>
-	 
-	  		
+
+
 	  <pair>
        <displayed-value>CYPRUS</displayed-value>
        <stored-value>CYPRUS</stored-value>
      </pair>
-	 
-	  		
+
+
 	  <pair>
        <displayed-value>CZECH REPUBLIC</displayed-value>
        <stored-value>CZECH REPUBLIC</stored-value>
      </pair>
-	 
-	  		
+
+
 	  <pair>
        <displayed-value>DENMARK</displayed-value>
        <stored-value>DENMARK</stored-value>
      </pair>
-	 
-	  		
+
+
 	  <pair>
        <displayed-value>DJIBOUTI</displayed-value>
        <stored-value>DJIBOUTI</stored-value>
      </pair>
-	 
-	  		
+
+
 	  <pair>
        <displayed-value>DOMINICA</displayed-value>
        <stored-value>DOMINICA</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>DOMINICAN REPUBLIC</displayed-value>
        <stored-value>DOMINICAN REPUBLIC</stored-value>
      </pair>
-	 
-	 	  	
+
+
 	  <pair>
        <displayed-value>ECUADOR</displayed-value>
        <stored-value>ECUADOR</stored-value>
      </pair>
-	 
-	 
-	  		
+
+
+
 	  <pair>
        <displayed-value>EGYPT</displayed-value>
        <stored-value>EGYPT</stored-value>
      </pair>
-	 
-	 
-	 
-	  		
+
+
+
+
 	  <pair>
        <displayed-value>EL SALVADOR</displayed-value>
        <stored-value>EL SALVADOR</stored-value>
      </pair>
-	 
-	  		
+
+
 	  <pair>
        <displayed-value>EQUATORIAL GUINEA</displayed-value>
        <stored-value>EQUATORIAL GUINEA</stored-value>
      </pair>
-	 
-	   		
+
+
 	  <pair>
        <displayed-value>ERITREA</displayed-value>
        <stored-value>ERITREA</stored-value>
      </pair>
-	   		
+
 	  <pair>
        <displayed-value>ESTONIA</displayed-value>
        <stored-value>ESTONIA</stored-value>
      </pair>
-	   		
+
 	  <pair>
        <displayed-value>ETHIOPIA</displayed-value>
        <stored-value>ETHIOPIA</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>FIJI</displayed-value>
        <stored-value>FIJI</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>FINLAND</displayed-value>
        <stored-value>FINLAND</stored-value>
      </pair>
-	   		
+
 	  <pair>
        <displayed-value>FRANCE</displayed-value>
        <stored-value>FRANCE</stored-value>
      </pair>
-	   		
+
 	  <pair>
        <displayed-value>GABON</displayed-value>
        <stored-value>GABON</stored-value>
      </pair>
-	   		
+
 	  <pair>
        <displayed-value>GAMBIA</displayed-value>
        <stored-value>GAMBIA</stored-value>
      </pair>
-	   		
+
 	  <pair>
        <displayed-value>GEORGIA</displayed-value>
        <stored-value>GEORGIA</stored-value>
      </pair>
-	   		
+
 	  <pair>
        <displayed-value>GERMANY</displayed-value>
        <stored-value>GERMANY</stored-value>
      </pair>
-	   		
+
 	  <pair>
        <displayed-value>GHANA</displayed-value>
        <stored-value>GHANA</stored-value>
      </pair>
-	   		
+
 	  <pair>
        <displayed-value>GREECE</displayed-value>
        <stored-value>GREECE</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>GRENADA</displayed-value>
        <stored-value>GRENADA</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>GUADELOUPE</displayed-value>
        <stored-value>GUADELOUPE</stored-value>
      </pair>
-	 
-	 	
+
+
 	  <pair>
        <displayed-value>GUATEMALA</displayed-value>
        <stored-value>GUATEMALA</stored-value>
      </pair>
-	   		
+
 	  <pair>
        <displayed-value>GUINEA</displayed-value>
        <stored-value>GUINEA</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>GUINEA-BISSAU</displayed-value>
        <stored-value>GUINEA-BISSAU</stored-value>
      </pair>
-	 
-	 
+
+
 	 <pair>
        <displayed-value>GUYANA</displayed-value>
        <stored-value>GUYANA</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>HAITI</displayed-value>
        <stored-value>HAITI</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>HONDURAS</displayed-value>
        <stored-value>HONDURAS</stored-value>
      </pair>
-	   		
+
 	  <pair>
        <displayed-value>HUNGARY</displayed-value>
        <stored-value>HUNGARY</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>ICELAND</displayed-value>
        <stored-value>ICELAND</stored-value>
      </pair>
-	 	   		
+
 	  <pair>
        <displayed-value>INDIA</displayed-value>
        <stored-value>INDIA</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>INDONESIA</displayed-value>
        <stored-value>INDONESIA</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>IRAN</displayed-value>
        <stored-value>IRAN</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>IRAQ</displayed-value>
        <stored-value>IRAQ</stored-value>
      </pair>
-	 
+
 	   <pair>
        <displayed-value>IRELAND</displayed-value>
        <stored-value>IRELAND</stored-value>
      </pair>
-	 
+
 	   <pair>
        <displayed-value>ISRAEL</displayed-value>
        <stored-value>ISRAEL</stored-value>
      </pair>
-	 
+
 	   <pair>
        <displayed-value>ITALY</displayed-value>
        <stored-value>ITALY</stored-value>
      </pair>
-	
-	 
+
+
 	   <pair>
        <displayed-value>JAMAICA</displayed-value>
        <stored-value>JAMAICA</stored-value>
      </pair>
-	 
+
 	   <pair>
        <displayed-value>JAPAN</displayed-value>
        <stored-value>JAPAN</stored-value>
      </pair>
-	 
-	 
+
+
 	   <pair>
        <displayed-value>JORDAN</displayed-value>
        <stored-value>JORDAN</stored-value>
      </pair>
-	 
-	 
+
+
 	   <pair>
        <displayed-value>KAZAKHSTAN</displayed-value>
        <stored-value>KAZAKHSTAN</stored-value>
      </pair>
-	 
-	 
+
+
 	   <pair>
        <displayed-value>KENYA</displayed-value>
        <stored-value>KENYA</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>KIRIBATI</displayed-value>
        <stored-value>KIRIBATI</stored-value>
      </pair>
-	 
-	  
+
+
 	   <pair>
        <displayed-value>KOREA, DPR</displayed-value>
        <stored-value>KOREA,DPR</stored-value>
        </pair>
-	 
-	 
+
+
 	   <pair>
        <displayed-value>KOREA, REPUBLIC </displayed-value>
        <stored-value>KOREA, REPUBLIC </stored-value>
      </pair>
-	 
-	 
-	 
+
+
+
 	   <pair>
        <displayed-value>KUWAIT</displayed-value>
        <stored-value>KUWAIT</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value> KYRGYZSTAN</displayed-value>
        <stored-value> KYRGYZSTAN</stored-value>
      </pair>
-	 
-	
+
+
 	   <pair>
        <displayed-value>LAOS</displayed-value>
        <stored-value>LAOS</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>LATVIA</displayed-value>
        <stored-value>LATVIA</stored-value>
       </pair>
-	 
-	 
-	 
+
+
+
 	   <pair>
        <displayed-value>LEBANON</displayed-value>
        <stored-value>LEBANON</stored-value>
      </pair>
-	 
-	 
+
+
 	   <pair>
        <displayed-value>LESOTHO</displayed-value>
        <stored-value>LESOTHO</stored-value>
      </pair>
-	 
-	 
+
+
 	   <pair>
        <displayed-value>LIBERIA</displayed-value>
        <stored-value>LIBERIA</stored-value>
      </pair>
-	 
-	 
+
+
 	   <pair>
        <displayed-value>LIBYA</displayed-value>
        <stored-value>LIBYA</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>LITHUANIA</displayed-value>
        <stored-value>LITHUANIA</stored-value>
      </pair>
-	 	 
+
 	   <pair>
        <displayed-value>LUXEMBOURG</displayed-value>
        <stored-value>LUXEMBOURG</stored-value>
      </pair>
-	 
-	 
+
+
 	 <pair>
        <displayed-value>MACEDONIA</displayed-value>
        <stored-value>MACEDONIA</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>MADAGASCAR</displayed-value>
        <stored-value>MADAGASCAR</stored-value>
      </pair>
-	 
-	 
+
+
 	   <pair>
        <displayed-value>MALAWI</displayed-value>
        <stored-value>MALAWI</stored-value>
      </pair>
-	 
-	 
-	 
+
+
+
 	   <pair>
        <displayed-value>MALAYSIA</displayed-value>
        <stored-value>MALAYSIA</stored-value>
@@ -4980,9 +5605,9 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>MALDIVES</displayed-value>
        <stored-value>MALDIVES</stored-value>
      </pair>
-	 
-	  
-	 
+
+
+
 	   <pair>
        <displayed-value>MALI</displayed-value>
        <stored-value>MALI</stored-value>
@@ -4991,94 +5616,94 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>MALTA</displayed-value>
        <stored-value>MALTA</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>MAURITANIA</displayed-value>
        <stored-value>MAURITANIA</stored-value>
      </pair>
-	 
-	 
-	 
+
+
+
 	   <pair>
        <displayed-value>MAURITIUS</displayed-value>
        <stored-value>MAURITIUS</stored-value>
      </pair>
-	 
-	 
-	 
+
+
+
 	   <pair>
        <displayed-value>MEXICO</displayed-value>
        <stored-value>MEXICO</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>MOLDOVA</displayed-value>
        <stored-value>MOLDOVA</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>MONGOLIA</displayed-value>
        <stored-value>MONGOLIA</stored-value>
      </pair>
-	 
-	 
+
+
 	 <pair>
        <displayed-value>MONTENEGRO</displayed-value>
        <stored-value>MONTENEGRO</stored-value>
      </pair>
-	 
-	
-	 
+
+
+
 	   <pair>
        <displayed-value>MOROCCO</displayed-value>
        <stored-value>MOROCCO</stored-value>
      </pair>
-	 
-	 
-	 
+
+
+
 	   <pair>
        <displayed-value>MOZAMBIQUE</displayed-value>
        <stored-value>MOZAMBIQUE</stored-value>
      </pair>
-	 
-	 
+
+
 	   <pair>
        <displayed-value>MYANMAR</displayed-value>
        <stored-value>MYANMAR</stored-value>
      </pair>
-	 
-	 
+
+
 	   <pair>
        <displayed-value>NAMIBIA</displayed-value>
        <stored-value>NAMIBIA</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>NEPAL</displayed-value>
        <stored-value>NEPAL</stored-value>
      </pair>
-	 
-	 
+
+
 	   <pair>
        <displayed-value>NETHERLANDS</displayed-value>
        <stored-value>NETHERLANDS</stored-value>
      </pair>
-	 
-	 
-	 
+
+
+
 	   <pair>
        <displayed-value>NEW ZEALAND</displayed-value>
        <stored-value>NEW ZEALAND</stored-value>
      </pair>
-	 
-	 
+
+
 	   <pair>
        <displayed-value>NICARAGUA</displayed-value>
        <stored-value>NICARAGUA</stored-value>
      </pair>
-	 
-	 
-	 
+
+
+
 	   <pair>
        <displayed-value>NIGER</displayed-value>
        <stored-value>NIGER</stored-value>
@@ -5095,435 +5720,576 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>OMAN</displayed-value>
        <stored-value>OMAN</stored-value>
      </pair>
-	 
-	 
+
+
 	   <pair>
        <displayed-value>PAKISTAN</displayed-value>
        <stored-value>PAKISTAN</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>PANAMA</displayed-value>
        <stored-value>PANAMA</stored-value>
      </pair>
-	 
+
 	   <pair>
        <displayed-value>PAPUA NEW GUINEA</displayed-value>
        <stored-value>PAPUA NEW GUINEA</stored-value>
       </pair>
-	  
+
 	   <pair>
        <displayed-value>PARAGUAY</displayed-value>
        <stored-value>PARAGUAY</stored-value>
      </pair>
-	 
-	 
+
+
 	   <pair>
        <displayed-value>PERU</displayed-value>
        <stored-value>PERU</stored-value>
      </pair>
-	 
+
 	   <pair>
        <displayed-value>PHILIPPINES</displayed-value>
        <stored-value>PHILIPPINES</stored-value>
      </pair>
-	 
-	 
-	 
+
+
+
 	   <pair>
        <displayed-value>POLAND</displayed-value>
        <stored-value>POLAND</stored-value>
      </pair>
-	 
-	 
+
+
 	   <pair>
        <displayed-value>PORTUGAL</displayed-value>
        <stored-value>PORTUGAL</stored-value>
      </pair>
-	 
+
 	   <pair>
        <displayed-value>QATAR</displayed-value>
        <stored-value>QATAR</stored-value>
      </pair>
-	 
-	 
-	 
-	 
+
+
+
+
 	   <pair>
        <displayed-value>ROMANIA</displayed-value>
        <stored-value>ROMANIA</stored-value>
      </pair>
-	 
-	 
+
+
 	   <pair>
        <displayed-value>RUSSIA</displayed-value>
        <stored-value>RUSSIA</stored-value>
      </pair>
-	 
-	  
+
+
 	   <pair>
        <displayed-value>RWANDA</displayed-value>
        <stored-value>RWANDA</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>SAINT KITTS AND NEVIS</displayed-value>
        <stored-value>SAINT KITTS AND NEVIS</stored-value>
      </pair>
-	 
-	 
+
+
 	 <pair>
        <displayed-value>SAINT LUCIA</displayed-value>
        <stored-value>SAINT LUCIA</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>SAMOA</displayed-value>
        <stored-value>SAMOA</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>SAO TOME AND PRINCIPE</displayed-value>
        <stored-value>SAO TOME AND PRINCIPE</stored-value>
      </pair>
-	
+
 
 
 	   <pair>
        <displayed-value>SAUDI ARABIA</displayed-value>
        <stored-value>SAUDI ARABIA</stored-value>
      </pair>
-	 
-	  
+
+
 	   <pair>
        <displayed-value>SENEGAL</displayed-value>
        <stored-value>SENEGAL</stored-value>
      </pair>
-	 
-	  
+
+
 	   <pair>
        <displayed-value>SERBIA</displayed-value>
        <stored-value>SERBIA</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>SEYCHELLES</displayed-value>
        <stored-value>SEYCHELLES</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>SIERRA LEONE</displayed-value>
        <stored-value>SIERRA LEONE</stored-value>
      </pair>
-	 
-	 
-	 
-	  
+
+
+
+
 	   <pair>
        <displayed-value>SINGAPORE</displayed-value>
        <stored-value>SINGAPORE</stored-value>
      </pair>
-	 
-	  
+
+
 	   <pair>
        <displayed-value>SLOVAKIA</displayed-value>
        <stored-value>SLOVAKIA</stored-value>
      </pair>
-	 
-	  
+
+
 	   <pair>
        <displayed-value>SLOVENIA</displayed-value>
        <stored-value>SLOVENIA</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>SOLOMON ISLANDS</displayed-value>
        <stored-value>SOLOMON ISLANDS</stored-value>
      </pair>
-	 
+
 	   <pair>
        <displayed-value>SOMALIA</displayed-value>
        <stored-value>SOMALIA</stored-value>
      </pair>
-	 
-	 
-	  
+
+
+
 	   <pair>
        <displayed-value>SOUTH AFRICA</displayed-value>
        <stored-value>SOUTH AFRICA</stored-value>
      </pair>
-	   
+
+
+	  <pair>
+       <displayed-value>SOUTH SUDAN</displayed-value>
+       <stored-value>SOUTH SUDAN</stored-value>
+     </pair>
+
+
 	   <pair>
        <displayed-value>SPAIN</displayed-value>
        <stored-value>SPAIN</stored-value>
      </pair>
-	 
-	   
+
+
 	   <pair>
        <displayed-value>SRI LANKA</displayed-value>
        <stored-value>SRI LANKA</stored-value>
      </pair>
-	 
-	 
-	   
+
+
+
 	   <pair>
        <displayed-value>SUDAN</displayed-value>
        <stored-value>SUDAN</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>SURINAME</displayed-value>
        <stored-value>SURINAME</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>SWAZILAND</displayed-value>
        <stored-value>SWAZILAND</stored-value>
      </pair>
-	 
-	   
+
+
 	   <pair>
        <displayed-value>SWEDEN</displayed-value>
        <stored-value>SWEDEN</stored-value>
      </pair>
-	 
-	   
+
+
 	   <pair>
        <displayed-value>SWITZERLAND</displayed-value>
        <stored-value>SWITZERLAND</stored-value>
      </pair>
-	 
-	   
+
+
 	   <pair>
        <displayed-value>SYRIA</displayed-value>
        <stored-value>SYRIA</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>TAIWAN</displayed-value>
        <stored-value>TAIWAN</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>TAJIKISTAN </displayed-value>
        <stored-value>TAJIKISTAN </stored-value>
      </pair>
-	 
-	
+
+
 	   <pair>
        <displayed-value>TANZANIA</displayed-value>
        <stored-value>TANZANIA</stored-value>
      </pair>
-	 
-	   
+
+
 	   <pair>
        <displayed-value>THAILAND</displayed-value>
        <stored-value>THAILAND</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>TIMOR-LESTE</displayed-value>
        <stored-value> TIMOR-LESTE</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>TOGO</displayed-value>
        <stored-value>TOGO</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>TOKELAU</displayed-value>
        <stored-value>TOKELAU</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>TONGA</displayed-value>
        <stored-value>TONGA</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>TRINIDAD AND TOBAGO </displayed-value>
        <stored-value>TRINIDAD AND TOBAGO </stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>TUNISIA</displayed-value>
        <stored-value>TUNISIA</stored-value>
      </pair>
-	 
-	 
-	   
+
+
+
 	   <pair>
        <displayed-value>TURKEY</displayed-value>
        <stored-value>TURKEY</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>TURKMENISTAN</displayed-value>
        <stored-value>TURKMENISTAN</stored-value>
      </pair>
-	 
-	  
+
+
 	   <pair>
        <displayed-value>UGANDA</displayed-value>
        <stored-value>UGANDA</stored-value>
      </pair>
-	 
-	 
-	   
+
+
+
 	   <pair>
        <displayed-value>UKRAINE</displayed-value>
        <stored-value>UKRAINE</stored-value>
      </pair>
-	 
-	 
-	   
+
+
+
 	   <pair>
        <displayed-value>UNITED ARAB EMIRATES</displayed-value>
        <stored-value>UNITED ARAB EMIRATES</stored-value>
      </pair>
-	 
-	 
-	 
-	   
+
+
+
+
 	   <pair>
        <displayed-value>UNITED KINGDOM</displayed-value>
        <stored-value>UNITED KINGDOM</stored-value>
      </pair>
-	 
-	 
-	   
+
+
+
 	   <pair>
        <displayed-value>UNITED STATES</displayed-value>
        <stored-value>UNITED STATES</stored-value>
      </pair>
-	 
-	 
-	   
+
+
+
 	   <pair>
        <displayed-value>URUGUAY</displayed-value>
        <stored-value>URUGUAY</stored-value>
      </pair>
-	 
-	 
-	   
+
+
+
 	   <pair>
        <displayed-value>UZBEKISTAN</displayed-value>
        <stored-value>UZBEKISTAN</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>VANUATU</displayed-value>
        <stored-value>VANUATU</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>VATICAN CITY STATE</displayed-value>
        <stored-value>VATICAN CITY STATE</stored-value>
      </pair>
-	 
-	   
+
+
 	   <pair>
        <displayed-value>VENEZUELA</displayed-value>
        <stored-value>VENEZUELA</stored-value>
      </pair>
-	 
 
-	   
+
+
 	   <pair>
        <displayed-value>VIETNAM</displayed-value>
        <stored-value>VIETNAM</stored-value>
      </pair>
-	 
-	 
-	    
+
+
+
 	   <pair>
        <displayed-value>YEMEN</displayed-value>
        <stored-value>YEMEN</stored-value>
      </pair>
-	    
+
 	   <pair>
        <displayed-value>ZAMBIA</displayed-value>
        <stored-value>ZAMBIA</stored-value>
      </pair>
-	 
-	    
+
+
 	   <pair>
        <displayed-value>ZIMBABWE</displayed-value>
        <stored-value>ZIMBABWE</stored-value>
      </pair>
-	 
-	 
-	 
-   
+
+
+
+
    </value-pairs>
-   
+
    <value-pairs value-pairs-name="riverbasin" dc-term="river_basin">
-			
-	 <pair>
+
+
+     <pair>
+       <displayed-value>AMAZON</displayed-value>
+       <stored-value>AMAZON</stored-value>
+     </pair>
+
+	<pair>
        <displayed-value>ANDES</displayed-value>
        <stored-value>ANDES</stored-value>
      </pair>
-	 
+
+
 	  <pair>
        <displayed-value>GANGES</displayed-value>
        <stored-value>GANGES</stored-value>
      </pair>
-	 
-	 
+
+
      <pair>
        <displayed-value>INDUS</displayed-value>
        <stored-value>INDUS</stored-value>
      </pair>
-	 
-	 
-	 
+
+
+
 	  <pair>
        <displayed-value>KAREKH</displayed-value>
        <stored-value>KAREKH</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>LIMPOPO</displayed-value>
        <stored-value>LIMPOPO</stored-value>
      </pair>
-	 
-	 	 
+
+
 	  <pair>
        <displayed-value>MEKONG</displayed-value>
        <stored-value>MEKONG</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>NIGER</displayed-value>
        <stored-value>NIGER</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>NILE</displayed-value>
        <stored-value>NILE</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>SAO FRANCISCO</displayed-value>
        <stored-value>SAO FRANCISCO</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>VOLTA</displayed-value>
        <stored-value>VOLTA</stored-value>
      </pair>
-	 	 
+
 		<pair>
        <displayed-value>YELLOW</displayed-value>
        <stored-value>YELLOW</stored-value>
      </pair>
-	 	  
-		 
-		 
+
    </value-pairs>
-   
+
+    <value-pairs value-pairs-name="ISI_Journal" dc-term="isijournal">
+
+
+     <pair>
+       <displayed-value>N/A</displayed-value>
+       <stored-value></stored-value>
+     </pair>
+
+
+	 <pair>
+       <displayed-value>ISI Journal</displayed-value>
+       <stored-value>ISI Journal</stored-value>
+     </pair>
+
+	 </value-pairs>
+
+
+	 <value-pairs value-pairs-name="GREY_LITERATURE" dc-term="fulltextstatus">
+
+
+     <pair>
+       <displayed-value>N/A</displayed-value>
+       <stored-value></stored-value>
+     </pair>
+
+
+	 <pair>
+       <displayed-value>Grey Literature</displayed-value>
+       <stored-value>Grey Literature</stored-value>
+     </pair>
+
+     <pair>
+       <displayed-value>Formally Published</displayed-value>
+       <stored-value>Formally Published</stored-value>
+     </pair>
+
+	 </value-pairs>
+
+	<value-pairs value-pairs-name="TARGET_AUDIENCE" dc-term="targetaudience">
+
+
+	   <pair>
+       <displayed-value>ACADEMICS</displayed-value>
+       <stored-value>ACADEMICS</stored-value>
+       </pair>
+
+
+	 <pair>
+       <displayed-value>CGIAR</displayed-value>
+       <stored-value>CGIAR</stored-value>
+     </pair>
+
+	 <pair>
+       <displayed-value>DEVELOPMENT PRACTITIONERS</displayed-value>
+       <stored-value>DEVELOPMENT PRACTITIONERS</stored-value>
+      </pair>
+
+	   <pair>
+       <displayed-value>DONORS</displayed-value>
+       <stored-value>DONORS</stored-value>
+     </pair>
+
+	 <pair>
+       <displayed-value>EXTENSION</displayed-value>
+       <stored-value>EXTENSION</stored-value>
+     </pair>
+
+	  <pair>
+       <displayed-value>FARMERS</displayed-value>
+       <stored-value>FARMERS</stored-value>
+     </pair>
+
+
+	 <pair>
+       <displayed-value>NGOS</displayed-value>
+       <stored-value>NGOS</stored-value>
+     </pair>
+
+	  <pair>
+       <displayed-value>POLICY MAKERS</displayed-value>
+       <stored-value>POLICY MAKERS</stored-value>
+     </pair>
+
+	   <pair>
+       <displayed-value>GENERAL PUBLIC</displayed-value>
+       <stored-value>GENERAL PUBLIC</stored-value>
+     </pair>
+
+
+	  <pair>
+	  <displayed-value>SCIENTISTS</displayed-value>
+       <stored-value>SCIENTISTS</stored-value>
+      </pair>
+
+	 </value-pairs>
+	 <value-pairs value-pairs-name="ICRAF_GRP" dc-term="GRP">
+
+	 <pair>
+       <displayed-value>ICRAF AGROFORESTRY GERMPLASM</displayed-value>
+       <stored-value>ICRAF AGROFORESTRY GERMPLASM</stored-value>
+     </pair>
+
+	  <pair>
+       <displayed-value>ICRAF CLIMATE CHANGE</displayed-value>
+       <stored-value>ICRAF CLIMATE CHANGE</stored-value>
+     </pair>
+
+	  <pair>
+       <displayed-value>ICRAF ENVIRONMENTAL SERVICES</displayed-value>
+       <stored-value>ICRAF ENVIRONMENTAL SERVICES</stored-value>
+     </pair>
+
+	  <pair>
+       <displayed-value>ICRAF LAND PRODUCTIVITY AND FOOD</displayed-value>
+       <stored-value>ICRAF LAND PRODUCTIVITY AND FOOD</stored-value>
+     </pair>
+	  <pair>
+       <displayed-value>ICRAF ONFARM PRODUCTIVITY</displayed-value>
+       <stored-value>ICRAF ONFARM PRODUCTIVITY</stored-value>
+     </pair>
+
+	  <pair>
+       <displayed-value>ICRAF TREE PRODUCT MARKETING </displayed-value>
+       <stored-value>ICRAF TREE PRODUCT MARKETING </stored-value>
+     </pair>
+
+	 </value-pairs>
+
+
 
     </form-value-pairs>
 
