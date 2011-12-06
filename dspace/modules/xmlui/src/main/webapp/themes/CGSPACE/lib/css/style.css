@@ -335,7 +335,8 @@ ol {
 th,
 td {
     padding: 5px;
-    vertical-align: middle;
+    vertical-align: top;
+    margin-left: 15px;
 }
 
 .ds-button-field,
@@ -519,7 +520,8 @@ input.ds-password-field.error {
 
 
 .ds-form-list {
-    margin-top: 15px;
+   margin-left: 15px;   
+   margin-top: 15px;
 }
 
 .submission h2,
@@ -752,28 +754,44 @@ span.field-help {
 .ds-artifact-item {
     padding-top: 15px;
     padding-bottom: 15px;
-}
+ }
 
-.ds-artifact-item.collection,
+.ds-artifact-item.collection
+{
+   padding-top: 1px;
+   Padding-bottom: 5px;
+   margin-left: 15px;
+   font-size: 9px;
+  
+}
 .ds-artifact-item.community {
     padding-top: 1px;
     padding-bottom: 1px;
+    font-size: 9px;
+  
 }
 
 .community .artifact-title a {
     font-weight: normal;
-   }
+    color: #000000;
+    font-size: 12px;
+}
 
 .collection .artifact-title a {
     font-weight: normal;
-    }
+    color: #3da74b; /*660000;*/
+    font-size: 12px;
+    margin-left: 5px;    
+}
 
 #aspect_artifactbrowser_CommunityBrowser_div_comunity-browser
 {
-color: #000000
+color: #000000;
 }
+
 .short-description{
 display: none;
+
 }
 
 #aspect_discovery_SiteRecentSubmissions_div_site-home .short-description {
