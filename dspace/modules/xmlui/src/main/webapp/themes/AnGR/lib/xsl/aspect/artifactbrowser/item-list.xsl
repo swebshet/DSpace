@@ -75,7 +75,7 @@
     <!--handles the rendering of a single item in a list in file mode-->
     <xsl:template match="dim:dim" mode="itemSummaryList-DIM-file">
         <xsl:param name="href"/>
-        <xsl:variable name="metadataWidth" select="675 - $thumbnail.maxwidth - 30"/>
+        <xsl:variable name="metadataWidth" select="675 - $thumbnail.maxwidth - 94"/>
         <div class="item-metadata" style="width: {$metadataWidth}px;">
             <span class="bold"><i18n:text>xmlui.dri2xhtml.pioneer.title</i18n:text><xsl:text>:</xsl:text></span>
             <span class="content" style="width: {$metadataWidth - 110}px;">
@@ -142,6 +142,23 @@
                 <span class="content" style="width: {$metadataWidth - 110}px;">
                     <xsl:value-of
                             select="substring(dim:field[@element='date' and @qualifier='issued']/node(),1,10)"/>
+                </span>
+            </xsl:if>
+		 <!--Additional  browse by filed by ILRI/CGSPACE ADMINISTRATOR-->
+
+	    <xsl:if test="dim:field[@element='type']">
+                <span class="bold"><i18n:text>Type</i18n:text><xsl:text>:</xsl:text></span>
+                <span class="content" style="width: {$metadataWidth - 110}px;">
+                    <xsl:value-of
+                            select="substring(dim:field[@element='type']/node(),1,30)"/>
+                </span>
+            </xsl:if>
+
+			<xsl:if test="dim:field[@element='identifier' and @qualifier='status'] or dim:field[@element='identifier']">
+                <span class="bold"><i18n:text>Status</i18n:text><xsl:text>:</xsl:text></span>
+                <span class="content" style="width: {$metadataWidth - 110}px;">
+                    <xsl:value-of
+                            select="substring(dim:field[@element='identifier' and @qualifier='status']/node(),1,30)"/>
                 </span>
             </xsl:if>
         </div>
@@ -254,7 +271,7 @@
                             </img>
                         </xsl:when>
                         <xsl:otherwise>
-                            <img alt="Icon" src="{concat($theme-path, '/images/mime.png')}" style="height: {$thumbnail.maxheight}px;"/>
+                            <img alt="Icon" src="{concat($theme-path, '/images/mime.png')}" style="height: {$thumbnail.maxheight -78 }px;"/>
                         </xsl:otherwise>
                     </xsl:choose>
                 </a>
