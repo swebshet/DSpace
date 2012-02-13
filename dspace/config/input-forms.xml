@@ -171,6 +171,7 @@
    <name-map collection-handle="10568/5468" form-name="CCAFS"/>
  </form-map>
 
+ <!--CIFOR submssion form SINCE JAN 2012-->
 
  <!-- The form-definitions map lays out the detailed definition of all the -->
  <!-- submission forms.Each separate form set has a unique name as an      -->
@@ -587,6 +588,16 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <required></required>
          </field>
 
+         <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>cisubject</dc-element>
+         <dc-qualifier>ciforsubject</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>CIFOR Subject Focus</label>
+         <input-type value-pairs-name="ciforsubject">dropdown</input-type>
+         <hint></hint>
+         <required></required>
+         </field>
 
         <field>
 		 <dc-schema>dc</dc-schema>
@@ -2596,7 +2607,16 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <required></required>
        </field>
 
-
+        <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>dataurl</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>URL for datafile</label>
+         <input-type>onebox</input-type>
+         <hint>Enter URL for datafile.</hint>
+         <required></required>
+       </field>
 
 	    <field>
 		 <dc-schema>dc</dc-schema>
@@ -4315,6 +4335,23 @@ it, please enter the types and the actual numbers or codes below.</hint>
 
  </value-pairs>
 
+  <value-pairs value-pairs-name="ciforsubject" dc-term="cisubject_ciforsubject">
+     <pair>
+       <displayed-value>FOREST MANAGEMENT</displayed-value>
+       <stored-value>FOREST MANAGEMENT</stored-value>
+     </pair>
+
+	  <pair>
+       <displayed-value>FOREST GOVERNANCE </displayed-value>
+       <stored-value>FOREST GOVERNANCE</stored-value>
+     </pair>
+
+	  <pair>
+       <displayed-value>PLANTATIONS AND REHABILITATION</displayed-value>
+       <stored-value>PLANTATIONS AND REHABILITATION</stored-value>
+     </pair>
+
+ </value-pairs>
 
  <value-pairs value-pairs-name="crpsubject" dc-term="crsubject_crpsubject">
 

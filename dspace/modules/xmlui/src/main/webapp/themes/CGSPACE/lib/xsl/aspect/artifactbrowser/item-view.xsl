@@ -921,9 +921,33 @@
               </xsl:call-template>
           </xsl:when>
 	
+	<!-- CIFOR Subject row -->
+	<xsl:when test="$clause = 30 and (dim:field[@element='cisubject' and @qualifier='ciforsubject'])">
+		<tr class="ds-table-row {$phase}">
+			<td><span class="bold"><i18n:text>CIFOR Subject Focus</i18n:text>:</span></td>
+			<td>
+				<xsl:if test="count(dim:field[@element='cisubject' and @qualifier='ciforsubject']) &gt; 1">
+					<hr class="metadata-seperator"/>
+				</xsl:if>
+				<xsl:for-each select="dim:field[@element='cisubject' and @qualifier='ciforsubject']">
+					<xsl:copy-of select="./node()"/>
+					<xsl:if test="count(following-sibling::dim:field[@element='cisubject' and @qualifier='ciforsubject']) != 0">
+						<hr class="metadata-seperator"/>
+					</xsl:if>
+				</xsl:for-each>
+				<xsl:if test="count(dim:field[@element='cisubject' and @qualifier='ciforsubject']) &gt; 1">
+					<hr class="metadata-seperator"/>
+				</xsl:if>
+			</td>
+		</tr>
+		<xsl:call-template name="itemSummaryView-DIM-fields">
+			<xsl:with-param name="clause" select="($clause + 1)"/>
+			<xsl:with-param name="phase" select="$otherPhase"/>
+		</xsl:call-template>
+	</xsl:when>
 
 	  <!--  PROJECT SPONSOR row -->   
-		  <xsl:when test="$clause = 30 and (dim:field[@element='description' and @qualifier='sponsorship'])">
+		  <xsl:when test="$clause = 31 and (dim:field[@element='description' and @qualifier='sponsorship'])">
                     <tr class="ds-table-row {$phase}">
 	                <td><span class="bold"><i18n:text>Project Sponsor</i18n:text>:</span></td>
 	                <td>
@@ -949,7 +973,7 @@
 
 	
 		<!-- Fund row --> 
-		<xsl:when test="$clause = 31 and (dim:field[@element='identifier' and @qualifier='fund'])">
+		<xsl:when test="$clause = 32 and (dim:field[@element='identifier' and @qualifier='fund'])">
                     <tr class="ds-table-row {$phase}">
 	                <td><span class="bold"><i18n:text>Sponsor Project Number</i18n:text>:</span></td>
 	                <td>
@@ -975,7 +999,7 @@
 		<!-- After ICRAF FIELDS HAS BEEN ADDED -->
 		    
 	     <!-- ISI Journal -->
-		  <xsl:when test="$clause = 32 and (dim:field[@element='isijournal' and not(@qualifier)])">
+		  <xsl:when test="$clause = 33 and (dim:field[@element='isijournal' and not(@qualifier)])">
                     <tr class="ds-table-row {$phase}">
 	                <td><span class="bold"><i18n:text>ISI Journal</i18n:text>:</span></td>
 	                <td>
@@ -1000,7 +1024,7 @@
           </xsl:when>
 	
 		<!-- GREY LITERATURE -->
-		  <xsl:when test="$clause = 33 and (dim:field[@element='fulltextstatus' and not(@qualifier)])">
+		  <xsl:when test="$clause = 34 and (dim:field[@element='fulltextstatus' and not(@qualifier)])">
                     <tr class="ds-table-row {$phase}">
 	                <td><span class="bold"><i18n:text>Grey Literature</i18n:text>:</span></td>
 	                <td>
@@ -1025,7 +1049,7 @@
           </xsl:when>
 		  
 		  <!-- TARGET AUDIENCE -->
-		  <xsl:when test="$clause = 34 and (dim:field[@element='targetaudience' and not(@qualifier)])">
+		  <xsl:when test="$clause = 35 and (dim:field[@element='targetaudience' and not(@qualifier)])">
                     <tr class="ds-table-row {$phase}">
 	                <td><span class="bold"><i18n:text>Target Audience</i18n:text>:</span></td>
 	                <td>
@@ -1051,7 +1075,7 @@
 		  
 		  
 		  <!-- EDITION -->
-		  <xsl:when test="$clause = 35 and (dim:field[@element='editon' and not(@qualifier)])">
+		  <xsl:when test="$clause = 36 and (dim:field[@element='editon' and not(@qualifier)])">
                     <tr class="ds-table-row {$phase}">
 	                <td><span class="bold"><i18n:text>Edition</i18n:text>:</span></td>
 	                <td>
@@ -1077,7 +1101,7 @@
 		  
 		  
 		  <!-- PUBLICATION PLACE -->
-		  <xsl:when test="$clause = 36 and (dim:field[@element='place' and not(@qualifier)])">
+		  <xsl:when test="$clause = 37 and (dim:field[@element='place' and not(@qualifier)])">
                     <tr class="ds-table-row {$phase}">
 	                <td><span class="bold"><i18n:text>Publication Place</i18n:text>:</span></td>
 	                <td>
@@ -1102,7 +1126,7 @@
           </xsl:when>
 		  
 		  <!-- ICRAF GRP -->
-		  <xsl:when test="$clause = 37 and (dim:field[@element='GRP' and not(@qualifier)])">
+		  <xsl:when test="$clause = 38 and (dim:field[@element='GRP' and not(@qualifier)])">
                     <tr class="ds-table-row {$phase}">
 	                <td><span class="bold"><i18n:text>ICRAF GRP</i18n:text>:</span></td>
 	                <td>
@@ -1128,7 +1152,7 @@
 		  
 		  
 		  <!-- PLANT SPECIES -->
-		  <xsl:when test="$clause = 38 and (dim:field[@element='Species' and not(@qualifier)])">
+		  <xsl:when test="$clause = 39 and (dim:field[@element='Species' and not(@qualifier)])">
                     <tr class="ds-table-row {$phase}">
 	                <td><span class="bold"><i18n:text>Plant species</i18n:text>:</span></td>
 	                <td>
@@ -1154,7 +1178,7 @@
 		  
 		
 		  <!-- ANIMAL SPECIES --> 
-		<xsl:when test="$clause = 39 and (dim:field[@element='Species' and @qualifier='animal'])">
+		<xsl:when test="$clause = 40 and (dim:field[@element='Species' and @qualifier='animal'])">
                     <tr class="ds-table-row {$phase}">
 	                <td><span class="bold"><i18n:text>Animal species</i18n:text>:</span></td>
 	                <td>
@@ -1180,7 +1204,7 @@
         
 			 
 		  <!-- ICRAF WHAT WAS KNOWN -->
-		  <xsl:when test="$clause = 40 and (dim:field[@element='whatwasknown' and not(@qualifier)])">
+		  <xsl:when test="$clause = 41 and (dim:field[@element='whatwasknown' and not(@qualifier)])">
                     <tr class="ds-table-row {$phase}">
 	                <td><span class="bold"><i18n:text>ICRAF What was known</i18n:text>:</span></td>
 	                <td>
@@ -1206,7 +1230,7 @@
 		  
 		  
 		  <!-- ICRAF WHAT IS NEW -->
-		  <xsl:when test="$clause = 41 and (dim:field[@element='whatisnew' and not(@qualifier)])">
+		  <xsl:when test="$clause = 42 and (dim:field[@element='whatisnew' and not(@qualifier)])">
                     <tr class="ds-table-row {$phase}">
 	                <td><span class="bold"><i18n:text>ICRAF What is new</i18n:text>:</span></td>
 	                <td>
@@ -1233,7 +1257,7 @@
           <!-- recurse without changing phase if we didn't output anything -->
           <xsl:otherwise>
             <!-- IMPORTANT: This test should be updated if clauses are added! -->
-            <xsl:if test="$clause &lt; 42">
+            <xsl:if test="$clause &lt; 43">
               <xsl:call-template name="itemSummaryView-DIM-fields">
                 <xsl:with-param name="clause" select="($clause + 1)"/>
                 <xsl:with-param name="phase" select="$phase"/>
