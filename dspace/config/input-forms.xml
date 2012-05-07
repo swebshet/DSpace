@@ -1589,7 +1589,15 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <required></required>
        </field>
 
-
+        <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>fulltextstatus</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Grey Literature</label>
+         <input-type value-pairs-name="GREY_LITERATURE">dropdown</input-type>
+         <required></required>
+       </field>
 
 	    <field>
 		 <dc-schema>dc</dc-schema>
