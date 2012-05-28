@@ -399,6 +399,17 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <required></required>
          </field>     
 
+         <field>
+             <dc-schema>dc</dc-schema>
+             <dc-element>srplace</dc-element>
+             <dc-qualifier>subregion</dc-qualifier>
+             <repeatable>true</repeatable>
+             <label>Sub Region Focus</label>
+             <input-type>twobox</input-type>
+             <hint>Please enter the sub region in upper case.</hint>
+             <required></required>
+         </field>
+
            <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>cplace</dc-element>
