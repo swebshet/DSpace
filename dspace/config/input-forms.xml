@@ -2010,7 +2010,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <dc-element>identifier</dc-element>
          <dc-qualifier>doi</dc-qualifier>
          <repeatable>false</repeatable>
-         <label>Document Object Identifier(Doi)</label>
+         <label>Document Object Identifier (DOI)</label>
          <input-type>onebox</input-type>
          <hint>Append http://dx.doi.org/  before the doi.</hint>
          <required></required>
@@ -2366,7 +2366,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <dc-element>identifier</dc-element>
          <dc-qualifier>doi</dc-qualifier>
          <repeatable>false</repeatable>
-         <label>Document Object Identifier(Doi)</label>
+         <label>Document Object Identifier (DOI)</label>
          <input-type>onebox</input-type>
          <hint>Append http://dx.doi.org/  before the doi.</hint>
          <required></required>
@@ -2663,7 +2663,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <dc-element>identifier</dc-element>
          <dc-qualifier>doi</dc-qualifier>
          <repeatable>false</repeatable>
-         <label>Document Object Identifier(Doi)</label>
+         <label>Document Object Identifier (DOI)</label>
          <input-type>onebox</input-type>
          <hint>Append http://dx.doi.org/  before the doi.</hint>
          <required></required>
