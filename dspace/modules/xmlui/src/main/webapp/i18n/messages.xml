@@ -129,6 +129,7 @@
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_cpwfsubject">CPWF Subject</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_ccafsubject">CCAFS Subject</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_ciforsubject">CIFOR Subject</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_iwmisubject">IWMI Subject</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_subregion">Sub Region</message>
 	
 	
@@ -183,6 +184,8 @@
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.cpwfsubject.column_heading">CPWF Subject Name</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.ccafsubject.column_heading">CCAFS Subject Name</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.ciforsubject.column_heading">CIFOR Subject Name</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.iwmisubject.column_heading">IWMI Subject Name</message>
+
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.region.column_heading">Region Name</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.subregion.column_heading">Sub Region</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.country.column_heading">Country Name</message>
@@ -233,6 +236,9 @@
 
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.ciforsubject">By CIFOR Subject{1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.ciforsubject">By CIFOR Subject{1}</message>
+
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.iwmisubject">By IWMI Subject{1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.iwmisubject">By IWMI Subject{1}</message>
 
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.subregion">By Sub Region{1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.subregion">By Sub Region{1}</message>
@@ -316,8 +322,7 @@
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_dateaccessioned">By Submit Date</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.head_this_collection">This Collection</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.head_this_community">This Community</message>
-	
-	
+
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_region">By Region</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_country">By Country</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_ilrisubject">By ILRI Subject</message>
@@ -325,6 +330,8 @@
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_cpwfsubject">By CPWF Subject</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_ccafsubject">By CCAFS Subject</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_ciforsubject">By CIFOR Subject</message>
+	<message key="xmlui.ArtifactBrowser.Navigation.browse_iwmisubject">By IWMI Subject</message>
+
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_subregion">By Sub Region</message>
 	<!-- org.dspace.app.xmlui.artifactbrowser.SimpleSearch.java -->
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.title">Search</message>
