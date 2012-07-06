@@ -121,7 +121,7 @@
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_identifier">Identifier</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_language">Language (ISO)</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_keyword">Keyword</message>
-		
+
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_region">Region</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_country">Country</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_ilrisubject">ILRI Subject</message>
@@ -131,11 +131,11 @@
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_ciforsubject">CIFOR Subject</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_iwmisubject">IWMI Subject</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_subregion">Sub Region</message>
-	
-	
-	
-	
-	
+
+
+
+
+
 
    <!--  some common other possibilities for Advanced Search Fields -->
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_contributor">Contributor</message>
@@ -157,9 +157,9 @@
 	<!-- org.dspace.app.xmlui.artifactbrowser.ConfigureableBrowse.java -->
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.starts_with">Or enter first few letters:</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.starts_with_help">Browse for items that begin with these letters</message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.jump_select">Jump to a point in the index:</message>	
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.choose_month">(Choose month)</message>	
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.choose_year">(Choose year)</message>	
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.jump_select">Jump to a point in the index:</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.choose_month">(Choose month)</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.choose_year">(Choose year)</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.jump_year">Or type in a year: </message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.jump_year_help">Browse for items that are from the given year.</message>
         <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.no_results">Sorry, there are no results for this browse.</message>
@@ -189,7 +189,7 @@
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.region.column_heading">Region Name</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.subregion.column_heading">Sub Region</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.country.column_heading">Country Name</message>
-	
+
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.author">Browsing {0} by Author {1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.author">Browsing {0} by Author</message>
 
@@ -204,33 +204,33 @@
 
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.item.dateaccessioned">Browsing {0} by Submit Date {1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.item.dateaccessioned">Browsing {0} by Submit Date</message>
-	
-	
+
+
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.region">By Region{1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.region">By Region{1}</message>
-	
-	
+
+
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.country">By Country {1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.country">By Country {1}</message>
-	
-	
-	
-	
+
+
+
+
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.ilrisubject">By ILRI Subject{1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.ilrisubject">By ILRI Subject{1}</message>
-	
-	
-	
+
+
+
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.icrafsubject">By ICRAF Subject{1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.icrafsubject">By ICRAF Subject{1}</message>
-	
-	
+
+
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.cpwfsubject">By CPWF Subject{1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.cpwfsubject">By CPWF Subject{1}</message>
-	
+
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.ccafsubject">By CCAFS Subject{1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.ccafsubject">By CCAFS Subject{1}</message>
-	
+
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.ciforsubject">By CIFOR Subject{1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.ciforsubject">By CIFOR Subject{1}</message>
 
@@ -1949,7 +1949,7 @@
 	<message key="xmlui.dri2xhtml.METS-1.0.item-subject">Subject</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-type">Type</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-doi">DOI</message>
-	
+
 
 	<message key="xmlui.dri2xhtml.METS-1.0.item-files-head">Files in this item</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-files-file">Files</message>
