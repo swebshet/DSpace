@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  The contents of this file are subject to the license and copyright
-  detailed in the LICENSE and NOTICE files at the root of the source
-  tree and available online at
 
-  http://www.dspace.org/license/
+    The contents of this file are subject to the license and copyright
+    detailed in the LICENSE and NOTICE files at the root of the source
+    tree and available online at
+
+    http://www.dspace.org/license/
+
 -->
 <map:sitemap xmlns:map="http://apache.org/cocoon/sitemap/1.0">
 
@@ -125,7 +127,7 @@
                     <map:parameter name="stylesheet.screen#1" value="lib/css/reset.css"/>
                     <map:parameter name="stylesheet.screen#2" value="lib/css/base.css"/>
                     <map:parameter name="stylesheet.screen#3" value="lib/css/helper.css"/>
-                    <map:parameter name="stylesheet.screen#4" value="lib/css/jquery-ui-1.8.5.custom.css"/>
+                    <map:parameter name="stylesheet.screen#4" value="lib/css/jquery-ui-1.8.15.custom.css"/>
                     <map:parameter name="stylesheet.screen#5" value="lib/css/style.css"/>
                     <map:parameter name="stylesheet.screen#6" value="lib/css/authority-control.css"/>
                 </map:transform>
@@ -137,7 +139,7 @@
 
                 <map:transform type="IncludePageMeta">
                     <map:parameter name="stylesheet.all" value="lib/css/media.css"/>
-                    <map:parameter name="javascript" value="lib/js/jquery-ui-1.8.5.custom.min.js"/>
+                    <map:parameter name="javascript" value="lib/js/jquery-ui-1.8.15.custom.min.js"/>
                     <map:parameter name="theme.path" value="{global:theme-path}"/>
                     <map:parameter name="theme.name" value="{global:theme-name}"/>
                 </map:transform>
