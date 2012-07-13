@@ -458,9 +458,7 @@
                             <xsl:text>/feedback</xsl:text>
                         </xsl:attribute>
                         <i18n:text>xmlui.dri2xhtml.structural.feedback-link</i18n:text>
-						</a>
-						<xsl:text>|</xsl:text>
-					   
+                    </a>
                 </div>
                 <!--Invisible link to HTML sitemap (for search engines) -->
                 <a class="hidden">
