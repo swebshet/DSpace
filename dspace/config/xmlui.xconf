@@ -117,7 +117,6 @@
         <!-- <theme name="Test Theme 2" regex="community-list" path="theme2/"/> -->
 
         <theme name="ILRI" handle="10568/1" path="ILRI/"/>
-        <theme name="ICRAF" handle="10568/3194" path="ICRAF/"/>
         <theme name="CPWF" handle="10568/2983" path="CPWF/"/>
         <theme name="SLP" handle="10568/133" path="SLP/"/>
         <theme name="RMG" handle="10568/173" path="RMG/"/>
