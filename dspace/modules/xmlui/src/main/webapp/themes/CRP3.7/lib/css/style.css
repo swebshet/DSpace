@@ -4,6 +4,7 @@
  * tree and available online at
  *
  * http://www.dspace.org/license/
+ */
 /*
  * style.css
  *
@@ -102,7 +103,7 @@ select.multiple {
 #ds-user-box a{
     color: white;
 }
-/* bread cramb */
+/* path stylesheet */
 #ds-trail-wrapper {
     background-color: #fff;
     width: 980px;
@@ -128,8 +129,9 @@ select.multiple {
 
 #ds-trail a {
     font-family: verdana;
-    color: #000;
+    color: #000000;
     margin-left:15px;
+    font-size: 11px;
     text-decoration: none;
 }
 
@@ -148,7 +150,6 @@ select.multiple {
 }
 
 /*ie6 uses quirks mode for strict xhtml pages, and in quirks mode margin: auto; doesn't center things*/
-
 .ie6 #no-js-warning-wrapper,
 .ie6 #ds-trail-wrapper,
 .ie6 #ds-header-wrapper,
@@ -164,7 +165,6 @@ select.multiple {
     margin: 0;
     text-align: left;
 }
-
 /* footer style sheet */
 #ds-footer-wrapper {
     margin-top: 0px;
@@ -175,6 +175,10 @@ select.multiple {
     padding-top: 10px;
     font-size: 10px;
     line-height: 1.6em;
+}
+#ds-footer a{
+   font-size: 11px;
+   color: #000;
 }
 
 #ds-footer-left {
@@ -337,10 +341,9 @@ ol {
 
 th,
 td {
-    padding: 5px;
+    padding: 5px 5px 5px 15px;
     vertical-align: top;
-    margin-left: 15px;
-}
+   }
 
 .ds-button-field,
 #aspect_eperson_StartRegistration_list_registration-progress li {
@@ -523,8 +526,7 @@ input.ds-password-field.error {
 
 
 .ds-form-list {
-   margin-left: 15px;
-   margin-top: 15px;
+    margin-top: 15px;
 }
 
 .submission h2,
@@ -758,46 +760,35 @@ span.field-help {
     padding-top: 15px;
     padding-bottom: 15px;
  }
-/*
-.ds-artifact-item.collection
-{
-   padding-top: 1px;
-   Padding-bottom: 5px;
-   margin-left: 15px;
-   font-size: 9px;
-}
 
+.ds-artifact-item.collection,
 .ds-artifact-item.community {
     padding-top: 1px;
     padding-bottom: 1px;
-    font-size: 9px;
-
+    font-size: 10px;
 }
 
 .community .artifact-title a {
     font-weight: normal;
-    color: #000000;
-    font-size: 12px;
+   margin-top: 25px;
+   margin-bottom: 25px;
+   color: #000;
 }
 
 .collection .artifact-title a {
     font-weight: normal;
-    color: #3da74b;
-    font-size: 12px;
-    margin-left: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
-
 
 #aspect_artifactbrowser_CommunityBrowser_div_comunity-browser
 {
 color: #000000;
 }
-
 .short-description{
 display: none;
-
 }
-*/
+
 #aspect_discovery_SiteRecentSubmissions_div_site-home .short-description {
  display: none;
 }
@@ -827,6 +818,7 @@ display: none;
 ul.alphabet {
     list-style: none;
     margin: 0;
+    margin-left: 15px;
 }
 
 ul.alphabet li {
