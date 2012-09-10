@@ -172,7 +172,7 @@ select.multiple {
 }
 
 #ds-footer {
-    border-top: 1px solid #DF6E00; 
+    border-top: 1px solid #E3D7D7; 
     padding-top: 10px;
     font-size: 10px; 
     line-height: 1.6em;
@@ -345,7 +345,7 @@ td {
 .ds-button-field,
 #aspect_eperson_StartRegistration_list_registration-progress li {
     background-color: #6d859c;
-    border: 1px solid #1F3F5E;
+    border: 1px solid #6F1C2D;
     padding: 2px 5px;
     color: #FFFFFF;
     font-weight: bold;
@@ -991,7 +991,7 @@ div.simple-item-view-description {
 
 #aspect_artifactbrowser_ItemViewer_div_item-view h2,
 div.simple-item-view-description h3{
-    border-bottom:1px solid #D8E8EB;
+    border-bottom:1px solid #E3D7D7;
     margin-bottom: 3px;
 }
 
@@ -1063,7 +1063,7 @@ div.spacer{
 #aspect_artifactbrowser_CommunityViewer_div_community-home h2,
 #aspect_artifactbrowser_CollectionViewer_div_collection-home h2 {
     margin-top: 30px;
-    border-bottom:1px solid #D8E8EB;
+    border-bottom:1px solid #E3D7D7;
     margin-bottom: 3px;
 }
 
