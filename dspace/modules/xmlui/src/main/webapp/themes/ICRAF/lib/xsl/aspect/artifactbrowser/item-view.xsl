@@ -126,7 +126,7 @@
                 </td>
             </tr>-->
 
-             
+
           <!-- Title row -->
           <xsl:when test="$clause = 1">
             <tr class="ds-table-row {$phase}">
@@ -160,8 +160,8 @@
               <xsl:with-param name="phase" select="$otherPhase"/>
             </xsl:call-template>
           </xsl:when>
-          
-		   
+
+
 		      <!-- Author(s) row -->
           <xsl:when test="$clause =2 and (dim:field[@element='contributor'][@qualifier='author'] or dim:field[@element='creator'] or dim:field[@element='contributor'])">
                     <tr class="ds-table-row {$phase}">
@@ -208,9 +208,9 @@
                 <xsl:with-param name="phase" select="$otherPhase"/>
               </xsl:call-template>
           </xsl:when>
-         
+
 		 <!-- subject( AGROVOC Keywords )row -->
-		
+
 		<xsl:when test="$clause = 3 and (dim:field[@element='subject' and not(@qualifier)])">
                     <tr class="ds-table-row {$phase}">
 	                <td><span class="bold"><i18n:text>AGROVOC Keywords</i18n:text>:</span></td>
@@ -234,10 +234,10 @@
                 <xsl:with-param name="phase" select="$otherPhase"/>
               </xsl:call-template>
           </xsl:when>
-		  
-		  
+
+
 		   <!-- Barcode Row  -->
-			
+
 		   <xsl:when test="$clause = 4 and (dim:field[@element='identifier' and @qualifier='other'])">
                     <tr class="ds-table-row {$phase}">
 	                <td><span class="bold"><i18n:text>Barcode</i18n:text>:</span></td>
@@ -260,11 +260,11 @@
                 <xsl:with-param name="clause" select="($clause + 1)"/>
                 <xsl:with-param name="phase" select="$otherPhase"/>
               </xsl:call-template>
-          </xsl:when> 
-		  
-		  
+          </xsl:when>
+
+
 		   <!-- Call number Row -->
-			
+
 		   <xsl:when test="$clause = 5 and (dim:field[@element='subject' and @qualifier='ddc'])">
                     <tr class="ds-table-row {$phase}">
 	                <td><span class="bold"><i18n:text>Call number</i18n:text>:</span></td>
@@ -287,8 +287,8 @@
                 <xsl:with-param name="clause" select="($clause + 1)"/>
                 <xsl:with-param name="phase" select="$otherPhase"/>
               </xsl:call-template>
-          </xsl:when> 
-		  
+          </xsl:when>
+
 		   <!-- date.issued row -->
           <xsl:when test="$clause = 6 and (dim:field[@element='date' and @qualifier='issued'])">
                     <tr class="ds-table-row {$phase}">
@@ -307,7 +307,7 @@
                 <xsl:with-param name="phase" select="$otherPhase"/>
               </xsl:call-template>
           </xsl:when>
-		    
+
 		  <!-- Publisher row -->
 		  <xsl:when test="$clause = 7 and (dim:field[@element='publisher' and not(@qualifier)])">
                     <tr class="ds-table-row {$phase}">
@@ -332,10 +332,10 @@
                 <xsl:with-param name="phase" select="$otherPhase"/>
               </xsl:call-template>
           </xsl:when>
-		  
-		  
+
+
 		    <!-- Citation row -->
-		
+
 		<xsl:when test="$clause = 8 and (dim:field[@element='identifier' and @qualifier='citation'])">
                     <tr class="ds-table-row {$phase}">
 	                <td><span class="bold"><i18n:text>Citation</i18n:text>:</span></td>
@@ -359,7 +359,7 @@
                 <xsl:with-param name="phase" select="$otherPhase"/>
               </xsl:call-template>
           </xsl:when>
-		  
+
 		  <!-- Series Report NO row -->
 		<xsl:when test="$clause = 9 and (dim:field[@element='relation' and @qualifier='ispartofseries'])">
                     <tr class="ds-table-row {$phase}">
@@ -384,9 +384,9 @@
                 <xsl:with-param name="phase" select="$otherPhase"/>
               </xsl:call-template>
           </xsl:when>
-				
-		
-		  
+
+
+
           <!-- Abstract row -->
           <xsl:when test="$clause = 10 and (dim:field[@element='description' and @qualifier='abstract'])">
                     <tr class="ds-table-row {$phase}">
@@ -462,7 +462,7 @@
           </xsl:when>
 
             <!-- Identfifier ISBN -->
-			
+
 		   <xsl:when test="$clause = 13 and (dim:field[@element='identifier' and @qualifier='isbn'])">
                     <tr class="ds-table-row {$phase}">
 	                <td><span class="bold"><i18n:text>ISBN</i18n:text>:</span></td>
@@ -486,7 +486,7 @@
                 <xsl:with-param name="phase" select="$otherPhase"/>
               </xsl:call-template>
           </xsl:when>
-		  
+
 		  <!-- Identfifier ISSN row -->
 		   <xsl:when test="$clause = 14 and (dim:field[@element='identifier' and @qualifier='issn'])">
                     <tr class="ds-table-row {$phase}">
@@ -511,9 +511,9 @@
                 <xsl:with-param name="phase" select="$otherPhase"/>
               </xsl:call-template>
           </xsl:when>
-			
-		
-		 		
+
+
+
 		<!-- Type row -->
 		 <xsl:when test="$clause = 15 and (dim:field[@element='type' and not(@qualifier)])">
                     <tr class="ds-table-row {$phase}">
@@ -538,7 +538,7 @@
                 <xsl:with-param name="phase" select="$otherPhase"/>
               </xsl:call-template>
           </xsl:when>
-		
+
 		<!-- Journal Title row -->
 		   <xsl:when test="$clause = 16 and (dim:field[@element='title' and @qualifier='jtitle'])">
                     <tr class="ds-table-row {$phase}">
@@ -563,7 +563,7 @@
                 <xsl:with-param name="phase" select="$otherPhase"/>
               </xsl:call-template>
           </xsl:when>
-		  
+
 		 <!-- Identifier URL row -->
 		   <xsl:when test="$clause = 17 and (dim:field[@element='identifier' and @qualifier='url'])">
                     <tr class="ds-table-row {$phase}">
@@ -593,7 +593,7 @@
                 <xsl:with-param name="phase" select="$otherPhase"/>
               </xsl:call-template>
           </xsl:when>
-		   
+
 		    <!-- Identifier DOI row -->
 		   <xsl:when test="$clause = 18 and (dim:field[@element='identifier' and @qualifier='doi'])">
                     <tr class="ds-table-row {$phase}">
@@ -623,7 +623,7 @@
                 <xsl:with-param name="phase" select="$otherPhase"/>
               </xsl:call-template>
           </xsl:when>
-		   
+
              <!-- URL for datafile row -->
 		  <xsl:when test="$clause = 19 and (dim:field[@element='identifier' and @qualifier='dataurl'])">
                     <tr class="ds-table-row {$phase}">
@@ -653,8 +653,8 @@
                 <xsl:with-param name="phase" select="$otherPhase"/>
               </xsl:call-template>
           </xsl:when>
-		  
-		    
+
+
 		 <!-- Status row -->
 		<xsl:when test="$clause = 20 and (dim:field[@element='identifier' and @qualifier='status'])">
                     <tr class="ds-table-row {$phase}">
@@ -678,8 +678,8 @@
                 <xsl:with-param name="clause" select="($clause + 1)"/>
                 <xsl:with-param name="phase" select="$otherPhase"/>
               </xsl:call-template>
-          </xsl:when> 
-		
+          </xsl:when>
+
 		<!-- Google URL row -->
 		<xsl:when test="$clause = 21 and (dim:field[@element='identifier' and @qualifier='googleurl'])">
                     <tr class="ds-table-row {$phase}">
@@ -709,10 +709,10 @@
                 <xsl:with-param name="phase" select="$otherPhase"/>
               </xsl:call-template>
           </xsl:when>
-		
-	  
-		  <!-- Country Focus row --> 
-		
+
+
+		  <!-- Country Focus row -->
+
 		<xsl:when test="$clause = 22 and (dim:field[@element='cplace' and @qualifier='country'])">
                     <tr class="ds-table-row {$phase}">
 	                <td><span class="bold"><i18n:text>Country Focus</i18n:text>:</span></td>
@@ -736,8 +736,8 @@
                 <xsl:with-param name="phase" select="$otherPhase"/>
               </xsl:call-template>
           </xsl:when>
-		
-         <!-- Region Focus row --> 
+
+         <!-- Region Focus row -->
 		<xsl:when test="$clause = 23 and (dim:field[@element='rplace' and @qualifier='region'])">
                     <tr class="ds-table-row {$phase}">
 	                <td><span class="bold"><i18n:text>Region Focus</i18n:text>:</span></td>
@@ -787,13 +787,13 @@
                 <xsl:with-param name="phase" select="$otherPhase"/>
               </xsl:call-template>
           </xsl:when>
-		
-
- 
 
 
-	  
-        <!-- ICRAF Subject row --> 
+
+
+
+
+        <!-- ICRAF Subject row -->
 		<xsl:when test="$clause = 25 and (dim:field[@element='icsubject' and @qualifier='icrafsubject'])">
                     <tr class="ds-table-row {$phase}">
 	                <td><span class="bold"><i18n:text>ICRAF Subject Focus</i18n:text>:</span></td>
@@ -817,9 +817,9 @@
                 <xsl:with-param name="phase" select="$otherPhase"/>
               </xsl:call-template>
           </xsl:when>
-	
 
-	  <!--  PROJECT SPONSOR row -->   
+
+	  <!--  PROJECT SPONSOR row -->
 		  <xsl:when test="$clause = 26 and (dim:field[@element='description' and @qualifier='sponsorship'])">
                     <tr class="ds-table-row {$phase}">
 	                <td><span class="bold"><i18n:text>Project Sponsor</i18n:text>:</span></td>
@@ -844,8 +844,8 @@
               </xsl:call-template>
           </xsl:when>
 
-	
-		<!-- Fund row --> 
+
+		<!-- Fund row -->
 		<xsl:when test="$clause = 27 and (dim:field[@element='identifier' and @qualifier='fund'])">
                     <tr class="ds-table-row {$phase}">
 	                <td><span class="bold"><i18n:text>Sponsor Project Number</i18n:text>:</span></td>
@@ -869,8 +869,8 @@
                 <xsl:with-param name="phase" select="$otherPhase"/>
               </xsl:call-template>
           </xsl:when>
-		
-		    
+
+
 	     <!-- ISI Journal -->
 		  <xsl:when test="$clause = 28 and (dim:field[@element='isijournal' and not(@qualifier)])">
                     <tr class="ds-table-row {$phase}">
@@ -895,7 +895,7 @@
                 <xsl:with-param name="phase" select="$otherPhase"/>
               </xsl:call-template>
           </xsl:when>
-	
+
 		<!-- GREY LITERATURE -->
 		  <xsl:when test="$clause = 29 and (dim:field[@element='fulltextstatus' and not(@qualifier)])">
                     <tr class="ds-table-row {$phase}">
@@ -920,7 +920,7 @@
                 <xsl:with-param name="phase" select="$otherPhase"/>
               </xsl:call-template>
           </xsl:when>
-		  
+
 		  <!-- TARGET AUDIENCE -->
 		  <xsl:when test="$clause = 30 and (dim:field[@element='targetaudience' and not(@qualifier)])">
                     <tr class="ds-table-row {$phase}">
@@ -945,8 +945,8 @@
                 <xsl:with-param name="phase" select="$otherPhase"/>
               </xsl:call-template>
           </xsl:when>
-		  
-		  
+
+
 		  <!-- EDITION -->
 		  <xsl:when test="$clause = 31 and (dim:field[@element='editon' and not(@qualifier)])">
                     <tr class="ds-table-row {$phase}">
@@ -971,8 +971,8 @@
                 <xsl:with-param name="phase" select="$otherPhase"/>
               </xsl:call-template>
           </xsl:when>
-		  
-		  
+
+
 		  <!-- PUBLICATION PLACE -->
 		  <xsl:when test="$clause = 32 and (dim:field[@element='place' and not(@qualifier)])">
                     <tr class="ds-table-row {$phase}">
@@ -997,7 +997,7 @@
                 <xsl:with-param name="phase" select="$otherPhase"/>
               </xsl:call-template>
           </xsl:when>
-		  
+
 		  <!-- ICRAF GRP -->
 		  <xsl:when test="$clause = 33 and (dim:field[@element='GRP' and not(@qualifier)])">
                     <tr class="ds-table-row {$phase}">
@@ -1022,8 +1022,8 @@
                 <xsl:with-param name="phase" select="$otherPhase"/>
               </xsl:call-template>
           </xsl:when>
-		  
-		  
+
+
 		  <!-- PLANT SPECIES -->
 		  <xsl:when test="$clause = 34 and (dim:field[@element='Species' and not(@qualifier)])">
                     <tr class="ds-table-row {$phase}">
@@ -1048,11 +1048,11 @@
                 <xsl:with-param name="phase" select="$otherPhase"/>
               </xsl:call-template>
           </xsl:when>
-		  
-		
-		
-        
-			 
+
+
+
+
+
 		  <!-- ICRAF WHAT WAS KNOWN -->
 		  <xsl:when test="$clause = 35 and (dim:field[@element='whatwasknown' and not(@qualifier)])">
                     <tr class="ds-table-row {$phase}">
@@ -1077,8 +1077,8 @@
                 <xsl:with-param name="phase" select="$otherPhase"/>
               </xsl:call-template>
           </xsl:when>
-		  
-		  
+
+
 		  <!-- ICRAF WHAT IS NEW -->
 		  <xsl:when test="$clause = 36 and (dim:field[@element='whatisnew' and not(@qualifier)])">
                     <tr class="ds-table-row {$phase}">
@@ -1103,7 +1103,7 @@
                 <xsl:with-param name="phase" select="$otherPhase"/>
               </xsl:call-template>
           </xsl:when>
-				
+
           <!-- recurse without changing phase if we didn't output anything -->
           <xsl:otherwise>
             <!-- IMPORTANT: This test should be updated if clauses are added! -->
