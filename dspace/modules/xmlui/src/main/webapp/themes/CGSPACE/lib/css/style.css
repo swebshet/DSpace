@@ -132,6 +132,7 @@ select.multiple {
     font-family: verdana;
     color: #ffffff;
     margin-left:15px;
+    font-size: 11px;
     text-decoration: none;
 }
 
@@ -175,6 +176,10 @@ select.multiple {
     padding-top: 10px;
     font-size: 10px;
     line-height: 1.6em;
+}
+#ds-footer a{
+   font-size: 11px;
+   color: #000;
 }
 
 #ds-footer-left {
@@ -760,14 +765,7 @@ span.field-help {
     padding-bottom: 15px;
  }
 
-.ds-artifact-item.collection
-{
-   padding-top: 1px;
-   Padding-bottom: 5px;
-   margin-left: 15px;
-   font-size: 9px;
-
-}
+.ds-artifact-item.collection,
 .ds-artifact-item.community {
     padding-top: 1px;
     padding-bottom: 1px;
