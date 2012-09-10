@@ -34,23 +34,11 @@
    <name-map collection-handle="10568/912" form-name="ILRI"/>
    <name-map collection-handle="10568/67" form-name="ILRI"/>
    <name-map collection-handle="10568/65" form-name="ILRI"/>
-   <!--ICRAF submssion form-->
-   <name-map collection-handle="10568/3234" form-name="ICRAF"/>
-   <name-map collection-handle="10568/3196" form-name="ICRAF"/>
-   <name-map collection-handle="10568/3212" form-name="ICRAF"/>
-   <name-map collection-handle="10568/3215" form-name="ICRAF"/>
-   <name-map collection-handle="10568/3226" form-name="ICRAF"/>
-   <name-map collection-handle="10568/3224" form-name="ICRAF"/>
-   <name-map collection-handle="10568/3265" form-name="ICRAF"/>
-   <name-map collection-handle="10568/3291" form-name="ICRAF"/>
-   <name-map collection-handle="10568/3232" form-name="ICRAF"/>
-   <name-map collection-handle="10568/3230" form-name="ICRAF"/>
-   <name-map collection-handle="10568/3235" form-name="ICRAF"/>
-   <name-map collection-handle="10568/3283" form-name="ICRAF"/>
-   <name-map collection-handle="10568/3237" form-name="ICRAF"/>
-   <name-map collection-handle="10568/3219" form-name="ICRAF"/>
-   <name-map collection-handle="10568/3221" form-name="ICRAF"/>
-    <!--CPWF submssion form-->
+
+   <!--CPWF submssion form-->
+   <name-map collection-handle="10568/3252" form-name="Journal Article CPWF"/>
+   <name-map collection-handle="10568/3695" form-name="CPWF"/>
+   <name-map collection-handle="10568/3622" form-name="CPWF"/>
    <name-map collection-handle="10568/3203" form-name="CPWF"/>
    <name-map collection-handle="10568/3208" form-name="CPWF"/>
    <name-map collection-handle="10568/3204" form-name="CPWF"/>
@@ -283,19 +271,32 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint></hint>
          <required></required>
          </field>
-		 
-	    <field>
+
+
+		 <field>
 		 <dc-schema>dc</dc-schema>
-         <dc-element>icsubject</dc-element>
-         <dc-qualifier>icrafsubject</dc-qualifier>
+         <dc-element>Species</dc-element>
+         <dc-qualifier></dc-qualifier>
          <repeatable>true</repeatable>
-         <label>ICRAF Subject Focus</label>
-         <input-type value-pairs-name="icrafsubject">dropdown</input-type>
-         <hint></hint>
+         <label>Plant species</label>
+         <input-type>twobox</input-type>
+         <hint>Enter a full Scientific or Latin name:</hint>
          <required></required>
-         </field>  
-		 
-		 
+         </field>
+
+
+		 <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>Species</dc-element>
+         <dc-qualifier>animal</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Animal species</label>
+         <input-type>twobox</input-type>
+         <hint>Enter a full Scientific or Latin name:</hint>
+         <required></required>
+         </field>
+
+
 	     <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>cpsubject</dc-element>
@@ -702,276 +703,8 @@ it, please enter the types and the actual numbers or codes below.</hint>
 	      	   
       </page>
     </form>
-	
-	
-	 <form name="Journal Article ICRAF">
-     <page number="1">
-       <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>contributor</dc-element>
-         <dc-qualifier>author</dc-qualifier>
-         <repeatable>true</repeatable>
-         <label>One: Authors</label>
-                 <input-type>name</input-type>
-         <hint>Enter the names of the authors of this item below.</hint>
-         <required></required>
-       </field>
-	   
-	       <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>title</dc-element>
-         <dc-qualifier></dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Title</label>
-         <input-type>onebox</input-type>
-         <hint>Enter the main title of the item.</hint>
-         <required>You must enter a main title for this item.</required>
-       </field>
 
-       <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>title</dc-element>
-         <dc-qualifier>alternative</dc-qualifier>
-         <repeatable>true</repeatable>
-         <label>Other Titles</label>
-         <input-type>onebox</input-type>
-         <hint>If the item has any alternative titles, please enter them below.</hint>
-         <required></required>
-       </field>
-	   
-	    <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>title</dc-element>
-         <dc-qualifier>jtitle</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Journal Title</label>
-         <input-type>onebox</input-type>
-         <hint>Enter Journal Title.</hint>
-         <required></required>
-       </field>
-	   
-	   <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>identifier</dc-element>
-         <dc-qualifier>url</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>URL</label>
-         <input-type>onebox</input-type>
-         <hint>Enter the URL.</hint>
-         <required></required>
-       </field> 
-	   
-	 
-	   
-	    <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>identifier</dc-element>
-         <dc-qualifier>status</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Status</label>
-          <input-type value-pairs-name="common_status_identifier">dropdown</input-type>
-         <hint>Please select  either Open Access or Limited Access.</hint>
-         <required></required>
-       </field>
-		
-	   
-	    
-	    <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>identifier</dc-element>
-         <dc-qualifier>doi</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Document Object Identifier(Doi)</label>
-         <input-type>onebox</input-type>
-         <hint>Append http://dx.doi.org/  before the doi.</hint>
-         <required></required>
-       </field>
-	   
-	   
-
-       <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>date</dc-element>
-         <dc-qualifier>issued</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Date of Publication</label>
-         <input-type>date</input-type>
-         <hint>Please give the date of previous publication or public distribution
-                        below.  You can leave out the day and/or month if they aren't
-                        applicable.</hint>
-         <required>You must enter at least the year.</required>
-       </field>
-
-      <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>publisher</dc-element>
-         <dc-qualifier></dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Publisher</label>
-         <input-type>onebox</input-type>
-         <hint>Enter the full name of the publisher.</hint>
-         <required></required>
-       </field>
-
-       <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>identifier</dc-element>
-         <dc-qualifier>citation</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Citation</label>
-         <input-type>onebox</input-type>
-         <hint>Enter the standard citation.</hint>
-         <required>Required</required>
-       </field>
-
-        <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>identifier</dc-element>
-         <dc-qualifier>journal</dc-qualifier>
-         <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
-         <repeatable>true</repeatable>
-         <label>Identifiers</label>
-         <input-type value-pairs-name="journal_Identifier">qualdrop_value</input-type>
-         <hint>Please select the default vlaue.</hint>
-         <required></required>
-       </field>
-
-     
-
-	     <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>language</dc-element>
-         <dc-qualifier>iso</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Language</label>
-         <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
-         <hint>Select the language of the main content of the item.  If the language does not appear in the list below, please select 'Other'.  If the content does not really have a language (for example, if it is a dataset or an image) please select 'N/A'.</hint>
-         <required></required>
-       </field>
-     </page>
-
-     <page number="2">
-       <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>subject</dc-element>
-         <dc-qualifier></dc-qualifier>
-         <!-- An input-type of twobox MUST be marked as repeatable -->
-         <repeatable>true</repeatable>
-         <label>AGROVOC Keywords</label>
-         <input-type>twobox</input-type>
-         <hint> Enter appropriate AGROVOC keywords or phrases below. </hint>
-         <required></required>
-         <vocabulary>srsc</vocabulary>
-       </field>
-	   
-	   
-	     <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>icsubject</dc-element>
-         <dc-qualifier>icrafsubject</dc-qualifier>
-         <repeatable>true</repeatable>
-         <label>ICRAF Subject Focus</label>
-         <input-type value-pairs-name="icrafsubject">dropdown</input-type>
-         <hint></hint>
-         <required></required>
-         </field>   
-	  
-         <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>crsubject</dc-element>
-         <dc-qualifier>crpsubject</dc-qualifier>
-         <repeatable>true</repeatable>
-		 <label>CRP focus</label>
-         <input-type value-pairs-name="crpsubject">dropdown</input-type>
-		 <hint></hint>
-         <required></required>
-         </field>
-
-       <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>description</dc-element>
-         <dc-qualifier>abstract</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Abstract</label>
-         <input-type>textarea</input-type>
-         <hint> Enter the abstract of the item below. </hint>
-         <required></required>
-       </field>
-       
-	    <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>description</dc-element>
-         <dc-qualifier>sponsorship</dc-qualifier>
-         <repeatable>true</repeatable>
-         <label>Project Sponsor</label>
-         <input-type>twobox</input-type>
-         <hint> Enter  Sponsor or Sponsors in the box.</hint>
-         <required></required>
-       </field>
-	   
-     
-	   
-	     <field>
-	     <dc-schema>dc</dc-schema>
-         <dc-element>identifier</dc-element>
-         <dc-qualifier>fund</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Sponsor Project Number</label>
-         <input-type >onebox</input-type>
-         <hint> Enter  funding codes in the box below. </hint>
-         <required></required>
-        </field>
-	   
-	    <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>river</dc-element>
-         <dc-qualifier>basin</dc-qualifier>
-         <repeatable>true</repeatable>
-		 <label>River Basin Focus</label>
-         <input-type value-pairs-name="riverbasin">dropdown</input-type>
-         <hint>To select more than one,you may have to hold down the "CTRL" or "Shift" key.</hint>
-         <required></required>
-         </field>
-	   
-	   
-	     <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>rplace</dc-element>
-         <dc-qualifier>region</dc-qualifier>
-         <repeatable>true</repeatable>
-		 <label>Region Focus</label>
-         <input-type value-pairs-name="region_types">dropdown</input-type>
-         <hint>To select more than one region, you may have to hold down the "CTRL" or "Shift" key.</hint>
-         <required></required>
-         </field>
-	   
-	     <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>cplace</dc-element>
-         <dc-qualifier>country</dc-qualifier>
-         <repeatable>true</repeatable>
-         <label>Country Focus</label>
-         <input-type value-pairs-name="countrylist">dropdown</input-type>
-         <hint>Enter a country or Countries</hint>
-         <required></required>
-         </field>
-	 
-
-        <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>description</dc-element>
-         <dc-qualifier></dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Notes</label>
-         <input-type>textarea</input-type>
-         <hint> Enter any Notes or comments in this box. </hint>
-         <required></required>
-       </field>
-	      	   
-      </page>
-    </form>
-	
-	
+<!--CPWF Journal Template!-->
 	 <form name="Journal Article CPWF">
      <page number="1">
        <field>
@@ -1092,7 +825,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <required>Required</required>
        </field>
 
-      
+
 
         <field>
 		 <dc-schema>dc</dc-schema>
@@ -1105,6 +838,19 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>Please select the default vlaue.</hint>
          <required></required>
        </field>
+
+
+       <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>type</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Type</label>
+         <input-type value-pairs-name="common_types">dropdown</input-type>
+         <hint>Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <required></required>
+       </field>
+
 
        <field>
 		 <dc-schema>dc</dc-schema>
@@ -1131,7 +877,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <required></required>
          <vocabulary>srsc</vocabulary>
        </field>
-	   
+
 	     <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>cpsubject</dc-element>
@@ -1142,7 +888,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
 		 <hint></hint>
          <required></required>
          </field>
-	     
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>crsubject</dc-element>
@@ -1165,9 +911,9 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint> Enter the abstract of the item below. </hint>
          <required></required>
        </field>
-       
-	   
-	   
+
+
+
 	     <field>
 	     <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -1178,8 +924,8 @@ it, please enter the types and the actual numbers or codes below.</hint>
 		 <hint></hint>
          <required></required>
         </field>
-	   
-     	   	   	    
+
+
 	     <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>river</dc-element>
@@ -1190,7 +936,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>To select more than one,you may have to hold down the "CTRL" or "Shift" key.</hint>
          <required></required>
          </field>
-	          
+
 
            <field>
 		 <dc-schema>dc</dc-schema>
@@ -1211,17 +957,14 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Notes</label>
          <input-type>textarea</input-type>
-         <hint> Enter any Notes or comments in this box. </hint>
+         <hint>Enter any Notes or comments in this box.</hint>
          <required></required>
        </field>
 	      	   
       </page>
     </form>
-	
-	
-	
-	
-	
+
+	<!--ILRI submssion form-->
 	<form name="ILRI">
      <page number="1">
        <field>
@@ -1277,9 +1020,9 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <input-type>onebox</input-type>
          <hint>Enter the URL.</hint>
          <required></required>
-       </field> 
-	   
-	   
+       </field>
+
+
 	     <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -1289,10 +1032,10 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <input-type>onebox</input-type>
          <hint>Enter the Google book URL.</hint>
          <required></required>
-       </field> 
-	   
-	   
-	   
+       </field>
+
+
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -1362,6 +1105,18 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <required>Required</required>
        </field>
 
+	    <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>Species</dc-element>
+         <dc-qualifier>animal</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Animal species:</label>
+         <input-type>twobox</input-type>
+         <hint>Enter a full Scientific or Latin name:</hint>
+         <required></required>
+         </field>
+
+
        <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>relation</dc-element>
@@ -1391,9 +1146,9 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <dc-element>type</dc-element>
          <dc-qualifier></dc-qualifier>
          <repeatable>true</repeatable>
-         <label>Type</label>
-         <input-type value-pairs-name="common_types">dropdown</input-type>
-         <hint> Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <label>Identifiers</label>
+         <input-type value-pairs-name="journal_Identifier">qualdrop_value</input-type>
+         <hint>Please select the default vlaue.</hint>
          <required></required>
        </field>
 
@@ -1418,12 +1173,12 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
          <label>AGROVOC Keywords</label>
          <input-type>twobox</input-type>
-         <hint> Enter appropriate subject keywords or phrases below. </hint>
+         <hint>Enter appropriate subject keywords or phrases below.</hint>
          <required></required>
          <vocabulary>srsc</vocabulary>
        </field>
-	   
-	   
+
+
 	      <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>isubject</dc-element>
@@ -1433,8 +1188,8 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <input-type value-pairs-name="ilrisubject">dropdown</input-type>
          <hint></hint>
          <required></required>
-         </field>   
-	   
+         </field>
+	     
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>crsubject</dc-element>
@@ -1457,7 +1212,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint> Enter the abstract of the item below. </hint>
          <required></required>
        </field>
-       
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>description</dc-element>
@@ -1465,12 +1220,12 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
          <label>Project Sponsor</label>
          <input-type>twobox</input-type>
-         <hint> Enter  Sponsor or Sponsors in the box.</hint>
+         <hint>Enter sponsor or sponsors in the box.</hint>
          <required></required>
        </field>
-	   
-     
-	   
+
+
+
 	     <field>
 	     <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -1478,11 +1233,11 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Sponsor Project Number</label>
          <input-type >onebox</input-type>
-         <hint> Enter  funding codes in the box below. </hint>
+         <hint>Enter funding codes in the box below.</hint>
          <required></required>
         </field>
-	   
-	   	   
+
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>river</dc-element>
@@ -1493,8 +1248,8 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>To select more than one,you may have to hold down the "CTRL" or "Shift" key.</hint>
          <required></required>
          </field>
-		 
-		 
+	          
+
 	     <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>rplace</dc-element>
@@ -1505,7 +1260,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>To select more than one region, you may have to hold down the "CTRL" or "Shift" key.</hint>
          <required></required>
          </field>
-	           
+
 
            <field>
 		 <dc-schema>dc</dc-schema>
@@ -1530,306 +1285,8 @@ it, please enter the types and the actual numbers or codes below.</hint>
        </field>
      </page>
    </form>
-	
-	<form name="ICRAF">
-     <page number="1">
-       <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>contributor</dc-element>
-         <dc-qualifier>author</dc-qualifier>
-         <repeatable>true</repeatable>
-         <label>Authors</label>
-         <input-type>name</input-type>
-         <hint>Enter the names of the authors of this item below.</hint>
-         <required></required>
-       </field>
 
-       <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>title</dc-element>
-         <dc-qualifier></dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Title</label>
-         <input-type>onebox</input-type>
-         <hint>Enter the main title of the item.</hint>
-         <required>You must enter a main title for this item.</required>
-       </field>
-
-       <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>title</dc-element>
-         <dc-qualifier>alternative</dc-qualifier>
-         <repeatable>true</repeatable>
-         <label>Other Titles</label>
-         <input-type>onebox</input-type>
-         <hint>If the item has any alternative titles, please enter them below.</hint>
-         <required></required>
-       </field>
-	   
-	    <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>title</dc-element>
-         <dc-qualifier>jtitle</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Journal Title</label>
-         <input-type>onebox</input-type>
-         <hint>Enter Journal Title.</hint>
-         <required></required>
-       </field>
-	   
-	   <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>identifier</dc-element>
-         <dc-qualifier>url</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>URL</label>
-         <input-type>onebox</input-type>
-         <hint>Enter the URL.</hint>
-         <required></required>
-       </field> 
-	   
-	   
-	     <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>identifier</dc-element>
-         <dc-qualifier>googleurl</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Google book URL</label>
-         <input-type>onebox</input-type>
-         <hint>Enter the Google book URL.</hint>
-         <required></required>
-       </field> 
-	   
-	   
-	   
-	    <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>identifier</dc-element>
-         <dc-qualifier>status</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Status</label>
-          <input-type value-pairs-name="common_status_identifier">dropdown</input-type>
-         <hint>Please select  either Open Access or Limited Access.</hint>
-         <required></required>
-       </field>
-		
-	   
-	    
-	    <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>identifier</dc-element>
-         <dc-qualifier>doi</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Document Object Identifier (DOI)</label>
-         <input-type>onebox</input-type>
-         <hint>Append http://dx.doi.org/  before the doi.</hint>
-         <required></required>
-       </field>
-	   
-	   
-
-       <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>date</dc-element>
-         <dc-qualifier>issued</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Date of Publication</label>
-         <input-type>date</input-type>
-         <hint>Please give the date of previous publication or public distribution
-                        below.  You can leave out the day and/or month if they aren't
-                        applicable.</hint>
-         <required>You must enter at least the year.</required>
-       </field>
-
-       <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>publisher</dc-element>
-         <dc-qualifier></dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Publisher</label>
-         <input-type>onebox</input-type>
-         <hint>Enter the full name of the publisher.</hint>
-         <required></required>
-       </field>
-
-       <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>identifier</dc-element>
-         <dc-qualifier>citation</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Citation</label>
-         <input-type>onebox</input-type>
-         <hint>Enter the standard citation.</hint>
-         <required>Required</required>
-       </field>
-
-       <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>relation</dc-element>
-         <dc-qualifier>ispartofseries</dc-qualifier>
-         <repeatable>true</repeatable>
-         <label>Series/Report No.</label>
-         <input-type>series</input-type>
-         <hint>Enter the series and number assigned to this item by your community.</hint>
-         <required></required>
-       </field>
-
-       <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>identifier</dc-element>
-         <dc-qualifier></dc-qualifier>
-         <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
-         <repeatable>true</repeatable>
-         <label>Identifiers</label>
-         <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
-         <hint>If the item has any identification numbers or codes associated with
-it, please enter the types and the actual numbers or codes below.</hint>
-         <required></required>
-       </field>
-
-       <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>type</dc-element>
-         <dc-qualifier></dc-qualifier>
-         <repeatable>true</repeatable>
-         <label>Type</label>
-         <input-type value-pairs-name="common_types">dropdown</input-type>
-         <hint> Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "CTRL" or "Shift" key.</hint>
-         <required></required>
-       </field>
-
-       <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>language</dc-element>
-         <dc-qualifier>iso</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Language</label>
-         <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
-         <hint>Select the language of the main content of the item.  If the language does not appear in the list below, please select 'Other'.  If the content does not really have a language (for example, if it is a dataset or an image) please select 'N/A'.</hint>
-         <required></required>
-       </field>
-     </page>
-
-     <page number="2">
-       <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>subject</dc-element>
-         <dc-qualifier></dc-qualifier>
-         <!-- An input-type of twobox MUST be marked as repeatable -->
-         <repeatable>true</repeatable>
-         <label>AGROVOC Keywords</label>
-         <input-type>twobox</input-type>
-         <hint> Enter appropriate subject keywords or phrases below. </hint>
-         <required></required>
-         <vocabulary>srsc</vocabulary>
-       </field>
-	   
-	   
-	      <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>icsubject</dc-element>
-         <dc-qualifier>icrafsubject</dc-qualifier>
-         <repeatable>true</repeatable>
-         <label>ICRAF Subject Focus</label>
-         <input-type value-pairs-name="icrafsubject">dropdown</input-type>
-         <hint></hint>
-         <required></required>
-         </field>   
-	   
-	    <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>crsubject</dc-element>
-         <dc-qualifier>crpsubject</dc-qualifier>
-         <repeatable>true</repeatable>
-		 <label>CRP focus</label>
-         <input-type value-pairs-name="crpsubject">dropdown</input-type>
-		 <hint></hint>
-         <required></required>
-         </field>
-
-
-       <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>description</dc-element>
-         <dc-qualifier>abstract</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Abstract</label>
-         <input-type>textarea</input-type>
-         <hint> Enter the abstract of the item below. </hint>
-         <required></required>
-       </field>
-       
-	    <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>description</dc-element>
-         <dc-qualifier>sponsorship</dc-qualifier>
-         <repeatable>true</repeatable>
-         <label>Project Sponsor</label>
-         <input-type>twobox</input-type>
-         <hint> Enter Sponsor or Sponsors in the box.</hint>
-         <required></required>
-       </field>
-	   
-     
-	   
-	     <field>
-	     <dc-schema>dc</dc-schema>
-         <dc-element>identifier</dc-element>
-         <dc-qualifier>fund</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Sponsor Project Number</label>
-         <input-type >onebox</input-type>
-         <hint> Enter  funding codes in the box below. </hint>
-         <required></required>
-        </field>
-	   
-	   
-	    <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>river</dc-element>
-         <dc-qualifier>basin</dc-qualifier>
-         <repeatable>true</repeatable>
-		 <label>River Basin Focus</label>
-         <input-type value-pairs-name="riverbasin">dropdown</input-type>
-         <hint>To select more than one,you may have to hold down the "CTRL" or "Shift" key.</hint>
-         <required></required>
-         </field>
-		 
-	     <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>rplace</dc-element>
-         <dc-qualifier>region</dc-qualifier>
-         <repeatable>true</repeatable>
-		 <label>Region Focus </label>
-         <input-type value-pairs-name="region_types">dropdown</input-type>
-         <hint>To select more than one region, you may have to hold down the "CTRL" or "Shift" key.</hint>
-         <required></required>
-         </field>
-	   
-	     <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>cplace</dc-element>
-         <dc-qualifier>country</dc-qualifier>
-         <repeatable>true</repeatable>
-         <label>Country Focus</label>
-         <input-type value-pairs-name="countrylist">dropdown</input-type>
-         <hint>Enter a country or Countries</hint>
-         <required></required>
-         </field>
-
-        <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>description</dc-element>
-         <dc-qualifier></dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Notes</label>
-         <input-type>textarea</input-type>
-         <hint> Enter any Notes or comments in this box. </hint>
-         <required></required>
-       </field>
-     </page>
-   </form>
-	
+<!--CPWF submssion form-->
 	<form name="CPWF">
      <page number="1">
        <field>
@@ -1911,15 +1368,15 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>Please select  either Open Access or Limited Access.</hint>
          <required></required>
        </field>
-		
-	   
-	    
+
+
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
          <dc-qualifier>doi</dc-qualifier>
          <repeatable>false</repeatable>
-         <label>Document Object Identifier (DOI)</label>
+         <label>Document Object Identifier(Doi)</label>
          <input-type>onebox</input-type>
          <hint>Append http://dx.doi.org/  before the doi.</hint>
          <required></required>
@@ -2022,7 +1479,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <required></required>
          <vocabulary>srsc</vocabulary>
        </field>
-	   
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>cpsubject</dc-element>
@@ -2033,7 +1490,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
 		 <hint></hint>
          <required></required>
          </field>
-		 
+
 	     <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>crsubject</dc-element>
@@ -2056,20 +1513,20 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint> Enter the abstract of the item below. </hint>
          <required></required>
        </field>
-       
+
 	     <field>
 	     <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
          <dc-qualifier>fund</dc-qualifier>
          <repeatable>false</repeatable>
-         <label>Sponsor Project Number</label>
+         <label>Project Number</label>
          <input-type value-pairs-name="cpwfundno">dropdown</input-type>
-		 <hint>Enter  funding codes in the box below</hint>
+		 <hint></hint>
          <required></required>
         </field>
-	     	   
-	     
-	   	   	    
+
+
+
 	     <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>river</dc-element>
@@ -2080,7 +1537,19 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>To select more than one,you may have to hold down the "CTRL" or "Shift" key.</hint>
          <required></required>
          </field>
-	          
+
+         <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>rplace</dc-element>
+         <dc-qualifier>region</dc-qualifier>
+         <repeatable>true</repeatable>
+		 <label>Region Focus </label>
+         <input-type value-pairs-name="region_types">dropdown</input-type>
+         <hint>To select more than one region, you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <required></required>
+         </field>
+	           
+
 
          <field>
 		 <dc-schema>dc</dc-schema>
@@ -2140,7 +1609,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>If the item has any alternative titles, please enter them below.</hint>
          <required></required>
        </field>
-	   
+
 	    <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>title</dc-element>
@@ -2161,9 +1630,9 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <input-type>onebox</input-type>
          <hint>Enter the URL.</hint>
          <required></required>
-       </field> 
-	   
-	   
+       </field>
+
+
 	     <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -2307,21 +1776,21 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <required></required>
          <vocabulary>srsc</vocabulary>
         </field>
-	   
-	   
-	   
+
+
+
 		 <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>ccsubject</dc-element>
          <dc-qualifier>ccafsubject</dc-qualifier>
          <repeatable>true</repeatable>
-		 <label>CCAFS Subject</label>
+		 <label>CCAFS Subject Focus </label>
          <input-type value-pairs-name="ccafsubject">dropdown</input-type>
 		 <hint></hint>
          <required></required>
          </field>
-		 
-	  
+
+
 	     <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>crsubject</dc-element>
@@ -2333,8 +1802,8 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <required></required>
          </field>
 
-	   
-	   
+
+
 
         <field>
 		 <dc-schema>dc</dc-schema>
@@ -2358,8 +1827,34 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <required></required>
        </field>
 	   
-     	 
-	      <field>
+     
+	   
+	     <field>
+	     <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>fund</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Sponsor Project Number</label>
+         <input-type >onebox</input-type>
+         <hint>Enter funding codes in the box below.</hint>
+         <required></required>
+        </field>
+
+
+
+
+	     <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>river</dc-element>
+         <dc-qualifier>basin</dc-qualifier>
+         <repeatable>true</repeatable>
+		 <label>River Basin Focus</label>
+         <input-type value-pairs-name="riverbasin">dropdown</input-type>
+         <hint>To select more than one,you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <required></required>
+         </field>
+
+        <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>rplace</dc-element>
          <dc-qualifier>region</dc-qualifier>
@@ -2368,7 +1863,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <input-type value-pairs-name="region_types">dropdown</input-type>
          <hint>To select more than one region, you may have to hold down the "CTRL" or "Shift" key.</hint>
          <required></required>
-         </field>     
+         </field>
 
            <field>
 		 <dc-schema>dc</dc-schema>
@@ -2388,19 +1883,19 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Notes</label>
          <input-type>textarea</input-type>
-         <hint> Enter any Notes or comments in this box. </hint>
+         <hint>Enter any notes or comments in this box.</hint>
          <required></required>
        </field>
      </page>
    </form>
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
  </form-definitions>
 
 
@@ -2445,26 +1940,8 @@ it, please enter the types and the actual numbers or codes below.</hint>
      </pair>
    </value-pairs>
 
-   <value-pairs value-pairs-name="journal_Identifier" dc-term="identifier_journal">
-     <pair>
-       <displayed-value>ISSN</displayed-value>
-       <stored-value>ISSN</stored-value>
-     </pair>
-  </value-pairs>
-    
- <value-pairs value-pairs-name="journal_types" dc-term="type_journal">
-     <pair>
-       <displayed-value>Journal Article</displayed-value>
-       <stored-value>Journal Article</stored-value>
-     </pair>
-  </value-pairs>
-    
+    <value-pairs value-pairs-name="common_types" dc-term="type">
 
-   
-   
-   
-   <value-pairs value-pairs-name="common_types" dc-term="type">
-     
        <pair>
        <displayed-value>Audio</displayed-value>
        <stored-value>Audio</stored-value>
@@ -2484,13 +1961,18 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>Blog</displayed-value>
        <stored-value>Blog</stored-value>
      </pair>
-	 
-   <pair>
-       <displayed-value>Brochure or Flyer
 
-   </displayed-value>
-       <stored-value>Brochure</stored-value>
+   <pair>
+       <displayed-value>Brochure or Flyer</displayed-value>
+	  <stored-value>Brochure</stored-value>
      </pair>
+
+
+	 <pair>
+       <displayed-value>Case Study</displayed-value>
+       <stored-value>Case Study</stored-value>
+     </pair>
+
 
 
      <pair>
@@ -2502,247 +1984,10 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>Conference Proceedings</displayed-value>
        <stored-value>Conference Proceedings</stored-value>
      </pair>
-
+   
      <pair>
        <displayed-value>Dataset</displayed-value>
        <stored-value>Dataset</stored-value>
-     </pair>
-   <pair>
-       <displayed-value>Image</displayed-value>
-       <stored-value>Image</stored-value>
-     </pair>
-      <pair>
-       <displayed-value>Journal Article</displayed-value>
-       <stored-value>Journal Article</stored-value>
-     </pair>
-
-
-   
-      <pair>
-       <displayed-value>Manual</displayed-value>
-       <stored-value>Manual</stored-value>
-     </pair>
-    
-          <pair>
-       <displayed-value>Manuscript-unpublished </displayed-value>
-       <stored-value>Manuscript</stored-value>
-     </pair>
-
-     
-     <pair>
-       <displayed-value>Map</displayed-value>
-       <stored-value>Map</stored-value>
-     </pair>
- <pair>
-  <displayed-value>Newsletter</displayed-value>
-       <stored-value>Newsletter</stored-value>
-     </pair>
-     
-    
-
-
-	<pair>
-       <displayed-value>Policy Brief</displayed-value>
-       <stored-value>policy Brief</stored-value>
-       </pair>
-
-
-    <pair>
-       <displayed-value>Poster</displayed-value>
-       <stored-value>Poster</stored-value>
-     </pair>
-
-
-            <pair>
-       <displayed-value>Press Item</displayed-value>
-       <stored-value>Press Item</stored-value>
-     </pair>
-
-
-
-    
-     <pair>
-       <displayed-value>Presentation</displayed-value>
-       <stored-value>Presentation</stored-value>
-     </pair>
-    
-     <pair>
-       <displayed-value>Project Report</displayed-value>
-       <stored-value>Project Report</stored-value>
-     </pair>
-
-     <pair>
-       <displayed-value>Software</displayed-value>
-       <stored-value>Software</stored-value>
-     </pair>
-     <pair>
-       <displayed-value>Technical Report</displayed-value>
-       <stored-value>Technical Report</stored-value>
-     </pair>
-     <pair>
-       <displayed-value>Thesis or Dissertation</displayed-value>
-       <stored-value>Thesis</stored-value>
-     </pair>
-    <pair>
-       <displayed-value>Training Module or Learning Object</displayed-value>
-       <stored-value>Training Module or Learning Object</stored-value>
-     </pair>
-
-
-     <pair>
-       <displayed-value>Video</displayed-value>
-       <stored-value>Video</stored-value>
-     </pair>
-         <pair>
-       <displayed-value>Website</displayed-value>
-       <stored-value>Website</stored-value>
-     </pair>
-
-     <pair>
-       <displayed-value>Working Paper</displayed-value>
-       <stored-value>Working Paper</stored-value>
-     </pair>
-	 
-
-	 
-     <pair>
-       <displayed-value>Wiki</displayed-value>
-       <stored-value>Wiki</stored-value>
-     </pair>
-
- 
-
-
-
-     <pair>
-       <displayed-value>Other</displayed-value>
-       <stored-value>Other</stored-value>
-     </pair>
-   </value-pairs>
-   
-   
-   
-   
-   
-   
-   
-   
-
-   <!-- default language order: (from dspace 1.2.1)
-        "en_US", "en", "es", "de", "fr", "it", "ja", "zh", "other", ""
-     -->
-   <value-pairs value-pairs-name="common_iso_languages" dc-term="language_iso">
-     <pair>
-       <displayed-value>N/A</displayed-value>
-       <stored-value></stored-value>
-     </pair>
-
-
-    <pair>
-       <displayed-value>Amharic</displayed-value>
-       <stored-value>am</stored-value>
-     </pair>
-     
-	 
-	 <pair>
-       <displayed-value>Chinese</displayed-value>
-       <stored-value>zh</stored-value>
-     </pair>
-	 
-	 	 
-     <pair>
-       <displayed-value>English</displayed-value>
-       <stored-value>en</stored-value>
-     </pair>
-     <pair>
-       <displayed-value>Spanish</displayed-value>
-       <stored-value>es</stored-value>
-     </pair>
-     <pair>
-       <displayed-value>German</displayed-value>
-       <stored-value>de</stored-value>
-     </pair>
-     <pair>
-       <displayed-value>French</displayed-value>
-       <stored-value>fr</stored-value>
-     </pair>
-     <pair>
-       <displayed-value>Italian</displayed-value>
-       <stored-value>it</stored-value>
-     </pair>
-     <pair>
-       <displayed-value>Japanese</displayed-value>
-       <stored-value>ja</stored-value>
-     </pair>
-     
-
-   <pair>
-       <displayed-value>Oromiffa</displayed-value>
-       <stored-value>om</stored-value>
-     </pair>
-
-      <pair>
-       <displayed-value>Swahili </displayed-value>
-       <stored-value>sw</stored-value>
-     </pair>
-
-
-
-     <pair>
-       <displayed-value>(Other)</displayed-value>
-       <stored-value>other</stored-value>
-     </pair>
-	 </value-pairs> 
-
-
-      <value-pairs value-pairs-name="common_status_identifier" dc-term="identifier_status">
-     <pair>
-       <displayed-value>N/A</displayed-value>
-       <stored-value></stored-value>
-     </pair>
-
-        <pair>
-       <displayed-value>Open Access</displayed-value>
-       <stored-value>Open Access</stored-value>
-     </pair>
-     <pair>
-       <displayed-value>Limited Access</displayed-value>
-       <stored-value>Limited Access</stored-value>
-     </pair>
-
-     </value-pairs>  
-	 
-<value-pairs value-pairs-name="ilrisubject" dc-term="isubject_ilrisubject">
-      <pair>
-       <displayed-value>AGRICULTURE</displayed-value>
-       <stored-value>AGRICULTURE</stored-value>
-     </pair>
-	 
-	  <pair>
-       <displayed-value>ANIMAL BREEDING</displayed-value>
-       <stored-value>ANIMAL BREEDING</stored-value>
-     </pair>
-   
-   
-   <pair>
-       <displayed-value>ANIMAL DISEASES</displayed-value>
-       <stored-value>ANIMAL DISEASES</stored-value>
-     </pair>
-   
-   
-   <pair>
-       <displayed-value>ANIMAL FEEDING</displayed-value>
-       <stored-value>ANIMAL FEEDING</stored-value>
-     </pair>
-   
-   <pair>
-       <displayed-value>ANIMAL HEALTH</displayed-value>
-       <stored-value>ANIMAL HEALTH</stored-value>
-     </pair>
-   
-     <pair>
-       <displayed-value>ANIMAL PRODUCTION</displayed-value>
-       <stored-value>ANIMAL PRODUCTION</stored-value>
      </pair>
    
    
@@ -2787,12 +2032,316 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <stored-value>CONSUMPTION</stored-value>
      </pair>
    
+   <pair>
+       <displayed-value>Image</displayed-value>
+       <stored-value>Image</stored-value>
+     </pair>
+
+
+      <pair>
+       <displayed-value>Journal Article</displayed-value>
+       <stored-value>Journal Article</stored-value>
+     </pair>
+
+     <pair>
+       <displayed-value>Internal Document</displayed-value>
+       <stored-value>Internal Document</stored-value>
+     </pair>
+
+      <pair>
+       <displayed-value>Manual</displayed-value>
+       <stored-value>Manual</stored-value>
+     </pair>
+
+          <pair>
+       <displayed-value>Manuscript-unpublished </displayed-value>
+       <stored-value>Manuscript</stored-value>
+     </pair>
+
+
+     <pair>
+       <displayed-value>Map</displayed-value>
+       <stored-value>Map</stored-value>
+     </pair>
+
+
+    <pair>
+  <displayed-value>News item</displayed-value>
+       <stored-value>News item</stored-value>
+     </pair>
+
+ <pair>
+  <displayed-value>Newsletter</displayed-value>
+       <stored-value>Newsletter</stored-value>
+     </pair>
+
+
+
+
+	<pair>
+       <displayed-value>Policy Brief</displayed-value>
+       <stored-value>Policy Brief</stored-value>
+       </pair>
+
+
+    <pair>
+       <displayed-value>Poster</displayed-value>
+       <stored-value>Poster</stored-value>
+     </pair>
+
+
+            <pair>
+       <displayed-value>Press Item</displayed-value>
+       <stored-value>Press Item</stored-value>
+     </pair>
+
+
+
+
+     <pair>
+       <displayed-value>Presentation</displayed-value>
+       <stored-value>Presentation</stored-value>
+     </pair>
+
+     <pair>
+       <displayed-value>Project Report</displayed-value>
+       <stored-value>Project Report</stored-value>
+     </pair>
+
+     <pair>
+       <displayed-value>Software</displayed-value>
+       <stored-value>Software</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Technical Report</displayed-value>
+       <stored-value>Technical Report</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Thesis or Dissertation</displayed-value>
+       <stored-value>Thesis</stored-value>
+     </pair>
+    <pair>
+       <displayed-value>Training Module or Learning Object</displayed-value>
+       <stored-value>Training Module or Learning Object</stored-value>
+     </pair>
+
+
+     <pair>
+       <displayed-value>Video</displayed-value>
+       <stored-value>Video</stored-value>
+     </pair>
+         <pair>
+       <displayed-value>Website</displayed-value>
+       <stored-value>Website</stored-value>
+     </pair>
+
+     <pair>
+       <displayed-value>Working Paper</displayed-value>
+       <stored-value>Working Paper</stored-value>
+     </pair>
+
+
+
+     <pair>
+       <displayed-value>Wiki</displayed-value>
+       <stored-value>Wiki</stored-value>
+     </pair>
+
+
+
+
+
+     <pair>
+       <displayed-value>Other</displayed-value>
+       <stored-value>Other</stored-value>
+     </pair>
+   </value-pairs>
+
+
+
+
+
+
+
+
+
+   <!-- default language order: (from dspace 1.2.1)
+        "en_US", "en", "es", "de", "fr", "it", "ja", "zh", "other", ""
+     -->
+   <value-pairs value-pairs-name="common_iso_languages" dc-term="language_iso">
+     <pair>
+       <displayed-value>N/A</displayed-value>
+       <stored-value></stored-value>
+     </pair>
+
+
+    <pair>
+       <displayed-value>Amharic</displayed-value>
+       <stored-value>am</stored-value>
+     </pair>
+
+
+	 <pair>
+       <displayed-value>Chinese</displayed-value>
+       <stored-value>zh</stored-value>
+     </pair>
+
+
+     <pair>
+       <displayed-value>English</displayed-value>
+       <stored-value>en</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Spanish</displayed-value>
+       <stored-value>es</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>German</displayed-value>
+       <stored-value>de</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>French</displayed-value>
+       <stored-value>fr</stored-value>
+     </pair>
+
+	  <pair>
+       <displayed-value>Indonesian</displayed-value>
+       <stored-value>id</stored-value>
+     </pair>
+
+
+     <pair>
+       <displayed-value>Italian</displayed-value>
+       <stored-value>it</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Japanese</displayed-value>
+       <stored-value>ja</stored-value>
+     </pair>
+
+
+   <pair>
+       <displayed-value>Oromiffa</displayed-value>
+       <stored-value>om</stored-value>
+     </pair>
+
+      <pair>
+       <displayed-value>Swahili </displayed-value>
+       <stored-value>sw</stored-value>
+     </pair>
+
+
+
+     <pair>
+       <displayed-value>(Other)</displayed-value>
+       <stored-value>other</stored-value>
+     </pair>
+	 </value-pairs>
+
+
+      <value-pairs value-pairs-name="common_status_identifier" dc-term="identifier_status">
+     <pair>
+       <displayed-value>N/A</displayed-value>
+       <stored-value></stored-value>
+     </pair>
+
+        <pair>
+       <displayed-value>Open Access</displayed-value>
+       <stored-value>Open Access</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Limited Access</displayed-value>
+       <stored-value>Limited Access</stored-value>
+     </pair>
+
+     </value-pairs>
+
+<value-pairs value-pairs-name="ilrisubject" dc-term="isubject_ilrisubject">
+      <pair>
+       <displayed-value>AGRICULTURE</displayed-value>
+       <stored-value>AGRICULTURE</stored-value>
+     </pair>
+
+	  <pair>
+       <displayed-value>AGRI-HEALTH</displayed-value>
+       <stored-value>AGRI-HEALTH</stored-value>
+      </pair>
+
+	 	  <pair>
+       <displayed-value>ANIMAL BREEDING</displayed-value>
+       <stored-value>ANIMAL BREEDING</stored-value>
+     </pair>
+
+
+   <pair>
+       <displayed-value>ANIMAL DISEASES</displayed-value>
+       <stored-value>ANIMAL DISEASES</stored-value>
+     </pair>
+
+
+   <pair>
+       <displayed-value>ANIMAL FEEDING</displayed-value>
+       <stored-value>ANIMAL FEEDING</stored-value>
+     </pair>
+
+   <pair>
+       <displayed-value>ANIMAL HEALTH</displayed-value>
+       <stored-value>ANIMAL HEALTH</stored-value>
+     </pair>
+
+     <pair>
+       <displayed-value>ANIMAL PRODUCTION</displayed-value>
+       <stored-value>ANIMAL PRODUCTION</stored-value>
+     </pair>
+
+
+    <pair>
+       <displayed-value>ANIMAL PRODUCTS</displayed-value>
+       <stored-value>ANIMAL PRODUCTS</stored-value>
+     </pair>
+
+
+    <pair>
+       <displayed-value>BIODIVERSITY</displayed-value>
+       <stored-value>BIODIVERSITY</stored-value>
+     </pair>
+
+    <pair>
+       <displayed-value>BIOTECHNOLOGY</displayed-value>
+       <stored-value>BIOTECHNOLOGY</stored-value>
+     </pair>
+
+    <pair>
+       <displayed-value>BREEDS</displayed-value>
+       <stored-value>BREEDS</stored-value>
+     </pair>
+    <pair>
+       <displayed-value>CAPACITY STRENGTHENING</displayed-value>
+       <stored-value>CAPACITY STRENGTHENING</stored-value>
+     </pair>
+
+    <pair>
+       <displayed-value>CATTLE</displayed-value>
+       <stored-value>CATTLE</stored-value>
+     </pair>
+
+
+    <pair>
+       <displayed-value>CLIMATE CHANGE</displayed-value>
+       <stored-value>CLIMATE CHANGE</stored-value>
+     </pair>
+
+    <pair>
+       <displayed-value>CONSUMPTION</displayed-value>
+       <stored-value>CONSUMPTION</stored-value>
+     </pair>
+
     <pair>
        <displayed-value>CROP RESIDUES</displayed-value>
        <stored-value>CROP RESIDUES</stored-value>
      </pair>
-   
-   
+
+
     <pair>
        <displayed-value>CROP-LIVESTOCK</displayed-value>
        <stored-value>CROP-LIVESTOCK</stored-value>
@@ -2824,24 +2373,24 @@ it, please enter the types and the actual numbers or codes below.</hint>
 	 <pair>
        <displayed-value>ENVIRONMENT</displayed-value>
        <stored-value>ENVIRONMENT</stored-value>
-     </pair>
+     </pair> 
 	 
 	  <pair>
        <displayed-value>EPIDEMIOLOGY</displayed-value>
        <stored-value>EPIDEMIOLOGY</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>EXTENSION</displayed-value>
        <stored-value>EXTENSION</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>FARMING SYSTEMS</displayed-value>
        <stored-value>FARMING SYSTEMS</stored-value>
      </pair>
-	 
-	 
+
+
 	   <pair>
        <displayed-value>FEEDS</displayed-value>
        <stored-value>FEEDS</stored-value>
@@ -2850,59 +2399,64 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>FISH</displayed-value>
        <stored-value>FISH</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>FODDER</displayed-value>
        <stored-value>FODDER</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>FOOD SAFETY</displayed-value>
        <stored-value>FOOD SAFETY</stored-value>
-     </pair>
+     </pair> 
 	 
 	  <pair>
        <displayed-value>FOOD SECURITY</displayed-value>
        <stored-value>FOOD SECURITY</stored-value>
-     </pair>
+     </pair> 
 	 
 	  <pair>
        <displayed-value>FORAGES</displayed-value>
        <stored-value>FORAGES</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>GENETICS</displayed-value>
        <stored-value>GENETICS</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>GEODATA</displayed-value>
        <stored-value>GEODATA</stored-value>
      </pair>
-	 
+
 	   <pair>
        <displayed-value>GOATS</displayed-value>
        <stored-value>GOATS</stored-value>
      </pair>
-	 
+
+	  <pair>
+       <displayed-value>HEALTH</displayed-value>
+       <stored-value>HEALTH</stored-value>
+     </pair>
+
 	  <pair>
        <displayed-value>HIV-AIDS</displayed-value>
        <stored-value>HIV-AIDS</stored-value>
      </pair>
-	 
-	 
+
+
 	  <pair>
        <displayed-value>IMPACT ASSESSMENT</displayed-value>
        <stored-value>IMPACT ASSESSMENT</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>INDIGENOUS BREEDS</displayed-value>
        <stored-value>INDIGENOUS BREEDS</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>INNOVATION SYSTEMS</displayed-value>
        <stored-value>INNOVATION SYSTEMS</stored-value>
@@ -2922,12 +2476,12 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>INSURANCE</displayed-value>
        <stored-value>INSURANCE</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>KNOWLEDGE AND INFORMATION</displayed-value>
        <stored-value>KNOWLEDGE AND INFORMATION</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>LIVELIHOODS</displayed-value>
        <stored-value>LIVELIHOODS</stored-value>
@@ -2944,17 +2498,17 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>LIVESTOCK-WATER</displayed-value>
        <stored-value>LIVESTOCK-WATER</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>MARKETS</displayed-value>
        <stored-value>MARKETS</stored-value>
-     </pair>
+     </pair> 
 	 
 	  <pair>
        <displayed-value>NRM</displayed-value>
        <stored-value>NRM</stored-value>
        </pair>
-	 
+
 	   <pair>
        <displayed-value>NUTRITION</displayed-value>
        <stored-value>NUTRITION</stored-value>
@@ -2967,14 +2521,25 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>PESTS</displayed-value>
        <stored-value>PESTS</stored-value>
      </pair>
-	 
+
 	  <pair>
        <displayed-value>PIGS</displayed-value>
        <stored-value>PIGS</stored-value>
      </pair>
-	 
-	  
-	   <pair>
+
+
+	  <pair>
+       <displayed-value>POULTRY</displayed-value>
+       <stored-value>POULTRY</stored-value>
+     </pair>
+
+	  <pair>
+       <displayed-value>POLICY</displayed-value>
+       <stored-value>POLICY</stored-value>
+     </pair>
+
+
+	  <pair>
        <displayed-value>PRO-POOR LIVESTOCK</displayed-value>
        <stored-value>PRO-POOR LIVESTOCK</stored-value>
      </pair>
@@ -2982,16 +2547,23 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>RESEARCH</displayed-value>
        <stored-value>RESEARCH</stored-value>
      </pair>
+
+	 <pair>
+       <displayed-value>RESILIENCE</displayed-value>
+       <stored-value>RESILIENCE</stored-value>
+     </pair>
+
+
 	   <pair>
        <displayed-value>SEEDS</displayed-value>
        <stored-value>SEEDS</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>SHEEP</displayed-value>
        <stored-value>SHEEP</stored-value>
      </pair>
-	 
+
 	   <pair>
        <displayed-value>SOILS</displayed-value>
        <stored-value>SOILS</stored-value>
@@ -3008,508 +2580,36 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>VALUE CHAINS</displayed-value>
        <stored-value>VALUE CHAINS</stored-value>
      </pair>
+
+	  <pair>
+       <displayed-value>VULNERABILITY</displayed-value>
+       <stored-value>VULNERABILITY</stored-value>
+     </pair>
+
 	   <pair>
        <displayed-value>WATER</displayed-value>
        <stored-value>WATER</stored-value>
      </pair>
-	 
-	 
+
+
 	 <pair>
        <displayed-value>WILDLIFE</displayed-value>
        <stored-value>WILDLIFE</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>WOMEN</displayed-value>
        <stored-value>WOMEN</stored-value>
      </pair>
-	 
+
 	 <pair>
        <displayed-value>ZOONOTIC DISEASES</displayed-value>
        <stored-value>ZOONOTIC DISEASES</stored-value>
      </pair>
-	 
-	  	 
- </value-pairs>  
-	 
-<value-pairs value-pairs-name="icrafsubject" dc-term="icsubject_icrafsubject">
-    
-    <pair>
-       <displayed-value>AFFORESTATION</displayed-value>
-       <stored-value>AFFORESTATION</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>AGRICULTURE</displayed-value>
-       <stored-value>AGRICULTURE</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>AGROFORESTRY</displayed-value>
-       <stored-value>AGROFORESTRY</stored-value>
-     </pair> 
-	 
-	 
-	  <pair>
-       <displayed-value>AGRO-SYLVO-PASTORAL</displayed-value>
-       <stored-value>AGRO-SYLVO-PASTORAL</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>ALLOMETRICS</displayed-value>
-       <stored-value>ALLOMETRICS</stored-value>
-     </pair> 
-	 
-	 
-	  <pair>
-       <displayed-value>BIODIVERSITY</displayed-value>
-       <stored-value>BIODIVERSITY</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>BIOTECHNOLOGY</displayed-value>
-       <stored-value>BIOTECHNOLOGY</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>CAPACITY BUILDING</displayed-value>
-       <stored-value>CAPACITY BUILDING</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>CARBON</displayed-value>
-       <stored-value>CARBON</stored-value>
-     </pair> 
-	 
-	 
-	  <pair>
-       <displayed-value>CATCHMENT</displayed-value>
-       <stored-value>CATCHMENT</stored-value>
-     </pair> 
-	 
-	 
-	  <pair>
-       <displayed-value>CERTIFICATION</displayed-value>
-       <stored-value>CERTIFICATION</stored-value>
-     </pair> 
-	 
-	 
-	  <pair>
-       <displayed-value>COLLECTIVE ACTION</displayed-value>
-       <stored-value>COLLECTIVE ACTION</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>CONFLICT RESOLUTION</displayed-value>
-       <stored-value>CONFLICT RESOLUTION</stored-value>
-     </pair> 
-	 
-	 
-	  <pair>
-       <displayed-value>CONSERVATION</displayed-value>
-       <stored-value>CONSERVATION</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>CROPS</displayed-value>
-       <stored-value>CROPS</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>DEGRADATION</displayed-value>
-       <stored-value>DEGRADATION</stored-value>
-     </pair> 
-	 
-	 
-	  <pair>
-       <displayed-value>DEMAND STUDIES</displayed-value>
-       <stored-value>DEMAND STUDIES</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>DENDROCHRONOLOGY</displayed-value>
-       <stored-value>DENDROCHRONOLOGY</stored-value>
-     </pair> 
-	  <pair>
-       <displayed-value>DISEASE</displayed-value>
-       <stored-value>DISEASE</stored-value>
-     </pair> 
-	 
-	 
-	  <pair>
-       <displayed-value>DRIVERS OF LAND USE CHANGE</displayed-value>
-       <stored-value>DRIVERS OF LAND USE CHANGE</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>ECOLOGY</displayed-value>
-       <stored-value>ECOLOGY</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>ECOSYSTEMS</displayed-value>
-       <stored-value>ECOSYSTEMS</stored-value>
-     </pair> 
-	 
-	 
-	  <pair>
-       <displayed-value>EMISSIONS</displayed-value>
-       <stored-value>EMISSIONS</stored-value>
-     </pair> 
-	 
-	 
-	  <pair>
-       <displayed-value>ENVIRONMENT</displayed-value>
-       <stored-value>ENVIRONMENT</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>ENVIRONMENTAL SERVICES</displayed-value>
-       <stored-value>ENVIRONMENTAL SERVICES</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>EPIDEMIOLOGY  IN GENERAL</displayed-value>
-       <stored-value>EPIDEMIOLOGY  IN GENERAL</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>EXTENSION</displayed-value>
-       <stored-value>EXTENSION</stored-value>
-     </pair> 
-	 
-	 
-	  <pair>
-       <displayed-value>FARMING SYSTEMS</displayed-value>
-       <stored-value>FARMING SYSTEMS</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>FERTILISER</displayed-value>
-       <stored-value>FERTILISER</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>FISH</displayed-value>
-       <stored-value>FISH</stored-value>
-     </pair> 
-	 
-	 
-	  <pair>
-       <displayed-value>FODDER</displayed-value>
-       <stored-value>FODDER</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>FOOD SAFETY</displayed-value>
-       <stored-value>FOOD SAFETY</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>FOOD SECURITY</displayed-value>
-       <stored-value>FOOD SECURITY</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>FORAGE</displayed-value>
-       <stored-value>FORAGE</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>FOREST MARGINS</displayed-value>
-       <stored-value>FOREST MARGINS</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>FORESTRY</displayed-value>
-       <stored-value>FORESTRY</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>FRUITS</displayed-value>
-       <stored-value>FRUITS</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>FUELWOOD</displayed-value>
-       <stored-value>FUELWOOD</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>GENDER</displayed-value>
-       <stored-value>GENDER</stored-value>
-     </pair> 
-	 
-	 
-	  <pair>
-       <displayed-value>GENETICS</displayed-value>
-       <stored-value>GENETICS</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>GERMPLASM</displayed-value>
-       <stored-value>GERMPLASM</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>GOVERNANCE</displayed-value>
-       <stored-value>GOVERNANCE</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>GREENHOUSE GASES (GHG)</displayed-value>
-       <stored-value>GREENHOUSE GASES (GHG)</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>HYDROLOGY</displayed-value>
-       <stored-value>HYDROLOGY</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>IMPACT ASSESSMENT </displayed-value>
-       <stored-value>IMPACT ASSESSMENT </stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>IMPACT PATHWAYS</displayed-value>
-       <stored-value>IMPACT PATHWAYS</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>KNOWLEDGE AND INFORMATION </displayed-value>
-       <stored-value>KNOWLEDGE AND INFORMATION </stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>LAND DEGRADATION</displayed-value>
-       <stored-value>LAND DEGRADATION</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>LAND REHABILITATION</displayed-value>
-       <stored-value>LAND REHABILITATION</stored-value>
-     </pair> 
-	 
-	 
-	  <pair>
-       <displayed-value>LAND USE</displayed-value>
-       <stored-value>LAND USE</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>LANDSCAPE</displayed-value>
-       <stored-value>LANDSCAPE</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>LIVELIHOODS</displayed-value>
-       <stored-value>LIVELIHOODS</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>LIVESTOCK</displayed-value>
-       <stored-value>LIVESTOCK</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>MANAGEMENT</displayed-value>
-       <stored-value>MANAGEMENT</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>MARKET INFORMATION SYSTEMS</displayed-value>
-       <stored-value>MARKET INFORMATION SYSTEMS</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>MARKETING STRATEGIES</displayed-value>
-       <stored-value>MARKETING STRATEGIES</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>MARKETS</displayed-value>
-       <stored-value>MARKETS</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>MEDICINALS</displayed-value>
-       <stored-value>MEDICINALS</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>MITIGATION</displayed-value>
-       <stored-value>MITIGATION</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>MODEL</displayed-value>
-       <stored-value>MODEL</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>NATURAL RESOURCE MANAGEMENT</displayed-value>
-       <stored-value>NATURAL RESOURCE MANAGEMENT</stored-value>
-     </pair> 
-	 
-	 
-	  <pair>
-       <displayed-value>NON-TIMBER FOREST PRODUCTS (NTFP)</displayed-value>
-       <stored-value>NON-TIMBER FOREST PRODUCTS (NTFP)</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>NUTRITION</displayed-value>
-       <stored-value>NUTRITION</stored-value>
-     </pair> 
-	 
-	 
-	  <pair>
-       <displayed-value>PASTORALISM</displayed-value>
-       <stored-value>PASTORALISM</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>PLANNING</displayed-value>
-       <stored-value>PLANNING</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>PLANT PROPAGATION</displayed-value>
-       <stored-value>PLANT PROPAGATION</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>POLICY</displayed-value>
-       <stored-value>POLICY</stored-value>
-     </pair> 
-	 
-	 
-	  <pair>
-       <displayed-value>POST HARVEST TECHNOLOGY</displayed-value>
-       <stored-value>POST HARVEST TECHNOLOGY</stored-value>
-     </pair> 
-	 
-	 
-	  <pair>
-       <displayed-value>POVERTY</displayed-value>
-       <stored-value>POVERTY</stored-value>
-     </pair> 
-	 
-	 
-	  <pair>
-       <displayed-value>PROCESSING</displayed-value>
-       <stored-value>PROCESSING</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>PRODUCTS</displayed-value>
-       <stored-value>PRODUCTS</stored-value>
-     </pair> 
-	 
-	 
-	  <pair>
-       <displayed-value>QUALITY</displayed-value>
-       <stored-value>QUALITY</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>REFORESTATION</displayed-value>
-       <stored-value>REFORESTATION</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>SOIL FERTILITY</displayed-value>
-       <stored-value>SOIL FERTILITY</stored-value>
-     </pair> 
-	 
-	 
-	  <pair>
-       <displayed-value>SOIL HEALTH</displayed-value>
-       <stored-value>SOIL HEALTH</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>SOILS</displayed-value>
-       <stored-value>SOILS</stored-value>
-     </pair> 
-	  <pair>
-       <displayed-value>SUPPLY STUDIES</displayed-value>
-       <stored-value>SUPPLY STUDIES</stored-value>
-     </pair> 
-	 
-	 
-	  <pair>
-       <displayed-value>SWIDDEN SYSTEMS</displayed-value>
-       <stored-value>SWIDDEN SYSTEMS</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>SYLVO-PASTORAL</displayed-value>
-       <stored-value>SYLVO-PASTORAL</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>SYSTEMS</displayed-value>
-       <stored-value>SYSTEMS</stored-value>
-     </pair> 
-	 
-	 
-	  <pair>
-       <displayed-value>TENURE</displayed-value>
-       <stored-value>TENURE</stored-value>
-     </pair> 
-	 
-	 
-	  <pair>
-       <displayed-value>TRADE</displayed-value>
-       <stored-value>TRADE</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>TREE DOMESTICATION</displayed-value>
-       <stored-value>TREE DOMESTICATION</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>TREE ECOPHYSIOLOGY</displayed-value>
-       <stored-value>TREE ECOPHYSIOLOGY</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>TREE GROWTH MODELS</displayed-value>
-       <stored-value>TREE GROWTH MODELS</stored-value>
-     </pair> 
-	 
-	 
-	  <pair>
-       <displayed-value>TREE PROPERTIES</displayed-value>
-       <stored-value>TREE PROPERTIES</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>VALUE CHAINS</displayed-value>
-       <stored-value>VALUE CHAINS</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>WATER</displayed-value>
-       <stored-value>WATER</stored-value>
-     </pair> 
-	 
-	 
-	  <pair>
-       <displayed-value>WILDLIFE</displayed-value>
-       <stored-value>WILDLIFE</stored-value>
-     </pair> 
-	 
-	  <pair>
-       <displayed-value>WOOD</displayed-value>
-       <stored-value>WOOD</stored-value>
-     </pair> 
-</value-pairs>  	 
-	 
-	 
+
+
+ </value-pairs>
+
  <value-pairs value-pairs-name="cpwfsubject" dc-term="cpsubject_cpwfsubject">
      <pair>
        <displayed-value>AGRICULTURE</displayed-value>
@@ -5644,7 +4744,102 @@ it, please enter the types and the actual numbers or codes below.</hint>
 		 
 		 
    </value-pairs>
-   
+
+    <value-pairs value-pairs-name="ISI_Journal" dc-term="isijournal">
+
+
+     <pair>
+       <displayed-value>N/A</displayed-value>
+       <stored-value></stored-value>
+     </pair>
+
+
+	 <pair>
+       <displayed-value>ISI Journal</displayed-value>
+       <stored-value>ISI Journal</stored-value>
+     </pair>
+
+	 </value-pairs>
+
+
+	 <value-pairs value-pairs-name="GREY_LITERATURE" dc-term="fulltextstatus">
+
+
+     <pair>
+       <displayed-value>N/A</displayed-value>
+       <stored-value></stored-value>
+     </pair>
+
+
+	 <pair>
+       <displayed-value>Grey Literature</displayed-value>
+       <stored-value>Grey Literature</stored-value>
+     </pair>
+
+     <pair>
+       <displayed-value>Formally Published</displayed-value>
+       <stored-value>Formally Published</stored-value>
+     </pair>
+
+	 </value-pairs>
+
+	<value-pairs value-pairs-name="TARGET_AUDIENCE" dc-term="targetaudience">
+
+
+	   <pair>
+       <displayed-value>ACADEMICS</displayed-value>
+       <stored-value>ACADEMICS</stored-value>
+       </pair>
+
+
+	 <pair>
+       <displayed-value>CGIAR</displayed-value>
+       <stored-value>CGIAR</stored-value>
+     </pair>
+
+	 <pair>
+       <displayed-value>DEVELOPMENT PRACTITIONERS</displayed-value>
+       <stored-value>DEVELOPMENT PRACTITIONERS</stored-value>
+      </pair>
+
+	   <pair>
+       <displayed-value>DONORS</displayed-value>
+       <stored-value>DONORS</stored-value>
+     </pair>
+
+	 <pair>
+       <displayed-value>EXTENSION</displayed-value>
+       <stored-value>EXTENSION</stored-value>
+     </pair>
+
+	  <pair>
+       <displayed-value>FARMERS</displayed-value>
+       <stored-value>FARMERS</stored-value>
+     </pair>
+
+
+	 <pair>
+       <displayed-value>NGOS</displayed-value>
+       <stored-value>NGOS</stored-value>
+     </pair>
+
+	  <pair>
+       <displayed-value>POLICY MAKERS</displayed-value>
+       <stored-value>POLICY MAKERS</stored-value>
+     </pair>
+
+	   <pair>
+       <displayed-value>GENERAL PUBLIC</displayed-value>
+       <stored-value>GENERAL PUBLIC</stored-value>
+     </pair>
+
+
+	  <pair>
+	  <displayed-value>SCIENTISTS</displayed-value>
+       <stored-value>SCIENTISTS</stored-value>
+      </pair>
+
+	 </value-pairs>
 
     </form-value-pairs>
 
