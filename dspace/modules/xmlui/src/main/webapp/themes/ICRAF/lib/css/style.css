@@ -279,8 +279,12 @@ div.ds-option-set .ds-sublist-head {
     color: #000000;/*DF6E00;*/
 }
 
+div.ds-option-set h2.ds-sublist-head {
+    margin-left: 0;
+}
+
 div.ds-option-set ul.sublist {
-    margin-left: 30px;
+    margin-left: 15px;
     padding-top: 4px;
     padding-bottom: 4px;
     }
