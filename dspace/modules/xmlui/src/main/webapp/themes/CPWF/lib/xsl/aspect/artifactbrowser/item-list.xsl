@@ -146,8 +146,8 @@
             </xsl:if>
 		 <!--Additional  browse by filed by ILRI/CGSPACE ADMINISTRATOR-->
 
-	 
-	 
+
+
 	    <xsl:if test="dim:field[@element='type']">
                 <span class="bold"><i18n:text>Type</i18n:text><xsl:text>:</xsl:text></span>
                 <span class="content" style="width: {$metadataWidth - 110}px;">
@@ -155,9 +155,9 @@
                             select="substring(dim:field[@element='type']/node(),1,30)"/>
                 </span>
             </xsl:if>
-			
-	 
-	  
+
+
+
 			<xsl:if test="dim:field[@element='identifier' and @qualifier='status'] or dim:field[@element='identifier']">
                 <span class="bold"><i18n:text>Status</i18n:text><xsl:text>:</xsl:text></span>
                 <span class="content" style="width: {$metadataWidth - 110}px;">
@@ -165,15 +165,15 @@
                             select="substring(dim:field[@element='identifier' and @qualifier='status']/node(),1,30)"/>
                 </span>
             </xsl:if>
-			
-			
-			
-			
-			
-			
-			
-			
-			
+
+
+
+
+
+
+
+
+
         </div>
     </xsl:template>
 
