@@ -64,7 +64,7 @@ select.multiple {
 }
 
 #ds-header-wrapper {
-      background-color: #ffffff; 
+      background-color: #ffffff;
       color: white;
 }
 
@@ -110,8 +110,8 @@ select.multiple {
     postion: relative;
     margin: auto;
     padding: 0;
-    border-top: 1px solid #ff6400; 
-    border-bottom: 1px solid #ff6400; 
+    border-top: 1px solid #ff6400;
+    border-bottom: 1px solid #ff6400;
 }
 
 #ds-trail {
@@ -171,9 +171,9 @@ select.multiple {
 }
 
 #ds-footer {
-    border-top: 1px solid #DF6E00; 
+    border-top: 1px solid #DF6E00;
     padding-top: 10px;
-    font-size: 10px; 
+    font-size: 10px;
     line-height: 1.6em;
 }
 
@@ -239,7 +239,7 @@ h1.ds-option-set-head {
     margin-top: 20px;
     margin-left: 15px;
     margin-right: 5px;
-    background-color: #3da74b; 
+    background-color: #3da74b;
     padding: 3px 10px;
     border: 1px solid #2C963A;
     border-bottom: 1px solid #2C963A;
@@ -252,7 +252,7 @@ h1.ds-option-set-head {
 }
 
 div.ds-option-set {
-    border: 1px solid #3da74b; 
+    border: 1px solid #3da74b;
     border-top: none;
     padding: 3px 10px;
     margin-left: 15px;
@@ -264,7 +264,7 @@ div.ds-option-set ul {
     margin-left: 0px;
     padding-top: 5px;
     padding-bottom: 5px;
-    
+
 }
 
 div.ds-option-set .ds-sublist-head {
@@ -520,7 +520,7 @@ input.ds-password-field.error {
 
 
 .ds-form-list {
-   margin-left: 15px;   
+   margin-left: 15px;
    margin-top: 15px;
 }
 
@@ -535,12 +535,12 @@ input.ds-password-field.error {
     font-size: 100%;
     margin:0;
     color: inherit;
-     
+
 }
 
 fieldset ol {
     margin:0;
-    
+
 }
 
 li.ds-form-item {
@@ -599,7 +599,7 @@ li.ds-form-item label.ds-composite-component.last{
 #aspect_submission_StepTransformer_field_dc_date_issued_year,
 #aspect_submission_StepTransformer_field_dc_date_issued_day {
     width: 50px;
-    
+
 }
 
 #aspect_submission_StepTransformer_field_dc_identifier_value {
@@ -725,7 +725,7 @@ span.field-help {
 }
 
 .current-page-link a{
-    color: #660000; 
+    color: #660000;
 }
 
 .pagination-info {
@@ -742,7 +742,7 @@ span.field-help {
     margin: 0;
     margin-left: 15px;
    line-height: 153.9%;
-    font-size: 10px;  
+    font-size: 10px;
 }
 .ds-artifact-list a{
  color: #660000;
@@ -762,13 +762,13 @@ span.field-help {
    Padding-bottom: 5px;
    margin-left: 15px;
    font-size: 9px;
-  
+
 }
 .ds-artifact-item.community {
     padding-top: 1px;
     padding-bottom: 1px;
     font-size: 9px;
-  
+
 }
 
 .community .artifact-title a {
@@ -781,7 +781,7 @@ span.field-help {
     font-weight: normal;
     color: #3da74b; /*660000;*/
     font-size: 12px;
-    margin-left: 5px;    
+    margin-left: 5px;
 }
 
 #aspect_artifactbrowser_CommunityBrowser_div_comunity-browser

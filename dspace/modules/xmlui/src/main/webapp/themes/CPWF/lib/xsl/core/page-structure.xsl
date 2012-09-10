@@ -313,11 +313,11 @@
                   <a href="http://www.waterandfood.org" target="_blank"></a>
                    <!--  <xsl:attribute name="href">
                         <xsl:value-of
-                                select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]"/> 
+                                select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]"/>
                         <xsl:text></xsl:text>
                     </xsl:attribute> -->
                     <span id="ds-header-logo">&#160;</span>
-                   
+
                 </a>
 
                 <h1 class="pagetitle visuallyhidden">
@@ -470,7 +470,7 @@
                     <xsl:text>&#160;</xsl:text>
                 </a>
             </div>
-				
+
         </div>
     </xsl:template>
 

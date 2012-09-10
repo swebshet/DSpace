@@ -316,12 +316,12 @@
                         <xsl:text>/</xsl:text>
                     </xsl:attribute>
                     <span id="ds-header-logo">&#160;</span>
-                   
+
                 </a>
-				
-				
-				
-				
+
+
+
+
                 <h1 class="pagetitle visuallyhidden">
                     <xsl:choose>
                         <!-- protectiotion against an empty page title -->
@@ -444,7 +444,7 @@
     <xsl:template name="buildFooter">
         <div id="ds-footer-wrapper">
             <div id="ds-footer">
-                 
+
             <div id="ds-footer-links">
                     <a>
                         <xsl:attribute name="href">
@@ -474,7 +474,7 @@
                     <xsl:text>&#160;</xsl:text>
                 </a>
             </div>
-				
+
         </div>
     </xsl:template>
 
