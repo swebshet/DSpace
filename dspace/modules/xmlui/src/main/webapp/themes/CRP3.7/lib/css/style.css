@@ -104,13 +104,12 @@ select.multiple {
 }
 /* bread cramb */
 #ds-trail-wrapper {
-    background-color: #702d3e;
+    background-color: #fff;
     width: 980px;
     postion: relative;
     margin: auto;
     padding: 0;
-    border-top: 1px solid #702d3e;
-    border-bottom: 1px solid #702d3e;
+    border-top: 1px solid #ecba33;
 }
 
 #ds-trail {
@@ -122,14 +121,14 @@ select.multiple {
 
 #ds-trail li {
     display: inline;
-    color: #1F3F5E;
+    color: #000;
     margin-right: 0px;
     font-family: verdana;
 }
 
 #ds-trail a {
     font-family: verdana;
-    color: #ffffff;
+    color: #000;
     margin-left:15px;
     text-decoration: none;
 }
@@ -172,7 +171,7 @@ select.multiple {
 }
 
 #ds-footer {
-    border-top: 1px solid #702d3e;
+    border-top: 1px solid #ecba33;
     padding-top: 10px;
     font-size: 10px;
     line-height: 1.6em;
@@ -240,10 +239,9 @@ h1.ds-option-set-head {
     margin-top: 20px;
     margin-left: 15px;
     margin-right: 5px;
-    background-color: #702d3e;
+    background-color: #fdcb44;
     padding: 3px 10px;
-    border: 1px solid #702d3e;
-    border-bottom: 1px solid #702d3e;
+    border-bottom: 1px solid #ecba33;
     color: #ffffff;
     font-size: 108%;
 }
@@ -253,7 +251,7 @@ h1.ds-option-set-head {
 }
 
 div.ds-option-set {
-    border: 1px solid #702d3e;
+    border: 1px solid #ecba33;
     border-top: none;
     padding: 3px 10px;
     margin-left: 15px;
@@ -271,7 +269,7 @@ div.ds-option-set ul {
 div.ds-option-set .ds-sublist-head {
     font-weight: normal;
     font-size: 12px;
-    color: #DF6E00;
+    color: #000;
 }
 
 div.ds-option-set h2.ds-sublist-head {
@@ -308,7 +306,7 @@ div.ds-option-set a:hover{
 #ds-search-form input.ds-button-field {
     margin-left: 6px;
     color:#ffffff;
-    background: #702d3e;
+    background: #ecba33;
 }
 
 #ds-search-form input.ds-text-field,
@@ -347,7 +345,7 @@ td {
 .ds-button-field,
 #aspect_eperson_StartRegistration_list_registration-progress li {
     background-color: #6d859c;
-    border: 1px solid #1F3F5E;
+    border: 1px solid #ecba33;
     padding: 2px 5px;
     color: #FFFFFF;
     font-weight: bold;
@@ -750,7 +748,7 @@ span.field-help {
     font-size: 10px;
 }
 .ds-artifact-list a{
- color: #660000;
+ color: #000;
  font-weight: normal;
  font-size: 14px;
  }
@@ -1077,7 +1075,7 @@ div.spacer{
 #aspect_artifactbrowser_CommunityViewer_div_community-home h2,
 #aspect_artifactbrowser_CollectionViewer_div_collection-home h2 {
     margin-top: 30px;
-    border-bottom:1px solid #D8E8EB;
+    border-bottom:1px solid #ecba33;
     margin-bottom: 3px;
 }
 
