@@ -28,8 +28,7 @@ a:hover, a:active { outline: none; }
 a, a:active, a:visited {
 color:#00994c;
 text-decoration: none;
-font-weight: normal
-margin-left: 15px;
+font-weight: normal;
 font-family: verdana;
 font-size: 12px;
  }
