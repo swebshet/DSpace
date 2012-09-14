@@ -30,7 +30,7 @@ color:#660000;
 text-decoration: none;
 font-weight: normal;
 font-family: verdana;
-font-size: 12px;
+
  }
 a:hover { color:#036; }
 
@@ -39,9 +39,11 @@ ul { margin-left:30px; }
 ol { margin-left:300px; list-style-type: decimal; }
 
 small { font-size:85%; }
-.bold, strong, th { font-weight: bold; }
+.bold, strong, th { font-weight: normal; }
 
-td, td img { vertical-align:top; }
+td, td img { vertical-align:top;
+           margin-left: 15px;
+ }
 
 sub { vertical-align: sub; font-size: smaller; }
 sup { vertical-align: super; font-size: smaller; }
