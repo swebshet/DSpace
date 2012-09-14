@@ -20,7 +20,7 @@ body {
 /*Font size percentages based on the tables at developer.yahoo.com/yui/fonts/ */
 h1 {
     font-size: 16px;
-    color: #000000;/*5f9a64;*/
+    color: #000000;
     text-align: justify;
     font-weight: bold;
     margin-left: 15px;
@@ -103,7 +103,7 @@ select.multiple {
 #ds-user-box a{
     color: white;
 }
-/* path stylesheet */
+
 #ds-trail-wrapper {
     background-color: #fff;
     width: 980px;
@@ -117,22 +117,19 @@ select.multiple {
     list-style: none;
     line-height: 20px;
     margin: 0;
-    padding: 0;
+    padding-left: 15px;
+    font-family: verdana;
+    font-size: 11px;
 }
 
 #ds-trail li {
     display: inline;
     color: #000;
-    margin-right: 0px;
-    font-family: verdana;
+    margin-right: 5px;
 }
 
-#ds-trail a {
-    font-family: verdana;
-    color: #000000;
-    margin-left:15px;
-    font-size: 11px;
-    text-decoration: none;
+#ds-trail li a {
+    color: #000;
 }
 
 /* the size of the body */
@@ -172,7 +169,7 @@ select.multiple {
 
 #ds-footer {
     border-top: 1px solid #ecba33;
-    padding-top: 10px;
+    padding: 5px 0;
     font-size: 10px;
     line-height: 1.6em;
 }
@@ -210,6 +207,7 @@ select.multiple {
 
 #ds-footer-links {
     clear: left;
+    padding-left: 15px;
 }
 
 .ie6 #ds-footer-links {
@@ -341,9 +339,10 @@ ol {
 
 th,
 td {
-    padding: 5px 5px 5px 15px;
+    padding: 5px;
     vertical-align: top;
-   }
+    margin-left: 15px;
+}
 
 .ds-button-field,
 #aspect_eperson_StartRegistration_list_registration-progress li {
@@ -526,7 +525,8 @@ input.ds-password-field.error {
 
 
 .ds-form-list {
-    margin-top: 15px;
+   margin-left: 15px;
+   margin-top: 15px;
 }
 
 .submission h2,
@@ -759,13 +759,14 @@ span.field-help {
 .ds-artifact-item {
     padding-top: 15px;
     padding-bottom: 15px;
- }
+}
 
 .ds-artifact-item.collection,
 .ds-artifact-item.community {
     padding-top: 1px;
     padding-bottom: 1px;
-    font-size: 10px;
+    font-size: 9px;
+
 }
 
 .community .artifact-title a {
@@ -785,8 +786,10 @@ span.field-help {
 {
 color: #000000;
 }
+
 .short-description{
 display: none;
+
 }
 
 #aspect_discovery_SiteRecentSubmissions_div_site-home .short-description {
@@ -818,7 +821,6 @@ display: none;
 ul.alphabet {
     list-style: none;
     margin: 0;
-    margin-left: 15px;
 }
 
 ul.alphabet li {
@@ -1165,4 +1167,8 @@ height: 100%;
 background-color: rgb(255, 255, 255);
 margin: 2px 2px 0px 2px;
 /* border: 1px solid rgb(240, 240, 210); */
+}
+
+table.ds-includeSet-table {
+    margin-left: 10px;
 }
