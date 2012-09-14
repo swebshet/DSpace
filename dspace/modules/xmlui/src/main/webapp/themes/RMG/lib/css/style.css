@@ -35,20 +35,20 @@ h2{
 
 h3 {
     font-size: 12px;
-    color: #808080;
+    color: #519433;
     font-weight: normal;
     margin-left: 15px;
 }
 
 h4 {
     font-size: 10px;
-    color: #808080;
+    color: #519433;
     margin-left: 15px;
 }
 
 h5, h6 {
     font-size: 9px;
-    color: #808080;
+    color: #519433;
     margin-left: 15px;
 }
 
@@ -105,35 +105,31 @@ select.multiple {
 }
 /* bread cramb */
 #ds-trail-wrapper {
-    background-color: #660000;
+    background-color: #fff;
     width: 980px;
     postion: relative;
     margin: auto;
     padding: 0;
-    border-top: 1px solid #660000;
-    border-bottom: 1px solid #660000;
+    border-top: 1px solid #408322;
 }
 
 #ds-trail {
     list-style: none;
     line-height: 20px;
     margin: 0;
-    padding: 0;
+    padding-left: 15px;
+    font-family: verdana;
+    font-size: 11px;
 }
 
 #ds-trail li {
     display: inline;
-    color: #1F3F5E;
-    margin-right: 0px;
-    font-family: verdana;
+    color: #000;
+    margin-right: 5px;
 }
 
-#ds-trail a {
-    font-family: verdana;
-    color: #ffffff;
-    margin-left:15px;
-    font-size: 11px;
-    text-decoration: none;
+#ds-trail li a {
+    color: #000;
 }
 
 /* the size of the body */
@@ -172,15 +168,16 @@ select.multiple {
 }
 
 #ds-footer {
-    border-top: 1px solid #660000;
-    padding-top: 10px;
+    border-top: 1px solid #408322;
+    padding: 5px 0;
     font-size: 10px;
     line-height: 1.6em;
 }
 #ds-footer a{
-    font-size: 11px;
-    color: #519433;
+   font-size: 11px;
+   color: #000;
 }
+
 #ds-footer-left {
     float: left;
 }
@@ -210,6 +207,7 @@ select.multiple {
 
 #ds-footer-links {
     clear: left;
+    padding-left: 15px;
 }
 
 .ie6 #ds-footer-links {
@@ -245,8 +243,8 @@ h1.ds-option-set-head {
     margin-right: 5px;
     background-color: #519433;
     padding: 3px 10px;
-    border: 1px solid #519433;
-    border-bottom: 1px solid #519433;
+    border: 1px solid #408322;
+    border-bottom: 1px solid #408322;
     color: #ffffff;
     font-size: 108%;
 }
@@ -256,7 +254,7 @@ h1.ds-option-set-head {
 }
 
 div.ds-option-set {
-    border: 1px solid #e3d7d7;
+    border: 1px solid #408322;
     border-top: none;
     padding: 3px 10px;
     margin-left: 15px;
@@ -287,7 +285,7 @@ div.ds-option-set ul.sublist {
     padding-bottom: 4px;
     }
 div.ds-option-set a{
-   color: #702d3e;
+   color: #000;
    font-size: 11px;
    font-family: verdana;
    }
@@ -342,14 +340,15 @@ ol {
 
 th,
 td {
-    padding: 5px 5px 5px 15px;
+    padding: 5px;
     vertical-align: top;
+    margin-left: 15px;
 }
 
 .ds-button-field,
 #aspect_eperson_StartRegistration_list_registration-progress li {
-    background-color: #6d859c;
-    border: 1px solid #1F3F5E;
+    background-color: #519433;
+    border: 1px solid #408322;
     padding: 2px 5px;
     color: #FFFFFF;
     font-weight: bold;
@@ -527,7 +526,8 @@ input.ds-password-field.error {
 
 
 .ds-form-list {
-    margin-top: 15px;
+   margin-left: 15px;
+   margin-top: 15px;
 }
 
 .submission h2,
@@ -751,7 +751,7 @@ span.field-help {
     font-size: 10px;
 }
 .ds-artifact-list a{
- color: #660000;
+ color: #000;
  font-weight: normal;
  font-size: 14px;
  }
@@ -762,41 +762,34 @@ span.field-help {
     padding-bottom: 15px;
 }
 
-.ds-artifact-item.collection{
-   padding-top: 2px;
-   padding-top: 2px;
-   font-size: 10px;
-   color:#000000;
-}
+.ds-artifact-item.collection,
 .ds-artifact-item.community {
     padding-top: 1px;
     padding-bottom: 1px;
-    font-size: 10px;
-    color: #000000;
+    font-size: 9px;
+
 }
 
 .community .artifact-title a {
    font-weight: normal;
    margin-top: 25px;
    margin-bottom: 25px;
-   font-size: 12px;
-   color: #660000;
 }
 
 .collection .artifact-title a {
     font-weight: normal;
     margin-top: 25px;
     margin-bottom: 25px;
-    font-size: 12px;
-    color: #660000;
 }
 
 #aspect_artifactbrowser_CommunityBrowser_div_comunity-browser
 {
-color: #000000
+color: #000000;
 }
+
 .short-description{
 display: none;
+
 }
 
 #aspect_discovery_SiteRecentSubmissions_div_site-home .short-description {
@@ -986,7 +979,7 @@ div.item-summary-view-metadata {
 div.simple-item-view-authors {
     font-size: 123.1%;
     font-weight: bold;
-    border-bottom:1px solid #D8E8EB;
+    border-bottom:1px solid #408322;
     padding-bottom: 2px;
     margin-bottom: 20px;
     text-align: justify;
@@ -1004,7 +997,7 @@ div.simple-item-view-description {
 
 #aspect_artifactbrowser_ItemViewer_div_item-view h2,
 div.simple-item-view-description h3{
-    border-bottom:1px solid #D8E8EB;
+    border-bottom:1px solid #408322;
     margin-bottom: 3px;
 }
 
@@ -1076,7 +1069,7 @@ div.spacer{
 #aspect_artifactbrowser_CommunityViewer_div_community-home h2,
 #aspect_artifactbrowser_CollectionViewer_div_collection-home h2 {
     margin-top: 30px;
-    border-bottom:1px solid #D8E8EB;
+    border-bottom:1px solid #408322;
     margin-bottom: 3px;
 }
 
@@ -1174,4 +1167,8 @@ height: 100%;
 background-color: rgb(255, 255, 255);
 margin: 2px 2px 0px 2px;
 /* border: 1px solid rgb(240, 240, 210); */
+}
+
+table.ds-includeSet-table {
+    margin-left: 10px;
 }
