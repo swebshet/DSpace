@@ -28,27 +28,27 @@ h1 {
 
 h2{
     font-size: 14px;
-    color: #808080;
+    color: #660000;
     font-weight: bold;
     margin-left: 15px;
 }
 
 h3 {
     font-size: 12px;
-    color: #808080;
+    color: #660000;
     font-weight: normal;
     margin-left: 15px;
 }
 
 h4 {
     font-size: 10px;
-    color: #808080;
+    color: #660000;
     margin-left: 15px;
 }
 
 h5, h6 {
     font-size: 9px;
-    color: #808080;
+    color: #660000;
     margin-left: 15px;
 }
 
@@ -110,8 +110,8 @@ select.multiple {
     postion: relative;
     margin: auto;
     padding: 0;
-    border-top: 1px solid #e3d7d7;
-    border-bottom: 1px solid #e3d7d7;
+    border-top: 1px solid #D2C6C6;
+    border-bottom: 1px solid #D2C6C6;
 }
 
 #ds-trail {
@@ -169,7 +169,7 @@ select.multiple {
 }
 
 #ds-footer {
-    border-top: 1px solid #E3D7D7;
+    border-top: 1px solid #D2C6C6;
     padding: 5px 0;
     font-size: 10px;
     line-height: 1.6em;
@@ -244,8 +244,8 @@ h1.ds-option-set-head {
     margin-right: 5px;
     background-color: #e3d7d7;
     padding: 3px 10px;
-    border: 1px solid #e3d7d7;
-    border-bottom: 1px solid #e3d7d7;
+    border: 1px solid #D2C6C6;
+    border-bottom: 1px solid #D2C6C6;
     color: #000000;
     font-size: 108%;
 }
@@ -255,7 +255,7 @@ h1.ds-option-set-head {
 }
 
 div.ds-option-set {
-    border: 1px solid #e3d7d7;
+    border: 1px solid #D2C6C6;
     border-top: none;
     padding: 3px 10px;
     margin-left: 15px;
@@ -998,7 +998,7 @@ div.simple-item-view-description {
 
 #aspect_artifactbrowser_ItemViewer_div_item-view h2,
 div.simple-item-view-description h3{
-    border-bottom:1px solid #E3D7D7;
+    border-bottom:1px solid #D2C6C6;
     margin-bottom: 3px;
 }
 
@@ -1070,7 +1070,7 @@ div.spacer{
 #aspect_artifactbrowser_CommunityViewer_div_community-home h2,
 #aspect_artifactbrowser_CollectionViewer_div_collection-home h2 {
     margin-top: 30px;
-    border-bottom:1px solid #E3D7D7;
+    border-bottom:1px solid #D2C6C6;
     margin-bottom: 3px;
 }
 
