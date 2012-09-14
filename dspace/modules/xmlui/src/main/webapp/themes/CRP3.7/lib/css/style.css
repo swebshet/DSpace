@@ -413,7 +413,7 @@ ul.ds-progress-list li.current input.ds-button-field,
 ul.ds-progress-list li.disabled input.ds-button-field
 #aspect_eperson_StartRegistration_list_registration-progress li.disabled {
     background-color: #F0F2F5;
-    border: 1px solid #D8E8EB;
+    border: 1px solid #ECBA33;
     color: #444444;
     cursor: default;
 }
@@ -979,7 +979,7 @@ div.item-summary-view-metadata {
 div.simple-item-view-authors {
     font-size: 123.1%;
     font-weight: bold;
-    border-bottom:1px solid #D8E8EB;
+    border-bottom:1px solid #ECBA33;
     padding-bottom: 2px;
     margin-bottom: 20px;
     text-align: justify;
@@ -997,7 +997,7 @@ div.simple-item-view-description {
 
 #aspect_artifactbrowser_ItemViewer_div_item-view h2,
 div.simple-item-view-description h3{
-    border-bottom:1px solid #D8E8EB;
+    border-bottom:1px solid #ECBA33;
     margin-bottom: 3px;
 }
 
