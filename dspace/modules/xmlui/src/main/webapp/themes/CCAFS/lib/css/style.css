@@ -28,27 +28,27 @@ h1 {
 
 h2{
     font-size: 14px;
-    color: #808080;
+    color: #3F6117;
     font-weight: bold;
     margin-left: 15px;
 }
 
 h3 {
     font-size: 12px;
-    color: #808080;
+    color: #3F6117;
     font-weight: normal;
     margin-left: 15px;
 }
 
 h4 {
     font-size: 10px;
-    color: #808080;
+    color: #3F6117;
     margin-left: 15px;
 }
 
 h5, h6 {
     font-size: 9px;
-    color: #808080;
+    color: #3F6117;
     margin-left: 15px;
 }
 
@@ -105,35 +105,31 @@ select.multiple {
 }
 /* bread cramb */
 #ds-trail-wrapper {
-    background-color: #e3d7d7;
+    background-color: #fff;
     width: 980px;
     postion: relative;
     margin: auto;
     padding: 0;
-    border-top: 1px solid #e3d7d7;
-    border-bottom: 1px solid #e3d7d7;
+    border-top: 1px solid #FED90F;
 }
 
 #ds-trail {
     list-style: none;
     line-height: 20px;
     margin: 0;
-    padding: 0;
+    padding-left: 15px;
+    font-family: verdana;
+    font-size: 11px;
 }
 
 #ds-trail li {
     display: inline;
-    color: #1F3F5E;
-    margin-right: 0px;
-    font-family: verdana;
+    color: #000;
+    margin-right: 5px;
 }
 
-#ds-trail a {
-    font-family: verdana;
-    color: #000000;
-    margin-left:15px;
-    text-decoration: none;
-    font-size: 11px;
+#ds-trail li a {
+    color: #000;
 }
 
 /* the size of the body */
@@ -173,14 +169,15 @@ select.multiple {
 
 #ds-footer {
     border-top: 1px solid #fed90f;
-    padding-top: 10px;
+    padding: 5px 0;
     font-size: 10px;
     line-height: 1.6em;
 }
 #ds-footer a{
-font-size: 11px;
-color: #3f6117;
+    font-size: 11px;
+    color: #000;
 }
+
 #ds-footer-left {
     float: left;
 }
@@ -210,6 +207,7 @@ color: #3f6117;
 
 #ds-footer-links {
     clear: left;
+    padding-left: 15px;
 }
 
 .ie6 #ds-footer-links {
@@ -245,8 +243,6 @@ h1.ds-option-set-head {
     margin-right: 5px;
     background-color: #3f6117;
     padding: 3px 10px;
-    border: 1px solid #3f6117;
-    border-bottom: 1px solid #3f6117;
     color: #fed90f;
     font-size: 108%;
 }
@@ -256,7 +252,7 @@ h1.ds-option-set-head {
 }
 
 div.ds-option-set {
-    border: 1px solid #e3d7d7;
+    border: 1px solid #3F6117;
     border-top: none;
     padding: 3px 10px;
     margin-left: 15px;
@@ -274,7 +270,7 @@ div.ds-option-set ul {
 div.ds-option-set .ds-sublist-head {
     font-weight: normal;
     font-size: 12px;
-    color: #3f6117;
+    color: #000;
 }
 
 div.ds-option-set h2.ds-sublist-head {
@@ -310,7 +306,8 @@ div.ds-option-set a:hover{
 
 #ds-search-form input.ds-button-field {
     margin-left: 6px;
-    color:#ffffff;
+    color: #FED90F;
+    border: 1px solid #3F6117;
     background: #3f6117;
 }
 
@@ -342,8 +339,9 @@ ol {
 
 th,
 td {
-    padding: 5px 5px 5px 15px;
-    vertical-align: middle;
+    padding: 5px;
+    vertical-align: top;
+    margin-left: 15px;
 }
 
 .ds-button-field,
@@ -527,7 +525,8 @@ input.ds-password-field.error {
 
 
 .ds-form-list {
-    margin-top: 15px;
+   margin-left: 15px;
+   margin-top: 15px;
 }
 
 .submission h2,
@@ -762,41 +761,34 @@ span.field-help {
     padding-bottom: 15px;
 }
 
-.ds-artifact-item.collection{
-   padding-top: 2px;
-   padding-bottom: 2px;
-   font-size: 10px;
-   color: #000000;
-}
+.ds-artifact-item.collection,
 .ds-artifact-item.community {
     padding-top: 1px;
     padding-bottom: 1px;
-    font-size: 10px;
-    color: #000000;
+    font-size: 9px;
+
 }
 
 .community .artifact-title a {
     font-weight: normal;
    margin-top: 25px;
    margin-bottom: 25px;
-   color: #000000;
-   font-size: 12px;
 }
 
 .collection .artifact-title a {
     font-weight: normal;
     margin-top: 25px;
     margin-bottom: 25px;
-    color: #000000;
-    font-size: 12px;
 }
 
 #aspect_artifactbrowser_CommunityBrowser_div_comunity-browser
 {
-color: #000000
+color: #000000;
 }
+
 .short-description{
 display: none;
+
 }
 
 #aspect_discovery_SiteRecentSubmissions_div_site-home .short-description {
@@ -1004,7 +996,7 @@ div.simple-item-view-description {
 
 #aspect_artifactbrowser_ItemViewer_div_item-view h2,
 div.simple-item-view-description h3{
-    border-bottom:1px solid #D8E8EB;
+    border-bottom:1px solid #FED90F;
     margin-bottom: 3px;
 }
 
@@ -1076,7 +1068,7 @@ div.spacer{
 #aspect_artifactbrowser_CommunityViewer_div_community-home h2,
 #aspect_artifactbrowser_CollectionViewer_div_collection-home h2 {
     margin-top: 30px;
-    border-bottom:1px solid #D8E8EB;
+    border-bottom:1px solid #FED90F;
     margin-bottom: 3px;
 }
 
@@ -1174,4 +1166,8 @@ height: 100%;
 background-color: rgb(255, 255, 255);
 margin: 2px 2px 0px 2px;
 /* border: 1px solid rgb(240, 240, 210); */
+}
+
+table.ds-includeSet-table {
+    margin-left: 10px;
 }
