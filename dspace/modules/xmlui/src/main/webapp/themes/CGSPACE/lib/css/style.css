@@ -118,22 +118,19 @@ select.multiple {
     list-style: none;
     line-height: 20px;
     margin: 0;
-    padding: 0;
+    padding-left: 15px;
+    font-family: verdana;
+    font-size: 11px;
 }
 
 #ds-trail li {
     display: inline;
-    color: #1F3F5E;
-    margin-right: 0px;
-    font-family: verdana;
+    color: #fff;
+    margin-right: 5px;
 }
 
-#ds-trail a {
-    font-family: verdana;
-    color: #ffffff;
-    margin-left:15px;
-    font-size: 11px;
-    text-decoration: none;
+#ds-trail li a {
+    color: #fff;
 }
 
 /* the size of the body */
@@ -173,7 +170,7 @@ select.multiple {
 
 #ds-footer {
     border-top: 1px solid #DF6E00;
-    padding-top: 10px;
+    padding: 5px 0;
     font-size: 10px;
     line-height: 1.6em;
 }
@@ -211,6 +208,7 @@ select.multiple {
 
 #ds-footer-links {
     clear: left;
+    padding-left: 15px;
 }
 
 .ie6 #ds-footer-links {
@@ -754,7 +752,7 @@ span.field-help {
     font-size: 10px;
 }
 .ds-artifact-list a{
- color: #660000;
+ color: #000;
  font-weight: normal;
  font-size: 14px;
  }

@@ -7,6 +7,10 @@
  */
 /** Additions for Authority Control elements **/
 /* for scriptaculous autocomplete */
+div.autocomplete {
+    display: none;
+}
+
 div.autocomplete, ul.ui-menu {
   position:absolute;
   width:250px;
