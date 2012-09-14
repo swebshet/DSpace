@@ -4,6 +4,7 @@
  * tree and available online at
  *
  * http://www.dspace.org/license/
+ */
 /*
  * style.css
  *
@@ -15,12 +16,11 @@ body {
 	font-size: 12px;
 	background-color: #efefef;
 	margin:0;
-        margin-top: 0px;
 }
 /*Font size percentages based on the tables at developer.yahoo.com/yui/fonts/ */
 h1 {
     font-size: 16px;
-    color: #000000;/*5f9a64;*/
+    color: #3D6008;
     text-align: justify;
     font-weight: bold;
     margin-left: 15px;
@@ -28,27 +28,27 @@ h1 {
 
 h2{
     font-size: 14px;
-    color: #000000;
+    color: #3D6008;
     font-weight: bold;
     margin-left: 15px;
 }
 
 h3 {
     font-size: 12px;
-    color: #3d6008; /* ff6400*/
+    color: #3D6008;
     font-weight: normal;
     margin-left: 15px;
 }
 
 h4 {
     font-size: 10px;
-    color: #3d6008;
+    color: #3D6008;
     margin-left: 15px;
 }
 
 h5, h6 {
     font-size: 9px;
-    color: #3d6008; /*ff6400;*/
+    color: #3D6008;
     margin-left: 15px;
 }
 
@@ -103,36 +103,32 @@ select.multiple {
 #ds-user-box a{
     color: white;
 }
-/* breadcramb */
+
 #ds-trail-wrapper {
     background-color: #ffffff;
     width: 980px;
     postion: relative;
     margin: auto;
     padding: 0;
-    border-top: 1px solid #70b9db;
-    border-bottom: 1px solid #b9db0c;
 }
 
 #ds-trail {
     list-style: none;
     line-height: 20px;
     margin: 0;
-    padding: 0;
+    padding-left: 15px;
+    font-family: verdana;
+    font-size: 11px;
 }
 
 #ds-trail li {
     display: inline;
-    color: #1F3F5E;
-    margin-right: 0px;
-    font-family: verdana;
+    color: #000;
+    margin-right: 5px;
 }
 
-#ds-trail a {
-    font-family: verdana;
-    color: #000000;
-    margin-left:15px;
-    text-decoration: none;
+#ds-trail li a {
+    color: #000;
 }
 
 /* the size of the body */
@@ -150,7 +146,6 @@ select.multiple {
 }
 
 /*ie6 uses quirks mode for strict xhtml pages, and in quirks mode margin: auto; doesn't center things*/
-
 .ie6 #no-js-warning-wrapper,
 .ie6 #ds-trail-wrapper,
 .ie6 #ds-header-wrapper,
@@ -166,17 +161,20 @@ select.multiple {
     margin: 0;
     text-align: left;
 }
-
 /* footer style sheet */
 #ds-footer-wrapper {
     margin-top: 0px;
 }
 
 #ds-footer {
-    border-top: 1px solid #ececec;
-    padding-top: 10px;
+    border-top: 1px solid #A8CA0B;
+    padding: 5px 0;
     font-size: 10px;
     line-height: 1.6em;
+}
+#ds-footer a{
+   font-size: 11px;
+   color: #000;
 }
 
 #ds-footer-left {
@@ -208,6 +206,7 @@ select.multiple {
 
 #ds-footer-links {
     clear: left;
+    padding-left: 15px;
 }
 
 .ie6 #ds-footer-links {
@@ -243,8 +242,7 @@ h1.ds-option-set-head {
     margin-right: 5px;
     background-color: #b9db0c;
     padding: 3px 10px;
-    border: 1px solid #b9db0c;
-    border-bottom: 1px solid #b9db0c;
+    border: 1px solid #A8CA0B;
     color: #3d6008;
     font-size: 108%;
 }
@@ -254,7 +252,7 @@ h1.ds-option-set-head {
 }
 
 div.ds-option-set {
-    border: 1px solid #ececec;
+    border: 1px solid #A8CA0B;
     border-top: none;
     padding: 3px 10px;
     margin-left: 15px;
@@ -272,7 +270,7 @@ div.ds-option-set ul {
 div.ds-option-set .ds-sublist-head {
     font-weight: normal;
     font-size: 12px;
-    color: #a34625;/*DF6E00;*/
+    color: #000000;
 }
 
 div.ds-option-set h2.ds-sublist-head {
@@ -308,8 +306,8 @@ div.ds-option-set a:hover{
 
 #ds-search-form input.ds-button-field {
     margin-left: 6px;
-    color:#ffffff;
-    background: #3d6008;
+    color:#3D6008;
+    background: #B9DB0C;
 }
 
 #ds-search-form input.ds-text-field,
@@ -347,8 +345,8 @@ td {
 
 .ds-button-field,
 #aspect_eperson_StartRegistration_list_registration-progress li {
-    background-color: #6d859c;
-    border: 1px solid #1F3F5E;
+    background-color: #B9DB0C;
+    border: 1px solid #A8CA0B;
     padding: 2px 5px;
     color: #FFFFFF;
     font-weight: bold;
@@ -751,7 +749,7 @@ span.field-help {
     font-size: 10px;
 }
 .ds-artifact-list a{
- color: #a34625;
+ color: #000;
  font-weight: normal;
  font-size: 14px;
  }
@@ -760,16 +758,9 @@ span.field-help {
 .ds-artifact-item {
     padding-top: 15px;
     padding-bottom: 15px;
- }
-/*
-.ds-artifact-item.collection
-{
-   padding-top: 1px;
-   Padding-bottom: 5px;
-   margin-left: 15px;
-   font-size: 9px;
 }
 
+.ds-artifact-item.collection,
 .ds-artifact-item.community {
     padding-top: 1px;
     padding-bottom: 1px;
@@ -779,17 +770,15 @@ span.field-help {
 
 .community .artifact-title a {
     font-weight: normal;
-    color: #000000;
-    font-size: 12px;
+   margin-top: 25px;
+   margin-bottom: 25px;
 }
 
 .collection .artifact-title a {
     font-weight: normal;
-    color: #3da74b;
-    font-size: 12px;
-    margin-left: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
-
 
 #aspect_artifactbrowser_CommunityBrowser_div_comunity-browser
 {
@@ -800,7 +789,7 @@ color: #000000;
 display: none;
 
 }
-*/
+
 #aspect_discovery_SiteRecentSubmissions_div_site-home .short-description {
  display: none;
 }
@@ -1006,7 +995,7 @@ div.simple-item-view-description {
 
 #aspect_artifactbrowser_ItemViewer_div_item-view h2,
 div.simple-item-view-description h3{
-    border-bottom:1px solid #D8E8EB;
+    border-bottom:1px solid #A8CA0B;
     margin-bottom: 3px;
 }
 
@@ -1078,7 +1067,7 @@ div.spacer{
 #aspect_artifactbrowser_CommunityViewer_div_community-home h2,
 #aspect_artifactbrowser_CollectionViewer_div_collection-home h2 {
     margin-top: 30px;
-    border-bottom:1px solid #D8E8EB;
+    border-bottom:1px solid #A8CA0B;
     margin-bottom: 3px;
 }
 
@@ -1176,4 +1165,8 @@ height: 100%;
 background-color: rgb(255, 255, 255);
 margin: 2px 2px 0px 2px;
 /* border: 1px solid rgb(240, 240, 210); */
+}
+
+table.ds-includeSet-table {
+    margin-left: 10px;
 }
