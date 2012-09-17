@@ -12,15 +12,16 @@
  */
 
 body {
-        font-family: verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 12px;
 	background-color: #efefef;
 	margin:0;
+	color: #3E3F3E;
 }
 /*Font size percentages based on the tables at developer.yahoo.com/yui/fonts/ */
 h1 {
     font-size: 16px;
-    color: #3f6117;
+    color: #48732A;
     text-align: justify;
     font-weight: bold;
     margin-left: 15px;
@@ -28,27 +29,27 @@ h1 {
 
 h2{
     font-size: 14px;
-    color: #3F6117;
+    color: #48732A;
     font-weight: bold;
     margin-left: 15px;
 }
 
 h3 {
     font-size: 12px;
-    color: #3F6117;
+    color: #48732A;
     font-weight: normal;
     margin-left: 15px;
 }
 
 h4 {
     font-size: 10px;
-    color: #3F6117;
+    color: #48732A;
     margin-left: 15px;
 }
 
 h5, h6 {
     font-size: 9px;
-    color: #3F6117;
+    color: #48732A;
     margin-left: 15px;
 }
 
@@ -110,7 +111,7 @@ select.multiple {
     postion: relative;
     margin: auto;
     padding: 0;
-    border-top: 1px solid #FED90F;
+    border-top: 1px solid #FCD116;
 }
 
 #ds-trail {
@@ -118,7 +119,6 @@ select.multiple {
     line-height: 20px;
     margin: 0;
     padding-left: 15px;
-    font-family: verdana;
     font-size: 11px;
 }
 
@@ -168,14 +168,13 @@ select.multiple {
 }
 
 #ds-footer {
-    border-top: 1px solid #fed90f;
+    border-top: 1px solid #FCD116;
     padding: 5px 0;
     font-size: 10px;
     line-height: 1.6em;
 }
 #ds-footer a{
     font-size: 11px;
-    color: #000;
 }
 
 #ds-footer-left {
@@ -241,10 +240,11 @@ h1.ds-option-set-head {
     margin-top: 20px;
     margin-left: 15px;
     margin-right: 5px;
-    background-color: #3f6117;
+    background-color: #48732A;
     padding: 3px 10px;
-    color: #fed90f;
+    color: #fff;
     font-size: 108%;
+    border-top: 2px solid #FCD116;
 }
 
 #ds-search-option-head{
@@ -252,8 +252,8 @@ h1.ds-option-set-head {
 }
 
 div.ds-option-set {
-    border: 1px solid #3F6117;
-    border-top: none;
+/*    border: 1px solid #48732A;
+    border-top: none;*/
     padding: 3px 10px;
     margin-left: 15px;
     margin-right: 5px;
@@ -283,14 +283,10 @@ div.ds-option-set ul.sublist {
     padding-bottom: 4px;
     }
 div.ds-option-set a{
-   color: #000000;
    font-size: 11px;
-   font-family: verdana;
    }
 div.ds-option-set a:hover{
-   color: #000000;
    font-size: 11px;
-   font-family: verdana;
    }
 #ds-search-option {
     padding: 10px;
@@ -306,9 +302,9 @@ div.ds-option-set a:hover{
 
 #ds-search-form input.ds-button-field {
     margin-left: 6px;
-    color: #FED90F;
-    border: 1px solid #3F6117;
-    background: #3f6117;
+    color: #fff;
+    border: 1px solid #48732A;
+    background: #48732A;
 }
 
 #ds-search-form input.ds-text-field,
@@ -746,14 +742,13 @@ span.field-help {
     list-style: none;
     margin: 0;
     margin-left: 15px;
-   line-height: 153.9%;
+    line-height: 153.9%;
     font-size: 10px;
 }
 .ds-artifact-list a{
- color: #000000;
- font-weight: normal;
- font-size: 14px;
- }
+    font-weight: normal;
+    font-size: 14px;
+}
 
 .file-wrapper,
 .ds-artifact-item {
@@ -771,8 +766,9 @@ span.field-help {
 
 .community .artifact-title a {
     font-weight: normal;
-   margin-top: 25px;
-   margin-bottom: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 12px;
 }
 
 .collection .artifact-title a {
@@ -996,7 +992,7 @@ div.simple-item-view-description {
 
 #aspect_artifactbrowser_ItemViewer_div_item-view h2,
 div.simple-item-view-description h3{
-    border-bottom:1px solid #FED90F;
+    border-bottom:1px solid #FCD116;
     margin-bottom: 3px;
 }
 
@@ -1068,7 +1064,7 @@ div.spacer{
 #aspect_artifactbrowser_CommunityViewer_div_community-home h2,
 #aspect_artifactbrowser_CollectionViewer_div_collection-home h2 {
     margin-top: 30px;
-    border-bottom:1px solid #FED90F;
+    border-bottom:1px solid #FCD116;
     margin-bottom: 3px;
 }
 

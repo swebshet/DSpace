@@ -26,12 +26,11 @@ html { -webkit-font-smoothing: antialiased; }
 a:hover, a:active { outline: none; }
 
 a, a:active, a:visited {
-color:#000000;
+color:#48732A;
 text-decoration: none;
 font-weight: normal;
-font-family: verdana;
  }
-a:hover { color:#036; }
+a:hover { color:#659831; }
 
 
 ul { margin-left:30px; }
