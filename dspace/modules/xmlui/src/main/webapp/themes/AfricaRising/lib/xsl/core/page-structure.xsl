@@ -310,7 +310,7 @@
         <div id="ds-header-wrapper">
             <div id="ds-header" class="clearfix">
                 <a id="ds-header-logo-link">
-                    <a href="http://www.cgiar.org" target="_blank"></a>
+                    <a href="http://http://africa-rising.net/news/" target="_blank"></a>
                              <!--  <xsl:attribute name="href">
                         <xsl:value-of
                                 select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]"/>
@@ -617,7 +617,7 @@
 
 		<script type="text/javascript">
 			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount','UA-10691096-8']);
+			_gaq.push(['_setAccount','UA-34923290-1']);
 			_gaq.push(['_trackPageview']);
 
 			(function() {
