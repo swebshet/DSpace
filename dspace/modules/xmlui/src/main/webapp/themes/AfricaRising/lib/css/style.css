@@ -20,7 +20,7 @@ body {
 /*Font size percentages based on the tables at developer.yahoo.com/yui/fonts/ */
 h1 {
     font-size: 16px;
-    color: #5f9a64;
+    color: #7d8b5a;
     text-align: justify;
     font-weight: bold;
     margin-left: 15px;
@@ -28,27 +28,27 @@ h1 {
 
 h2{
     font-size: 14px;
-    color: #ff6400;
+    color: #7d8b5a;
     font-weight: bold;
     margin-left: 15px;
 }
 
 h3 {
     font-size: 12px;
-    color: #ff6400;
+    color: #7d8b5a;
     font-weight: normal;
     margin-left: 15px;
 }
 
 h4 {
     font-size: 10px;
-    color: #ff6400;
+    color: #7d8b5a;
     margin-left: 15px;
 }
 
 h5, h6 {
     font-size: 9px;
-    color: #ff6400;
+    color: #7d8b5a;
     margin-left: 15px;
 }
 
@@ -78,7 +78,7 @@ select.multiple {
     width: 980px;
     height: 96px;
     margin-top: 0px;
-    background: url("../../images/bannercgiarfinal.jpg");
+    background: url("../../images/africarisingdsapce.jpg");
     background-repeat: no-repeat;
     background-color: transparent;
     margin-right: 15px;
@@ -105,13 +105,11 @@ select.multiple {
 }
 
 #ds-trail-wrapper {
-    background-color: #DF6E00;
+    background-color: #ffffff;
     width: 980px;
     postion: relative;
     margin: auto;
     padding: 0;
-    border-top: 1px solid #CE5D00;
-    border-bottom: 1px solid #CE5D00;
 }
 
 #ds-trail {
@@ -125,12 +123,12 @@ select.multiple {
 
 #ds-trail li {
     display: inline;
-    color: #fff;
+    color: #000;
     margin-right: 5px;
 }
 
 #ds-trail li a {
-    color: #fff;
+    color: #000;
 }
 
 /* the size of the body */
@@ -169,7 +167,7 @@ select.multiple {
 }
 
 #ds-footer {
-    border-top: 1px solid #CE5D00;
+    border-top: 1px solid #2A8945;
     padding: 5px 0;
     font-size: 10px;
     line-height: 1.6em;
@@ -242,10 +240,10 @@ h1.ds-option-set-head {
     margin-top: 20px;
     margin-left: 15px;
     margin-right: 5px;
-    background-color: #3da74b;
+    background-color: #197834;
     padding: 3px 10px;
-    border: 1px solid #2C963A;
-    border-bottom: 1px solid #2C963A;
+    border: 1px solid #2A8945;
+    border-bottom: 1px solid #2A8945;
     color: #ffffff;
     font-size: 108%;
 }
@@ -255,7 +253,7 @@ h1.ds-option-set-head {
 }
 
 div.ds-option-set {
-    border: 1px solid #3da74b;
+    border: 1px solid #7d8b5a;
     border-top: none;
     padding: 3px 10px;
     margin-left: 15px;
@@ -271,9 +269,9 @@ div.ds-option-set ul {
 }
 
 div.ds-option-set .ds-sublist-head {
-    font-weight: normal;
+    font-weight: bold;
     font-size: 12px;
-    color: #CE5D00;
+    color: #7d8b5a;
 }
 
 div.ds-option-set h2.ds-sublist-head {
@@ -310,7 +308,7 @@ div.ds-option-set a:hover{
 #ds-search-form input.ds-button-field {
     margin-left: 6px;
     color:#ffffff;
-    background: #3da74b;
+    background: #197834;
 }
 
 #ds-search-form input.ds-text-field,
@@ -415,7 +413,7 @@ ul.ds-progress-list li.current input.ds-button-field,
 ul.ds-progress-list li.disabled input.ds-button-field
 #aspect_eperson_StartRegistration_list_registration-progress li.disabled {
     background-color: #F0F2F5;
-    border: 1px solid #D8E8EB;
+    border: 1px solid #2A8945;
     color: #444444;
     cursor: default;
 }
@@ -723,7 +721,7 @@ span.field-help {
     display: inline;
     padding-left: 2px;
     padding-right: 2px;
-    color: #660000;
+    color: #197834;
 }
 
 .current-page-link {
@@ -732,7 +730,7 @@ span.field-help {
 }
 
 .current-page-link a{
-    color: #660000;
+    color: #197834;
 }
 
 .pagination-info {
@@ -981,7 +979,7 @@ div.item-summary-view-metadata {
 div.simple-item-view-authors {
     font-size: 123.1%;
     font-weight: bold;
-    border-bottom:1px solid #D8E8EB;
+    border-bottom:1px solid #2A8945;
     padding-bottom: 2px;
     margin-bottom: 20px;
     text-align: justify;
@@ -999,7 +997,7 @@ div.simple-item-view-description {
 
 #aspect_artifactbrowser_ItemViewer_div_item-view h2,
 div.simple-item-view-description h3{
-    border-bottom:1px solid #D8E8EB;
+    border-bottom:1px solid #2A8945;
     margin-bottom: 3px;
 }
 
@@ -1071,7 +1069,7 @@ div.spacer{
 #aspect_artifactbrowser_CommunityViewer_div_community-home h2,
 #aspect_artifactbrowser_CollectionViewer_div_collection-home h2 {
     margin-top: 30px;
-    border-bottom:1px solid #D8E8EB;
+    border-bottom:1px solid #2A8945;
     margin-bottom: 3px;
 }
 
