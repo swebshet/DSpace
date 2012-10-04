@@ -253,7 +253,7 @@ h1.ds-option-set-head {
 }
 
 div.ds-option-set {
-    border: 1px solid #7d8b5a;
+    border: 1px solid #2A8945;
     border-top: none;
     padding: 3px 10px;
     margin-left: 15px;
@@ -346,8 +346,8 @@ td {
 
 .ds-button-field,
 #aspect_eperson_StartRegistration_list_registration-progress li {
-    background-color: #3DA74B;
-    border: 1px solid #2C963A;
+    background-color: #197834;
+    border: 1px solid #2A8945;
     padding: 2px 5px;
     color: #FFFFFF;
     font-weight: bold;
@@ -777,7 +777,7 @@ span.field-help {
 
 .collection .artifact-title a {
     font-weight: normal;
-    color: #3da74b; /*660000;*/
+    color: #000000;
     font-size: 12px;
     margin-left: 5px;
 }
