@@ -188,6 +188,7 @@
         <theme name="CRP3.7" handle="10568/3112" path="CRP3.7/"/>
         <theme name="CIFOR" handle="10568/16701" path="CIFOR/"/>
         <theme name="AfricaRising" handle="10568/16498" path="AfricaRising/"/>
+		<theme name="IWMI" handle="10568/21964" path="IWMI/"/>
 
         <!--Default theme for the top-level CGSPACE-->
         <theme name="CGSPACE" regex=".*" path="CGSPACE/"/>
