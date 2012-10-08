@@ -2188,6 +2188,11 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <stored-value>Internal Document</stored-value>
      </pair>
 
+     <pair>
+       <displayed-value>Logo</displayed-value>
+       <stored-value>Logo</stored-value>
+     </pair>
+
       <pair>
        <displayed-value>Manual</displayed-value>
        <stored-value>Manual</stored-value>
@@ -2235,9 +2240,6 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <stored-value>Press Item</stored-value>
      </pair>
 
-
-
-
      <pair>
        <displayed-value>Presentation</displayed-value>
        <stored-value>Presentation</stored-value>
@@ -2256,6 +2258,12 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>Technical Report</displayed-value>
        <stored-value>Technical Report</stored-value>
      </pair>
+
+     <pair>
+       <displayed-value>Template</displayed-value>
+       <stored-value>Template</stored-value>
+     </pair>
+
      <pair>
        <displayed-value>Thesis or Dissertation</displayed-value>
        <stored-value>Thesis</stored-value>
