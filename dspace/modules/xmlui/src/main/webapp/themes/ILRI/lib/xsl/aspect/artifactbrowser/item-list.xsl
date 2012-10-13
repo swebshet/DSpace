@@ -98,45 +98,26 @@
                     </span>
                 </xsl:element>
             </span>
-            <span class="bold"><i18n:text>xmlui.dri2xhtml.pioneer.author</i18n:text><xsl:text>:</xsl:text></span>
+			<!--Author-->
+
+            <span class="bold"><i18n:text>Author</i18n:text><xsl:text>:</xsl:text></span>
             <span class="content" style="width: {$metadataWidth - 110}px;">
-                <xsl:choose>
-                    <xsl:when test="dim:field[@element='contributor'][@qualifier='author']">
-                        <xsl:for-each select="dim:field[@element='contributor'][@qualifier='author']">
-                            <span>
-                                <xsl:if test="@authority">
-                                    <xsl:attribute name="class">
-                                        <xsl:text>ds-dc_contributor_author-authority</xsl:text>
-                                    </xsl:attribute>
-                                </xsl:if>
-                                <xsl:copy-of select="node()"/>
-                            </span>
-                            <xsl:if test="count(following-sibling::dim:field[@element='contributor'][@qualifier='author']) != 0">
-                                <xsl:text>; </xsl:text>
-                            </xsl:if>
-                        </xsl:for-each>
-                    </xsl:when>
-                    <xsl:when test="dim:field[@element='creator']">
-                        <xsl:for-each select="dim:field[@element='creator']">
-                            <xsl:copy-of select="node()"/>
-                            <xsl:if test="count(following-sibling::dim:field[@element='creator']) != 0">
-                                <xsl:text>; </xsl:text>
-                            </xsl:if>
-                        </xsl:for-each>
-                    </xsl:when>
-                    <xsl:when test="dim:field[@element='contributor']">
-                        <xsl:for-each select="dim:field[@element='contributor']">
-                            <xsl:copy-of select="node()"/>
-                            <xsl:if test="count(following-sibling::dim:field[@element='contributor']) != 0">
-                                <xsl:text>; </xsl:text>
-                            </xsl:if>
-                        </xsl:for-each>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <i18n:text>xmlui.dri2xhtml.METS-1.0.no-author</i18n:text>
-                    </xsl:otherwise>
-                </xsl:choose>
+                <xsl:element name="a">
+                    <xsl:attribute name="href">
+                        <xsl:value-of select="$href"/>
+                    </xsl:attribute>
+
+                    <span class="content" style="width: {$metadataWidth - 110}px;">
+                      <xsl:for-each select="//dim:field[@element='contributor'and @qualifier='author']">
+                <a href="/browse?value={.}&amp;type=author"><xsl:value-of select="."/></a><xsl:if test="position()!=last()"><xsl:text>, </xsl:text></xsl:if>
+                      </xsl:for-each>
+                    </span>
+                </xsl:element>
             </span>
+
+
+
+
             <xsl:if test="dim:field[@element='date' and @qualifier='issued'] or dim:field[@element='publisher']">
                 <span class="bold"><i18n:text>xmlui.dri2xhtml.pioneer.date</i18n:text><xsl:text>:</xsl:text></span>
                 <span class="content" style="width: {$metadataWidth - 110}px;">
@@ -144,11 +125,26 @@
                             select="substring(dim:field[@element='date' and @qualifier='issued']/node(),1,10)"/>
                 </span>
             </xsl:if>
-		 <!--Additional  browse by filed by ILRI/CGSPACE ADMINISTRATOR-->
 
 
 
-	    <xsl:if test="dim:field[@element='type']">
+            <span class="bold"><i18n:text>Subject Focus</i18n:text><xsl:text>:</xsl:text></span>
+            <span class="content" style="width: {$metadataWidth - 110}px;">
+                <xsl:element name="a">
+                    <xsl:attribute name="href">
+                        <xsl:value-of select="$href"/>
+                    </xsl:attribute>
+
+                    <span class="content" style="width: {$metadataWidth - 110}px;">
+                      <xsl:for-each select="//dim:field[@element='isubject'and @qualifier='ilrisubject']">
+                <a href="/browse?value={.}&amp;type=ilrisubject"><xsl:value-of select="."/></a><xsl:if test="position()!=last()"><xsl:text>, </xsl:text></xsl:if>
+                      </xsl:for-each>
+                    </span>
+                </xsl:element>
+            </span>
+
+
+		   <xsl:if test="dim:field[@element='type']">
                 <span class="bold"><i18n:text>Type</i18n:text><xsl:text>:</xsl:text></span>
                 <span class="content" style="width: {$metadataWidth - 110}px;">
                     <xsl:value-of
@@ -165,7 +161,6 @@
                             select="substring(dim:field[@element='identifier' and @qualifier='status']/node(),1,30)"/>
                 </span>
             </xsl:if>
-
 
 
 
