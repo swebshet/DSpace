@@ -2981,80 +2981,80 @@ it, please enter the types and the actual numbers or codes below.</hint>
 
 
      <pair>
-       <displayed-value>CRP1.1: DRY AREAS</displayed-value>
-       <stored-value>CRP1.1: DRY AREAS</stored-value>
+       <displayed-value>DRYLAND SYSTEMS</displayed-value>
+       <stored-value>DRYLAND SYSTEMS</stored-value>
      </pair>
 
 
  <pair>
-       <displayed-value>CRP1.2: HUMID TROPICS</displayed-value>
-       <stored-value>CRP1.2: HUMID TROPICS</stored-value>
+       <displayed-value>HUMID TROPICS</displayed-value>
+       <stored-value>HUMID TROPICS</stored-value>
      </pair>
  <pair>
-       <displayed-value>CRP1.3: AQUATIC AGRICULTURAL SYSTEMS</displayed-value>
-       <stored-value>CRP1.3: AQUATIC AGRICULTURAL SYSTEMS</stored-value>
+       <displayed-value>AQUATIC AGRICULTURAL SYSTEMS</displayed-value>
+       <stored-value>AQUATIC AGRICULTURAL SYSTEMS</stored-value>
      </pair>
 
     <pair>
-       <displayed-value>CRP2: POLICIES, INSTITUTIONS, AND MARKETS</displayed-value>
-       <stored-value>CRP2: POLICIES, INSTITUTIONS, AND MARKETS</stored-value>
+       <displayed-value>POLICIES, INSTITUTIONS, AND MARKETS</displayed-value>
+       <stored-value>POLICIES, INSTITUTIONS, AND MARKETS</stored-value>
      </pair>
 
 
 	 <pair>
-       <displayed-value>CRP3.1: WHEAT</displayed-value>
-       <stored-value>CRP3.1: WHEAT</stored-value>
+       <displayed-value>WHEAT</displayed-value>
+       <stored-value>WHEAT</stored-value>
      </pair>
 
 	 <pair>
-       <displayed-value>CRP3.2: MAIZE</displayed-value>
-       <stored-value>CRP3.2: MAIZE</stored-value>
-     </pair>
-
-
-	 <pair>
-       <displayed-value>CRP3.3: RICE</displayed-value>
-       <stored-value>CRP3.3: RICE</stored-value>
+       <displayed-value>MAIZE</displayed-value>
+       <stored-value>MAIZE</stored-value>
      </pair>
 
 
 	 <pair>
-       <displayed-value>CRP3.4: ROOTS, TUBERS AND BANANAS</displayed-value>
-       <stored-value>CRP3.4: ROOTS, TUBERS AND BANANAS</stored-value>
+       <displayed-value>RICE</displayed-value>
+       <stored-value>RICE</stored-value>
+     </pair>
+
+
+	 <pair>
+       <displayed-value>ROOTS, TUBERS AND BANANAS</displayed-value>
+       <stored-value>ROOTS, TUBERS AND BANANAS</stored-value>
      </pair>
 	 
 	 <pair>
-       <displayed-value>CRP3.5: GRAIN LEGUMES</displayed-value>
-       <stored-value>CRP3.5: GRAIN LEGUMES</stored-value>
+       <displayed-value>GRAIN LEGUMES</displayed-value>
+       <stored-value>GRAIN LEGUMES</stored-value>
      </pair>
 	 
 	 <pair>
-       <displayed-value>CRP3.6: DRYLAND CEREALS</displayed-value>
-       <stored-value>CRP3.6: DRYLAND CEREALS</stored-value>
+       <displayed-value>DRYLAND CEREALS</displayed-value>
+       <stored-value>DRYLAND CEREALS</stored-value>
      </pair>
 	 <pair>
-       <displayed-value>CRP3.7: LIVESTOCK AND FISH</displayed-value>
-       <stored-value>CRP3.7: LIVESTOCK AND FISH</stored-value>
+       <displayed-value>LIVESTOCK AND FISH</displayed-value>
+       <stored-value>LIVESTOCK AND FISH</stored-value>
      </pair>
 	 
 	 <pair>
-       <displayed-value>CRP4: AGRICULTURE FOR IMPROVED NUTRITION AND HEALTH</displayed-value>
-       <stored-value>CRP4: AGRICULTURE FOR IMPROVED NUTRITION AND HEALTH </stored-value>
+       <displayed-value>AGRICULTURE FOR NUTRITION AND HEALTH</displayed-value>
+       <stored-value>AGRICULTURE FOR NUTRITION AND HEALTH </stored-value>
      </pair>
 	 
 	 
 	 <pair>
-       <displayed-value>CRP5: WATER AND LAND</displayed-value>
-       <stored-value>CRP5: WATER AND LAND</stored-value>
+       <displayed-value>WATER, LAND AND ECOSYSTEMS</displayed-value>
+       <stored-value>WATER, LAND AND ECOSYSTEMS</stored-value>
      </pair>
   <pair>
-       <displayed-value>CRP6: FORESTS AND TREES</displayed-value>
-       <stored-value>CRP6: FORESTS AND TREES</stored-value>
+       <displayed-value>FORESTS, TREES AND AGROFORESTRY</displayed-value>
+       <stored-value>FORESTS, TREES AND AGROFORESTRY</stored-value>
      </pair>
 	 
 	  <pair>
-       <displayed-value>CRP7: CLIMATE CHANGE, AGRICULTURE AND FOOD SECURITY</displayed-value>
-       <stored-value>CRP7: CLIMATE CHANGE, AGRICULTURE AND FOOD SECURITY</stored-value>
+       <displayed-value>CLIMATE CHANGE, AGRICULTURE AND FOOD SECURITY</displayed-value>
+       <stored-value>CLIMATE CHANGE, AGRICULTURE AND FOOD SECURITY</stored-value>
      </pair>
 	 
  </value-pairs>  
@@ -3063,13 +3063,8 @@ it, please enter the types and the actual numbers or codes below.</hint>
     
 
   <pair>
-       <displayed-value>ADAPTATION TO FUTURE CLIMATE</displayed-value>
-       <stored-value>ADAPTATION TO FUTURE CLIMATE</stored-value>
-     </pair>
- 
-    <pair>
-       <displayed-value>CLIMATE SCIENCE</displayed-value>
-       <stored-value>CLIMATE SCIENCE</stored-value>
+       <displayed-value>ADAPTATION TO PROGRESSIVE CLIMATE CHANGE</displayed-value>
+       <stored-value>ADAPTATION TO PROGRESSIVE CLIMATE CHANGE</stored-value>
      </pair>
  
  
@@ -3088,7 +3083,12 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>FRAMEWORKS FOR POLICY ANALYSIS </displayed-value>
        <stored-value>FRAMEWORKS FOR POLICY ANALYSIS </stored-value>
      </pair>
-	 
+
+	  <pair>
+       <displayed-value>GENDER AND SOCIAL DIFFERENTIATION </displayed-value>
+       <stored-value>GENDER AND SOCIAL DIFFERENTIATION</stored-value>
+     </pair>
+
 	 <pair>
        <displayed-value>LINKING KNOWLEDGE TO ACTION</displayed-value>
        <stored-value>LINKING KNOWLEDGE TO ACTION</stored-value>
@@ -3099,20 +3099,21 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>MANAGING CLIMATE RISK</displayed-value>
        <stored-value>MANAGING CLIMATE RISK</stored-value>
      </pair>
-     
-	  <pair>
-       <displayed-value>PRO-POOR MITIGATION</displayed-value>
-       <stored-value>PRO-POOR MITIGATION</stored-value>
-     </pair>
-	 
-	  <pair>
-       <displayed-value>SYNTHESIS AND OVERVIEWS</displayed-value>
-       <stored-value>SYNTHESIS AND OVERVIEWS</stored-value>
-     </pair>
-	 
+
 	 <pair>
-       <displayed-value>VULNERABILITY</displayed-value>
-       <stored-value>VULNERABILITY</stored-value>
+       <displayed-value> MODELING</displayed-value>
+       <stored-value>MODELING</stored-value>
+     </pair>
+
+
+
+	  <pair>
+       <displayed-value>PRO-POOR CLIMATE CHANGE MITIGATION</displayed-value>
+       <stored-value>PRO-POOR CLIMATE CHANGE MITIGATION</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>SCENARIOS</displayed-value>
+       <stored-value>SCENARIOS</stored-value>
      </pair>
  
  </value-pairs>  
