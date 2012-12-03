@@ -182,7 +182,7 @@
         <theme name="CIFOR" handle="10568/16701" path="CIFOR/"/>
         <theme name="AfricaRising" handle="10568/16498" path="AfricaRising/"/>
         <theme name="IWMI" handle="10568/16814" path="IWMI/"/>
-        <theme name="AgriFood" handle="10568/24641" path="AgriFood/"/>
+        <theme name="AgriFood" handle="10568/24754" path="AgriFood/"/>
 
         <!--Default theme for the top-level CGSPACE-->
         <theme name="CGSPACE" regex=".*" path="CGSPACE/"/>
