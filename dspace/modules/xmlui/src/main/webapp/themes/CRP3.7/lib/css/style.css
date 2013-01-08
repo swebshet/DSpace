@@ -14,7 +14,7 @@
 body {
         font-family: verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 12px;
-	background-color: #efefef;
+	background-color: #7F765D;
 	margin:0;
 }
 /*Font size percentages based on the tables at developer.yahoo.com/yui/fonts/ */
@@ -78,7 +78,7 @@ select.multiple {
     width: 980px;
     height: 96px;
     margin-top: 0px;
-    background: url("../../images/livestockfishbanner.jpg");
+    background: url("../../images/banner.png");
     background-repeat: no-repeat;
     background-color: transparent;
     margin-right: 15px;
@@ -110,7 +110,6 @@ select.multiple {
     postion: relative;
     margin: auto;
     padding: 0;
-    border-top: 1px solid #ecba33;
 }
 
 #ds-trail {
@@ -168,7 +167,7 @@ select.multiple {
 }
 
 #ds-footer {
-    border-top: 1px solid #ecba33;
+    border-top: 1px solid #D9D9D9;
     padding: 5px 0;
     font-size: 10px;
     line-height: 1.6em;
@@ -241,9 +240,8 @@ h1.ds-option-set-head {
     margin-top: 20px;
     margin-left: 15px;
     margin-right: 5px;
-    background-color: #fdcb44;
+    background-color: #D0B579;
     padding: 3px 10px;
-    border-bottom: 1px solid #ecba33;
     color: #ffffff;
     font-size: 108%;
 }
@@ -253,7 +251,6 @@ h1.ds-option-set-head {
 }
 
 div.ds-option-set {
-    border: 1px solid #ecba33;
     border-top: none;
     padding: 3px 10px;
     margin-left: 15px;
@@ -308,7 +305,7 @@ div.ds-option-set a:hover{
 #ds-search-form input.ds-button-field {
     margin-left: 6px;
     color:#ffffff;
-    background: #ecba33;
+    background: #D0B579;
 }
 
 #ds-search-form input.ds-text-field,
@@ -347,7 +344,7 @@ td {
 .ds-button-field,
 #aspect_eperson_StartRegistration_list_registration-progress li {
     background-color: #6d859c;
-    border: 1px solid #ecba33;
+	border: 1px solid #D0B579;
     padding: 2px 5px;
     color: #FFFFFF;
     font-weight: bold;
@@ -979,7 +976,6 @@ div.item-summary-view-metadata {
 div.simple-item-view-authors {
     font-size: 123.1%;
     font-weight: bold;
-    border-bottom:1px solid #ECBA33;
     padding-bottom: 2px;
     margin-bottom: 20px;
     text-align: justify;
@@ -997,8 +993,8 @@ div.simple-item-view-description {
 
 #aspect_artifactbrowser_ItemViewer_div_item-view h2,
 div.simple-item-view-description h3{
-    border-bottom:1px solid #ECBA33;
     margin-bottom: 3px;
+	border-bottom: 1px solid #D9D9D9;
 }
 
 #aspect_artifactbrowser_ItemViewer_div_item-view h2 {
@@ -1069,7 +1065,6 @@ div.spacer{
 #aspect_artifactbrowser_CommunityViewer_div_community-home h2,
 #aspect_artifactbrowser_CollectionViewer_div_collection-home h2 {
     margin-top: 30px;
-    border-bottom:1px solid #ecba33;
     margin-bottom: 3px;
 }
 
