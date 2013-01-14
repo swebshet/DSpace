@@ -2945,6 +2945,10 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <stored-value>WILDLIFE</stored-value>
      </pair>
 
+    <pair>
+      <displayed-value>WOMEN</displayed-value>
+      <stored-value>WOMEN</stored-value>
+    </pair>
 
 	 <pair>
        <displayed-value>ZOONOTIC DISEASES</displayed-value>
