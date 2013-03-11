@@ -355,7 +355,7 @@
          <dc-element>identifier</dc-element>
          <dc-qualifier>doi</dc-qualifier>
          <repeatable>false</repeatable>
-         <label>Document Object Identifier(Doi)</label>
+         <label>Document Object Identifier (DOI)</label>
          <input-type>onebox</input-type>
          <hint>Append http://dx.doi.org/  before the doi.</hint>
          <required></required>
@@ -465,7 +465,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
          <label>AGROVOC Keywords</label>
          <input-type>twobox</input-type>
-         <hint>Enter appropriate subject keywords or phrases below. </hint>
+         <hint>Enter appropriate subject keywords or phrases below.</hint>
          <required></required>
          <vocabulary>srsc</vocabulary>
         </field>
@@ -606,7 +606,11 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Abstract</label>
          <input-type>textarea</input-type>
+<<<<<<< HEAD
          <hint>Enter the abstract of the item below. </hint>
+=======
+         <hint>Enter the abstract of the item below.</hint>
+>>>>>>> dbc2cf3... input-forms: Spelling, grammar, and OCD fixes to submission forms
          <required></required>
        </field>
 
@@ -617,7 +621,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
          <label>Project Sponsor</label>
          <input-type>twobox</input-type>
-         <hint> Enter Sponsor or Sponsors in the box.</hint>
+         <hint>Enter Sponsor or Sponsors in the box.</hint>
          <required></required>
        </field>
 
@@ -630,7 +634,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Sponsor Project Number</label>
          <input-type >onebox</input-type>
-         <hint> Enter  funding codes in the box below. </hint>
+         <hint>Enter funding codes in the box below.</hint>
          <required></required>
         </field>
 
@@ -642,7 +646,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
 		 <label>River Basin Focus</label>
          <input-type value-pairs-name="riverbasin">dropdown</input-type>
-         <hint>To select more than one,you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <hint>To select more than one, you may have to hold down the "CTRL" or "Shift" key.</hint>
          <required></required>
          </field>
 
@@ -675,7 +679,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
          <label>Country Focus</label>
          <input-type value-pairs-name="countrylist">dropdown</input-type>
-         <hint>Enter a country or Countries</hint>
+         <hint>Enter a country or countries</hint>
          <required></required>
          </field>
 
@@ -686,7 +690,11 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Notes</label>
          <input-type>textarea</input-type>
+<<<<<<< HEAD
          <hint>Enter any other description or comments in this box. </hint>
+=======
+         <hint>Enter any notes or comments in this box.</hint>
+>>>>>>> dbc2cf3... input-forms: Spelling, grammar, and OCD fixes to submission forms
          <required></required>
        </field>
      </page>
@@ -734,7 +742,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Journal Title</label>
          <input-type>onebox</input-type>
-         <hint>Enter Journal Title.</hint>
+         <hint>Enter journal title.</hint>
          <required></required>
        </field>
 
@@ -777,7 +785,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <dc-element>identifier</dc-element>
          <dc-qualifier>doi</dc-qualifier>
          <repeatable>false</repeatable>
-         <label>Document Object Identifier(Doi)</label>
+         <label>Document Object Identifier (DOI)</label>
          <input-type>onebox</input-type>
          <hint>Append http://dx.doi.org/  before the doi.</hint>
          <required></required>
@@ -829,7 +837,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
          <label>ISSN</label>
          <input-type>onebox</input-type>
-         <hint> Please select the default vlaue.</hint>
+         <hint>Please select the default value.</hint>
          <required></required>
        </field>
 
@@ -841,7 +849,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
          <label>Type</label>
          <input-type value-pairs-name="common_types">dropdown</input-type>
-         <hint> Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <hint>Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "CTRL" or "Shift" key.</hint>
          <required></required>
        </field>
 
@@ -867,7 +875,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
          <label>AGROVOC Keywords</label>
          <input-type>twobox</input-type>
-         <hint> Enter appropriate AGROVOC keywords or phrases below. </hint>
+         <hint>Enter appropriate AGROVOC keywords or phrases below.</hint>
          <required></required>
          <vocabulary>srsc</vocabulary>
        </field>
@@ -903,7 +911,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Abstract</label>
          <input-type>textarea</input-type>
-         <hint> Enter the abstract of the item below. </hint>
+         <hint>Enter the abstract of the item below.</hint>
          <required></required>
        </field>
 
@@ -914,7 +922,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
          <label>Project Sponsor</label>
          <input-type>twobox</input-type>
-         <hint> Enter Sponsor or Sponsors in the box.</hint>
+         <hint>Enter sponsor or sponsors in the box.</hint>
          <required></required>
        </field>
 
@@ -927,7 +935,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Sponsor Project Number</label>
          <input-type >onebox</input-type>
-         <hint> Enter  funding codes in the box below. </hint>
+         <hint>Enter funding codes in the box below.</hint>
          <required></required>
         </field>
 
@@ -938,7 +946,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
 		 <label>River Basin Focus</label>
          <input-type value-pairs-name="riverbasin">dropdown</input-type>
-         <hint>To select more than one,you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <hint>To select more than one, you may have to hold down the "CTRL" or "Shift" key.</hint>
          <required></required>
          </field>
 
@@ -961,7 +969,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
          <label>Country Focus</label>
          <input-type value-pairs-name="countrylist">dropdown</input-type>
-         <hint>Enter a country or Countries</hint>
+         <hint>Enter a country or countries</hint>
          <required></required>
          </field>
 
@@ -973,7 +981,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Notes</label>
          <input-type>textarea</input-type>
-         <hint> Enter any Notes or comments in this box. </hint>
+         <hint>Enter any Notes or comments in this box.</hint>
          <required></required>
        </field>
 
@@ -1023,7 +1031,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Journal Title</label>
          <input-type>onebox</input-type>
-         <hint>Enter Journal Title.</hint>
+         <hint>Enter journal title.</hint>
          <required></required>
        </field>
 
@@ -1047,7 +1055,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Status</label>
           <input-type value-pairs-name="common_status_identifier">dropdown</input-type>
-         <hint>Please select  either Open Access or Limited Access.</hint>
+         <hint>Please select either Open Access or Limited Access.</hint>
          <required></required>
        </field>
 
@@ -1058,7 +1066,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <dc-element>identifier</dc-element>
          <dc-qualifier>doi</dc-qualifier>
          <repeatable>false</repeatable>
-         <label>Document Object Identifier(Doi)</label>
+         <label>Document Object Identifier (DOI)</label>
          <input-type>onebox</input-type>
          <hint>Append http://dx.doi.org/  before the doi.</hint>
          <required></required>
@@ -1108,7 +1116,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
          <label>ISSN</label>
          <input-type>onebox</input-type>
-         <hint> Please select the default vlaue.</hint>
+         <hint>Please select the default value.</hint>
          <required></required>
        </field>
 
@@ -1146,7 +1154,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
          <label>AGROVOC Keywords</label>
          <input-type>twobox</input-type>
-         <hint> Enter appropriate AGROVOC keywords or phrases below. </hint>
+         <hint>Enter appropriate AGROVOC keywords or phrases below.</hint>
          <required></required>
          <vocabulary>srsc</vocabulary>
        </field>
@@ -1181,7 +1189,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Abstract</label>
          <input-type>textarea</input-type>
-         <hint> Enter the abstract of the item below. </hint>
+         <hint>Enter the abstract of the item below.</hint>
          <required></required>
        </field>
 
@@ -1192,7 +1200,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
          <label>Project Sponsor</label>
          <input-type>twobox</input-type>
-         <hint> Enter  Sponsor or Sponsors in the box.</hint>
+         <hint>Enter sponsor or sponsors in the box.</hint>
          <required></required>
        </field>
 
@@ -1205,7 +1213,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Sponsor Project Number</label>
          <input-type >onebox</input-type>
-         <hint> Enter  funding codes in the box below. </hint>
+         <hint>Enter funding codes in the box below.</hint>
          <required></required>
         </field>
 
@@ -1216,7 +1224,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
 		 <label>River Basin Focus</label>
          <input-type value-pairs-name="riverbasin">dropdown</input-type>
-         <hint>To select more than one,you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <hint>To select more than one, you may have to hold down the "CTRL" or "Shift" key.</hint>
          <required></required>
          </field>
 
@@ -1239,7 +1247,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
          <label>Country Focus</label>
          <input-type value-pairs-name="countrylist">dropdown</input-type>
-         <hint>Enter a country or Countries</hint>
+         <hint>Enter a country or countries</hint>
          <required></required>
          </field>
 
@@ -1251,7 +1259,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Notes</label>
          <input-type>textarea</input-type>
-         <hint> Enter any Notes or comments in this box. </hint>
+         <hint>Enter any notes or comments in this box.</hint>
          <required></required>
        </field>
 
@@ -1301,7 +1309,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Journal Title</label>
          <input-type>onebox</input-type>
-         <hint>Enter Journal Title.</hint>
+         <hint>Enter journal title.</hint>
          <required></required>
        </field>
 
@@ -1325,7 +1333,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Status</label>
           <input-type value-pairs-name="common_status_identifier">dropdown</input-type>
-         <hint>Please select  either Open Access or Limited Access.</hint>
+         <hint>Please select either Open Access or Limited Access.</hint>
          <required></required>
        </field>
 
@@ -1336,7 +1344,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <dc-element>identifier</dc-element>
          <dc-qualifier>doi</dc-qualifier>
          <repeatable>false</repeatable>
-         <label>Document Object Identifier(Doi)</label>
+         <label>Document Object Identifier (DOI)</label>
          <input-type>onebox</input-type>
          <hint>Append http://dx.doi.org/  before the doi.</hint>
          <required></required>
@@ -1388,7 +1396,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
          <label>ISSN</label>
          <input-type>onebox</input-type>
-         <hint> Please select the default vlaue.</hint>
+         <hint>Please select the default value.</hint>
          <required></required>
        </field>
 
@@ -1400,7 +1408,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
          <label>Type</label>
          <input-type value-pairs-name="common_types">dropdown</input-type>
-         <hint> Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <hint>Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "CTRL" or "Shift" key.</hint>
          <required></required>
        </field>
 
@@ -1426,7 +1434,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
          <label>AGROVOC Keywords</label>
          <input-type>twobox</input-type>
-         <hint> Enter appropriate AGROVOC keywords or phrases below. </hint>
+         <hint>Enter appropriate AGROVOC keywords or phrases below.</hint>
          <required></required>
          <vocabulary>srsc</vocabulary>
        </field>
@@ -1461,7 +1469,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Abstract</label>
          <input-type>textarea</input-type>
-         <hint> Enter the abstract of the item below. </hint>
+         <hint>Enter the abstract of the item below.</hint>
          <required></required>
        </field>
 
@@ -1486,7 +1494,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
 		 <label>River Basin Focus</label>
          <input-type value-pairs-name="riverbasin">dropdown</input-type>
-         <hint>To select more than one,you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <hint>To select more than one, you may have to hold down the "CTRL" or "Shift" key.</hint>
          <required></required>
          </field>
 
@@ -1498,7 +1506,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
          <label>Country Focus</label>
          <input-type value-pairs-name="countrylist">dropdown</input-type>
-         <hint>Enter a country or Countries</hint>
+         <hint>Enter a country or countries</hint>
          <required></required>
          </field>
 
@@ -1510,7 +1518,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Notes</label>
          <input-type>textarea</input-type>
-         <hint> Enter any Notes or comments in this box. </hint>
+         <hint>Enter any Notes or comments in this box.</hint>
          <required></required>
        </field>
 
@@ -1596,7 +1604,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Status</label>
           <input-type value-pairs-name="common_status_identifier">dropdown</input-type>
-         <hint>Please select  either Open Access or Limited Access.</hint>
+         <hint>Please select either Open Access or Limited Access.</hint>
          <required></required>
        </field>
 
@@ -1615,7 +1623,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <dc-element>identifier</dc-element>
          <dc-qualifier>doi</dc-qualifier>
          <repeatable>false</repeatable>
-         <label>Document Object Identifier(Doi)</label>
+         <label>Document Object Identifier (DOI)</label>
          <input-type>onebox</input-type>
          <hint>Append http://dx.doi.org/  before the doi.</hint>
          <required></required>
@@ -1701,7 +1709,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
          <label>Type</label>
          <input-type value-pairs-name="common_types">dropdown</input-type>
-         <hint> Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <hint>Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "CTRL" or "Shift" key.</hint>
          <required></required>
        </field>
 
@@ -1726,7 +1734,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
          <label>AGROVOC Keywords</label>
          <input-type>twobox</input-type>
-         <hint> Enter appropriate subject keywords or phrases below. </hint>
+         <hint>Enter appropriate subject keywords or phrases below.</hint>
          <required></required>
          <vocabulary>srsc</vocabulary>
        </field>
@@ -1762,7 +1770,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Abstract</label>
          <input-type>textarea</input-type>
-         <hint> Enter the abstract of the item below. </hint>
+         <hint>Enter the abstract of the item below.</hint>
          <required></required>
        </field>
 
@@ -1773,7 +1781,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
          <label>Project Sponsor</label>
          <input-type>twobox</input-type>
-         <hint> Enter  Sponsor or Sponsors in the box.</hint>
+         <hint>Enter sponsor or sponsors in the box.</hint>
          <required></required>
        </field>
 
@@ -1786,7 +1794,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Sponsor Project Number</label>
          <input-type >onebox</input-type>
-         <hint> Enter  funding codes in the box below. </hint>
+         <hint>Enter funding codes in the box below.</hint>
          <required></required>
         </field>
 
@@ -1798,7 +1806,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
 		 <label>River Basin Focus</label>
          <input-type value-pairs-name="riverbasin">dropdown</input-type>
-         <hint>To select more than one,you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <hint>To select more than one, you may have to hold down the "CTRL" or "Shift" key.</hint>
          <required></required>
          </field>
 
@@ -1822,7 +1830,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
          <label>Country Focus</label>
          <input-type value-pairs-name="countrylist">dropdown</input-type>
-         <hint>Enter a country or Countries</hint>
+         <hint>Enter a country or countries</hint>
          <required></required>
          </field>
 
@@ -2230,7 +2238,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
 		 <label>River Basin Focus</label>
          <input-type value-pairs-name="riverbasin">dropdown</input-type>
-         <hint>To select more than one,you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <hint>To select more than one, you may have to hold down the "CTRL" or "Shift" key.</hint>
          <required></required>
          </field>
 
@@ -2252,7 +2260,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
          <label>Country Focus:</label>
          <input-type value-pairs-name="countrylist">dropdown</input-type>
-         <hint>Enter a country or Countries</hint>
+         <hint>Enter a country or countries</hint>
          <required></required>
          </field>
 
@@ -2516,7 +2524,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
 		 <label>River Basin Focus</label>
          <input-type value-pairs-name="riverbasin">dropdown</input-type>
-         <hint>To select more than one,you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <hint>To select more than one, you may have to hold down the "CTRL" or "Shift" key.</hint>
          <required></required>
          </field>
 
@@ -2540,7 +2548,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
          <label>Country Focus</label>
          <input-type value-pairs-name="countrylist">dropdown</input-type>
-         <hint>Enter a country or Countries</hint>
+         <hint>Enter a country or countries</hint>
          <required></required>
          </field>
 
@@ -2818,7 +2826,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Sponsor Project Number</label>
          <input-type >onebox</input-type>
-         <hint> Enter  funding codes in the box below. </hint>
+         <hint>Enter funding codes in the box below.</hint>
          <required></required>
         </field>
 
@@ -2832,7 +2840,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
 		 <label>River Basin Focus</label>
          <input-type value-pairs-name="riverbasin">dropdown</input-type>
-         <hint>To select more than one,you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <hint>To select more than one, you may have to hold down the "CTRL" or "Shift" key.</hint>
          <required></required>
          </field>
 
@@ -2854,7 +2862,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
          <label>Country Focus</label>
          <input-type value-pairs-name="countrylist">dropdown</input-type>
-         <hint>Enter a country or Countries</hint>
+         <hint>Enter a country or countries</hint>
          <required></required>
          </field>
 
@@ -2865,7 +2873,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Notes</label>
          <input-type>textarea</input-type>
-         <hint> Enter any Notes or comments in this box. </hint>
+         <hint>Enter any notes or comments in this box.</hint>
          <required></required>
        </field>
      </page>
