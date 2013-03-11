@@ -128,7 +128,7 @@
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_icrafsubject">ICRAF Subject</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_cpwfsubject">CPWF Subject</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_ccafsubject">CCAFS Subject</message>
-	
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_ciforsubject">CIFOR Subject</message>
 	
 	
 	
@@ -183,6 +183,7 @@
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.icrafsubject.column_heading">ICRAF Subject Name</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.cpwfsubject.column_heading">CPWF Subject Name</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.ccafsubject.column_heading">CCAFS Subject Name</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.ciforsubject.column_heading">CIFOR Subject Name</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.region.column_heading">Region Name</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.country.column_heading">Country Name</message>
 	
@@ -227,7 +228,8 @@
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.ccafsubject">By CCAFS Subject{1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.ccafsubject">By CCAFS Subject{1}</message>
 	
-	
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.ciforsubject">By CIFOR Subject{1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.ciforsubject">By CIFOR Subject{1}</message>
 
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.CollectionViewer.java -->
@@ -315,7 +317,7 @@
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_icrafsubject">By ICRAF Subject</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_cpwfsubject">By CPWF Subject</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_ccafsubject">By CCAFS Subject</message>
-	
+	<message key="xmlui.ArtifactBrowser.Navigation.browse_ciforsubject">By CIFOR Subject</message>
 	<!-- org.dspace.app.xmlui.artifactbrowser.SimpleSearch.java -->
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.title">Search</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.trail">Search</message>
