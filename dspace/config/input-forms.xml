@@ -5106,58 +5106,55 @@ it, please enter the types and the actual numbers or codes below.</hint>
 
 	<value-pairs value-pairs-name="TARGET_AUDIENCE" dc-term="targetaudience">
 
+    <pair>
+        <displayed-value>SCIENTISTS</displayed-value>
+        <stored-value>SCIENTISTS</stored-value>
+    </pair>
 
-	  <pair>
-       <displayed-value>ACADEMICS</displayed-value>
-       <stored-value>ACADEMICS</stored-value>
-       </pair>
+    <pair>
+        <displayed-value>ACADEMICS</displayed-value>
+        <stored-value>ACADEMICS</stored-value>
+    </pair>
 
+    <pair>
+        <displayed-value>CGIAR</displayed-value>
+        <stored-value>CGIAR</stored-value>
+    </pair>
 
-	 <pair>
-       <displayed-value>CGIAR</displayed-value>
-       <stored-value>CGIAR</stored-value>
-     </pair>
+    <pair>
+        <displayed-value>DEVELOPMENT PRACTITIONERS</displayed-value>
+        <stored-value>DEVELOPMENT PRACTITIONERS</stored-value>
+    </pair>
 
-	 <pair>
-       <displayed-value>DEVELOPMENT PRACTITIONERS</displayed-value>
-       <stored-value>DEVELOPMENT PRACTITIONERS</stored-value>
-      </pair>
+    <pair>
+        <displayed-value>DONORS</displayed-value>
+        <stored-value>DONORS</stored-value>
+    </pair>
 
-	   <pair>
-       <displayed-value>DONORS</displayed-value>
-       <stored-value>DONORS</stored-value>
-     </pair>
+    <pair>
+        <displayed-value>EXTENSION</displayed-value>
+        <stored-value>EXTENSION</stored-value>
+    </pair>
 
-	 <pair>
-       <displayed-value>EXTENSION</displayed-value>
-       <stored-value>EXTENSION</stored-value>
-     </pair>
+    <pair>
+        <displayed-value>FARMERS</displayed-value>
+        <stored-value>FARMERS</stored-value>
+    </pair>
 
-	  <pair>
-       <displayed-value>FARMERS</displayed-value>
-       <stored-value>FARMERS</stored-value>
-     </pair>
+    <pair>
+        <displayed-value>NGOS</displayed-value>
+        <stored-value>NGOS</stored-value>
+    </pair>
 
+    <pair>
+        <displayed-value>POLICY MAKERS</displayed-value>
+        <stored-value>POLICY MAKERS</stored-value>
+    </pair>
 
-	 <pair>
-       <displayed-value>NGOS</displayed-value>
-       <stored-value>NGOS</stored-value>
-     </pair>
-
-	  <pair>
-       <displayed-value>POLICY MAKERS</displayed-value>
-       <stored-value>POLICY MAKERS</stored-value>
-     </pair>
-
-	   <pair>
-       <displayed-value>GENERAL PUBLIC</displayed-value>
-       <stored-value>GENERAL PUBLIC</stored-value>
-     </pair>
-
-	  <pair>
-	  <displayed-value>SCIENTISTS</displayed-value>
-       <stored-value>SCIENTISTS</stored-value>
-      </pair>
+    <pair>
+        <displayed-value>GENERAL PUBLIC</displayed-value>
+        <stored-value>GENERAL PUBLIC</stored-value>
+    </pair>
 
 	 </value-pairs>
 
