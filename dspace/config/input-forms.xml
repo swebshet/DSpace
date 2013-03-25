@@ -36,6 +36,16 @@
    <name-map collection-handle="10568/62" form-name="ILRI"/>
    <name-map collection-handle="10568/67" form-name="ILRI"/>
    <name-map collection-handle="10568/65" form-name="ILRI"/>
+   <name-map collection-handle="10568/24451" form-name="ILRI"/>
+   <name-map collection-handle="10568/24449" form-name="ILRI"/>
+   <name-map collection-handle="10568/21792" form-name="ILRI"/>
+   <name-map collection-handle="10568/24450" form-name="ILRI"/>
+   <name-map collection-handle="10568/24452" form-name="ILRI"/>
+
+   <!--ILRI submssion form for IGAD collections-->
+
+   <name-map collection-handle="10568/16576" form-name="ILRI"/>
+   <name-map collection-handle="10568/16575" form-name="ILRI"/>
 
    <!--CPWF submssion form-->
    <name-map collection-handle="10568/3252" form-name="Journal Article CPWF"/>
@@ -2626,9 +2636,19 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <stored-value>BREEDS</stored-value>
     </pair>
 
+	<pair>
+       <displayed-value>BUFFALO</displayed-value>
+       <stored-value>BUFFALO</stored-value>
+    </pair>
+
     <pair>
        <displayed-value>CAPACITY STRENGTHENING</displayed-value>
        <stored-value>CAPACITY STRENGTHENING</stored-value>
+    </pair>
+
+	 <pair>
+       <displayed-value>CAMELS</displayed-value>
+       <stored-value>CAMELS</stored-value>
     </pair>
 
     <pair>
@@ -2680,9 +2700,15 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>DISEASE CONTROL</displayed-value>
        <stored-value>DISEASE CONTROL</stored-value>
      </pair>
+
 	 <pair>
        <displayed-value>DROUGHT</displayed-value>
        <stored-value>DROUGHT</stored-value>
+     </pair>
+
+     <pair>
+       <displayed-value>DRYLANDS</displayed-value>
+       <stored-value>DRYLANDS</stored-value>
      </pair>
 
 	  <pair>
@@ -2757,6 +2783,11 @@ it, please enter the types and the actual numbers or codes below.</hint>
      </pair>
 
 	  <pair>
+       <displayed-value>GENETIC RESOURCES</displayed-value>
+       <stored-value>GENETIC RESOURCES</stored-value>
+     </pair>
+
+	  <pair>
        <displayed-value>GENDER</displayed-value>
        <stored-value>GENDER</stored-value>
      </pair>
@@ -2781,6 +2812,10 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <stored-value>HIV-AIDS</stored-value>
      </pair>
 
+	  <pair>
+       <displayed-value>HUMID TROPICS</displayed-value>
+       <stored-value>HUMID TROPICS</stored-value>
+     </pair>
 
 	  <pair>
        <displayed-value>IMPACT ASSESSMENT</displayed-value>
@@ -2908,7 +2943,12 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <stored-value>SHEEP</stored-value>
      </pair>
 
-	   <pair>
+     <pair>
+       <displayed-value>SMALL RUMINANTS</displayed-value>
+       <stored-value>SMALL RUMINANTS</stored-value>
+     </pair>
+
+      <pair>
        <displayed-value>SOILS</displayed-value>
        <stored-value>SOILS</stored-value>
      </pair>
@@ -5164,7 +5204,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
 	<value-pairs value-pairs-name="TARGET_AUDIENCE" dc-term="targetaudience">
 
 
-	   <pair>
+	  <pair>
        <displayed-value>ACADEMICS</displayed-value>
        <stored-value>ACADEMICS</stored-value>
        </pair>
@@ -5210,7 +5250,6 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <displayed-value>GENERAL PUBLIC</displayed-value>
        <stored-value>GENERAL PUBLIC</stored-value>
      </pair>
-
 
 	  <pair>
 	  <displayed-value>SCIENTISTS</displayed-value>
