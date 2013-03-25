@@ -513,11 +513,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Abstract</label>
          <input-type>textarea</input-type>
-<<<<<<< HEAD
          <hint>Enter the abstract of the item below. </hint>
-=======
-         <hint>Enter the abstract of the item below.</hint>
->>>>>>> dbc2cf3... input-forms: Spelling, grammar, and OCD fixes to submission forms
          <required></required>
        </field>
 
@@ -597,11 +593,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Notes</label>
          <input-type>textarea</input-type>
-<<<<<<< HEAD
          <hint>Enter any other description or comments in this box. </hint>
-=======
-         <hint>Enter any notes or comments in this box.</hint>
->>>>>>> dbc2cf3... input-forms: Spelling, grammar, and OCD fixes to submission forms
          <required></required>
        </field>
      </page>
