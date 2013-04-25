@@ -34,7 +34,7 @@
         </map:component-configurations>
 
 
-		<map:pipeline>
+		<map:pipeline type="noncaching">
 			<!-- Allow the browser to cache static content for an hour -->
 			<map:parameter name="expires" value="access plus 1 hours"/>
 
@@ -71,7 +71,7 @@
 			these are just stored on disk and passed directly to the
 			browser without any processing.
 		-->
-		<map:pipeline>
+		<map:pipeline type="noncaching">
 			<!-- Never allow the browser to cache dynamic content -->
 			<map:parameter name="expires" value="now"/>
 
