@@ -137,7 +137,6 @@
 
 
 
-
    <!--  some common other possibilities for Advanced Search Fields -->
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_contributor">Contributor</message>
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_creator">Creator</message>
@@ -208,40 +207,38 @@
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.item.dateaccessioned">Browsing {0} by Submit Date {1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.item.dateaccessioned">Browsing {0} by Submit Date</message>
 
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.region">By Region{1}</message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.region">By Region{1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.region">Browsing {0} by Region {1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.region">Browsing {0} by Region</message>
 
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.country">Browsing {0} by Country {1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.country">Browsing {0} by Country</message>
 
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.country">By Country {1}</message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.country">By Country {1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.ilrisubject">Browsing {0} by ILRI Subject {1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.ilrisubject">Browsing {0} by ILRI Subject</message>
 
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.ilrisubject">By ILRI Subject{1}</message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.ilrisubject">By ILRI Subject{1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.cpwfsubject">Browsing {0} by CPWF Subject {1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.cpwfsubject">Browsing {0} by CPWF Subject</message>
 
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.ccafsubject">Browsing {0} by CCAFS Subject {1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.ccafsubject">Browsing {0} by CCAFS Subject</message>
 
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.cpwfsubject">By CPWF Subject{1}</message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.cpwfsubject">By CPWF Subject{1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.ciforsubject">Browsing {0} by CIFOR Subject {1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.ciforsubject">Browsing {0} by CIFOR Subject</message>
 
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.ccafsubject">By CCAFS Subject{1}</message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.ccafsubject">By CCAFS Subject{1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.ciforsubject">Browsing {0} by CIFOR Subject {1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.ciforsubject">Browsing {0} by CIFOR Subject</message>
 
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.ciforsubject">By CIFOR Subject{1}</message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.ciforsubject">By CIFOR Subject{1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.iwmisubject">Browsing {0} by IWMI Subject{1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.iwmisubject">Browsing {0} by IWMI Subject</message>
 
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.ciforsubject">By CIFOR Subject{1}</message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.ciforsubject">By CIFOR Subject{1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.subregion">Browsing {0} by Sub Region {1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.subregion">Browsing {0} by Sub Region</message>
 
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.iwmisubject">By IWMI Subject{1}</message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.iwmisubject">By IWMI Subject{1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.crpsubject">Browsing {0} by CGIAR research program {1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.crpsubject">Browsing {0} by CGIAR research program</message>
 
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.subregion">By Sub Region{1}</message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.subregion">By Sub Region{1}</message>
-
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.crpsubject">By CGIAR research program{1}</message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.crpsubject">By CGIAR research program{1}</message>
-
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.basin">By River Basin:{1}</message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.basin">By River Basin:{1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.basin">Browsing {0} by River Basin {1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.basin">Browsing {0} by River Basin</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.CollectionViewer.java -->
 	<message key="xmlui.ArtifactBrowser.CollectionViewer.search_scope">Search Scope</message>
