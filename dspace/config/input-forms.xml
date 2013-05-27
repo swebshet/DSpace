@@ -786,7 +786,16 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <required>Required</required>
        </field>
 
-      
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>Species</dc-element>
+         <dc-qualifier>animal</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Animal species</label>
+         <input-type>twobox</input-type>
+         <hint>Enter a full scientific or Latin name:</hint>
+         <required></required>
+       </field>
 
         <field>
 		 <dc-schema>dc</dc-schema>
