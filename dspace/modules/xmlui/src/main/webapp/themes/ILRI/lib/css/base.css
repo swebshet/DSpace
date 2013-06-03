@@ -29,10 +29,7 @@ a, a:active, a:visited {
 color:#660000;
 text-decoration: none;
 font-weight: normal;
-font-family: verdana;
-
  }
-a:hover { color:#036; }
 
 
 ul { margin-left:30px; }
