@@ -410,7 +410,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
          <label>Type</label>
          <input-type value-pairs-name="common_types">dropdown</input-type>
-         <hint>Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <hint>Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "Ctrl" or "Shift" key.</hint>
          <required></required>
        </field>
 
@@ -565,7 +565,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
 		 <label>River Basin Focus</label>
          <input-type value-pairs-name="riverbasin">dropdown</input-type>
-         <hint>To select more than one, you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <hint>To select more than one, you may have to hold down the "Ctrl" or "Shift" key.</hint>
          <required></required>
          </field>
 
@@ -576,7 +576,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
 		 <label>Region Focus</label>
          <input-type value-pairs-name="region_types">dropdown</input-type>
-         <hint>To select more than one region, you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <hint>To select more than one region, you may have to hold down the "Ctrl" or "Shift" key.</hint>
          <required></required>
          </field>
 
@@ -924,7 +924,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
          <label>Type</label>
          <input-type value-pairs-name="common_types">dropdown</input-type>
-         <hint>Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <hint>Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "Ctrl" or "Shift" key.</hint>
          <required></required>
        </field>
 
@@ -1021,7 +1021,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
 		 <label>River Basin Focus</label>
          <input-type value-pairs-name="riverbasin">dropdown</input-type>
-         <hint>To select more than one, you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <hint>To select more than one, you may have to hold down the "Ctrl" or "Shift" key.</hint>
          <required></required>
          </field>
 
@@ -1033,7 +1033,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
 		 <label>Region Focus</label>
          <input-type value-pairs-name="region_types">dropdown</input-type>
-         <hint>To select more than one region, you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <hint>To select more than one region, you may have to hold down the "Ctrl" or "Shift" key.</hint>
          <required></required>
          </field>
 
@@ -1214,7 +1214,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
          <label>Type</label>
          <input-type value-pairs-name="common_types">dropdown</input-type>
-         <hint>Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <hint>Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "Ctrl" or "Shift" key.</hint>
          <required></required>
        </field>
 
@@ -1300,7 +1300,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
 		 <label>River Basin Focus</label>
          <input-type value-pairs-name="riverbasin">dropdown</input-type>
-         <hint>To select more than one, you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <hint>To select more than one, you may have to hold down the "Ctrl" or "Shift" key.</hint>
          <required></required>
          </field>
 
@@ -1515,7 +1515,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
          <label>Type</label>
          <input-type value-pairs-name="common_types">dropdown</input-type>
-         <hint>Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <hint>Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "Ctrl" or "Shift" key.</hint>
          <required></required>
        </field>
 
@@ -1608,7 +1608,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
 		 <label>River Basin Focus</label>
          <input-type value-pairs-name="riverbasin">dropdown</input-type>
-         <hint>To select more than one, you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <hint>To select more than one, you may have to hold down the "Ctrl" or "Shift" key.</hint>
          <required></required>
          </field>
 
@@ -1619,7 +1619,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
 		 <label>Region Focus</label>
          <input-type value-pairs-name="region_types">dropdown</input-type>
-         <hint>To select more than one region, you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <hint>To select more than one region, you may have to hold down the "Ctrl" or "Shift" key.</hint>
          <required></required>
          </field>
 
@@ -1816,7 +1816,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
          <label>Type</label>
          <input-type value-pairs-name="common_types">dropdown</input-type>
-         <hint> Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <hint> Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "Ctrl" or "Shift" key.</hint>
          <required></required>
        </field>
 
@@ -1900,7 +1900,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
 		 <label>River Basin Focus</label>
          <input-type value-pairs-name="riverbasin">dropdown</input-type>
-         <hint>To select more than one, you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <hint>To select more than one, you may have to hold down the "Ctrl" or "Shift" key.</hint>
          <required></required>
          </field>
 
@@ -1911,7 +1911,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
 		 <label>Region Focus </label>
          <input-type value-pairs-name="region_types">dropdown</input-type>
-         <hint>To select more than one region, you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <hint>To select more than one region, you may have to hold down the "Ctrl" or "Shift" key.</hint>
          <required></required>
          </field>
 
@@ -2113,7 +2113,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
          <label>Type</label>
          <input-type value-pairs-name="common_types">dropdown</input-type>
-         <hint> Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <hint> Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "Ctrl" or "Shift" key.</hint>
          <required></required>
        </field>
 
@@ -2216,7 +2216,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
 		 <label>River Basin Focus</label>
          <input-type value-pairs-name="riverbasin">dropdown</input-type>
-         <hint>To select more than one, you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <hint>To select more than one, you may have to hold down the "Ctrl" or "Shift" key.</hint>
          <required></required>
          </field>
 
@@ -2227,7 +2227,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
 		 <label>Region Focus</label>
          <input-type value-pairs-name="region_types">dropdown</input-type>
-         <hint>To select more than one region, you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <hint>To select more than one region, you may have to hold down the "Ctrl" or "Shift" key.</hint>
          <required></required>
          </field>
 
