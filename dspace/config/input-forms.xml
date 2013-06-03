@@ -708,6 +708,16 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <required></required>
        </field>
 
+      <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>type</dc-element>
+         <dc-qualifier>output</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Type</label>
+         <input-type value-pairs-name="common_types">dropdown</input-type>
+         <hint>Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "Ctrl" or "Shift" key.</hint>
+         <required></required>
+       </field>
 
        <field>
          <dc-schema>dc</dc-schema>
@@ -1501,7 +1511,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>type</dc-element>
-         <dc-qualifier></dc-qualifier>
+         <dc-qualifier>output</dc-qualifier>
          <repeatable>true</repeatable>
          <label>Type</label>
          <input-type value-pairs-name="common_types">dropdown</input-type>
@@ -1802,7 +1812,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>type</dc-element>
-         <dc-qualifier></dc-qualifier>
+         <dc-qualifier>output</dc-qualifier>
          <repeatable>true</repeatable>
          <label>Type</label>
          <input-type value-pairs-name="common_types">dropdown</input-type>
@@ -2099,7 +2109,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>type</dc-element>
-         <dc-qualifier></dc-qualifier>
+         <dc-qualifier>output</dc-qualifier>
          <repeatable>true</repeatable>
          <label>Type</label>
          <input-type value-pairs-name="common_types">dropdown</input-type>
