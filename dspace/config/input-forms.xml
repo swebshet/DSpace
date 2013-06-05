@@ -810,8 +810,19 @@ it, please enter the types and the actual numbers or codes below.</hint>
         <field>
 		 <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
-         <dc-qualifier>journal</dc-qualifier>
-         <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+         <dc-qualifier>issn</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>ISSN</label>
+         <input-type>onebox</input-type>
+         <hint>Please select the default value.</hint>
+         <required></required>
+       </field>
+
+
+        <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>type</dc-element>
+         <dc-qualifier>output</dc-qualifier>
          <repeatable>true</repeatable>
          <label>Type</label>
          <input-type value-pairs-name="common_types">dropdown</input-type>
