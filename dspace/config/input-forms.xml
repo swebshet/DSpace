@@ -3280,56 +3280,6 @@ it, please enter the types and the actual numbers or codes below.</hint>
      </pair>
  </value-pairs>
 
- <value-pairs value-pairs-name="ccafsubject" dc-term="ccsubject_ccafsubject">
-     <pair>
-       <displayed-value>ADAPTATION TO FUTURE CLIMATE</displayed-value>
-       <stored-value>ADAPTATION TO FUTURE CLIMATE</stored-value>
-     </pair>
-
-	  <pair>
-       <displayed-value>CLIMATE SCIENCE</displayed-value>
-       <stored-value>CLIMATE SCIENCE</stored-value>
-     </pair>
-
-	  <pair>
-       <displayed-value>DATA AND TOOLS FOR ANALYSIS AND PLANNING</displayed-value>
-       <stored-value>DATA AND TOOLS FOR ANALYSIS AND PLANNING</stored-value>
-     </pair>
-
-	  <pair>
-       <displayed-value>EDUCATION AND OUTREACH</displayed-value>
-       <stored-value>EDUCATION AND OUTREACH</stored-value>
-     </pair>
-
-	  <pair>
-       <displayed-value>FRAMEWORKS FOR POLICY ANALYSIS</displayed-value>
-       <stored-value>FRAMEWORKS FOR POLICY ANALYSIS</stored-value>
-     </pair>
-
-	  <pair>
-       <displayed-value>LINKING KNOWLEDGE TO ACTION</displayed-value>
-       <stored-value>LINKING KNOWLEDGE TO ACTION</stored-value>
-     </pair>
-
-	  <pair>
-       <displayed-value>MANAGING CLIMATE RISK</displayed-value>
-       <stored-value>MANAGING CLIMATE RISK</stored-value>
-     </pair>
-
-	  <pair>
-       <displayed-value>PRO-POOR MITIGATION</displayed-value>
-       <stored-value>PRO-POOR MITIGATION</stored-value>
-     </pair>
-
-	  <pair>
-       <displayed-value>SYNTHESIS AND OVERVIEWS</displayed-value>
-       <stored-value>SYNTHESIS AND OVERVIEWS</stored-value>
-     </pair>
-
-
-
- </value-pairs>
-
   <value-pairs value-pairs-name="ciforsubject" dc-term="cisubject_ciforsubject">
      <pair>
        <displayed-value>FOREST MANAGEMENT</displayed-value>
