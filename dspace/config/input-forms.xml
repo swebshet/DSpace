@@ -3214,57 +3214,6 @@ it, please enter the types and the actual numbers or codes below.</hint>
  <value-pairs value-pairs-name="crpsubject" dc-term="crsubject_crpsubject">
     
 
-     <pair>
-       <displayed-value>CRP1.1: DRY AREAS</displayed-value>
-       <stored-value>CRP1.1: DRY AREAS</stored-value>
-     </pair>
- 
- 
- <pair>
-       <displayed-value>CRP1.2: HUMID TROPICS</displayed-value>
-       <stored-value>CRP1.2: HUMID TROPICS</stored-value>
-     </pair>
- <pair>
-       <displayed-value>CRP1.3: AQUATIC AGRICULTURAL SYSTEMS</displayed-value>
-       <stored-value>CRP1.3: AQUATIC AGRICULTURAL SYSTEMS</stored-value>
-     </pair>
- 
-    <pair>
-       <displayed-value>CRP2: POLICIES, INSTITUTIONS, AND MARKETS</displayed-value>
-       <stored-value>CRP2: POLICIES, INSTITUTIONS, AND MARKETS</stored-value>
-     </pair>
-	 
-	 
-	 <pair>
-       <displayed-value>CRP3.1: WHEAT</displayed-value>
-       <stored-value>CRP3.1: WHEAT</stored-value>
-     </pair>
-	 
-	 <pair>
-       <displayed-value>CRP3.2: MAIZE</displayed-value>
-       <stored-value>CRP3.2: MAIZE</stored-value>
-     </pair>
-	 
-	 
-	 <pair>
-       <displayed-value>CRP3.3: RICE</displayed-value>
-       <stored-value>CRP3.3: RICE</stored-value>
-     </pair>
-
-	  <pair>
-       <displayed-value>PRO-POOR MITIGATION</displayed-value>
-       <stored-value>PRO-POOR MITIGATION</stored-value>
-     </pair>
-
-	  <pair>
-       <displayed-value>SYNTHESIS AND OVERVIEWS</displayed-value>
-       <stored-value>SYNTHESIS AND OVERVIEWS</stored-value>
-     </pair>
-
-
-
- </value-pairs>
-
   <value-pairs value-pairs-name="ciforsubject" dc-term="cisubject_ciforsubject">
      <pair>
        <displayed-value>FOREST MANAGEMENT</displayed-value>
