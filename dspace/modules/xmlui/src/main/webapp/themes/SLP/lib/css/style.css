@@ -12,7 +12,7 @@
  */
 
 body {
-        font-family: verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 12px;
 	background-color: #efefef;
 	margin:0;
@@ -125,11 +125,11 @@ select.multiple {
     display: inline;
     color: #1F3F5E;
     margin-right: 0px;
-    font-family: verdana;
+    font-family: Verdana;
 }
 
 #ds-trail a {
-    font-family: verdana;
+    font-family: Verdana;
     color: #000000;
     margin-left:15px;
     text-decoration: none;
@@ -290,12 +290,12 @@ div.ds-option-set ul.sublist {
 div.ds-option-set a{
    color: #702d3e;
    font-size: 11px;
-   font-family: verdana;
+   font-family: Verdana;
    }
 div.ds-option-set a:hover{
    color: #000000;
    font-size: 11px;
-   font-family: verdana;
+   font-family: Verdana;
    }
 #ds-search-option {
     padding: 10px;
