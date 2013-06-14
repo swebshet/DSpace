@@ -29,7 +29,7 @@ a, a:active, a:visited {
 color:#187f38;
 text-decoration: none;
 font-weight: normal;
-font-family: Verdana;
+font-family: Verdana, Helvetica, Arial, sans-serif;
 font-size: 12px;
  }
 a:hover { color:#036; }

@@ -117,7 +117,7 @@ select.multiple {
     line-height: 20px;
     margin: 0;
     padding-left: 15px;
-    font-family: Verdana;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
     font-size: 11px;
 }
 
@@ -286,12 +286,12 @@ div.ds-option-set ul.sublist {
 div.ds-option-set a{
    color: #000000;
    font-size: 11px;
-   font-family: Verdana;
+   font-family: Verdana, Helvetica, Arial, sans-serif;
    }
 div.ds-option-set a:hover{
    color: #000000;
    font-size: 11px;
-   font-family: Verdana;
+   font-family: Verdana, Helvetica, Arial, sans-serif;
    }
 #ds-search-option {
     padding: 10px;
