@@ -342,8 +342,8 @@ td {
 
 .ds-button-field,
 #aspect_eperson_StartRegistration_list_registration-progress li {
-    background-color: #6d859c;
-    border: 1px solid #1F3F5E;
+    background-color: #48732A;
+    border: 1px solid #48732A;
     padding: 2px 5px;
     color: #FFFFFF;
     font-weight: bold;
@@ -402,8 +402,7 @@ ul.ds-progress-list li.button input.ds-button-field {
 
 ul.ds-progress-list li.current input.ds-button-field,
 #aspect_eperson_StartRegistration_list_registration-progress li.current {
-    background-color: #499c73;
-    border: 1px solid #1f5e3f;
+    background-color: #1f5e3f;
 }
 
 ul.ds-progress-list li.disabled input.ds-button-field
