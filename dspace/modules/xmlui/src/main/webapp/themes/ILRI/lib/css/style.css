@@ -307,7 +307,8 @@ div.ds-option-set a:hover{
 #ds-search-form input.ds-button-field {
     margin-left: 6px;
     color:#ffffff;
-    background: #702d3e;
+    background: #6F1C2D;
+    border: 1px solid #702d3e;
 }
 
 #ds-search-form input.ds-text-field,
@@ -345,8 +346,8 @@ td {
 
 .ds-button-field,
 #aspect_eperson_StartRegistration_list_registration-progress li {
-    background-color: #6d859c;
-    border: 1px solid #6F1C2D;
+    background-color: #6F1C2D;
+    border: 1px solid #702d3e;
     padding: 2px 5px;
     color: #FFFFFF;
     font-weight: bold;
@@ -405,8 +406,9 @@ ul.ds-progress-list li.button input.ds-button-field {
 
 ul.ds-progress-list li.current input.ds-button-field,
 #aspect_eperson_StartRegistration_list_registration-progress li.current {
-    background-color: #499c73;
-    border: 1px solid #1f5e3f;
+    background-color: #e3d7d7;
+    border: 1px solid #D2C6C6;
+    color: #000;
 }
 
 ul.ds-progress-list li.disabled input.ds-button-field
