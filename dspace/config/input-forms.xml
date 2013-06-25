@@ -554,8 +554,10 @@
           <dc-qualifier>subregion</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Sub Region Focus</label>
-          <input-type>twobox</input-type>
-          <hint>Please enter the sub region in upper case.</hint>
+          <input-type value-pairs-name="subregion_types">
+          dropdown</input-type>
+          <hint>To select more than one region, you may have to
+          hold down the "Ctrl" or "Shift" key.</hint>
           <required></required>
         </field>
         <field>
@@ -987,6 +989,18 @@
           <repeatable>true</repeatable>
           <label>Region Focus</label>
           <input-type value-pairs-name="region_types">
+          dropdown</input-type>
+          <hint>To select more than one region, you may have to
+          hold down the "Ctrl" or "Shift" key.</hint>
+          <required></required>
+        </field>
+        <field>
+          <dc-schema>dc</dc-schema>
+          <dc-element>srplace</dc-element>
+          <dc-qualifier>subregion</dc-qualifier>
+          <repeatable>true</repeatable>
+          <label>Sub Region Focus</label>
+          <input-type value-pairs-name="subregion_types">
           dropdown</input-type>
           <hint>To select more than one region, you may have to
           hold down the "Ctrl" or "Shift" key.</hint>
@@ -1554,6 +1568,18 @@
         </field>
         <field>
           <dc-schema>dc</dc-schema>
+          <dc-element>srplace</dc-element>
+          <dc-qualifier>subregion</dc-qualifier>
+          <repeatable>true</repeatable>
+          <label>Sub Region Focus</label>
+          <input-type value-pairs-name="subregion_types">
+          dropdown</input-type>
+          <hint>To select more than one region, you may have to
+          hold down the "Ctrl" or "Shift" key.</hint>
+          <required></required>
+        </field>
+        <field>
+          <dc-schema>dc</dc-schema>
           <dc-element>cplace</dc-element>
           <dc-qualifier>country</dc-qualifier>
           <repeatable>true</repeatable>
@@ -1836,6 +1862,18 @@
           <repeatable>true</repeatable>
           <label>Region Focus</label>
           <input-type value-pairs-name="region_types">
+          dropdown</input-type>
+          <hint>To select more than one region, you may have to
+          hold down the "Ctrl" or "Shift" key.</hint>
+          <required></required>
+        </field>
+        <field>
+          <dc-schema>dc</dc-schema>
+          <dc-element>srplace</dc-element>
+          <dc-qualifier>subregion</dc-qualifier>
+          <repeatable>true</repeatable>
+          <label>Sub Region Focus</label>
+          <input-type value-pairs-name="subregion_types">
           dropdown</input-type>
           <hint>To select more than one region, you may have to
           hold down the "Ctrl" or "Shift" key.</hint>
@@ -2134,6 +2172,18 @@
           <repeatable>true</repeatable>
           <label>Region Focus</label>
           <input-type value-pairs-name="region_types">
+          dropdown</input-type>
+          <hint>To select more than one region, you may have to
+          hold down the "Ctrl" or "Shift" key.</hint>
+          <required></required>
+        </field>
+        <field>
+          <dc-schema>dc</dc-schema>
+          <dc-element>srplace</dc-element>
+          <dc-qualifier>subregion</dc-qualifier>
+          <repeatable>true</repeatable>
+          <label>Sub Region Focus</label>
+          <input-type value-pairs-name="subregion_types">
           dropdown</input-type>
           <hint>To select more than one region, you may have to
           hold down the "Ctrl" or "Shift" key.</hint>
@@ -3401,8 +3451,20 @@
     <value-pairs value-pairs-name="region_types"
     dc-term="place_region">
       <pair>
+        <displayed-value>ACP</displayed-value>
+        <stored-value>ACP</stored-value>
+      </pair>
+      <pair>
         <displayed-value>AFRICA</displayed-value>
         <stored-value>AFRICA</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>AFRICA</displayed-value>
+        <stored-value>AFRICA</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>AFRICA SOUTH OF SAHARA</displayed-value>
+        <stored-value>AFRICA SOUTH OF SAHARA</stored-value>
       </pair>
       <pair>
         <displayed-value>ASIA</displayed-value>
@@ -3423,6 +3485,10 @@
       <pair>
         <displayed-value>CENTRAL ASIA</displayed-value>
         <stored-value>CENTRAL ASIA</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>EAST ASIA</displayed-value>
+        <stored-value>EAST ASIA</stored-value>
       </pair>
       <pair>
         <displayed-value>EAST AFRICA</displayed-value>
@@ -3465,6 +3531,10 @@
         <stored-value>SOUTHERN AFRICA</stored-value>
       </pair>
       <pair>
+        <displayed-value>SAHEL</displayed-value>
+        <stored-value>SAHEL</stored-value>
+      </pair>
+      <pair>
         <displayed-value>SOUTH AMERICA</displayed-value>
         <stored-value>SOUTH AMERICA</stored-value>
       </pair>
@@ -3473,8 +3543,51 @@
         <stored-value>WEST AFRICA</stored-value>
       </pair>
       <pair>
+        <displayed-value>WEST ASIA</displayed-value>
+        <stored-value>WEST ASIA</stored-value>
+      </pair>
+      <pair>
         <displayed-value>WEST AND CENTRAL AFRICA</displayed-value>
         <stored-value>WEST AND CENTRAL AFRICA</stored-value>
+      </pair>
+    </value-pairs>
+    <value-pairs value-pairs-name="subregion_types"
+    dc-term="srplace_subregion">
+      <pair>
+        <displayed-value>AFAR</displayed-value>
+        <stored-value>AFAR</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>AMHARA</displayed-value>
+        <stored-value>AMHARA</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>BENISHANGUL-GUMUZ</displayed-value>
+        <stored-value>BENISHANGUL-GUMUZ</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>GAMBELA</displayed-value>
+        <stored-value>GAMBELA</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>HARARI</displayed-value>
+        <stored-value>HARARI</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>OROMIA</displayed-value>
+        <stored-value>OROMIA</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>SOMALI</displayed-value>
+        <stored-value>SOMALI</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>SNNPR</displayed-value>
+        <stored-value>SNNPR</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>TIGRAY</displayed-value>
+        <stored-value>TIGRAY</stored-value>
       </pair>
     </value-pairs>
     <value-pairs value-pairs-name="countrylist"
