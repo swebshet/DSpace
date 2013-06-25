@@ -10,11 +10,9 @@
   <!-- collection which does not appear in this map will be associated with -->
   <!-- the mapping for handle "default".                                    -->
   <form-map>
-    <name-map collection-handle="default"
-    form-name="traditional" />
+    <name-map collection-handle="default" form-name="traditional" />
     <!--ILRI submssion form-->
-    <name-map collection-handle="10568/3"
-    form-name="Journal Article ILRI" />
+    <name-map collection-handle="10568/3" form-name="Journal Article ILRI" />
     <name-map collection-handle="10568/2703" form-name="ILRI" />
     <name-map collection-handle="10568/786" form-name="ILRI" />
     <name-map collection-handle="10568/131" form-name="ILRI" />
@@ -42,8 +40,7 @@
     <name-map collection-handle="10568/16576" form-name="ILRI" />
     <name-map collection-handle="10568/16575" form-name="ILRI" />
     <!--CPWF submssion form-->
-    <name-map collection-handle="10568/3252"
-    form-name="Journal Article CPWF" />
+    <name-map collection-handle="10568/3252" form-name="Journal Article CPWF" />
     <name-map collection-handle="10568/3695" form-name="CPWF" />
     <name-map collection-handle="10568/3622" form-name="CPWF" />
     <name-map collection-handle="10568/3203" form-name="CPWF" />
@@ -127,12 +124,9 @@
     <name-map collection-handle="10568/21789" form-name="CCAFS" />
     <name-map collection-handle="10568/16890" form-name="CCAFS" />
     <!--AgriFood Chain Toolkit collections-->
-    <name-map collection-handle="10568/24757"
-    form-name="AgriFood Chain capacity building" />
-    <name-map collection-handle="10568/24756"
-    form-name="AgriFood Chain capacity building" />
-    <name-map collection-handle="10568/24755"
-    form-name="AgriFood Chain capacity building" />
+    <name-map collection-handle="10568/24757" form-name="AgriFood Chain capacity building" />
+    <name-map collection-handle="10568/24756" form-name="AgriFood Chain capacity building" />
+    <name-map collection-handle="10568/24755" form-name="AgriFood Chain capacity building" />
   </form-map>
   <!--CIFOR submission form SINCE JAN 2012-->
   <!-- The form-definitions map lays out the detailed definition of all the -->
@@ -160,8 +154,7 @@
           <repeatable>true</repeatable>
           <label>Authors</label>
           <input-type>name</input-type>
-          <hint>Enter the names of the authors of this item
-          below.</hint>
+          <hint>Enter the names of the authors of this item below.</hint>
           <required></required>
         </field>
         <field>
@@ -172,8 +165,7 @@
           <label>Title</label>
           <input-type>onebox</input-type>
           <hint>Enter the main title of the item.</hint>
-          <required>You must enter a main title for this
-          item.</required>
+          <required>You must enter a main title for this item.</required>
         </field>
         <field>
           <dc-schema>dc</dc-schema>
@@ -182,8 +174,7 @@
           <repeatable>true</repeatable>
           <label>Other Titles</label>
           <input-type>onebox</input-type>
-          <hint>If the item has any alternative titles, please
-          enter them below.</hint>
+          <hint>If the item has any alternative titles, please enter them below.</hint>
           <required></required>
         </field>
         <field>
@@ -212,8 +203,7 @@
           <dc-qualifier></dc-qualifier>
           <repeatable>false</repeatable>
           <label>ISI Journal</label>
-          <input-type value-pairs-name="ISI_Journal">
-          dropdown</input-type>
+          <input-type value-pairs-name="ISI_Journal">dropdown</input-type>
           <required></required>
         </field>
         <field>
@@ -222,8 +212,7 @@
           <dc-qualifier></dc-qualifier>
           <repeatable>false</repeatable>
           <label>Grey Literature</label>
-          <input-type value-pairs-name="GREY_LITERATURE">
-          dropdown</input-type>
+          <input-type value-pairs-name="GREY_LITERATURE">dropdown</input-type>
           <required></required>
         </field>
         <field>
@@ -232,8 +221,7 @@
           <dc-qualifier></dc-qualifier>
           <repeatable>false</repeatable>
           <label>Target Audience</label>
-          <input-type value-pairs-name="TARGET_AUDIENCE">
-          dropdown</input-type>
+          <input-type value-pairs-name="TARGET_AUDIENCE">dropdown</input-type>
           <required></required>
         </field>
         <field>
@@ -291,10 +279,8 @@
           <dc-qualifier>status</dc-qualifier>
           <repeatable>false</repeatable>
           <label>Status</label>
-          <input-type value-pairs-name="common_status_identifier">
-          dropdown</input-type>
-          <hint>Please select either Open Access or Limited
-          Access.</hint>
+          <input-type value-pairs-name="common_status_identifier">dropdown</input-type>
+          <hint>Please select either Open Access or Limited Access.</hint>
           <required></required>
         </field>
         <field>
@@ -314,9 +300,7 @@
           <repeatable>false</repeatable>
           <label>Date of Publication</label>
           <input-type>date</input-type>
-          <hint>Please give the date of previous publication or
-          public distribution below. You can leave out the day
-          and/or month if they aren't applicable.</hint>
+          <hint>Please give the date of previous publication or public distribution below. You can leave out the day and/or month if they aren't applicable.</hint>
           <required>You must enter at least the year.</required>
         </field>
         <field>
@@ -326,8 +310,7 @@
           <repeatable>false</repeatable>
           <label>Publisher</label>
           <input-type>onebox</input-type>
-          <hint>Enter the full name of the publisher (reports and
-          books only).</hint>
+          <hint>Enter the full name of the publisher (reports and books only).</hint>
           <required></required>
         </field>
         <field>
@@ -337,8 +320,7 @@
           <repeatable>true</repeatable>
           <label>Publication place</label>
           <input-type>onebox</input-type>
-          <hint>Enter the city and country eg: Nairobi,
-          Kenya</hint>
+          <hint>Enter the city and country eg: Nairobi, Kenya</hint>
           <required></required>
         </field>
         <field>
@@ -358,8 +340,7 @@
           <repeatable>true</repeatable>
           <label>Series/Report No.</label>
           <input-type>series</input-type>
-          <hint>Enter the series and number assigned to this item
-          by your community.</hint>
+          <hint>Enter the series and number assigned to this item by your community.</hint>
           <required></required>
         </field>
         <field>
@@ -369,11 +350,8 @@
           <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
           <repeatable>true</repeatable>
           <label>Identifiers</label>
-          <input-type value-pairs-name="common_identifiers">
-          qualdrop_value</input-type>
-          <hint>If the item has any identification numbers or codes
-          associated with it, please enter the types and the actual
-          numbers or codes below.</hint>
+          <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
+          <hint>If the item has any identification numbers or codes associated with it, please enter the types and the actual numbers or codes below.</hint>
           <required></required>
         </field>
         <field>
@@ -382,11 +360,8 @@
           <dc-qualifier>output</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Type</label>
-          <input-type value-pairs-name="common_types">
-          dropdown</input-type>
-          <hint>Select the type(s) of content of the item. To
-          select more than one value in the list, you may have to
-          hold down the "Ctrl" or "Shift" key.</hint>
+          <input-type value-pairs-name="common_types">dropdown</input-type>
+          <hint>Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "Ctrl" or "Shift" key.</hint>
           <required></required>
         </field>
         <field>
@@ -395,13 +370,8 @@
           <dc-qualifier>iso</dc-qualifier>
           <repeatable>false</repeatable>
           <label>Language</label>
-          <input-type value-pairs-name="common_iso_languages">
-          dropdown</input-type>
-          <hint>Select the language of the main content of the
-          item. If the language does not appear in the list below,
-          please select 'Other'. If the content does not really
-          have a language (for example, if it is a dataset or an
-          image) please select 'N/A'.</hint>
+          <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+          <hint>Select the language of the main content of the item. If the language does not appear in the list below, please select 'Other'. If the content does not really have a language (for example, if it is a dataset or an image) please select 'N/A'.</hint>
           <required></required>
         </field>
       </page>
@@ -414,8 +384,7 @@
           <repeatable>true</repeatable>
           <label>AGROVOC Keywords</label>
           <input-type>twobox</input-type>
-          <hint>Enter appropriate subject keywords or phrases
-          below.</hint>
+          <hint>Enter appropriate subject keywords or phrases below.</hint>
           <required></required>
           <vocabulary>srsc</vocabulary>
         </field>
@@ -425,8 +394,7 @@
           <dc-qualifier>ilrisubject</dc-qualifier>
           <repeatable>true</repeatable>
           <label>ILRI Subject Focus</label>
-          <input-type value-pairs-name="ilrisubject">
-          dropdown</input-type>
+          <input-type value-pairs-name="ilrisubject">dropdown</input-type>
           <hint></hint>
           <required></required>
         </field>
@@ -456,8 +424,7 @@
           <dc-qualifier>cpwfsubject</dc-qualifier>
           <repeatable>true</repeatable>
           <label>CPWF Subject Focus</label>
-          <input-type value-pairs-name="cpwfsubject">
-          dropdown</input-type>
+          <input-type value-pairs-name="cpwfsubject">dropdown</input-type>
           <hint></hint>
           <required></required>
         </field>
@@ -467,8 +434,7 @@
           <dc-qualifier>ccafsubject</dc-qualifier>
           <repeatable>true</repeatable>
           <label>CCAFS Subject Focus</label>
-          <input-type value-pairs-name="ccafsubject">
-          dropdown</input-type>
+          <input-type value-pairs-name="ccafsubject">dropdown</input-type>
           <hint></hint>
           <required></required>
         </field>
@@ -478,8 +444,7 @@
           <dc-qualifier>crpsubject</dc-qualifier>
           <repeatable>true</repeatable>
           <label>CRP focus</label>
-          <input-type value-pairs-name="crpsubject">
-          dropdown</input-type>
+          <input-type value-pairs-name="crpsubject">dropdown</input-type>
           <hint></hint>
           <required></required>
         </field>
@@ -489,8 +454,7 @@
           <dc-qualifier>ciforsubject</dc-qualifier>
           <repeatable>true</repeatable>
           <label>CIFOR Subject Focus</label>
-          <input-type value-pairs-name="ciforsubject">
-          dropdown</input-type>
+          <input-type value-pairs-name="ciforsubject">dropdown</input-type>
           <hint></hint>
           <required></required>
         </field>
@@ -530,10 +494,8 @@
           <dc-qualifier>basin</dc-qualifier>
           <repeatable>true</repeatable>
           <label>River Basin Focus</label>
-          <input-type value-pairs-name="riverbasin">
-          dropdown</input-type>
-          <hint>To select more than one, you may have to hold down
-          the "Ctrl" or "Shift" key.</hint>
+          <input-type value-pairs-name="riverbasin">dropdown</input-type>
+          <hint>To select more than one, you may have to hold down the "Ctrl" or "Shift" key.</hint>
           <required></required>
         </field>
         <field>
@@ -542,10 +504,8 @@
           <dc-qualifier>region</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Region Focus</label>
-          <input-type value-pairs-name="region_types">
-          dropdown</input-type>
-          <hint>To select more than one region, you may have to
-          hold down the "Ctrl" or "Shift" key.</hint>
+          <input-type value-pairs-name="region_types">dropdown</input-type>
+          <hint>To select more than one region, you may have to hold down the "Ctrl" or "Shift" key.</hint>
           <required></required>
         </field>
         <field>
@@ -554,10 +514,8 @@
           <dc-qualifier>subregion</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Sub Region Focus</label>
-          <input-type value-pairs-name="subregion_types">
-          dropdown</input-type>
-          <hint>To select more than one region, you may have to
-          hold down the "Ctrl" or "Shift" key.</hint>
+          <input-type value-pairs-name="subregion_types">dropdown</input-type>
+          <hint>To select more than one region, you may have to hold down the "Ctrl" or "Shift" key.</hint>
           <required></required>
         </field>
         <field>
@@ -566,8 +524,7 @@
           <dc-qualifier>country</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Country Focus</label>
-          <input-type value-pairs-name="countrylist">
-          dropdown</input-type>
+          <input-type value-pairs-name="countrylist">dropdown</input-type>
           <hint>Enter a country or countries</hint>
           <required></required>
         </field>
@@ -578,8 +535,7 @@
           <repeatable>false</repeatable>
           <label>Notes</label>
           <input-type>textarea</input-type>
-          <hint>Enter any other description or comments in this
-          box.</hint>
+          <hint>Enter any other description or comments in this box.</hint>
           <required></required>
         </field>
       </page>
@@ -593,8 +549,7 @@
           <repeatable>true</repeatable>
           <label>Authors</label>
           <input-type>name</input-type>
-          <hint>Enter the names of the authors of this item
-          below.</hint>
+          <hint>Enter the names of the authors of this item below.</hint>
           <required></required>
         </field>
         <field>
@@ -615,8 +570,7 @@
           <label>Title</label>
           <input-type>onebox</input-type>
           <hint>Enter the main title of the item.</hint>
-          <required>You must enter a main title for this
-          item.</required>
+          <required>You must enter a main title for this item.</required>
         </field>
         <field>
           <dc-schema>dc</dc-schema>
@@ -655,9 +609,7 @@
           <repeatable>false</repeatable>
           <label>Date of Publication</label>
           <input-type>date</input-type>
-          <hint>Please give the date of previous publication or
-          public distribution below. You can leave out the day
-          and/or month if they aren't applicable.</hint>
+          <hint>Please give the date of previous publication or public distribution below. You can leave out the day and/or month if they aren't applicable.</hint>
           <required>You must enter at least the year.</required>
         </field>
         <field>
@@ -667,8 +619,7 @@
           <repeatable>false</repeatable>
           <label>Publisher</label>
           <input-type>onebox</input-type>
-          <hint>Enter the full name of the publisher (reports and
-          books only).</hint>
+          <hint>Enter the full name of the publisher (reports and books only).</hint>
           <required></required>
         </field>
         <field>
@@ -677,11 +628,8 @@
           <dc-qualifier>output</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Type</label>
-          <input-type value-pairs-name="common_types">
-          dropdown</input-type>
-          <hint>Select the type(s) of content of the item. To
-          select more than one value in the list, you may have to
-          hold down the "Ctrl" or "Shift" key.</hint>
+          <input-type value-pairs-name="common_types">dropdown</input-type>
+          <hint>Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "Ctrl" or "Shift" key.</hint>
           <required></required>
         </field>
         <field>
@@ -691,8 +639,7 @@
           <repeatable>true</repeatable>
           <label>Publication place</label>
           <input-type>onebox</input-type>
-          <hint>Enter the city and country eg: Nairobi,
-          Kenya</hint>
+          <hint>Enter the city and country eg: Nairobi, Kenya</hint>
           <required></required>
         </field>
         <field>
@@ -701,10 +648,8 @@
           <dc-qualifier>status</dc-qualifier>
           <repeatable>false</repeatable>
           <label>Status</label>
-          <input-type value-pairs-name="common_status_identifier">
-          dropdown</input-type>
-          <hint>Please select either Open Access or Limited
-          Access.</hint>
+          <input-type value-pairs-name="common_status_identifier">dropdown</input-type>
+          <hint>Please select either Open Access or Limited Access.</hint>
           <required></required>
         </field>
         <field>
@@ -713,8 +658,7 @@
           <dc-qualifier>ilrisubject</dc-qualifier>
           <repeatable>true</repeatable>
           <label>ILRI Subject Focus</label>
-          <input-type value-pairs-name="ilrisubject">
-          dropdown</input-type>
+          <input-type value-pairs-name="ilrisubject">dropdown</input-type>
           <hint></hint>
           <required></required>
         </field>
@@ -724,13 +668,8 @@
           <dc-qualifier>iso</dc-qualifier>
           <repeatable>false</repeatable>
           <label>Language</label>
-          <input-type value-pairs-name="common_iso_languages">
-          dropdown</input-type>
-          <hint>Select the language of the main content of the
-          item. If the language does not appear in the list below,
-          please select 'Other'. If the content does not really
-          have a language (for example, if it is a dataset or an
-          image) please select 'N/A'.</hint>
+          <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+          <hint>Select the language of the main content of the item. If the language does not appear in the list below, please select 'Other'. If the content does not really have a language (for example, if it is a dataset or an image) please select 'N/A'.</hint>
           <required></required>
         </field>
       </page>
@@ -744,8 +683,7 @@
           <repeatable>true</repeatable>
           <label>One: Authors</label>
           <input-type>name</input-type>
-          <hint>Enter the names of the authors of this item
-          below.</hint>
+          <hint>Enter the names of the authors of this item below.</hint>
           <required></required>
         </field>
         <field>
@@ -756,8 +694,7 @@
           <label>Title</label>
           <input-type>onebox</input-type>
           <hint>Enter the main title of the item.</hint>
-          <required>You must enter a main title for this
-          item.</required>
+          <required>You must enter a main title for this item.</required>
         </field>
         <field>
           <dc-schema>dc</dc-schema>
@@ -766,8 +703,7 @@
           <repeatable>true</repeatable>
           <label>Other Titles</label>
           <input-type>onebox</input-type>
-          <hint>If the item has any alternative titles, please
-          enter them below.</hint>
+          <hint>If the item has any alternative titles, please enter them below.</hint>
           <required></required>
         </field>
         <field>
@@ -796,8 +732,7 @@
           <dc-qualifier></dc-qualifier>
           <repeatable>false</repeatable>
           <label>ISI Journal</label>
-          <input-type value-pairs-name="ISI_Journal">
-          dropdown</input-type>
+          <input-type value-pairs-name="ISI_Journal">dropdown</input-type>
           <required></required>
         </field>
         <field>
@@ -806,10 +741,8 @@
           <dc-qualifier>status</dc-qualifier>
           <repeatable>false</repeatable>
           <label>Status</label>
-          <input-type value-pairs-name="common_status_identifier">
-          dropdown</input-type>
-          <hint>Please select either Open Access or Limited
-          Access.</hint>
+          <input-type value-pairs-name="common_status_identifier">dropdown</input-type>
+          <hint>Please select either Open Access or Limited Access.</hint>
           <required></required>
         </field>
         <field>
@@ -829,9 +762,7 @@
           <repeatable>false</repeatable>
           <label>Date of Publication</label>
           <input-type>date</input-type>
-          <hint>Please give the date of previous publication or
-          public distribution below. You can leave out the day
-          and/or month if they aren't applicable.</hint>
+          <hint>Please give the date of previous publication or public distribution below. You can leave out the day and/or month if they aren't applicable.</hint>
           <required>You must enter at least the year.</required>
         </field>
         <field>
@@ -841,8 +772,7 @@
           <repeatable>false</repeatable>
           <label>Publisher</label>
           <input-type>onebox</input-type>
-          <hint>Enter the full name of the publisher (reports and
-          books only).</hint>
+          <hint>Enter the full name of the publisher (reports and books only).</hint>
           <required></required>
         </field>
         <field>
@@ -881,11 +811,8 @@
           <dc-qualifier>output</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Type</label>
-          <input-type value-pairs-name="common_types">
-          dropdown</input-type>
-          <hint>Select the type(s) of content of the item. To
-          select more than one value in the list, you may have to
-          hold down the "Ctrl" or "Shift" key.</hint>
+          <input-type value-pairs-name="common_types">dropdown</input-type>
+          <hint>Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "Ctrl" or "Shift" key.</hint>
           <required></required>
         </field>
         <field>
@@ -894,13 +821,8 @@
           <dc-qualifier>iso</dc-qualifier>
           <repeatable>false</repeatable>
           <label>Language</label>
-          <input-type value-pairs-name="common_iso_languages">
-          dropdown</input-type>
-          <hint>Select the language of the main content of the
-          item. If the language does not appear in the list below,
-          please select 'Other'. If the content does not really
-          have a language (for example, if it is a dataset or an
-          image) please select 'N/A'.</hint>
+          <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+          <hint>Select the language of the main content of the item. If the language does not appear in the list below, please select 'Other'. If the content does not really have a language (for example, if it is a dataset or an image) please select 'N/A'.</hint>
           <required></required>
         </field>
       </page>
@@ -913,8 +835,7 @@
           <repeatable>true</repeatable>
           <label>AGROVOC Keywords</label>
           <input-type>twobox</input-type>
-          <hint>Enter appropriate AGROVOC keywords or phrases
-          below.</hint>
+          <hint>Enter appropriate AGROVOC keywords or phrases below.</hint>
           <required></required>
           <vocabulary>srsc</vocabulary>
         </field>
@@ -924,8 +845,7 @@
           <dc-qualifier>ilrisubject</dc-qualifier>
           <repeatable>true</repeatable>
           <label>ILRI Subject Focus</label>
-          <input-type value-pairs-name="ilrisubject">
-          dropdown</input-type>
+          <input-type value-pairs-name="ilrisubject">dropdown</input-type>
           <hint></hint>
           <required></required>
         </field>
@@ -935,8 +855,7 @@
           <dc-qualifier>crpsubject</dc-qualifier>
           <repeatable>true</repeatable>
           <label>CRP focus</label>
-          <input-type value-pairs-name="crpsubject">
-          dropdown</input-type>
+          <input-type value-pairs-name="crpsubject">dropdown</input-type>
           <hint></hint>
           <required></required>
         </field>
@@ -976,10 +895,8 @@
           <dc-qualifier>basin</dc-qualifier>
           <repeatable>true</repeatable>
           <label>River Basin Focus</label>
-          <input-type value-pairs-name="riverbasin">
-          dropdown</input-type>
-          <hint>To select more than one, you may have to hold down
-          the "Ctrl" or "Shift" key.</hint>
+          <input-type value-pairs-name="riverbasin">dropdown</input-type>
+          <hint>To select more than one, you may have to hold down the "Ctrl" or "Shift" key.</hint>
           <required></required>
         </field>
         <field>
@@ -988,10 +905,8 @@
           <dc-qualifier>region</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Region Focus</label>
-          <input-type value-pairs-name="region_types">
-          dropdown</input-type>
-          <hint>To select more than one region, you may have to
-          hold down the "Ctrl" or "Shift" key.</hint>
+          <input-type value-pairs-name="region_types">dropdown</input-type>
+          <hint>To select more than one region, you may have to hold down the "Ctrl" or "Shift" key.</hint>
           <required></required>
         </field>
         <field>
@@ -1000,10 +915,8 @@
           <dc-qualifier>subregion</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Sub Region Focus</label>
-          <input-type value-pairs-name="subregion_types">
-          dropdown</input-type>
-          <hint>To select more than one region, you may have to
-          hold down the "Ctrl" or "Shift" key.</hint>
+          <input-type value-pairs-name="subregion_types">dropdown</input-type>
+          <hint>To select more than one region, you may have to hold down the "Ctrl" or "Shift" key.</hint>
           <required></required>
         </field>
         <field>
@@ -1012,8 +925,7 @@
           <dc-qualifier>country</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Country Focus</label>
-          <input-type value-pairs-name="countrylist">
-          dropdown</input-type>
+          <input-type value-pairs-name="countrylist">dropdown</input-type>
           <hint>Enter a country or countries</hint>
           <required></required>
         </field>
@@ -1039,8 +951,7 @@
           <repeatable>true</repeatable>
           <label>One: Authors</label>
           <input-type>name</input-type>
-          <hint>Enter the names of the authors of this item
-          below.</hint>
+          <hint>Enter the names of the authors of this item below.</hint>
           <required></required>
         </field>
         <field>
@@ -1051,8 +962,7 @@
           <label>Title</label>
           <input-type>onebox</input-type>
           <hint>Enter the main title of the item.</hint>
-          <required>You must enter a main title for this
-          item.</required>
+          <required>You must enter a main title for this item.</required>
         </field>
         <field>
           <dc-schema>dc</dc-schema>
@@ -1061,8 +971,7 @@
           <repeatable>true</repeatable>
           <label>Other Titles</label>
           <input-type>onebox</input-type>
-          <hint>If the item has any alternative titles, please
-          enter them below.</hint>
+          <hint>If the item has any alternative titles, please enter them below.</hint>
           <required></required>
         </field>
         <field>
@@ -1091,10 +1000,8 @@
           <dc-qualifier>status</dc-qualifier>
           <repeatable>false</repeatable>
           <label>Status</label>
-          <input-type value-pairs-name="common_status_identifier">
-          dropdown</input-type>
-          <hint>Please select either Open Access or Limited
-          Access.</hint>
+          <input-type value-pairs-name="common_status_identifier">dropdown</input-type>
+          <hint>Please select either Open Access or Limited Access.</hint>
           <required></required>
         </field>
         <field>
@@ -1103,8 +1010,7 @@
           <dc-qualifier></dc-qualifier>
           <repeatable>false</repeatable>
           <label>Grey Literature</label>
-          <input-type value-pairs-name="GREY_LITERATURE">
-          dropdown</input-type>
+          <input-type value-pairs-name="GREY_LITERATURE">dropdown</input-type>
           <required></required>
         </field>
         <field>
@@ -1124,9 +1030,7 @@
           <repeatable>false</repeatable>
           <label>Date of Publication</label>
           <input-type>date</input-type>
-          <hint>Please give the date of previous publication or
-          public distribution below. You can leave out the day
-          and/or month if they aren't applicable.</hint>
+          <hint>Please give the date of previous publication or public distribution below. You can leave out the day and/or month if they aren't applicable.</hint>
           <required>You must enter at least the year.</required>
         </field>
         <field>
@@ -1136,8 +1040,7 @@
           <repeatable>false</repeatable>
           <label>Publisher</label>
           <input-type>onebox</input-type>
-          <hint>Enter the full name of the publisher (reports and
-          books only).</hint>
+          <hint>Enter the full name of the publisher (reports and books only).</hint>
           <required></required>
         </field>
         <field>
@@ -1166,11 +1069,8 @@
           <dc-qualifier></dc-qualifier>
           <repeatable>true</repeatable>
           <label>Type</label>
-          <input-type value-pairs-name="common_types">
-          dropdown</input-type>
-          <hint>Select the type(s) of content of the item. To
-          select more than one value in the list, you may have to
-          hold down the "Ctrl" or "Shift" key.</hint>
+          <input-type value-pairs-name="common_types">dropdown</input-type>
+          <hint>Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "Ctrl" or "Shift" key.</hint>
           <required></required>
         </field>
         <field>
@@ -1179,13 +1079,8 @@
           <dc-qualifier>iso</dc-qualifier>
           <repeatable>false</repeatable>
           <label>Language</label>
-          <input-type value-pairs-name="common_iso_languages">
-          dropdown</input-type>
-          <hint>Select the language of the main content of the
-          item. If the language does not appear in the list below,
-          please select 'Other'. If the content does not really
-          have a language (for example, if it is a dataset or an
-          image) please select 'N/A'.</hint>
+          <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+          <hint>Select the language of the main content of the item. If the language does not appear in the list below, please select 'Other'. If the content does not really have a language (for example, if it is a dataset or an image) please select 'N/A'.</hint>
           <required></required>
         </field>
       </page>
@@ -1198,8 +1093,7 @@
           <repeatable>true</repeatable>
           <label>AGROVOC Keywords</label>
           <input-type>twobox</input-type>
-          <hint>Enter appropriate AGROVOC keywords or phrases
-          below.</hint>
+          <hint>Enter appropriate AGROVOC keywords or phrases below.</hint>
           <required></required>
           <vocabulary>srsc</vocabulary>
         </field>
@@ -1209,8 +1103,7 @@
           <dc-qualifier>cpwfsubject</dc-qualifier>
           <repeatable>true</repeatable>
           <label>CPWF Subject Focus</label>
-          <input-type value-pairs-name="cpwfsubject">
-          dropdown</input-type>
+          <input-type value-pairs-name="cpwfsubject">dropdown</input-type>
           <hint></hint>
           <required></required>
         </field>
@@ -1220,8 +1113,7 @@
           <dc-qualifier>crpsubject</dc-qualifier>
           <repeatable>true</repeatable>
           <label>CRP focus</label>
-          <input-type value-pairs-name="crpsubject">
-          dropdown</input-type>
+          <input-type value-pairs-name="crpsubject">dropdown</input-type>
           <hint></hint>
           <required></required>
         </field>
@@ -1241,8 +1133,7 @@
           <dc-qualifier>fund</dc-qualifier>
           <repeatable>false</repeatable>
           <label>Sponsor Project Number</label>
-          <input-type value-pairs-name="cpwfundno">
-          dropdown</input-type>
+          <input-type value-pairs-name="cpwfundno">dropdown</input-type>
           <hint></hint>
           <required></required>
         </field>
@@ -1252,10 +1143,8 @@
           <dc-qualifier>basin</dc-qualifier>
           <repeatable>true</repeatable>
           <label>River Basin Focus</label>
-          <input-type value-pairs-name="riverbasin">
-          dropdown</input-type>
-          <hint>To select more than one, you may have to hold down
-          the "Ctrl" or "Shift" key.</hint>
+          <input-type value-pairs-name="riverbasin">dropdown</input-type>
+          <hint>To select more than one, you may have to hold down the "Ctrl" or "Shift" key.</hint>
           <required></required>
         </field>
         <field>
@@ -1264,8 +1153,7 @@
           <dc-qualifier>country</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Country Focus</label>
-          <input-type value-pairs-name="countrylist">
-          dropdown</input-type>
+          <input-type value-pairs-name="countrylist">dropdown</input-type>
           <hint>Enter a country or countries</hint>
           <required></required>
         </field>
@@ -1291,8 +1179,7 @@
           <repeatable>true</repeatable>
           <label>Authors</label>
           <input-type>name</input-type>
-          <hint>Enter the names of the authors of this item
-          below.</hint>
+          <hint>Enter the names of the authors of this item below.</hint>
           <required></required>
         </field>
         <field>
@@ -1303,8 +1190,7 @@
           <label>Title</label>
           <input-type>onebox</input-type>
           <hint>Enter the main title of the item.</hint>
-          <required>You must enter a main title for this
-          item.</required>
+          <required>You must enter a main title for this item.</required>
         </field>
         <field>
           <dc-schema>dc</dc-schema>
@@ -1313,8 +1199,7 @@
           <repeatable>true</repeatable>
           <label>Other Titles</label>
           <input-type>onebox</input-type>
-          <hint>If the item has any alternative titles, please
-          enter them below.</hint>
+          <hint>If the item has any alternative titles, please enter them below.</hint>
           <required></required>
         </field>
         <field>
@@ -1353,10 +1238,8 @@
           <dc-qualifier>status</dc-qualifier>
           <repeatable>false</repeatable>
           <label>Status</label>
-          <input-type value-pairs-name="common_status_identifier">
-          dropdown</input-type>
-          <hint>Please select either Open Access or Limited
-          Access.</hint>
+          <input-type value-pairs-name="common_status_identifier">dropdown</input-type>
+          <hint>Please select either Open Access or Limited Access.</hint>
           <required></required>
         </field>
         <field>
@@ -1365,8 +1248,7 @@
           <dc-qualifier></dc-qualifier>
           <repeatable>false</repeatable>
           <label>Grey Literature</label>
-          <input-type value-pairs-name="GREY_LITERATURE">
-          dropdown</input-type>
+          <input-type value-pairs-name="GREY_LITERATURE">dropdown</input-type>
           <required></required>
         </field>
         <field>
@@ -1386,9 +1268,7 @@
           <repeatable>false</repeatable>
           <label>Date of Publication</label>
           <input-type>date</input-type>
-          <hint>Please give the date of previous publication or
-          public distribution below. You can leave out the day
-          and/or month if they aren't applicable.</hint>
+          <hint>Please give the date of previous publication or public distribution below. You can leave out the day and/or month if they aren't applicable.</hint>
           <required>You must enter at least the year.</required>
         </field>
         <field>
@@ -1398,8 +1278,7 @@
           <repeatable>false</repeatable>
           <label>Publisher</label>
           <input-type>onebox</input-type>
-          <hint>Enter the full name of the publisher (reports and
-          books only).</hint>
+          <hint>Enter the full name of the publisher (reports and books only).</hint>
           <required></required>
         </field>
         <field>
@@ -1429,8 +1308,7 @@
           <repeatable>true</repeatable>
           <label>Series/Report No.</label>
           <input-type>series</input-type>
-          <hint>Enter the series and number assigned to this item
-          by your community.</hint>
+          <hint>Enter the series and number assigned to this item by your community.</hint>
           <required></required>
         </field>
         <field>
@@ -1440,11 +1318,8 @@
           <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
           <repeatable>true</repeatable>
           <label>Identifiers</label>
-          <input-type value-pairs-name="common_identifiers">
-          qualdrop_value</input-type>
-          <hint>If the item has any identification numbers or codes
-          associated with it, please enter the types and the actual
-          numbers or codes below.</hint>
+          <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
+          <hint>If the item has any identification numbers or codes associated with it, please enter the types and the actual numbers or codes below.</hint>
           <required></required>
         </field>
         <field>
@@ -1453,11 +1328,8 @@
           <dc-qualifier>output</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Type</label>
-          <input-type value-pairs-name="common_types">
-          dropdown</input-type>
-          <hint>Select the type(s) of content of the item. To
-          select more than one value in the list, you may have to
-          hold down the "Ctrl" or "Shift" key.</hint>
+          <input-type value-pairs-name="common_types">dropdown</input-type>
+          <hint>Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "Ctrl" or "Shift" key.</hint>
           <required></required>
         </field>
         <field>
@@ -1466,13 +1338,8 @@
           <dc-qualifier>iso</dc-qualifier>
           <repeatable>false</repeatable>
           <label>Language</label>
-          <input-type value-pairs-name="common_iso_languages">
-          dropdown</input-type>
-          <hint>Select the language of the main content of the
-          item. If the language does not appear in the list below,
-          please select 'Other'. If the content does not really
-          have a language (for example, if it is a dataset or an
-          image) please select 'N/A'.</hint>
+          <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+          <hint>Select the language of the main content of the item. If the language does not appear in the list below, please select 'Other'. If the content does not really have a language (for example, if it is a dataset or an image) please select 'N/A'.</hint>
           <required></required>
         </field>
       </page>
@@ -1485,8 +1352,7 @@
           <repeatable>true</repeatable>
           <label>AGROVOC Keywords</label>
           <input-type>twobox</input-type>
-          <hint>Enter appropriate subject keywords or phrases
-          below.</hint>
+          <hint>Enter appropriate subject keywords or phrases below.</hint>
           <required></required>
           <vocabulary>srsc</vocabulary>
         </field>
@@ -1496,8 +1362,7 @@
           <dc-qualifier>ilrisubject</dc-qualifier>
           <repeatable>true</repeatable>
           <label>ILRI Subject Focus</label>
-          <input-type value-pairs-name="ilrisubject">
-          dropdown</input-type>
+          <input-type value-pairs-name="ilrisubject">dropdown</input-type>
           <hint></hint>
           <required></required>
         </field>
@@ -1507,8 +1372,7 @@
           <dc-qualifier>crpsubject</dc-qualifier>
           <repeatable>true</repeatable>
           <label>CRP focus</label>
-          <input-type value-pairs-name="crpsubject">
-          dropdown</input-type>
+          <input-type value-pairs-name="crpsubject">dropdown</input-type>
           <hint></hint>
           <required></required>
         </field>
@@ -1548,10 +1412,8 @@
           <dc-qualifier>basin</dc-qualifier>
           <repeatable>true</repeatable>
           <label>River Basin Focus</label>
-          <input-type value-pairs-name="riverbasin">
-          dropdown</input-type>
-          <hint>To select more than one, you may have to hold down
-          the "Ctrl" or "Shift" key.</hint>
+          <input-type value-pairs-name="riverbasin">dropdown</input-type>
+          <hint>To select more than one, you may have to hold down the "Ctrl" or "Shift" key.</hint>
           <required></required>
         </field>
         <field>
@@ -1560,10 +1422,8 @@
           <dc-qualifier>region</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Region Focus</label>
-          <input-type value-pairs-name="region_types">
-          dropdown</input-type>
-          <hint>To select more than one region, you may have to
-          hold down the "Ctrl" or "Shift" key.</hint>
+          <input-type value-pairs-name="region_types">dropdown</input-type>
+          <hint>To select more than one region, you may have to hold down the "Ctrl" or "Shift" key.</hint>
           <required></required>
         </field>
         <field>
@@ -1572,10 +1432,8 @@
           <dc-qualifier>subregion</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Sub Region Focus</label>
-          <input-type value-pairs-name="subregion_types">
-          dropdown</input-type>
-          <hint>To select more than one region, you may have to
-          hold down the "Ctrl" or "Shift" key.</hint>
+          <input-type value-pairs-name="subregion_types">dropdown</input-type>
+          <hint>To select more than one region, you may have to hold down the "Ctrl" or "Shift" key.</hint>
           <required></required>
         </field>
         <field>
@@ -1584,8 +1442,7 @@
           <dc-qualifier>country</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Country Focus</label>
-          <input-type value-pairs-name="countrylist">
-          dropdown</input-type>
+          <input-type value-pairs-name="countrylist">dropdown</input-type>
           <hint>Enter a country or countries</hint>
           <required></required>
         </field>
@@ -1611,8 +1468,7 @@
           <repeatable>true</repeatable>
           <label>Authors</label>
           <input-type>name</input-type>
-          <hint>Enter the names of the authors of this item
-          below.</hint>
+          <hint>Enter the names of the authors of this item below.</hint>
           <required></required>
         </field>
         <field>
@@ -1623,8 +1479,7 @@
           <label>Title</label>
           <input-type>onebox</input-type>
           <hint>Enter the main title of the item.</hint>
-          <required>You must enter a main title for this
-          item.</required>
+          <required>You must enter a main title for this item.</required>
         </field>
         <field>
           <dc-schema>dc</dc-schema>
@@ -1633,8 +1488,7 @@
           <repeatable>true</repeatable>
           <label>Other Titles</label>
           <input-type>onebox</input-type>
-          <hint>If the item has any alternative titles, please
-          enter them below.</hint>
+          <hint>If the item has any alternative titles, please enter them below.</hint>
           <required></required>
         </field>
         <field>
@@ -1673,10 +1527,8 @@
           <dc-qualifier>status</dc-qualifier>
           <repeatable>false</repeatable>
           <label>Status</label>
-          <input-type value-pairs-name="common_status_identifier">
-          dropdown</input-type>
-          <hint>Please select either Open Access or Limited
-          Access.</hint>
+          <input-type value-pairs-name="common_status_identifier">dropdown</input-type>
+          <hint>Please select either Open Access or Limited Access.</hint>
           <required></required>
         </field>
         <field>
@@ -1685,8 +1537,7 @@
           <dc-qualifier></dc-qualifier>
           <repeatable>false</repeatable>
           <label>Grey Literature</label>
-          <input-type value-pairs-name="GREY_LITERATURE">
-          dropdown</input-type>
+          <input-type value-pairs-name="GREY_LITERATURE">dropdown</input-type>
           <required></required>
         </field>
         <field>
@@ -1706,9 +1557,7 @@
           <repeatable>false</repeatable>
           <label>Date of Publication</label>
           <input-type>date</input-type>
-          <hint>Please give the date of previous publication or
-          public distribution below. You can leave out the day
-          and/or month if they aren't applicable.</hint>
+          <hint>Please give the date of previous publication or public distribution below. You can leave out the day and/or month if they aren't applicable.</hint>
           <required>You must enter at least the year.</required>
         </field>
         <field>
@@ -1718,8 +1567,7 @@
           <repeatable>false</repeatable>
           <label>Publisher</label>
           <input-type>onebox</input-type>
-          <hint>Enter the full name of the publisher (reports and
-          books only).</hint>
+          <hint>Enter the full name of the publisher (reports and books only).</hint>
           <required></required>
         </field>
         <field>
@@ -1739,8 +1587,7 @@
           <repeatable>true</repeatable>
           <label>Series/Report No.</label>
           <input-type>series</input-type>
-          <hint>Enter the series and number assigned to this item
-          by your community.</hint>
+          <hint>Enter the series and number assigned to this item by your community.</hint>
           <required></required>
         </field>
         <field>
@@ -1750,11 +1597,8 @@
           <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
           <repeatable>true</repeatable>
           <label>Identifiers</label>
-          <input-type value-pairs-name="common_identifiers">
-          qualdrop_value</input-type>
-          <hint>If the item has any identification numbers or codes
-          associated with it, please enter the types and the actual
-          numbers or codes below.</hint>
+          <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
+          <hint>If the item has any identification numbers or codes associated with it, please enter the types and the actual numbers or codes below.</hint>
           <required></required>
         </field>
         <field>
@@ -1763,11 +1607,8 @@
           <dc-qualifier>output</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Type</label>
-          <input-type value-pairs-name="common_types">
-          dropdown</input-type>
-          <hint>Select the type(s) of content of the item. To
-          select more than one value in the list, you may have to
-          hold down the "Ctrl" or "Shift" key.</hint>
+          <input-type value-pairs-name="common_types">dropdown</input-type>
+          <hint>Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "Ctrl" or "Shift" key.</hint>
           <required></required>
         </field>
         <field>
@@ -1776,13 +1617,8 @@
           <dc-qualifier>iso</dc-qualifier>
           <repeatable>false</repeatable>
           <label>Language</label>
-          <input-type value-pairs-name="common_iso_languages">
-          dropdown</input-type>
-          <hint>Select the language of the main content of the
-          item. If the language does not appear in the list below,
-          please select 'Other'. If the content does not really
-          have a language (for example, if it is a dataset or an
-          image) please select 'N/A'.</hint>
+          <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+          <hint>Select the language of the main content of the item. If the language does not appear in the list below, please select 'Other'. If the content does not really have a language (for example, if it is a dataset or an image) please select 'N/A'.</hint>
           <required></required>
         </field>
       </page>
@@ -1795,8 +1631,7 @@
           <repeatable>true</repeatable>
           <label>AGROVOC Keywords</label>
           <input-type>twobox</input-type>
-          <hint>Enter appropriate subject keywords or phrases
-          below.</hint>
+          <hint>Enter appropriate subject keywords or phrases below.</hint>
           <required></required>
           <vocabulary>srsc</vocabulary>
         </field>
@@ -1806,8 +1641,7 @@
           <dc-qualifier>cpwfsubject</dc-qualifier>
           <repeatable>true</repeatable>
           <label>CPWF Subject Focus</label>
-          <input-type value-pairs-name="cpwfsubject">
-          dropdown</input-type>
+          <input-type value-pairs-name="cpwfsubject">dropdown</input-type>
           <hint></hint>
           <required></required>
         </field>
@@ -1817,8 +1651,7 @@
           <dc-qualifier>crpsubject</dc-qualifier>
           <repeatable>true</repeatable>
           <label>CRP focus</label>
-          <input-type value-pairs-name="crpsubject">
-          dropdown</input-type>
+          <input-type value-pairs-name="crpsubject">dropdown</input-type>
           <hint></hint>
           <required></required>
         </field>
@@ -1838,8 +1671,7 @@
           <dc-qualifier>fund</dc-qualifier>
           <repeatable>false</repeatable>
           <label>Project Number</label>
-          <input-type value-pairs-name="cpwfundno">
-          dropdown</input-type>
+          <input-type value-pairs-name="cpwfundno">dropdown</input-type>
           <hint></hint>
           <required></required>
         </field>
@@ -1849,10 +1681,8 @@
           <dc-qualifier>basin</dc-qualifier>
           <repeatable>true</repeatable>
           <label>River Basin Focus</label>
-          <input-type value-pairs-name="riverbasin">
-          dropdown</input-type>
-          <hint>To select more than one, you may have to hold down
-          the "Ctrl" or "Shift" key.</hint>
+          <input-type value-pairs-name="riverbasin">dropdown</input-type>
+          <hint>To select more than one, you may have to hold down the "Ctrl" or "Shift" key.</hint>
           <required></required>
         </field>
         <field>
@@ -1861,10 +1691,8 @@
           <dc-qualifier>region</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Region Focus</label>
-          <input-type value-pairs-name="region_types">
-          dropdown</input-type>
-          <hint>To select more than one region, you may have to
-          hold down the "Ctrl" or "Shift" key.</hint>
+          <input-type value-pairs-name="region_types">dropdown</input-type>
+          <hint>To select more than one region, you may have to hold down the "Ctrl" or "Shift" key.</hint>
           <required></required>
         </field>
         <field>
@@ -1873,10 +1701,8 @@
           <dc-qualifier>subregion</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Sub Region Focus</label>
-          <input-type value-pairs-name="subregion_types">
-          dropdown</input-type>
-          <hint>To select more than one region, you may have to
-          hold down the "Ctrl" or "Shift" key.</hint>
+          <input-type value-pairs-name="subregion_types">dropdown</input-type>
+          <hint>To select more than one region, you may have to hold down the "Ctrl" or "Shift" key.</hint>
           <required></required>
         </field>
         <field>
@@ -1885,8 +1711,7 @@
           <dc-qualifier>country</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Country Focus</label>
-          <input-type value-pairs-name="countrylist">
-          dropdown</input-type>
+          <input-type value-pairs-name="countrylist">dropdown</input-type>
           <hint>Enter a country or countries</hint>
           <required></required>
         </field>
@@ -1912,8 +1737,7 @@
           <repeatable>true</repeatable>
           <label>Authors</label>
           <input-type>name</input-type>
-          <hint>Enter the names of the authors of this item
-          below.</hint>
+          <hint>Enter the names of the authors of this item below.</hint>
           <required></required>
         </field>
         <field>
@@ -1924,8 +1748,7 @@
           <label>Title</label>
           <input-type>onebox</input-type>
           <hint>Enter the main title of the item.</hint>
-          <required>You must enter a main title for this
-          item.</required>
+          <required>You must enter a main title for this item.</required>
         </field>
         <field>
           <dc-schema>dc</dc-schema>
@@ -1934,8 +1757,7 @@
           <repeatable>true</repeatable>
           <label>Other Titles</label>
           <input-type>onebox</input-type>
-          <hint>If the item has any alternative titles, please
-          enter them below.</hint>
+          <hint>If the item has any alternative titles, please enter them below.</hint>
           <required></required>
         </field>
         <field>
@@ -1984,10 +1806,8 @@
           <dc-qualifier>status</dc-qualifier>
           <repeatable>false</repeatable>
           <label>Status</label>
-          <input-type value-pairs-name="common_status_identifier">
-          dropdown</input-type>
-          <hint>Please select either Open Access or Limited
-          Access.</hint>
+          <input-type value-pairs-name="common_status_identifier">dropdown</input-type>
+          <hint>Please select either Open Access or Limited Access.</hint>
           <required></required>
         </field>
         <field>
@@ -2007,9 +1827,7 @@
           <repeatable>false</repeatable>
           <label>Date of Publication</label>
           <input-type>date</input-type>
-          <hint>Please give the date of previous publication or
-          public distribution below. You can leave out the day
-          and/or month if they aren't applicable.</hint>
+          <hint>Please give the date of previous publication or public distribution below. You can leave out the day and/or month if they aren't applicable.</hint>
           <required>You must enter at least the year.</required>
         </field>
         <field>
@@ -2019,8 +1837,7 @@
           <repeatable>false</repeatable>
           <label>Publisher</label>
           <input-type>onebox</input-type>
-          <hint>Enter the full name of the publisher (reports and
-          books only).</hint>
+          <hint>Enter the full name of the publisher (reports and books only).</hint>
           <required></required>
         </field>
         <field>
@@ -2040,8 +1857,7 @@
           <repeatable>true</repeatable>
           <label>Series/Report No.</label>
           <input-type>series</input-type>
-          <hint>Enter the series and number assigned to this item
-          by your community.</hint>
+          <hint>Enter the series and number assigned to this item by your community.</hint>
           <required></required>
         </field>
         <field>
@@ -2051,11 +1867,8 @@
           <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
           <repeatable>true</repeatable>
           <label>Identifiers</label>
-          <input-type value-pairs-name="common_identifiers">
-          qualdrop_value</input-type>
-          <hint>If the item has any identification numbers or codes
-          associated with it, please enter the types and the actual
-          numbers or codes below.</hint>
+          <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
+          <hint>If the item has any identification numbers or codes associated with it, please enter the types and the actual numbers or codes below.</hint>
           <required></required>
         </field>
         <field>
@@ -2064,11 +1877,8 @@
           <dc-qualifier>output</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Type</label>
-          <input-type value-pairs-name="common_types">
-          dropdown</input-type>
-          <hint>Select the type(s) of content of the item. To
-          select more than one value in the list, you may have to
-          hold down the "Ctrl" or "Shift" key.</hint>
+          <input-type value-pairs-name="common_types">dropdown</input-type>
+          <hint>Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "Ctrl" or "Shift" key.</hint>
           <required></required>
         </field>
         <field>
@@ -2077,13 +1887,8 @@
           <dc-qualifier>iso</dc-qualifier>
           <repeatable>false</repeatable>
           <label>Language</label>
-          <input-type value-pairs-name="common_iso_languages">
-          dropdown</input-type>
-          <hint>Select the language of the main content of the
-          item. If the language does not appear in the list below,
-          please select 'Other'. If the content does not really
-          have a language (for example, if it is a dataset or an
-          image) please select 'N/A'.</hint>
+          <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+          <hint>Select the language of the main content of the item. If the language does not appear in the list below, please select 'Other'. If the content does not really have a language (for example, if it is a dataset or an image) please select 'N/A'.</hint>
           <required></required>
         </field>
       </page>
@@ -2096,8 +1901,7 @@
           <repeatable>true</repeatable>
           <label>AGROVOC Keywords</label>
           <input-type>twobox</input-type>
-          <hint>Enter appropriate subject keywords or phrases
-          below.</hint>
+          <hint>Enter appropriate subject keywords or phrases below.</hint>
           <required></required>
           <vocabulary>srsc</vocabulary>
         </field>
@@ -2107,8 +1911,7 @@
           <dc-qualifier>ccafsubject</dc-qualifier>
           <repeatable>true</repeatable>
           <label>CCAFS Subject Focus</label>
-          <input-type value-pairs-name="ccafsubject">
-          dropdown</input-type>
+          <input-type value-pairs-name="ccafsubject">dropdown</input-type>
           <hint></hint>
           <required></required>
         </field>
@@ -2118,8 +1921,7 @@
           <dc-qualifier>crpsubject</dc-qualifier>
           <repeatable>true</repeatable>
           <label>CRP focus</label>
-          <input-type value-pairs-name="crpsubject">
-          dropdown</input-type>
+          <input-type value-pairs-name="crpsubject">dropdown</input-type>
           <hint></hint>
           <required></required>
         </field>
@@ -2159,10 +1961,8 @@
           <dc-qualifier>basin</dc-qualifier>
           <repeatable>true</repeatable>
           <label>River Basin Focus</label>
-          <input-type value-pairs-name="riverbasin">
-          dropdown</input-type>
-          <hint>To select more than one, you may have to hold down
-          the "Ctrl" or "Shift" key.</hint>
+          <input-type value-pairs-name="riverbasin">dropdown</input-type>
+          <hint>To select more than one, you may have to hold down the "Ctrl" or "Shift" key.</hint>
           <required></required>
         </field>
         <field>
@@ -2171,10 +1971,8 @@
           <dc-qualifier>region</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Region Focus</label>
-          <input-type value-pairs-name="region_types">
-          dropdown</input-type>
-          <hint>To select more than one region, you may have to
-          hold down the "Ctrl" or "Shift" key.</hint>
+          <input-type value-pairs-name="region_types">dropdown</input-type>
+          <hint>To select more than one region, you may have to hold down the "Ctrl" or "Shift" key.</hint>
           <required></required>
         </field>
         <field>
@@ -2183,10 +1981,8 @@
           <dc-qualifier>subregion</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Sub Region Focus</label>
-          <input-type value-pairs-name="subregion_types">
-          dropdown</input-type>
-          <hint>To select more than one region, you may have to
-          hold down the "Ctrl" or "Shift" key.</hint>
+          <input-type value-pairs-name="subregion_types">dropdown</input-type>
+          <hint>To select more than one region, you may have to hold down the "Ctrl" or "Shift" key.</hint>
           <required></required>
         </field>
         <field>
@@ -2195,8 +1991,7 @@
           <dc-qualifier>country</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Country Focus</label>
-          <input-type value-pairs-name="countrylist">
-          dropdown</input-type>
+          <input-type value-pairs-name="countrylist">dropdown</input-type>
           <hint>Enter a country or countries</hint>
           <required></required>
         </field>
@@ -2226,8 +2021,7 @@
   <!-- element. A UI list displays the displayed-values, but the program     -->
   <!-- stores the associated stored-values in the database.                  -->
   <form-value-pairs>
-    <value-pairs value-pairs-name="common_identifiers"
-    dc-term="identifier">
+    <value-pairs value-pairs-name="common_identifiers" dc-term="identifier">
       <pair>
         <displayed-value>ISSN</displayed-value>
         <stored-value>issn</stored-value>
@@ -2363,10 +2157,8 @@
         <stored-value>Thesis</stored-value>
       </pair>
       <pair>
-        <displayed-value>Training Module or Learning
-        Object</displayed-value>
-        <stored-value>Training Module or Learning
-        Object</stored-value>
+        <displayed-value>Training Module or Learning Object</displayed-value>
+        <stored-value>Training Module or Learning Object</stored-value>
       </pair>
       <pair>
         <displayed-value>Video</displayed-value>
@@ -2392,8 +2184,7 @@
     <!-- default language order: (from dspace 1.2.1)
         "en_US", "en", "es", "de", "fr", "it", "ja", "zh", "other", ""
      -->
-    <value-pairs value-pairs-name="common_iso_languages"
-    dc-term="language_iso">
+    <value-pairs value-pairs-name="common_iso_languages" dc-term="language_iso">
       <pair>
         <displayed-value>N/A</displayed-value>
         <stored-value></stored-value>
@@ -2447,8 +2238,7 @@
         <stored-value>other</stored-value>
       </pair>
     </value-pairs>
-    <value-pairs value-pairs-name="common_status_identifier"
-    dc-term="identifier_status">
+    <value-pairs value-pairs-name="common_status_identifier" dc-term="identifier_status">
       <pair>
         <displayed-value>N/A</displayed-value>
         <stored-value></stored-value>
@@ -2462,8 +2252,7 @@
         <stored-value>Limited Access</stored-value>
       </pair>
     </value-pairs>
-    <value-pairs value-pairs-name="ilrisubject"
-    dc-term="isubject_ilrisubject">
+    <value-pairs value-pairs-name="ilrisubject" dc-term="isubject_ilrisubject">
       <pair>
         <displayed-value>VALUE CHAINS</displayed-value>
         <stored-value>VALUE CHAINS</stored-value>
@@ -2689,8 +2478,7 @@
         <stored-value>INSURANCE</stored-value>
       </pair>
       <pair>
-        <displayed-value>KNOWLEDGE AND
-        INFORMATION</displayed-value>
+        <displayed-value>KNOWLEDGE AND INFORMATION</displayed-value>
         <stored-value>KNOWLEDGE AND INFORMATION</stored-value>
       </pair>
       <pair>
@@ -2806,8 +2594,7 @@
         <stored-value>ZOONOTIC DISEASES</stored-value>
       </pair>
     </value-pairs>
-    <value-pairs value-pairs-name="cpwfsubject"
-    dc-term="cpsubject_cpwfsubject">
+    <value-pairs value-pairs-name="cpwfsubject" dc-term="cpsubject_cpwfsubject">
       <pair>
         <displayed-value>AGRICULTURE</displayed-value>
         <stored-value>AGRICULTURE</stored-value>
@@ -2817,8 +2604,7 @@
         <stored-value>AQUACULTURE</stored-value>
       </pair>
       <pair>
-        <displayed-value>BENEFIT SHARING
-        MECHANISMS</displayed-value>
+        <displayed-value>BENEFIT SHARING MECHANISMS</displayed-value>
         <stored-value>BENEFIT SHARING MECHANISMS</stored-value>
       </pair>
       <pair>
@@ -2898,8 +2684,7 @@
         <stored-value>INSTITUTIONS</stored-value>
       </pair>
       <pair>
-        <displayed-value>INTEGRATED WATER
-        RESOURCE</displayed-value>
+        <displayed-value>INTEGRATED WATER RESOURCE</displayed-value>
         <stored-value>INTEGRATED WATER RESOURCE</stored-value>
       </pair>
       <pair>
@@ -2911,8 +2696,7 @@
         <stored-value>IRRIGATION</stored-value>
       </pair>
       <pair>
-        <displayed-value>KNOWLEDGE AND
-        INFORMATION</displayed-value>
+        <displayed-value>KNOWLEDGE AND INFORMATION</displayed-value>
         <stored-value>KNOWLEDGE AND INFORMATION</stored-value>
       </pair>
       <pair>
@@ -3012,8 +2796,7 @@
         <stored-value>WOMEN</stored-value>
       </pair>
     </value-pairs>
-    <value-pairs value-pairs-name="ciforsubject"
-    dc-term="cisubject_ciforsubject">
+    <value-pairs value-pairs-name="ciforsubject" dc-term="cisubject_ciforsubject">
       <pair>
         <displayed-value>FOREST MANAGEMENT</displayed-value>
         <stored-value>FOREST MANAGEMENT</stored-value>
@@ -3023,13 +2806,11 @@
         <stored-value>FOREST GOVERNANCE</stored-value>
       </pair>
       <pair>
-        <displayed-value>PLANTATIONS AND
-        REHABILITATION</displayed-value>
+        <displayed-value>PLANTATIONS AND REHABILITATION</displayed-value>
         <stored-value>PLANTATIONS AND REHABILITATION</stored-value>
       </pair>
     </value-pairs>
-    <value-pairs value-pairs-name="crpsubject"
-    dc-term="crsubject_crpsubject">
+    <value-pairs value-pairs-name="crpsubject" dc-term="crsubject_crpsubject">
       <pair>
         <displayed-value>DRYLAND SYSTEMS</displayed-value>
         <stored-value>DRYLAND SYSTEMS</stored-value>
@@ -3039,21 +2820,16 @@
         <stored-value>HUMID TROPICS</stored-value>
       </pair>
       <pair>
-        <displayed-value>AQUATIC AGRICULTURAL
-        SYSTEMS</displayed-value>
+        <displayed-value>AQUATIC AGRICULTURAL SYSTEMS</displayed-value>
         <stored-value>AQUATIC AGRICULTURAL SYSTEMS</stored-value>
       </pair>
       <pair>
-        <displayed-value>CGIAR RESEARCH PROGRAM FOR MANAGING AND
-        SUSTAINING CROP COLLECTIONS</displayed-value>
-        <stored-value>CGIAR RESEARCH PROGRAM FOR MANAGING AND
-        SUSTAINING CROP COLLECTIONS</stored-value>
+        <displayed-value>CGIAR RESEARCH PROGRAM FOR MANAGING AND SUSTAINING CROP COLLECTIONS</displayed-value>
+        <stored-value>CGIAR RESEARCH PROGRAM FOR MANAGING AND SUSTAINING CROP COLLECTIONS</stored-value>
       </pair>
       <pair>
-        <displayed-value>POLICIES, INSTITUTIONS, AND
-        MARKETS</displayed-value>
-        <stored-value>POLICIES, INSTITUTIONS, AND
-        MARKETS</stored-value>
+        <displayed-value>POLICIES, INSTITUTIONS, AND MARKETS</displayed-value>
+        <stored-value>POLICIES, INSTITUTIONS, AND MARKETS</stored-value>
       </pair>
       <pair>
         <displayed-value>WHEAT</displayed-value>
@@ -3068,8 +2844,7 @@
         <stored-value>RICE</stored-value>
       </pair>
       <pair>
-        <displayed-value>ROOTS, TUBERS AND
-        BANANAS</displayed-value>
+        <displayed-value>ROOTS, TUBERS AND BANANAS</displayed-value>
         <stored-value>ROOTS, TUBERS AND BANANAS</stored-value>
       </pair>
       <pair>
@@ -3085,65 +2860,49 @@
         <stored-value>LIVESTOCK AND FISH</stored-value>
       </pair>
       <pair>
-        <displayed-value>AGRICULTURE FOR NUTRITION AND
-        HEALTH</displayed-value>
-        <stored-value>AGRICULTURE FOR NUTRITION AND
-        HEALTH</stored-value>
+        <displayed-value>AGRICULTURE FOR NUTRITION AND HEALTH</displayed-value>
+        <stored-value>AGRICULTURE FOR NUTRITION AND HEALTH</stored-value>
       </pair>
       <pair>
-        <displayed-value>WATER, LAND AND
-        ECOSYSTEMS</displayed-value>
+        <displayed-value>WATER, LAND AND ECOSYSTEMS</displayed-value>
         <stored-value>WATER, LAND AND ECOSYSTEMS</stored-value>
       </pair>
       <pair>
-        <displayed-value>FORESTS, TREES AND
-        AGROFORESTRY</displayed-value>
-        <stored-value>FORESTS, TREES AND
-        AGROFORESTRY</stored-value>
+        <displayed-value>FORESTS, TREES AND AGROFORESTRY</displayed-value>
+        <stored-value>FORESTS, TREES AND AGROFORESTRY</stored-value>
       </pair>
       <pair>
-        <displayed-value>CLIMATE CHANGE, AGRICULTURE AND FOOD
-        SECURITY</displayed-value>
-        <stored-value>CLIMATE CHANGE, AGRICULTURE AND FOOD
-        SECURITY</stored-value>
+        <displayed-value>CLIMATE CHANGE, AGRICULTURE AND FOOD SECURITY</displayed-value>
+        <stored-value>CLIMATE CHANGE, AGRICULTURE AND FOOD SECURITY</stored-value>
       </pair>
     </value-pairs>
-    <value-pairs value-pairs-name="ccafsubject"
-    dc-term="ccsubject_ccafsubject">
+    <value-pairs value-pairs-name="ccafsubject" dc-term="ccsubject_ccafsubject">
       <pair>
-        <displayed-value>ADAPTATION TO PROGRESSIVE CLIMATE
-        CHANGE</displayed-value>
-        <stored-value>ADAPTATION TO PROGRESSIVE CLIMATE
-        CHANGE</stored-value>
+        <displayed-value>ADAPTATION TO PROGRESSIVE CLIMATE CHANGE</displayed-value>
+        <stored-value>ADAPTATION TO PROGRESSIVE CLIMATE CHANGE</stored-value>
       </pair>
       <pair>
         <displayed-value>BASELINE SURVEY</displayed-value>
         <stored-value>BASELINE SURVEY</stored-value>
       </pair>
       <pair>
-        <displayed-value>DATA AND TOOLS FOR ANALYSIS AND
-        PLANNING</displayed-value>
-        <stored-value>DATA AND TOOLS FOR ANALYSIS AND
-        PLANNING</stored-value>
+        <displayed-value>DATA AND TOOLS FOR ANALYSIS AND PLANNING</displayed-value>
+        <stored-value>DATA AND TOOLS FOR ANALYSIS AND PLANNING</stored-value>
       </pair>
       <pair>
         <displayed-value>EDUCATION AND OUTREACH</displayed-value>
         <stored-value>EDUCATION AND OUTREACH</stored-value>
       </pair>
       <pair>
-        <displayed-value>FRAMEWORKS FOR POLICY
-        ANALYSIS</displayed-value>
+        <displayed-value>FRAMEWORKS FOR POLICY ANALYSIS</displayed-value>
         <stored-value>FRAMEWORKS FOR POLICY ANALYSIS</stored-value>
       </pair>
       <pair>
-        <displayed-value>GENDER AND SOCIAL
-        DIFFERENTIATION</displayed-value>
-        <stored-value>GENDER AND SOCIAL
-        DIFFERENTIATION</stored-value>
+        <displayed-value>GENDER AND SOCIAL DIFFERENTIATION</displayed-value>
+        <stored-value>GENDER AND SOCIAL DIFFERENTIATION</stored-value>
       </pair>
       <pair>
-        <displayed-value>LINKING KNOWLEDGE TO
-        ACTION</displayed-value>
+        <displayed-value>LINKING KNOWLEDGE TO ACTION</displayed-value>
         <stored-value>LINKING KNOWLEDGE TO ACTION</stored-value>
       </pair>
       <pair>
@@ -3155,18 +2914,15 @@
         <stored-value>MODELING</stored-value>
       </pair>
       <pair>
-        <displayed-value>PRO-POOR CLIMATE CHANGE
-        MITIGATION</displayed-value>
-        <stored-value>PRO-POOR CLIMATE CHANGE
-        MITIGATION</stored-value>
+        <displayed-value>PRO-POOR CLIMATE CHANGE MITIGATION</displayed-value>
+        <stored-value>PRO-POOR CLIMATE CHANGE MITIGATION</stored-value>
       </pair>
       <pair>
         <displayed-value>SCENARIOS</displayed-value>
         <stored-value>SCENARIOS</stored-value>
       </pair>
     </value-pairs>
-    <value-pairs value-pairs-name="cpwfundno"
-    dc-term="identifier_fund">
+    <value-pairs value-pairs-name="cpwfundno" dc-term="identifier_fund">
       <pair>
         <displayed-value>PHASE 1</displayed-value>
         <stored-value>PHASE 1</stored-value>
@@ -3448,8 +3204,7 @@
         <stored-value>SG514</stored-value>
       </pair>
     </value-pairs>
-    <value-pairs value-pairs-name="region_types"
-    dc-term="place_region">
+    <value-pairs value-pairs-name="region_types" dc-term="place_region">
       <pair>
         <displayed-value>ACP</displayed-value>
         <stored-value>ACP</stored-value>
@@ -3547,8 +3302,7 @@
         <stored-value>WEST AND CENTRAL AFRICA</stored-value>
       </pair>
     </value-pairs>
-    <value-pairs value-pairs-name="subregion_types"
-    dc-term="srplace_subregion">
+    <value-pairs value-pairs-name="subregion_types" dc-term="srplace_subregion">
       <pair>
         <displayed-value>AFAR</displayed-value>
         <stored-value>AFAR</stored-value>
@@ -3586,8 +3340,7 @@
         <stored-value>TIGRAY</stored-value>
       </pair>
     </value-pairs>
-    <value-pairs value-pairs-name="countrylist"
-    dc-term="cplace_country">
+    <value-pairs value-pairs-name="countrylist" dc-term="cplace_country">
       <pair>
         <displayed-value>AFGHANISTAN</displayed-value>
         <stored-value>AFGHANISTAN</stored-value>
@@ -4369,8 +4122,7 @@
         <stored-value>ZIMBABWE</stored-value>
       </pair>
     </value-pairs>
-    <value-pairs value-pairs-name="riverbasin"
-    dc-term="river_basin">
+    <value-pairs value-pairs-name="riverbasin" dc-term="river_basin">
       <pair>
         <displayed-value>AMAZON</displayed-value>
         <stored-value>AMAZON</stored-value>
@@ -4420,8 +4172,7 @@
         <stored-value>YELLOW</stored-value>
       </pair>
     </value-pairs>
-    <value-pairs value-pairs-name="ISI_Journal"
-    dc-term="isijournal">
+    <value-pairs value-pairs-name="ISI_Journal" dc-term="isijournal">
       <pair>
         <displayed-value>N/A</displayed-value>
         <stored-value></stored-value>
@@ -4431,8 +4182,7 @@
         <stored-value>ISI Journal</stored-value>
       </pair>
     </value-pairs>
-    <value-pairs value-pairs-name="GREY_LITERATURE"
-    dc-term="fulltextstatus">
+    <value-pairs value-pairs-name="GREY_LITERATURE" dc-term="fulltextstatus">
       <pair>
         <displayed-value>N/A</displayed-value>
         <stored-value></stored-value>
@@ -4446,8 +4196,7 @@
         <stored-value>Formally Published</stored-value>
       </pair>
     </value-pairs>
-    <value-pairs value-pairs-name="TARGET_AUDIENCE"
-    dc-term="targetaudience">
+    <value-pairs value-pairs-name="TARGET_AUDIENCE" dc-term="targetaudience">
       <pair>
         <displayed-value>SCIENTISTS</displayed-value>
         <stored-value>SCIENTISTS</stored-value>
@@ -4461,8 +4210,7 @@
         <stored-value>CGIAR</stored-value>
       </pair>
       <pair>
-        <displayed-value>DEVELOPMENT
-        PRACTITIONERS</displayed-value>
+        <displayed-value>DEVELOPMENT PRACTITIONERS</displayed-value>
         <stored-value>DEVELOPMENT PRACTITIONERS</stored-value>
       </pair>
       <pair>
