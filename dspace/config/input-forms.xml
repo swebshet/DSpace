@@ -2270,6 +2270,10 @@
         <stored-value>ANIMAL BREEDING</stored-value>
       </pair>
       <pair>
+        <displayed-value>ANIMAL CARE</displayed-value>
+        <stored-value>ANIMAL CARE</stored-value>
+      </pair>
+      <pair>
         <displayed-value>ANIMAL DISEASES</displayed-value>
         <stored-value>ANIMAL DISEASES</stored-value>
       </pair>
@@ -2392,6 +2396,10 @@
       <pair>
         <displayed-value>EXTENSION</displayed-value>
         <stored-value>EXTENSION</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>FARM MANAGEMENT</displayed-value>
+        <stored-value>FARM MANAGEMENT</stored-value>
       </pair>
       <pair>
         <displayed-value>FARMING SYSTEMS</displayed-value>
@@ -2536,6 +2544,10 @@
       <pair>
         <displayed-value>PRO-POOR LIVESTOCK</displayed-value>
         <stored-value>PRO-POOR LIVESTOCK</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>REPRODUCTION</displayed-value>
+        <stored-value>REPRODUCTION</stored-value>
       </pair>
       <pair>
         <displayed-value>RESEARCH</displayed-value>
