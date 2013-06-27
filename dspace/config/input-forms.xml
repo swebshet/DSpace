@@ -430,6 +430,16 @@
         </field>
         <field>
           <dc-schema>dc</dc-schema>
+          <dc-element>anasubject</dc-element>
+          <dc-qualifier>anancysubject</dc-qualifier>
+          <repeatable>true</repeatable>
+          <label>ANANCY Subject Focus Focus</label>
+          <input-type value-pairs-name="anancysubject">dropdown</input-type>
+          <hint></hint>
+          <required></required>
+        </field>
+        <field>
+          <dc-schema>dc</dc-schema>
           <dc-element>ccsubject</dc-element>
           <dc-qualifier>ccafsubject</dc-qualifier>
           <repeatable>true</repeatable>
@@ -2932,6 +2942,56 @@
       <pair>
         <displayed-value>SCENARIOS</displayed-value>
         <stored-value>SCENARIOS</stored-value>
+      </pair>
+    </value-pairs>
+    <value-pairs value-pairs-name="anancysubject" dc-term="anasubject_anancysubject">
+      <pair>
+        <displayed-value>AGRICULTURE - GENERAL</displayed-value>
+        <stored-value>AGRICULTURE - GENERAL</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>ANIMAL PRODUCTION AND HEALTH</displayed-value>
+        <stored-value>ANIMAL PRODUCTION AND HEALTH</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>CROP PRODUCTION AND PROTECTION</displayed-value>
+        <stored-value>CROP PRODUCTION AND PROTECTION</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>ENVIRONMENTAL PROTECTION AND NATURAL RESOURCES MANAGEMENT</displayed-value>
+        <stored-value>ENVIRONMENTAL PROTECTION AND NATURAL RESOURCES MANAGEMENT</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>FISHERIES AND AQUACULTURE</displayed-value>
+        <stored-value>FISHERIES AND AQUACULTURE</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>FORESTRY</displayed-value>
+        <stored-value>FORESTRY</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>INFORMATION AND COMMUNICATION MANAGEMENT</displayed-value>
+        <stored-value>INFORMATION AND COMMUNICATION MANAGEMENT</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>INSTITUTIONS AND SERVICES</displayed-value>
+        <stored-value>INSTITUTIONS AND SERVICES</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>MARKETING AND TRADE</displayed-value>
+        <stored-value>MARKETING AND TRADE</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>MISCELLANEOUS</displayed-value>
+        <stored-value>MISCELLANEOUS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>POST-HARVESTING TECHNOLOGY AND PROCESSING</displayed-value>
+        <stored-value>POST-HARVESTING TECHNOLOGY AND PROCESSING</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>RURAL DYNAMICS</displayed-value>
+        <stored-value>RURAL DYNAMICS</stored-value>
       </pair>
     </value-pairs>
     <value-pairs value-pairs-name="cpwfundno" dc-term="identifier_fund">
