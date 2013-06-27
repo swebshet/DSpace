@@ -3324,8 +3324,16 @@
         <stored-value>AMHARA</stored-value>
       </pair>
       <pair>
+        <displayed-value>ANDHRA PRADESH</displayed-value>
+        <stored-value>ANDHRA PRADESH</stored-value>
+      </pair>
+      <pair>
         <displayed-value>BENISHANGUL-GUMUZ</displayed-value>
         <stored-value>BENISHANGUL-GUMUZ</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>BIHAR</displayed-value>
+        <stored-value>BIHAR</stored-value>
       </pair>
       <pair>
         <displayed-value>GAMBELA</displayed-value>
@@ -3336,8 +3344,20 @@
         <stored-value>HARARI</stored-value>
       </pair>
       <pair>
+        <displayed-value>KARNATAKA</displayed-value>
+        <stored-value>KARNATAKA</stored-value>
+      </pair>
+      <pair>
         <displayed-value>OROMIA</displayed-value>
         <stored-value>OROMIA</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>MADHYA PRADESH</displayed-value>
+        <stored-value>MADHYA PRADESH</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>MAHARASHTRA</displayed-value>
+        <stored-value>MAHARASHTRA</stored-value>
       </pair>
       <pair>
         <displayed-value>SOMALI</displayed-value>
@@ -3350,6 +3370,14 @@
       <pair>
         <displayed-value>TIGRAY</displayed-value>
         <stored-value>TIGRAY</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>UTTARAKHAND</displayed-value>
+        <stored-value>UTTARAKHAND</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>UTTAR PRADESH</displayed-value>
+        <stored-value>UTTAR PRADESH</stored-value>
       </pair>
     </value-pairs>
     <value-pairs value-pairs-name="countrylist" dc-term="cplace_country">
