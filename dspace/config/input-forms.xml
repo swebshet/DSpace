@@ -2064,7 +2064,7 @@
       </pair>
       <pair>
         <displayed-value>Book or Monograph</displayed-value>
-        <stored-value>Book</stored-value>
+        <stored-value>Book or Monograph</stored-value>
       </pair>
       <pair>
         <displayed-value>Book Chapter</displayed-value>
@@ -2076,7 +2076,7 @@
       </pair>
       <pair>
         <displayed-value>Brochure or Flyer</displayed-value>
-        <stored-value>Brochure</stored-value>
+        <stored-value>Brochure or Flyer</stored-value>
       </pair>
       <pair>
         <displayed-value>Case Study</displayed-value>
@@ -2116,7 +2116,7 @@
       </pair>
       <pair>
         <displayed-value>Manuscript-unpublished</displayed-value>
-        <stored-value>Manuscript</stored-value>
+        <stored-value>Manuscript-unpublished</stored-value>
       </pair>
       <pair>
         <displayed-value>Map</displayed-value>
@@ -2164,7 +2164,7 @@
       </pair>
       <pair>
         <displayed-value>Thesis or Dissertation</displayed-value>
-        <stored-value>Thesis</stored-value>
+        <stored-value>Thesis or Dissertation</stored-value>
       </pair>
       <pair>
         <displayed-value>Training Module or Learning Object</displayed-value>
