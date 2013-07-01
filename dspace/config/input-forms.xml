@@ -2592,6 +2592,10 @@
         <stored-value>TRADE</stored-value>
       </pair>
       <pair>
+        <displayed-value>TRYPANOSOMIASIS</displayed-value>
+        <stored-value>TRYPANOSOMIASIS</stored-value>
+      </pair>
+      <pair>
         <displayed-value>VACCINES</displayed-value>
         <stored-value>VACCINES</stored-value>
       </pair>
