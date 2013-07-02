@@ -271,7 +271,7 @@
                 <a class="image-link" href="{$href}">
                     <xsl:choose>
                         <xsl:when test="mets:fileGrp[@USE='THUMBNAIL']">
-                            <img alt="Thumbnail">
+                            <img alt="Thumbnail" style="max-height: 130px;">
                                 <xsl:attribute name="src">
                                     <xsl:value-of
                                             select="mets:fileGrp[@USE='THUMBNAIL']/mets:file/mets:FLocat[@LOCTYPE='URL']/@xlink:href"/>
@@ -279,7 +279,7 @@
                             </img>
                         </xsl:when>
                         <xsl:otherwise>
-                            <img alt="Icon" src="{concat($theme-path, '/images/mime.png')}" style="height: {$thumbnail.maxheight -78 }px;"/>
+                            <img alt="Icon" src="{concat($theme-path, '/images/mime.png')}" style="max-height: 130px;"/>
                         </xsl:otherwise>
                     </xsl:choose>
                 </a>
