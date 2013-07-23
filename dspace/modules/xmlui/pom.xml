@@ -16,7 +16,25 @@
       <relativePath>..</relativePath>
    </parent>
 
-   <properties>
+    <repositories>
+        <repository>
+            <id>atmire.com-releases</id>
+            <name>atmire.com-releases</name>
+            <url>https://atmire.com/artifactory/atmire.com-releases</url>
+            <releases>
+                <enabled>true</enabled>
+                <checksumPolicy>fail</checksumPolicy>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+                <updatePolicy>never</updatePolicy>
+                <checksumPolicy>fail</checksumPolicy>
+            </snapshots>
+        </repository>
+    </repositories>
+
+
+    <properties>
        <!-- This is the path to the root [dspace-src] directory. -->
        <root.basedir>${basedir}/../../..</root.basedir>
    </properties>
@@ -100,7 +118,14 @@
          <artifactId>additions</artifactId>
       </dependency>
 
-      <!-- DSpace XMLUI Languages -->
+       <dependency>
+           <groupId>com.atmire</groupId>
+           <artifactId>atmire-listings-and-reports-xmlui-api</artifactId>
+           <version>${listings-and-reports.version.number}</version>
+       </dependency>
+
+
+       <!-- DSpace XMLUI Languages -->
       <dependency>
          <groupId>org.dspace</groupId>
          <artifactId>dspace-xmlui-lang</artifactId>
