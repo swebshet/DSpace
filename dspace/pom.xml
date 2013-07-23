@@ -31,6 +31,28 @@
         </filters>
     
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>2.6</version>
+                <executions>
+                    <execution>
+                        <id>unpack</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>unpack-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <includeArtifactIds>
+                                atmire-listings-and-reports-common
+                            </includeArtifactIds>
+                            <overWriteReleases>true</overWriteReleases>
+                            <overWriteSnapshots>true</overWriteSnapshots>
+                            <outputDirectory>${project.build.directory}/atmire-modules</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
             <!--  Default project assembly. Calls 'assembly.xml', which
                   generates the DSpace build directory. -->
             <plugin>
@@ -114,7 +136,14 @@
     </profiles>
 
     <dependencies>
-    	<!-- This dependency ensures DSpace OAI JAR is added to [dspace]/lib/,
+
+        <dependency>
+            <groupId>com.atmire</groupId>
+            <artifactId>atmire-listings-and-reports-api</artifactId>
+            <version>${listings-and-reports.version.number}</version>
+        </dependency>
+
+        <!-- This dependency ensures DSpace OAI JAR is added to [dspace]/lib/,
              so that the 'dspace oai' launcher.xml command works.  -->
     	<dependency>
             <groupId>org.dspace</groupId>

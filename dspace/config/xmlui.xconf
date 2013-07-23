@@ -106,6 +106,9 @@
         <!-- By default, DSpace uses a legacy 3-step approval workflow for new submissions -->
         <aspect name="Original Workflow" path="resource://aspects/Workflow/" />
 
+        <aspect name="ListingsAndReports" path="resource://aspects/ListingsAndReports/" />
+
+
         <!-- If you prefer, a Configurable XML-based Workflow is available. To enable it, you can
              uncomment the below aspect and comment out the "Original Workflow" aspect above.
              PLEASE NOTE: in order to use the configurable workflow you must also run the
