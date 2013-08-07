@@ -88,7 +88,14 @@
    Runtime and Compile Time dependencies for DSpace.
    -->
    <dependencies>
-      <dependency>
+
+       <dependency>
+           <groupId>com.atmire</groupId>
+           <artifactId>atmire-cua-api</artifactId>
+           <version>${cua.version.number}</version>
+       </dependency>
+
+       <dependency>
          <groupId>org.dspace</groupId>
          <artifactId>dspace-api</artifactId>
       </dependency>
