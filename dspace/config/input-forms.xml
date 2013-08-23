@@ -2314,6 +2314,10 @@
         <stored-value>BREEDS</stored-value>
       </pair>
       <pair>
+        <displayed-value>BRUCELLOSIS</displayed-value>
+        <stored-value>BRUCELLOSIS</stored-value>
+      </pair>
+      <pair>
         <displayed-value>BUFFALO</displayed-value>
         <stored-value>BUFFALO</stored-value>
       </pair>
