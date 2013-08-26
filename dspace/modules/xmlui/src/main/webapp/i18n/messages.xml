@@ -136,6 +136,7 @@
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_crpsubject">CGIAR research program</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_basin">River Basin</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_output">Output Type</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_anancy">Anancy Subject</message>
 
 
 
@@ -187,6 +188,7 @@
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.ccafsubject.column_heading">CCAFS Subject Name</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.ciforsubject.column_heading">CIFOR Subject Name</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.iwmisubject.column_heading">IWMI Subject Name</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.anancy.column_heading">Anancy Subject Name</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.crpsubject.column_heading">CGIAR research program</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.basin.column_heading">River Basin</message>
 
@@ -245,6 +247,9 @@
 
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.output">Browsing {0} by Output Type {1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.output">Browsing {0} by Output Type</message>
+
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.anancy">Browsing {0} by Anancy {1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.anancy">Browsing {0} by Anancy</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.CollectionViewer.java -->
 	<message key="xmlui.ArtifactBrowser.CollectionViewer.search_scope">Search Scope</message>
@@ -334,6 +339,7 @@
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_ccafsubject">By CCAFS Subject</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_ciforsubject">By CIFOR Subject</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_iwmisubject">By IWMI Subject</message>
+	<message key="xmlui.ArtifactBrowser.Navigation.browse_anancy">By Anancy Subject</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_subregion">By Sub Region</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_crpsubject">By CRP Subject</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_basin">By River Basin</message>
