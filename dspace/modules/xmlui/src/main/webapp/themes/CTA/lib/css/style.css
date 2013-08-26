@@ -77,14 +77,13 @@ select.multiple {
 #ds-header-logo {
     float:left;
     width: 980px;
-    height: 97px;
+    height: 96px;
     margin-top: 10px;
-    background: url("../../images/CTA.jpg");
+    background: url("../../images/banner.jpg");
     background-repeat: no-repeat;
     background-color: transparent;
     margin-right: 15px;
     margin-top: 0px;
-    
 }
 
 #ds-header-logo-text {
@@ -146,7 +145,7 @@ select.multiple {
     background: #ffffff;
     margin: auto;
     position: relative;
-    }
+}
 
 /*ie6 uses quirks mode for strict xhtml pages, and in quirks mode margin: auto; doesn't center things*/
 .ie6 #no-js-warning-wrapper,
@@ -254,8 +253,6 @@ h1.ds-option-set-head {
 }
 
 div.ds-option-set {
-/*    border: 1px solid #48732A;
-    border-top: none;*/
     padding: 3px 10px;
     margin-left: 15px;
     margin-right: 5px;
@@ -272,7 +269,7 @@ div.ds-option-set ul {
 div.ds-option-set .ds-sublist-head {
     font-weight: normal;
     font-size: 12px;
-    color: #000;
+    color: #000000;
 }
 
 div.ds-option-set h2.ds-sublist-head {
