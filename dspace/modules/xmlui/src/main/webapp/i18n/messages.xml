@@ -237,8 +237,8 @@
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.subregion">Browsing {0} by Sub Region {1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.subregion">Browsing {0} by Sub Region</message>
 
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.crpsubject">Browsing {0} by CGIAR research program {1}</message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.crpsubject">Browsing {0} by CGIAR research program</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.crpsubject">Browsing {0} by CGIAR Research Program {1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.crpsubject">Browsing {0} by CGIAR Research Program</message>
 
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.basin">Browsing {0} by River Basin {1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.basin">Browsing {0} by River Basin</message>
