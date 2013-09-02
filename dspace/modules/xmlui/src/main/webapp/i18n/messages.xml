@@ -248,8 +248,8 @@
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.output">Browsing {0} by Output Type {1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.output">Browsing {0} by Output Type</message>
 
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.anancy">Browsing {0} by Anancy {1}</message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.anancy">Browsing {0} by Anancy</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.anancy">Browsing {0} by Anancy Subject {1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.anancy">Browsing {0} by Anancy Subject</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.CollectionViewer.java -->
 	<message key="xmlui.ArtifactBrowser.CollectionViewer.search_scope">Search Scope</message>
