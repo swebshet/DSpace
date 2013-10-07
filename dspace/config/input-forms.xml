@@ -229,6 +229,94 @@
           <required></required>
         </field>
         <field>
+          <dc-schema>cg</dc-schema>
+          <dc-element>Livestock</dc-element>
+          <dc-qualifier>function</dc-qualifier>
+          <repeatable>true</repeatable>
+          <label>Livestock Function</label>
+          <input-type value-pairs-name="Livestock_function">dropdown</input-type>
+          <required></required>
+        </field>
+        <field>
+          <dc-schema>cg</dc-schema>
+          <dc-element>Livestock</dc-element>
+          <dc-qualifier>agegroup</dc-qualifier>
+          <repeatable>true</repeatable>
+          <label>Livestock Agegroup</label>
+          <input-type value-pairs-name="Livestock_agegroup">dropdown</input-type>
+          <required></required>
+        </field>
+        <field>
+          <dc-schema>cg</dc-schema>
+          <dc-element>message</dc-element>
+          <dc-qualifier>Voice</dc-qualifier>
+          <repeatable>true</repeatable>
+          <label>Voice Message</label>
+          <input-type>textarea</input-type>
+          <hint>Enter the Voice message</hint>
+          <required></required>
+        </field>
+        <field>
+          <dc-schema>cg</dc-schema>
+          <dc-element>message</dc-element>
+          <dc-qualifier>SMS</dc-qualifier>
+          <repeatable>true</repeatable>
+          <label>SMS Message</label>
+          <input-type>textarea</input-type>
+          <hint>Enter the SMS Message</hint>
+          <required></required>
+        </field>
+        <field>
+          <dc-schema>cg</dc-schema>
+          <dc-element>link</dc-element>
+          <dc-qualifier>video</dc-qualifier>
+          <repeatable>true</repeatable>
+          <label>Video link</label>
+          <input-type>onebox</input-type>
+          <hint>Enter Related video link</hint>
+          <required></required>
+        </field>
+        <field>
+          <dc-schema>cg</dc-schema>
+          <dc-element>link</dc-element>
+          <dc-qualifier>audio</dc-qualifier>
+          <repeatable>true</repeatable>
+          <label>Audio link</label>
+          <input-type>onebox</input-type>
+          <hint>Enter Related audio link</hint>
+          <required></required>
+        </field>
+        <field>
+          <dc-schema>cg</dc-schema>
+          <dc-element>link</dc-element>
+          <dc-qualifier>photo</dc-qualifier>
+          <repeatable>true</repeatable>
+          <label>Photo link</label>
+          <input-type>onebox</input-type>
+          <hint>Enter Related photo link</hint>
+          <required></required>
+        </field>
+        <field>
+          <dc-schema>cg</dc-schema>
+          <dc-element>link</dc-element>
+          <dc-qualifier>reference</dc-qualifier>
+          <repeatable>true</repeatable>
+          <label>Reference link</label>
+          <input-type>onebox</input-type>
+          <hint>Enter Related reference link</hint>
+          <required></required>
+        </field>
+        <field>
+          <dc-schema>cg</dc-schema>
+          <dc-element>link</dc-element>
+          <dc-qualifier>citation</dc-qualifier>
+          <repeatable>true</repeatable>
+          <label>Citation Link</label>
+          <input-type>onebox</input-type>
+          <hint>Enter Related reference citation link</hint>
+          <required></required>
+        </field>
+        <field>
           <dc-schema>dc</dc-schema>
           <dc-element>editon</dc-element>
           <dc-qualifier></dc-qualifier>
@@ -2563,6 +2651,42 @@
       <pair>
         <displayed-value>ISBN</displayed-value>
         <stored-value>isbn</stored-value>
+      </pair>
+    </value-pairs>
+    <value-pairs value-pairs-name="Livestock_function" dc-term="Livestock_function">
+      <pair>
+        <displayed-value>EGG</displayed-value>
+        <stored-value>EGG</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>DRAFT</displayed-value>
+        <stored-value>DRAFT</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>MILK/DAIRY</displayed-value>
+        <stored-value>MILK/DAIRY</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>MULTI-PURPOSE</displayed-value>
+        <stored-value>MULTI-PURPOSE</stored-value>
+      </pair>
+    </value-pairs>
+    <value-pairs value-pairs-name="Livestock_agegroup" dc-term="Livestock_agegroup">
+      <pair>
+        <displayed-value>ADULT</displayed-value>
+        <stored-value>ADULT</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>ALL AGES</displayed-value>
+        <stored-value>ALL AGES</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>NEW BORN</displayed-value>
+        <stored-value>NEW BORN</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>YOUNG</displayed-value>
+        <stored-value>YOUNG</stored-value>
       </pair>
     </value-pairs>
     <value-pairs value-pairs-name="common_types" dc-term="type">
