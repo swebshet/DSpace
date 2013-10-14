@@ -2603,6 +2603,10 @@
         <stored-value>Dataset</stored-value>
       </pair>
       <pair>
+        <displayed-value>Equation</displayed-value>
+        <stored-value>Equation</stored-value>
+      </pair>
+      <pair>
         <displayed-value>Image</displayed-value>
         <stored-value>Image</stored-value>
       </pair>
