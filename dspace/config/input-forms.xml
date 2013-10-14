@@ -2759,6 +2759,10 @@
         <displayed-value>(Other)</displayed-value>
         <stored-value>other</stored-value>
       </pair>
+      <pair>
+        <displayed-value>Vietnamese</displayed-value>
+        <stored-value>vi</stored-value>
+      </pair>
     </value-pairs>
     <value-pairs value-pairs-name="common_status_identifier" dc-term="identifier_status">
       <pair>
