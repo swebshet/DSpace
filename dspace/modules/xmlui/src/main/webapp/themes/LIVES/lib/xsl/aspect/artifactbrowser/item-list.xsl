@@ -145,10 +145,19 @@
 
 
 		   <xsl:if test="dim:field[@element='type']">
-                <span class="bold"><i18n:text>Type</i18n:text><xsl:text>:</xsl:text></span>
+                <span class="bold"><i18n:text>Output Type</i18n:text><xsl:text>:</xsl:text></span>
                 <span class="content" style="width: {$metadataWidth - 110}px;">
-                    <xsl:value-of
-                            select="substring(dim:field[@element='type']/node(),1,30)"/>
+                <xsl:element name="a">
+                    <xsl:attribute name="href">
+                        <xsl:value-of select="$href"/>
+                    </xsl:attribute>
+
+                    <span class="content" style="width: {$metadataWidth - 110}px;">
+                      <xsl:for-each select="//dim:field[@element='type'and @qualifier='output']">
+                <a href="/browse?value={.}&amp;type=output"><xsl:value-of select="."/></a><xsl:if test="position()!=last()"><xsl:text>, </xsl:text></xsl:if>
+                      </xsl:for-each>
+                    </span>
+                </xsl:element>
                 </span>
             </xsl:if>
 

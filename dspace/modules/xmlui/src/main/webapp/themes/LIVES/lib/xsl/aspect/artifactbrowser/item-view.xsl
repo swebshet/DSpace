@@ -1,4 +1,4 @@
-<!---CIFOR
+<!--
 
     The contents of this file are subject to the license and copyright
     detailed in the LICENSE and NOTICE files at the root of the source
@@ -594,14 +594,20 @@
 		<!-- River Basin row -->
             <xsl:when test="$clause = 18 and (dim:field[@element='river' and @qualifier='basin'])">
                     <tr class="ds-table-row {$phase}">
-	                <td><span class="bold"><i18n:text>River Basin</i18n:text>:</span></td>
+	                <td><span class="bold"><i18n:text>River Basin Focus</i18n:text>:</span></td>
 	                <td>
-	                <xsl:for-each select="//dim:field[@element='river'and @qualifier='basin']">
-                      <xsl:variable name="lnk"><xsl:value-of select="."/></xsl:variable>
-
-                            <a href="/browse?value={.}&amp;type=basin"><xsl:value-of select="."/></a><xsl:if test="position()!=last()"><xsl:text>, </xsl:text></xsl:if>
-
-                    </xsl:for-each>
+	                <xsl:if test="count(dim:field[@element='river' and @qualifier='basin']) &gt; 1">
+	                	<hr class="metadata-seperator"/>
+	                </xsl:if>
+	                <xsl:for-each select="dim:field[@element='river' and @qualifier='basin']">
+		                <xsl:copy-of select="./node()"/>
+		                <xsl:if test="count(following-sibling::dim:field[@element='river' and @qualifier='basin']) != 0">
+	                    	<hr class="metadata-seperator"/>
+	                    </xsl:if>
+	              	</xsl:for-each>
+	              	<xsl:if test="count(dim:field[@element='river' and @qualifier='basin']) &gt; 1">
+	                	<hr class="metadata-seperator"/>
+	                </xsl:if>
 	                </td>
 	            </tr>
               <xsl:call-template name="itemSummaryView-DIM-fields">
@@ -618,7 +624,7 @@
 
 		<xsl:when test="$clause = 19 and (dim:field[@element='cplace' and @qualifier='country'])">
                     <tr class="ds-table-row {$phase}">
-	                <td><span class="bold"><i18n:text>Country</i18n:text>:</span></td>
+	                <td><span class="bold"><i18n:text>Country Focus</i18n:text>:</span></td>
 	                <td>
 	                <xsl:for-each select="//dim:field[@element='cplace'and @qualifier='country']">
                       <xsl:variable name="lnk"><xsl:value-of select="."/></xsl:variable>
@@ -638,7 +644,7 @@
          <!-- Region Focus row -->
 		<xsl:when test="$clause = 20 and (dim:field[@element='rplace' and @qualifier='region'])">
                     <tr class="ds-table-row {$phase}">
-	                <td><span class="bold"><i18n:text>Region</i18n:text>:</span></td>
+	                <td><span class="bold"><i18n:text>Region Focus</i18n:text>:</span></td>
 	                <td>
 	                <xsl:for-each select="//dim:field[@element='rplace'and @qualifier='region']">
                       <xsl:variable name="lnk"><xsl:value-of select="."/></xsl:variable>
