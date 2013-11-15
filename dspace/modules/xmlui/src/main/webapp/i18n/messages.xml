@@ -385,7 +385,7 @@
         
 	<!-- Authentication messages used at the top of the login page:  -->
 	<message key="xmlui.ArtifactBrowser.RestrictedItem.auth_header">The item is restricted</message>
-	<message key="xmlui.ArtifactBrowser.RestrictedItem.auth_message">The item you are attempting to access is a restricted item and requires credentials to view. Please login below to access the item.</message>
+	<message key="xmlui.ArtifactBrowser.RestrictedItem.auth_message">The item you are attempting to access is restricted. Please login below to access the item.</message>
 
     <message key="xmlui.ArtifactBrowser.StatisticsViewer.choose_month">Monthly Reports</message>
     <message key="xmlui.ArtifactBrowser.StatisticsViewer.report.title">Statistical Summary</message>
@@ -395,11 +395,11 @@
 
     <!-- Authentication messages used for bitstream authentication -->
 	<message key="xmlui.BitstreamReader.auth_header">The file is restricted</message>
-	<message key="xmlui.BitstreamReader.auth_message">The file you are attempting to access is a restricted file and requires credentials to view. Please login below to access the file.</message>
+	<message key="xmlui.BitstreamReader.auth_message">The file you are attempting to access is restricted. Please login below to access the file.</message>
 
 	<!-- Export Archive download messages -->
 	<message key="xmlui.ItemExportDownloadReader.auth_header">This export archive is restricted.</message>
-	<message key="xmlui.ItemExportDownloadReader.auth_message">The export archive you are attempting to access is a restricted resource and requires credentials to view. Please login below to access the export archive.</message>
+	<message key="xmlui.ItemExportDownloadReader.auth_message">The export archive you are attempting to access is restricted. Please login below to access the export archive.</message>
 
 	<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
