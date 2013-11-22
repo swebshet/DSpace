@@ -1036,20 +1036,20 @@
 
 
  <!-- Livestock.function -->
-		<xsl:when test="$clause = 38 and (dim:field[@element='Livestock' and @qualifier='function'])">
+		<xsl:when test="$clause = 38 and (dim:field[@element='livestock' and @qualifier='function'])">
                     <tr class="ds-table-row {$phase}">
 	                <td><span class="bold"><i18n:text>Livestock function</i18n:text>:</span></td>
 	                <td>
-	                <xsl:if test="count(dim:field[@element='Livestock' and @qualifier='function']) &gt; 1">
+	                <xsl:if test="count(dim:field[@element='livestock' and @qualifier='function']) &gt; 1">
 	                	<hr class="metadata-seperator"/>
 	                </xsl:if>
-	                <xsl:for-each select="dim:field[@element='Livestock' and @qualifier='function']">
+	                <xsl:for-each select="dim:field[@element='livestock' and @qualifier='function']">
 		                <xsl:copy-of select="./node()"/>
-		                <xsl:if test="count(following-sibling::dim:field[@element='Livestock' and @qualifier='function']) != 0">
+		                <xsl:if test="count(following-sibling::dim:field[@element='livestock' and @qualifier='function']) != 0">
 	                    	<hr class="metadata-seperator"/>
 	                    </xsl:if>
 	              	</xsl:for-each>
-	              	<xsl:if test="count(dim:field[@element='Livestock' and @qualifier='function']) &gt; 1">
+	                <xsl:if test="count(dim:field[@element='livestock' and @qualifier='function']) &gt; 1">
 	                	<hr class="metadata-seperator"/>
 	                </xsl:if>
 	                </td>
@@ -1061,20 +1061,20 @@
           </xsl:when>
 		  
 	 <!-- Livestock agegroup row -->
-		<xsl:when test="$clause = 39 and (dim:field[@element='Livestock' and @qualifier='agegroup'])">
+		<xsl:when test="$clause = 39 and (dim:field[@element='livestock' and @qualifier='agegroup'])">
                     <tr class="ds-table-row {$phase}">
 	                <td><span class="bold"><i18n:text>Livestock age group</i18n:text>:</span></td>
 	                <td>
-	                <xsl:if test="count(dim:field[@element='Livestock' and @qualifier='agegroup']) &gt; 1">
+	                <xsl:if test="count(dim:field[@element='livestock' and @qualifier='agegroup']) &gt; 1">
 	                	<hr class="metadata-seperator"/>
 	                </xsl:if>
-	                <xsl:for-each select="dim:field[@element='Livestock' and @qualifier='agegroup']">
+	                <xsl:for-each select="dim:field[@element='livestock' and @qualifier='agegroup']">
 		                <xsl:copy-of select="./node()"/>
-		                <xsl:if test="count(following-sibling::dim:field[@element='Livestock' and @qualifier='agegroup']) != 0">
+		                <xsl:if test="count(following-sibling::dim:field[@element='livestock' and @qualifier='agegroup']) != 0">
 	                    	<hr class="metadata-seperator"/>
 	                    </xsl:if>
 	              	</xsl:for-each>
-	              	<xsl:if test="count(dim:field[@element='Livestock' and @qualifier='agegroup']) &gt; 1">
+	                <xsl:if test="count(dim:field[@element='livestock' and @qualifier='agegroup']) &gt; 1">
 	                	<hr class="metadata-seperator"/>
 	                </xsl:if>
 	                </td>
