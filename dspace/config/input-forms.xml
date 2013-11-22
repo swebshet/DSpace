@@ -249,7 +249,7 @@
         <field>
           <dc-schema>cg</dc-schema>
           <dc-element>message</dc-element>
-          <dc-qualifier>Voice</dc-qualifier>
+          <dc-qualifier>voice</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Voice message</label>
           <input-type>textarea</input-type>
@@ -259,7 +259,7 @@
         <field>
           <dc-schema>cg</dc-schema>
           <dc-element>message</dc-element>
-          <dc-qualifier>SMS</dc-qualifier>
+          <dc-qualifier>sms</dc-qualifier>
           <repeatable>true</repeatable>
           <label>SMS message</label>
           <input-type>textarea</input-type>
