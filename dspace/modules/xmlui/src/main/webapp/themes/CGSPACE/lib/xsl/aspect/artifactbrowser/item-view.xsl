@@ -1088,20 +1088,20 @@
 
 
  <!-- message Voice row -->
- 		<xsl:when test="$clause = 40 and (dim:field[@element='message' and @qualifier='Voice'])">
+		<xsl:when test="$clause = 40 and (dim:field[@element='message' and @qualifier='voice'])">
                     <tr class="ds-table-row {$phase}">
 	                <td><span class="bold"><i18n:text>Voice message</i18n:text>:</span></td>
 	                <td>
-	                <xsl:if test="count(dim:field[@element='message' and @qualifier='Voice']) &gt; 1">
+	                <xsl:if test="count(dim:field[@element='message' and @qualifier='voice']) &gt; 1">
 	                	<hr class="metadata-seperator"/>
 	                </xsl:if>
-	                <xsl:for-each select="dim:field[@element='message' and @qualifier='Voice']">
+	                <xsl:for-each select="dim:field[@element='message' and @qualifier='voice']">
 		                <xsl:copy-of select="./node()"/>
-		                <xsl:if test="count(following-sibling::dim:field[@element='message' and @qualifier='Voice']) != 0">
+		                <xsl:if test="count(following-sibling::dim:field[@element='message' and @qualifier='voice']) != 0">
 	                    	<hr class="metadata-seperator"/>
 	                    </xsl:if>
 	              	</xsl:for-each>
-	              	<xsl:if test="count(dim:field[@element='message' and @qualifier='Voice']) &gt; 1">
+	                <xsl:if test="count(dim:field[@element='message' and @qualifier='voice']) &gt; 1">
 	                	<hr class="metadata-seperator"/>
 	                </xsl:if>
 	                </td>
@@ -1113,20 +1113,20 @@
           </xsl:when>
 
 <!-- message SMS row -->
- 		<xsl:when test="$clause = 41 and (dim:field[@element='message' and @qualifier='SMS'])">
+		<xsl:when test="$clause = 41 and (dim:field[@element='message' and @qualifier='sms'])">
                     <tr class="ds-table-row {$phase}">
 	                <td><span class="bold"><i18n:text>SMS message</i18n:text>:</span></td>
 	                <td>
-	                <xsl:if test="count(dim:field[@element='message' and @qualifier='SMS']) &gt; 1">
+	                <xsl:if test="count(dim:field[@element='message' and @qualifier='sms']) &gt; 1">
 	                	<hr class="metadata-seperator"/>
 	                </xsl:if>
-	                <xsl:for-each select="dim:field[@element='message' and @qualifier='SMS']">
+	                <xsl:for-each select="dim:field[@element='message' and @qualifier='sms']">
 		                <xsl:copy-of select="./node()"/>
-		                <xsl:if test="count(following-sibling::dim:field[@element='message' and @qualifier='SMS']) != 0">
+		                <xsl:if test="count(following-sibling::dim:field[@element='message' and @qualifier='sms']) != 0">
 	                    	<hr class="metadata-seperator"/>
 	                    </xsl:if>
 	              	</xsl:for-each>
-	              	<xsl:if test="count(dim:field[@element='message' and @qualifier='SMS']) &gt; 1">
+	                <xsl:if test="count(dim:field[@element='message' and @qualifier='sms']) &gt; 1">
 	                	<hr class="metadata-seperator"/>
 	                </xsl:if>
 	                </td>
