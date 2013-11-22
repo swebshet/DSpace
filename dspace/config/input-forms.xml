@@ -230,20 +230,20 @@
         </field>
         <field>
           <dc-schema>cg</dc-schema>
-          <dc-element>Livestock</dc-element>
+          <dc-element>livestock</dc-element>
           <dc-qualifier>function</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Livestock function</label>
-          <input-type value-pairs-name="Livestock_function">dropdown</input-type>
+          <input-type value-pairs-name="livestock_function">dropdown</input-type>
           <required></required>
         </field>
         <field>
           <dc-schema>cg</dc-schema>
-          <dc-element>Livestock</dc-element>
+          <dc-element>livestock</dc-element>
           <dc-qualifier>agegroup</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Livestock age group</label>
-          <input-type value-pairs-name="Livestock_agegroup">dropdown</input-type>
+          <input-type value-pairs-name="livestock_agegroup">dropdown</input-type>
           <required></required>
         </field>
         <field>
@@ -2653,7 +2653,7 @@
         <stored-value>isbn</stored-value>
       </pair>
     </value-pairs>
-    <value-pairs value-pairs-name="Livestock_function" dc-term="Livestock_function">
+    <value-pairs value-pairs-name="livestock_function" dc-term="livestock_function">
       <pair>
         <displayed-value>EGG</displayed-value>
         <stored-value>EGG</stored-value>
@@ -2671,7 +2671,7 @@
         <stored-value>MULTI-PURPOSE</stored-value>
       </pair>
     </value-pairs>
-    <value-pairs value-pairs-name="Livestock_agegroup" dc-term="Livestock_agegroup">
+    <value-pairs value-pairs-name="livestock_agegroup" dc-term="livestock_agegroup">
       <pair>
         <displayed-value>ADULT</displayed-value>
         <stored-value>ADULT</stored-value>
