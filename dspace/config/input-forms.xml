@@ -233,7 +233,7 @@
           <dc-element>Livestock</dc-element>
           <dc-qualifier>function</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>Livestock Function</label>
+          <label>Livestock function</label>
           <input-type value-pairs-name="Livestock_function">dropdown</input-type>
           <required></required>
         </field>
@@ -242,7 +242,7 @@
           <dc-element>Livestock</dc-element>
           <dc-qualifier>agegroup</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>Livestock Agegroup</label>
+          <label>Livestock age group</label>
           <input-type value-pairs-name="Livestock_agegroup">dropdown</input-type>
           <required></required>
         </field>
@@ -251,7 +251,7 @@
           <dc-element>message</dc-element>
           <dc-qualifier>Voice</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>Voice Message</label>
+          <label>Voice message</label>
           <input-type>textarea</input-type>
           <hint>Enter the Voice message</hint>
           <required></required>
@@ -261,7 +261,7 @@
           <dc-element>message</dc-element>
           <dc-qualifier>SMS</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>SMS Message</label>
+          <label>SMS message</label>
           <input-type>textarea</input-type>
           <hint>Enter the SMS Message</hint>
           <required></required>
@@ -271,7 +271,7 @@
           <dc-element>link</dc-element>
           <dc-qualifier>video</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>Video link</label>
+          <label>Related video</label>
           <input-type>onebox</input-type>
           <hint>Enter Related video link</hint>
           <required></required>
@@ -281,7 +281,7 @@
           <dc-element>link</dc-element>
           <dc-qualifier>audio</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>Audio link</label>
+          <label>Related audio</label>
           <input-type>onebox</input-type>
           <hint>Enter Related audio link</hint>
           <required></required>
@@ -291,7 +291,7 @@
           <dc-element>link</dc-element>
           <dc-qualifier>photo</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>Photo link</label>
+          <label>Related photo</label>
           <input-type>onebox</input-type>
           <hint>Enter Related photo link</hint>
           <required></required>
@@ -301,7 +301,7 @@
           <dc-element>link</dc-element>
           <dc-qualifier>reference</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>Reference link</label>
+          <label>Related reference</label>
           <input-type>onebox</input-type>
           <hint>Enter Related reference link</hint>
           <required></required>
@@ -311,9 +311,9 @@
           <dc-element>link</dc-element>
           <dc-qualifier>citation</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>Citation Link</label>
+          <label>Related citation</label>
           <input-type>onebox</input-type>
-          <hint>Enter Related reference citation link</hint>
+          <hint>Enter related reference citation</hint>
           <required></required>
         </field>
         <field>
