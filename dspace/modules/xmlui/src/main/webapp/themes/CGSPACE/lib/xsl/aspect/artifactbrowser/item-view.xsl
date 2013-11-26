@@ -324,10 +324,10 @@
               </xsl:call-template>
           </xsl:when>
 
-	    <!-- Langauge row -->
+	    <!-- Language row -->
 		<xsl:when test="$clause = 9 and (dim:field[@element='language' and @qualifier='iso'])">
                     <tr class="ds-table-row {$phase}">
-	                <td><span class="bold"><i18n:text>Langauge</i18n:text>:</span></td>
+	                <td><span class="bold"><i18n:text>Language</i18n:text>:</span></td>
 	                <td>
 	                <xsl:if test="count(dim:field[@element='language' and @qualifier='iso']) &gt; 1">
 	                	<hr class="metadata-seperator"/>
