@@ -1820,7 +1820,7 @@
         </field>
       </page>
     </form>
-    <form name="Biodiversity">
+    <form name="Bioversity">
       <page number="1">
         <field>
           <dc-schema>dc</dc-schema>
