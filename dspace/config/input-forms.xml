@@ -3378,16 +3378,20 @@
         <stored-value>CANAL IRRIGATION</stored-value>
       </pair>
       <pair>
+        <displayed-value>CLIMATE CHANGE</displayed-value>
+        <stored-value>CLIMATE CHANGE</stored-value>
+      </pair>
+      <pair>
         <displayed-value>COMMON POOL RESOURCES</displayed-value>
         <stored-value>COMMON POOL RESOURCES</stored-value>
       </pair>
       <pair>
-        <displayed-value>COMMUNICATION/EXTENSION</displayed-value>
-        <stored-value>COMMUNICATION/EXTENSION</stored-value>
+        <displayed-value>COMMUNICATION/EXTENSION/ADOPTION</displayed-value>
+        <stored-value>COMMUNICATION/EXTENSION/ADOPTION</stored-value>
       </pair>
       <pair>
-        <displayed-value>CONJUCTIVE USE</displayed-value>
-        <stored-value>CONJUCTIVE USE</stored-value>
+        <displayed-value>CONJUNCTIVE USE</displayed-value>
+        <stored-value>CONJUNCTIVE USE</stored-value>
       </pair>
       <pair>
         <displayed-value>DECISION SUPPORT SYSTEMS</displayed-value>
@@ -3422,8 +3426,16 @@
         <stored-value>GROUNDWATER</stored-value>
       </pair>
       <pair>
+        <displayed-value>HEALTH</displayed-value>
+        <stored-value>HEALTH</stored-value>
+      </pair>
+      <pair>
         <displayed-value>HYDROLOGY/HYDROGEOLOGY</displayed-value>
         <stored-value>HYDROLOGY/HYDROGEOLOGY</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>IMPACT</displayed-value>
+        <stored-value>IMPACT</stored-value>
       </pair>
       <pair>
         <displayed-value>INSTITUTIONS/GOVERNANCE/POLICIES/REFORMS</displayed-value>
@@ -3436,6 +3448,14 @@
       <pair>
         <displayed-value>INTENSIFICATION</displayed-value>
         <stored-value>INTENSIFICATION</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>INVESTMENT</displayed-value>
+        <stored-value>INVESTMENT</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>IRRIGATION</displayed-value>
+        <stored-value>IRRIGATION</stored-value>
       </pair>
       <pair>
         <displayed-value>LAND DEGRADATION</displayed-value>
@@ -3466,12 +3486,40 @@
         <stored-value>PERI-URBAN AGRICULTURE</stored-value>
       </pair>
       <pair>
-        <displayed-value>POVERTY /FOOD SECURITY/LIVELIHOODS</displayed-value>
-        <stored-value>POVERTY /FOOD SECURITY/LIVELIHOODS</stored-value>
+        <displayed-value>POVERTY/FOOD SECURITY/LIVELIHOODS</displayed-value>
+        <stored-value>POVERTY/FOOD SECURITY/LIVELIHOODS</stored-value>
       </pair>
       <pair>
         <displayed-value>PRIVATE SECTOR PARTICIPATION</displayed-value>
         <stored-value>PRIVATE SECTOR PARTICIPATION</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>RAINWATER</displayed-value>
+        <stored-value>RAINWATER</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>RESOURCE RECOVERY/REUSE</displayed-value>
+        <stored-value>RESOURCE RECOVERY/REUSE</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>RIVER BASINS</displayed-value>
+        <stored-value>RIVER BASINS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>RURAL URBAN LINKAGE</displayed-value>
+        <stored-value>RURAL URBAN LINKAGE</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>SANITATION</displayed-value>
+        <stored-value>SANITATION</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>SMALLHOLDERS</displayed-value>
+        <stored-value>SMALLHOLDERS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>SOCIO-ECONOMICS</displayed-value>
+        <stored-value>SOCIO-ECONOMICS</stored-value>
       </pair>
       <pair>
         <displayed-value>SOILS</displayed-value>
@@ -3488,6 +3536,10 @@
       <pair>
         <displayed-value>WATER PRODUCTIVITY</displayed-value>
         <stored-value>WATER PRODUCTIVITY</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>WATER QUALITY/POLLUTION</displayed-value>
+        <stored-value>WATER QUALITY/POLLUTION</stored-value>
       </pair>
       <pair>
         <displayed-value>WATER STORAGE</displayed-value>
@@ -5172,6 +5224,10 @@
       <pair>
         <displayed-value>GENERAL PUBLIC</displayed-value>
         <stored-value>GENERAL PUBLIC</stored-value>
+        <pair>
+          <displayed-value>N/A</displayed-value>
+          <stored-value></stored-value>
+        </pair>
       </pair>
     </value-pairs>
   </form-value-pairs>
