@@ -2989,20 +2989,188 @@
     </value-pairs>
     <value-pairs value-pairs-name="bioversity" dc-term="subject_bioversity">
       <pair>
-        <displayed-value>EX SITU CONSERVATION</displayed-value>
-        <stored-value>EX SITU CONSERVATION</stored-value>
+        <displayed-value>AGRICULTURE</displayed-value>
+        <stored-value>AGRICULTURE</stored-value>
       </pair>
       <pair>
-        <displayed-value>REGENERATION</displayed-value>
-        <stored-value>REGENERATION</stored-value>
+        <displayed-value>BANANA</displayed-value>
+        <stored-value>BANANA</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>BIODIVERSITY</displayed-value>
+        <stored-value>BIODIVERSITY</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>CACAO</displayed-value>
+        <stored-value>CACAO</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>CAPACITY DEVELOPMENT</displayed-value>
+        <stored-value>CAPACITY DEVELOPMENT</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>CLIMATE CHANGE</displayed-value>
+        <stored-value>CLIMATE CHANGE</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>COCONUT</displayed-value>
+        <stored-value>COCONUT</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>CONSERVATION AND USE</displayed-value>
+        <stored-value>CONSERVATION AND USE</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>CROP PRODUCTION</displayed-value>
+        <stored-value>CROP PRODUCTION</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>CROP WILD RELATIVES</displayed-value>
+        <stored-value>CROP WILD RELATIVES</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>DOCUMENTATION</displayed-value>
+        <stored-value>DOCUMENTATION</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>ECONOMICS</displayed-value>
+        <stored-value>ECONOMICS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>ECOSYSTEM SERVICES</displayed-value>
+        <stored-value>ECOSYSTEM SERVICES</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>EXTENSION</displayed-value>
+        <stored-value>EXTENSION</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>FARMING SYSTEMS</displayed-value>
+        <stored-value>FARMING SYSTEMS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>FOOD SECURITY</displayed-value>
+        <stored-value>FOOD SECURITY</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>FOOD SYSTEMS</displayed-value>
+        <stored-value>FOOD SYSTEMS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>FORESTRY</displayed-value>
+        <stored-value>FORESTRY</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>GENDER</displayed-value>
+        <stored-value>GENDER</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>GERMPLASM CONSERVATION</displayed-value>
+        <stored-value>GERMPLASM CONSERVATION</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>GOVERNANCE</displayed-value>
+        <stored-value>GOVERNANCE</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>HEALTH</displayed-value>
+        <stored-value>HEALTH</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>HOME GARDENS</displayed-value>
+        <stored-value>HOME GARDENS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>IMPACT ASSESSMENT</displayed-value>
+        <stored-value>IMPACT ASSESSMENT</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>INDIGENOUS KNOWLEDGE</displayed-value>
+        <stored-value>INDIGENOUS KNOWLEDGE</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>INFORMATICS</displayed-value>
+        <stored-value>INFORMATICS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>INFORMATION SYSTEMS</displayed-value>
+        <stored-value>INFORMATION SYSTEMS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>KNOWLEDGE AND INFORMATION</displayed-value>
+        <stored-value>KNOWLEDGE AND INFORMATION</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>LIVELIHOODS</displayed-value>
+        <stored-value>LIVELIHOODS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>MARKETS</displayed-value>
+        <stored-value>MARKETS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>NATURAL RESOURCE MANAGEMENT</displayed-value>
+        <stored-value>NATURAL RESOURCE MANAGEMENT</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>NEGLECTED AND UNDERUTILIZED SPECIES</displayed-value>
+        <stored-value>NEGLECTED AND UNDERUTILIZED SPECIES</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>NUTRITION</displayed-value>
+        <stored-value>NUTRITION</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>PESTS AND DISEASE</displayed-value>
+        <stored-value>PESTS AND DISEASE</stored-value>
       </pair>
       <pair>
         <displayed-value>PLANT GENETIC RESOURCES</displayed-value>
         <stored-value>PLANT GENETIC RESOURCES</stored-value>
       </pair>
       <pair>
-        <displayed-value>BIODIVERSITY</displayed-value>
-        <stored-value>BIODIVERSITY</stored-value>
+        <displayed-value>POLICY RESEARCH</displayed-value>
+        <stored-value>POLICY RESEARCH</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>RESILIENCE</displayed-value>
+        <stored-value>RESILIENCE</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>RESTORATION</displayed-value>
+        <stored-value>RESTORATION</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>RURAL COMMUNITIES</displayed-value>
+        <stored-value>RURAL COMMUNITIES</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>SEEDS /SEED SYSTEMS</displayed-value>
+        <stored-value>SEEDS /SEED SYSTEMS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>SMALLHOLDER FARMERS</displayed-value>
+        <stored-value>SMALLHOLDER FARMERS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>STANDARDS</displayed-value>
+        <stored-value>STANDARDS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>SUSTAINABILITY</displayed-value>
+        <stored-value>SUSTAINABILITY</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>TREE CROPS</displayed-value>
+        <stored-value>TREE CROPS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>VALUE CHAINS</displayed-value>
+        <stored-value>VALUE CHAINS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>WOMEN</displayed-value>
+        <stored-value>WOMEN</stored-value>
       </pair>
     </value-pairs>
     <value-pairs value-pairs-name="anancy" dc-term="subject_anancy">
