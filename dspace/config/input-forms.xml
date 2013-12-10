@@ -5224,10 +5224,10 @@
       <pair>
         <displayed-value>GENERAL PUBLIC</displayed-value>
         <stored-value>GENERAL PUBLIC</stored-value>
-        <pair>
-          <displayed-value>N/A</displayed-value>
-          <stored-value></stored-value>
-        </pair>
+      </pair>
+      <pair>
+        <displayed-value>N/A</displayed-value>
+        <stored-value></stored-value>
       </pair>
     </value-pairs>
   </form-value-pairs>
