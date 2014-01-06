@@ -109,7 +109,7 @@
 
                     <span class="content" style="width: {$metadataWidth - 110}px;">
                       <xsl:for-each select="//dim:field[@element='contributor'and @qualifier='author']">
-                <a href="/browse?value={.}&amp;type=author"><xsl:value-of select="."/></a><xsl:if test="position()!=last()"><xsl:text>, </xsl:text></xsl:if>
+                <a href="/browse?value={.}&amp;type=author"><xsl:value-of select="."/></a><xsl:if test="position()!=last()"><xsl:text>; </xsl:text></xsl:if>
                       </xsl:for-each>
                     </span>
                 </xsl:element>
