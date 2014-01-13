@@ -77,9 +77,9 @@ select.multiple {
 #ds-header-logo {
     float:left;
     width: 980px;
-    height: 98px;
+    height: 108px;
     margin-top: 10px;
-    background: url("../../images/banner.jpg");
+    background: url("../../images/banner.png");
     background-repeat: no-repeat;
     background-color: transparent;
     margin-right: 15px;
