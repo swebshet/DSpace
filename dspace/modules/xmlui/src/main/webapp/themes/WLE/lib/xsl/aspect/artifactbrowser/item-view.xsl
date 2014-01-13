@@ -171,7 +171,7 @@
 					<xsl:for-each select="//dim:field[@element='contributor'and @qualifier='author']">
                       <xsl:variable name="lnk"><xsl:value-of select="."/></xsl:variable>
 
-                            <a href="/browse?value={.}&amp;type=author"><xsl:value-of select="."/></a><xsl:if test="position()!=last()"><xsl:text>, </xsl:text></xsl:if>
+                            <a href="/browse?value={.}&amp;type=author"><xsl:value-of select="."/></a><xsl:if test="position()!=last()"><xsl:text>; </xsl:text></xsl:if>
 
                     </xsl:for-each>
 
@@ -676,15 +676,14 @@
 
 
 
-		<!-- CCAFS Subject row -->
-		<xsl:when test="$clause = 22 and (dim:field[@element='ccsubject' and @qualifier='ccafsubject'])">
+		<xsl:when test="$clause = 22 and (dim:field[@element='subject' and @qualifier='wle'])">
                     <tr class="ds-table-row {$phase}">
 	                <td><span class="bold"><i18n:text>Subject Focus</i18n:text>:</span></td>
 	                <td>
-	                <xsl:for-each select="//dim:field[@element='ccsubject'and @qualifier='ccafsubject']">
+	                <xsl:for-each select="//dim:field[@element='subject'and @qualifier='wle']">
                       <xsl:variable name="lnk"><xsl:value-of select="."/></xsl:variable>
 
-                            <a href="/browse?value={.}&amp;type=ccafsubject"><xsl:value-of select="."/></a><xsl:if test="position()!=last()"><xsl:text>, </xsl:text></xsl:if>
+                            <a href="/browse?value={.}&amp;type=wlesubject"><xsl:value-of select="."/></a><xsl:if test="position()!=last()"><xsl:text>, </xsl:text></xsl:if>
 
                     </xsl:for-each>
 	                </td>
