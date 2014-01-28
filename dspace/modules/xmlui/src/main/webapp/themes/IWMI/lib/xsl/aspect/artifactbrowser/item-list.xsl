@@ -129,7 +129,7 @@
 
 
 
-            <span class="bold"><i18n:text>IWMI Subject Focus</i18n:text><xsl:text>:</xsl:text></span>
+            <span class="bold"><i18n:text>Subject Focus</i18n:text><xsl:text>:</xsl:text></span>
             <span class="content" style="width: {$metadataWidth - 110}px;">
                 <xsl:element name="a">
                     <xsl:attribute name="href">
