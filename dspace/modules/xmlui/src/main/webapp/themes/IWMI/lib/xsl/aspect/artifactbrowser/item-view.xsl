@@ -733,7 +733,7 @@
             <!-- IWMI Subject row -->
 		<xsl:when test="$clause = 23 and (dim:field[@element='iwsubject' and @qualifier='iwmisubject'])">
                     <tr class="ds-table-row {$phase}">
-	                <td><span class="bold"><i18n:text>IWMI Subject Focus</i18n:text>:</span></td>
+	                <td><span class="bold"><i18n:text>Subject Focus</i18n:text>:</span></td>
 	                <td>
 	                <xsl:for-each select="//dim:field[@element='iwsubject'and @qualifier='iwmisubject']">
                       <xsl:variable name="lnk"><xsl:value-of select="."/></xsl:variable>
