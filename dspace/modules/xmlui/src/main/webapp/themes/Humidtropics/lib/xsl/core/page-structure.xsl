@@ -311,11 +311,6 @@
             <div id="ds-header" class="clearfix">
                 <a id="ds-header-logo-link">
                      <a href="http://humidtropics.cgiar.org" target="_blank"></a>
-                 <!--   <xsl:attribute name="href">
-                        <xsl:value-of
-                                select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]"/>
-                        <xsl:text>/</xsl:text>
-                    </xsl:attribute> -->
                     <span id="ds-header-logo">&#160;</span>
 
                 </a>
@@ -612,6 +607,7 @@
         <script type="text/javascript">
             runAfterJSImports.execute();
         </script>
+
 
 		<script type="text/javascript">
 			var _gaq = _gaq || [];
