@@ -618,7 +618,7 @@
 
 		<xsl:when test="$clause = 19 and (dim:field[@element='cplace' and @qualifier='country'])">
                     <tr class="ds-table-row {$phase}">
-	                <td><span class="bold"><i18n:text>Country</i18n:text>:</span></td>
+	                <td><span class="bold"><i18n:text>Country Focus</i18n:text>:</span></td>
 	                <td>
 	                <xsl:for-each select="//dim:field[@element='cplace'and @qualifier='country']">
                       <xsl:variable name="lnk"><xsl:value-of select="."/></xsl:variable>
@@ -638,7 +638,7 @@
          <!-- Region Focus row -->
 		<xsl:when test="$clause = 20 and (dim:field[@element='rplace' and @qualifier='region'])">
                     <tr class="ds-table-row {$phase}">
-	                <td><span class="bold"><i18n:text>Region</i18n:text>:</span></td>
+	                <td><span class="bold"><i18n:text>Region Focus</i18n:text>:</span></td>
 	                <td>
 	                <xsl:for-each select="//dim:field[@element='rplace'and @qualifier='region']">
                       <xsl:variable name="lnk"><xsl:value-of select="."/></xsl:variable>
