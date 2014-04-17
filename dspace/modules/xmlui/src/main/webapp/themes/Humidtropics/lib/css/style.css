@@ -1014,6 +1014,11 @@ div.spacer{
 
 .item-metadata {
     float: left;
+    font-size: 11px;
+}
+
+.item-metadata a {
+    font-size: 11px;
 }
 
 .file-metadata {
