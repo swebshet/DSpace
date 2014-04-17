@@ -28,8 +28,8 @@
 		-->
 		<map:component-configurations>
 			<global-variables>
-				<theme-path>HUMIDTROPICS</theme-path>
-				<theme-name>HUMIDTROPICS</theme-name>
+				<theme-path>Humidtropics</theme-path>
+				<theme-name>Humidtropics</theme-name>
 			</global-variables>
         </map:component-configurations>
 
