@@ -78,12 +78,11 @@ select.multiple {
     float:left;
     width: 980px;
     height: 96px;
-    margin-top: 10px;
+    margin-top: 0px;
     background: url("../../images/banner.jpg");
     background-repeat: no-repeat;
     background-color: transparent;
     margin-right: 15px;
-    margin-top: 0px;
 }
 
 #ds-header-logo-text {
