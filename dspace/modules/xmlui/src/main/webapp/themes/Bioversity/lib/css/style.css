@@ -78,12 +78,11 @@ select.multiple {
     float:left;
     width: 980px;
     height: 96px;
-    margin-top: 10px;
+    margin-top: 0px;
     background: url("../../images/banner.jpg");
     background-repeat: no-repeat;
     background-color: transparent;
     margin-right: 15px;
-    margin-top: 0px;
 }
 
 #ds-header-logo-text {
@@ -1022,6 +1021,11 @@ div.spacer{
 
 .item-metadata {
     float: left;
+    font-size: 11px;
+}
+
+.item-metadata a {
+    font-size: 11px;
 }
 
 .file-metadata {
@@ -1173,6 +1177,6 @@ margin: 2px 2px 0px 2px;
 /* border: 1px solid rgb(240, 240, 210); */
 }
 
-table.ds-includeSet-table {
+table.ds-includeSet-table, table.file-list {
     margin-left: 10px;
 }
