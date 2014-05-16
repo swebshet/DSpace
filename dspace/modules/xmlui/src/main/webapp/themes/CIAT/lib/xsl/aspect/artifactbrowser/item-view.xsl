@@ -31,7 +31,9 @@
     xmlns:xalan="http://xml.apache.org/xalan"
     xmlns:encoder="xalan://java.net.URLEncoder"
     xmlns:util="org.dspace.app.xmlui.utils.XSLUtils"
-    exclude-result-prefixes="xalan encoder i18n dri mets dim xlink xsl util">
+    xmlns:jstring="java.lang.String"
+    xmlns:rights="http://cosimo.stanford.edu/sdr/metsrights/"
+    exclude-result-prefixes="xalan encoder i18n dri mets dim xlink xsl util jstring rights">
 
     <xsl:output indent="yes"/>
 
