@@ -314,11 +314,6 @@
             <div id="ds-header" class="clearfix">
                 <a id="ds-header-logo-link">
                      <a href="http://ciat.cgiar.org" target="_blank"></a>
-                 <!--   <xsl:attribute name="href">
-                        <xsl:value-of
-                                select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]"/>
-                        <xsl:text>/</xsl:text>
-                    </xsl:attribute> -->
                     <span id="ds-header-logo">&#160;</span>
 
                 </a>
