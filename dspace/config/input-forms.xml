@@ -2617,6 +2617,10 @@
         <stored-value>AGRI-HEALTH</stored-value>
       </pair>
       <pair>
+        <displayed-value>AFLATOXINS</displayed-value>
+        <stored-value>AFLATOXINS</stored-value>
+      </pair>
+      <pair>
         <displayed-value>ANIMAL BREEDING</displayed-value>
         <stored-value>ANIMAL BREEDING</stored-value>
       </pair>
