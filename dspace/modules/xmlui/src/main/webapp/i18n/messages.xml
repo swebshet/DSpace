@@ -364,6 +364,7 @@
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_anancy">By Anancy Subject</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_wlesubject">By WLE Subject</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_bioversity">By Bioversity Subject</message>
+	<message key="xmlui.ArtifactBrowser.Navigation.browse_ciat">By CIAT Subject</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_subregion">By Sub Region</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_crpsubject">By CRP Subject</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_basin">By River Basin</message>
