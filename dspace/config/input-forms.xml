@@ -493,6 +493,16 @@
         <field>
           <dc-schema>cg</dc-schema>
           <dc-element>subject</dc-element>
+          <dc-qualifier>ciat</dc-qualifier>
+          <repeatable>true</repeatable>
+          <label>CIAT Subject Focus</label>
+          <input-type value-pairs-name="ciat">dropdown</input-type>
+          <hint></hint>
+          <required></required>
+        </field>
+        <field>
+          <dc-schema>cg</dc-schema>
+          <dc-element>subject</dc-element>
           <dc-qualifier>anancy</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Anancy (CTA) Subject Focus</label>
@@ -3583,6 +3593,132 @@
       <pair>
         <displayed-value>VULNERABLE GROUPS</displayed-value>
         <stored-value>VULNERABLE GROUPS</stored-value>
+      </pair>
+    </value-pairs>
+    <value-pairs value-pairs-name="ciat" dc-term="subject_ciat">
+      <pair>
+        <displayed-value>AGROFORESTRY</displayed-value>
+        <stored-value>AGROFORESTRY</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>BEANS</displayed-value>
+        <stored-value>BEANS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>BIODIVERSITY</displayed-value>
+        <stored-value>BIODIVERSITY</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>BIOFORTIFICATION</displayed-value>
+        <stored-value>BIOFORTIFICATION</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>CASSAVA</displayed-value>
+        <stored-value>CASSAVA</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>CLIMATE CHANGE ADAPTATION</displayed-value>
+        <stored-value>CLIMATE CHANGE ADAPTATION</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>CLIMATE CHANGE MITIGATION</displayed-value>
+        <stored-value>CLIMATE CHANGE MITIGATION</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>ECOSYSTEMS SERVICES</displayed-value>
+        <stored-value>ECOSYSTEMS SERVICES</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>FARMING SYSTEMS</displayed-value>
+        <stored-value>FARMING SYSTEMS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>GENDER AND EQUITY</displayed-value>
+        <stored-value>GENETIC RESOURCES</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>GENETIC RESOURCES</displayed-value>
+        <stored-value>GENETIC RESOURCES</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>IMPACT ASSESSMENT</displayed-value>
+        <stored-value>IMPACT ASSESSMENT</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>KNOWLEDGE MANAGEMENT</displayed-value>
+        <stored-value>KNOWLEDGE MANAGEMENT</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>LAND USE</displayed-value>
+        <stored-value>LAND USE</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>LIVELIHOODS</displayed-value>
+        <stored-value>LIVELIHOODS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>LIVESTOCK</displayed-value>
+        <stored-value>LIVESTOCK</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>MARKETS</displayed-value>
+        <stored-value>MARKETS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>MONITORING AND REPORTING</displayed-value>
+        <stored-value>MONITORING AND REPORTING</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>NUTRITION</displayed-value>
+        <stored-value>NUTRITION</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>PARTICIPATORY RESEARCH</displayed-value>
+        <stored-value>PARTICIPATORY RESEARCH</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>PESTS AND DISEASES</displayed-value>
+        <stored-value>PESTS AND DISEASES</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>PLANT BREEDING</displayed-value>
+        <stored-value>PLANT BREEDING</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>POLICY</displayed-value>
+        <stored-value>POLICY</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>RICE</displayed-value>
+        <stored-value>RICE</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>SEED SYSTEMS</displayed-value>
+        <stored-value>SEED SYSTEMS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>SOIL HEALTH</displayed-value>
+        <stored-value>SOIL HEALTH</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>SOIL INFORMATION</displayed-value>
+        <stored-value>SOIL INFORMATION</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>SOIL LANDSCAPES</displayed-value>
+        <stored-value>SOIL LANDSCAPES</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>SOIL LANDSCAPES</displayed-value>
+        <stored-value>SOIL LANDSCAPES</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>TROPICAL FORAGES</displayed-value>
+        <stored-value>TROPICAL FORAGES</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>WATER</displayed-value>
+        <stored-value>WATER</stored-value>
       </pair>
     </value-pairs>
     <value-pairs value-pairs-name="anancy" dc-term="subject_anancy">
