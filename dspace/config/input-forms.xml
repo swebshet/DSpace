@@ -2416,20 +2416,24 @@
         <stored-value>Audio</stored-value>
       </pair>
       <pair>
-        <displayed-value>Book or Monograph</displayed-value>
-        <stored-value>Book or Monograph</stored-value>
+        <displayed-value>Blog</displayed-value>
+        <stored-value>Blog</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>Book</displayed-value>
+        <stored-value>Book</stored-value>
       </pair>
       <pair>
         <displayed-value>Book Chapter</displayed-value>
         <stored-value>Book Chapter</stored-value>
       </pair>
       <pair>
-        <displayed-value>Blog</displayed-value>
-        <stored-value>Blog</stored-value>
+        <displayed-value>Brief</displayed-value>
+        <stored-value>Brief</stored-value>
       </pair>
       <pair>
-        <displayed-value>Brochure or Flyer</displayed-value>
-        <stored-value>Brochure or Flyer</stored-value>
+        <displayed-value>Brochure</displayed-value>
+        <stored-value>Brochure</stored-value>
       </pair>
       <pair>
         <displayed-value>Case Study</displayed-value>
@@ -2460,6 +2464,10 @@
         <stored-value>Journal Article</stored-value>
       </pair>
       <pair>
+        <displayed-value>Journal Item</displayed-value>
+        <stored-value>Journal Item</stored-value>
+      </pair>
+      <pair>
         <displayed-value>Internal Document</displayed-value>
         <stored-value>Internal Document</stored-value>
       </pair>
@@ -2480,6 +2488,10 @@
         <stored-value>Map</stored-value>
       </pair>
       <pair>
+        <displayed-value>Mobile Message</displayed-value>
+        <stored-value>Mobile Message</stored-value>
+      </pair>
+      <pair>
         <displayed-value>News Item</displayed-value>
         <stored-value>News Item</stored-value>
       </pair>
@@ -2488,44 +2500,40 @@
         <stored-value>Newsletter</stored-value>
       </pair>
       <pair>
-        <displayed-value>Policy Brief</displayed-value>
-        <stored-value>Policy Brief</stored-value>
-      </pair>
-      <pair>
         <displayed-value>Poster</displayed-value>
         <stored-value>Poster</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>Press Item</displayed-value>
-        <stored-value>Press Item</stored-value>
       </pair>
       <pair>
         <displayed-value>Presentation</displayed-value>
         <stored-value>Presentation</stored-value>
       </pair>
       <pair>
-        <displayed-value>Project Report</displayed-value>
-        <stored-value>Project Report</stored-value>
+        <displayed-value>Press Item</displayed-value>
+        <stored-value>Press Item</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>Report</displayed-value>
+        <stored-value>Report</stored-value>
       </pair>
       <pair>
         <displayed-value>Software</displayed-value>
         <stored-value>Software</stored-value>
       </pair>
       <pair>
-        <displayed-value>Technical Report</displayed-value>
-        <stored-value>Technical Report</stored-value>
+        <displayed-value>Source Code</displayed-value>
+        <stored-value>Source Code</stored-value>
       </pair>
       <pair>
         <displayed-value>Template</displayed-value>
         <stored-value>Template</stored-value>
       </pair>
       <pair>
-        <displayed-value>Thesis or Dissertation</displayed-value>
-        <stored-value>Thesis or Dissertation</stored-value>
+        <displayed-value>Thesis</displayed-value>
+        <stored-value>Thesis</stored-value>
       </pair>
       <pair>
-        <displayed-value>Training Module or Learning Object</displayed-value>
-        <stored-value>Training Module or Learning Object</stored-value>
+        <displayed-value>Training Material</displayed-value>
+        <stored-value>Training Material</stored-value>
       </pair>
       <pair>
         <displayed-value>Video</displayed-value>
