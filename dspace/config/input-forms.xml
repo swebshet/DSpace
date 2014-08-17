@@ -2645,6 +2645,10 @@
         <stored-value>AGRI-HEALTH</stored-value>
       </pair>
       <pair>
+        <displayed-value>AGROFORESTRY</displayed-value>
+        <stored-value>AGROFORESTRY</stored-value>
+      </pair>
+      <pair>
         <displayed-value>AFLATOXINS</displayed-value>
         <stored-value>AFLATOXINS</stored-value>
       </pair>
@@ -2691,6 +2695,10 @@
       <pair>
         <displayed-value>BIOTECHNOLOGY</displayed-value>
         <stored-value>BIOTECHNOLOGY</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>BIRD FLU</displayed-value>
+        <stored-value>BIRD FLU</stored-value>
       </pair>
       <pair>
         <displayed-value>BREEDS</displayed-value>
@@ -2849,8 +2857,8 @@
         <stored-value>HIV-AIDS</stored-value>
       </pair>
       <pair>
-        <displayed-value>HUMIDTROPICS</displayed-value>
-        <stored-value>HUMIDTROPICS</stored-value>
+        <displayed-value>HUMID TROPICS</displayed-value>
+        <stored-value>HUMID TROPICS</stored-value>
       </pair>
       <pair>
         <displayed-value>IMPACT ASSESSMENT</displayed-value>
@@ -2903,6 +2911,10 @@
       <pair>
         <displayed-value>NUTRITION</displayed-value>
         <stored-value>NUTRITION</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>PARTICIPATION</displayed-value>
+        <stored-value>PARTICIPATION</stored-value>
       </pair>
       <pair>
         <displayed-value>PASTORALISM</displayed-value>
