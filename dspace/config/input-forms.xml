@@ -2597,6 +2597,10 @@
         <stored-value>it</stored-value>
       </pair>
       <pair>
+        <displayed-value>Portuguese</displayed-value>
+        <stored-value>pt</stored-value>
+      </pair>
+      <pair>
         <displayed-value>Japanese</displayed-value>
         <stored-value>ja</stored-value>
       </pair>
