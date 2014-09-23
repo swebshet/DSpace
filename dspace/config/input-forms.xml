@@ -2613,6 +2613,10 @@
         <stored-value>other</stored-value>
       </pair>
       <pair>
+        <displayed-value>Turkish</displayed-value>
+        <stored-value>tr</stored-value>
+      </pair>
+      <pair>
         <displayed-value>Vietnamese</displayed-value>
         <stored-value>vi</stored-value>
       </pair>
@@ -5654,4 +5658,5 @@
       </pair>
     </value-pairs>
   </form-value-pairs>
+
 </input-forms>
