@@ -3809,6 +3809,10 @@
         <stored-value>CANAL IRRIGATION</stored-value>
       </pair>
       <pair>
+        <displayed-value>CAPACITY DEVELOPMENT</displayed-value>
+        <stored-value>CAPACITY DEVELOPMENT</stored-value>
+      </pair>
+      <pair>
         <displayed-value>CLIMATE CHANGE</displayed-value>
         <stored-value>CLIMATE CHANGE</stored-value>
       </pair>
@@ -3841,6 +3845,10 @@
         <stored-value>ENERGY</stored-value>
       </pair>
       <pair>
+        <displayed-value>FARMING SYSTEMS</displayed-value>
+        <stored-value>FARMING SYSTEMS</stored-value>
+      </pair>
+      <pair>
         <displayed-value>FLOODS</displayed-value>
         <stored-value>FLOODS</stored-value>
       </pair>
@@ -3869,6 +3877,14 @@
         <stored-value>IMPACT</stored-value>
       </pair>
       <pair>
+        <displayed-value>IMPACT ASSESSMENT</displayed-value>
+        <stored-value>IMPACT ASSESSMENT</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>INNOVATION SYSTEMS</displayed-value>
+        <stored-value>INNOVATION SYSTEMS</stored-value>
+      </pair>
+      <pair>
         <displayed-value>INSTITUTIONS/GOVERNANCE/POLICIES/REFORMS</displayed-value>
         <stored-value>INSTITUTIONS/GOVERNANCE/POLICIES/REFORMS</stored-value>
       </pair>
@@ -3887,6 +3903,10 @@
       <pair>
         <displayed-value>IRRIGATION</displayed-value>
         <stored-value>IRRIGATION</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>KNOWLEDGE AND INFORMATION</displayed-value>
+        <stored-value>KNOWLEDGE AND INFORMATION</stored-value>
       </pair>
       <pair>
         <displayed-value>LAND DEGRADATION</displayed-value>
@@ -3929,6 +3949,10 @@
         <stored-value>RAINWATER</stored-value>
       </pair>
       <pair>
+        <displayed-value>RESEARCH</displayed-value>
+        <stored-value>RESEARCH</stored-value>
+      </pair>
+      <pair>
         <displayed-value>RESOURCE RECOVERY/REUSE</displayed-value>
         <stored-value>RESOURCE RECOVERY/REUSE</stored-value>
       </pair>
@@ -3957,6 +3981,14 @@
         <stored-value>SOILS</stored-value>
       </pair>
       <pair>
+        <displayed-value>STAKEHOLERS</displayed-value>
+        <stored-value>STAKEHOLERS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>URBAN AGRICULTURE</displayed-value>
+        <stored-value>URBAN AGRICULTURE</stored-value>
+      </pair>
+      <pair>
         <displayed-value>WASTEWATER</displayed-value>
         <stored-value>WASTEWATER</stored-value>
       </pair>
@@ -3977,12 +4009,20 @@
         <stored-value>WATER STORAGE</stored-value>
       </pair>
       <pair>
+        <displayed-value>WATER USE</displayed-value>
+        <stored-value>WATER USE</stored-value>
+      </pair>
+      <pair>
         <displayed-value>WATER VARIABILITY</displayed-value>
         <stored-value>WATER VARIABILITY</stored-value>
       </pair>
       <pair>
         <displayed-value>WATER-FOOD-ENERGY NEXUS</displayed-value>
         <stored-value>WATER-FOOD-ENERGY NEXUS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>WETLANDS</displayed-value>
+        <stored-value>WETLANDS</stored-value>
       </pair>
     </value-pairs>
     <value-pairs value-pairs-name="cpwfsubject" dc-term="cpsubject_cpwfsubject">
