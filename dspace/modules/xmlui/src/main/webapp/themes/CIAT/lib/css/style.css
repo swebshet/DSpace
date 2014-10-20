@@ -283,10 +283,10 @@ div.ds-option-set ul.sublist {
     padding-bottom: 4px;
     }
 div.ds-option-set a{
-   font-size: 11px;
+   font-size: 12px;
    }
 div.ds-option-set a:hover{
-   font-size: 11px;
+   font-size: 12px;
    }
 #ds-search-option {
     padding: 10px;
@@ -1012,11 +1012,11 @@ div.spacer{
 
 .item-metadata {
     float: left;
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .item-metadata a {
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .file-metadata {
