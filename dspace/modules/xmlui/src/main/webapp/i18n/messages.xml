@@ -2403,7 +2403,7 @@
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.ciforsubject">CIFOR Subject Focus</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.country">Country Focus</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.iso">Language</message>
-    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.ilrisubject">Ilri Subject Focus</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.ilrisubject">ILRI Subject Focus</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.isijournal">ISI Journal</message>
 
     <message key="xmlui.reporting-suite.statistics.contentanalysis.dc.date.issued">Time</message>
@@ -2419,7 +2419,7 @@
     <message key="xmlui.reporting-suite.statistics.contentanalysis.ciforsubject">CIFOR Subject Focus</message>
     <message key="xmlui.reporting-suite.statistics.contentanalysis.country">Country Focus</message>
     <message key="xmlui.reporting-suite.statistics.contentanalysis.iso">Language</message>
-    <message key="xmlui.reporting-suite.statistics.contentanalysis.ilrisubject">Ilri Subject Focus</message>
+    <message key="xmlui.reporting-suite.statistics.contentanalysis.ilrisubject">ILRI Subject Focus</message>
     <message key="xmlui.reporting-suite.statistics.contentanalysis.isijournal">ISI Journal</message>
     <!--end CUA-->
 
