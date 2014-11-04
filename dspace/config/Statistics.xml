@@ -1,33 +1,6 @@
 <pages>
 
     <item-display>
-        <listings>
-            <listing id="list1"> <!-- top 10 countries for this item -->
-                <datasetgenerators>
-
-                    <datasetgenerator type="org.dspace.statistics.content.DatasetTypeGenerator">
-                        <solrfield>countryCode</solrfield>
-                        <limit type="top">
-                            <n>5</n>
-                        </limit>
-                    </datasetgenerator>
-                    <datasetgenerator type="org.dspace.statistics.content.TopNDSODatasetGenerator">
-                        <dsotype>2</dsotype>
-                        <limit type="top">
-                            <n>10</n>
-                        </limit>
-                    </datasetgenerator>
-                </datasetgenerators>
-                <filters>
-                    <filter type="org.dspace.statistics.content.filter.StatisticsHitTypeFilter">
-                        <dsotype>2</dsotype>
-                    </filter>
-                </filters>
-                <position>
-                    ??? <!-- specify positions in pages -->
-                </position>
-            </listing>
-        </listings>
         <graphs>
             <graph id="graph1" type="category3d">
                 <styles>
