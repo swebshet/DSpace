@@ -1158,6 +1158,7 @@
     </xsl:template>
 
 
+    <!--This template hides the 'statistics by country' entry in navigation-->
     <xsl:template match="/dri:document/dri:options/dri:list/dri:item/dri:xref[@target=concat($context-path,'/statistics-by-country')]">
     </xsl:template>
 
