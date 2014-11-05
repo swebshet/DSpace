@@ -45,7 +45,7 @@
                 <entry key="general_cua" value-ref="cuaConfig"/>
 
                 <!--Use site to override the default configuration for the home page & default discovery page-->
-                <!--<entry key="site" value-ref="defaultConfiguration" />-->
+                <entry key="site" value-ref="homepageConfiguration" />
                 <!--<entry key="123456789/7621" value-ref="defaultConfiguration"/>-->
             </map>
         </property>
