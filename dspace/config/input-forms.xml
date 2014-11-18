@@ -133,6 +133,16 @@
         </field>
         <field>
           <dc-schema>dc</dc-schema>
+          <dc-element>contributor</dc-element>
+          <dc-qualifier>corporate</dc-qualifier>
+          <repeatable>true</repeatable>
+          <label>Corporate Authors</label>
+          <input-type>name</input-type>
+          <hint>Enter the names of the corporate authors of this item below.</hint>
+          <required></required>
+        </field>
+        <field>
+          <dc-schema>dc</dc-schema>
           <dc-element>title</dc-element>
           <dc-qualifier></dc-qualifier>
           <repeatable>false</repeatable>
@@ -397,6 +407,26 @@
         </field>
         <field>
           <dc-schema>dc</dc-schema>
+          <dc-element>contributor</dc-element>
+          <dc-qualifier>affiliation</dc-qualifier>
+          <repeatable>false</repeatable>
+          <label>Affilation</label>
+          <input-type>onebox</input-type>
+          <hint>Enter Affiliation.</hint>
+          <required>Required</required>
+        </field>
+        <field>
+          <dc-schema>dc</dc-schema>
+          <dc-element>description</dc-element>
+          <dc-qualifier>version</dc-qualifier>
+          <repeatable>false</repeatable>
+          <label>Peer Status</label>
+          <input-type>onebox</input-type>
+          <hint>Enter peer status.</hint>
+          <required>Required</required>
+        </field>
+        <field>
+          <dc-schema>dc</dc-schema>
           <dc-element>relation</dc-element>
           <dc-qualifier>ispartofseries</dc-qualifier>
           <repeatable>true</repeatable>
@@ -648,6 +678,15 @@
           <label>Country Focus</label>
           <input-type value-pairs-name="countrylist">dropdown</input-type>
           <hint>Enter a country or countries</hint>
+          <required></required>
+        </field>
+        <field>
+          <dc-schema>dc</dc-schema>
+          <dc-element>format</dc-element>
+          <dc-qualifier>extent</dc-qualifier>
+          <repeatable>true</repeatable>
+          <label>Country Focus</label>
+          <input-type>onebox</input-type>
           <required></required>
         </field>
         <field>
