@@ -413,7 +413,7 @@
           <label>Affilation</label>
           <input-type>onebox</input-type>
           <hint>Enter Affiliation.</hint>
-          <required>Required</required>
+          <required></required>
         </field>
         <field>
           <dc-schema>dc</dc-schema>
@@ -423,7 +423,6 @@
           <label>Peer Status</label>
           <input-type>onebox</input-type>
           <hint>Enter peer status.</hint>
-          <required>Required</required>
         </field>
         <field>
           <dc-schema>dc</dc-schema>
