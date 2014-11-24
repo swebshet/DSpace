@@ -134,7 +134,7 @@
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_iwmisubject">IWMI Subject</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_subregion">Sub Region</message>
 
-    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_crpsubject">CGIAR research program</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_crpsubject">CGIAR Research Program</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_basin">River Basin</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_output">Output Type</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_cta">CTA Subject</message>
@@ -377,6 +377,7 @@
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.head">Search</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.search_scope">Search Scope</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.full_text_search">Full Text Search</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.crpsubject">CRP Subject</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.RestrictedItem.java -->
 	<message key="xmlui.ArtifactBrowser.RestrictedItem.title">This resource is restricted</message>
