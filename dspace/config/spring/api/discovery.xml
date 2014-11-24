@@ -213,6 +213,7 @@
                 <ref bean="searchFilterTitle" />
                 <ref bean="searchFilterAuthor" />
                 <ref bean="searchFilterSubject" />
+                <ref bean="searchFilterCrpsubject" />
                 <ref bean="searchFilterIssued" />
             </list>
         </property>
