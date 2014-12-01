@@ -236,30 +236,6 @@
         <!--</datasetgenerators>-->
         <!--</graph>-->
         <!--</graphs>-->
-        <tables>
-            <table id="tab1">
-                <datasetgenerators>
-                    <datasetgenerator type="org.dspace.statistics.content.DatasetTimeGenerator" includetotal="true">
-                        <period type="month" start="-4" end="+1"/>
-                        <!-- past 5 months -->
-                    </datasetgenerator>
-                    <datasetgenerator type="org.dspace.statistics.content.TopNDSODatasetGenerator">
-                        <dsotype>3</dsotype>
-                        <limit type="top">
-                            <n>5</n>
-                        </limit>
-                    </datasetgenerator>
-                </datasetgenerators>
-                <filters>
-                    <filter type="org.dspace.statistics.content.filter.StatisticsHitTypeFilter">
-                        <dsotype>3</dsotype>
-                    </filter>
-                </filters>
-                <position>
-                    <css>clear: both</css>
-                </position>
-            </table>
-        </tables>
     </collection-home>
 
     <community-home>
