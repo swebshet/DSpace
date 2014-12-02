@@ -12,11 +12,11 @@
  */
 
 body {
-B        font-family: Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 12px;
 	background-color: #efefef;
 	margin:0;
-B	color: #333;
+	color: #333;
 }
 /*Font size percentages based on the tables at developer.yahoo.com/yui/fonts/ */
 h1 {
@@ -25,7 +25,7 @@ h1 {
     text-align: justify;
     font-weight: bold;
     margin-left: 15px;
-}B
+}
 
 h2{
     font-size: 14px;
@@ -111,7 +111,7 @@ select.multiple {
     postion: relative;
     margin: auto;
     padding: 0;
-    
+
 }
 
 #ds-trail {
