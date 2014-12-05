@@ -133,16 +133,6 @@
         </field>
         <field>
           <dc-schema>dc</dc-schema>
-          <dc-element>contributor</dc-element>
-          <dc-qualifier>corporate</dc-qualifier>
-          <repeatable>true</repeatable>
-          <label>Corporate Authors</label>
-          <input-type>name</input-type>
-          <hint>Enter the names of the corporate authors of this item below.</hint>
-          <required></required>
-        </field>
-        <field>
-          <dc-schema>dc</dc-schema>
           <dc-element>title</dc-element>
           <dc-qualifier></dc-qualifier>
           <repeatable>false</repeatable>
