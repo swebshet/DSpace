@@ -122,7 +122,12 @@
                 </div>
 
                 <!-- Once the search box is built, the other parts of the options are added -->
-                <xsl:apply-templates/>
+                <xsl:apply-templates select="dri:list[@n='discovery']"/>
+                <xsl:apply-templates select="dri:list[@n='account']"/>
+                <xsl:apply-templates select="dri:list[@n='browse']"/>
+                <xsl:apply-templates select="dri:list[@n='context']"/>
+                <xsl:apply-templates select="dri:list[@n='administrative']"/>
+                <xsl:apply-templates select="dri:list[@n='reportingSuite']"/>
             </div>
         </div>
     </xsl:template>
