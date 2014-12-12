@@ -143,6 +143,7 @@
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_ciat">CIAT Subject</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_humidtropics">Humidtropics Subject</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_cipsubject">CIP subjects</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_drylandssubject">Dryland systems subjects</message>
 
    <!--  some common other possibilities for Advanced Search Fields -->
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_contributor">Contributor</message>
@@ -203,6 +204,7 @@
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.crpsubject.column_heading">CGIAR research program</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.basin.column_heading">River Basin</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.cipsubject.column_heading">CIP subjects</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.drylandssubject.column_heading">Dryland systems subjects</message>
 
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.region.column_heading">Region Name</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.subregion.column_heading">Sub Region</message>
@@ -277,6 +279,8 @@
 
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.cipsubject">Browsing {0} by CIP subject {1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.cipsubject">Browsing {0} by CIP subjects</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.drylandssubject">Browsing {0} by Dryland systems subject {1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.drylandssubject">Browsing {0} by Dryland systems subjects</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.CollectionViewer.java -->
 	<message key="xmlui.ArtifactBrowser.CollectionViewer.search_scope">Search Scope</message>
@@ -376,6 +380,7 @@
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_basin">By River Basin</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_output">By Output Type</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_cipsubject">By CIP subject</message>
+	<message key="xmlui.ArtifactBrowser.Navigation.browse_drylandssubject">By Dryland systems subject</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.SimpleSearch.java -->
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.title">Search</message>
@@ -385,6 +390,7 @@
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.full_text_search">Full Text Search</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.crpsubject">CRP Subject</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.cipsubject">CIP subject</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.drylandssubject">Dryland systems subject</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.RestrictedItem.java -->
 	<message key="xmlui.ArtifactBrowser.RestrictedItem.title">This resource is restricted</message>
@@ -2498,6 +2504,7 @@
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.ilrisubject">ILRI Subject Focus</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.isijournal">ISI Journal</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.cipsubject">CIP subject</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.drylandssubject">Dryland systems subject</message>
 
     <message key="xmlui.reporting-suite.statistics.contentanalysis.dc.date.issued">Time</message>
     <message key="xmlui.reporting-suite.statistics.contentanalysis.ccafsubject">CCAFS Subject Focus</message>
@@ -2515,6 +2522,7 @@
     <message key="xmlui.reporting-suite.statistics.contentanalysis.ilrisubject">ILRI Subject Focus</message>
     <message key="xmlui.reporting-suite.statistics.contentanalysis.isijournal">ISI Journal</message>
     <message key="xmlui.reporting-suite.statistics.contentanalysis.cipsubject">CIP subject</message>
+    <message key="xmlui.reporting-suite.statistics.contentanalysis.drylandssubject">Dryland systems subject</message>
     <!--end CUA-->
 
 

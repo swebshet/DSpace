@@ -101,6 +101,7 @@
                 <ref bean="searchFilterSubject" />
                 <ref bean="searchFilterCrpsubject" />
                 <ref bean="searchFilterCipSubject" />
+                <ref bean="searchFilterDrylandsSubject" />
                 <ref bean="searchFilterIssued" />
             </list>
         </property>
@@ -112,6 +113,7 @@
                 <ref bean="searchFilterSubject" />
                 <ref bean="searchFilterCrpsubject" />
                 <ref bean="searchFilterCipSubject" />
+                <ref bean="searchFilterDrylandsSubject" />
                 <ref bean="searchFilterIssued" />
             </list>
         </property>
@@ -217,6 +219,7 @@
                 <ref bean="searchFilterSubject" />
                 <ref bean="searchFilterCrpsubject" />
                 <ref bean="searchFilterCipSubject" />
+                <ref bean="searchFilterDrylandsSubject" />
                 <ref bean="searchFilterIssued" />
             </list>
         </property>
@@ -529,6 +532,17 @@
         <property name="sortOrder" value="COUNT"/>
     </bean>
 
+    <bean id="searchFilterDrylandsSubject" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="drylandssubject"/>
+        <property name="metadataFields">
+            <list>
+                <value>cg.subject.drylands</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="10"/>
+        <property name="sortOrder" value="COUNT"/>
+    </bean>
+
     <!--Sort properties-->
     <bean id="sortTitle" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
         <property name="metadataField" value="dc.title"/>
@@ -583,6 +597,7 @@
                 <ref bean="searchFilterCiat"/>
                 <ref bean="searchFilterHumidtropics"/>
                 <ref bean="searchFilterCipSubject"/>
+                <ref bean="searchFilterDrylandsSubject"/>
 
             </list>
         </property>
