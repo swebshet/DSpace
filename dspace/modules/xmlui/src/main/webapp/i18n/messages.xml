@@ -142,7 +142,7 @@
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_bioversity">Bioversity Subject</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_ciat">CIAT Subject</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_humidtropics">Humidtropics Subject</message>
-    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_drylandssubject">Drylands systems subjects</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_drylandssubject">Dryland systems subjects</message>
 
    <!--  some common other possibilities for Advanced Search Fields -->
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_contributor">Contributor</message>
@@ -202,7 +202,7 @@
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.humidtropics.column_heading">Humidtropics Subject Name</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.crpsubject.column_heading">CGIAR research program</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.basin.column_heading">River Basin</message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.drylandssubject.column_heading">Drylands system subjects</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.drylandssubject.column_heading">Dryland system subjects</message>
 
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.region.column_heading">Region Name</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.subregion.column_heading">Sub Region</message>
@@ -275,8 +275,8 @@
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.humidtropics">Browsing {0} by Humidtropics Subject {1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.humidtropics">Browsing {0} by Humidtropics Subject</message>
 
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.drylandssubject">Browsing {0} by Drylands systems subject {1}</message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.drylandssubject">Browsing {0} by Drylands systems subjects</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.drylandssubject">Browsing {0} by Dryland systems subject {1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.drylandssubject">Browsing {0} by Dryland systems subjects</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.CollectionViewer.java -->
 	<message key="xmlui.ArtifactBrowser.CollectionViewer.search_scope">Search Scope</message>
@@ -375,7 +375,7 @@
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_crpsubject">By CRP Subject</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_basin">By River Basin</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_output">By Output Type</message>
-	<message key="xmlui.ArtifactBrowser.Navigation.browse_drylandssubject">By Drylands systems subject</message>
+	<message key="xmlui.ArtifactBrowser.Navigation.browse_drylandssubject">By Dryland systems subject</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.SimpleSearch.java -->
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.title">Search</message>
@@ -2496,7 +2496,7 @@
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.iso">Language</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.ilrisubject">ILRI Subject Focus</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.isijournal">ISI Journal</message>
-    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.drylandssubject">Drylands systems subject</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.drylandssubject">Dryland systems subject</message>
 
     <message key="xmlui.reporting-suite.statistics.contentanalysis.dc.date.issued">Time</message>
     <message key="xmlui.reporting-suite.statistics.contentanalysis.ccafsubject">CCAFS Subject Focus</message>
@@ -2513,7 +2513,7 @@
     <message key="xmlui.reporting-suite.statistics.contentanalysis.iso">Language</message>
     <message key="xmlui.reporting-suite.statistics.contentanalysis.ilrisubject">ILRI Subject Focus</message>
     <message key="xmlui.reporting-suite.statistics.contentanalysis.isijournal">ISI Journal</message>
-    <message key="xmlui.reporting-suite.statistics.contentanalysis.drylandssubject">Drylands systems subject</message>
+    <message key="xmlui.reporting-suite.statistics.contentanalysis.drylandssubject">Dryland systems subject</message>
     <!--end CUA-->
 
 
