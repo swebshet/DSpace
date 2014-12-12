@@ -202,7 +202,7 @@
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.humidtropics.column_heading">Humidtropics Subject Name</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.crpsubject.column_heading">CGIAR research program</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.basin.column_heading">River Basin</message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.drylandssubject.column_heading">Dryland system subjects</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.drylandssubject.column_heading">Dryland systems subjects</message>
 
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.region.column_heading">Region Name</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.subregion.column_heading">Sub Region</message>
