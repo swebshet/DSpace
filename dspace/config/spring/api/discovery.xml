@@ -100,7 +100,7 @@
                 <ref bean="searchFilterAuthor" />
                 <ref bean="searchFilterSubject" />
                 <ref bean="searchFilterCrpsubject" />
-                <ref bean="searchFilterCIP" />
+                <ref bean="searchFilterCipSubject" />
                 <ref bean="searchFilterIssued" />
             </list>
         </property>
@@ -111,7 +111,7 @@
                 <ref bean="searchFilterAuthor" />
                 <ref bean="searchFilterSubject" />
                 <ref bean="searchFilterCrpsubject" />
-                <ref bean="searchFilterCIP" />
+                <ref bean="searchFilterCipSubject" />
                 <ref bean="searchFilterIssued" />
             </list>
         </property>
@@ -216,7 +216,7 @@
                 <ref bean="searchFilterAuthor" />
                 <ref bean="searchFilterSubject" />
                 <ref bean="searchFilterCrpsubject" />
-                <ref bean="searchFilterCIP" />
+                <ref bean="searchFilterCipSubject" />
                 <ref bean="searchFilterIssued" />
             </list>
         </property>
@@ -518,7 +518,7 @@
         <property name="sortOrder" value="COUNT"/>
     </bean>
 
-    <bean id="searchFilterCIP" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+    <bean id="searchFilterCipSubject" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
         <property name="indexFieldName" value="cipsubject"/>
         <property name="metadataFields">
             <list>
@@ -582,7 +582,7 @@
                 <ref bean="searchFilterBioversity"/>
                 <ref bean="searchFilterCiat"/>
                 <ref bean="searchFilterHumidtropics"/>
-                <ref bean="searchFilterCIP"/>
+                <ref bean="searchFilterCipSubject"/>
 
             </list>
         </property>
