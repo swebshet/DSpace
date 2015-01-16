@@ -4332,12 +4332,12 @@
     </value-pairs>
     <value-pairs value-pairs-name="ccafsubject" dc-term="ccsubject_ccafsubject">
       <pair>
-        <displayed-value>ADAPTATION TO PROGRESSIVE CLIMATE CHANGE</displayed-value>
-        <stored-value>ADAPTATION TO PROGRESSIVE CLIMATE CHANGE</stored-value>
-      </pair>
-      <pair>
         <displayed-value>BASELINE SURVEY</displayed-value>
         <stored-value>BASELINE SURVEY</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>CLIMATE-SMART AGRICULTURAL PRACTICES</displayed-value>
+        <stored-value>CLIMATE-SMART AGRICULTURAL PRACTICES</stored-value>
       </pair>
       <pair>
         <displayed-value>DATA AND TOOLS FOR ANALYSIS AND PLANNING</displayed-value>
@@ -4348,28 +4348,20 @@
         <stored-value>EDUCATION AND OUTREACH</stored-value>
       </pair>
       <pair>
-        <displayed-value>FRAMEWORKS FOR POLICY ANALYSIS</displayed-value>
-        <stored-value>FRAMEWORKS FOR POLICY ANALYSIS</stored-value>
-      </pair>
-      <pair>
         <displayed-value>GENDER AND SOCIAL DIFFERENTIATION</displayed-value>
         <stored-value>GENDER AND SOCIAL DIFFERENTIATION</stored-value>
       </pair>
       <pair>
-        <displayed-value>LINKING KNOWLEDGE TO ACTION</displayed-value>
-        <stored-value>LINKING KNOWLEDGE TO ACTION</stored-value>
+        <displayed-value>LOW EMISSIONS AGRICULTURE</displayed-value>
+        <stored-value>LOW EMISSIONS AGRICULTURE</stored-value>
       </pair>
       <pair>
         <displayed-value>MANAGING CLIMATE RISK</displayed-value>
         <stored-value>MANAGING CLIMATE RISK</stored-value>
       </pair>
       <pair>
-        <displayed-value>MODELING</displayed-value>
-        <stored-value>MODELING</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>PRO-POOR CLIMATE CHANGE MITIGATION</displayed-value>
-        <stored-value>PRO-POOR CLIMATE CHANGE MITIGATION</stored-value>
+        <displayed-value>POLICIES AND INSTITUTIONS</displayed-value>
+        <stored-value>POLICIES AND INSTITUTIONS</stored-value>
       </pair>
       <pair>
         <displayed-value>SCENARIOS</displayed-value>
@@ -5733,5 +5725,4 @@
       </pair>
     </value-pairs>
   </form-value-pairs>
-
 </input-forms>
