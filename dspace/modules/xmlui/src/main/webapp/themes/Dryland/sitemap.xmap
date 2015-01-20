@@ -28,8 +28,8 @@
 		-->
 		<map:component-configurations>
 			<global-variables>
-				<theme-path>dryland</theme-path>
-				<theme-name>dryland</theme-name>
+				<theme-path>Dryland</theme-path>
+				<theme-name>Dryland</theme-name>
 			</global-variables>
         </map:component-configurations>
 
