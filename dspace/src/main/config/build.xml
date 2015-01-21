@@ -665,12 +665,14 @@ Common usage:
         <copy todir="${dspace.dir}/webapps" preservelastmodified="true" failonerror="no">
             <fileset dir="webapps">
                 <exclude name="**/web.xml" />
+                <exclude name="**/robots.txt" />
             </fileset>
         </copy>
 
         <copy todir="${dspace.dir}/webapps" preservelastmodified="false" failonerror="no">
             <fileset dir="webapps">
                 <include name="**/web.xml" />
+                <include name="**/robots.txt" />
             </fileset>
             <filterchain>
                 <expandproperties />
