@@ -313,7 +313,7 @@
         <div id="ds-header-wrapper">
             <div id="ds-header" class="clearfix">
                 <a id="ds-header-logo-link">
-                     <a href="http://drylandsystems.cgiar.org/" target="_blank"></a>
+                     <a href="http://drylandsystems.cgiar.org" target="_blank"></a>
                     <span id="ds-header-logo">&#160;</span>
 
                 </a>
