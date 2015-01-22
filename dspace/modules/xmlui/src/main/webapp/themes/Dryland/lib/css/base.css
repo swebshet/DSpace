@@ -13,7 +13,7 @@
 
 
 /* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 */
-body, select, input, textarea { color:#333; }
+body, select, input, textarea { color:#444; }
 
 /* www.aestheticallyloyal.com/public/optimize-legibility/ */
 h1,h2,h3,h4,h5,h6 { font-weight: bold; text-rendering: optimizeLegibility; }
@@ -26,18 +26,18 @@ html { -webkit-font-smoothing: antialiased; }
 a:hover, a:active { outline: none; }
 
 a, a:active, a:visited {
-color:#414042;
+color:#444;
 text-decoration: none;
 font-weight: normal;
  }
-a:hover { color:#414042; }
+a:hover { color:#444; }
 
 
 ul { margin-left:30px; }
 ol { margin-left:300px; list-style-type: decimal; }
 
 small { font-size:85%; }
-.bold, strong, th { font-weight: normal; }
+.bold, strong, th { font-weight: bold; }
 
 td, td img { vertical-align:top;
            margin-left: 15px;
