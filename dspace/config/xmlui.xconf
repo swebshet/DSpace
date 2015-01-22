@@ -209,7 +209,7 @@
         <theme name="CIAT" handle="10568/35697" path="CIAT/"/>
         <theme name="ICARDA" handle="10568/51669" path="ICARDA/"/>
         <theme name="CIP" handle="10568/51671" path="CIP/"/>
-        <theme name="CIP" handle="10568/51670" path="Dryland/"/>
+        <theme name="Dryland" handle="10568/51670" path="Dryland/"/>
 
         <!--Default theme for the top-level CGSPACE-->
         <theme name="CGSPACE" regex=".*" path="CGSPACE/"/>
