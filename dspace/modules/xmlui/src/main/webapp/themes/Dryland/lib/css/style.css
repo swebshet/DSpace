@@ -14,42 +14,39 @@
 body {
         font-family: Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 12px;
-	background-color: #efefef;
+	background-color: #FFF;
 	margin:0;
-	color: #333;
+	color: #444;
 }
 /*Font size percentages based on the tables at developer.yahoo.com/yui/fonts/ */
 h1 {
-    font-size: 16px;
-    color: #396;
+    font-size: 182%;
+    color: #297535;
     text-align: justify;
-    font-weight: bold;
     margin-left: 15px;
 }
 
 h2{
-    font-size: 14px;
-    color: #396;
-    font-weight: bold;
+    font-size: 123.1%;
+    color: #297535;
     margin-left: 15px;
 }
 
 h3 {
-    font-size: 12px;
-    color: #396;
-    font-weight: normal;
+    font-size: 116%;
+    color: #297535;
     margin-left: 15px;
 }
 
 h4 {
-    font-size: 10px;
-    color: #396;
+    font-size: 108%;
+    color: #297535;
     margin-left: 15px;
 }
 
 h5, h6 {
-    font-size: 9px;
-    color: #48732A;
+    font-size: 100%;
+    color: #297535;
     margin-left: 15px;
 }
 
@@ -65,15 +62,15 @@ select.multiple {
 }
 
 #ds-header-wrapper {
-      background-color: #ffffff;
-      color: white;
+    background-color: #ffffff;
+    color: white;
 }
 
 #ds-header-logo-link {
     text-decoration: none;
     cursor: pointer;
 }
-/* header part style sheet */
+
 #ds-header-logo {
     float:left;
     width: 980px;
@@ -96,30 +93,36 @@ select.multiple {
 
 #ds-user-box {
     right: 0;
-    top: 10px;
+    top: 17px;
     position: absolute;
     color: white;
 }
 
-#ds-user-box a{
+#ds-language-selection {
+    right: 0;
+    top: 40px;
+    position: absolute;
+    color: white;
+}
+
+#ds-user-box a, #ds-language-selection a {
     color: white;
 }
 
 #ds-trail-wrapper {
-    background-color:#d9bc5f;
     width: 980px;
     postion: relative;
     margin: auto;
     padding: 0;
-    
 }
 
 #ds-trail {
     list-style: none;
-    line-height: 20px;
+    line-height: 138.5%;
     margin: 0;
-    padding-left: 15px;
-    font-size: 11px;
+    padding: 3px 0 3px 15px;
+    font-size: 94%;
+    background-color: #D1AD44;
 }
 
 #ds-trail li {
@@ -128,17 +131,13 @@ select.multiple {
     margin-right: 5px;
 }
 
-#ds-trail li a {
+#ds-trail a {
     color: #FFFFFF;
 }
 
-/* the size of the body */
-
-#no-js-warning
-#ds-trail,
+#no-js-warning,
 #ds-header,
 #ds-footer,
-#ds-header-wrapper,
 #ds-content {
     width: 980px;
     background: #ffffff;
@@ -162,19 +161,16 @@ select.multiple {
     margin: 0;
     text-align: left;
 }
-/* footer style sheet */
+
 #ds-footer-wrapper {
     margin-top: 0px;
 }
 
 #ds-footer {
-    border-top: 1px solid #d9bc5f;
+    border-top: 2px solid #D1AD44;
     padding: 5px 0;
-    font-size: 10px;
+    font-size: 94%;
     line-height: 1.6em;
-}
-#ds-footer a{
-    font-size: 11px;
 }
 
 #ds-footer-left {
@@ -191,7 +187,7 @@ select.multiple {
 }
 
 #ds-footer-logo-link {
-    text-decoration: none;
+    text-decoration:none;
     line-height: 40px;
     cursor: pointer;
 }
@@ -210,7 +206,7 @@ select.multiple {
 }
 
 #ds-footer-links a:hover {
-    color: #000;
+    color: #af5811;
 }
 
 .ie6 #ds-footer-links {
@@ -223,13 +219,13 @@ select.multiple {
     visibility: hidden;
 }
 
-/* the body part of style sheet */
+
 #ds-body {
     float: left;
     width: 698px;
     padding-top: 10px;
 }
-/* right side part of style sheet */
+
 #ds-options-wrapper {
     float: right;
     width: 256px;
@@ -239,14 +235,14 @@ select.multiple {
 #ds-options {
     padding: 0;
 }
-/* right side bar heading text style sheet */
+
 h1.ds-option-set-head {
     margin-top: 20px;
     margin-left: 15px;
     margin-right: 5px;
-    background-color: #d9bc5f;
+    background-color: #D1AD44;
     padding: 3px 10px;
-    border: 1px solid #A8CA0B;
+    border-bottom: 2px solid #82A44E;
     color: #FFFFFF;
     font-size: 108%;
 }
@@ -256,11 +252,12 @@ h1.ds-option-set-head {
 }
 
 div.ds-option-set {
-
     padding: 3px 10px;
-    border: 1px solid #d9bc5f;
     margin-left: 15px;
     margin-right: 5px;
+    border-left: 1px solid #D1AD44;
+    border-right: 1px solid #D1AD44;
+    border-bottom: 1px solid #D1AD44;
 }
 
 div.ds-option-set ul {
@@ -268,13 +265,12 @@ div.ds-option-set ul {
     margin-left: 0px;
     padding-top: 5px;
     padding-bottom: 5px;
-
 }
 
 div.ds-option-set .ds-sublist-head {
     font-weight: normal;
-    font-size: 12px;
-    color: #333;
+    font-size: 100%;
+    color: #444;
 }
 
 div.ds-option-set h2.ds-sublist-head {
@@ -286,12 +282,7 @@ div.ds-option-set ul.sublist {
     padding-top: 4px;
     padding-bottom: 4px;
     }
-div.ds-option-set a{
-   font-size: 11px;
-   }
-div.ds-option-set a:hover{
-   font-size: 11px;
-   }
+
 #ds-search-option {
     padding: 10px;
 }
@@ -306,8 +297,6 @@ div.ds-option-set a:hover{
 
 #ds-search-form input.ds-button-field {
     margin-left: 6px;
-    color: #FFFFFF;
-    background: #d9bc5f;
 }
 
 #ds-search-form input.ds-text-field,
@@ -329,7 +318,7 @@ p {
 .primary {
     margin-top: 10px;
     margin-bottom: 30px;
-   }
+}
 
 ol {
     margin: 0;
@@ -345,12 +334,19 @@ td {
 
 .ds-button-field,
 #aspect_eperson_StartRegistration_list_registration-progress li {
-    background-color: #F63;
+    background-color: #D1AD44;
     border: none;
     padding: 2px 5px;
     color: #FFFFFF;
     font-weight: bold;
     cursor: pointer;
+}
+
+.ds-button-field[disabled="disabled"],
+.ds-button-field.disabled,
+li.button.disabled input {
+    opacity: 0.35;
+    cursor: auto;
 }
 
 #aspect_eperson_StartRegistration_list_registration-progress li {
@@ -415,6 +411,17 @@ ul.ds-progress-list li.disabled input.ds-button-field
     border: 1px solid #D8E8EB;
     color: #444444;
     cursor: default;
+}
+
+.ie6 .disabled,
+.ie6 li.disabled input,
+.ie7 .ds-button-field.disabled,
+.ie7 li.button.disabled input,
+.ie8 .ds-button-field.disabled,
+.ie8 li.button.disabled input {
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity = 50);
+    zoom: 1;
+    cursor: auto;
 }
 
 
@@ -539,12 +546,10 @@ input.ds-password-field.error {
     font-size: 100%;
     margin:0;
     color: inherit;
-
 }
 
 fieldset ol {
-    margin:0;
-
+    margin: 0;
 }
 
 li.ds-form-item {
@@ -557,12 +562,12 @@ li.ds-form-item {
 
 li.ds-form-item.last {
     margin-bottom: 0;
- }
+}
 
 li.ds-form-item .ds-form-label{
     font-weight: bold;
     font-size: 123.1%;
- }
+}
 
 li.ds-form-item label.ds-composite-component{
     display: block;
@@ -600,10 +605,13 @@ li.ds-form-item label.ds-composite-component.last{
     font-size: 93%;
 }
 
+select#aspect_submission_submit_SelectCollectionStep_field_handle {
+    max-width: 350px;
+}
+
 #aspect_submission_StepTransformer_field_dc_date_issued_year,
 #aspect_submission_StepTransformer_field_dc_date_issued_day {
     width: 50px;
-
 }
 
 #aspect_submission_StepTransformer_field_dc_identifier_value {
@@ -725,11 +733,11 @@ span.field-help {
 
 .current-page-link {
     font-weight: bold;
-    color: #1f3F5E;
+    color: #1F3F5E;
 }
 
 .current-page-link a{
-    color: #F63;
+    color: #1F3F5E;
 }
 
 .pagination-info {
@@ -740,7 +748,7 @@ span.field-help {
 .pagination-masked.top {
     margin-top: 5px;
 }
-/* recent submission, collection and commonity title style sheet */
+
 .ds-artifact-list {
     list-style: none;
     margin: 0;
@@ -1016,11 +1024,11 @@ div.spacer{
 
 .item-metadata {
     float: left;
-    font-size: 11px;
+    font-size: 116%;
 }
 
 .item-metadata a {
-    font-size: 11px;
+    font-size: inherit;
 }
 
 .file-metadata {
@@ -1038,7 +1046,7 @@ div.spacer{
 
 .file-metadata span.bold,
 .item-metadata span.bold {
-    width: 80px;
+    width: 90px;
     clear: left;
     text-align: right;
     margin-right: 7px;
@@ -1072,7 +1080,7 @@ div.spacer{
 #aspect_artifactbrowser_CommunityViewer_div_community-home h2,
 #aspect_artifactbrowser_CollectionViewer_div_collection-home h2 {
     margin-top: 30px;
-    border-bottom:1px solid #d9bc5f;
+    border-bottom:2px solid #D1AD44;
     margin-bottom: 3px;
 }
 
