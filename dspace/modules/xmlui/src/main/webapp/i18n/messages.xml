@@ -397,6 +397,9 @@
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.cipsubject">CIP subject</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.drylandssubject">Dryland systems subject</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.icardasubject">ICARDA subject</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.affiliation">Author affiliations</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.outputtype">Output types</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.status">Status</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.RestrictedItem.java -->
 	<message key="xmlui.ArtifactBrowser.RestrictedItem.title">This resource is restricted</message>
