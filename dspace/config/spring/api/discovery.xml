@@ -97,6 +97,7 @@
         <!--Which sidebar facets are to be displayed-->
         <property name="sidebarFacets">
             <list>
+                <ref bean="searchFilterAffiliation" />
                 <ref bean="searchFilterAuthor" />
                 <ref bean="searchFilterSubject" />
                 <ref bean="searchFilterCrpsubject" />
@@ -104,6 +105,8 @@
                 <ref bean="searchFilterDrylandsSubject" />
                 <ref bean="searchFilterIcardaSubject" />
                 <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterOutputType" />
+                <ref bean="searchFilterStatus" />
             </list>
         </property>
         <!--The search filters which can be used on the discovery search page-->
@@ -208,9 +211,12 @@
         <!--Which sidebar facets are to be displayed (same as defaultConfiguration above)-->
         <property name="sidebarFacets">
             <list>
+                <ref bean="searchFilterAffiliation" />
                 <ref bean="searchFilterAuthor" />
                 <ref bean="searchFilterSubject" />
                 <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterOutputType" />
+                <ref bean="searchFilterStatus" />
             </list>
         </property>
         <!--The search filters which can be used on the discovery search page (same as defaultConfiguration above)-->
