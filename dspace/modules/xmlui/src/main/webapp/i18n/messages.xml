@@ -145,6 +145,9 @@
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_cipsubject">CIP subjects</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_drylandssubject">Dryland systems subjects</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_icardasubject">ICARDA subjects</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_outputtype">Output types</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_affiliation">Author affiliations</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_status">Status</message>
 
    <!--  some common other possibilities for Advanced Search Fields -->
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_contributor">Contributor</message>
