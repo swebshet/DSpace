@@ -114,9 +114,9 @@
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.conjunction">Conjunction</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.search_type">Search type</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.search_for">Search for</message>
-	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_author">Author</message>
-	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_title">Title</message>
-	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_subject">Subject</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_author">Authors</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_title">Titles</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_subject">Subjects</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_abstract">Abstract</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_series">Series</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_sponsor">Sponsor</message>
@@ -124,26 +124,26 @@
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_language">Language (ISO)</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_keyword">Keyword</message>
 
-	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_region">Region</message>
-	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_country">Country</message>
-	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_ilrisubject">ILRI Subject</message>
-	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_icrafsubject">ICRAF Subject</message>
-	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_cpwfsubject">CPWF Subject</message>
-	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_ccafsubject">CCAFS Subject</message>
-	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_ciforsubject">CIFOR Subject</message>
-	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_iwmisubject">IWMI Subject</message>
-	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_subregion">Sub Region</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_region">Regions</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_country">Countries</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_ilrisubject">ILRI subjects</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_icrafsubject">ICRAF subjects</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_cpwfsubject">CPWF subjects</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_ccafsubject">CCAFS subjects</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_ciforsubject">CIFOR subjects</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_iwmisubject">IWMI subjects</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_subregion">Sub regions</message>
 
-    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_crpsubject">CGIAR Research Program</message>
-    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_basin">River Basin</message>
-    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_output">Output Type</message>
-    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_cta">CTA Subject</message>
-    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_wlesubject">WLE Subject</message>
-    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_bioversity">Bioversity Subject</message>
-    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_ciat">CIAT Subject</message>
-    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_humidtropics">Humidtropics Subject</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_crpsubject">CGIAR Research Programs</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_basin">River basins</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_output">Output types</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_cta">CTA subjects</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_wlesubject">WLE subjects</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_bioversity">Bioversity subjects</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_ciat">CIAT subjects</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_humidtropics">Humidtropics subjects</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_cipsubject">CIP subjects</message>
-    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_drylandssubject">Dryland systems subjects</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_drylandssubject">Dryland Systems subjects</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_icardasubject">ICARDA subjects</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_outputtype">Output types</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_affiliation">Author affiliations</message>
@@ -152,7 +152,6 @@
    <!--  some common other possibilities for Advanced Search Fields -->
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_contributor">Contributor</message>
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_creator">Creator</message>
-   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_subject">Subject</message>
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_description">Description</message>
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_relation">Relation</message>
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_mime">Mime-Type</message>
@@ -396,12 +395,12 @@
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.head">Search</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.search_scope">Search Scope</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.full_text_search">Full Text Search</message>
-	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.crpsubject">CRP Subject</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.crpsubject">CRP subject</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.cipsubject">CIP subject</message>
-	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.drylandssubject">Dryland systems subject</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.drylandssubject">Dryland Systems subject</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.icardasubject">ICARDA subject</message>
-	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.affiliation">Author affiliations</message>
-	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.outputtype">Output types</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.affiliation">Author affiliation</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.outputtype">Output type</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.status">Status</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.RestrictedItem.java -->
@@ -2495,8 +2494,8 @@
 
 
     <!--CUA-->
-    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_issuedate">Date Issued</message>
-    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_accessioneddate">Date Accesioned</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_issuedate">Date issued</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_accessioneddate">Date accesioned</message>
     <message key="xmlui.statistics.views">Views</message>
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.sort_by.type">Output type</message>
 
