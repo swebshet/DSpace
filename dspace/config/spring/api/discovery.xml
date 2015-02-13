@@ -455,7 +455,7 @@
                 <value>dc.crsubject.*</value>
             </list>
         </property>
-        <property name="facetLimit" value="10"/>
+        <property name="facetLimit" value="20"/>
         <property name="sortOrder" value="COUNT"/>
     </bean>
 
