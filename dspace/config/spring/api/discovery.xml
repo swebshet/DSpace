@@ -217,6 +217,7 @@
                 <ref bean="searchFilterAffiliation" />
                 <ref bean="searchFilterAuthor" />
                 <ref bean="searchFilterSubject" />
+                <ref bean="searchFilterCrpsubject" />
                 <ref bean="searchFilterIssued" />
                 <ref bean="searchFilterOutputType" />
                 <ref bean="searchFilterStatus" />
