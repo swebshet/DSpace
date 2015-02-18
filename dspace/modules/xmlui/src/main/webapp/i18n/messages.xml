@@ -105,6 +105,16 @@
 	<message key="xmlui.ArtifactBrowser.AbstractSearch.order.desc">descending</message>
 	<message key="xmlui.ArtifactBrowser.AbstractSearch.rpp">Results/page</message>
 
+    <message key="xmlui.Discovery.AbstractSearch.type_affiliation">Filter by: Author affiliation</message>
+    <message key="xmlui.Discovery.AbstractSearch.type_status">Filter by: Status</message>
+    <message key="xmlui.Discovery.AbstractSearch.type_outputtype">Filter by: Output type</message>
+    <message key="xmlui.Discovery.AbstractSearch.type_crpsubject">Filter by: CGIAR Research Program</message>
+    <message key="xmlui.Discovery.AbstractSearch.type_icardasubject">Filter by: ICARDA subject</message>
+    <message key="xmlui.Discovery.AbstractSearch.type_cipsubject">Filter by: CIP subject</message>
+    <message key="xmlui.Discovery.AbstractSearch.type_drylandssubject">Filter by: Dryland Systems subject</message>
+    <message key="xmlui.Discovery.AbstractSearch.type_ilrisubject">Filter by: ILRI subject</message>
+    <message key="xmlui.Discovery.AbstractSearch.type_cpwfsubject">Filter by: CPWF subject</message>
+
     <!-- org.dspace.app.xmlui.artifactbrowser.AdvancedSearch.java -->
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.title">Advanced Search</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.trail">Advanced Search</message>
