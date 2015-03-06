@@ -2517,7 +2517,7 @@
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.ccafsubject">CCAFS Subject Focus</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.status">Status</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.wlesubject">WLE Subject Focus</message>
-    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.subregion">Region Focus</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.subregion">Subregion</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.cpwfsubject">CPWF Subject Focus</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.crpsubject">CRP focus</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.bioversity">Bioversity Subject Focus</message>
@@ -2537,7 +2537,7 @@
     <message key="xmlui.reporting-suite.statistics.contentanalysis.ccafsubject">CCAFS Subject Focus</message>
     <message key="xmlui.reporting-suite.statistics.contentanalysis.status">Status</message>
     <message key="xmlui.reporting-suite.statistics.contentanalysis.wlesubject">WLE Subject Focus</message>
-    <message key="xmlui.reporting-suite.statistics.contentanalysis.subregion">Region Focus</message>
+    <message key="xmlui.reporting-suite.statistics.contentanalysis.subregion">Subregion</message>
     <message key="xmlui.reporting-suite.statistics.contentanalysis.cpwfsubject">CPWF Subject Focus</message>
     <message key="xmlui.reporting-suite.statistics.contentanalysis.crpsubject">CRP focus</message>
     <message key="xmlui.reporting-suite.statistics.contentanalysis.bioversity">Bioversity Subject Focus</message>
