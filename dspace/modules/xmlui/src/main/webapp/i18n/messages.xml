@@ -114,6 +114,8 @@
     <message key="xmlui.Discovery.AbstractSearch.type_drylandssubject">Filter by: Dryland Systems subject</message>
     <message key="xmlui.Discovery.AbstractSearch.type_ilrisubject">Filter by: ILRI subject</message>
     <message key="xmlui.Discovery.AbstractSearch.type_cpwfsubject">Filter by: CPWF subject</message>
+    <message key="xmlui.Discovery.AbstractSearch.type_region">Filter by: Region</message>
+    <message key="xmlui.Discovery.AbstractSearch.type_country">Filter by: Country</message>
 
     <!-- org.dspace.app.xmlui.artifactbrowser.AdvancedSearch.java -->
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.title">Advanced Search</message>
@@ -412,6 +414,8 @@
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.affiliation">Author affiliation</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.outputtype">Output type</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.status">Status</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.region">Region</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.country">Country</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.RestrictedItem.java -->
 	<message key="xmlui.ArtifactBrowser.RestrictedItem.title">This resource is restricted</message>
@@ -2521,6 +2525,7 @@
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.iwmisubject">IWMI Subject Focus</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.ciforsubject">CIFOR Subject Focus</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.country">Country Focus</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.region">Region</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.iso">Language</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.ilrisubject">ILRI Subject Focus</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.isijournal">ISI Journal</message>
@@ -2546,6 +2551,7 @@
     <message key="xmlui.reporting-suite.statistics.contentanalysis.cipsubject">CIP subject</message>
     <message key="xmlui.reporting-suite.statistics.contentanalysis.drylandssubject">Dryland systems subject</message>
     <message key="xmlui.reporting-suite.statistics.contentanalysis.icardasubject">ICARDA subject</message>
+    <message key="xmlui.reporting-suite.statistics.contentanalysis.region">Region</message>
     <!--end CUA-->
 
 
