@@ -210,6 +210,7 @@
         <theme name="ICARDA" handle="10568/51669" path="ICARDA/"/>
         <theme name="CIP" handle="10568/51671" path="CIP/"/>
         <theme name="Dryland" handle="10568/51670" path="Dryland/"/>
+        <theme name="TechnicalConsortium" handle="10568/25209" path="TechnicalConsortium/"/>
 
         <!--Default theme for the top-level CGSPACE-->
         <theme name="CGSPACE" regex=".*" path="CGSPACE/"/>
