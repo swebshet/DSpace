@@ -28,8 +28,8 @@
 		-->
 		<map:component-configurations>
 			<global-variables>
-				<theme-path>techconsortium</theme-path>
-				<theme-name>techconsortium</theme-name>
+				<theme-path>TechnicalConsortium</theme-path>
+				<theme-name>TechnicalConsortium</theme-name>
 			</global-variables>
         </map:component-configurations>
 
