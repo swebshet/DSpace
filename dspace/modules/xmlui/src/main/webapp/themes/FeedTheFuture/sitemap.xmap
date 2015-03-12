@@ -28,8 +28,8 @@
 		-->
 		<map:component-configurations>
 			<global-variables>
-				<theme-path>feedfuture</theme-path>
-				<theme-name>feedfuture</theme-name>
+				<theme-path>FeedTheFuture</theme-path>
+				<theme-name>FeedTheFuture</theme-name>
 			</global-variables>
         </map:component-configurations>
 
