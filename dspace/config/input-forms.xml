@@ -474,7 +474,7 @@
           <dc-element>isubject</dc-element>
           <dc-qualifier>ilrisubject</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>ILRI Subject Focus</label>
+          <label>ILRI subject focus</label>
           <input-type value-pairs-name="ilrisubject">dropdown</input-type>
           <hint></hint>
           <required></required>
@@ -484,7 +484,7 @@
           <dc-element>iwsubject</dc-element>
           <dc-qualifier>iwmisubject</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>IWMI Subject Focus</label>
+          <label>IWMI subject focus</label>
           <input-type value-pairs-name="iwmisubject">dropdown</input-type>
           <hint></hint>
           <required></required>
@@ -494,7 +494,7 @@
           <dc-element>subject</dc-element>
           <dc-qualifier>bioversity</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>Bioversity Subject Focus</label>
+          <label>Bioversity subject focus</label>
           <input-type value-pairs-name="bioversity">dropdown</input-type>
           <hint></hint>
           <required></required>
@@ -504,7 +504,7 @@
           <dc-element>subject</dc-element>
           <dc-qualifier>humidtropics</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>Humidtropics Subject Focus</label>
+          <label>Humidtropics subject focus</label>
           <input-type value-pairs-name="humidtropics">dropdown</input-type>
           <hint></hint>
           <required></required>
@@ -514,7 +514,7 @@
           <dc-element>subject</dc-element>
           <dc-qualifier>ciat</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>CIAT Subject Focus</label>
+          <label>CIAT subject focus</label>
           <input-type value-pairs-name="ciat">dropdown</input-type>
           <hint></hint>
           <required></required>
@@ -524,7 +524,7 @@
           <dc-element>subject</dc-element>
           <dc-qualifier>cta</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>CTA Subject Focus</label>
+          <label>CTA subject focus</label>
           <input-type value-pairs-name="cta">dropdown</input-type>
           <hint></hint>
           <required></required>
@@ -534,7 +534,7 @@
           <dc-element>subject</dc-element>
           <dc-qualifier>wle</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>WLE Subject Focus</label>
+          <label>WLE subject focus</label>
           <input-type value-pairs-name="wle">dropdown</input-type>
           <hint></hint>
           <required></required>
@@ -564,7 +564,7 @@
           <dc-element>cpsubject</dc-element>
           <dc-qualifier>cpwfsubject</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>CPWF Subject Focus</label>
+          <label>CPWF subject focus</label>
           <input-type value-pairs-name="cpwfsubject">dropdown</input-type>
           <hint></hint>
           <required></required>
@@ -574,7 +574,7 @@
           <dc-element>ccsubject</dc-element>
           <dc-qualifier>ccafsubject</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>CCAFS Subject Focus</label>
+          <label>CCAFS subject focus</label>
           <input-type value-pairs-name="ccafsubject">dropdown</input-type>
           <hint></hint>
           <required></required>
@@ -594,7 +594,7 @@
           <dc-element>cisubject</dc-element>
           <dc-qualifier>ciforsubject</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>CIFOR Subject Focus</label>
+          <label>CIFOR subject focus</label>
           <input-type value-pairs-name="ciforsubject">dropdown</input-type>
           <hint></hint>
           <required></required>
@@ -798,7 +798,7 @@
           <dc-element>isubject</dc-element>
           <dc-qualifier>ilrisubject</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>ILRI Subject Focus</label>
+          <label>ILRI subject focus</label>
           <input-type value-pairs-name="ilrisubject">dropdown</input-type>
           <hint></hint>
           <required></required>
@@ -995,7 +995,7 @@
           <dc-element>isubject</dc-element>
           <dc-qualifier>ilrisubject</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>ILRI Subject Focus</label>
+          <label>ILRI subject focus</label>
           <input-type value-pairs-name="ilrisubject">dropdown</input-type>
           <hint></hint>
           <required></required>
@@ -1253,7 +1253,7 @@
           <dc-element>cpsubject</dc-element>
           <dc-qualifier>cpwfsubject</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>CPWF Subject Focus</label>
+          <label>CPWF subject focus</label>
           <input-type value-pairs-name="cpwfsubject">dropdown</input-type>
           <hint></hint>
           <required></required>
@@ -1502,7 +1502,7 @@
           <dc-element>cpsubject</dc-element>
           <dc-qualifier>cpwfsubject</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>CPWF Subject Focus</label>
+          <label>CPWF subject focus</label>
           <input-type value-pairs-name="cpwfsubject">dropdown</input-type>
           <hint></hint>
           <required></required>
@@ -1772,7 +1772,7 @@
           <dc-element>ccsubject</dc-element>
           <dc-qualifier>ccafsubject</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>CCAFS Subject Focus</label>
+          <label>CCAFS subject focus</label>
           <input-type value-pairs-name="ccafsubject">dropdown</input-type>
           <hint></hint>
           <required></required>
@@ -2029,7 +2029,7 @@
           <dc-element>subject</dc-element>
           <dc-qualifier>cta</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>CTA Subject Focus</label>
+          <label>CTA subject focus</label>
           <input-type value-pairs-name="cta">dropdown</input-type>
           <hint></hint>
           <required></required>
@@ -2266,7 +2266,7 @@
           <dc-element>subject</dc-element>
           <dc-qualifier>wle</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>WLE Subject Focus</label>
+          <label>WLE subject focus</label>
           <input-type value-pairs-name="wle">dropdown</input-type>
           <hint></hint>
           <required></required>
@@ -2276,7 +2276,7 @@
           <dc-element>cpsubject</dc-element>
           <dc-qualifier>cpwfsubject</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>CPWF Subject Focus</label>
+          <label>CPWF subject focus</label>
           <input-type value-pairs-name="cpwfsubject">dropdown</input-type>
           <hint></hint>
           <required></required>
