@@ -3706,8 +3706,8 @@
         <stored-value>CLIMATE CHANGE MITIGATION</stored-value>
       </pair>
       <pair>
-        <displayed-value>ECOSYSTEMS SERVICES</displayed-value>
-        <stored-value>ECOSYSTEMS SERVICES</stored-value>
+        <displayed-value>ECOSYSTEM SERVICES</displayed-value>
+        <stored-value>ECOSYSTEM SERVICES</stored-value>
       </pair>
       <pair>
         <displayed-value>FARMING SYSTEMS</displayed-value>
@@ -3744,6 +3744,10 @@
       <pair>
         <displayed-value>MARKETS</displayed-value>
         <stored-value>MARKETS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>MODELING</displayed-value>
+        <stored-value>MODELING</stored-value>
       </pair>
       <pair>
         <displayed-value>MONITORING AND REPORTING</displayed-value>
