@@ -647,6 +647,7 @@
                 <ref bean="searchFilterType"/>
 
                 <ref bean="searchFilterISIJournal"/>
+                <ref bean="searchFilterJournalTitle"/>
 
                 <ref bean="searchFilterIlriSubject"/>
                 <ref bean="searchFilterCpwfSubject"/>
