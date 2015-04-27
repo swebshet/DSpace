@@ -97,35 +97,34 @@
         <!--Which sidebar facets are to be displayed-->
         <property name="sidebarFacets">
             <list>
-                <ref bean="searchFilterAffiliation" />
                 <ref bean="searchFilterAuthor" />
-                <ref bean="searchFilterSubject" />
+                <ref bean="searchFilterAffiliation" />
+                <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterOutputType" />
                 <ref bean="searchFilterCrpsubject" />
+                <ref bean="searchFilterRegion" />
+                <ref bean="searchFilterCountry" />
+                <ref bean="searchFilterSubject" />
                 <ref bean="searchFilterCipSubject" />
                 <ref bean="searchFilterDrylandsSubject" />
                 <ref bean="searchFilterIcardaSubject" />
-                <ref bean="searchFilterIssued" />
-                <ref bean="searchFilterOutputType" />
-                <ref bean="searchFilterRegion" />
-                <ref bean="searchFilterCountry" />
                 <ref bean="searchFilterStatus" />
             </list>
         </property>
         <!--The search filters which can be used on the discovery search page-->
         <property name="searchFilters">
             <list>
-                <ref bean="searchFilterAffiliation" />
-                <ref bean="searchFilterTitle" />
                 <ref bean="searchFilterAuthor" />
-                <ref bean="searchFilterSubject" />
+                <ref bean="searchFilterAffiliation" />
+                <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterOutputType" />
                 <ref bean="searchFilterCrpsubject" />
+                <ref bean="searchFilterRegion" />
+                <ref bean="searchFilterCountry" />
+                <ref bean="searchFilterSubject" />
                 <ref bean="searchFilterCipSubject" />
                 <ref bean="searchFilterDrylandsSubject" />
                 <ref bean="searchFilterIcardaSubject" />
-                <ref bean="searchFilterIssued" />
-                <ref bean="searchFilterOutputType" />
-                <ref bean="searchFilterRegion" />
-                <ref bean="searchFilterCountry" />
                 <ref bean="searchFilterStatus" />
             </list>
         </property>
@@ -218,32 +217,34 @@
         <!--Which sidebar facets are to be displayed (same as defaultConfiguration above)-->
         <property name="sidebarFacets">
             <list>
-                <ref bean="searchFilterAffiliation" />
                 <ref bean="searchFilterAuthor" />
-                <ref bean="searchFilterSubject" />
-                <ref bean="searchFilterCrpsubject" />
+                <ref bean="searchFilterAffiliation" />
                 <ref bean="searchFilterIssued" />
                 <ref bean="searchFilterOutputType" />
+                <ref bean="searchFilterCrpsubject" />
                 <ref bean="searchFilterRegion" />
                 <ref bean="searchFilterCountry" />
+                <ref bean="searchFilterSubject" />
+                <ref bean="searchFilterCipSubject" />
+                <ref bean="searchFilterDrylandsSubject" />
+                <ref bean="searchFilterIcardaSubject" />
                 <ref bean="searchFilterStatus" />
             </list>
         </property>
         <!--The search filters which can be used on the discovery search page (same as defaultConfiguration above)-->
         <property name="searchFilters">
             <list>
-                <ref bean="searchFilterAffiliation" />
-                <ref bean="searchFilterTitle" />
                 <ref bean="searchFilterAuthor" />
-                <ref bean="searchFilterSubject" />
+                <ref bean="searchFilterAffiliation" />
+                <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterOutputType" />
                 <ref bean="searchFilterCrpsubject" />
+                <ref bean="searchFilterRegion" />
+                <ref bean="searchFilterCountry" />
+                <ref bean="searchFilterSubject" />
                 <ref bean="searchFilterCipSubject" />
                 <ref bean="searchFilterDrylandsSubject" />
                 <ref bean="searchFilterIcardaSubject" />
-                <ref bean="searchFilterIssued" />
-                <ref bean="searchFilterOutputType" />
-                <ref bean="searchFilterRegion" />
-                <ref bean="searchFilterCountry" />
                 <ref bean="searchFilterStatus" />
             </list>
         </property>
