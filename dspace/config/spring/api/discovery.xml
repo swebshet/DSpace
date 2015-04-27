@@ -105,9 +105,19 @@
                 <ref bean="searchFilterRegion" />
                 <ref bean="searchFilterCountry" />
                 <ref bean="searchFilterSubject" />
+                <ref bean="searchFilterBioversity"/>
+                <ref bean="searchFilterCcafSubject"/>
+                <ref bean="searchFilterCiat"/>
+                <ref bean="searchFilterCiforSubject"/>
                 <ref bean="searchFilterCipSubject" />
+                <ref bean="searchFilterCpwfSubject"/>
+                <ref bean="searchFilterCta"/>
                 <ref bean="searchFilterDrylandsSubject" />
+                <ref bean="searchFilterHumidtropics"/>
                 <ref bean="searchFilterIcardaSubject" />
+                <ref bean="searchFilterIlriSubject"/>
+                <ref bean="searchFilterIwmiSubject"/>
+                <ref bean="searchFilterWlesubject"/>
                 <ref bean="searchFilterStatus" />
             </list>
         </property>
@@ -122,9 +132,19 @@
                 <ref bean="searchFilterRegion" />
                 <ref bean="searchFilterCountry" />
                 <ref bean="searchFilterSubject" />
+                <ref bean="searchFilterBioversity"/>
+                <ref bean="searchFilterCcafSubject"/>
+                <ref bean="searchFilterCiat"/>
+                <ref bean="searchFilterCiforSubject"/>
                 <ref bean="searchFilterCipSubject" />
+                <ref bean="searchFilterCpwfSubject"/>
+                <ref bean="searchFilterCta"/>
                 <ref bean="searchFilterDrylandsSubject" />
+                <ref bean="searchFilterHumidtropics"/>
                 <ref bean="searchFilterIcardaSubject" />
+                <ref bean="searchFilterIlriSubject"/>
+                <ref bean="searchFilterIwmiSubject"/>
+                <ref bean="searchFilterWlesubject"/>
                 <ref bean="searchFilterStatus" />
             </list>
         </property>
@@ -225,9 +245,19 @@
                 <ref bean="searchFilterRegion" />
                 <ref bean="searchFilterCountry" />
                 <ref bean="searchFilterSubject" />
+                <ref bean="searchFilterBioversity"/>
+                <ref bean="searchFilterCcafSubject"/>
+                <ref bean="searchFilterCiat"/>
+                <ref bean="searchFilterCiforSubject"/>
                 <ref bean="searchFilterCipSubject" />
+                <ref bean="searchFilterCpwfSubject"/>
+                <ref bean="searchFilterCta"/>
                 <ref bean="searchFilterDrylandsSubject" />
+                <ref bean="searchFilterHumidtropics"/>
                 <ref bean="searchFilterIcardaSubject" />
+                <ref bean="searchFilterIlriSubject"/>
+                <ref bean="searchFilterIwmiSubject"/>
+                <ref bean="searchFilterWlesubject"/>
                 <ref bean="searchFilterStatus" />
             </list>
         </property>
@@ -242,9 +272,19 @@
                 <ref bean="searchFilterRegion" />
                 <ref bean="searchFilterCountry" />
                 <ref bean="searchFilterSubject" />
+                <ref bean="searchFilterBioversity"/>
+                <ref bean="searchFilterCcafSubject"/>
+                <ref bean="searchFilterCiat"/>
+                <ref bean="searchFilterCiforSubject"/>
                 <ref bean="searchFilterCipSubject" />
+                <ref bean="searchFilterCpwfSubject"/>
+                <ref bean="searchFilterCta"/>
                 <ref bean="searchFilterDrylandsSubject" />
+                <ref bean="searchFilterHumidtropics"/>
                 <ref bean="searchFilterIcardaSubject" />
+                <ref bean="searchFilterIlriSubject"/>
+                <ref bean="searchFilterIwmiSubject"/>
+                <ref bean="searchFilterWlesubject"/>
                 <ref bean="searchFilterStatus" />
             </list>
         </property>
