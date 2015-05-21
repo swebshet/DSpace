@@ -1169,3 +1169,19 @@ margin: 2px 2px 0px 2px;
 table.ds-includeSet-table, table.file-list {
     margin-left: 10px;
 }
+/* Fix for meta data items with long rows spilling outside body in Chrome */
+/* 1/3 */
+table.ds-includeSet-table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* 2/3 */
+table.ds-includeSet-table td {
+  word-wrap: break-word;
+}
+
+/* 3/3 */
+table.ds-includeSet-table td:first-child {
+  width: 20%;
+}
