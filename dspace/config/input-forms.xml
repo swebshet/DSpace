@@ -81,7 +81,7 @@
           <dc-element>title</dc-element>
           <dc-qualifier></dc-qualifier>
           <repeatable>false</repeatable>
-          <label>Title(This is Required)</label>
+          <label>Title (required)</label>
           <input-type>onebox</input-type>
           <hint>Enter the full official title of the item.</hint>
           <required>You must enter a main title for this item.</required>
@@ -131,7 +131,7 @@
           <dc-element>type</dc-element>
           <dc-qualifier>output</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>Item Type(This is Required)</label>
+          <label>Item type (required)</label>
           <input-type value-pairs-name="common_types">dropdown</input-type>
           <hint>Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "Ctrl" or "Shift" key.</hint>
           <required>You must select item type</required>
@@ -161,7 +161,7 @@
           <dc-element>date</dc-element>
           <dc-qualifier>issued</dc-qualifier>
           <repeatable>false</repeatable>
-          <label>Date of Publication(This is Required)</label>
+          <label>Date of Publication (required)</label>
           <input-type>date</input-type>
           <hint>Enter the date when the item was published or made public.</hint>
           <required>You must enter at least the year.</required>
@@ -181,7 +181,7 @@
           <dc-element>identifier</dc-element>
           <dc-qualifier>citation</dc-qualifier>
           <repeatable>false</repeatable>
-          <label>Citation(This is Required)</label>
+          <label>Citation (required)</label>
           <input-type>onebox</input-type>
           <hint>Enter the standard citation</hint>
           <required>Required</required>
@@ -664,7 +664,7 @@
           <dc-element>identifier</dc-element>
           <dc-qualifier>citation</dc-qualifier>
           <repeatable>false</repeatable>
-          <label>Citation</label>
+          <label>Citation (required)</label>
           <input-type>onebox</input-type>
           <hint>Enter the standard citation.</hint>
           <required>Required</required>
