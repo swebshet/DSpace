@@ -381,9 +381,9 @@
         <field>
           <dc-schema>cg</dc-schema>
           <dc-element>identifier</dc-element>
-          <dc-qualifier>fund</dc-qualifier>
+          <dc-qualifier>cpwffundno</dc-qualifier>
           <repeatable>false</repeatable>
-          <label>CPWF Project Number</label>
+          <label>CPWF project number</label>
           <input-type value-pairs-name="cpwfundno">dropdown</input-type>
           <hint></hint>
           <required></required>
