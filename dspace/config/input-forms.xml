@@ -134,7 +134,7 @@
           <label>Item type (required)</label>
           <input-type value-pairs-name="common_types">dropdown</input-type>
           <hint>Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "Ctrl" or "Shift" key.</hint>
-          <required>You must select item type</required>
+          <required>You must select item type.</required>
         </field>
         <field>
           <dc-schema>dc</dc-schema>
@@ -161,7 +161,7 @@
           <dc-element>date</dc-element>
           <dc-qualifier>issued</dc-qualifier>
           <repeatable>false</repeatable>
-          <label>Date of Publication (required)</label>
+          <label>Date of publication (required)</label>
           <input-type>date</input-type>
           <hint>Enter the date when the item was published or made public.</hint>
           <required>You must enter at least the year.</required>
@@ -183,8 +183,8 @@
           <repeatable>false</repeatable>
           <label>Citation (required)</label>
           <input-type>onebox</input-type>
-          <hint>Enter the standard citation</hint>
-          <required>Required</required>
+          <hint>Enter the standard citation.</hint>
+          <required>Standard citation is required.</required>
         </field>
         <field>
           <dc-schema>dc</dc-schema>
@@ -233,6 +233,16 @@
           <dc-qualifier>googleurl</dc-qualifier>
           <repeatable>false</repeatable>
           <label>Google book URL</label>
+          <input-type>onebox</input-type>
+          <hint>Enter a full URL for the item.</hint>
+          <required></required>
+        </field>
+        <field>
+          <dc-schema>cg</dc-schema>
+          <dc-element>link</dc-element>
+          <dc-qualifier>permalink</dc-qualifier>
+          <repeatable>false</repeatable>
+          <label>Bioversity publications permanent link</label>
           <input-type>onebox</input-type>
           <hint>Enter a full URL for the item.</hint>
           <required></required>
@@ -501,10 +511,10 @@
           <dc-element>identifier</dc-element>
           <dc-qualifier>status</dc-qualifier>
           <repeatable>false</repeatable>
-          <label>Accessibility Status</label>
+          <label>Accessibility status (required)</label>
           <input-type value-pairs-name="common_status_identifier">dropdown</input-type>
           <hint>Please indicate its accessibility.</hint>
-          <required></required>
+          <required>Accesibility status is required.</required>
         </field>
         <field>
           <dc-schema>dc</dc-schema>
@@ -667,7 +677,7 @@
           <label>Citation (required)</label>
           <input-type>onebox</input-type>
           <hint>Enter the standard citation.</hint>
-          <required>Required</required>
+          <required>Standard citation is required.</required>
         </field>
         <field>
           <dc-schema>dc</dc-schema>
@@ -818,7 +828,7 @@
     <value-pairs value-pairs-name="Authorship_types" dc-term="authorship_types">
       <pair>
         <displayed-value>N/A</displayed-value>
-        <stored-value>N/A</stored-value>
+        <stored-value></stored-value>
       </pair>
       <pair>
         <displayed-value>CGIAR single centre</displayed-value>
@@ -851,24 +861,12 @@
     </value-pairs>
     <value-pairs value-pairs-name="cipsubject" dc-term="subject_cip">
       <pair>
-        <displayed-value>HOUSEHOLD</displayed-value>
-        <stored-value>HOUSEHOLD</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>FOOD SECURITY</displayed-value>
-        <stored-value>FOOD SECURITY</stored-value>
+        <displayed-value>SWEET POTATOES</displayed-value>
+        <stored-value>SWEET POTATOES</stored-value>
       </pair>
       <pair>
         <displayed-value>FOOD SUPPLY</displayed-value>
         <stored-value>FOOD SUPPLY</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>SMALLHOLDERS</displayed-value>
-        <stored-value>SMALLHOLDERS</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>SWEET POTATOES</displayed-value>
-        <stored-value>SWEET POTATOES</stored-value>
       </pair>
     </value-pairs>
     <value-pairs value-pairs-name="drylandssubject" dc-term="subject_drylands">
@@ -1559,7 +1557,7 @@
     <value-pairs value-pairs-name="common_status_identifier" dc-term="identifier_status">
       <pair>
         <displayed-value>N/A</displayed-value>
-        <stored-value>&gt;N/A</stored-value>
+        <stored-value></stored-value>
       </pair>
       <pair>
         <displayed-value>Open Access</displayed-value>
@@ -3395,7 +3393,7 @@
     <value-pairs value-pairs-name="cpwfundno" dc-term="identifier_fund">
       <pair>
         <displayed-value>N/A</displayed-value>
-        <stored-value>N/A</stored-value>
+        <stored-value></stored-value>
       </pair>
       <pair>
         <displayed-value>PHASE 1</displayed-value>
