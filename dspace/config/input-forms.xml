@@ -381,10 +381,10 @@
         <field>
           <dc-schema>cg</dc-schema>
           <dc-element>identifier</dc-element>
-          <dc-qualifier>cpwffundno</dc-qualifier>
+          <dc-qualifier>cpwfproject</dc-qualifier>
           <repeatable>false</repeatable>
           <label>CPWF project number</label>
-          <input-type value-pairs-name="cpwfundno">dropdown</input-type>
+          <input-type value-pairs-name="cpwfproject">dropdown</input-type>
           <hint></hint>
           <required></required>
         </field>
@@ -3390,7 +3390,7 @@
         <stored-value>SOCIAL LEARNING</stored-value>
       </pair>
     </value-pairs>
-    <value-pairs value-pairs-name="cpwfundno" dc-term="identifier_fund">
+    <value-pairs value-pairs-name="cpwfproject" dc-term="identifier_fund">
       <pair>
         <displayed-value>N/A</displayed-value>
         <stored-value></stored-value>
