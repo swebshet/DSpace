@@ -639,7 +639,7 @@
 	<message key="xmlui.EPerson.LoginChooser.head1">Choose a Login Method</message>
 	<message key="xmlui.EPerson.LoginChooser.para1">Log in via:</message>
 	<message key="org.dspace.authenticate.ShibAuthentication.title">Shibboleth Authentication</message>
-	<message key="org.dspace.eperson.LDAPAuthentication.title">LDAP Authentication (ILRI and CGIAR users this is your usual network login)</message>
+	<message key="org.dspace.eperson.LDAPAuthentication.title">CGIAR Users Authentication</message>
 	<message key="org.dspace.eperson.PasswordAuthentication.title">Password Authentication</message>
 	<message key="org.dspace.eperson.X509Authentication.title">Web Certificate Authentication</message>
 
@@ -2529,6 +2529,7 @@
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.iso">Language</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.ilrisubject">ILRI subject</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.isijournal">ISI journal</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.jtitle">Journal title</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.cipsubject">CIP subject</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.drylandssubject">Dryland systems subject</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.icardasubject">ICARDA subject</message>
@@ -2548,6 +2549,7 @@
     <message key="xmlui.reporting-suite.statistics.contentanalysis.iso">Language</message>
     <message key="xmlui.reporting-suite.statistics.contentanalysis.ilrisubject">ILRI subject</message>
     <message key="xmlui.reporting-suite.statistics.contentanalysis.isijournal">ISI journal</message>
+    <message key="xmlui.reporting-suite.statistics.contentanalysis.jtitle">Journal title</message>
     <message key="xmlui.reporting-suite.statistics.contentanalysis.cipsubject">CIP subject</message>
     <message key="xmlui.reporting-suite.statistics.contentanalysis.drylandssubject">Dryland systems subject</message>
     <message key="xmlui.reporting-suite.statistics.contentanalysis.icardasubject">ICARDA subject</message>
