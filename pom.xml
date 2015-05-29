@@ -27,7 +27,7 @@
     <!--Force UTF-8 encoding during build on all platforms-->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>1.6</java.version> <!-- DSpace requires Java 1.6 or higher -->		
+        <java.version>1.6</java.version> <!-- DSpace requires Java 1.6 or higher -->
         <lucene.version>4.4.0</lucene.version>
         <solr.version>4.4.0</solr.version>
         <slf4j.version>1.6.1</slf4j.version>
@@ -35,7 +35,7 @@
              as it is used to reference the LICENSE_HEADER and *.properties file(s) in that directory. -->
         <root.basedir>${basedir}</root.basedir>
         <listings-and-reports.version.number>4.3-2.9.5-0</listings-and-reports.version.number>
-        <cua.version.number>4.2-3.1.10-0</cua.version.number>
+        <cua.version.number>4.3-3.1.14-0</cua.version.number>
     </properties>
 
     <build>
