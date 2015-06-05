@@ -2611,7 +2611,7 @@
       </pair>
       <pair>
         <displayed-value>GENDER AND EQUITY</displayed-value>
-        <stored-value>GENETIC RESOURCES</stored-value>
+        <stored-value>GENDER AND EQUITY</stored-value>
       </pair>
       <pair>
         <displayed-value>GENETIC RESOURCES</displayed-value>
@@ -2684,10 +2684,6 @@
       <pair>
         <displayed-value>SOIL INFORMATION</displayed-value>
         <stored-value>SOIL INFORMATION</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>SOIL LANDSCAPES</displayed-value>
-        <stored-value>SOIL LANDSCAPES</stored-value>
       </pair>
       <pair>
         <displayed-value>SOIL LANDSCAPES</displayed-value>
