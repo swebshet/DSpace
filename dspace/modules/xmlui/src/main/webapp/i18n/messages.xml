@@ -413,6 +413,16 @@
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.icardasubject">ICARDA subject</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.affiliation">Author affiliation</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.outputtype">Output type</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.bioversity">Bioversity subject</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.ccafsubject">CCAFS subject</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.ciat">CIAT subject</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.ciforsubject">CIFOR subject</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.cpwfsubject">CPWF subject</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.cta">CTA subject</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.humidtropics">Humidtropics subject</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.ilrisubject">ILRI subject</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.iwmisubject">IWMI subject</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.wlesubject">WLE subject</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.status">Status</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.region">Region</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.country">Country</message>
