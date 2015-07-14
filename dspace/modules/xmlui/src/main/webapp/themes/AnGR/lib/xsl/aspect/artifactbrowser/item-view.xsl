@@ -762,23 +762,18 @@
                 <xsl:with-param name="phase" select="$otherPhase"/>
               </xsl:call-template>
           </xsl:when>
-        <!-- ANIMAL SPECIES -->
-		<xsl:when test="$clause =26 and (dim:field[@element='Species' and @qualifier='animal'])">
+        <!-- ANIMAL BREED -->
+		<xsl:when test="$clause = 26 and (dim:field[@element='species' and @qualifier='breed'])">
                     <tr class="ds-table-row {$phase}">
-	                <td><span class="bold"><i18n:text>Animal species</i18n:text>:</span></td>
+	                <td><span class="bold"><i18n:text>Animal breed</i18n:text>:</span></td>
 	                <td>
-	                <xsl:if test="count(dim:field[@element='Species' and @qualifier='animal']) &gt; 1">
-	                	<hr class="metadata-seperator"/>
-	                </xsl:if>
-	                <xsl:for-each select="dim:field[@element='Species' and @qualifier='animal']">
-		                <xsl:copy-of select="./node()"/>
-		                <xsl:if test="count(following-sibling::dim:field[@element='Species' and @qualifier='animal']) != 0">
-	                    	<hr class="metadata-seperator"/>
-	                    </xsl:if>
-	              	</xsl:for-each>
-	              	<xsl:if test="count(dim:field[@element='Species' and @qualifier='animal']) &gt; 1">
-	                	<hr class="metadata-seperator"/>
-	                </xsl:if>
+	                <xsl:for-each select="//dim:field[@element='species'and @qualifier='breed']">
+                      <xsl:variable name="lnk"><xsl:value-of select="."/></xsl:variable>
+                      <a href="/browse?value={.}&amp;type=breed"><xsl:value-of select="."/></a>
+                      <xsl:if test="position()!=last()">
+                        <xsl:text>, </xsl:text>
+                      </xsl:if>
+                    </xsl:for-each>
 	                </td>
 	            </tr>
               <xsl:call-template name="itemSummaryView-DIM-fields">
