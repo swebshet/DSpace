@@ -283,11 +283,11 @@ div.ds-option-set ul.sublist {
     }
 div.ds-option-set a{
    color: #000000;
-   font-size: 11px;
+   font-size: 12px;
    }
 div.ds-option-set a:hover{
    color: #000000;
-   font-size: 11px;
+   font-size: 12px;
    }
 #ds-search-option {
     padding: 10px;
@@ -770,6 +770,7 @@ span.field-help {
     margin-top: 25px;
     margin-bottom: 25px;
     color: #00a950;
+    font-size: 12px;
 }
 
 .collection .artifact-title a {
@@ -1015,11 +1016,11 @@ div.spacer{
 
 .item-metadata {
     float: left;
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .item-metadata a {
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .file-metadata {
