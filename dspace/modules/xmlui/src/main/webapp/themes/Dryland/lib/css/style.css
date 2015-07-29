@@ -93,9 +93,9 @@ select.multiple {
 
 #ds-user-box {
     right: 0;
-    top: 17px;
+    top: 10px;
     position: absolute;
-    color: white;
+    color: black;
 }
 
 #ds-language-selection {
@@ -106,7 +106,7 @@ select.multiple {
 }
 
 #ds-user-box a, #ds-language-selection a {
-    color: white;
+    color: black;
 }
 
 #ds-trail-wrapper {
