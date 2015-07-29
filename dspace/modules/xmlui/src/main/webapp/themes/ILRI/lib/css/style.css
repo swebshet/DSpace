@@ -19,7 +19,7 @@ body {
 }
 /*Font size percentages based on the tables at developer.yahoo.com/yui/fonts/ */
 h1 {
-    font-size: 16px;
+    font-size: 182%;
     color: #660000;
     text-align: justify;
     font-weight: bold;
@@ -27,27 +27,27 @@ h1 {
 }
 
 h2{
-    font-size: 14px;
+    font-size: 123.1%;
     color: #660000;
     font-weight: bold;
     margin-left: 15px;
 }
 
 h3 {
-    font-size: 12px;
+    font-size: 116%;
     color: #660000;
     font-weight: normal;
     margin-left: 15px;
 }
 
 h4 {
-    font-size: 10px;
+    font-size: 108%;
     color: #660000;
     margin-left: 15px;
 }
 
 h5, h6 {
-    font-size: 9px;
+    font-size: 100%;
     color: #660000;
     margin-left: 15px;
 }
@@ -271,7 +271,7 @@ div.ds-option-set ul {
 
 div.ds-option-set .ds-sublist-head {
     font-weight: normal;
-    font-size: 12px;
+    font-size: 100%;
     color: #000000;
 }
 
@@ -1019,11 +1019,11 @@ div.spacer{
 
 .item-metadata {
     float: left;
-    font-size: 12px;
+    font-size: 116%;
 }
 
 .item-metadata a {
-    font-size: 12px;
+    font-size: inherit;
 }
 
 .file-metadata {
