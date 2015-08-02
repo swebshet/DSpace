@@ -611,7 +611,7 @@
           <dc-element>species</dc-element>
           <dc-qualifier>breed</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>Animal Breeds</label>
+          <label>Animal breed</label>
           <input-type>onebox</input-type>
           <required></required>
         </field>
