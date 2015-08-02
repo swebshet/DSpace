@@ -609,7 +609,7 @@
         <field>
           <dc-schema>cg</dc-schema>
           <dc-element>species</dc-element>
-          <dc-qualifier>animal</dc-qualifier>
+          <dc-qualifier>breed</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Animal Breeds</label>
           <input-type>onebox</input-type>
