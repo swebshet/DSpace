@@ -221,6 +221,12 @@
             <scope>provided</scope>
         </dependency>
 
+        <dependency>
+            <groupId>com.atmire</groupId>
+            <artifactId>atmire-listings-and-reports-xmlui-api</artifactId>
+            <version>${listings-and-reports.version.number}</version>
+        </dependency>
+
     </dependencies>
 
 </project>

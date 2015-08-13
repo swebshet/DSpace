@@ -62,11 +62,18 @@
                         </resource>
                     </webResources>
                     <overlays>
-                        <overlay />
+                        <overlay>
+                            <groupId>com.atmire</groupId>
+                            <artifactId>atmire-listings-and-reports-webapp</artifactId>
+                            <type>war</type>
+                        </overlay>
                         <overlay>
                             <groupId>org.dspace</groupId>
                             <artifactId>dspace-jspui</artifactId>
                             <type>war</type>
+                            <excludes>
+                                <exclude>WEB-INF/classes/**</exclude>
+                            </excludes>
                         </overlay>
                     </overlays>
                 </configuration>
@@ -104,6 +111,20 @@
            <artifactId>servlet-api</artifactId>
            <scope>provided</scope>
         </dependency>
+
+        <dependency>
+            <groupId>com.atmire</groupId>
+            <artifactId>atmire-listings-and-reports-webapp</artifactId>
+            <version>${listings-and-reports.version.number}</version>
+            <type>war</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.atmire</groupId>
+            <artifactId>atmire-listings-and-reports-api</artifactId>
+            <version>${listings-and-reports.version.number}</version>
+        </dependency>
+
     </dependencies>
 
 </project>
