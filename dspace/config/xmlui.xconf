@@ -91,7 +91,11 @@
              Usage Statistics Engines
              ======================== -->
         <!-- By default, DSpace uses a Statistics engine based on SOLR -->
-        <aspect name="Statistics" path="resource://aspects/Statistics/" />
+        <!--<aspect name="Statistics" path="resource://aspects/Statistics/" />-->
+
+        <!-- Atmire CUA instead of DSpace Statistics -->
+        <aspect name="CUA" path="resource://aspects/Statistics/" />
+        <aspect name="Atmire Modules Aspect" path="resource://aspects/AtmireModules/" />
 
         <!--
              If you prefer to use "Elastic Search" Statistics, you can uncomment the below
@@ -179,6 +183,10 @@
         their respective items.    
     -->
     <themes>
+        <!-- Atmire CUA -->
+        <theme name="ReportingSuite" regex="(reporting-suite/(graph-editor|content- editor)/)|(statlet/em/).*" path="ReportingSuite/" />
+        <theme name="Atmire Modules Theme" regex="atmire/.*" path="AtmireModules/" />
+
         <!-- Example configuration -->
 
         <!-- <theme name="Test Theme 1" handle="123456789/1" path="theme1/"/>    -->
