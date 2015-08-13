@@ -33,6 +33,7 @@
     <core name="statistics" instanceDir="statistics" />
     <core name="oai" instanceDir="oai" />
     <core name="authority" instanceDir="authority" />
+    <core name="datatables" instanceDir="datatables" />
   </cores>
   
 </solr>

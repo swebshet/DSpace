@@ -1031,6 +1031,7 @@
   <requestHandler name="/update/csv" class="solr.CSVRequestHandler">
         <lst name="defaults">
          <str name="stream.contentType">application/csv</str>
+         <str name="update.chain">uuid</str>
        </lst>
   </requestHandler>
 
