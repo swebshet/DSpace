@@ -148,6 +148,9 @@
             It's accessible for admins in the XMLTest menu or via the /XMLTest/ URL.
         -->
         <!-- <aspect name="XML Tests" path="resource://aspects/XMLTest/"/> -->
+
+        <!-- Atmire Listings and Reports -->
+        <aspect name="ListingsAndReports" path="resource://aspects/ListingsAndReports/" />
     </aspects>
 
     <!--
