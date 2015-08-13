@@ -2640,4 +2640,8 @@
     <message key="xmlui.mirage2.choice-authority-control.loading">Loading...</message>
 
     <message key="xmlui.mirage2.item-list.thumbnail">Thumbnail</message>
+
+    <!-- Atmire CUA -->
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_issuedate">Date Issued</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_accessioneddate">Date Accessioned</message>
 </catalogue>

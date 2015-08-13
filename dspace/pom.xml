@@ -77,7 +77,7 @@
                                    <goal>unpack-dependencies</goal>
                                </goals>
                                <configuration>
-                                   <includeArtifactIds>atmire-listings-and-reports-common</includeArtifactIds>
+                                   <includeArtifactIds>atmire-listings-and-reports-common,atmire-cua-common</includeArtifactIds>
                                    <overWriteReleases>true</overWriteReleases>
                                    <overWriteSnapshots>true</overWriteSnapshots>
                                    <outputDirectory>${project.build.directory}/atmire-modules</outputDirectory>
@@ -184,6 +184,12 @@
             <artifactId>dspace-oai</artifactId>
             <type>jar</type>
             <classifier>classes</classifier>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.solr</groupId>
+                    <artifactId>solr-solrj</artifactId>
+                </exclusion>
+            </exclusions>
     	</dependency>
         <!-- The Servlet API is also needed by the 'dspace oai' launcher.xml
              command. -->
@@ -199,6 +205,11 @@
             <groupId>com.atmire</groupId>
             <artifactId>atmire-listings-and-reports-xmlui-api</artifactId>
             <version>${listings-and-reports.version.number}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.atmire</groupId>
+            <artifactId>atmire-cua-api</artifactId>
+            <version>${cua.version.number}</version>
         </dependency>
         <dependency>
             <groupId>org.dspace</groupId>

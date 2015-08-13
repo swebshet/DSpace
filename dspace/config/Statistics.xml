@@ -1,0 +1,429 @@
+<pages xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+
+    <item-display>
+        <!--<globalDateFilter>true</globalDateFilter>-->
+        <tables>
+            <table id="tab1" title="xmlui.statistics.downloads.lastm" i18n:attr="title">
+                <datasetgenerators>
+                    <datasetgenerator type="org.dspace.statistics.content.DSpaceObjectDatasetGenerator">
+                        <dsotype>0</dsotype>
+                    </datasetgenerator>
+                    <datasetgenerator type="org.dspace.statistics.content.DatasetTimeGenerator" includetotal="false">
+                        <period type="month" start="-1" end="0" />
+                        <!-- past 14 days -->
+                    </datasetgenerator>
+                </datasetgenerators>
+                <filters>
+                    <filter type="org.dspace.statistics.content.filter.StatisticsHitTypeFilter">
+                        <dsotype>0</dsotype>
+                    </filter>
+                </filters>
+                <position>
+                    <css>clear: both</css>
+                </position>
+            </table>
+        </tables>
+
+        <graphs>
+            <graph id="graph1" type="categorystacked3d"> <!-- line graph with line for item and line per bitstream -->
+                <styles>
+                    <style fill="#315D90" id="#315D90" type="color"/>
+                    <style fill="#60984D" id="#60984D" type="color"/>
+                    <style fill="#EAA541" id="#EAA541" type="color"/>
+                    <style fill="#C23734" id="#C23734" type="color"/>
+                    <style fill="#75447E" id="#75447E" type="color"/>
+                    <style fill="#828484" id="#828484" type="color"/>
+                    <style fill="#456E9F" id="#456E9F" type="color"/>
+                    <style fill="#71A65F" id="#71A65F" type="color"/>
+                    <style fill="#EDB059" id="#EDB059" type="color"/>
+                    <style fill="#CA4C4A" id="#CA4C4A" type="color"/>
+                    <style fill="#875690" id="#875690" type="color"/>
+                    <style fill="#929594" id="#929594" type="color"/>
+                    <style id="titlefont" name="Verdana" size="20" style="plain" type="font"/>
+                    <style fill="#FFFFF0" id="fgcolor" type="color"/>
+                    <style fill="#F9F9F7" id="bgcolor" type="color"/>
+                </styles>
+                <frame color-style="bgcolor" height="300" width="585"/>
+                <background color-style="fgcolor"/>
+                <properties font-style="titlefont" legend="south" orientation="horizontal" stacked="1" thickness="4"
+                            title="xmlui.statistics.downloads.last6m" i18n:attr="title"/>
+                <style-mapping>
+                    <map color-style="#315D90"/>
+                    <map color-style="#60984D"/>
+                    <map color-style="#EAA541"/>
+                    <map color-style="#C23734"/>
+                    <map color-style="#75447E"/>
+                    <map color-style="#828484"/>
+                    <map color-style="#456E9F"/>
+                    <map color-style="#71A65F"/>
+                    <map color-style="#EDB059"/>
+                    <map color-style="#CA4C4A"/>
+                    <map color-style="#875690"/>
+                    <map color-style="#929594"/>
+                </style-mapping>
+                <datasetgenerators>
+                    <datasetgenerator type="org.dspace.statistics.content.DSpaceObjectDatasetGenerator">
+                        <dsotype>0</dsotype>
+                    </datasetgenerator>
+                    <datasetgenerator type="org.dspace.statistics.content.DatasetTimeGenerator" includetotal="false">
+                        <period type="month" start="-5" end="+1" />
+                    </datasetgenerator>
+                </datasetgenerators>
+
+                <position>
+                    <!-- specify positions in pages -->
+                </position>
+            </graph>
+        </graphs>
+
+        <tables>
+            <table id="tab2" title="Top 5 countries by file download">
+                <datasetgenerators>
+
+                    <datasetgenerator type="org.dspace.statistics.content.DatasetTypeGenerator">
+                        <solrfield>countryCode</solrfield>
+                        <limit type="top">
+                            <n>5</n>
+                        </limit>
+
+                    </datasetgenerator>
+                    <datasetgenerator type="org.dspace.statistics.content.DatasetTimeGenerator">
+                        <period type="month" start="-5" end="+1" />
+                    </datasetgenerator>
+                </datasetgenerators>
+                <filters>
+                    <filter type="org.dspace.statistics.content.filter.StatisticsHitTypeFilter">
+                        <dsotype>0</dsotype>
+                    </filter>
+                </filters>
+                <position>
+                    <css>clear: both</css>
+                </position>
+            </table>
+        </tables>
+
+        <links>
+            <link> <!-- link to a page with more detailed stats, will become URL with item id included as dynamic parameter -->
+                <!-- show table with last 12 month's item and bitstream downloads -->
+                <param name="contents.1">table</param>
+                <param name="contents.1.x.type">time</param>
+                <param name="contents.1.x.includetotal">true</param>
+                <param name="contents.1.x.period.type">month</param>
+                <param name="contents.1.x.period.start">-12</param>
+                <param name="contents.1.x.period.end">+1</param>
+                <param name="contents.1.y.type">dspaceobject</param>
+                <param name="contents.1.y.dspaceobject.type.1">2</param>
+                <param name="contents.1.y.dspaceobject.type.2">0</param>
+
+                <!-- show listing with top 10 countries of the item visits -->
+                <param name="contents.2">listing</param>
+                <param name="contents.2.y.type">countryCode</param>
+                <param name="contents.2.y.countryCode.max">10</param>
+                <param name="contents.2.y.filter.1">type</param>
+                <param name="contents.2.y.filter.1.type">2</param>
+            </link>
+        </links>
+
+    </item-display>
+
+    <collection-home>
+        <globalDateFilter>false</globalDateFilter>
+
+        <listings>
+            <listing id="list1" title="xmlui.statistics.topn.downloads.5"  i18n:attr="title">
+                <datasetgenerators>
+                    <datasetgenerator type="org.dspace.statistics.content.TopNDSODatasetGenerator">
+                        <dsotype>2</dsotype>
+                        <limit type="top">
+                            <n>5</n>
+                        </limit>
+                    </datasetgenerator>
+                </datasetgenerators>
+                <filters>
+                    <filter type="org.dspace.statistics.content.filter.StatisticsHitTypeFilter">
+                        <dsotype>0</dsotype>
+                    </filter>
+                </filters>
+            </listing>
+        </listings>
+
+
+
+        <graphs>
+            <graph id="graph1" type="category3d"> <!-- line graph with line for item and line per bitstream -->
+                <styles>
+                    <style fill="#315D90" id="#315D90" type="color"/>
+                    <style fill="#60984D" id="#60984D" type="color"/>
+                    <style fill="#EAA541" id="#EAA541" type="color"/>
+                    <style fill="#C23734" id="#C23734" type="color"/>
+                    <style fill="#75447E" id="#75447E" type="color"/>
+                    <style fill="#828484" id="#828484" type="color"/>
+                    <style fill="#456E9F" id="#456E9F" type="color"/>
+                    <style fill="#71A65F" id="#71A65F" type="color"/>
+                    <style fill="#EDB059" id="#EDB059" type="color"/>
+                    <style fill="#CA4C4A" id="#CA4C4A" type="color"/>
+                    <style fill="#875690" id="#875690" type="color"/>
+                    <style fill="#929594" id="#929594" type="color"/>
+                    <style id="titlefont" name="Verdana" size="20" style="plain" type="font"/>
+                    <style fill="#FFFFF0" id="fgcolor" type="color"/>
+                    <style fill="#F9F9F7" id="bgcolor" type="color"/>
+                </styles>
+                <frame color-style="bgcolor" height="300" width="585"/>
+                <background color-style="fgcolor"/>
+
+                <properties font-style="titlefont" legend="south" orientation="vertical" stacked="0" thickness="4"
+                            title="xmlui.statistics.downloads.last6m" i18n:attr="title"/>
+                <style-mapping>
+                    <map color-style="#315D90"/>
+                    <map color-style="#60984D"/>
+                    <map color-style="#EAA541"/>
+                    <map color-style="#C23734"/>
+                    <map color-style="#75447E"/>
+                    <map color-style="#828484"/>
+                    <map color-style="#456E9F"/>
+                    <map color-style="#71A65F"/>
+                    <map color-style="#EDB059"/>
+                    <map color-style="#CA4C4A"/>
+                    <map color-style="#875690"/>
+                    <map color-style="#929594"/>
+                </style-mapping>
+                <datasetgenerators>
+
+                    <datasetgenerator type="org.dspace.statistics.content.DatasetTimeGenerator" includetotal="false">
+                        <period type="month" start="-5" end="+1" />
+                    </datasetgenerator>
+                    <datasetgenerator type="org.dspace.statistics.content.DSpaceObjectDatasetGenerator">
+
+                        <dsotype>5</dsotype>
+                    </datasetgenerator>
+                </datasetgenerators>
+                <filters>
+                    <filter type="org.dspace.statistics.content.filter.StatisticsHitTypeFilter">
+                        <dsotype>2</dsotype>
+                    </filter>
+                </filters>
+                <position>
+                    <!-- specify positions in pages -->
+                </position>
+            </graph>
+
+
+        </graphs>
+
+        <tables>
+            <table id="tab2" title="Top 5 countries by file download">
+                <datasetgenerators>
+                     <datasetgenerator type="org.dspace.statistics.content.DatasetTypeGenerator">
+                        <solrfield>countryCode</solrfield>
+                        <limit type="top">
+                            <n>5</n>
+                        </limit>
+                    </datasetgenerator>
+
+                    <datasetgenerator type="org.dspace.statistics.content.DatasetTimeGenerator" includetotal="false">
+                        <period type="month" start="-5" end="+1" />
+                    </datasetgenerator>
+                </datasetgenerators>
+                <filters>
+                    <filter type="org.dspace.statistics.content.filter.StatisticsHitTypeFilter">
+                        <dsotype>0</dsotype>
+                    </filter>
+                    <filter type="org.dspace.statistics.content.filter.StatisticsHasValueFilter"><!-- to be sure the field has a value that is not empty -->
+                        <solrfield>countryCode</solrfield>
+                        <excludevalues>
+                            <value>A2</value>
+                        </excludevalues>
+                    </filter>
+
+                </filters>
+                <position>
+                    <css>clear: both</css>
+                </position>
+            </table>
+        </tables>
+
+    </collection-home>
+
+    <community-home>
+        <globalDateFilter>false</globalDateFilter>
+
+        <listings>
+            <listing id="list1" title="# Of Downloads For the top 5 Items">
+                <datasetgenerators>
+                    <datasetgenerator type="org.dspace.statistics.content.TopNDSODatasetGenerator">
+                        <dsotype>2</dsotype>
+                        <limit type="top">
+                            <n>5</n>
+                        </limit>
+                    </datasetgenerator>
+                </datasetgenerators>
+                <filters>
+                    <filter type="org.dspace.statistics.content.filter.StatisticsHitTypeFilter">
+                        <dsotype>0</dsotype>
+                    </filter>
+                </filters>
+            </listing>
+        </listings>
+
+
+        <graphs>
+            <graph id="graph1" type="category3d"> <!-- line graph with line for item and line per bitstream -->
+                <styles>
+                    <style fill="#315D90" id="#315D90" type="color"/>
+                    <style fill="#60984D" id="#60984D" type="color"/>
+                    <style fill="#EAA541" id="#EAA541" type="color"/>
+                    <style fill="#C23734" id="#C23734" type="color"/>
+                    <style fill="#75447E" id="#75447E" type="color"/>
+                    <style fill="#828484" id="#828484" type="color"/>
+                    <style fill="#456E9F" id="#456E9F" type="color"/>
+                    <style fill="#71A65F" id="#71A65F" type="color"/>
+                    <style fill="#EDB059" id="#EDB059" type="color"/>
+                    <style fill="#CA4C4A" id="#CA4C4A" type="color"/>
+                    <style fill="#875690" id="#875690" type="color"/>
+                    <style fill="#929594" id="#929594" type="color"/>
+                    <style id="titlefont" name="Verdana" size="20" style="plain" type="font"/>
+                    <style fill="#FFFFF0" id="fgcolor" type="color"/>
+                    <style fill="#F9F9F7" id="bgcolor" type="color"/>
+                </styles>
+                <frame color-style="bgcolor" height="300" width="585"/>
+                <background color-style="fgcolor"/>
+
+                <properties font-style="titlefont" legend="south" orientation="vertical" stacked="0" thickness="4"
+                            title="# File downloads for the last 6 months"/>
+                <style-mapping>
+                    <map color-style="#315D90"/>
+                    <map color-style="#60984D"/>
+                    <map color-style="#EAA541"/>
+                    <map color-style="#C23734"/>
+                    <map color-style="#75447E"/>
+                    <map color-style="#828484"/>
+                    <map color-style="#456E9F"/>
+                    <map color-style="#71A65F"/>
+                    <map color-style="#EDB059"/>
+                    <map color-style="#CA4C4A"/>
+                    <map color-style="#875690"/>
+                    <map color-style="#929594"/>
+                </style-mapping>
+                <datasetgenerators>
+
+                    <datasetgenerator type="org.dspace.statistics.content.DatasetTimeGenerator" includetotal="false">
+                        <period type="month" start="-5" end="+1" />
+                    </datasetgenerator>
+                    <datasetgenerator type="org.dspace.statistics.content.DSpaceObjectDatasetGenerator">
+
+                        <dsotype>5</dsotype>
+                    </datasetgenerator>
+                </datasetgenerators>
+                <filters>
+                    <filter type="org.dspace.statistics.content.filter.StatisticsHitTypeFilter">
+                        <dsotype>0</dsotype>
+                    </filter>
+                </filters>
+                <position>
+                    <!-- specify positions in pages -->
+                </position>
+            </graph>
+
+
+        </graphs>
+
+        <tables>
+            <table id="tab2" title="Top 5 countries by file download">
+                <datasetgenerators>
+
+                    <datasetgenerator type="org.dspace.statistics.content.DatasetTypeGenerator">
+                        <solrfield>countryCode</solrfield>
+                        <limit type="top">
+                            <n>5</n>
+                        </limit>
+
+                    </datasetgenerator>
+                    <datasetgenerator type="org.dspace.statistics.content.DatasetTimeGenerator">
+                        <period type="month" start="-5" end="+1" />
+                    </datasetgenerator>
+                </datasetgenerators>
+                <filters>
+                    <filter type="org.dspace.statistics.content.filter.StatisticsHitTypeFilter">
+                        <dsotype>0</dsotype>
+                    </filter>
+                </filters>
+                <position>
+                    <css>clear: both</css>
+                </position>
+            </table>
+        </tables>
+    </community-home>
+
+    <dspace-home>
+        <!--<globalDateFilter>true</globalDateFilter>-->
+
+        <listings>
+            <listing id="list1" title="Top 10 downloads">
+                <datasetgenerators>
+                    <datasetgenerator type="org.dspace.statistics.content.TopNDSODatasetGenerator">
+                        <dsotype>2</dsotype>
+                        <limit type="top">
+                            <n>10</n>
+                        </limit>
+                    </datasetgenerator>
+                </datasetgenerators>
+                <filters>
+                    <filter type="org.dspace.statistics.content.filter.StatisticsHitTypeFilter">
+                        <dsotype>0</dsotype>
+                    </filter>
+                </filters>
+            </listing>
+        </listings>
+        <links>
+            <link> <!-- link to a page with more detailed stats, will become URL -->
+                <!-- show listing with top 10 countries of all item visits -->
+                <param name="contents.1">listing</param>
+                <param name="contents.1.y.type">countryCode</param>
+                <param name="contents.1.y.countryCode.max">10</param>
+                <param name="contents.1.y.filter.1">type</param>
+                <param name="contents.1.y.filter.1.type">2</param>
+
+                <!-- show listing with top 20 items in last month -->
+                <param name="contents.2">listing</param>
+                <param name="contents.2.y.type">dspaceobject</param>
+                <param name="contents.2.y.dspaceobject.max">10</param>
+                <param name="contents.2.y.dspaceobject.type.1">2</param>
+                <param name="contents.2.y.filter.1">time</param>
+                <param name="contents.2.y.filter.1.time.start">-1 month</param>
+                <!-- create more machine-readable version -->
+                <param name="contents.2.y.filter.1.time.end">+1 month</param>
+                <!-- create more machine-readable version -->
+            </link>
+        </links>
+    </dspace-home>
+
+    <search-results>
+        <per-record> <!-- show nb views of last month as column -->
+            <column>
+                <dspaceobject type="2"></dspaceobject>
+                <!-- item -->
+                <filter field="time" start="-1 month" end="+1 month"/>
+                <!-- create more machine-readable version -->
+            </column>
+        </per-record>
+    </search-results>
+
+    <browse-results>
+        <per-record> <!-- show total nb views -->
+            <column>
+                <dspaceobject type="2"/>
+                <!-- item -->
+            </column>
+        </per-record>
+    </browse-results>
+
+    <browse-categories>
+        <per-category> <!-- show total nb views of all items in e.g. the author browse -->
+            <column>
+                <dspaceobject type="2"/>
+                <!-- item -->
+            </column>
+        </per-category>
+    </browse-categories>
+
+</pages>
