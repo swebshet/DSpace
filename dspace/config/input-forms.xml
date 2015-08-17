@@ -1323,6 +1323,10 @@
         <stored-value>VACCINES</stored-value>
       </pair>
       <pair>
+        <displayed-value>VALUE CHAINS</displayed-value>
+        <stored-value>VALUE CHAINS</stored-value>
+      </pair>
+      <pair>
         <displayed-value>VULNERABILITY</displayed-value>
         <stored-value>VULNERABILITY</stored-value>
       </pair>
