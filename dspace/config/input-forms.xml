@@ -609,9 +609,9 @@
         <field>
           <dc-schema>cg</dc-schema>
           <dc-element>species</dc-element>
-          <dc-qualifier>animal</dc-qualifier>
+          <dc-qualifier>breed</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>Animal Breeds</label>
+          <label>Animal breed</label>
           <input-type>onebox</input-type>
           <required></required>
         </field>
@@ -1125,6 +1125,10 @@
       <pair>
         <displayed-value>FISH</displayed-value>
         <stored-value>FISH</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>FMD</displayed-value>
+        <stored-value>FMD</stored-value>
       </pair>
       <pair>
         <displayed-value>FODDER</displayed-value>
