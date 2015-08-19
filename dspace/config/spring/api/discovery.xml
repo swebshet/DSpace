@@ -797,8 +797,31 @@
                 <ref bean="searchFilterAuthor"/>
                 <ref bean="searchFilterSubject"/>
                 <ref bean="searchFilterIssued"/>
+                <ref bean="searchFilterDateAccessioned"/>
+                <ref bean="searchFilterStatus"/>
                 <ref bean="searchFilterLanguage"/>
                 <ref bean="searchFilterType"/>
+                <ref bean="searchFilterISIJournal"/>
+                <ref bean="searchFilterJournalTitle"/>
+                <ref bean="searchFilterIlriSubject"/>
+                <ref bean="searchFilterCpwfSubject"/>
+                <ref bean="searchFilterCcafSubject"/>
+                <ref bean="searchFilterCiforSubject"/>
+                <ref bean="searchFilterIwmiSubject"/>
+                <ref bean="searchFilterRegion"/>
+                <ref bean="searchFilterCountry"/>
+                <ref bean="searchFilterSubregion"/>
+                <ref bean="searchFilterCrpsubject"/>
+                <ref bean="searchFilterBasin"/>
+                <ref bean="searchFilterOutput"/>
+                <ref bean="searchFilterCta"/>
+                <ref bean="searchFilterWlesubject"/>
+                <ref bean="searchFilterBioversity"/>
+                <ref bean="searchFilterCiat"/>
+                <ref bean="searchFilterHumidtropics"/>
+                <ref bean="searchFilterCipSubject"/>
+                <ref bean="searchFilterDrylandsSubject"/>
+                <ref bean="searchFilterIcardaSubject"/>
             </list>
         </property>
         <!--The sort filters for the discovery search-->
