@@ -1389,10 +1389,10 @@
         <stored-value>Equation</stored-value>
       </pair>
       <pair>
-        <pair>
-          <displayed-value>Extension material</displayed-value>
-          <stored-value>Extension material</stored-value>
-        </pair>
+        <displayed-value>Extension material</displayed-value>
+        <stored-value>Extension material</stored-value>
+      </pair>
+      <pair>
         <displayed-value>Image</displayed-value>
         <stored-value>Image</stored-value>
       </pair>
