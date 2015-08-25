@@ -183,7 +183,7 @@
         </dependency>
         <dependency>
             <groupId>com.atmire</groupId>
-            <artifactId>atmire-listings-and-reports-xmlui-api</artifactId>
+            <artifactId>atmire-listings-and-reports-api</artifactId>
             <version>${listings-and-reports.version.number}</version>
         </dependency>
         <dependency>
