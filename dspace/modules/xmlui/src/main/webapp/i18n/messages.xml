@@ -2312,6 +2312,7 @@
 	</message>
 	<message key="xmlui.dri2xhtml.structural.contact-link">Contact Us</message>
 	<message key="xmlui.dri2xhtml.structural.feedback-link">Send Feedback</message>
+	<message key="xmlui.dri2xhtml.structural.about-link">About</message>
 
 	<message key="xmlui.dri2xhtml.structural.head-subtitle">CGSpace</message>
 
