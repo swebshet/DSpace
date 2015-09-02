@@ -337,7 +337,12 @@
                         </button>
 
                         <a href="//www.cgiar.org" class="navbar-brand" target="_blank">
+                            <span>
                             <img src="http://cgiarweb.s3.amazonaws.com/wp-content/uploads/2012/04/logo-white.png" />
+                            </span>
+                                <span class="headerInfoName">CGSpace</span>
+                                <span class="headerInfoText">Repository of agricultural research outputs </span>
+
                         </a>
 
 
@@ -375,40 +380,7 @@
                                     </li>
                                 </xsl:if>
 
-                                <xsl:choose>
-                                    <xsl:when test="/dri:document/dri:meta/dri:userMeta/@authenticated = 'yes'">
-                                        <li class="dropdown">
-                                            <button class="dropdown-toggle navbar-toggle navbar-link" id="user-dropdown-toggle-xs" href="#" role="button"  data-toggle="dropdown">
-                                                <b class="visible-xs glyphicon glyphicon-user" aria-hidden="true"/>
-                                            </button>
-                                            <ul class="dropdown-menu pull-right" role="menu"
-                                                aria-labelledby="user-dropdown-toggle-xs" data-no-collapse="true">
-                                                <li>
-                                                    <a href="{/dri:document/dri:meta/dri:userMeta/
-                            dri:metadata[@element='identifier' and @qualifier='url']}">
-                                                        <i18n:text>xmlui.EPerson.Navigation.profile</i18n:text>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="{/dri:document/dri:meta/dri:userMeta/
-                            dri:metadata[@element='identifier' and @qualifier='logoutURL']}">
-                                                        <i18n:text>xmlui.dri2xhtml.structural.logout</i18n:text>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </xsl:when>
-                                    <xsl:otherwise>
-                                        <li>
-                                            <form style="display: inline" action="{/dri:document/dri:meta/dri:userMeta/
-                            dri:metadata[@element='identifier' and @qualifier='loginURL']}" method="get">
-                                                <button class="navbar-toggle navbar-link">
-                                                    <b class="visible-xs glyphicon glyphicon-user" aria-hidden="true"/>
-                                                </button>
-                                            </form>
-                                        </li>
-                                    </xsl:otherwise>
-                                </xsl:choose>
+
                             </ul>
                         </div>
                     </div>
@@ -426,10 +398,7 @@
                             <span class="icon-bar"></span>
                         </button>
                     </div>
-                    <div class="navbar-header  ">
-                           <div class="headerInfoName">CGSpace</div>
-                           <div class="headerInfoText">Repository of agricultural research outputs </div>
-                    </div>
+
                 <div id="ds-search-option" class="ds-option-set pull-right">
                     <!-- The form, complete with a text box and a button, all built from attributes referenced
                  from under pageMeta. -->
@@ -449,7 +418,7 @@
                                     </xsl:attribute>
                                 </input>
                                 <span class="input-group-btn">
-                                    <button class="ds-button-field btn btn-primary" title="xmlui.general.go" i18n:attr="title">
+                                    <button class="ds-button-field btn btn-default" title="xmlui.general.go" i18n:attr="title">
                                         <span class="glyphicon glyphicon-search" aria-hidden="true"/>
                                         <xsl:attribute name="onclick">
                                                     <xsl:text>
@@ -755,7 +724,7 @@
                         </a>
                         <xsl:text> | </xsl:text>
 
-                            <a href="https://github.com" class="invertocat">
+                            <a href="//github.com/ilri/DSpace" class="invertocat">
                                 <img alt="The GitHub Logo" src="{concat($theme-path, '/images/invertocat.png')}" width="24" height="24"/>
 
                             </a>
