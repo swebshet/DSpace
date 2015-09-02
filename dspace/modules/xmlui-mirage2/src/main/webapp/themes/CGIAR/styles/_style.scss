@@ -1,3 +1,6 @@
+$brand-primary: #427730;
+
+
 .navbar-brand {
   padding: 5px 15px;
   height: 75px;
@@ -18,7 +21,15 @@ header .navbar-default{
 #ds-search-option{
   margin-top:20px;
   width:300px;
+
 }
+@media screen and (max-width: 775px) {
+ #ds-search-option.pull-right{
+   float:left !important;
+   width:inherit;
+ }
+}
+
 
 a.list-group-item {
   color: #427730;
@@ -36,21 +47,14 @@ a.list-group-item:hover{
 
 }
 .list-group-item.active{
-
     border-bottom-color: #e3e3e3;
     color: #636363;
   background: rgba(239,239,239,0.7);
   border-bottom:1px solid #dcdcdc;
   padding:10px 15px;
-
+  pointer-events:none;
 }
 
-.list-group-item.active:hover{
-  text-decoration: none;
-  color: #636363;
-  background: rgba(239,239,239,0.7);
-
-}
 span.h5.list-group-item-heading.h5{
   font-size: 15px;
 
@@ -72,10 +76,7 @@ body{
 .trail-wrapper .breadcrumb > li + li:before {
   color: #fcfcfc;
 }
-.trail-wrapper{
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
+
 #ds-options .ds-option-set-head {
   text-transform: inherit;
   font-size: 15px;
@@ -85,7 +86,6 @@ h2{
 }
 
 a:link, a:visited {
-  color: #427730;
   text-decoration: none;
   outline: 0;
   -webkit-transition: color .2s ease-in-out;
@@ -95,7 +95,7 @@ a:link, a:visited {
 .headerInfoName{
   color:#fcfcfc;
   font-size:20px;
-  margin-top: 30px;
+  margin-top: 25px;
   margin-bottom: 10px;
 
 }
@@ -105,4 +105,8 @@ a:link, a:visited {
 
 
 
+}
+
+button.navbar-toggle.visible-sm:hover {
+  background-color: inherit;
 }
