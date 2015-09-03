@@ -59,8 +59,7 @@ public class SearchFacetFilter extends AbstractDSpaceTransformer implements Cach
     private static final Logger log = Logger.getLogger(BrowseFacet.class);
 
     private static final Message T_dspace_home = message("xmlui.general.dspace_home");
-    private static final Message T_starts_with = message("xmlui.Discovery.AbstractSearch.startswith");
-    private static final Message T_starts_with_help = message("xmlui.Discovery.AbstractSearch.startswith.help");
+
 
     /**
      * The cache of recently submitted items
@@ -224,9 +223,9 @@ public class SearchFacetFilter extends AbstractDSpaceTransformer implements Cach
         DiscoverFacetField discoverFacetField;
         if(request.getParameter(SearchFilterParam.STARTS_WITH) != null)
         {
-            discoverFacetField = new DiscoverFacetField(facetField, DiscoveryConfigurationParameters.TYPE_TEXT, DEFAULT_PAGE_SIZE + 1, DiscoveryConfigurationParameters.SORT.VALUE, request.getParameter(SearchFilterParam.STARTS_WITH).toLowerCase());
+            discoverFacetField = new DiscoverFacetField(facetField, DiscoveryConfigurationParameters.TYPE_TEXT, DEFAULT_PAGE_SIZE + 1, DiscoveryConfigurationParameters.SORT.COUNT, request.getParameter(SearchFilterParam.STARTS_WITH).toLowerCase());
         }else{
-            discoverFacetField = new DiscoverFacetField(facetField, DiscoveryConfigurationParameters.TYPE_TEXT, DEFAULT_PAGE_SIZE + 1, DiscoveryConfigurationParameters.SORT.VALUE);
+            discoverFacetField = new DiscoverFacetField(facetField, DiscoveryConfigurationParameters.TYPE_TEXT, DEFAULT_PAGE_SIZE + 1, DiscoveryConfigurationParameters.SORT.COUNT);
         }
 
 
@@ -271,8 +270,7 @@ public class SearchFacetFilter extends AbstractDSpaceTransformer implements Cach
         SearchFilterParam browseParams = new SearchFilterParam(request);
         // Build the DRI Body
         Division div = body.addDivision("browse-by-" + request.getParameter(SearchFilterParam.FACET_FIELD), "primary");
-
-        addBrowseJumpNavigation(div, browseParams, request);
+        div.setHead(message("xmlui.Discovery.AbstractSearch.type_" + browseParams.getFacetField()));
 
         // Set up the major variables
         //Collection collection = (Collection) dso;
@@ -298,7 +296,6 @@ public class SearchFacetFilter extends AbstractDSpaceTransformer implements Cach
 
                 Division results = body.addDivision("browse-by-" + facetField + "-results", "primary");
 
-                results.setHead(message("xmlui.Discovery.AbstractSearch.type_" + browseParams.getFacetField()));
                 if (values != null && 0 < values.size()) {
 
 
@@ -337,6 +334,7 @@ public class SearchFacetFilter extends AbstractDSpaceTransformer implements Cach
                     {
                         end = DEFAULT_PAGE_SIZE;
                     }
+
                     for (int i = 0; i < end; i++) {
                         DiscoverResult.FacetResult value = values.get(i);
                         renderFacetField(browseParams, dso, facetField, singleTable, filterQueries, value);
@@ -348,62 +346,7 @@ public class SearchFacetFilter extends AbstractDSpaceTransformer implements Cach
         }
     }
 
-    private void addBrowseJumpNavigation(Division div, SearchFilterParam browseParams, Request request)
-            throws WingException, SQLException, UnsupportedEncodingException {
-        String action;
-        DSpaceObject dso = HandleUtil.obtainHandle(objectModel);
-        if(dso != null){
-            action = contextPath + "/handle/" + dso.getHandle() + "/search-filter";
-        }else{
-            action = contextPath + "/search-filter";
-        }
 
-        Division jump = div.addInteractiveDivision("filter-navigation", action,
-                Division.METHOD_POST, "secondary navigation");
-
-        Map<String, String> params = new HashMap<String, String>();
-        params.putAll(browseParams.getCommonBrowseParams());
-        // Add all the query parameters as hidden fields on the form
-        for(Map.Entry<String, String> param : params.entrySet()){
-            jump.addHidden(param.getKey()).setValue(param.getValue());
-        }
-        Map<String, String[]> filterQueries = DiscoveryUIUtils.getParameterFilterQueries(request);
-        for (String parameter : filterQueries.keySet())
-        {
-            for (int i = 0; i < filterQueries.get(parameter).length; i++)
-            {
-                String value = filterQueries.get(parameter)[i];
-                jump.addHidden(parameter).setValue(value);
-            }
-        }
-
-        //We cannot create a filter for dates
-        if(!browseParams.getFacetField().endsWith(".year")){
-            // Create a clickable list of the alphabet
-            org.dspace.app.xmlui.wing.element.List jumpList = jump.addList("jump-list", org.dspace.app.xmlui.wing.element.List.TYPE_SIMPLE, "alphabet");
-
-            //Create our basic url
-            String basicUrl = generateURL("search-filter", params);
-            //Add any filter queries
-            basicUrl = addFilterQueriesToUrl(basicUrl);
-
-            //TODO: put this back !
-//            jumpList.addItemXref(generateURL("browse", letterQuery), "0-9");
-            for (char c = 'A'; c <= 'Z'; c++)
-            {
-                String linkUrl = basicUrl + "&" +  SearchFilterParam.STARTS_WITH +  "=" + Character.toString(c).toLowerCase();
-                jumpList.addItemXref(linkUrl, Character
-                        .toString(c));
-            }
-
-            // Create a free text field for the initial characters
-            Para jumpForm = jump.addPara();
-            jumpForm.addContent(T_starts_with);
-            jumpForm.addText("starts_with").setHelp(T_starts_with_help);
-
-            jumpForm.addButton("submit").setValue(T_go);
-        }
-    }
 
     private void renderFacetField(SearchFilterParam browseParams, DSpaceObject dso, String facetField, Table singleTable, List<String> filterQueries, DiscoverResult.FacetResult value) throws SQLException, WingException, UnsupportedEncodingException {
         String displayedValue = value.getDisplayedValue();
