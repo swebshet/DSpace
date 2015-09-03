@@ -327,14 +327,7 @@
                 <div class="container">
                     <div class="navbar-header">
 
-                        <button type="button" class="navbar-toggle" data-toggle="offcanvas">
-                            <span class="sr-only">
-                                <i18n:text>xmlui.mirage2.page-structure.toggleNavigation</i18n:text>
-                            </span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
+
 
                         <a href="//www.cgiar.org" class="navbar-brand" target="_blank">
                             <span>
@@ -385,19 +378,7 @@
                         </div>
                     </div>
 
-                    <div class="navbar-header pull-right hidden-xs">
-                        <ul class="nav navbar-nav pull-left">
-                            <xsl:call-template name="languageSelection"/>
-                        </ul>
 
-
-                        <button data-toggle="offcanvas" class="navbar-toggle visible-sm" type="button">
-                            <span class="sr-only"><i18n:text>xmlui.mirage2.page-structure.toggleNavigation</i18n:text></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
 
                 <div id="ds-search-option" class="ds-option-set pull-right">
                     <!-- The form, complete with a text box and a button, all built from attributes referenced
@@ -492,7 +473,7 @@
             <div class="container">
                 <div class="row">
                     <!--TODO-->
-                    <div class="col-xs-12">
+                    <div class="col-xs-7">
                         <xsl:choose>
                             <xsl:when test="count(/dri:document/dri:meta/dri:pageMeta/dri:trail) > 1">
                                 <div class="breadcrumb dropdown visible-xs">
@@ -526,6 +507,17 @@
                                 </ul>
                             </xsl:otherwise>
                         </xsl:choose>
+                    </div>
+                    <div class="col-xs-5 trail-toggle">
+                    <button type="button" class="navbar-toggle" data-toggle="offcanvas">
+                        <span class="sr-only">
+                            <i18n:text>xmlui.mirage2.page-structure.toggleNavigation</i18n:text>
+                        </span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+
+                    </button>
                     </div>
                 </div>
             </div>
