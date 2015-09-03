@@ -130,9 +130,8 @@ button.navbar-toggle.visible-sm:hover {
 }
 }
 
-@media screen and (max-width: 991px){
+@media screen and (min-width: 768px){
   .navbar-toggle {
     display: inline;
-
   }
 }
