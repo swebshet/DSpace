@@ -123,13 +123,6 @@ button.navbar-toggle.visible-sm:hover {
   margin-bottom: 0;
 }
 
-@media screen and (min-width: 991px){
-.navbar-toggle {
-  display: none;
-
-}
-}
-
 @media screen and (min-width: 768px){
   .navbar-toggle {
     display: inline;

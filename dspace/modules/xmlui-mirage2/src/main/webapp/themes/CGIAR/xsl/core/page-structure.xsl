@@ -345,7 +345,7 @@
                                 <xsl:if test="count(/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='page'][@qualifier='supportedLocale']) &gt; 1">
                                     <li id="ds-language-selection-xs" class="dropdown">
                                         <xsl:variable name="active-locale" select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='page'][@qualifier='currentLocale']"/>
-                                        <button id="language-dropdown-toggle-xs" href="#" role="button" class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown">
+                                        <button id="language-dropdown-toggle-xs" href="#" role="button" class="dropdown-toggle navbar-toggle hidden-lg hidden-md navbar-link" data-toggle="dropdown">
                                             <b class="visible-xs glyphicon glyphicon-globe" aria-hidden="true"/>
                                         </button>
                                         <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="language-dropdown-toggle-xs" data-no-collapse="true">
@@ -509,7 +509,7 @@
                         </xsl:choose>
                     </div>
                     <div class="col-xs-5 trail-toggle">
-                    <button type="button" class="navbar-toggle" data-toggle="offcanvas">
+                    <button type="button" class="navbar-toggle hidden-lg hidden-md" data-toggle="offcanvas">
                         <span class="sr-only">
                             <i18n:text>xmlui.mirage2.page-structure.toggleNavigation</i18n:text>
                         </span>
