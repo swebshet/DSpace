@@ -431,7 +431,7 @@ public class SearchFacetFilter extends AbstractDSpaceTransformer implements Cach
         // Build the DRI Body
         Division div = body.addDivision("browse-by-" + request.getParameter(SearchFilterParam.FACET_FIELD), "primary");
         div.setHead(message("xmlui.Discovery.AbstractSearch.type_" + browseParams.getFacetField()));
-        if(currentFacetFieldSortsOnCount(request)){
+        if(currentFacetFieldSortsOnValue(request)){
             addBrowseJumpNavigation(div, browseParams, request);
         }
         addBrowseControls(div, params);
@@ -519,7 +519,7 @@ public class SearchFacetFilter extends AbstractDSpaceTransformer implements Cach
         }
     }
 
-    private boolean currentFacetFieldSortsOnCount(Request request) {
+    private boolean currentFacetFieldSortsOnValue(Request request) {
         return ((DiscoverySearchFilterFacet)discoverySearchFilters.get(request.getParameter(SearchFilterParam.FACET_FIELD))).getSortOrder().equals(DiscoveryConfigurationParameters.SORT.VALUE);
     }
 
