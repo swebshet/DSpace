@@ -325,6 +325,7 @@
         <header>
             <div class="navbar navbar-default navbar-static-top" role="navigation">
                 <div class="container">
+                    <div class="row">
                     <div class="navbar-header">
 
 
@@ -456,9 +457,9 @@
                         </fieldset>
                     </form>
                 </div>
+                    </div>
+                </div>
             </div>
-            </div>
-
 
 
         </header>
@@ -695,8 +696,9 @@
                 <hr/>
                 <div class="col-xs-7 col-sm-8">
 
-                    <div class="hidden-print">
-                        <a class="margin-left">
+                    <div class="hidden-print footermargin">
+
+                        <a>
                             <xsl:attribute name="href">
                                 <xsl:value-of
                                         select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]"/>
@@ -705,7 +707,12 @@
 
                             <i18n:text>xmlui.dri2xhtml.structural.about-link</i18n:text>
                         </a>
-                        <xsl:text> | </xsl:text>
+                        <a href="//github.com/ilri/DSpace">
+                            <img alt="The GitHub Logo" src="{concat($theme-path, '/images/invertocat.png')}" width="24"
+                                 height="24"/>
+
+                        </a>
+                        <br/>
                         <a>
                             <xsl:attribute name="href">
                                 <xsl:value-of
@@ -714,12 +721,8 @@
                             </xsl:attribute>
                             <i18n:text>xmlui.dri2xhtml.structural.feedback-link</i18n:text>
                         </a>
-                        <xsl:text> | </xsl:text>
 
-                            <a href="//github.com/ilri/DSpace" class="invertocat">
-                                <img alt="The GitHub Logo" src="{concat($theme-path, '/images/invertocat.png')}" width="24" height="24"/>
 
-                            </a>
                     </div>
                 </div>
 
