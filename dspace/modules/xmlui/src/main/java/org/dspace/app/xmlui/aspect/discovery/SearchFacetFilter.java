@@ -13,12 +13,10 @@ package org.dspace.app.xmlui.aspect.discovery;
 
 import org.apache.avalon.framework.parameters.Parameters;
 import org.apache.cocoon.ProcessingException;
-import org.apache.cocoon.ResourceNotFoundException;
 import org.apache.cocoon.caching.CacheableProcessingComponent;
 import org.apache.cocoon.environment.ObjectModelHelper;
 import org.apache.cocoon.environment.Request;
 import org.apache.cocoon.environment.SourceResolver;
-import org.apache.cocoon.environment.http.HttpEnvironment;
 import org.apache.cocoon.util.HashUtil;
 import org.apache.commons.lang.StringUtils;
 import org.apache.excalibur.source.SourceValidity;
@@ -30,22 +28,19 @@ import org.dspace.app.xmlui.wing.Message;
 import org.dspace.app.xmlui.wing.WingException;
 import org.dspace.app.xmlui.wing.element.*;
 import org.dspace.authorize.AuthorizeException;
-import org.dspace.browse.*;
 import org.dspace.content.Collection;
 import org.dspace.content.Community;
 import org.dspace.content.DSpaceObject;
-import org.dspace.core.ConfigurationManager;
 import org.dspace.core.Constants;
-import org.dspace.core.Context;
 import org.dspace.discovery.*;
-import org.dspace.discovery.configuration.*;
+import org.dspace.discovery.configuration.DiscoveryConfiguration;
+import org.dspace.discovery.configuration.DiscoveryConfigurationParameters;
+import org.dspace.discovery.configuration.DiscoverySearchFilter;
+import org.dspace.discovery.configuration.DiscoverySearchFilterFacet;
 import org.dspace.handle.HandleManager;
-import org.dspace.sort.SortException;
-import org.dspace.sort.SortOption;
 import org.dspace.utils.DSpace;
 import org.xml.sax.SAXException;
 
-import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.Serializable;
 import java.io.UnsupportedEncodingException;
@@ -69,8 +64,6 @@ public class SearchFacetFilter extends AbstractDSpaceTransformer implements Cach
     private static final Message T_starts_with = message("xmlui.Discovery.AbstractSearch.startswith");
     private static final Message T_starts_with_help = message("xmlui.Discovery.AbstractSearch.startswith.help");
 
-    private static final int[] RESULTS_PER_PAGE_PROGRESSION = {5, 10, 20, 40, 60, 80, 100};
-
     /**
      * The cache of recently submitted items
      */
@@ -79,10 +72,7 @@ public class SearchFacetFilter extends AbstractDSpaceTransformer implements Cach
      * Cached validity object
      */
     protected SourceValidity validity;
-    /** Cached UI parameters, results and messages */
-    private BrowseParams userParams;
 
-    private BrowseInfo browseInfo;
     /**
      * Cached query arguments
      */
@@ -90,11 +80,12 @@ public class SearchFacetFilter extends AbstractDSpaceTransformer implements Cach
 
     private int DEFAULT_PAGE_SIZE = 10;
 
-    private static Map<String,DiscoverySearchFilter> discoverySearchFilters;
 
     private SearchService searchService = null;
     private static final Message T_go = message("xmlui.general.go");
     private static final Message T_rpp = message("xmlui.Discovery.AbstractSearch.rpp");
+    private static final int[] RESULTS_PER_PAGE_PROGRESSION = {5, 10, 20, 40, 60, 80, 100};
+    private static Map<String,DiscoverySearchFilter> discoverySearchFilters;
 
     public SearchFacetFilter() {
 
@@ -240,9 +231,8 @@ public class SearchFacetFilter extends AbstractDSpaceTransformer implements Cach
 //        queryArgs.setFacetLimit();
 
         String facetField = request.getParameter(SearchFilterParam.FACET_FIELD);
-        // get the params associated with this facet field
         DiscoverFacetField discoverFacetField;
-        // Defaults to sort on value for the moment
+        // Defaults to sort on value
         DiscoveryConfigurationParameters.SORT sortOrder=DiscoveryConfigurationParameters.SORT.VALUE;
         if(!discoverySearchFilters.isEmpty() && discoverySearchFilters.get(facetField)!=null){
             DiscoverySearchFilterFacet d = (DiscoverySearchFilterFacet) discoverySearchFilters.get(facetField);
@@ -289,155 +279,26 @@ public class SearchFacetFilter extends AbstractDSpaceTransformer implements Cach
         pageMeta.addTrail().addContent(message("xmlui.Discovery.AbstractSearch.type_" + facetField));
     }
 
-    private BrowseParams getUserParams() throws SQLException, UIException, ResourceNotFoundException, IllegalArgumentException {
 
-        if (this.userParams != null)
-        {
-            return this.userParams;
-        }
-
-        Context context = ContextUtil.obtainContext(objectModel);
-        Request request = ObjectModelHelper.getRequest(objectModel);
-
-        BrowseParams params = new BrowseParams();
-
-        params.month = request.getParameter(BrowseParams.MONTH);
-        params.year = request.getParameter(BrowseParams.YEAR);
-        params.etAl = RequestUtils.getIntParameter(request, BrowseParams.ETAL);
-
-        params.scope = new BrowserScope(context);
-
-        // Are we in a community or collection?
-        DSpaceObject dso = HandleUtil.obtainHandle(objectModel);
-        if (dso instanceof Community)
-        {
-            params.scope.setCommunity((Community) dso);
-        }
-        if (dso instanceof Collection)
-        {
-            params.scope.setCollection((Collection) dso);
-        }
-
-        try
-        {
-            String type   = request.getParameter(BrowseParams.TYPE);
-            int    sortBy = RequestUtils.getIntParameter(request, BrowseParams.SORT_BY);
-
-            if(!request.getParameters().containsKey("type"))
-            {
-                // default to first browse index.
-                String defaultBrowseIndex = ConfigurationManager.getProperty("webui.browse.index.1");
-                if(defaultBrowseIndex != null)
-                {
-                    type = defaultBrowseIndex.split(":")[0];
-                }
-            }
-
-            BrowseIndex bi = BrowseIndex.getBrowseIndex(type);
-            if (bi == null)
-            {
-                throw new ResourceNotFoundException("Browse index " + type + " not found");
-            }
-
-            // If we don't have a sort column
-            if (sortBy == -1)
-            {
-                // Get the default one
-                SortOption so = bi.getSortOption();
-                if (so != null)
-                {
-                    sortBy = so.getNumber();
-                }
-            }
-            else if (bi.isItemIndex() && !bi.isInternalIndex())
-            {
-                try
-                {
-                    // If a default sort option is specified by the index, but it isn't
-                    // the same as sort option requested, attempt to find an index that
-                    // is configured to use that sort by default
-                    // This is so that we can then highlight the correct option in the navigation
-                    SortOption bso = bi.getSortOption();
-                    SortOption so = SortOption.getSortOption(sortBy);
-                    if ( bso != null && !bso.equals(so))
-                    {
-                        BrowseIndex newBi = BrowseIndex.getBrowseIndex(so);
-                        if (newBi != null)
-                        {
-                            bi   = newBi;
-                            type = bi.getName();
-                        }
-                    }
-                }
-                catch (SortException se)
-                {
-                    throw new UIException("Unable to get sort options", se);
-                }
-            }
-
-            params.scope.setBrowseIndex(bi);
-            params.scope.setSortBy(sortBy);
-
-            params.scope.setJumpToItem(RequestUtils.getIntParameter(request, BrowseParams.JUMPTO_ITEM));
-            params.scope.setOrder(request.getParameter(BrowseParams.ORDER));
-            int offset = RequestUtils.getIntParameter(request, BrowseParams.OFFSET);
-            params.scope.setOffset(offset > 0 ? offset : 0);
-            params.scope.setResultsPerPage(getPageSize());
-            params.scope.setStartsWith(decodeFromURL(request.getParameter(BrowseParams.STARTS_WITH)));
-            String filterValue = request.getParameter(BrowseParams.FILTER_VALUE[0]);
-            if (filterValue == null)
-            {
-                filterValue = request.getParameter(BrowseParams.FILTER_VALUE[1]);
-                params.scope.setAuthorityValue(filterValue);
-            }
-
-            params.scope.setFilterValue(filterValue);
-            params.scope.setJumpToValue(decodeFromURL(request.getParameter(BrowseParams.JUMPTO_VALUE)));
-            params.scope.setJumpToValueLang(decodeFromURL(request.getParameter(BrowseParams.JUMPTO_VALUE_LANG)));
-            params.scope.setFilterValueLang(decodeFromURL(request.getParameter(BrowseParams.FILTER_VALUE_LANG)));
-
-            // Filtering to a value implies this is a second level browse
-            if (params.scope.getFilterValue() != null)
-            {
-                params.scope.setBrowseLevel(1);
-            }
-
-
-        }
-        catch (BrowseException bex)
-        {
-            throw new UIException("Unable to create browse parameters", bex);
-        }
-
-        this.userParams = params;
-        return params;
-    }
     @Override
-    public void addBody(Body body) throws SAXException, WingException, UIException, SQLException, IOException, AuthorizeException {
+    public void addBody(Body body) throws SAXException, WingException, SQLException, IOException, AuthorizeException {
         Request request = ObjectModelHelper.getRequest(objectModel);
         DSpaceObject dso = HandleUtil.obtainHandle(objectModel);
-        BrowseParams params = null;
         queryResults = getQueryResponse(dso);
-
-        try {
-            params = getUserParams();
-        } catch (ResourceNotFoundException e) {
-            HttpServletResponse response = (HttpServletResponse)objectModel
-                    .get(HttpEnvironment.HTTP_RESPONSE_OBJECT);
-            response.setStatus(HttpServletResponse.SC_NOT_FOUND);
-        }
 
         SearchFilterParam browseParams = new SearchFilterParam(request);
         // Build the DRI Body
         Division div = body.addDivision("browse-by-" + request.getParameter(SearchFilterParam.FACET_FIELD), "primary");
         div.setHead(message("xmlui.Discovery.AbstractSearch.type_" + browseParams.getFacetField()));
+        //Only add the search per letter when the sort order is VALUE
         if(currentFacetFieldSortsOnValue(request)){
             addBrowseJumpNavigation(div, browseParams, request);
         }
-        addBrowseControls(div, params);
+        addBrowseControls(div, browseParams);
 
         // Set up the major variables
         //Collection collection = (Collection) dso;
+
         // Build the collection viewer division.
 
         //Make sure we get our results
@@ -446,38 +307,17 @@ public class SearchFacetFilter extends AbstractDSpaceTransformer implements Cach
             Map<String, List<DiscoverResult.FacetResult>> facetFields = this.queryResults.getFacetResults();
             if (facetFields == null)
             {
-                facetFields = new LinkedHashMap<String, List<DiscoverResult.FacetResult>>();
-
+                facetFields = new LinkedHashMap<>();
             }
 
             if (facetFields.size() > 0) {
-
                 String facetField = facetFields.keySet().toArray(new String[facetFields.size()])[0];
-
-                Division results = div.addDivision("browse-by-" + facetField + "-results", "primary");
-
-                String searchUrl = ConfigurationManager.getProperty("dspace.url") + "/JSON/discovery/search";
-
-                results.addHidden("discovery-json-search-url").setValue(searchUrl);
-                DSpaceObject currentScope = getScope();
-                if(currentScope != null){
-                    results.addHidden("discovery-json-scope").setValue(currentScope.getHandle());
-                }
-                results.addHidden("contextpath").setValue(contextPath);
-
-
                 java.util.List<DiscoverResult.FacetResult> values = facetFields.get(facetField);
-                Division searchBoxDivision = results.addDivision("discovery-search-box", "discoverySearchBox");
 
-                Division mainSearchDiv = searchBoxDivision.addInteractiveDivision("general-query",
-                        "discover", Division.METHOD_GET, "discover-search-box");
-
-
-                addHiddenFormFields("search", request, DiscoveryUIUtils.getParameterFilterQueries(ObjectModelHelper.getRequest(objectModel)), mainSearchDiv);
-
-
+                Division results = body.addDivision("browse-by-" + facetField + "-results", "primary");
 
                 if (values != null && 0 < values.size()) {
+
 
 
                     // Find our faceting offset
@@ -493,6 +333,8 @@ public class SearchFacetFilter extends AbstractDSpaceTransformer implements Cach
                         nextPageUrl = getNextPageURL(browseParams, request);
                     }
 
+
+
                     int shownItemsMax = offSet + (getPageSize() < values.size() ? values.size() - 1 : values.size());
 
                     results.setSimplePagination((int) queryResults.getTotalSearchResults(), offSet + 1,
@@ -507,7 +349,6 @@ public class SearchFacetFilter extends AbstractDSpaceTransformer implements Cach
                     {
                         end = getPageSize();
                     }
-
                     for (int i = 0; i < end; i++) {
                         DiscoverResult.FacetResult value = values.get(i);
                         renderFacetField(browseParams, dso, facetField, singleTable, filterQueries, value);
@@ -517,10 +358,6 @@ public class SearchFacetFilter extends AbstractDSpaceTransformer implements Cach
                 }
             }
         }
-    }
-
-    private boolean currentFacetFieldSortsOnValue(Request request) {
-        return ((DiscoverySearchFilterFacet)discoverySearchFilters.get(request.getParameter(SearchFilterParam.FACET_FIELD))).getSortOrder().equals(DiscoveryConfigurationParameters.SORT.VALUE);
     }
 
     private void addBrowseJumpNavigation(Division div, SearchFilterParam browseParams, Request request)
@@ -582,6 +419,12 @@ public class SearchFacetFilter extends AbstractDSpaceTransformer implements Cach
 
     private void renderFacetField(SearchFilterParam browseParams, DSpaceObject dso, String facetField, Table singleTable, List<String> filterQueries, DiscoverResult.FacetResult value) throws SQLException, WingException, UnsupportedEncodingException {
         String displayedValue = value.getDisplayedValue();
+//        if(field.getGap() != null){
+//            //We have a date get the year so we can display it
+//            DateFormat simpleDateformat = new SimpleDateFormat("yyyy");
+//            displayedValue = simpleDateformat.format(SolrServiceImpl.toDate(displayedValue));
+//            filterQuery = ClientUtils.escapeQueryChars(value.getFacetField().getName()) + ":" + displayedValue + "*";
+//        }
 
         Cell cell = singleTable.addRow().addCell();
 
@@ -646,7 +489,6 @@ public class SearchFacetFilter extends AbstractDSpaceTransformer implements Cach
         url = addFilterQueriesToUrl(url);
         return url;
     }
-
 
 
     /**
@@ -745,6 +587,10 @@ public class SearchFacetFilter extends AbstractDSpaceTransformer implements Cach
 
         return dso;
     }
+
+     private boolean currentFacetFieldSortsOnValue(Request request) {
+        return ((DiscoverySearchFilterFacet)discoverySearchFilters.get(request.getParameter(SearchFilterParam.FACET_FIELD))).getSortOrder().equals(DiscoveryConfigurationParameters.SORT.VALUE);
+    }
     protected int getPageSize() {
         try {
             int rpp =Integer.parseInt(ObjectModelHelper.getRequest(objectModel).getParameter("rpp"));
@@ -755,60 +601,21 @@ public class SearchFacetFilter extends AbstractDSpaceTransformer implements Cach
             return DEFAULT_PAGE_SIZE;
         }
     }
-    /**
-     * Since the layout is creating separate forms for each search part
-     * this method will add hidden fields containing the values from other form parts
-     *
-     * @param type the type of our form
-     * @param request the request
-     * @param fqs the filter queries
-     * @param division the division that requires the hidden fields
-     * @throws WingException will never occur
-     */
-    private void addHiddenFormFields(String type, Request request, Map<String, String[]> fqs, Division division) throws WingException {
-        if(type.equals("filter") || type.equals("sort")){
-            if(request.getParameter("query") != null){
-                division.addHidden("query").setValue(request.getParameter("query"));
-            }
-            if(request.getParameter("scope") != null){
-                division.addHidden("scope").setValue(request.getParameter("scope"));
-            }
-        }
-
-        //Add the filter queries, current search settings so these remain saved when performing a new search !
-        if(type.equals("search") || type.equals("sort"))
-        {
-            for (String parameter : fqs.keySet())
-            {
-                String[] values = fqs.get(parameter);
-                for (String value : values) {
-                    division.addHidden(parameter).setValue(value);
-                }
-            }
-        }
-
-        if(type.equals("search") || type.equals("filter")) {
-            if (request.getParameter("rpp") != null) {
-                division.addHidden("rpp").setValue(request.getParameter("rpp"));
-            }
-        }
-    }
 
     /**
      * Add the controls to changing sorting and display options.
      *
      * @param div
-     * @param info
      * @param params
      * @throws WingException
      */
-    private void addBrowseControls(Division div, BrowseParams params)
+    private void addBrowseControls(Division div, SearchFilterParam params)
             throws WingException
     {
         // Prepare a Map of query parameters required for all links
         Map<String, String> queryParams = new HashMap<String, String>();
 
-        queryParams.putAll(params.getCommonParameters());
+        queryParams.putAll(params.getCommonBrowseParams());
         Request request = ObjectModelHelper.getRequest(objectModel);
         String facetField = request.getParameter(SearchFilterParam.FACET_FIELD);
         Division controls = div.addInteractiveDivision("browse-controls", "search-filter?field="+facetField,
@@ -821,120 +628,16 @@ public class SearchFacetFilter extends AbstractDSpaceTransformer implements Cach
         }
 
         Para controlsForm = controls.addPara();
-
         // Create a control for the number of records to display
         controlsForm.addContent(T_rpp);
-        Select rppSelect = controlsForm.addSelect(BrowseParams.RESULTS_PER_PAGE);
+
+        Select rppSelect = controlsForm.addSelect("rpp");
 
         for (int i : RESULTS_PER_PAGE_PROGRESSION)
         {
             rppSelect.addOption((i == getPageSize()), i, Integer.toString(i));
         }
-
         controlsForm.addButton("update").setValue("update");
     }
 
-
 }
-
-
-class BrowseParams
-{
-    String month;
-
-    String year;
-
-    int etAl;
-
-    BrowserScope scope;
-
-    static final String MONTH = "month";
-
-    static final String YEAR = "year";
-
-    static final String ETAL = "etal";
-
-    static final String TYPE = "type";
-
-    static final String JUMPTO_ITEM = "focus";
-
-    static final String JUMPTO_VALUE = "vfocus";
-
-    static final String JUMPTO_VALUE_LANG = "vfocus_lang";
-
-    static final String ORDER = "order";
-
-    static final String OFFSET = "offset";
-
-    static final String RESULTS_PER_PAGE = "rpp";
-
-    static final String SORT_BY = "sort_by";
-
-    static final String STARTS_WITH = "starts_with";
-
-    static final String[] FILTER_VALUE = new String[]{"value","authority"};
-
-    static final String FILTER_VALUE_LANG = "value_lang";
-
-    /*
-     * Creates a map of the browse options common to all pages (type / value /
-     * value language)
-     */
-    Map<String, String> getCommonParameters() throws UIException
-    {
-        Map<String, String> paramMap = new HashMap<String, String>();
-
-        paramMap.put(BrowseParams.TYPE, scope.getBrowseIndex().getName());
-
-        if (scope.getFilterValue() != null)
-        {
-            paramMap.put(scope.getAuthorityValue() != null?
-                    BrowseParams.FILTER_VALUE[1]:BrowseParams.FILTER_VALUE[0], scope.getFilterValue());
-        }
-
-        if (scope.getFilterValueLang() != null)
-        {
-            paramMap.put(BrowseParams.FILTER_VALUE_LANG, scope.getFilterValueLang());
-        }
-
-        return paramMap;
-    }
-
-
-
-
-    String getKey()
-    {
-        try
-        {
-            String key = "";
-
-            key += "-" + scope.getBrowseIndex().getName();
-            key += "-" + scope.getBrowseLevel();
-            key += "-" + scope.getStartsWith();
-            key += "-" + scope.getOrder();
-            key += "-" + scope.getResultsPerPage();
-            key += "-" + scope.getSortBy();
-            key += "-" + scope.getSortOption().getNumber();
-            key += "-" + scope.getOffset();
-            key += "-" + scope.getJumpToItem();
-            key += "-" + scope.getFilterValue();
-            key += "-" + scope.getFilterValueLang();
-            key += "-" + scope.getJumpToValue();
-            key += "-" + scope.getJumpToValueLang();
-            key += "-" + etAl;
-
-            return key;
-        }
-        catch (RuntimeException re)
-        {
-            throw re;
-        }
-        catch (Exception e)
-        {
-            return null; // ignore exception and return no key
-        }
-    }
-}
-
-
