@@ -2348,13 +2348,34 @@
 
 	<message key="xmlui.dri2xhtml.METS-1.0.item-preview">Preview</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-title">Title</message>
-	<message key="xmlui.dri2xhtml.METS-1.0.item-author">Author</message>
-	<message key="xmlui.dri2xhtml.METS-1.0.item-abstract">Abstract</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-author">Authors</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-abstract">Abstract/Description</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-description">Description</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-uri">URI</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-date">Date</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-publisher">Publisher</message>
-	<message key="xmlui.dri2xhtml.METS-1.0.item-subject">Subject</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-subject">Subjects</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-countries">Countries</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-regions">Regions</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-language">Language</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-output-type">Output type</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-review-status">Review status</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-accessibility">Accessibility</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-citation">Citation</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-notes">Notes</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-affiliations">CGIAR Affiliations</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-investors-sponsors">Investors/sponsors</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-identifiers">Identifiers</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-identifier-googleurl">Google URL: </message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-identifier-permanenturi">Permanent uri: </message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-identifier-interneturl">Internet URL: </message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-identifier-doi">DOI: </message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-related-material">Related material</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-related-datafile">Related data file: </message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-related-video">Related video: </message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-related-audio">Related audio: </message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-related-photo">Related photo: </message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-related-reference">Related reference: </message>
 
 	<message key="xmlui.dri2xhtml.METS-1.0.item-files-head">Files in this item</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-files-file">Files</message>
@@ -2364,6 +2385,7 @@
 	<message key="xmlui.dri2xhtml.METS-1.0.item-files-view">View</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-files-description">Description</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-files-viewOpen">View/<wbr/>Open</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-files-bitstreams">Bitstreams</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-files-access-rights">Read access available for</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-no-files">There are no files associated with this item.</message>
 
