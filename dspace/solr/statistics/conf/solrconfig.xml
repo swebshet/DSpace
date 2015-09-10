@@ -1649,6 +1649,14 @@
     </arr>
   </requestHandler>
 
+
+    <requestHandler name="/dataimport" class="org.apache.solr.handler.dataimport.DataImportHandler">
+        <lst name="defaults">
+            <str name="config">solr-data-config.xml</str>
+            <str name="update.chain">uuid</str>
+        </lst>
+    </requestHandler>
+
   <!-- Highlighting Component
 
        http://wiki.apache.org/solr/HighlightingParameters
