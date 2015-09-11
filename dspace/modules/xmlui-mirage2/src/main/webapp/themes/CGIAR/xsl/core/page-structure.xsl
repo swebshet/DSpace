@@ -527,25 +527,53 @@
 
     </xsl:template>
 
-    <!--The Trail-->
     <xsl:template match="dri:trail">
         <!--put an arrow between the parts of the trail-->
+        <xsl:choose>
+            <xsl:when test="position()>2">
+                <li class="ds-trail-slash">
+                    <xsl:text>/</xsl:text>
+                </li>
+            </xsl:when>
+
+        </xsl:choose>
+
         <li>
-            <xsl:if test="position()=1">
-                <i class="glyphicon glyphicon-home" aria-hidden="true"/>&#160;
-            </xsl:if>
+            <xsl:attribute name="class">
+                <xsl:text>ds-trail-link </xsl:text>
+                <xsl:if test="position()=1">
+                    <xsl:text>first-link </xsl:text>
+                </xsl:if>
+                <xsl:if test="position()=last()">
+                    <xsl:text>last-link</xsl:text>
+                </xsl:if>
+            </xsl:attribute>
             <!-- Determine whether we are dealing with a link or plain text trail link -->
             <xsl:choose>
                 <xsl:when test="./@target">
                     <a>
+                        <xsl:variable name="target">
+                            <xsl:choose>
+                                <xsl:when test="contains(./@target, '{{context-path}}')">
+                                    <xsl:call-template name="string-replace-all">
+                                        <xsl:with-param name="text" select="./@target"/>
+                                        <xsl:with-param name="replace" select="'{{context-path}}'"/>
+                                        <xsl:with-param name="by" select="$context-path"/>
+                                    </xsl:call-template>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:value-of select="./@target"/>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:variable>
+
                         <xsl:attribute name="href">
-                            <xsl:value-of select="./@target"/>
+                            <xsl:value-of select="$target"/>
                         </xsl:attribute>
                         <xsl:apply-templates />
                     </a>
                 </xsl:when>
                 <xsl:otherwise>
-                    <xsl:attribute name="class">active</xsl:attribute>
                     <xsl:apply-templates />
                 </xsl:otherwise>
             </xsl:choose>
@@ -584,7 +612,26 @@
             </xsl:choose>
         </li>
     </xsl:template>
-
+    <xsl:template name="string-replace-all">
+        <xsl:param name="text"/>
+        <xsl:param name="replace"/>
+        <xsl:param name="by"/>
+        <xsl:choose>
+            <xsl:when test="contains($text, $replace)">
+                <xsl:value-of select="substring-before($text,$replace)"/>
+                <xsl:value-of select="$by"/>
+                <xsl:call-template name="string-replace-all">
+                    <xsl:with-param name="text"
+                                    select="substring-after($text,$replace)"/>
+                    <xsl:with-param name="replace" select="$replace"/>
+                    <xsl:with-param name="by" select="$by"/>
+                </xsl:call-template>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="$text"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
     <!--The License-->
     <xsl:template name="cc-license">
         <xsl:param name="metadataURL"/>
