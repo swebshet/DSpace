@@ -50,6 +50,8 @@
     <xsl:import href="/aspect/submission/submission.xsl"/>
 	<xsl:import href="aspect/statistics/most-popular.xsl"/>
 	<xsl:import href="aspect/statistics/statlets.xsl"/>
+    <xsl:import href="aspect/artifactbrowser/item-list-alterations.xsl"/>
+    <xsl:import href="aspect/discovery/discovery-item-list-alterations.xsl"/>
     <xsl:output indent="yes"/>
 
 
