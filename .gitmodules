@@ -1,0 +1,6 @@
+[submodule "dspace/modules/atmire-cua"]
+	path = dspace/modules/atmire-cua
+	url = https://git.atmire.com/products/cua4.git
+[submodule "dspace/modules/datatables"]
+	path = dspace/modules/datatables
+	url = https://git.atmire.com/products/datatables.git
