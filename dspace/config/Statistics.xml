@@ -5,7 +5,7 @@
         <tables>
             <table id="tab1" title="xmlui.statistics.downloads.lastm" i18n:attr="title">
                 <datasetgenerators>
-                    <datasetgenerator type="org.dspace.statistics.content.DSpaceObjectDatasetGenerator">
+                    <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
                         <dsotype>0</dsotype>
                     </datasetgenerator>
                     <datasetgenerator type="org.dspace.statistics.content.DatasetTimeGenerator" includetotal="false">
@@ -14,7 +14,7 @@
                     </datasetgenerator>
                 </datasetgenerators>
                 <filters>
-                    <filter type="org.dspace.statistics.content.filter.StatisticsHitTypeFilter">
+                    <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
                         <dsotype>0</dsotype>
                     </filter>
                 </filters>
@@ -62,7 +62,7 @@
                     <map color-style="#929594"/>
                 </style-mapping>
                 <datasetgenerators>
-                    <datasetgenerator type="org.dspace.statistics.content.DSpaceObjectDatasetGenerator">
+                    <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
                         <dsotype>0</dsotype>
                     </datasetgenerator>
                     <datasetgenerator type="org.dspace.statistics.content.DatasetTimeGenerator" includetotal="false">
@@ -92,7 +92,7 @@
                     </datasetgenerator>
                 </datasetgenerators>
                 <filters>
-                    <filter type="org.dspace.statistics.content.filter.StatisticsHitTypeFilter">
+                    <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
                         <dsotype>0</dsotype>
                     </filter>
                 </filters>
@@ -132,7 +132,7 @@
         <listings>
             <listing id="list1" title="xmlui.statistics.topn.downloads.5"  i18n:attr="title">
                 <datasetgenerators>
-                    <datasetgenerator type="org.dspace.statistics.content.TopNDSODatasetGenerator">
+                    <datasetgenerator type="com.atmire.statistics.generator.TopNDSODatasetGenerator">
                         <dsotype>2</dsotype>
                         <limit type="top">
                             <n>5</n>
@@ -140,7 +140,7 @@
                     </datasetgenerator>
                 </datasetgenerators>
                 <filters>
-                    <filter type="org.dspace.statistics.content.filter.StatisticsHitTypeFilter">
+                    <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
                         <dsotype>0</dsotype>
                     </filter>
                 </filters>
@@ -192,13 +192,13 @@
                     <datasetgenerator type="org.dspace.statistics.content.DatasetTimeGenerator" includetotal="false">
                         <period type="month" start="-5" end="+1" />
                     </datasetgenerator>
-                    <datasetgenerator type="org.dspace.statistics.content.DSpaceObjectDatasetGenerator">
+                    <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
 
                         <dsotype>5</dsotype>
                     </datasetgenerator>
                 </datasetgenerators>
                 <filters>
-                    <filter type="org.dspace.statistics.content.filter.StatisticsHitTypeFilter">
+                    <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
                         <dsotype>2</dsotype>
                     </filter>
                 </filters>
@@ -225,7 +225,7 @@
                     </datasetgenerator>
                 </datasetgenerators>
                 <filters>
-                    <filter type="org.dspace.statistics.content.filter.StatisticsHitTypeFilter">
+                    <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
                         <dsotype>0</dsotype>
                     </filter>
                     <filter type="org.dspace.statistics.content.filter.StatisticsHasValueFilter"><!-- to be sure the field has a value that is not empty -->
@@ -250,7 +250,7 @@
         <listings>
             <listing id="list1" title="# Of Downloads For the top 5 Items">
                 <datasetgenerators>
-                    <datasetgenerator type="org.dspace.statistics.content.TopNDSODatasetGenerator">
+                    <datasetgenerator type="com.atmire.statistics.generator.TopNDSODatasetGenerator">
                         <dsotype>2</dsotype>
                         <limit type="top">
                             <n>5</n>
@@ -258,7 +258,7 @@
                     </datasetgenerator>
                 </datasetgenerators>
                 <filters>
-                    <filter type="org.dspace.statistics.content.filter.StatisticsHitTypeFilter">
+                    <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
                         <dsotype>0</dsotype>
                     </filter>
                 </filters>
@@ -309,13 +309,13 @@
                     <datasetgenerator type="org.dspace.statistics.content.DatasetTimeGenerator" includetotal="false">
                         <period type="month" start="-5" end="+1" />
                     </datasetgenerator>
-                    <datasetgenerator type="org.dspace.statistics.content.DSpaceObjectDatasetGenerator">
+                    <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
 
                         <dsotype>5</dsotype>
                     </datasetgenerator>
                 </datasetgenerators>
                 <filters>
-                    <filter type="org.dspace.statistics.content.filter.StatisticsHitTypeFilter">
+                    <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
                         <dsotype>0</dsotype>
                     </filter>
                 </filters>
@@ -343,7 +343,7 @@
                     </datasetgenerator>
                 </datasetgenerators>
                 <filters>
-                    <filter type="org.dspace.statistics.content.filter.StatisticsHitTypeFilter">
+                    <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
                         <dsotype>0</dsotype>
                     </filter>
                 </filters>
@@ -360,7 +360,7 @@
         <listings>
             <listing id="list1" title="Top 10 downloads">
                 <datasetgenerators>
-                    <datasetgenerator type="org.dspace.statistics.content.TopNDSODatasetGenerator">
+                    <datasetgenerator type="com.atmire.statistics.generator.TopNDSODatasetGenerator">
                         <dsotype>2</dsotype>
                         <limit type="top">
                             <n>10</n>
@@ -368,7 +368,7 @@
                     </datasetgenerator>
                 </datasetgenerators>
                 <filters>
-                    <filter type="org.dspace.statistics.content.filter.StatisticsHitTypeFilter">
+                    <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
                         <dsotype>0</dsotype>
                     </filter>
                 </filters>
