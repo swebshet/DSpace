@@ -150,6 +150,51 @@
         </div>
     </xsl:template>
 
+    <xsl:template match="mets:fileSec" mode="artifact-preview">
+        <xsl:param name="href"/>
+        <div class="thumbnail artifact-preview">
+
+            <a class="image-link" href="{$href}">
+                <xsl:choose>
+                    <xsl:when test="mets:fileGrp[@USE='THUMBNAIL']">
+                        <img class="img-responsive" alt="xmlui.mirage2.item-list.thumbnail" i18n:attr="alt">
+                            <xsl:attribute name="src">
+                                <xsl:value-of
+                                        select="mets:fileGrp[@USE='THUMBNAIL']/mets:file/mets:FLocat[@LOCTYPE='URL']/@xlink:href"/>
+                            </xsl:attribute>
+                        </img>
+                    </xsl:when>
+                    <!-- No thumbnail available-->
+                    <!-- Check what filetype and show generic thumbnail accordingly-->
+                    <xsl:otherwise>
+                        <xsl:variable name="fileName" select="mets:fileGrp[@USE='CONTENT']/mets:file/mets:FLocat/@xlink:title"/>
+                        <xsl:variable name="ext" select="substring-after($fileName,'.')"/>
+                        <xsl:value-of select="$ext"/>
+
+                        <xsl:choose>
+                            <xsl:when test="$ext='mp3'">
+                                <img alt="xmlui.mirage2.item-list.thumbnail" i18n:attr="alt"
+                                     src="{concat($theme-path, 'images/fallback-mimetypes/audio-x-mpeg.svg')}"/>
+                            </xsl:when>
+                            <xsl:when test="$ext='pdf'">
+                                <img alt="xmlui.mirage2.item-list.thumbnail" i18n:attr="alt"
+                                     src="{concat($theme-path, 'images/fallback-mimetypes/application-pdf.svg')}"/>
+                            </xsl:when>
+                            <xsl:when test="$ext='txt'">
+                                <img alt="xmlui.mirage2.item-list.thumbnail" i18n:attr="alt"
+                                     src="{concat($theme-path, 'images/fallback-mimetypes/text-x-generic.svg')}"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <img alt="xmlui.mirage2.item-list.thumbnail" i18n:attr="alt"
+                                     src="{concat($theme-path, 'images/fallback-mimetypes/application-x-zerosize.svg')}"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:otherwise>
+                </xsl:choose>
+
+            </a>
+        </div>
+    </xsl:template>
 
 
 </xsl:stylesheet>
