@@ -467,6 +467,11 @@
                         <map:match pattern="JSON/datatables/**">
                             <map:mount check-reload="no" src="aspects/json-datatables.xmap" uri-prefix="JSON/ datatables/"/>
                         </map:match>
+
+                    <map:match pattern="cua/**">
+                        <map:mount check-reload="no" src="aspects/cua.xmap" uri-prefix="cua/"/>
+                    </map:match>
+
                         <map:match pattern="csv/atmire/reporting-suite/storage-reports">
                             <map:select type="AuthenticateGraphSelector">
                                 <map:when test="eperson">
