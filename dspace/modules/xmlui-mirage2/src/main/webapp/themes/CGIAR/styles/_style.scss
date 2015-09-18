@@ -129,11 +129,13 @@ button.navbar-toggle.visible-sm:hover {
 }
 
 .footermargin > a{
-  margin-left:15px;
+  margin-left:50px;
   font-size:15px;
   margin-bottom: 10px;
   display: inline-block;
-
+}
+.footermargin > a:first-child{
+  margin-left:15px;
 }
 .bold {
   font-weight: bold;
@@ -141,4 +143,26 @@ button.navbar-toggle.visible-sm:hover {
 
 div.marginleft{
   margin-left:25px;
+}
+
+.descriptionlabel {
+  text-align: right;
+  display: inline-block;
+  width: 65px;
+  padding-right: 10px;
+}
+
+div.item-wrapper.row{
+  margin-bottom:20px;
+}
+
+.artifact-description a{
+color:black;}
+
+.description-info{
+  display:inline-table;
+width:85%
+}
+.thumbnail img{
+  max-width: 128px;
 }

@@ -330,14 +330,16 @@
 
 
 
-                        <a href="//www.cgiar.org" class="navbar-brand" target="_blank">
+
                             <span>
-                            <img src="http://cgiarweb.s3.amazonaws.com/wp-content/uploads/2012/04/logo-white.png" />
+                                <a href="//www.cgiar.org" class="navbar-brand" target="_blank">
+                            <img src="{concat($theme-path, '/images/logo-white.png')}" />
+                            </a>
                             </span>
                                 <span class="headerInfoName">CGSpace</span>
                                 <span class="headerInfoText">Repository of agricultural research outputs </span>
 
-                        </a>
+
 
 
                         <div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
@@ -474,7 +476,7 @@
             <div class="container">
                 <div class="row">
                     <!--TODO-->
-                    <div class="col-xs-7">
+                    <div class="col-xs-11">
                         <xsl:choose>
                             <xsl:when test="count(/dri:document/dri:meta/dri:pageMeta/dri:trail) > 1">
                                 <div class="breadcrumb dropdown visible-xs">
@@ -509,7 +511,7 @@
                             </xsl:otherwise>
                         </xsl:choose>
                     </div>
-                    <div class="col-xs-5 trail-toggle">
+                    <div class="col-xs-1 trail-toggle">
                     <button type="button" class="navbar-toggle hidden-lg hidden-md" data-toggle="offcanvas">
                         <span class="sr-only">
                             <i18n:text>xmlui.mirage2.page-structure.toggleNavigation</i18n:text>
@@ -527,64 +529,77 @@
 
     </xsl:template>
 
-    <!--The Trail-->
     <xsl:template match="dri:trail">
         <!--put an arrow between the parts of the trail-->
-        <li>
-            <xsl:if test="position()=1">
+        <xsl:choose>
+            <xsl:when test="position()=1">
                 <i class="glyphicon glyphicon-home" aria-hidden="true"/>&#160;
-            </xsl:if>
+            </xsl:when>
+        </xsl:choose>
+
+        <li>
+            <xsl:attribute name="class">
+                <xsl:text>ds-trail-link </xsl:text>
+                <xsl:if test="position()=1">
+                    <xsl:text>first-link </xsl:text>
+                </xsl:if>
+                <xsl:if test="position()=last()">
+                    <xsl:text>last-link</xsl:text>
+                </xsl:if>
+            </xsl:attribute>
             <!-- Determine whether we are dealing with a link or plain text trail link -->
             <xsl:choose>
                 <xsl:when test="./@target">
                     <a>
+                        <xsl:variable name="target">
+                            <xsl:choose>
+                                <xsl:when test="contains(./@target, '{{context-path}}')">
+                                    <xsl:call-template name="string-replace-all">
+                                        <xsl:with-param name="text" select="./@target"/>
+                                        <xsl:with-param name="replace" select="'{{context-path}}'"/>
+                                        <xsl:with-param name="by" select="$context-path"/>
+                                    </xsl:call-template>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:value-of select="./@target"/>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:variable>
+
                         <xsl:attribute name="href">
-                            <xsl:value-of select="./@target"/>
+                            <xsl:value-of select="$target"/>
                         </xsl:attribute>
                         <xsl:apply-templates />
                     </a>
                 </xsl:when>
                 <xsl:otherwise>
-                    <xsl:attribute name="class">active</xsl:attribute>
                     <xsl:apply-templates />
                 </xsl:otherwise>
             </xsl:choose>
         </li>
     </xsl:template>
 
-    <xsl:template match="dri:trail" mode="dropdown">
-        <!--put an arrow between the parts of the trail-->
-        <li role="presentation">
-            <!-- Determine whether we are dealing with a link or plain text trail link -->
-            <xsl:choose>
-                <xsl:when test="./@target">
-                    <a role="menuitem">
-                        <xsl:attribute name="href">
-                            <xsl:value-of select="./@target"/>
-                        </xsl:attribute>
-                        <xsl:if test="position()=1">
-                            <i class="glyphicon glyphicon-home" aria-hidden="true"/>&#160;
-                        </xsl:if>
-                        <xsl:apply-templates />
-                    </a>
-                </xsl:when>
-                <xsl:when test="position() > 1 and position() = last()">
-                    <xsl:attribute name="class">disabled</xsl:attribute>
-                    <a role="menuitem" href="#">
-                        <xsl:apply-templates />
-                    </a>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:attribute name="class">active</xsl:attribute>
-                    <xsl:if test="position()=1">
-                        <i class="glyphicon glyphicon-home" aria-hidden="true"/>&#160;
-                    </xsl:if>
-                    <xsl:apply-templates />
-                </xsl:otherwise>
-            </xsl:choose>
-        </li>
-    </xsl:template>
 
+    <xsl:template name="string-replace-all">
+        <xsl:param name="text"/>
+        <xsl:param name="replace"/>
+        <xsl:param name="by"/>
+        <xsl:choose>
+            <xsl:when test="contains($text, $replace)">
+                <xsl:value-of select="substring-before($text,$replace)"/>
+                <xsl:value-of select="$by"/>
+                <xsl:call-template name="string-replace-all">
+                    <xsl:with-param name="text"
+                                    select="substring-after($text,$replace)"/>
+                    <xsl:with-param name="replace" select="$replace"/>
+                    <xsl:with-param name="by" select="$by"/>
+                </xsl:call-template>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="$text"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
     <!--The License-->
     <xsl:template name="cc-license">
         <xsl:param name="metadataURL"/>
@@ -707,12 +722,6 @@
 
                             <i18n:text>xmlui.dri2xhtml.structural.about-link</i18n:text>
                         </a>
-                        <a href="//github.com/ilri/DSpace">
-                            <img alt="The GitHub Logo" src="{concat($theme-path, '/images/invertocat.png')}" width="24"
-                                 height="24"/>
-
-                        </a>
-                        <br/>
                         <a>
                             <xsl:attribute name="href">
                                 <xsl:value-of
@@ -721,6 +730,12 @@
                             </xsl:attribute>
                             <i18n:text>xmlui.dri2xhtml.structural.feedback-link</i18n:text>
                         </a>
+                        <a href="//github.com/ilri/DSpace">
+                            <img alt="The GitHub Logo" src="{concat($theme-path, '/images/invertocat.png')}" width="24"
+                                 height="24"/>
+
+                        </a>
+
 
 
                     </div>
