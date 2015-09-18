@@ -330,14 +330,16 @@
 
 
 
-                        <a href="//www.cgiar.org" class="navbar-brand" target="_blank">
+
                             <span>
-                            <img src="http://cgiarweb.s3.amazonaws.com/wp-content/uploads/2012/04/logo-white.png" />
+                                <a href="//www.cgiar.org" class="navbar-brand" target="_blank">
+                            <img src="{concat($theme-path, '/images/logo-white.png')}" />
+                            </a>
                             </span>
                                 <span class="headerInfoName">CGSpace</span>
                                 <span class="headerInfoText">Repository of agricultural research outputs </span>
 
-                        </a>
+
 
 
                         <div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
@@ -720,12 +722,6 @@
 
                             <i18n:text>xmlui.dri2xhtml.structural.about-link</i18n:text>
                         </a>
-                        <a href="//github.com/ilri/DSpace">
-                            <img alt="The GitHub Logo" src="{concat($theme-path, '/images/invertocat.png')}" width="24"
-                                 height="24"/>
-
-                        </a>
-                        <br/>
                         <a>
                             <xsl:attribute name="href">
                                 <xsl:value-of
@@ -734,6 +730,12 @@
                             </xsl:attribute>
                             <i18n:text>xmlui.dri2xhtml.structural.feedback-link</i18n:text>
                         </a>
+                        <a href="//github.com/ilri/DSpace">
+                            <img alt="The GitHub Logo" src="{concat($theme-path, '/images/invertocat.png')}" width="24"
+                                 height="24"/>
+
+                        </a>
+
 
 
                     </div>
