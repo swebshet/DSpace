@@ -35,8 +35,8 @@
         xmlns:util="org.dspace.app.xmlui.utils.XSLUtils"
         xmlns:confman="org.dspace.core.ConfigurationManager"
         xmlns:url="http://whatever/java/java.net.URLEncoder"
-
-        exclude-result-prefixes="xalan encoder i18n dri mets dim xlink xsl util confman url">
+        xmlns:fallback="org.dspace.app.xmlui.aspect.artifactbrowser.ThumbnailFallBackImagesUtil"
+        exclude-result-prefixes="xalan encoder i18n dri mets dim xlink xsl util confman url fallback">
 
     <xsl:output indent="yes"/>
 
@@ -48,7 +48,7 @@
         <div class="artifact-description">
 
             <div>
-                <span class="descriptionlabel">Title: </span>
+                <span class="descriptionlabel">Title:</span>
                 <a class="description-info">
                     <xsl:attribute name="href">
                         <xsl:value-of select="$href"/>
@@ -71,21 +71,24 @@
                 </span>
 
             </div>
-            <div >
-                <span class="descriptionlabel" >Authors :</span>
+            <div>
+                <span class="descriptionlabel">Authors :</span>
                 <span class="description-info">
                     <xsl:choose>
                         <xsl:when test="dim:field[@element='contributor'][@qualifier='author']">
                             <xsl:for-each select="dim:field[@element='contributor'][@qualifier='author']">
                                 <span>
                                     <xsl:if test="@authority">
-                                        <xsl:attribute name="class"><xsl:text>ds-dc_contributor_author-authority</xsl:text></xsl:attribute>
+                                        <xsl:attribute name="class">
+                                            <xsl:text>ds-dc_contributor_author-authority</xsl:text>
+                                        </xsl:attribute>
                                     </xsl:if>
                                     <xsl:variable name="authorLink">
-                                        <xsl:value-of select="concat($context-path,'/discover?filtertype=author&amp;filter_relational_operator=equals&amp;filter=',url:encode(node()))"></xsl:value-of>
+                                        <xsl:value-of
+                                                select="concat($context-path,'/discover?filtertype=author&amp;filter_relational_operator=equals&amp;filter=',url:encode(node()))"></xsl:value-of>
                                     </xsl:variable>
                                     <a target="_blank">
-                                        <xsl:attribute name="href" >
+                                        <xsl:attribute name="href">
                                             <xsl:value-of select="$authorLink"/>
                                         </xsl:attribute>
                                         <xsl:copy-of select="node()"/>
@@ -121,13 +124,13 @@
             </div>
             <div>
                 <xsl:if test="dim:field[@element='date' and @qualifier='issued']">
-                    <div >
+                    <div>
                         <span class="descriptionlabel">Date :</span>
 
-                            <span class="date">
-                                <xsl:value-of
-                                        select="substring(dim:field[@element='date' and @qualifier='issued']/node(),1,10)"/>
-                            </span>
+                        <span class="date">
+                            <xsl:value-of
+                                    select="substring(dim:field[@element='date' and @qualifier='issued']/node(),1,10)"/>
+                        </span>
 
                     </div>
                 </xsl:if>
@@ -139,7 +142,8 @@
                     </div>
                 </xsl:if>
                 <xsl:if test="dim:field[@element = 'identifier' and @qualifier='status']">
-                    <xsl:variable name="status" select="dim:field[@element = 'identifier' and @qualifier='status']/node()"/>
+                    <xsl:variable name="status"
+                                  select="dim:field[@element = 'identifier' and @qualifier='status']/node()"/>
                     <div class="artifact-type">
                         <span class="descriptionlabel">Status :</span>
                         <xsl:value-of select="$status"/>
@@ -167,28 +171,14 @@
                     <!-- No thumbnail available-->
                     <!-- Check what filetype and show generic thumbnail accordingly-->
                     <xsl:otherwise>
-                        <xsl:variable name="fileName" select="mets:fileGrp[@USE='CONTENT']/mets:file/mets:FLocat/@xlink:title"/>
+                        <xsl:variable name="fileName"
+                                      select="mets:fileGrp[@USE='CONTENT']/mets:file/mets:FLocat/@xlink:title"/>
                         <xsl:variable name="ext" select="substring-after($fileName,'.')"/>
-                        <xsl:value-of select="$ext"/>
-
-                        <xsl:choose>
-                            <xsl:when test="$ext='mp3'">
-                                <img alt="xmlui.mirage2.item-list.thumbnail" i18n:attr="alt"
-                                     src="{concat($theme-path, 'images/fallback-mimetypes/audio-x-mpeg.svg')}"/>
-                            </xsl:when>
-                            <xsl:when test="$ext='pdf'">
-                                <img alt="xmlui.mirage2.item-list.thumbnail" i18n:attr="alt"
-                                     src="{concat($theme-path, 'images/fallback-mimetypes/application-pdf.svg')}"/>
-                            </xsl:when>
-                            <xsl:when test="$ext='txt'">
-                                <img alt="xmlui.mirage2.item-list.thumbnail" i18n:attr="alt"
-                                     src="{concat($theme-path, 'images/fallback-mimetypes/text-x-generic.svg')}"/>
-                            </xsl:when>
-                            <xsl:otherwise>
-                                <img alt="xmlui.mirage2.item-list.thumbnail" i18n:attr="alt"
-                                     src="{concat($theme-path, 'images/fallback-mimetypes/application-x-zerosize.svg')}"/>
-                            </xsl:otherwise>
-                        </xsl:choose>
+                        <xsl:variable name="fallbackImage">
+                            <xsl:value-of select="fallback:getFallBackImagesAssociatedToExtension($ext)"/>
+                        </xsl:variable>
+                        <img alt="xmlui.mirage2.item-list.thumbnail" i18n:attr="alt"
+                             src="{concat($theme-path, $fallbackImage)}"/>
                     </xsl:otherwise>
                 </xsl:choose>
 
