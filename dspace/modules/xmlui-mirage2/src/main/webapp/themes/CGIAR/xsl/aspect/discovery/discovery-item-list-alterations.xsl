@@ -20,7 +20,30 @@
     <xsl:import href="../artifactbrowser/item-list-alterations.xsl"/>
     <xsl:output indent="yes"/>
 
-
+    <xsl:template match="dri:reference" mode="summaryList">
+        <xsl:variable name="externalMetadataURL">
+            <xsl:text>cocoon:/</xsl:text>
+            <xsl:value-of select="@url"/>
+            <!-- Since this is a summary only grab the descriptive metadata, and the thumbnails -->
+            <xsl:text>?sections=dmdSec,fileSec</xsl:text>
+            <!-- An example of requesting a specific metadata standard (MODS and QDC crosswalks only work for items)->
+            <xsl:if test="@type='DSpace Item'">
+                <xsl:text>&amp;dmdTypes=DC</xsl:text>
+            </xsl:if>-->
+        </xsl:variable>
+        <xsl:comment> External Metadata URL: <xsl:value-of select="$externalMetadataURL"/> </xsl:comment>
+        <li>
+            <xsl:attribute name="class">
+                <xsl:text>ds-artifact-item </xsl:text>
+                <xsl:choose>
+                    <xsl:when test="position() mod 2 = 0">even</xsl:when>
+                    <xsl:otherwise>odd</xsl:otherwise>
+                </xsl:choose>
+            </xsl:attribute>
+            <xsl:apply-templates select="document($externalMetadataURL)" mode="summaryList"/>
+            <xsl:apply-templates />
+        </li>
+    </xsl:template>
     <xsl:template name="itemSummaryList">
 
         <xsl:param name="handle"/>
