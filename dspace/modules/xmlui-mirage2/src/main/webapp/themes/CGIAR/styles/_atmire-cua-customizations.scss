@@ -1,0 +1,11 @@
+$abstract-views-color: #427730;
+$file-downloads-color: #7AB800;
+
+.ct-chart {
+    .ct-series.ct-series-a .ct-slice.ct-donut {
+        stroke: $file-downloads-color;
+    }
+    .ct-series.ct-series-b .ct-slice.ct-donut {
+        stroke: $abstract-views-color;
+    }
+}

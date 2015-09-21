@@ -820,15 +820,15 @@ DAMAGE.
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.country_mtdt">Countries</message>
 
 
-    <message key="cua.statlet.item-views">Item views</message>
+    <message key="cua.statlet.item-views">Item Page Views</message>
     <message key="cua.statlet.views">Views</message>
-    <message key="cua.statlet.bitstream-downloads">Bitstream downloads</message>
+    <message key="cua.statlet.bitstream-downloads">File Downloads</message>
     <message key="cua.statlet.downloads">Downloads</message>
     <message key="cua.statlet.type">Type</message>
     <message key="cua.statlet.total">Total</message>
-    <message key="cua.statlet.total-hits">Total Hits</message>
+    <message key="cua.statlet.total-hits">All Time Usage</message>
     <message key="cua.statlet.country">Country</message>
-    <message key="cua.statlet.top-5-country-views">Top 5 countries by item views</message>
+    <message key="cua.statlet.top-5-country-views">Top 5 visiting countries</message>
     <message key="cua.statlet.top-5-country-downloads">Top 5 countries by bitstream downloads</message>
     <message key="cua.statlet.item-views-month">Item views by month</message>
     <message key="cua.statlet.bitstream-downloads-month">Bitstream downloads by month</message>
@@ -836,8 +836,8 @@ DAMAGE.
     <message key="cua.statlet.top-items-downloads">Top items by bitstream downloads</message>
     <message key="cua.statlet.top-subcollections-views">Top sub-collections by item views</message>
     <message key="cua.statlet.top-subcollections-downloads">Top sub-collections by bitstream downloads</message>
-    <message key="cua.statlet.top-communities-views">Top communities by item views</message>
-    <message key="cua.statlet.top-communities-downloads">Top Communities by bitstream downloads</message>
+    <message key="cua.statlet.top-communities-views">Top 5 communities by Item Page Views</message>
+    <message key="cua.statlet.top-communities-downloads">Top 5 communities by File Downloads</message>
     <message key="cua.statlet.item">Item</message>
     <message key="cua.statlet.collection">Collection</message>
     <message key="cua.statlet.community">Item</message>
