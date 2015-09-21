@@ -1,429 +1,677 @@
-<pages xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+<statistics xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+    <config>
+        <defaults>
+            <formatting>
+                <!--supported formats http://momentjs.com/docs/#/displaying/-->
+                <!--source-format must match using JavaScript "".match("{source-format}") !!!STRING REGEX FORMAT!!!-->
+                <!--no source-format or source-format="" = default-->
+                <format type="date" source-format="^\d{4}([-])\d{2}$" size="xs">MM-YY</format>
+                <format type="date" source-format="^\d{4}([-])\d{2}$" size="sm">MMM YY</format>
+                <format type="date" source-format="^\d{4}([-])\d{2}$" size="md">MMM YY</format>
+                <format type="date" source-format="^\d{4}([-])\d{2}$" size="lg">MMMM YYYY</format>
+                <format type="date" source-format="^\d{4}([-])\d{2}\1\d{2}$" size="xs">YYYY-MM-DD</format>
+                <format type="date" source-format="^\d{4}([-])\d{2}\1\d{2}$" size="sm">MMM D YY</format>
+                <format type="date" source-format="^\d{4}([-])\d{2}\1\d{2}$" size="md">MMM D YY</format>
+                <format type="date" source-format="^\d{4}([-])\d{2}\1\d{2}$" size="lg">MMMM D YYYY</format>
+                <!--supported formats http://numeraljs.com/-->
+                <!--no size or size="" = default-->
+                <!--no source-format or source-format="" = default-->
+                <format size="" type="number">0,0</format>
+                <!--type="1" = Constants.BITSTREAM-->
+                <!--limit = limit number of chars-->
+                <!--supported formats: bitstreamName, bitstream, bitstreamExtension, bitstreamSize, containerBundle,containerBundleName,containerItem,containerItemName,owningColl,...-->
+                <format type="0" size="xs" limit="10">bitstreamName</format>
+                <format type="2" size="xs" limit="10">containerItemName</format>
+                <!--size="" = default-->
+                <format type="0" size="" limit="-1">bitstreamName</format>
+                <format type="2" size="" limit="-1">containerItemName</format>
+            </formatting>
+            <templates>
+                <listing>table/table_statlet</listing>
+                <table>table/table_statlet</table>
+            </templates>
+        </defaults>
+    </config>
 
-    <item-display>
-        <!--<globalDateFilter>true</globalDateFilter>-->
-        <tables>
-            <table id="tab1" title="xmlui.statistics.downloads.lastm" i18n:attr="title">
-                <datasetgenerators>
-                    <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
-                        <dsotype>0</dsotype>
-                    </datasetgenerator>
-                    <datasetgenerator type="org.dspace.statistics.content.DatasetTimeGenerator" includetotal="false">
-                        <period type="month" start="-1" end="0" />
-                        <!-- past 14 days -->
-                    </datasetgenerator>
-                </datasetgenerators>
-                <filters>
-                    <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
-                        <dsotype>0</dsotype>
-                    </filter>
-                </filters>
-                <position>
-                    <css>clear: both</css>
-                </position>
-            </table>
-        </tables>
+    <pages>
 
-        <graphs>
-            <graph id="graph1" type="categorystacked3d"> <!-- line graph with line for item and line per bitstream -->
-                <styles>
-                    <style fill="#315D90" id="#315D90" type="color"/>
-                    <style fill="#60984D" id="#60984D" type="color"/>
-                    <style fill="#EAA541" id="#EAA541" type="color"/>
-                    <style fill="#C23734" id="#C23734" type="color"/>
-                    <style fill="#75447E" id="#75447E" type="color"/>
-                    <style fill="#828484" id="#828484" type="color"/>
-                    <style fill="#456E9F" id="#456E9F" type="color"/>
-                    <style fill="#71A65F" id="#71A65F" type="color"/>
-                    <style fill="#EDB059" id="#EDB059" type="color"/>
-                    <style fill="#CA4C4A" id="#CA4C4A" type="color"/>
-                    <style fill="#875690" id="#875690" type="color"/>
-                    <style fill="#929594" id="#929594" type="color"/>
-                    <style id="titlefont" name="Verdana" size="20" style="plain" type="font"/>
-                    <style fill="#FFFFF0" id="fgcolor" type="color"/>
-                    <style fill="#F9F9F7" id="bgcolor" type="color"/>
-                </styles>
-                <frame color-style="bgcolor" height="300" width="585"/>
-                <background color-style="fgcolor"/>
-                <properties font-style="titlefont" legend="south" orientation="horizontal" stacked="1" thickness="4"
-                            title="xmlui.statistics.downloads.last6m" i18n:attr="title"/>
-                <style-mapping>
-                    <map color-style="#315D90"/>
-                    <map color-style="#60984D"/>
-                    <map color-style="#EAA541"/>
-                    <map color-style="#C23734"/>
-                    <map color-style="#75447E"/>
-                    <map color-style="#828484"/>
-                    <map color-style="#456E9F"/>
-                    <map color-style="#71A65F"/>
-                    <map color-style="#EDB059"/>
-                    <map color-style="#CA4C4A"/>
-                    <map color-style="#875690"/>
-                    <map color-style="#929594"/>
-                </style-mapping>
-                <datasetgenerators>
-                    <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
-                        <dsotype>0</dsotype>
-                    </datasetgenerator>
-                    <datasetgenerator type="org.dspace.statistics.content.DatasetTimeGenerator" includetotal="false">
-                        <period type="month" start="-5" end="+1" />
-                    </datasetgenerator>
-                </datasetgenerators>
+        <item-display>
+            <graphs>
+                <graph id="Total_Hits_Donut" type="" title="StatletTotalHits"> <!-- line graph with line for item and line per bitstream -->
+                    <styles/>
+                    <frame color-style="bgcolor" height="300" width="585"/>
+                    <background color-style="fgcolor"/>
+                    <properties font-style="titlefont" legend="south" orientation="horizontal" stacked="1" thickness="4"
+                                title="xmlui.statistics.downloads.last6m" i18n:attr="title"/>
+                    <style-mapping/>
+                    <datasetgenerators>
+                        <datasetgenerator type="com.atmire.statistics.content.DatasetConfigurableTypeGenerator">
+                            <solrfield>type</solrfield>
+                            <order>asc</order>
+                            <limit type="top">
+                                <n>5</n>
+                            </limit>
+                            <rowlabels>
+                                <label value="2">StatletItemViews</label>
+                                <label value="0">StatletBitstreamDownloads</label>
+                            </rowlabels>
+                            <headerlabels>
+                                <label column="0">StatletType</label>
+                                <label column="1">StatletTotal</label>
+                            </headerlabels>
+                        </datasetgenerator>
+                    </datasetgenerators>
+                    <filters>
+                        <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
+                            <dsotype>0</dsotype>
+                            <dsotype>2</dsotype>
+                        </filter>
+                        <filter type="com.atmire.statistics.content.filter.StatisticsStringFilter" query="statistics_type:view"/>
+                    </filters>
+                    <render>
+                        <default>
+                            <graph-type>donut</graph-type>
+                        </default>
+                    </render>
+                    <position>
+                        <!-- specify positions in pages -->
+                    </position>
+                </graph>
+            </graphs>
 
-                <position>
-                    <!-- specify positions in pages -->
-                </position>
-            </graph>
-        </graphs>
+            <tables>
+                <table id="tab1" title="StatletTop5CountryViews">
+                    <datasetgenerators>
 
-        <tables>
-            <table id="tab2" title="Top 5 countries by file download">
-                <datasetgenerators>
+                        <datasetgenerator type="org.dspace.statistics.content.DatasetTypeGenerator">
+                            <solrfield>countryCode</solrfield>
+                            <limit type="top">
+                                <n>5</n>
+                            </limit>
 
-                    <datasetgenerator type="org.dspace.statistics.content.DatasetTypeGenerator">
-                        <solrfield>countryCode</solrfield>
-                        <limit type="top">
-                            <n>5</n>
-                        </limit>
+                        </datasetgenerator>
+                    </datasetgenerators>
+                    <filters>
+                        <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
+                            <dsotype>2</dsotype>
+                        </filter>
+                    </filters>
+                    <position>
+                        <css>clear: both</css>
+                    </position>
+                    <labels>
+                        <column>StatletCountry</column>
+                        <column>StatletViews</column>
+                    </labels>
+                </table>
+                <table id="tab2" title="StatletTop5CountryDownloads">
+                    <datasetgenerators>
 
-                    </datasetgenerator>
-                    <datasetgenerator type="org.dspace.statistics.content.DatasetTimeGenerator">
-                        <period type="month" start="-5" end="+1" />
-                    </datasetgenerator>
-                </datasetgenerators>
-                <filters>
-                    <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
-                        <dsotype>0</dsotype>
-                    </filter>
-                </filters>
-                <position>
-                    <css>clear: both</css>
-                </position>
-            </table>
-        </tables>
+                        <datasetgenerator type="org.dspace.statistics.content.DatasetTypeGenerator">
+                            <solrfield>countryCode</solrfield>
+                            <limit type="top">
+                                <n>5</n>
+                            </limit>
+                        </datasetgenerator>
+                    </datasetgenerators>
+                    <filters>
+                        <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
+                            <dsotype>0</dsotype>
+                        </filter>
+                    </filters>
+                    <position>
+                        <css>clear: both</css>
+                    </position>
+                    <labels>
+                        <column>StatletCountry</column>
+                        <column>StatletDownloads</column>
+                    </labels>
+                </table>
+            </tables>
 
-        <links>
-            <link> <!-- link to a page with more detailed stats, will become URL with item id included as dynamic parameter -->
-                <!-- show table with last 12 month's item and bitstream downloads -->
-                <param name="contents.1">table</param>
-                <param name="contents.1.x.type">time</param>
-                <param name="contents.1.x.includetotal">true</param>
-                <param name="contents.1.x.period.type">month</param>
-                <param name="contents.1.x.period.start">-12</param>
-                <param name="contents.1.x.period.end">+1</param>
-                <param name="contents.1.y.type">dspaceobject</param>
-                <param name="contents.1.y.dspaceobject.type.1">2</param>
-                <param name="contents.1.y.dspaceobject.type.2">0</param>
+            <graphs>
+                <graph id="graph1" type="" title="StatletItemViewsMonth"> <!-- line graph with line for item and line per bitstream -->
+                    <styles/>
+                    <frame color-style="bgcolor" height="300" width="585"/>
+                    <background color-style="fgcolor"/>
+                    <style-mapping/>
+                    <datasetgenerators>
+                        <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
+                            <dsotype>2</dsotype>
+                        </datasetgenerator>
+                        <datasetgenerator type="org.dspace.statistics.content.DatasetTimeGenerator" includetotal="false">
+                            <period type="month" start="-5" end="+1" />
+                        </datasetgenerator>
+                    </datasetgenerators>
 
-                <!-- show listing with top 10 countries of the item visits -->
-                <param name="contents.2">listing</param>
-                <param name="contents.2.y.type">countryCode</param>
-                <param name="contents.2.y.countryCode.max">10</param>
-                <param name="contents.2.y.filter.1">type</param>
-                <param name="contents.2.y.filter.1.type">2</param>
-            </link>
-        </links>
+                    <labels>
+                        <row>StatletThisItem</row>
+                    </labels>
 
-    </item-display>
+                    <render>
+                        <default>
+                            <graph-type>line</graph-type>
+                        </default>
+                    </render>
 
-    <collection-home>
-        <globalDateFilter>false</globalDateFilter>
+                </graph>
+                <graph id="graph2" type="" title="StatletBitstreamDownloadsMonth"> <!-- line graph with line for item and line per bitstream -->
+                    <styles/>
+                    <frame color-style="bgcolor" height="300" width="585"/>
+                    <background color-style="fgcolor"/>
+                    <style-mapping/>
+                    <datasetgenerators>
+                        <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
+                            <dsotype>0</dsotype>
+                        </datasetgenerator>
+                        <datasetgenerator type="org.dspace.statistics.content.DatasetTimeGenerator" includetotal="false">
+                            <period type="month" start="-5" end="+1" />
+                        </datasetgenerator>
+                    </datasetgenerators>
 
-        <listings>
-            <listing id="list1" title="xmlui.statistics.topn.downloads.5"  i18n:attr="title">
-                <datasetgenerators>
-                    <datasetgenerator type="com.atmire.statistics.generator.TopNDSODatasetGenerator">
-                        <dsotype>2</dsotype>
-                        <limit type="top">
-                            <n>5</n>
-                        </limit>
-                    </datasetgenerator>
-                </datasetgenerators>
-                <filters>
-                    <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
-                        <dsotype>0</dsotype>
-                    </filter>
-                </filters>
-            </listing>
-        </listings>
+                    <render>
+                        <default>
+                            <graph-type>line</graph-type>
+                        </default>
+                    </render>
 
-
-
-        <graphs>
-            <graph id="graph1" type="category3d"> <!-- line graph with line for item and line per bitstream -->
-                <styles>
-                    <style fill="#315D90" id="#315D90" type="color"/>
-                    <style fill="#60984D" id="#60984D" type="color"/>
-                    <style fill="#EAA541" id="#EAA541" type="color"/>
-                    <style fill="#C23734" id="#C23734" type="color"/>
-                    <style fill="#75447E" id="#75447E" type="color"/>
-                    <style fill="#828484" id="#828484" type="color"/>
-                    <style fill="#456E9F" id="#456E9F" type="color"/>
-                    <style fill="#71A65F" id="#71A65F" type="color"/>
-                    <style fill="#EDB059" id="#EDB059" type="color"/>
-                    <style fill="#CA4C4A" id="#CA4C4A" type="color"/>
-                    <style fill="#875690" id="#875690" type="color"/>
-                    <style fill="#929594" id="#929594" type="color"/>
-                    <style id="titlefont" name="Verdana" size="20" style="plain" type="font"/>
-                    <style fill="#FFFFF0" id="fgcolor" type="color"/>
-                    <style fill="#F9F9F7" id="bgcolor" type="color"/>
-                </styles>
-                <frame color-style="bgcolor" height="300" width="585"/>
-                <background color-style="fgcolor"/>
-
-                <properties font-style="titlefont" legend="south" orientation="vertical" stacked="0" thickness="4"
-                            title="xmlui.statistics.downloads.last6m" i18n:attr="title"/>
-                <style-mapping>
-                    <map color-style="#315D90"/>
-                    <map color-style="#60984D"/>
-                    <map color-style="#EAA541"/>
-                    <map color-style="#C23734"/>
-                    <map color-style="#75447E"/>
-                    <map color-style="#828484"/>
-                    <map color-style="#456E9F"/>
-                    <map color-style="#71A65F"/>
-                    <map color-style="#EDB059"/>
-                    <map color-style="#CA4C4A"/>
-                    <map color-style="#875690"/>
-                    <map color-style="#929594"/>
-                </style-mapping>
-                <datasetgenerators>
-
-                    <datasetgenerator type="org.dspace.statistics.content.DatasetTimeGenerator" includetotal="false">
-                        <period type="month" start="-5" end="+1" />
-                    </datasetgenerator>
-                    <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
-
-                        <dsotype>5</dsotype>
-                    </datasetgenerator>
-                </datasetgenerators>
-                <filters>
-                    <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
-                        <dsotype>2</dsotype>
-                    </filter>
-                </filters>
-                <position>
-                    <!-- specify positions in pages -->
-                </position>
-            </graph>
+                </graph>
+            </graphs>
 
 
-        </graphs>
 
-        <tables>
-            <table id="tab2" title="Top 5 countries by file download">
-                <datasetgenerators>
-                     <datasetgenerator type="org.dspace.statistics.content.DatasetTypeGenerator">
-                        <solrfield>countryCode</solrfield>
-                        <limit type="top">
-                            <n>5</n>
-                        </limit>
-                    </datasetgenerator>
+            <links>
+                <link> <!-- link to a page with more detailed stats, will become URL with item id included as dynamic parameter -->
+                    <!-- show table with last 12 month's item and bitstream downloads -->
+                    <param name="contents.1">table</param>
+                    <param name="contents.1.x.type">time</param>
+                    <param name="contents.1.x.includetotal">true</param>
+                    <param name="contents.1.x.period.type">month</param>
+                    <param name="contents.1.x.period.start">-12</param>
+                    <param name="contents.1.x.period.end">+1</param>
+                    <param name="contents.1.y.type">dspaceobject</param>
+                    <param name="contents.1.y.dspaceobject.type.1">2</param>
+                    <param name="contents.1.y.dspaceobject.type.2">0</param>
 
-                    <datasetgenerator type="org.dspace.statistics.content.DatasetTimeGenerator" includetotal="false">
-                        <period type="month" start="-5" end="+1" />
-                    </datasetgenerator>
-                </datasetgenerators>
-                <filters>
-                    <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
-                        <dsotype>0</dsotype>
-                    </filter>
-                    <filter type="org.dspace.statistics.content.filter.StatisticsHasValueFilter"><!-- to be sure the field has a value that is not empty -->
-                        <solrfield>countryCode</solrfield>
-                        <excludevalues>
-                            <value>A2</value>
-                        </excludevalues>
-                    </filter>
+                    <!-- show listing with top 10 countries of the item visits -->
+                    <param name="contents.2">listing</param>
+                    <param name="contents.2.y.type">countryCode</param>
+                    <param name="contents.2.y.countryCode.max">10</param>
+                    <param name="contents.2.y.filter.1">type</param>
+                    <param name="contents.2.y.filter.1.type">2</param>
+                </link>
+            </links>
 
-                </filters>
-                <position>
-                    <css>clear: both</css>
-                </position>
-            </table>
-        </tables>
+        </item-display>
 
-    </collection-home>
+        <collection-home>
+            <graphs>
+                <graph id="Total_Hits_Donut" type="" title="StatletTotalHits"> <!-- line graph with line for item and line per bitstream -->
+                    <styles/>
+                    <frame color-style="bgcolor" height="300" width="585"/>
+                    <background color-style="fgcolor"/>
+                    <style-mapping/>
+                    <datasetgenerators>
+                        <datasetgenerator type="com.atmire.statistics.content.DatasetConfigurableTypeGenerator">
+                            <solrfield>type</solrfield>
+                            <order>asc</order>
+                            <limit type="top">
+                                <n>5</n>
+                            </limit>
+                            <rowlabels>
+                                <label value="2">StatletItemViews</label>
+                                <label value="0">StatletBitstreamDownloads</label>
+                            </rowlabels>
+                            <headerlabels>
+                                <label column="0">StatletType</label>
+                                <label column="1">StatletTotal</label>
+                            </headerlabels>
+                        </datasetgenerator>
+                    </datasetgenerators>
+                    <filters>
+                        <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
+                            <dsotype>0</dsotype>
+                            <dsotype>2</dsotype>
+                        </filter>
+                        <filter type="com.atmire.statistics.content.filter.StatisticsStringFilter" query="statistics_type:view"/>
+                    </filters>
+                    <render>
+                        <default>
+                            <graph-type>donut</graph-type>
+                        </default>
+                    </render>
+                </graph>
+            </graphs>
+            <tables>
+                <table id="tab1" title="StatletTopItemsViews">
+                    <datasetgenerators>
 
-    <community-home>
-        <globalDateFilter>false</globalDateFilter>
+                        <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
+                            <dsotype>2</dsotype>
+                            <limit type="top">
+                                <n>5</n>
+                            </limit>
+                        </datasetgenerator>
+                    </datasetgenerators>
+                    <filters>
+                        <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
+                            <dsotype>2</dsotype>
+                        </filter>
+                    </filters>
+                    <labels>
+                        <column>StatletItem</column>
+                        <column>StatletViews</column>
+                    </labels>
+                </table>
+                <table id="tab2" title="StatletTopItemsDownloads">
+                    <datasetgenerators>
 
-        <listings>
-            <listing id="list1" title="# Of Downloads For the top 5 Items">
-                <datasetgenerators>
-                    <datasetgenerator type="com.atmire.statistics.generator.TopNDSODatasetGenerator">
-                        <dsotype>2</dsotype>
-                        <limit type="top">
-                            <n>5</n>
-                        </limit>
-                    </datasetgenerator>
-                </datasetgenerators>
-                <filters>
-                    <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
-                        <dsotype>0</dsotype>
-                    </filter>
-                </filters>
-            </listing>
-        </listings>
+                        <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
+                            <dsotype>2</dsotype>
+                            <limit type="top">
+                                <n>5</n>
+                            </limit>
+                        </datasetgenerator>
+                    </datasetgenerators>
+                    <filters>
+                        <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
+                            <dsotype>0</dsotype>
+                        </filter>
+                    </filters>
+                    <labels>
+                        <column>StatletItem</column>
+                        <column>StatletDownloads</column>
+                    </labels>
+
+                </table>
+            </tables>
+            <graphs>
+                <graph id="graph1" type="" title="StatletItemViewsMonth"> <!-- line graph with line for item and line per bitstream -->
+                    <styles/>
+                    <style-mapping/>
+                    <datasetgenerators>
+
+                        <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
+
+                            <dsotype>5</dsotype>
+                        </datasetgenerator>
+                        <datasetgenerator type="org.dspace.statistics.content.DatasetTimeGenerator" includetotal="false">
+                            <period type="month" start="-5" end="+1" />
+                        </datasetgenerator>
+                    </datasetgenerators>
+                    <filters>
+                        <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
+                            <dsotype>2</dsotype>
+                        </filter>
+                    </filters>
+                    <render>
+                        <default>
+                            <graph-type>line</graph-type>
+                        </default>
+                    </render>
+                    <labels>
+                        <row>StatletThisCollection</row>
+                    </labels>
+                </graph>
+                <graph id="graph2" type="" title="StatletBitstreamDownloadsMonth"> <!-- line graph with line for item and line per bitstream -->
+                    <styles/>
+                    <style-mapping/>
+                    <datasetgenerators>
+
+                        <datasetgenerator type="org.dspace.statistics.content.DatasetTimeGenerator" includetotal="false">
+                            <period type="month" start="-5" end="+1" />
+                        </datasetgenerator>
+                        <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
+
+                            <dsotype>5</dsotype>
+                        </datasetgenerator>
+                    </datasetgenerators>
+                    <filters>
+                        <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
+                            <dsotype>0</dsotype>
+                        </filter>
+                    </filters>
+                    <render>
+                        <default>
+                            <graph-type>line</graph-type>
+                        </default>
+                    </render>
+                    <labels>
+                        <row>StatletThisCollection</row>
+                    </labels>
+                </graph>
 
 
-        <graphs>
-            <graph id="graph1" type="category3d"> <!-- line graph with line for item and line per bitstream -->
-                <styles>
-                    <style fill="#315D90" id="#315D90" type="color"/>
-                    <style fill="#60984D" id="#60984D" type="color"/>
-                    <style fill="#EAA541" id="#EAA541" type="color"/>
-                    <style fill="#C23734" id="#C23734" type="color"/>
-                    <style fill="#75447E" id="#75447E" type="color"/>
-                    <style fill="#828484" id="#828484" type="color"/>
-                    <style fill="#456E9F" id="#456E9F" type="color"/>
-                    <style fill="#71A65F" id="#71A65F" type="color"/>
-                    <style fill="#EDB059" id="#EDB059" type="color"/>
-                    <style fill="#CA4C4A" id="#CA4C4A" type="color"/>
-                    <style fill="#875690" id="#875690" type="color"/>
-                    <style fill="#929594" id="#929594" type="color"/>
-                    <style id="titlefont" name="Verdana" size="20" style="plain" type="font"/>
-                    <style fill="#FFFFF0" id="fgcolor" type="color"/>
-                    <style fill="#F9F9F7" id="bgcolor" type="color"/>
-                </styles>
-                <frame color-style="bgcolor" height="300" width="585"/>
-                <background color-style="fgcolor"/>
+            </graphs>
+        </collection-home>
 
-                <properties font-style="titlefont" legend="south" orientation="vertical" stacked="0" thickness="4"
-                            title="# File downloads for the last 6 months"/>
-                <style-mapping>
-                    <map color-style="#315D90"/>
-                    <map color-style="#60984D"/>
-                    <map color-style="#EAA541"/>
-                    <map color-style="#C23734"/>
-                    <map color-style="#75447E"/>
-                    <map color-style="#828484"/>
-                    <map color-style="#456E9F"/>
-                    <map color-style="#71A65F"/>
-                    <map color-style="#EDB059"/>
-                    <map color-style="#CA4C4A"/>
-                    <map color-style="#875690"/>
-                    <map color-style="#929594"/>
-                </style-mapping>
-                <datasetgenerators>
+        <community-home>
+            <graphs>
+                <graph id="Total_Hits_Donut" type="" title="StatletTotalHits"> <!-- line graph with line for item and line per bitstream -->
+                    <styles/>
+                    <style-mapping/>
+                    <datasetgenerators>
+                        <datasetgenerator type="com.atmire.statistics.content.DatasetConfigurableTypeGenerator">
+                            <solrfield>type</solrfield>
+                            <order>asc</order>
+                            <limit type="top">
+                                <n>5</n>
+                            </limit>
+                            <rowlabels>
+                                <label value="2">StatletItemViews</label>
+                                <label value="0">StatletBitstreamDownloads</label>
+                            </rowlabels>
+                            <headerlabels>
+                                <label column="0">StatletType</label>
+                                <label column="1">StatletTotal</label>
+                            </headerlabels>
+                        </datasetgenerator>
+                    </datasetgenerators>
+                    <filters>
+                        <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
+                            <dsotype>0</dsotype>
+                            <dsotype>2</dsotype>
+                        </filter>
+                        <filter type="com.atmire.statistics.content.filter.StatisticsStringFilter" query="statistics_type:view"/>
+                    </filters>
+                    <render>
+                        <default>
+                            <graph-type>donut</graph-type>
+                        </default>
+                    </render>
+                </graph>
+            </graphs>
+            <tables>
+                <table id="tab1" title="StatletTopSubcollectionsViews">
+                    <datasetgenerators>
 
-                    <datasetgenerator type="org.dspace.statistics.content.DatasetTimeGenerator" includetotal="false">
-                        <period type="month" start="-5" end="+1" />
-                    </datasetgenerator>
-                    <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
+                        <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
+                            <dsotype>3</dsotype>
+                            <limit type="top">
+                                <n>5</n>
+                            </limit>
+                        </datasetgenerator>
+                    </datasetgenerators>
+                    <filters>
+                        <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
+                            <dsotype>2</dsotype>
+                        </filter>
+                    </filters>
+                    <labels>
+                        <column>StatletCollection</column>
+                        <column>StatletViews</column>
+                    </labels>
+                </table>
+                <table id="tab2" title="StatletTopSubcollectionsDownloads">
+                    <datasetgenerators>
 
-                        <dsotype>5</dsotype>
-                    </datasetgenerator>
-                </datasetgenerators>
-                <filters>
-                    <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
-                        <dsotype>0</dsotype>
-                    </filter>
-                </filters>
-                <position>
-                    <!-- specify positions in pages -->
-                </position>
-            </graph>
+                        <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
+                            <dsotype>3</dsotype>
+                            <limit type="top">
+                                <n>5</n>
+                            </limit>
+                        </datasetgenerator>
+                    </datasetgenerators>
+                    <filters>
+                        <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
+                            <dsotype>0</dsotype>
+                        </filter>
+                    </filters>
+                    <labels>
+                        <column>StatletCollection</column>
+                        <column>StatletDownloads</column>
+                    </labels>
+                </table>
+            </tables>
+
+            <graphs>
+                <graph id="graph1" type="" title="StatletItemViewsMonth"> <!-- line graph with line for item and line per bitstream -->
+                    <styles/>
+                    <style-mapping/>
+                    <datasetgenerators>
+
+                        <datasetgenerator type="org.dspace.statistics.content.DatasetTimeGenerator" includetotal="false">
+                            <period type="month" start="-5" end="+1" />
+                        </datasetgenerator>
+                        <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
+
+                            <dsotype>5</dsotype>
+                        </datasetgenerator>
+                    </datasetgenerators>
+                    <filters>
+                        <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
+                            <dsotype>2</dsotype>
+                        </filter>
+                    </filters>
+                    <render>
+                        <default>
+                            <graph-type>line</graph-type>
+                        </default>
+                    </render>
+                    <labels>
+                        <row>StatletThisCommunity</row>
+                    </labels>
+                </graph>
+                <graph id="graph2" type="" title="StatletBitstreamDownloadsMonth"> <!-- line graph with line for item and line per bitstream -->
+                    <styles/>
+                    <style-mapping/>
+                    <datasetgenerators>
+
+                        <datasetgenerator type="org.dspace.statistics.content.DatasetTimeGenerator" includetotal="false">
+                            <period type="month" start="-5" end="+1" />
+                        </datasetgenerator>
+                        <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
+
+                            <dsotype>5</dsotype>
+                        </datasetgenerator>
+                    </datasetgenerators>
+                    <filters>
+                        <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
+                            <dsotype>0</dsotype>
+                        </filter>
+                    </filters>
+                    <render>
+                        <default>
+                            <graph-type>line</graph-type>
+                        </default>
+                    </render>
+                    <labels>
+                        <row>StatletThisCommunity</row>
+                    </labels>
+                </graph>
 
 
-        </graphs>
+            </graphs>
 
-        <tables>
-            <table id="tab2" title="Top 5 countries by file download">
-                <datasetgenerators>
+        </community-home>
 
-                    <datasetgenerator type="org.dspace.statistics.content.DatasetTypeGenerator">
-                        <solrfield>countryCode</solrfield>
-                        <limit type="top">
-                            <n>5</n>
-                        </limit>
+        <dspace-home>
+            <graphs>
+                <graph id="Total_Hits_Donut" type="" title="StatletTotalHits"> <!-- line graph with line for item and line per bitstream -->
+                    <styles/>
+                    <frame color-style="bgcolor" height="300" width="585"/>
+                    <background color-style="fgcolor"/>
+                    <properties font-style="titlefont" legend="south" orientation="horizontal" stacked="1" thickness="4"
+                                title="xmlui.statistics.downloads.last6m" i18n:attr="title"/>
+                    <style-mapping/>
+                    <datasetgenerators>
+                        <datasetgenerator type="com.atmire.statistics.content.DatasetConfigurableTypeGenerator">
+                            <solrfield>type</solrfield>
+                            <order>asc</order>
+                            <limit type="top">
+                                <n>5</n>
+                            </limit>
+                            <rowlabels>
+                                <label value="2">StatletItemViews</label>
+                                <label value="0">StatletBitstreamDownloads</label>
+                            </rowlabels>
+                            <headerlabels>
+                                <label column="0">StatletType</label>
+                                <label column="1">StatletTotal</label>
+                            </headerlabels>
+                        </datasetgenerator>
+                    </datasetgenerators>
+                    <filters>
+                        <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
+                            <dsotype>0</dsotype>
+                            <dsotype>2</dsotype>
+                        </filter>
+                        <filter type="com.atmire.statistics.content.filter.StatisticsStringFilter" query="statistics_type:view"/>
+                    </filters>
+                    <render>
+                        <default>
+                            <graph-type>donut</graph-type>
+                        </default>
+                    </render>
+                    <position>
+                        <!-- specify positions in pages -->
+                    </position>
+                </graph>
+            </graphs>
 
-                    </datasetgenerator>
-                    <datasetgenerator type="org.dspace.statistics.content.DatasetTimeGenerator">
-                        <period type="month" start="-5" end="+1" />
-                    </datasetgenerator>
-                </datasetgenerators>
-                <filters>
-                    <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
-                        <dsotype>0</dsotype>
-                    </filter>
-                </filters>
-                <position>
-                    <css>clear: both</css>
-                </position>
-            </table>
-        </tables>
-    </community-home>
+            <tables>
+                <table id="tab1" title="StatletTopCommunitiesViews">
+                    <datasetgenerators>
 
-    <dspace-home>
-        <!--<globalDateFilter>true</globalDateFilter>-->
+                        <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
+                            <dsotype>4</dsotype>
+                            <limit type="top">
+                                <n>5</n>
+                            </limit>
+                        </datasetgenerator>
+                    </datasetgenerators>
+                    <filters>
+                        <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
+                            <dsotype>2</dsotype>
+                        </filter>
+                    </filters>
+                    <position/>
+                </table>
+                <table id="tab2" title="StatletTopCommunitiesDownloads">
+                    <datasetgenerators>
 
-        <listings>
-            <listing id="list1" title="Top 10 downloads">
-                <datasetgenerators>
-                    <datasetgenerator type="com.atmire.statistics.generator.TopNDSODatasetGenerator">
-                        <dsotype>2</dsotype>
-                        <limit type="top">
-                            <n>10</n>
-                        </limit>
-                    </datasetgenerator>
-                </datasetgenerators>
-                <filters>
-                    <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
-                        <dsotype>0</dsotype>
-                    </filter>
-                </filters>
-            </listing>
-        </listings>
-        <links>
-            <link> <!-- link to a page with more detailed stats, will become URL -->
-                <!-- show listing with top 10 countries of all item visits -->
-                <param name="contents.1">listing</param>
-                <param name="contents.1.y.type">countryCode</param>
-                <param name="contents.1.y.countryCode.max">10</param>
-                <param name="contents.1.y.filter.1">type</param>
-                <param name="contents.1.y.filter.1.type">2</param>
+                        <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
+                            <dsotype>4</dsotype>
+                            <limit type="top">
+                                <n>5</n>
+                            </limit>
+                        </datasetgenerator>
+                    </datasetgenerators>
+                    <filters>
+                        <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
+                            <dsotype>0</dsotype>
+                        </filter>
+                    </filters>
+                    <position/>
+                </table>
+            </tables>
 
-                <!-- show listing with top 20 items in last month -->
-                <param name="contents.2">listing</param>
-                <param name="contents.2.y.type">dspaceobject</param>
-                <param name="contents.2.y.dspaceobject.max">10</param>
-                <param name="contents.2.y.dspaceobject.type.1">2</param>
-                <param name="contents.2.y.filter.1">time</param>
-                <param name="contents.2.y.filter.1.time.start">-1 month</param>
-                <!-- create more machine-readable version -->
-                <param name="contents.2.y.filter.1.time.end">+1 month</param>
-                <!-- create more machine-readable version -->
-            </link>
-        </links>
-    </dspace-home>
 
-    <search-results>
-        <per-record> <!-- show nb views of last month as column -->
-            <column>
-                <dspaceobject type="2"></dspaceobject>
-                <!-- item -->
-                <filter field="time" start="-1 month" end="+1 month"/>
-                <!-- create more machine-readable version -->
-            </column>
-        </per-record>
-    </search-results>
+            <graphs>
+                <graph id="graph1" type="" title="StatletItemViewsMonth"> <!-- line graph with line for item and line per bitstream -->
+                    <styles/>
+                    <style-mapping/>
+                    <datasetgenerators>
 
-    <browse-results>
-        <per-record> <!-- show total nb views -->
-            <column>
-                <dspaceobject type="2"/>
-                <!-- item -->
-            </column>
-        </per-record>
-    </browse-results>
+                        <datasetgenerator type="org.dspace.statistics.content.DatasetTimeGenerator" includetotal="false">
+                            <period type="month" start="-5" end="+1" />
+                        </datasetgenerator>
+                        <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
 
-    <browse-categories>
-        <per-category> <!-- show total nb views of all items in e.g. the author browse -->
-            <column>
-                <dspaceobject type="2"/>
-                <!-- item -->
-            </column>
-        </per-category>
-    </browse-categories>
+                            <dsotype>5</dsotype>
+                        </datasetgenerator>
+                    </datasetgenerators>
+                    <filters>
+                        <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
+                            <dsotype>2</dsotype>
+                        </filter>
+                    </filters>
+                    <render>
+                        <default>
+                            <graph-type>line</graph-type>
+                        </default>
+                    </render>
+                </graph>
+                <graph id="graph2" type="" title="StatletBitstreamDownloadsMonth"> <!-- line graph with line for item and line per bitstream -->
+                    <styles/>
+                    <style-mapping/>
+                    <datasetgenerators>
 
-</pages>
+                        <datasetgenerator type="org.dspace.statistics.content.DatasetTimeGenerator" includetotal="false">
+                            <period type="month" start="-5" end="+1" />
+                        </datasetgenerator>
+                        <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
+
+                            <dsotype>5</dsotype>
+                        </datasetgenerator>
+                    </datasetgenerators>
+                    <filters>
+                        <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
+                            <dsotype>0</dsotype>
+                        </filter>
+                    </filters>
+                    <render>
+                        <default>
+                            <graph-type>line</graph-type>
+                        </default>
+                    </render>
+                </graph>
+
+
+            </graphs>
+
+
+            <links>
+                <link> <!-- link to a page with more detailed stats, will become URL -->
+                    <!-- show listing with top 10 countries of all item visits -->
+                    <param name="contents.1">listing</param>
+                    <param name="contents.1.y.type">countryCode</param>
+                    <param name="contents.1.y.countryCode.max">10</param>
+                    <param name="contents.1.y.filter.1">type</param>
+                    <param name="contents.1.y.filter.1.type">2</param>
+
+                    <!-- show listing with top 20 items in last month -->
+                    <param name="contents.2">listing</param>
+                    <param name="contents.2.y.type">dspaceobject</param>
+                    <param name="contents.2.y.dspaceobject.max">10</param>
+                    <param name="contents.2.y.dspaceobject.type.1">2</param>
+                    <param name="contents.2.y.filter.1">time</param>
+                    <param name="contents.2.y.filter.1.time.start">-1 month</param>
+                    <!-- create more machine-readable version -->
+                    <param name="contents.2.y.filter.1.time.end">+1 month</param>
+                    <!-- create more machine-readable version -->
+                </link>
+            </links>
+        </dspace-home>
+
+        <search-results>
+            <per-record> <!-- show nb views of last month as column -->
+                <column>
+                    <dspaceobject type="2"></dspaceobject>
+                    <!-- item -->
+                    <filter field="time" start="-1 month" end="+1 month"/>
+                    <!-- create more machine-readable version -->
+                </column>
+            </per-record>
+        </search-results>
+
+        <browse-results>
+            <per-record> <!-- show total nb views -->
+                <column>
+                    <dspaceobject type="2"/>
+                    <!-- item -->
+                </column>
+            </per-record>
+        </browse-results>
+
+        <browse-categories>
+            <per-category> <!-- show total nb views of all items in e.g. the author browse -->
+                <column>
+                    <dspaceobject type="2"/>
+                    <!-- item -->
+                </column>
+            </per-category>
+        </browse-categories>
+
+    </pages>
+</statistics>
