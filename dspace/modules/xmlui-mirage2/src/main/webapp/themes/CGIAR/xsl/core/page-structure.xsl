@@ -863,6 +863,15 @@
             </xsl:choose>
         </xsl:for-each>
 
+
+        <script>
+            <xsl:attribute name="src">
+                <xsl:value-of select="$theme-path"/>
+                <xsl:text>scripts/cua-overrides.js</xsl:text>
+            </xsl:attribute>
+            &#160;
+        </script>
+
         <!-- add setup JS code if this is a choices lookup page -->
         <xsl:if test="dri:body/dri:div[@n='lookup']">
             <xsl:call-template name="choiceLookupPopUpSetup"/>

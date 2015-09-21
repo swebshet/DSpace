@@ -532,12 +532,12 @@
             <tables>
                 <table id="tab1" title="StatletTopCommunitiesViews">
                     <datasetgenerators>
-
                         <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
                             <dsotype>4</dsotype>
                             <limit type="top">
                                 <n>5</n>
                             </limit>
+                            <column-label>Views</column-label>
                         </datasetgenerator>
                     </datasetgenerators>
                     <filters>
@@ -547,14 +547,15 @@
                     </filters>
                     <position/>
                 </table>
+
                 <table id="tab2" title="StatletTopCommunitiesDownloads">
                     <datasetgenerators>
-
                         <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
                             <dsotype>4</dsotype>
                             <limit type="top">
                                 <n>5</n>
                             </limit>
+                            <column-label>Downloads</column-label>
                         </datasetgenerator>
                     </datasetgenerators>
                     <filters>
@@ -565,6 +566,36 @@
                     <position/>
                 </table>
             </tables>
+
+            <graphs>
+                <graph id="graph1" type="" title="StatletTop5CountryViews">
+                    <styles/>
+                    <style-mapping/>
+
+                    <datasetgenerators>
+
+                        <datasetgenerator type="org.dspace.statistics.content.DatasetTypeGenerator">
+                            <solrfield>countryCode</solrfield>
+                            <limit type="top">
+                                <n>5</n>
+                            </limit>
+
+                        </datasetgenerator>
+                    </datasetgenerators>
+                    <filters>
+                        <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
+                            <dsotype>2</dsotype>
+                        </filter>
+                    </filters>
+
+                    <render>
+                        <default>
+                            <graph-type>bar</graph-type>
+                        </default>
+                    </render>
+                </graph>
+
+            </graphs>
 
             <links>
                 <link> <!-- link to a page with more detailed stats, will become URL -->
