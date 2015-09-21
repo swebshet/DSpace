@@ -1,0 +1,933 @@
+<?xml version="1.0"?>
+<!--
+messages.xml
+
+Version: $Revision: 1.44 $
+
+Date: $Date: 2008-10-16 07:43:11 $
+
+Copyright (c) 2002-2005, Hewlett-Packard Company and Massachusetts
+Institute of Technology.  All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+- Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+
+- Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.
+
+- Neither the name of the Hewlett-Packard Company nor the name of the
+Massachusetts Institute of Technology nor the names of their
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS
+OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR
+TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+DAMAGE.
+-->
+<catalogue xml:lang="en" xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+
+
+    <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+                     Content and Usage Analysis Aspect
+
+		!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.bag.head.items">Selected Items:</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.bag.head.bitstreams">Selected Bitstreams:</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.bag.button.add-items">Add Items</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.bag.button.add-bitstreams">Add Bitstreams</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.bag.button.add-epersons">Add Users</message>
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.bag.th.title">Title</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.bag.th.item-title">Item Title</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.bag.th.author">Author</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.bag.th.other">Other</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.bag.th.eperson-email">E-mail</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.bag.th.eperson-title">Name</message>
+
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.view.top-n.head">Show top</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.workflow.top-n.head">Show</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.view.top-n.communities">communities</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.view.top-n.collections">collections</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.view.top-n.items">items</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.view.top-n.bitstreams">bitstreams</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.view.top-n.epersons">most active users</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.workflow.top-n.communities">most active communities</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.workflow.top-n.collections">most active collections</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.workflow.top-n.items">most active items</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.workflow.top-n.bitstreams">most active bitstreams</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.workflow.top-n.epersons">most active users</message>
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.view.head">Show usage statistics for:</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.workflow.head">Show workflow statistics for:</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.repository">Repository</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.repository.all">Entire repository</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.communities">Communities</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.communities.all">All Communities</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.communities.selected">Selected Communities</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.view.type.communities.most-popular">Most Popular Communities</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.workflow.type.communities.most-popular">Most Active Communities</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.collections">Collections</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.collections.all">All Collections</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.collections.selected">Selected Collections</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.view.type.collections.most-popular">Most Popular Collections</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.workflow.type.collections.most-popular">Most Active Collections</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.items">Items</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.items.all">All Items</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.items.selected">Selected Items</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.items.most-popular">Most Popular Items</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.bitstreams">Bitstreams</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.bitstreams.all">All Bitstreams</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.bitstreams.selected">Selected Bitstreams</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.bitstreams.most-popular">Most Popular Bitstreams</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.epersons">Users</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.epersons.all">All Users</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.epersons.selected">Selected Users</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.view.type.epersons.most-popular">Most Popular Users</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.workflow.type.epersons.most-popular">Most Active Users</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.action.update">Generate Data</message>
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.count-hits-for.head">Included usage data:</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.count-hits-for.repository-homepage">Repository Homepage views</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.count-hits-for.community-homepages">Community Homepage views</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.count-hits-for.collection-homepages">Collection Homepage views</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.count-hits-for.item-pages">Item Page views</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.count-hits-for.bitstream-downloads">Bitstream Downloads</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.count-hits-for.select.all">All</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.count-hits-for.select.none">None</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.count-hits-for.bots">Views or downloads generated by
+        <em>bots</em>
+    </message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.count-hits-for.internal">
+        <em>Internal</em>
+        views or downloads
+    </message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.count-hits-for.exclude">Exclude:</message>
+
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.inclusions.workflow_steps">Included workflow steps:</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.inclusions.data_from">Include data from:</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.inclusions.groups">Actor part of:</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.inclusions.cua.workflowkey.SUBMIT.1">Submission step</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.inclusions.cua.workflowkey.SUBMIT.1.help">Submissions entering the workflow</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.inclusions.cua.workflowkey.submit.1">Submission step</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.inclusions.cua.workflowkey.submit.1.help">Submissions entering the workflow</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.inclusions.cua.workflowkey.reviewaction.2">Review step</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.inclusions.cua.workflowkey.reviewaction.2.help">Users responsible for this step are able to accept or reject incoming submissions. However, they are not able to edit the submission's metadata.</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.inclusions.cua.workflowkey.editaction.3">Edit step</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.inclusions.cua.workflowkey.editaction.3.help">Users responsible for this step are able to edit the metadata of incoming submissions, and then accept or reject them.</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.inclusions.cua.workflowkey.finaleditaction.4">Final edit step</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.inclusions.cua.workflowkey.finaleditaction.4.help">Users responsible for this step are able to edit the metadata of incoming submissions, but will not be able to reject them.</message>
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.inclusions.cua.workflowkey.step.1">Submission step</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.inclusions.cua.workflowkey.step.1.help">Submission step</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.inclusions.cua.workflowkey.step.2">Review step</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.inclusions.cua.workflowkey.step.2.help">Users responsible for this step are able to accept or reject incoming submissions. However, they are not able to edit the submission's metadata.</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.inclusions.cua.workflowkey.step.3">Edit step</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.inclusions.cua.workflowkey.step.3.help">Users responsible for this step are able to edit the metadata of incoming submissions, and then accept or reject them.</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.inclusions.cua.workflowkey.step.4">Final edit step</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.inclusions.cua.workflowkey.step.4.help">Users responsible for this step are able to edit the metadata of incoming submissions, but will not be able to reject them.</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.inclusions.items">Items</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.inclusions.bitstreams">Bitstreams</message>
+
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.button.get">Get Data</message>
+
+    <message key="xmlui.reporting-suite.statistics.statlet-wizard.location.head">1. Where do you want to put a new Statlet?</message>
+    <message key="xmlui.reporting-suite.statistics.statlet-wizard.stepcontrols.previous">&lt; previous step</message>
+    <message key="xmlui.reporting-suite.statistics.statlet-wizard.stepcontrols.next">next step &gt;</message>
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.content.title">Content statistics</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.content.trail">Content statistics</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.usage.title">Usage statistics</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.usage.trail">Usage statistics</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.workflow.title">Workflow statistics</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.workflow.trail">Workflow statistics</message>
+
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.title">Data Source Selection</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type">Analysis type</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.option.visits">Web Usage (pageviews and downloads)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.dataset.type-1">Primary Dataset</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.dataset.type-2">Secondary Dataset</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.option.items">Repository Content</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset">dataset</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.time">time</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.commscolls">Communities &amp; Collections</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.dataset.item.option.dc_date_accessioned">Date Accessioned</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.dataset.item.option.dc_date_available">Date Available</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.dataset.item.option.dc_date_issued">Date Issued</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.no-results">There are no results available for the selected datasets. Please use a different configuration.</message>
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.time-filter.show-options">Show Options</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.time-filter.hide-options">Hide Options</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.time-filter.enable-filter">Use The Time Filter</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.time-filter.enable-grouping">Group by</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.time-filter.period.day">Day</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.time-filter.period.month">Month</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.time-filter.period.year">Year</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.time-filter.button.update">Update</message>
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.content-tree.select-collections">Select Collections:</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.content-tree.select-communities">Select Communities:</message>
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.content-tabs.datatable">Data</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.content-tabs.graph">Graph</message>
+
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph-settings.hidden-settings-button">Preferences</message>
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.click.open">Click To Open</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.remove-selection">Remove From Selection</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.add-selection">Add To Selection</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.loading">Loading data from server</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.swap">Swap rows &amp; columns</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.total">Total</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.export.csv">Export table as XLS file</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.head">Graph Settings</message>
+
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.head">Graph Settings</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.type">Graph Type</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.bars">Bars</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.3dbars">3D Bars</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.stacked">Stacked Bars</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.3dstacked">Stacked Bars 3D</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.pie">Pie</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.3dpie">3D Pie</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.line">Line</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.points">Points</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.line.points">Line &amp; Points</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.area">Area</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.stackedarea">Stacked Areas</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.orientation">Orientation</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.orientation.vertical">Vertical</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.orientation.horizontal">Horizontal</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.legend">Legend</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.legend.none">Not Shown</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.legend.north">North</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.legend.east">East</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.legend.south">South</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.legend.west">West</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.title">Graph Title</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.title0">Graph 1 Title</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.title1">Graph 2 Title</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.dimensions">Dimensions</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.height">Height</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.width">Width</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.bgcolor">Background Color</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.gridcolor">Grid Color</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.more">Show more options</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.less">Show less options</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.update">Update Graph</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.title">Graph Title</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.settings.head">Preferences</message>
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data.table.head">Data Table</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.dataset.field.none">Not in use</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.dataset.field.time">Time</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.dataset.field.comm">Top Communities</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.dataset.field.coll">Top Collections</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.dataset.field.item">Top Items</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.dataset.field.bits">Top Bitstreams</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.dataset.field.country">Top Countries</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.dataset.field.cont">Top Continents</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.dataset.field.start">Start</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.dataset.field.end">End</message>
+
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.edit.cell">Click on a cell below to modify its content</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.add.items">Add Items</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.bag.items.empty">Showing 0 to 0 of 0 items</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.bag.items.info">Showing _START_ to _END_ of _TOTAL_ items</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.bag.items.filter">(filtered from _MAX_ total items)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.bag.items.menu">Show _MENU_ items</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.bag.items.no-selected">No items selected</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.bag.bits.no-selected">No bitstreams selected</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.bag.items.no-matching">No matching items</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.bag.err.item">Please select at least one item</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.bag.err.bit">Please select at least one bitstream</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.bag.err.usage">Please select the included usage data</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.bag.search">Search:</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.bag.nav.first">First</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.bag.nav.previous">Previous</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.bag.nav.next">Next</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.bag.nav.last">Last</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.bag.bit.open-all">Click To Open All</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.bag.bit.close-all">Click To Close All</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.bag.bit.open">Click To Open</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.bag.bit.close">Click To Close</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.bag.processing">Processing...</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.bag.bits.head">Add Bitstreams</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.bag.scope">Scope</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.bag.stats.empty">Showing 0 to 0</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.bag.stats.info">Showing _START_ to _END_</message>
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.error.no-warning">Don't show any more warnings</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.loading">Loading...</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.br">
+        <br/>
+    </message>
+
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.full-screen">Full Screen</message>
+
+    <message key="xmlui.reporting-suite.statistics.navigation.head">Statistics</message>
+    <message key="xmlui.reporting-suite.statistics.navigation.usage">Usage statistics</message>
+    <message key="xmlui.reporting-suite.statistics.navigation.content">Content statistics</message>
+    <message key="xmlui.reporting-suite.statistics.navigation.statistics">Search statistics</message>
+    <message key="xmlui.reporting-suite.statistics.navigation.storage">Storage statistics</message>
+    <message key="xmlui.reporting-suite.statistics.navigation.workflow">Workflow statistics</message>
+    <message key="xmlui.reporting-suite.statistics.navigation.dashboards">Dashboards</message>
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.error.select">Please select at least one</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.error.ou">Please select at least one organizational unit</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.error.date">Please enter a valid date range</message>
+
+    <message key="xmlui.reporting-suite.statistics.statlet.head">Statistics</message>
+    <message key="xmlui.reporting-suite.statistics.statlet.show">Show Statistical Information</message>
+    <message key="xmlui.reporting-suite.statistics.statlet.hide">Hide Statistical Information</message>
+    <message key="xmlui.reporting-suite.statistics.statlet.timeout">The server did not respond in time. Please try again.</message>
+    <message key="xmlui.reporting-suite.statistics.statlet.timeout-retry">Retry</message>
+    <message key="xmlui.reporting-suite.statistics.statlet.error">No statistical information could be retrieved. Please try again later.</message>
+    <message key="xmlui.reporting-suite.statistics.statlet.no-result">No statistics available for this object.</message>
+
+    <message key="xmlui.reporting-suite.statistics.search-statistics.time-filter.show-options">Show Options</message>
+    <message key="xmlui.reporting-suite.statistics.search-statistics.time-filter.hide-options">Hide Options</message>
+    <message key="xmlui.reporting-suite.statistics.search-statistics.time-filter.enable-filter">Use The Time Filter</message>
+    <message key="xmlui.reporting-suite.statistics.search-statistics.time-filter.button.update">Update</message>
+    <message key="xmlui.reporting-suite.statistics.search-statistics.title">Search statistics</message>
+    <message key="xmlui.reporting-suite.statistics.search-statistics.trail">Search statistics</message>
+    <message key="xmlui.reporting-suite.statistics.search-statistics.bag.th.search-term">Search Term</message>
+    <message key="xmlui.reporting-suite.statistics.search-statistics.bag.th.searches">Searches</message>
+    <message key="xmlui.reporting-suite.statistics.search-statistics.bag.th.percent-total">% of Total</message>
+    <message key="xmlui.reporting-suite.statistics.search-statistics.bag.th.views">Pageviews</message>
+    <message key="xmlui.reporting-suite.statistics.search-statistics.bag.th.views-search">Pageviews / Search</message>
+    <message key="xmlui.reporting-suite.statistics.search-statistics.loading">Loading data from server</message>
+    <message key="xmlui.reporting-suite.statistics.search-statistics.facets">Include facet searches</message>
+
+    <message key="xmlui.reporting-suite.statistics.storage.head">Storage Report</message>
+    <message key="xmlui.reporting-suite.statistics.storage.title">Storage Report</message>
+    <message key="xmlui.reporting-suite.statistics.storage.total.title">Total</message>
+    <message key="xmlui.reporting-suite.statistics.storage.total.text">{0} in {1} files</message>
+    <message key="xmlui.reporting-suite.statistics.trail-storage">Storage Report</message>
+    <message key="xmlui.reporting-suite.statistics.storage.error">There was an error while generating the storage report, please try again later.</message>
+    <message key="xmlui.reporting-suite.statistics.storage.no-results">No storage report available for the search.</message>
+    <message key="xmlui.reporting-suite.statistics.storage.by.users">Users</message>
+    <message key="xmlui.reporting-suite.statistics.storage.by.scope">Scope</message>
+    <message key="xmlui.reporting-suite.statistics.storage.mode.submitters">Submitters</message>
+    <message key="xmlui.reporting-suite.statistics.storage.mode.groups">Groups</message>
+    <message key="xmlui.reporting-suite.statistics.storage.mode.collections">Collections</message>
+    <message key="xmlui.reporting-suite.statistics.storage.mode.communities">Communities</message>
+    <message key="xmlui.reporting-suite.statistics.storage.filter.group">Filter by Parent Group</message>
+    <message key="xmlui.reporting-suite.statistics.storage.filter.community">Filter by Parent Community</message>
+    <message key="xmlui.reporting-suite.statistics.storage.search.go">Go</message>
+    <message key="xmlui.reporting-suite.statistics.storage.searching.by">Searching By: {0}</message>
+    <message key="xmlui.reporting-suite.statistics.storage.export.csv">Export to CSV</message>
+    <message key="xmlui.reporting-suite.statistics.storage.search">Search...</message>
+
+    <message key="xmlui.reporting-suite.statistics.storage.table.column-label.storage-name">Name</message>
+    <message key="xmlui.reporting-suite.statistics.storage.table.column-label.storage-first-name">First Name</message>
+    <message key="xmlui.reporting-suite.statistics.storage.table.column-label.storage-last-name">Last Name</message>
+    <message key="xmlui.reporting-suite.statistics.storage.table.column-label.storage-parent-group">Parent Group(s)</message>
+    <message key="xmlui.reporting-suite.statistics.storage.table.column-label.storage-parent-community">Parent Communities</message>
+    <message key="xmlui.reporting-suite.statistics.storage.table.column-label.storage-nb-files"># of files</message>
+    <message key="xmlui.reporting-suite.statistics.storage.table.column-label.storage-size">Size used</message>
+    <message key="xmlui.reporting-suite.statistics.storage.table.column-label.storage-percent">% of total</message>
+
+
+    <!--Help text -->
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.time-filter.help">Time Filter Help</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.datasource-community.help">
+        You can generate community related usage data on the Communities tab.
+        <BR/>
+        <BR/>
+        By default, data from all communities is included. Use the drop down to define a selection of communities, or to limit your selection to the most popular communities.
+        <BR/>
+        Define which type of usage events you're interested in, by checking or unchecking certain types.
+        <BR/>
+        After clicking Generate Data, the properties of your selection will be reflected in the Data and Graph tabs below.
+    </message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.datasource-collection.help">
+        You can generate collection related usage data on the Collections tab.
+        <BR/>
+        <BR/>
+        By default, data from all collections is included. Use the drop down to define a selection of collections, or to limit your selection to the most popular collections.
+        <BR/>
+        Define which type of usage events you're interested in, by checking or unchecking certain types.
+        <BR/>
+        After clicking Generate Data, the properties of your selection will be reflected in the Data and Graph tabs below.
+    </message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.datasource-item.help">
+        You can generate item related usage data on the Items tab.
+        <BR/>
+        <BR/>
+        By default, data from all items is included. Use the drop down to define a selection of items, or to limit your selection to the most popular communities.
+        <BR/>
+        To define a selection of items, click Add Items after choosing Selected items from the drop-down. The Add Items dialog offers the DSpace simple search to retrieve the items you wish to include. Click the green plus symbols to include them in the selection. After closing the Add Items dialog, the added items will be shown in your selection.
+        <BR/>
+        Define which type of usage events you're interested in, by checking or unchecking certain types.
+        <BR/>
+        After clicking Generate Data, the properties of your selection will be reflected in the Data and Graph tabs below.
+    </message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.datasource-bitstream.help">
+        You can generate bitstream related usage data on the Bitstreams tab.
+        <BR/>
+        <BR/>
+        By default, data from all bitstreams is included. Use the drop down to define a selection of items, or to limit your selection to the most popular bitstreams.
+        <BR/>
+        To define a selection of bitstreams, click Add Items after choosing Selected items from the drop-down. The Add Items dialog offers the DSpace simple search to retrieve the items you wish to include. Click the green plus symbols to include them in the selection. After closing the Add Bitstreams dialog, the added bitstreams will be shown in your selection.
+        <BR/>
+        After clicking Generate Data, the properties of your selection will be reflected in the Data and Graph tabs below.
+    </message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.datasource-repository.help">
+        The most granular level of usage statistics, are the Repository Statistics.
+        <BR/>
+        <BR/>
+        Define which type of usage events you're interested in, by checking or unchecking certain types.
+        <BR/>
+        After clicking Generate Data, the properties of your selection will be reflected in the Data and Graph tabs below.
+    </message>
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-tab.help">
+        The data tab visualizes the generated data as a table.
+        <BR/>
+        <BR/>
+        To modify the applied time filter, and granularity of the table, click Show Options. Beware that changing the group by property from "By Month", to "By Day" might take a while to re-calculate and might produce very sparse tables if you have selected a long timespan.
+        <BR/>
+        Each of the cells can be modified by clicking in them.
+        <BR/>
+        When you are satisfied with the result, you can export the data table as a CSV file.
+    </message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-tab-content.help">
+        The data tab visualizes the generated data as a table.
+        <BR/>
+        <BR/>Each of the cells can be modified by clicking in them.
+        <BR/>
+        When you are satisfied with the result, you can export the data table as a CSV file.
+    </message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph-tab.help">
+        The graph tab visualizes the generated data as a graph.
+        <BR/>
+        <BR/>
+        Select a timeframe in the selector at the top left. The simple time filters (e.g. Past year) will provide you with a fast way to select a time frame. Custom allows you to select precise dates. Note that the simple time frame will snap to the borders of that frame. E.g. Past year will return statistics of the previous year and the fraction of the current year. Beware that changing the group by property from "By Month", to "By Day" might take a while to re-calculate and might produce very sparse tables if you have selected a long timespan.
+        <BR/>
+        Selected boxes enable you to alter the graph type, the orientation and the location of the legend. More specialized options, such as various colours, are available under the tool button.
+        <BR/>
+        To save your graph, right click and use Save Image as.
+    </message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph-tab-content.help">
+        The graph tab visualizes the generated data as a graph.
+        <BR/>
+        <BR/>Selected boxes enable you to alter the graph type, the orientation and the location of the legend. More specialized options, such as various colours, are available under the tool button.
+        <BR/>
+        To save your graph, right click and use Save Image as.
+    </message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.sources.help">
+        The fields above show the different properties by which items can be selected for analysis. The Primary Dataset defines a selection of items to be shown.
+        When a property is selected all possible values of that property are shown. The primary dataset will be limited to items with one of the selected values. When no categories are chosen the number of items with each value is shown.
+        When a category is chosen the number of items per value in the primary is shown split up by the selected values from the category.
+    </message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-table.help">
+        This table displays the datasets selected above as the column and row headers.
+        Depending on the selected analysis type, the figures will represent different properties:
+        <BR/>
+        <BR/>
+        <B>For Web Usage statistics,</B>
+        the figures represent either pageviews or bitstream downloads. For example, top 30 bitstreams will display numbers of bitstream downloads. Top communities or top collections will show you sums of collection home or community home pages. Top country or continent, will display the sum of all pageviews and bitstream downloads for that country or continent.
+        <BR/>
+        <BR/>
+        <B>For Repository Content statistics,</B>
+        the figures represent the number of items complying with your criteria as defined in the Data Source Selection.
+        <BR/>
+        <BR/>
+        All values, row headers and properties can be edited by clicking on them. Changes are immediately visible, in both the Data table, and the graph below.
+    </message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.csv.help">
+        A spreadsheet can be downloaded including all column and row headers and all values in the Data table above.
+    </message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.settings.help">
+        All updates to these settings are displayed immediately in the graph below. When you right click the image of the graph, you are able to save the graph as an image. Click "Show More Options" to edit the graph title, dimensions, background color and grid color.
+    </message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.help">
+        The generated graph can be downloaded.
+        <br/>
+        In
+        <B>Internet Explorer</B>
+        bring your mouse cursor over the image - Single click Right mouse button - from the menu select Save Picture As - Save Picture window pops up - navigate to where you want to save it using “Save In” Menu
+        <br/>
+        In
+        <B>Firefox</B>
+        Bring your mouse cursor over the image - Single click Right mouse button - from the menu select Save Image As - Save as window pops up - navigate to where you want to save it using “Save In” Menu.
+    </message>
+
+    <message key="xmlui.aspect.statistics.CUAModuleOverview.head">Atmire Content and Usage Analysis Module</message>
+    <message key="xmlui.statistics.Navigation.documentation">Documentation</message>
+    <message key="xmlui.aspect.statistics.documentation.url">Atmire Content and Usage Analysis module documentation</message>
+
+    <message key="xmlui.aspect.statistics.StatletTransformer.date_filter">Statistics Filter</message>
+    <message key="xmlui.aspect.statistics.StatletTransformer.date_filter_start">Start date:</message>
+    <message key="xmlui.aspect.statistics.StatletTransformer.date_filter_end">End date:</message>
+    <message key="xmlui.aspect.statistics.StatletTransformer.date_filter_go">Go</message>
+
+    <message key="xmlui.reporting-suite.statistics.contentanalysis.add-categories">Add Categories</message>
+    <message key="xmlui.reporting-suite.statistics.contentanalysis.dataset.type">Type</message>
+    <message key="xmlui.reporting-suite.statistics.contentanalysis.dataset.show-all">More</message>
+    <message key="xmlui.reporting-suite.statistics.contentanalysis.dataset.show-limited">Less</message>
+    <message key="xmlui.reporting-suite.statistics.contentanalysis.dataset.head.primary">Primary dataset</message>
+    <message key="xmlui.reporting-suite.statistics.contentanalysis.dataset.head.category">Categories</message>
+    <message key="xmlui.reporting-suite.statistics.contentanalysis.dataset.remove.button">Categories</message>
+    <message key="xmlui.reporting-suite.statistics.contentanalysis.dataset.autocompletebutton.title">Show All Items</message>
+    <message key="xmlui.reporting-suite.statistics.contentanalysis.dataset.metadata.add">Add metadata value</message>
+    <message key="xmlui.reporting-suite.statistics.contentanalysis.dataset.metadata.remove">Remove metadata value</message>
+
+    <message key="xmlui.reporting-suite.statistics.contentanalysis.dataset.error.title">Error while generating data</message>
+    <message key="xmlui.reporting-suite.statistics.contentanalysis.dataset.error.commcoll">Select at least one community or collection</message>
+    <message key="xmlui.reporting-suite.statistics.contentanalysis.dataset.error.metadata.text">Enter at least one valid metadata value</message>
+    <message key="xmlui.reporting-suite.statistics.contentanalysis.dataset.error.metadata.select">Select at least one metadata value</message>
+
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.contributor.advisor">Advisor (dc.contributor.advisor)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.contributor.author">Author (dc.contributor.author)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.author">Author (dc.contributor.author)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.contributor.editor">Editor (dc.contributor.editor)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.contributor.illustrator">Illustrator (dc.contributor.illustrator)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.contributor.other">Other Contributor (dc.contributor.other)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.contributor">Contributor (dc.contributor)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.coverage.spatial">Spatial Coverage (dc.coverage.spatial)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.coverage.temporal">Temporal Coverage (dc.coverage.temporal)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.creator">Creator (dc.creator)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.date.accessioned">Date Accessioned (dc.date.accessioned)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.date.available">Date Available (dc.date.available)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.date.copyright">Copyright Date (dc.date.copyright)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.date.created">Date Created (dc.date.created)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.date.issued">Date Issued (dc.date.issued)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.date.submitted">Date Submitted (dc.date.submitted)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.date.updated">Date Updated (dc.date.updated)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.date">Date (dc.date)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.description.abstract">Abstract (dc.description.abstract)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.description.box">Box (dc.description.box)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.description.provenance">Provenance (dc.description.provenance)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.description.sponsorship">Sponsorship (dc.description.sponsorship)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.description.statementofresponsibility">Statement of Responsibility (dc.description.statementofresponsibility)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.description.tableofcontents">Table of Contents (dc.description.tableofcontents)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.description.uri">URI (dc.description.uri)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.description.version">Version (dc.description.version)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.description">Description (dc.description)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.format.extent">Extent (dc.format.extent)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.format.medium">Medium (dc.format.medium)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.format.mimetype">MIME type (dc.format.mimetype)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.format">Format (dc.format)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.identifier.citation">Citation (dc.identifier.citation)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.identifier.crsid">CRSid (dc.identifier.crsid)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.identifier.govdoc">GOVDOC id (dc.identifier.govdoc)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.identifier.isbn">ISBN (dc.identifier.isbn)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.identifier.ismn">ISMN (dc.identifier.ismn)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.identifier.issn">ISSN (dc.identifier.issn)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.identifier.other">Other Id (dc.identifier.other)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.identifier.sici">Serial Item and Contribution Identifier (dc.identifier.sici)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.identifier.slug">Slug Id (dc.identifier.slug)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.identifier.uri">URI (dc.identifier.uri)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.identifier">Identifier (dc.identifier)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.language.iso">ISO 639 Language (dc.language.iso)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.iso">ISO 639 Language (dc.language.iso)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.language.rfc3066">RFC 3066 Language (dc.language.rfc3066)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.language">Language (dc.language)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.permission.zoomingread">Zoom Permission (dc.permission.zoomingread)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.publisher.location">Publisher Location (dc.publisher.location)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.publisher">Publisher (dc.publisher)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.relation.haspart">Includes (dc.relation.haspart)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.relation.hasversion">Has Version (dc.relation.hasversion)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.relation.isbasedon">Is Based (dc.relation.isbasedon)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.relation.isformatof">Is Format Of (dc.relation.isformatof)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.relation.isnodouble">Is Not a Duplicate Of (dc.relation.isnodouble)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.relation.ispartof">Is Part Of (dc.relation.ispartof)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.relation.ispartofseries">Is Part Of Series (dc.relation.ispartofseries)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.relation.isreferencedby">Is Referenced By (dc.relation.isreferencedby)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.relation.isreplacedby">Is Replaced By (dc.relation.isreplacedby)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.relation.isreplacedbydouble">Is Replaced By Duplicate (dc.relation.isreplacedbydouble)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.relation.isversionof">Is Version Of (dc.relation.isversionof)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.relation.replaces">Replaces (dc.relation.replaces)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.relation.requires">Requires (dc.relation.requires)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.relation.uri">Relation URI (dc.relation.uri)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.relation">Relation (dc.relation)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.rights.holder">Rights Holder (dc.rights.holder)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.rights.uri">Rights URI (dc.rights.uri)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.rights">Rights (dc.rights)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.source.uri">Source URI (dc.source.uri)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.source">Source (dc.source)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.subject.classification">Classification (dc.subject.classification)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.subject.ddc">DDC (dc.subject.ddc)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.subject.lcc">LCC (dc.subject.lcc)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.subject.lcsh">LCSH (dc.subject.lcsh)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.subject.mesh">Mesh (dc.subject.mesh)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.subject.other">Other Subject (dc.subject.other)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.subject">Subject (dc.subject)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.title.alternative">Alternative Title (dc.title.alternative)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.title">Title (dc.title)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.type.template">Type Template (dc.type.template)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.type">Type (dc.type)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.type">Type (dc.type)</message>
+
+    <message key="xmlui.administrative.group.EditGroupForm.show-in-cua">Show group in the Workflow Analysis</message>
+    <message key="xmlui.administrative.group.EditGroupForm.hide-in-cua">Hide group in Workflow Analysis</message>
+    <message key="xmlui.administrative.group.ManageGroupsMain.submit_show_cua">Show groups in the Workflow Analysis</message>
+    <message key="xmlui.administrative.FlowGroupUtils.enable_cua_group_success_notice">The selected groups have been made available in the the Workflow Analysis.</message>
+    <message key="xmlui.administrative.FlowGroupUtils.disable_cua_group_success_notice">The selected groups will no longer be available in the the Workflow Analysis.</message>
+    <message key="xmlui.administrative.group.ManageGroupsMain.yes">Yes</message>
+    <message key="xmlui.administrative.group.ManageGroupsMain.no">No</message>
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.groups">Groups</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata">Metadata</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.most-popular">Most Popular</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.visitors.most-active">Most Active</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.author">Authors</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.subject">Subjects</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.iso">Languages</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.countryCode">Countries</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.ip">IP Addresses</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.ip::rangeDescription">IP Addresses</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.userAgent">User Agents</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.referrer">HTTP Referers</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.ip::rangeDescription~internal-users">Internal Users</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.ip~bots">Bot IP Addresses</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.userAgent~bots">Bot User Agents</message>
+
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.selected">Selected</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.visitors">Visitors</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.bag.button.add-groups">Add Groups</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.bag.th.group-title">Group Query</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.groups.selected">Selected Groups</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.add.groups">Add Groups</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.add.selected-groups">Add</message>
+    <message key="xmlui.administrative.group.ManageGroupsMain.search_column6">Available in Workflow Analysis</message>
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.group_by.types.workflow_steps">Workflow step</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.group_by.types.time_period">Time Period:</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.group_by.title">Grouping and splitting:</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.group_by.group_by">Group by</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.group_by.split_item_bitstream">
+        <span class="bold">Split</span>
+        into items with
+        <span class="italic">one bitstream</span>
+        <br/>
+        and items with<span class="italic">multiple bitstreams</span>.
+    </message>
+
+    <message key="xmlui.reporting-suite.statistics.workflow-label.SUBMIT">Submission step</message>
+
+    <message key="xmlui.reporting-suite.statistics.workflow-label.default.reviewstep.claimaction">Review action claim task</message>
+    <message key="xmlui.reporting-suite.statistics.workflow-label.default.reviewstep.reviewaction">Review Action</message>
+
+    <message key="xmlui.reporting-suite.statistics.workflow-label.default.editstep.claimaction">Edit action claim task</message>
+    <message key="xmlui.reporting-suite.statistics.workflow-label.default.editstep.editaction">Edit action</message>
+
+    <message key="xmlui.reporting-suite.statistics.workflow-label.default.finaleditstep.claimaction">Final edit action claim task</message>
+    <message key="xmlui.reporting-suite.statistics.workflow-label.default.finaleditstep.finaleditaction">Final edit action</message>
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.time-filter.1month">Past month</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.time-filter.3months">Past 3 months</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.time-filter.6months">Past 6 months</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.time-filter.1year">Past year</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.time-filter.day">day</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.time-filter.alltime">All time</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.time-filter.custom">Custom...</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.export.subscribe.name">Report name</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.export.subscribe.period">Send an updated version of this report by email every
+        <span class="firstday">last day of the</span>
+    </message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.export.subscribe.name">Report title</message>
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.time-filter.day">Day</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.time-filter.week">Week</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.time-filter.month">Month</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.time-filter.quarter">Quarter</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.time-filter.year">Year</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.export.subscribe">Subscribe</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.export.subscribe.disabled">Subscribing to this report type would result in an identical dataset to be sent.</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.export.subscribe.disabledBySwap">Swapping rows and columns would not be reflected in the emailed reports.</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.export.subscribe.emails.add">Add recipient</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.export.subscribe.emails">Recipients:</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.export.subscribe.success">Subscriptions successfully added.</message>
+    <message key="xmlui.reporting-suite.statistics.unsubscribe">Unsubscribe</message>
+    <message key="xmlui.reporting-suite.statistics.unsubscribe.confirm">Please confirm that you want the email address
+        <em>{0}</em>
+        to be unsubscribed from recieving the periodic statistics report named &quot;{1}&quot;.
+    </message>
+    <message key="xmlui.reporting-suite.statistics.unsubscribe.confirm.confirm">Confirm</message>
+    <message key="xmlui.reporting-suite.statistics.unsubscribe.confirm.success">Unsubscribed successfully</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.dataset.field.period">Group by</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.export.subscribe.processing">Processing...</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.time-filter.label">Timeframe</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.spread.label">Group by</message>
+    <message key="xmlui.reporting-suite.statistics.hits">Hits</message>
+    <message key="xmlui.statistics.downloads">Downloads</message>
+    <message key="xmlui.statistics.downloads.last6m"># File downloads for the last 6 months</message>
+    <message key="xmlui.statistics.downloads.lastm">Last month's file downloads</message>
+    <message key="xmlui.statistics.topn.downloads.5"># Of Downloads For the top 5 Items</message>
+    <message key="xmlui.statistics.downloads.top.10">Top 10 downloads</message>
+
+
+    <message key="xmlui.Statistics.interactive.stats.title">Map: File downloads by country</message>
+    <message key="xmlui.Statistics.interactive.stats.warning">No map data available</message>
+    <message key="xmlui.Statistics.interactive.stats.noflash">
+        <strong>Warning: &#160;</strong>
+        The map cannot displayed without Adobe Flash player. You can get it at
+        <a href="http://get.adobe.com/flashplayer/" target="_blank">http://get.adobe.com/flashplayer/</a>
+    </message>
+    <message key="xmlui.Statistics.interactive.stats.ititle">Item title</message>
+    <message key="xmlui.Statistics.interactive.stats.icountry">Country</message>
+    <message key="xmlui.Statistics.interactive.stats.map.title">Abstract views by country</message>
+    <!--<message key="xmlui.Statistics.interactive.stats.head">Map: Abstract views by Country for {0}</message>-->
+    <message key="xmlui.Statistics.interactive.stats.head">Map: File downloads by country</message>
+    <message key="xmlui.Statistics.interactive.stats.placeholder">Geographical analysis is currently not available.</message>
+    <message key="xmlui.Statistics.interactive.stats.select_community">Entire repository</message>
+    <message key="xmlui.Statistics.interactive.stats.select_region">All regions</message>
+    <message key="xmlui.Statistics.interactive.stats.total">File downloads, total
+        <br/>
+        <span>{0}</span>
+    </message>
+    <message key="xmlui.Statistics.interactive.stats.ftotal">Item views, total
+        <br/>
+        <span>{0}</span>
+    </message>
+    <message key="xmlui.Statistics.interactive.stats.file_dl">File&#160;downloads</message>
+    <message key="xmlui.Statistics.interactive.stats.page_vw">Item&#160;views</message>
+    <message key="xmlui.Statistics.interactive.stats.sum">Sum</message>
+    <message key="xmlui.Statistics.interactive.stats.geo.EU">Europe</message>
+    <message key="xmlui.Statistics.interactive.stats.geo.NA">North America</message>
+    <message key="xmlui.Statistics.interactive.stats.geo.AN">Antarctica</message>
+    <message key="xmlui.Statistics.interactive.stats.geo.AF">Africa</message>
+    <message key="xmlui.Statistics.interactive.stats.geo.AS">Asia</message>
+    <message key="xmlui.Statistics.interactive.stats.geo.OC">Oceania</message>
+    <message key="xmlui.Statistics.interactive.stats.geo.SA">South America</message>
+    <message key="xmlui.Statistics.interactive.stats.geo.UN">Unknown</message>
+    <message key="xmlui.Statistics.interactive.stats.timefilter.all_time">All time</message>
+    <message key="xmlui.Statistics.interactive.stats.timefilter.previous_month">Previous month</message>
+    <message key="xmlui.Statistics.interactive.stats.timefilter.current_month">Current month</message>
+    <message key="xmlui.Statistics.interactive.stats.item.dl">Most Popular Items</message>
+    <message key="xmlui.Statistics.interactive.stats.item_by_country.dl">{0}: Most Popular Items</message>
+    <message key="xmlui.Statistics.interactive.stats.item_by_filter.dl">{0}: Most Popular Items</message>
+    <message key="xmlui.Statistics.interactive.stats.countries_by_item.dl">{0}: Countries</message>
+    <message key="xmlui.Statistics.interactive.stats.country.dl">Statistics by Country</message>
+    <message key="xmlui.Statistics.interactive.stats.go_back">Go Back</message>
+    <message key="xmlui.Statistics.interactive.stats.nostats">Your input has no associated statistics</message>
+    <message key="xmlui.Statistics.interactive.stats.kml">KML</message>
+    <message key="xmlui.Statistics.interactive.stats.zip">Shapefile</message>
+    <message key="xmlui.Statistics.interactive.stats.csv">CSV</message>
+    <message key="xmlui.Statistics.interactive.stats.choose">Select a format</message>
+    <message key="xmlui.Statistics.interactive.stats.download">Download the data on this map as:</message>
+    <message key="xmlui.Statistics.interactive.stats.results">{0} results</message>
+    <message key="xmlui.Statistics.interactive.stats.no_dl_stats">There are no file downloads in this scope. Your query has been altered to sort by item views.</message>
+    <message key="xmlui.Statistics.interactive.stats.no_item_stats">There are no item views in this scope. Your query has been altered to sort by file downloads.</message>
+
+    <message key="xmlui.administrative.Navigation.most-popular.item">Most Popular Items</message>
+    <message key="xmlui.administrative.Navigation.most-popular.country">Statistics by Country</message>
+    <message key="xmlui.administrative.Navigation.most-popular.referrer">Statistics by Referrer</message>
+    <message key="xmlui.administrative.Navigation.most-popular.author">Most Popular Authors</message>
+
+    <message key="xmlui.Statistics.most-popular.author.h1">Most Popular Authors</message>
+    <message key="xmlui.Statistics.most-popular.author.table">Author</message>
+
+    <message key="xmlui.Statistics.most-popular.referrer.h1">Statistics by Referrer</message>
+    <message key="xmlui.Statistics.most-popular.referrer.table">Referrer</message>
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.bag.bits.openAll">Open All</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.bag.bits.selectAll">Select All</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.bag.bits.closeAll">Close All</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.graph.bag.bits.deselectAll">Remove All</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.export.subscribe.error">An error has occurred please try again after</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.export.subscribe.reload">reloading the page</message>
+    <message key="xmlui.reporting-suite.statistics.maintenance.mode">Maintenance Mode</message>
+    <message key="xmlui.reporting-suite.statistics.maintenance.status">Maintenance Mode is currently {0}
+        <br/>
+    </message>
+    <message key="xmlui.reporting-suite.statistics.maintenance.toggle">Turn it {0}</message>
+    <message key="xmlui.reporting-suite.statistics.maintenance.explanation">The Atmire Content and Usage Analysis module is currently in maintenance mode.</message>
+    <message key="xmlui.org.dspace.app.xmlui.aspect.statistics.editorparts.OptionsTransformer.show-totals">Calculate totals</message>
+    <message key="xmlui.org.dspace.app.xmlui.aspect.statistics.editorparts.OptionsTransformer.show-totals-graph">Include totals on graph</message>
+    <message key="xmlui.reporting-suite.statistics.contentanalysis.title">Content report</message>
+    <message key="xmlui.reporting-suite.statistics.usageanalysis.title">Usage report</message>
+    <message key="xmlui.reporting-suite.statistics.workflowanalysis.title">Workflow report</message>
+    <message key="xmlui.reporting-suite.statistics.contentanalysis.comcol">Communities or collections</message>
+    <message key="xmlui.reporting-suite.statistics.contentanalysis.iso">ISO 639 Language</message>
+    <message key="xmlui.reporting-suite.statistics.contentanalysis.author">Author</message>
+    <message key="xmlui.reporting-suite.statistics.contentanalysis.subject">Subject</message>
+    <message key="xmlui.reporting-suite.statistics.contentanalysis.type">Type</message>
+    <message key="org.dspace.app.xmlui.aspect.statistics.editorparts.FiltersTransformer.title">Limit the data to:</message>
+    <message key="org.dspace.app.xmlui.aspect.statistics.editorparts.FiltersTransformer.rule">Add a rule</message>
+    <message key="statistics.editorparts.FiltersTransformer.dso">DSpace Object</message>
+    <message key="statistics.editorparts.FiltersTransformer.metadata.EXACT">Exact matching</message>
+    <message key="statistics.editorparts.FiltersTransformer.metadata.CONTAINS">Containing</message>
+    <message key="statistics.editorparts.FiltersTransformer.metadata.placeholder">type to search...</message>
+    <message key="xmlui.reporting-suite.statistics.selectall-4-1">You have currently selected all displayed communities. Click here to select all communities.</message>
+    <message key="xmlui.reporting-suite.statistics.selectall-5-1">You have currently selected all displayed collections. Click here to select all collections.</message>
+    <message key="xmlui.reporting-suite.statistics.selectall.content">You have currently selected all displayed collections and communities. Click here to select all collections and communities.</message>
+
+    <message key="statistics.editorparts.FiltersTransformer.visitor">Visitors</message>
+    <message key="statistics.editorparts.FiltersTransformer.visitor.countries">Countries</message>
+    <message key="statistics.editorparts.FiltersTransformer.visitor.countryCode">Countries</message>
+    <message key="statistics.editorparts.FiltersTransformer.visitor.ip">IP Addresses</message>
+    <message key="statistics.editorparts.FiltersTransformer.visitor.ip::rangeDescription">IP Addresses</message>
+    <message key="statistics.editorparts.FiltersTransformer.visitor.userAgent">User Agents</message>
+    <message key="statistics.editorparts.FiltersTransformer.visitor.user_agent">User Agents</message>
+    <message key="statistics.editorparts.FiltersTransformer.visitor.referrer">HTTP Referers</message>
+    <message key="statistics.editorparts.FiltersTransformer.visitor.referers">HTTP Referers</message>
+    <message key="statistics.editorparts.FiltersTransformer.visitor.userAgent~bots">Bot User Agents</message>
+    <message key="statistics.editorparts.FiltersTransformer.visitor.ip~bots">Bot IP Addresses</message>
+    <message key="statistics.editorparts.FiltersTransformer.visitor.ip::rangeDescription~internal-users">Internal Users</message>
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.author">Authors</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.author_mtdt">Authors</message>
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.subject">Subjects</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.subject_mtdt">Subjects</message>
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.iso">Languages</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.iso_mtdt">Languages</message>
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.date">Date</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.date_mtdt">Dates</message>
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.topic">Topic</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.topic_mtdt">Topics</message>
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.type">Type</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.type_mtdt">Types</message>
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.region">Region</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.region_mtdt">Regions</message>
+
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.country">Country</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.country_mtdt">Countries</message>
+
+
+    <message key="cua.statlet.item-views">Item views</message>
+    <message key="cua.statlet.views">Views</message>
+    <message key="cua.statlet.bitstream-downloads">Bitstream downloads</message>
+    <message key="cua.statlet.downloads">Downloads</message>
+    <message key="cua.statlet.type">Type</message>
+    <message key="cua.statlet.total">Total</message>
+    <message key="cua.statlet.total-hits">Total Hits</message>
+    <message key="cua.statlet.country">Country</message>
+    <message key="cua.statlet.top-5-country-views">Top 5 countries by item views</message>
+    <message key="cua.statlet.top-5-country-downloads">Top 5 countries by bitstream downloads</message>
+    <message key="cua.statlet.item-views-month">Item views by month</message>
+    <message key="cua.statlet.bitstream-downloads-month">Bitstream downloads by month</message>
+    <message key="cua.statlet.top-items-views">Top items by number of views</message>
+    <message key="cua.statlet.top-items-downloads">Top items by bitstream downloads</message>
+    <message key="cua.statlet.top-subcollections-views">Top sub-collections by item views</message>
+    <message key="cua.statlet.top-subcollections-downloads">Top sub-collections by bitstream downloads</message>
+    <message key="cua.statlet.top-communities-views">Top communities by item views</message>
+    <message key="cua.statlet.top-communities-downloads">Top Communities by bitstream downloads</message>
+    <message key="cua.statlet.item">Item</message>
+    <message key="cua.statlet.collection">Collection</message>
+    <message key="cua.statlet.community">Item</message>
+    <message key="cua.statlet.this-item">This item</message>
+    <message key="cua.statlet.this-collection">This collection</message>
+    <message key="cua.statlet.this-community">This community</message>
+
+    <!--necessary for quicklook on datatables, if the MQM isn't also installed-->
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.citation">Citation (dc.citation)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.contributor.advisor">Advisor (dc.contributor.advisor)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.contributor.author">Author (dc.contributor.author)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.contributor.editor">Editor (dc.contributor.editor)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.contributor.illustrator">Illustrator (dc.contributor.illustrator)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.contributor.other">Other Contributor (dc.contributor.other)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.contributor">Contributor (dc.contributor)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.coverage">Coverage (dc.coverage)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.coverage.spatial">Spatial Coverage (dc.coverage.spatial)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.coverage.temporal">Temporal Coverage (dc.coverage.temporal)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.creator">Creator (dc.creator)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.date.accessioned">Date Accessioned (dc.date.accessioned)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.date.available">Date Available (dc.date.available)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.date.copyright">Copyright Date (dc.date.copyright)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.date.created">Date Created (dc.date.created)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.date.issued">Date Issued (dc.date.issued)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.date.submitted">Date Submitted (dc.date.submitted)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.date.updated">Date Updated (dc.date.updated)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.date">Date (dc.date)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.description.abstract">Abstract (dc.description.abstract)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.description.box">Box (dc.description.box)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.description.provenance">Provenance (dc.description.provenance)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.description.sponsorship">Sponsorship (dc.description.sponsorship)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.description.statementofresponsibility">Statement of Responsibility (dc.description.statementofresponsibility)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.description.tableofcontents">Table of Contents (dc.description.tableofcontents)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.description.uri">URI (dc.description.uri)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.description.version">Version (dc.description.version)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.description">Description (dc.description)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.format.extent">Extent (dc.format.extent)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.format.medium">Medium (dc.format.medium)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.format.mimetype">MIME type (dc.format.mimetype)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.format">Format (dc.format)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.identifier.grantnumber">Grant Number (dc.identifier.grantnumber)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.identifier.citation">Citation (dc.identifier.citation)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.identifier.crsid">CRSid (dc.identifier.crsid)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.identifier.govdoc">GOVDOC id (dc.identifier.govdoc)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.identifier.isbn">ISBN (dc.identifier.isbn)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.identifier.ismn">ISMN (dc.identifier.ismn)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.identifier.issn">ISSN (dc.identifier.issn)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.identifier.other">Other Id (dc.identifier.other)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.identifier.sici">Serial Item and Contribution Identifier (dc.identifier.sici)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.identifier.slug">Slug Id (dc.identifier.slug)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.identifier.uri">URI (dc.identifier.uri)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.identifier">Identifier (dc.identifier)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.language.iso">ISO 639 Language (dc.language.iso)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.language.rfc3066">RFC 3066 Language (dc.language.rfc3066)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.language">Language (dc.language)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.permission.zoomingread">Zoom Permission (dc.permission.zoomingread)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.publisher.location">Publisher Location (dc.publisher.location)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.publisher">Publisher (dc.publisher)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.relation.haspart">Includes (dc.relation.haspart)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.relation.hasversion">Has Version (dc.relation.hasversion)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.relation.isbasedon">Is Based (dc.relation.isbasedon)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.relation.isformatof">Is Format Of (dc.relation.isformatof)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.relation.isnodouble">Is Not a Duplicate Of (dc.relation.isnodouble)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.relation.ispartof">Is Part Of (dc.relation.ispartof)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.relation.ispartofseries">Is Part Of Series (dc.relation.ispartofseries)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.relation.isreferencedby">Is Referenced By (dc.relation.isreferencedby)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.relation.isreplacedby">Is Replaced By (dc.relation.isreplacedby)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.relation.isreplacedbydouble">Is Replaced By Duplicate (dc.relation.isreplacedbydouble)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.relation.isversionof">Is Version Of (dc.relation.isversionof)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.relation.replaces">Replaces (dc.relation.replaces)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.relation.requires">Requires (dc.relation.requires)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.relation.uri">Relation URI (dc.relation.uri)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.relation">Relation (dc.relation)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.rights.holder">Rights Holder (dc.rights.holder)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.rights.uri">Rights URI (dc.rights.uri)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.rights">Rights (dc.rights)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.source.uri">Source URI (dc.source.uri)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.source">Source (dc.source)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.subject.classification">Classification (dc.subject.classification)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.subject.ddc">DDC (dc.subject.ddc)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.subject.lcc">LCC (dc.subject.lcc)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.subject.lcsh">LCSH (dc.subject.lcsh)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.subject.mesh">Mesh (dc.subject.mesh)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.subject.other">Other Subject (dc.subject.other)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.subject">Subject (dc.subject)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.title.alternative">Alternative Title (dc.title.alternative)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.title">Title (dc.title)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.type.template">Type Template (dc.type.template)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.type">Type (dc.type)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.workflow.batchedit.claimedby">Batch edit step claimed user identifier (workflow.batchedit.claimedby)</message>
+
+
+</catalogue>
