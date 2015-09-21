@@ -566,61 +566,6 @@
                 </table>
             </tables>
 
-
-            <graphs>
-                <graph id="graph1" type="" title="StatletItemViewsMonth"> <!-- line graph with line for item and line per bitstream -->
-                    <styles/>
-                    <style-mapping/>
-                    <datasetgenerators>
-
-                        <datasetgenerator type="org.dspace.statistics.content.DatasetTimeGenerator" includetotal="false">
-                            <period type="month" start="-5" end="+1" />
-                        </datasetgenerator>
-                        <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
-
-                            <dsotype>5</dsotype>
-                        </datasetgenerator>
-                    </datasetgenerators>
-                    <filters>
-                        <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
-                            <dsotype>2</dsotype>
-                        </filter>
-                    </filters>
-                    <render>
-                        <default>
-                            <graph-type>line</graph-type>
-                        </default>
-                    </render>
-                </graph>
-                <graph id="graph2" type="" title="StatletBitstreamDownloadsMonth"> <!-- line graph with line for item and line per bitstream -->
-                    <styles/>
-                    <style-mapping/>
-                    <datasetgenerators>
-
-                        <datasetgenerator type="org.dspace.statistics.content.DatasetTimeGenerator" includetotal="false">
-                            <period type="month" start="-5" end="+1" />
-                        </datasetgenerator>
-                        <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
-
-                            <dsotype>5</dsotype>
-                        </datasetgenerator>
-                    </datasetgenerators>
-                    <filters>
-                        <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
-                            <dsotype>0</dsotype>
-                        </filter>
-                    </filters>
-                    <render>
-                        <default>
-                            <graph-type>line</graph-type>
-                        </default>
-                    </render>
-                </graph>
-
-
-            </graphs>
-
-
             <links>
                 <link> <!-- link to a page with more detailed stats, will become URL -->
                     <!-- show listing with top 10 countries of all item visits -->

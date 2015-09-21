@@ -39,6 +39,7 @@
 	<script src="scripts/google-stats-dates.js">&#160;</script>
 	<script src="scripts/templates.js">&#160;</script>
 	<script src="scripts/most-popular.js">&#160;</script>
+	<script src="scripts/auto-open-statlets.js">&#160;</script>
 
 	<!-- authorLookup and its dependencies -->
 	<script src="vendor/datatables/media/js/jquery.dataTables.js">&#160;</script>
