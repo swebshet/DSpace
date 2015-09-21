@@ -164,21 +164,32 @@
                         <img class="img-responsive" alt="xmlui.mirage2.item-list.thumbnail" i18n:attr="alt">
                             <xsl:attribute name="src">
                                 <xsl:value-of
-                                        select="mets:fileGrp[@USE='THUMBNAIL']/mets:file/mets:FLocat[@LOCTYPE='URL']/@xlink:href"/>
+                                        select="mets:fileGrp[@USE='THUMBNAIL']/mets:file/@MIMETYPE"/>
                             </xsl:attribute>
                         </img>
                     </xsl:when>
                     <!-- No thumbnail available-->
-                    <!-- Check what filetype and show generic thumbnail accordingly-->
+                    <!-- Check what mimetype and show generic thumbnail accordingly-->
                     <xsl:otherwise>
-                        <xsl:variable name="fileName"
-                                      select="mets:fileGrp[@USE='CONTENT']/mets:file/mets:FLocat/@xlink:title"/>
-                        <xsl:variable name="ext" select="substring-after($fileName,'.')"/>
-                        <xsl:variable name="fallbackImage">
-                            <xsl:value-of select="fallback:getFallBackImagesAssociatedToExtension($ext)"/>
-                        </xsl:variable>
-                        <img alt="xmlui.mirage2.item-list.thumbnail" i18n:attr="alt"
-                             src="{concat($theme-path, $fallbackImage)}"/>
+                        <xsl:choose>
+                            <xsl:when test="mets:fileGrp[@USE='CONTENT']">
+                                <xsl:variable name="mimetype"
+                                              select="mets:fileGrp[@USE='CONTENT']/mets:file/@MIMETYPE"/>
+                                <xsl:variable name="fallbackImage">
+                                    <xsl:value-of select="fallback:getFallBackImagesAssociatedToExtension($mimetype)"/>
+                                </xsl:variable>
+                                <img alt="xmlui.mirage2.item-list.thumbnail" i18n:attr="alt"
+                                     src="{concat($theme-path, $fallbackImage)}"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:variable name="fallbackImage">
+                                    <xsl:value-of select="fallback:getFallBackImagesAssociatedToExtension('default')"/>
+                                </xsl:variable>
+                                <img alt="xmlui.mirage2.item-list.thumbnail" i18n:attr="alt"
+                                     src="{concat($theme-path, $fallbackImage)}"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+
                     </xsl:otherwise>
                 </xsl:choose>
 

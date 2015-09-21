@@ -23,14 +23,33 @@
     <context:annotation-config/>
 
 
-    <!--A mapping used to indicate what metadatafields should link to a certain discovery facet -->
-    <util:map id="extensions-with-associated-images" key-type="java.lang.String" value-type="java.lang.String">
-        <entry key="mp3" value="images/fallback-mimetypes/audio-x-mpeg.svg"/>
-        <entry key="pdf" value="images/fallback-mimetypes/application-pdf.svg"/>
-        <entry key="txt" value="images/fallback-mimetypes/text-x-generic.svg"/>
-        <entry key="xls" value="images/fallback-mimetypes/audio-x-mpeg.svg"/>
-        <entry key="xlsx" value="images/fallback-mimetypes/x-office-presentation.svg"/>
-        <entry key="default" value="images/fallback-mimetypes/application-x-zerosize.svg'"/>
+    <!--A mapping used to indicate what mimetypes should link to a certain discovery facet -->
+    <util:map id="mimetypes-with-associated-images" key-type="java.lang.String" value-type="java.lang.String">
+
+        <!-- text image-->
+        <entry key="application/pdf" value="images/fallback-mimetypes/text-x-generic.svg"/>
+        <entry key="text/plain" value="images/fallback-mimetypes/text-x-generic.svg"/>
+        <entry key="text/richtext" value="images/fallback-mimetypes/text-x-generic.svg"/>
+
+
+        <!-- Audio image-->
+        <entry key="audio/x-aiff" value="images/fallback-mimetypes/audio-x-mpeg.svg"/>
+        <entry key="audio/basic" value="images/fallback-mimetypes/audio-x-mpeg.svg"/>
+        <entry key="audio/x-wav" value="images/fallback-mimetypes/audio-x-mpeg.svg"/>
+
+        <!-- Excel image-->
+        <entry key="application/vnd.ms-excel" value="images/fallback-mimetypes/x-office-spreadsheet.svg"/>
+        <entry key="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" value="images/fallback-mimetypes/x-office-spreadsheet.svg"/>
+
+        <!-- Powerpoint image-->
+        <entry key="application/vnd.ms-powerpoint" value="images/fallback-mimetypes/x-office-presentation.svg"/>
+        <entry key="application/vnd.openxmlformats-officedocument.presentationml.presentation" value="images/fallback-mimetypes/x-office-presentation.svg"/>
+
+        <!-- Word image-->
+        <entry key="application/msword" value="images/fallback-mimetypes/x-office-document.svg"/>
+        <entry key="application/vnd.openxmlformats-officedocument.wordprocessingml.document" value="images/fallback-mimetypes/x-office-document.svg"/>
+
+        <entry key="default" value="images/fallback-mimetypes/application-x-zerosize.svg"/>
     </util:map>
 
 </beans>
