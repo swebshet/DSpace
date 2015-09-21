@@ -4,6 +4,7 @@ import com.atmire.statistics.content.DatasetQuery;
 import com.atmire.statistics.content.filter.StatisticsDsoFilter;
 import com.atmire.statistics.params.SolrLoggerParams;
 import com.atmire.statistics.util.SolrResultAttributesResolver;
+import org.apache.commons.lang.StringUtils;
 import org.apache.solr.client.solrj.SolrServerException;
 import org.apache.solr.client.solrj.response.QueryResponse;
 import org.apache.solr.client.solrj.util.ClientUtils;
@@ -53,6 +54,7 @@ public class DSpaceObjectDatasetGenerator extends DatasetGenerator {
      */
     protected int max;
     protected boolean useFacetTerms = false;
+    private String columnLabel;
 
     public boolean isUseFacetTerms() {
         return useFacetTerms;
@@ -85,11 +87,11 @@ public class DSpaceObjectDatasetGenerator extends DatasetGenerator {
         switch (type){
             case Constants.COMMUNITY:
                 datasetQuery.setFacetField("containerCommunity");
-                datasetQuery.setLabel("All Communities");
+                datasetQuery.setLabel("Community");
                 break;
             case Constants.COLLECTION:
                 datasetQuery.setFacetField("containerCollection");
-                datasetQuery.setLabel("All Collections");
+                datasetQuery.setLabel("Collection");
                 break;
             case Constants.ITEM:
                 datasetQuery.setFacetField(isShareVersionStats() ? "version_id" : "containerItem");
@@ -133,7 +135,7 @@ public class DSpaceObjectDatasetGenerator extends DatasetGenerator {
         root.appendChild(splitByYear);
         splitByYear.appendChild(doc.createTextNode("" + this.splitByYear));
 
-        if(getMax()>-1){
+        if (getMax() > -1) {
             Element limit = doc.createElement("limit");
             root.appendChild(limit);
 
@@ -141,8 +143,11 @@ public class DSpaceObjectDatasetGenerator extends DatasetGenerator {
             Element nNode = doc.createElement("n");
             limit.appendChild(nNode);
             nNode.appendChild(doc.createTextNode("" + getMax()));
+        }
 
-    }
+        Element columnLabel = doc.createElement("columnLabel");
+        root.appendChild(splitByYear);
+        columnLabel.appendChild(doc.createTextNode(getColumnLabel()));
 
     }
 
@@ -182,6 +187,11 @@ public class DSpaceObjectDatasetGenerator extends DatasetGenerator {
         }
         else{
             setMax(-1);
+        }
+
+        Node columnLabel = XPathAPI.selectSingleNode(generatorNode, "column-label/text()");
+        if (columnLabel != null) {
+            setColumnLabel(columnLabel.getNodeValue());
         }
     }
 
@@ -311,13 +321,14 @@ public class DSpaceObjectDatasetGenerator extends DatasetGenerator {
 
         } else {
             //We need to get the max objects and the next part of the query on them (next part beeing the datasettimequery
+            String colLabel = getColumnLabel();
             if (facetField == null) {
                 QueryResponse queryResponse = SolrLogger.query("*:*", filterQuery, null, true, dataSetQuery.getMax(), null, null, null, null);
                 SolrDocumentList result = queryResponse.getResults();
                 if (dataset == null)
                     dataset = new Dataset(1, 1);
                 //Now that we have our results put em in a matrix
-                dataset.setColLabel(0, "Overall");
+                dataset.setColLabel(0, colLabel);
                 for (StatisticsFilter filter : filters) {
                     if (filter instanceof StatisticsSolrDateFilter) {
                         String label = ((StatisticsSolrDateFilter) filter).generateLabel();
@@ -356,7 +367,7 @@ public class DSpaceObjectDatasetGenerator extends DatasetGenerator {
                     } else {
                         String rlabel = SolrResultAttributesResolver.getResultName(value, getType(), facetField, context);
                         dataset.setRowLabel(j, rlabel);
-                        dataset.setColLabel(0, "Overall");
+                        dataset.setColLabel(0, colLabel);
                         for (StatisticsFilter filter : filters) {
                             if (filter instanceof StatisticsSolrDateFilter) {
                                 String label = ((StatisticsSolrDateFilter) filter).generateLabel();
@@ -387,4 +398,11 @@ public class DSpaceObjectDatasetGenerator extends DatasetGenerator {
         return dataset;
     }
 
+    public void setColumnLabel(String columnLabel) {
+        this.columnLabel = columnLabel;
+    }
+
+    public String getColumnLabel() {
+        return StringUtils.defaultIfBlank(columnLabel, "Overall");
+    }
 }
