@@ -42,7 +42,7 @@
             for (var i = 0; i < donutData.series.length && i < seriesNames.length; i++) {
                 var serie = donutData.series[i];
                 donutData.series[i] = {
-                    data: serie,
+                    value: serie,
                     className: 'ct-series-' + seriesNames[i]
                 };
 
@@ -190,7 +190,6 @@
 
             var barData = statlet.chartist[cua.getViewPort()];
 
-            console.log(barData, options, responsiveOptions);
             chartist = new Chartist.Bar(element, barData, options, responsiveOptions);
 
             statletNS.chartist.initToolTip($content, $element, statlet, '.ct-bar', false);
