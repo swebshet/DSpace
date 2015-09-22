@@ -590,7 +590,7 @@
 
                     <render>
                         <default>
-                            <graph-type>bar</graph-type>
+                            <graph-type>distributed_bar</graph-type>
                         </default>
                     </render>
                 </graph>
