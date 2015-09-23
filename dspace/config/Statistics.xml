@@ -205,47 +205,9 @@
         </item-display>
 
         <collection-home>
-            <graphs>
-                <graph id="Total_Hits_Donut" type="" title="StatletTotalHits"> <!-- line graph with line for item and line per bitstream -->
-                    <styles/>
-                    <frame color-style="bgcolor" height="300" width="585"/>
-                    <background color-style="fgcolor"/>
-                    <style-mapping/>
-                    <datasetgenerators>
-                        <datasetgenerator type="com.atmire.statistics.content.DatasetConfigurableTypeGenerator">
-                            <solrfield>type</solrfield>
-                            <order>asc</order>
-                            <limit type="top">
-                                <n>5</n>
-                            </limit>
-                            <rowlabels>
-                                <label value="2">StatletItemViews</label>
-                                <label value="0">StatletBitstreamDownloads</label>
-                            </rowlabels>
-                            <headerlabels>
-                                <label column="0">StatletType</label>
-                                <label column="1">StatletTotal</label>
-                            </headerlabels>
-                        </datasetgenerator>
-                    </datasetgenerators>
-                    <filters>
-                        <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
-                            <dsotype>0</dsotype>
-                            <dsotype>2</dsotype>
-                        </filter>
-                        <filter type="com.atmire.statistics.content.filter.StatisticsStringFilter" query="statistics_type:view"/>
-                    </filters>
-                    <render>
-                        <default>
-                            <graph-type>donut</graph-type>
-                        </default>
-                    </render>
-                </graph>
-            </graphs>
             <tables>
-                <table id="tab1" title="StatletTopItemsViews">
+                <table id="tab2" title="StatletCollectionTopItemPageViews">
                     <datasetgenerators>
-
                         <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
                             <dsotype>2</dsotype>
                             <limit type="top">
@@ -254,26 +216,11 @@
                         </datasetgenerator>
                     </datasetgenerators>
                     <filters>
-                        <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
-                            <dsotype>2</dsotype>
+                        <filter type="com.atmire.statistics.content.filter.StatisticsSolrDateFilter">
+                            <type>day</type>
+                            <start str="+-30"/>
+                            <end str="+0"/>
                         </filter>
-                    </filters>
-                    <labels>
-                        <column>StatletItem</column>
-                        <column>StatletViews</column>
-                    </labels>
-                </table>
-                <table id="tab2" title="StatletTopItemsDownloads">
-                    <datasetgenerators>
-
-                        <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
-                            <dsotype>2</dsotype>
-                            <limit type="top">
-                                <n>5</n>
-                            </limit>
-                        </datasetgenerator>
-                    </datasetgenerators>
-                    <filters>
                         <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
                             <dsotype>0</dsotype>
                         </filter>
@@ -284,65 +231,51 @@
                     </labels>
 
                 </table>
-            </tables>
-            <graphs>
-                <graph id="graph1" type="" title="StatletItemViewsMonth"> <!-- line graph with line for item and line per bitstream -->
-                    <styles/>
-                    <style-mapping/>
+                <table id="tab1" title="StatletCollectionTopFileDownloads">
                     <datasetgenerators>
-
                         <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
-
-                            <dsotype>5</dsotype>
+                            <dsotype>2</dsotype>
+                            <limit type="top">
+                                <n>5</n>
+                            </limit>
                         </datasetgenerator>
-                        <datasetgenerator type="org.dspace.statistics.content.DatasetTimeGenerator" includetotal="false">
-                            <period type="month" start="-5" end="+1" />
+                    </datasetgenerators>
+                    <filters>
+                        <filter type="com.atmire.statistics.content.filter.StatisticsSolrDateFilter">
+                            <type>day</type>
+                            <start str="+-30"/>
+                            <end str="+0"/>
+                        </filter>
+                        <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
+                            <dsotype>2</dsotype>
+                        </filter>
+                    </filters>
+                    <labels>
+                        <column>StatletItem</column>
+                        <column>StatletViews</column>
+                    </labels>
+                </table>
+                <table id="tab3" title="StatletCollectionMostPopularAuthors">
+                    <datasetgenerators>
+                        <datasetgenerator type="com.atmire.statistics.generator.TopNConfigurableFacetFieldDatasetGenerator" facetField="author_mtdt">
+                            <dsotype>2</dsotype>
+                            <limit type="top">
+                                <n>5</n>
+                            </limit>
                         </datasetgenerator>
                     </datasetgenerators>
                     <filters>
                         <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
                             <dsotype>2</dsotype>
-                        </filter>
-                    </filters>
-                    <render>
-                        <default>
-                            <graph-type>line</graph-type>
-                        </default>
-                    </render>
-                    <labels>
-                        <row>StatletThisCollection</row>
-                    </labels>
-                </graph>
-                <graph id="graph2" type="" title="StatletBitstreamDownloadsMonth"> <!-- line graph with line for item and line per bitstream -->
-                    <styles/>
-                    <style-mapping/>
-                    <datasetgenerators>
-
-                        <datasetgenerator type="org.dspace.statistics.content.DatasetTimeGenerator" includetotal="false">
-                            <period type="month" start="-5" end="+1" />
-                        </datasetgenerator>
-                        <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
-
-                            <dsotype>5</dsotype>
-                        </datasetgenerator>
-                    </datasetgenerators>
-                    <filters>
-                        <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
                             <dsotype>0</dsotype>
                         </filter>
                     </filters>
-                    <render>
-                        <default>
-                            <graph-type>line</graph-type>
-                        </default>
-                    </render>
                     <labels>
-                        <row>StatletThisCollection</row>
+                        <column>StatletAuthor</column>
+                        <column>StatletViewsAndDownloads</column>
                     </labels>
-                </graph>
-
-
-            </graphs>
+                </table>
+            </tables>
         </collection-home>
 
         <community-home>
