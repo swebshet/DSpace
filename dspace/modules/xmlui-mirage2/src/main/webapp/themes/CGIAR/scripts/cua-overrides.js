@@ -3,6 +3,31 @@
     window.atmire.CUA = window.atmire.CUA || {};
     window.atmire.CUA.statlet = window.atmire.CUA.statlet || {};
 
+    var cuaTemplates = ["bar", "pie"];
+    var templateMapper = {
+        bar: "bar",
+        distributed_bar: "distributed_bar",
+        line: "bar",
+        donut: "pie",
+        pie: "pie",
+        line_downloads: "bar"
+    };
+
+
+    function setSeriesClassNames(statlet, seriesNames) {
+        var data = statlet.chartist[atmire.CUA.getViewPort()];
+
+        for (var i = 0; i < data.series.length && i < seriesNames.length; i++) {
+            var serie = data.series[i];
+            data.series[i] = {
+                value: serie,
+                className: 'ct-series-' + seriesNames[i]
+            };
+
+            statlet.labels[i].charIndex = seriesNames[i];
+        }
+    }
+
     function override() {
         if (typeof window.atmire.CUA.statlet.template === 'undefined') {
             setTimeout(override, 10);
@@ -16,11 +41,10 @@
         // overriding a function originally defined in aspects/ReportingSuite/statlet/charts/chartist.js
         statletNS.template = statletNS.template || {};
         statletNS.template.graph = function (statlet) {
-            var templateMapper = {bar: "bar", distributed_bar: "distributed_bar", line: "bar", donut: "pie", pie: "pie"};
 
             var templateName, templateFunction;
             var type = (statlet.render.default && statlet.render.default['graph-type']) || "bar";
-            if (type === "distributed_bar") {
+            if (cuaTemplates.indexOf(templateMapper[type]) < 0) {
                 templateName = 'statlet_' + templateMapper[type];
                 templateFunction = DSpace.getTemplate(templateName);
             } else {
@@ -37,17 +61,7 @@
             originalPrePie(statlet);
 
             var seriesNames = ['downloads', 'abstracts'];
-            var donutData = statlet.chartist[cua.getViewPort()];
-
-            for (var i = 0; i < donutData.series.length && i < seriesNames.length; i++) {
-                var serie = donutData.series[i];
-                donutData.series[i] = {
-                    value: serie,
-                    className: 'ct-series-' + seriesNames[i]
-                };
-
-                statlet.labels[i].charIndex = seriesNames[i];
-            }
+            setSeriesClassNames(statlet, seriesNames);
         };
 
         // aspects/ReportingSuite/statlet/charts/chartist/bar.js
@@ -218,6 +232,17 @@
             return chartist;
 
         }
+
+
+        statletNS.chartist.pre.line_downloads = function (statlet) {
+            statletNS.chartist.pre.line(statlet);
+            var seriesNames = ['downloads'];
+            setSeriesClassNames(statlet, seriesNames);
+        };
+
+        statletNS.chartist.post.line_downloads = function (statlet, content, callback) {
+            statletNS.chartist.post.line(statlet, content, callback);
+        };
 
     }
 

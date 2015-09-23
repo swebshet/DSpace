@@ -1,5 +1,8 @@
+$abstract-views-color: #427730;
+$file-downloads-color: #7AB800;
+
 $cua-ct-series-names: (downloads, abstracts);
-$cua-ct-series-colors: (#7AB800, #427730);
+$cua-ct-series-colors: ($file-downloads-color, $abstract-views-color);
 
 @for $i from 0 to length($cua-ct-series-names) {
     $cua-serie-name: nth($cua-ct-series-names, $i + 1);
@@ -18,3 +21,4 @@ $cua-ct-series-colors: (#7AB800, #427730);
         }
     }
 }
+
