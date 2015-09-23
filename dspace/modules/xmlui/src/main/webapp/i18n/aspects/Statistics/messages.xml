@@ -828,8 +828,8 @@ DAMAGE.
     <message key="cua.statlet.total">Total</message>
     <message key="cua.statlet.total-hits">All Time Usage</message>
     <message key="cua.statlet.country">Country</message>
-    <message key="cua.statlet.top-5-country-views">Top 5 visiting countries</message>
-    <message key="cua.statlet.top-5-country-downloads">Top 5 countries by bitstream downloads</message>
+    <message key="cua.statlet.top-5-country-views">Top 5 countries based on Item Page Views</message>
+    <message key="cua.statlet.top-5-country-downloads">Top 5 countries based on Item File Downloads</message>
     <message key="cua.statlet.item-views-month">Item Page Views by month</message>
     <message key="cua.statlet.bitstream-downloads-month">File Downloads by month</message>
     <message key="cua.statlet.top-items-views">Top items by number of views</message>
