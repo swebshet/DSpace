@@ -346,86 +346,9 @@
         </collection-home>
 
         <community-home>
-            <graphs>
-                <graph id="Total_Hits_Donut" type="" title="StatletTotalHits"> <!-- line graph with line for item and line per bitstream -->
-                    <styles/>
-                    <style-mapping/>
-                    <datasetgenerators>
-                        <datasetgenerator type="com.atmire.statistics.content.DatasetConfigurableTypeGenerator">
-                            <solrfield>type</solrfield>
-                            <order>asc</order>
-                            <limit type="top">
-                                <n>5</n>
-                            </limit>
-                            <rowlabels>
-                                <label value="2">StatletItemViews</label>
-                                <label value="0">StatletBitstreamDownloads</label>
-                            </rowlabels>
-                            <headerlabels>
-                                <label column="0">StatletType</label>
-                                <label column="1">StatletTotal</label>
-                            </headerlabels>
-                        </datasetgenerator>
-                    </datasetgenerators>
-                    <filters>
-                        <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
-                            <dsotype>0</dsotype>
-                            <dsotype>2</dsotype>
-                        </filter>
-                        <filter type="com.atmire.statistics.content.filter.StatisticsStringFilter" query="statistics_type:view"/>
-                    </filters>
-                    <render>
-                        <default>
-                            <graph-type>donut</graph-type>
-                        </default>
-                    </render>
-                </graph>
-            </graphs>
-            <tables>
-                <table id="tab1" title="StatletTopSubcollectionsViews">
-                    <datasetgenerators>
-
-                        <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
-                            <dsotype>3</dsotype>
-                            <limit type="top">
-                                <n>5</n>
-                            </limit>
-                        </datasetgenerator>
-                    </datasetgenerators>
-                    <filters>
-                        <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
-                            <dsotype>2</dsotype>
-                        </filter>
-                    </filters>
-                    <labels>
-                        <column>StatletCollection</column>
-                        <column>StatletViews</column>
-                    </labels>
-                </table>
-                <table id="tab2" title="StatletTopSubcollectionsDownloads">
-                    <datasetgenerators>
-
-                        <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
-                            <dsotype>3</dsotype>
-                            <limit type="top">
-                                <n>5</n>
-                            </limit>
-                        </datasetgenerator>
-                    </datasetgenerators>
-                    <filters>
-                        <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
-                            <dsotype>0</dsotype>
-                        </filter>
-                    </filters>
-                    <labels>
-                        <column>StatletCollection</column>
-                        <column>StatletDownloads</column>
-                    </labels>
-                </table>
-            </tables>
 
             <graphs>
-                <graph id="graph1" type="" title="StatletItemViewsMonth"> <!-- line graph with line for item and line per bitstream -->
+                <graph id="graph1" type="" title="StatletItemViewsMonth">
                     <styles/>
                     <style-mapping/>
                     <datasetgenerators>
@@ -445,14 +368,14 @@
                     </filters>
                     <render>
                         <default>
-                            <graph-type>line</graph-type>
+                            <graph-type>line_downloads</graph-type>
                         </default>
                     </render>
                     <labels>
                         <row>StatletThisCommunity</row>
                     </labels>
                 </graph>
-                <graph id="graph2" type="" title="StatletBitstreamDownloadsMonth"> <!-- line graph with line for item and line per bitstream -->
+                <graph id="graph2" type="" title="StatletBitstreamDownloadsMonth">
                     <styles/>
                     <style-mapping/>
                     <datasetgenerators>
@@ -472,7 +395,7 @@
                     </filters>
                     <render>
                         <default>
-                            <graph-type>line</graph-type>
+                            <graph-type>line_downloads</graph-type>
                         </default>
                     </render>
                     <labels>
