@@ -845,6 +845,12 @@ DAMAGE.
     <message key="cua.statlet.this-collection">This collection</message>
     <message key="cua.statlet.this-community">This community</message>
 
+    <message key="cua.statlet.StatletCollectionTopItemPageViews">Last Month's most popular items based on Item Page Views</message>
+    <message key="cua.statlet.StatletCollectionTopFileDownloads">Last Month's most popular items based on file downloads</message>
+    <message key="cua.statlet.StatletCollectionMostPopularAuthors">Last Month's most popular authors</message>
+    <message key="cua.statlet.StatletAuthor">Author</message>
+    <message key="cua.statlet.StatletViewsAndDownloads">Views &amp; Downloads</message>
+
     <!--necessary for quicklook on datatables, if the MQM isn't also installed-->
     <message key="xmlui.metadataquality.batch-edit.field.label.dc.citation">Citation (dc.citation)</message>
     <message key="xmlui.metadataquality.batch-edit.field.label.dc.contributor.advisor">Advisor (dc.contributor.advisor)</message>

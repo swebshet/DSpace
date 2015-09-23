@@ -86,4 +86,13 @@
     <StatletThisCommunity><i18n:text>cua.statlet.this-community</i18n:text></StatletThisCommunity>
 
 
+
+    <StatletCollectionTopItemPageViews><i18n:text>cua.statlet.StatletCollectionTopItemPageViews</i18n:text></StatletCollectionTopItemPageViews>
+    <StatletCollectionTopFileDownloads><i18n:text>cua.statlet.StatletCollectionTopFileDownloads</i18n:text></StatletCollectionTopFileDownloads>
+    <StatletCollectionMostPopularAuthors><i18n:text>cua.statlet.StatletCollectionMostPopularAuthors</i18n:text></StatletCollectionMostPopularAuthors>
+
+    <StatletAuthor><i18n:text>cua.statlet.StatletAuthor</i18n:text></StatletAuthor>
+    <StatletViewsAndDownloads><i18n:text>cua.statlet.StatletViewsAndDownloads</i18n:text></StatletViewsAndDownloads>
+
+
 </root>
