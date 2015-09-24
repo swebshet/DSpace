@@ -36,7 +36,8 @@
         xmlns:rights="http://cosimo.stanford.edu/sdr/metsrights/"
         xmlns:confman="org.dspace.core.ConfigurationManager"
         xmlns:url="http://whatever/java/java.net.URLEncoder"
-        exclude-result-prefixes="xalan encoder i18n dri mets dim xlink xsl util jstring rights confman url">
+        xmlns:fallback="org.dspace.app.xmlui.aspect.artifactbrowser.ThumbnailFallBackImagesUtil"
+        exclude-result-prefixes="xalan encoder i18n dri mets dim xlink xsl util jstring rights confman url fallback">
 
     <xsl:import href="item-view-DIM-helper.xsl"/>
     <xsl:output indent="yes"/>
@@ -183,7 +184,7 @@
     <xsl:template name="itemSummaryView-DIM-thumbnail">
         <div class="thumbnail">
             <xsl:choose>
-                <xsl:when test="//mets:fileSec/mets:fileGrp[@USE='THUMBNAIL']">
+                <xsl:when test="//mets:fileSec/mets:fileGrp[@USE='THUMBNAIL'] and not(contains(//mets:fileSec/mets:fileGrp[@USE='THUMBNAIL']/mets:file/mets:FLocat[@LOCTYPE='URL']/@xlink:href,'isAllowed=n'))">
                     <xsl:variable name="src">
                         <xsl:choose>
                             <xsl:when test="/mets:METS/mets:fileSec/mets:fileGrp[@USE='THUMBNAIL']/mets:file[@GROUPID=../../mets:fileGrp[@USE='CONTENT']/mets:file[@GROUPID=../../mets:fileGrp[@USE='THUMBNAIL']/mets:file/@GROUPID][1]/@GROUPID]">
@@ -203,13 +204,24 @@
                     </img>
                 </xsl:when>
                 <xsl:otherwise>
-                    <img alt="Thumbnail">
-                        <xsl:attribute name="data-src">
-                            <xsl:text>holder.js/100%x</xsl:text>
-                            <xsl:value-of select="$thumbnail.maxheight"/>
-                            <xsl:text>/text:No Thumbnail</xsl:text>
-                        </xsl:attribute>
-                    </img>
+                    <xsl:choose>
+                        <xsl:when test="//mets:fileGrp[@USE='CONTENT']">
+                            <xsl:variable name="mimetype"
+                                          select="//mets:fileGrp[@USE='CONTENT']/mets:file/@MIMETYPE"/>
+                            <xsl:variable name="fallbackImage">
+                                <xsl:value-of select="fallback:getFallBackImagesAssociatedToExtension($mimetype)"/>
+                            </xsl:variable>
+                            <img alt="xmlui.mirage2.item-list.thumbnail" i18n:attr="alt"
+                                 src="{concat($theme-path, $fallbackImage)}"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:variable name="fallbackImage">
+                                <xsl:value-of select="fallback:getFallBackImagesAssociatedToExtension('default')"/>
+                            </xsl:variable>
+                            <img alt="xmlui.mirage2.item-list.thumbnail" i18n:attr="alt"
+                                 src="{concat($theme-path, $fallbackImage)}"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
                 </xsl:otherwise>
             </xsl:choose>
         </div>
