@@ -133,6 +133,11 @@
                     <xsl:if test="$ds_item_view_toggle_url != ''">
                         <xsl:call-template name="itemSummaryView-show-full"/>
                     </xsl:if>
+
+                    <xsl:if test="confman:getProperty('altmetrics', 'altmetric.enabled') and ($identifier_doi or $identifier_handle)">
+                        <xsl:call-template name='impact-altmetric'/>
+                    </xsl:if>
+
                 </div>
                 <div class="col-sm-8">
                     <xsl:call-template name="itemSummaryView-DIM-citation"/>
@@ -658,5 +663,55 @@
         <i18n:text i18n:key="{$mimetype-key}"><xsl:value-of select="$mimetype"/></i18n:text>
     </xsl:template>
 
+
+    <xsl:template name='impact-altmetric'>
+        <div id='impact-altmetric' class="item-page-field-wrapper">
+
+            <!-- Altmetric.com -->
+            <script type="text/javascript" src="{concat($scheme, 'd1bxh8uas1mnw7.cloudfront.net/assets/embed.js')}">&#160;</script>
+            <div id='altmetric'
+                 data-hide-no-mentions="true"
+                 class='altmetric-embed'>
+                <xsl:variable name='badge_type' select='confman:getProperty("altmetrics", "altmetric.badgeType")'/>
+                <xsl:if test='boolean($badge_type)'>
+                    <xsl:attribute name='data-badge-type'><xsl:value-of select='$badge_type'/></xsl:attribute>
+                </xsl:if>
+
+                <xsl:variable name='badge_popover' select='confman:getProperty("altmetrics", "altmetric.popover")'/>
+                <xsl:if test='$badge_popover'>
+                    <xsl:attribute name='data-badge-popover'><xsl:value-of select='$badge_popover'/></xsl:attribute>
+                </xsl:if>
+
+                <xsl:variable name='badge_details' select='confman:getProperty("altmetrics", "altmetric.details")'/>
+                <xsl:if test='$badge_details'>
+                    <xsl:attribute name='data-badge-details'><xsl:value-of select='$badge_details'/></xsl:attribute>
+                </xsl:if>
+
+                <xsl:variable name='no_score' select='confman:getProperty("altmetrics", "altmetric.noScore")'/>
+                <xsl:if test='$no_score'>
+                    <xsl:attribute name='data-no-score'><xsl:value-of select='$no_score'/></xsl:attribute>
+                </xsl:if>
+
+                <xsl:if test='confman:getProperty("altmetrics", "altmetric.hideNoMentions")'>
+                    <xsl:attribute name='data-hide-no-mentions'>true</xsl:attribute>
+                </xsl:if>
+
+                <xsl:variable name='link_target' select='confman:getProperty("altmetrics", "altmetric.linkTarget")'/>
+                <xsl:if test='$link_target'>
+                    <xsl:attribute name='data-link-target'><xsl:value-of select='$link_target'/></xsl:attribute>
+                </xsl:if>
+
+                <xsl:choose>    <!-- data-doi data-handle data-arxiv-id data-pmid -->
+                    <xsl:when test='$identifier_doi'>
+                        <xsl:attribute name='data-doi'><xsl:value-of select='$identifier_doi'/></xsl:attribute>
+                    </xsl:when>
+                    <xsl:when test='$identifier_handle'>
+                        <xsl:attribute name='data-handle'><xsl:value-of select='$identifier_handle'/></xsl:attribute>
+                    </xsl:when>
+                </xsl:choose>
+                &#xFEFF;
+            </div>
+        </div>
+    </xsl:template>
 
 </xsl:stylesheet>
