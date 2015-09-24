@@ -72,11 +72,11 @@ such as authors, subject, citation, description, etc
 
 
     <xsl:template name="itemSummaryView-DIM-notes">
-        <xsl:if test="dim:field[@element='description' and @qualifier=none]">
+        <xsl:if test="dim:field[@element='description'][not(@qualifier)]">
             <div class="simple-item-view-description item-page-field-wrapper table">
                 <h5 class="bold"><i18n:text>xmlui.dri2xhtml.METS-1.0.item-notes</i18n:text></h5>
                 <div>
-                    <xsl:for-each select="dim:field[@element='description' and @qualifier=none]">
+                    <xsl:for-each select="dim:field[@element='description'][not(@qualifier)]">
                         <xsl:choose>
                             <xsl:when test="node()">
                                 <xsl:copy-of select="node()"/>
@@ -85,11 +85,11 @@ such as authors, subject, citation, description, etc
                                 <xsl:text>&#160;</xsl:text>
                             </xsl:otherwise>
                         </xsl:choose>
-                        <xsl:if test="count(following-sibling::dim:field[@element='description' and @qualifier=none]) != 0">
+                        <xsl:if test="count(following-sibling::dim:field[@element='description'][not(@qualifier)]) != 0">
                             <div class="spacer">&#160;</div>
                         </xsl:if>
                     </xsl:for-each>
-                    <xsl:if test="count(dim:field[@element='description' and @qualifier=none] ) &gt; 1">
+                    <xsl:if test="count(dim:field[@element='description'][not(@qualifier)] ) &gt; 1">
                         <div class="spacer">&#160;</div>
                     </xsl:if>
                 </div>
@@ -116,12 +116,10 @@ such as authors, subject, citation, description, etc
                             </xsl:otherwise>
                         </xsl:choose>
                         <xsl:if test="count(following-sibling::dim:field[@element='crsubject' and @qualifier='crpsubject']) != 0">
-                            <div class="spacer">&#160;</div>
+                            <xsl:text>; </xsl:text>
                         </xsl:if>
                     </xsl:for-each>
-                    <xsl:if test="count(dim:field[@element='crsubject' and @qualifier='crpsubject'] ) &gt; 1">
-                        <div class="spacer">&#160;</div>
-                    </xsl:if>
+
                 </div>
             </div>
         </xsl:if>
@@ -290,7 +288,18 @@ such as authors, subject, citation, description, etc
                     <i18n:text>xmlui.dri2xhtml.METS-1.0.item-date</i18n:text>
                 </h5>
                 <xsl:for-each select="dim:field[@element='date' and @qualifier='issued']">
-                    <xsl:copy-of select="./node()"/>
+                    <xsl:variable name="date">
+                        <xsl:value-of
+                                select="substring(./node(),1,10)"/>
+                    </xsl:variable>
+                    <xsl:variable name="year" select="substring($date, 1, 4)"/>
+                    <xsl:variable name="month" select="substring($date, 6, 2)"/>
+                    <xsl:value-of select="$year"/>
+
+                    <xsl:if test="$month">
+                        <xsl:text>-</xsl:text>
+                        <xsl:value-of select="$month"/>
+                    </xsl:if>
                     <xsl:if test="count(following-sibling::dim:field[@element='date' and @qualifier='issued']) != 0">
                         <br/>
                     </xsl:if>
@@ -299,20 +308,131 @@ such as authors, subject, citation, description, etc
         </xsl:if>
     </xsl:template>
     <xsl:template name="itemSummaryView-DIM-subjects">
-        <xsl:if test="dim:field[@element='subject' and descendant::text()] or dim:field[@element='crsubject' and descendant::text()]">
+        <xsl:variable name="subjectTest">
+            <xsl:value-of select="dim:field[@element='subject' and not(@qualifier)]
+        or dim:field[@element='crsubject' and @qualifier='crpsubject']
+        or dim:field[@element='ccsubject' and @qualifier='ccafsubject']
+        or dim:field[@element='cisubject' and @qualifier='ciforsubject']
+        or dim:field[@element='cpsubject' and @qualifier='cpwfsubject']
+        or dim:field[@element='isubject' and @qualifier='ilrisubject']
+        or dim:field[@element='iwsubject' and @qualifier='iwmisubject']
+        or dim:field[@mdschema='cg' and @element='subject' and @qualifier='wle']
+        or dim:field[@mdschema='cg' and @element='subject' and @qualifier='cip']
+        or dim:field[@mdschema='cg' and @element='subject' and @qualifier='drylands']
+        or dim:field[@mdschema='cg' and @element='subject' and @qualifier='icarda']"/>
+        </xsl:variable>
+        <xsl:if test="$subjectTest">
             <div class="word-break item-page-field-wrapper table">
                 <h5 class="bold">
                     <i18n:text>xmlui.dri2xhtml.METS-1.0.item-subject</i18n:text>
                 </h5>
-                <xsl:for-each select="dim:field[@element='subject' or @element='crsubject']">
+                <span class="cgiar-subjects">
+                <xsl:for-each select="dim:field[@element='subject' and not(@qualifier)]">
                     <xsl:copy-of select="./node()"/>
-                    <xsl:if test="count(following-sibling::dim:field[@element='subject' or @element='crsubject']) != 0">
                         <xsl:text>; </xsl:text>
-                    </xsl:if>
                 </xsl:for-each>
+                <xsl:call-template name="crpsubject"/>
+                <xsl:call-template name="ccafsubject"/>
+                <xsl:call-template name="ciforsubject"/>
+                <xsl:call-template name="cpwfsubject"/>
+                <xsl:call-template name="ilrisubject"/>
+                <xsl:call-template name="iwmisubject"/>
+                <xsl:call-template name="wlesubject"/>
+                <xsl:call-template name="cipsubject"/>
+                <xsl:call-template name="drylandssubject"/>
+                <xsl:call-template name="icardasubject"/>
+                </span>
             </div>
         </xsl:if>
     </xsl:template>
+
+
+    <xsl:template name="crpsubject">
+        <xsl:if test="dim:field[@element='crsubject' and @qualifier='crpsubject']">
+            <xsl:for-each select="dim:field[@element='crsubject' or @qualifier='crpsubject']">
+                <xsl:copy-of select="./node()"/>
+                    <xsl:text>; </xsl:text>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template name="ccafsubject">
+        <xsl:if test="dim:field[@element='ccsubject' and @qualifier='ccafsubject']">
+            <xsl:for-each select="dim:field[@element='ccsubject' and @qualifier='ccafsubject']">
+                <xsl:copy-of select="./node()"/>
+                    <xsl:text>; </xsl:text>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template name="ciforsubject">
+        <xsl:if test="dim:field[@element='cisubject' and @qualifier='ciforsubject']">
+            <xsl:for-each select="dim:field[@element='cisubject' and @qualifier='ciforsubject']">
+                <xsl:copy-of select="./node()"/>
+                    <xsl:text>; </xsl:text>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template name="cpwfsubject">
+        <xsl:if test="dim:field[@element='cpsubject' and @qualifier='cpwfsubject']">
+            <xsl:for-each select="dim:field[@element='cpsubject' and @qualifier='cpwfsubject']">
+                <xsl:copy-of select="./node()"/>
+                    <xsl:text>; </xsl:text>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template name="ilrisubject">
+        <xsl:if test="dim:field[@element='isubject' and @qualifier='ilrisubject']">
+            <xsl:for-each select="dim:field[@element='isubject' and @qualifier='ilrisubject']">
+                <xsl:copy-of select="./node()"/>
+                    <xsl:text>; </xsl:text>
+                <xsl:if test="count(following-sibling::dim:field[@element='isubject' and @qualifier='ilrisubject']) != 0">
+                </xsl:if>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template name="iwmisubject">
+        <xsl:if test="dim:field[@element='iwsubject' and @qualifier='iwmisubject']">
+            <xsl:for-each select="dim:field[@element='iwsubject' and @qualifier='iwmisubject']">
+                <xsl:copy-of select="./node()"/>
+                    <xsl:text>; </xsl:text>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template name="wlesubject">
+        <xsl:if test="dim:field[@mdschema='cg' and @element='subject' and @qualifier='wle']">
+            <xsl:for-each select="dim:field[@mdschema='cg' and @element='subject' and @qualifier='wle']">
+                <xsl:copy-of select="./node()"/>
+                    <xsl:text>; </xsl:text>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template name="cipsubject">
+        <xsl:if test="dim:field[@mdschema='cg' and @element='subject' and @qualifier='cip']">
+            <xsl:for-each select="dim:field[@mdschema='cg' and @element='subject' and @qualifier='cip']">
+                <xsl:copy-of select="./node()"/>
+                    <xsl:text>; </xsl:text>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template name="drylandssubject">
+        <xsl:if test="dim:field[@mdschema='cg' and @element='subject' and @qualifier='drylands']">
+            <xsl:for-each select="dim:field[@mdschema='cg' and @element='subject' and @qualifier='drylands']">
+                <xsl:copy-of select="./node()"/>
+                    <xsl:text>; </xsl:text>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template name="icardasubject">
+        <xsl:if test="dim:field[@mdschema='cg' and @element='subject' and @qualifier='icarda']">
+            <xsl:for-each select="dim:field[@mdschema='cg' and @element='subject' and @qualifier='icarda']">
+                <xsl:copy-of select="./node()"/>
+                <xsl:if test="count(following-sibling::dim:field[@mdschema='cg' and @element='subject' and @qualifier='icarda']) != 0">
+                    <xsl:text>; </xsl:text>
+                </xsl:if>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
+
+
     <xsl:template name="itemSummaryView-DIM-countries">
         <xsl:if test="dim:field[@element='cplace' and @qualifier='country' and descendant::text()]">
             <div class="word-break item-page-field-wrapper table">
@@ -396,7 +516,7 @@ such as authors, subject, citation, description, etc
         <xsl:if test="dim:field[@element='description' and @qualifier='version' and descendant::text()]">
             <div class=" word-break item-page-field-wrapper table">
                 <h5 class="bold">
-                    <i18n:text>xmlui.dri2xhtml.METS-1.0.item-output-type</i18n:text>
+                    <i18n:text>xmlui.dri2xhtml.METS-1.0.item-review-status</i18n:text>
                 </h5>
                 <xsl:for-each select="dim:field[@element='description' and @qualifier='version' ]">
                     <xsl:copy-of select="./node()"/>
