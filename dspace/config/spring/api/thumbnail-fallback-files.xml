@@ -49,6 +49,9 @@
         <entry key="application/msword" value="images/fallback-mimetypes/x-office-document.svg"/>
         <entry key="application/vnd.openxmlformats-officedocument.wordprocessingml.document" value="images/fallback-mimetypes/x-office-document.svg"/>
 
+        <!--Images (jpeg for now)-->
+        <entry key="image/jpeg" value="images/fallback-mimetypes/image-jpeg.svg"/>
+
         <entry key="default" value="images/fallback-mimetypes/application-x-zerosize.svg"/>
     </util:map>
 

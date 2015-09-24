@@ -160,7 +160,8 @@
 
             <a class="image-link" href="{$href}">
                 <xsl:choose>
-                    <xsl:when test="mets:fileGrp[@USE='THUMBNAIL']">
+                    <!--Check if the user is allowed to see the actual thumbnail -> if not, revert to the fallback thumbnail functionality -->
+                    <xsl:when test="mets:fileGrp[@USE='THUMBNAIL'] and not(contains(//mets:fileSec/mets:fileGrp[@USE='THUMBNAIL']/mets:file/mets:FLocat[@LOCTYPE='URL']/@xlink:href,'isAllowed=n'))">
                         <img class="img-responsive" alt="xmlui.mirage2.item-list.thumbnail" i18n:attr="alt">
                             <xsl:attribute name="src">
                                 <xsl:value-of
