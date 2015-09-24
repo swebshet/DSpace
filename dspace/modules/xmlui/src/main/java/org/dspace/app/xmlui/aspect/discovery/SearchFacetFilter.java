@@ -204,7 +204,7 @@ public class SearchFacetFilter extends AbstractDSpaceTransformer implements Cach
 //        queryArgs.setQuery("search.resourcetype:" + Constants.ITEM);
         queryArgs.setDSpaceObjectFilter(Constants.ITEM);
 
-        queryArgs.setMaxResults(getPageSize());
+        queryArgs.setMaxResults(0);
 
         queryArgs.addFilterQueries(DiscoveryUIUtils.getFilterQueries(request, context));
 
