@@ -164,7 +164,7 @@
                         <img class="img-responsive" alt="xmlui.mirage2.item-list.thumbnail" i18n:attr="alt">
                             <xsl:attribute name="src">
                                 <xsl:value-of
-                                        select="mets:fileGrp[@USE='THUMBNAIL']/mets:file/@MIMETYPE"/>
+                                        select="mets:fileGrp[@USE='THUMBNAIL']/mets:file/mets:FLocat[@LOCTYPE='URL']/@xlink:href"/>
                             </xsl:attribute>
                         </img>
                     </xsl:when>
