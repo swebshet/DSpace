@@ -246,7 +246,7 @@
         };
 
         statletNS.chartist.pre.bar_countries = function (statlet) {
-            statletNS.chartist.pre.bar(statlet);
+            statletNS.chartist.pre.distributed_bar(statlet);
 
             for (var size in viewports) {
                 if (viewports.hasOwnProperty(size)) {
@@ -263,7 +263,7 @@
         };
 
         statletNS.chartist.post.bar_countries = function (statlet, content, callback) {
-            statletNS.chartist.post.bar(statlet, content, callback);
+            statletNS.chartist.post.distributed_bar(statlet, content, callback);
         };
 
     }
