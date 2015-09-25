@@ -396,7 +396,7 @@
 
                     <render>
                         <default>
-                            <graph-type>distributed_bar</graph-type>
+                            <graph-type>bar_countries</graph-type>
                         </default>
                     </render>
                 </graph>
