@@ -237,7 +237,7 @@
 
         statletNS.chartist.pre.line_downloads = function (statlet) {
             statletNS.chartist.pre.line(statlet);
-            var seriesNames = ['downloads'];
+            var seriesNames = ['abstracts'];
             setSeriesClassNames(statlet, seriesNames);
         };
 
