@@ -2,6 +2,8 @@
     window.atmire = window.atmire || {};
     window.atmire.CUA = window.atmire.CUA || {};
     window.atmire.CUA.statlet = window.atmire.CUA.statlet || {};
+    var afterLoadAdditionsCallbacks = atmire.CUA.statlet.afterLoadAdditionsCallbacks = atmire.CUA.statlet.afterLoadAdditionsCallbacks || [];
+    afterLoadAdditionsCallbacks.push(override);
 
     var cuaTemplates = ["bar", "pie"];
     var templateMapper = {
@@ -30,10 +32,6 @@
     }
 
     function override() {
-        if (typeof window.atmire.CUA.statlet.template === 'undefined') {
-            setTimeout(override, 10);
-            return;
-        }
 
         var cua = atmire.CUA = atmire.CUA || {};
         var statletNS = atmire.CUA.statlet;
@@ -267,9 +265,6 @@
         };
 
     }
-
-    override();
-
 
 })(jQuery);
 
