@@ -10,7 +10,8 @@
         line: "bar",
         donut: "pie",
         pie: "pie",
-        line_downloads: "bar"
+        line_downloads: "bar",
+        bar_countries: "distributed_bar"
     };
 
 
@@ -242,6 +243,27 @@
 
         statletNS.chartist.post.line_downloads = function (statlet, content, callback) {
             statletNS.chartist.post.line(statlet, content, callback);
+        };
+
+        statletNS.chartist.pre.bar_countries = function (statlet) {
+            statletNS.chartist.pre.bar(statlet);
+
+            for (var size in viewports) {
+                if (viewports.hasOwnProperty(size)) {
+                    statlet.chartist[size].labels = statlet.labels;
+                }
+            }
+
+            var seriesNames = [];
+            var dataLength = statlet.chartist[atmire.CUA.getViewPort()].series.length;
+            for (var i = 0; i < dataLength; i++){
+                seriesNames.push('abstracts');
+            }
+            setSeriesClassNames(statlet, seriesNames);
+        };
+
+        statletNS.chartist.post.bar_countries = function (statlet, content, callback) {
+            statletNS.chartist.post.bar(statlet, content, callback);
         };
 
     }
