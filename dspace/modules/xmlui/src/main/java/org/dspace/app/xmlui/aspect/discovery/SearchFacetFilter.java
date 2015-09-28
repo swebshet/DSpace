@@ -63,6 +63,7 @@ public class SearchFacetFilter extends AbstractDSpaceTransformer implements Cach
     private static final Message T_dspace_home = message("xmlui.general.dspace_home");
     private static final Message T_starts_with = message("xmlui.Discovery.AbstractSearch.startswith");
     private static final Message T_starts_with_help = message("xmlui.Discovery.AbstractSearch.startswith.help");
+    private static SORT sortOrder;
 
     /**
      * The cache of recently submitted items
@@ -249,9 +250,12 @@ public class SearchFacetFilter extends AbstractDSpaceTransformer implements Cach
 
     private SORT getSortOrder(Request request) {
         String sortOrderString = request.getParameter("order");
-        // Defaults to sort on value if none found
-        SORT sortOrder ;
-        if(StringUtils.isBlank(sortOrderString) || SORT.valueOf(request.getParameter("order").toUpperCase())==null ){
+        // First check for an already configured sortOrder (provided a new one is not being set)
+        if(sortOrder!=null && StringUtils.isBlank(sortOrderString)){
+            return sortOrder;
+        }
+        // Default to sort on value if none found
+        if(StringUtils.isBlank(sortOrderString) || SORT.valueOf(sortOrderString.toUpperCase())==null){
             sortOrder= SORT.VALUE;
         }else{
             sortOrder= SORT.valueOf(request.getParameter("order").toUpperCase());
