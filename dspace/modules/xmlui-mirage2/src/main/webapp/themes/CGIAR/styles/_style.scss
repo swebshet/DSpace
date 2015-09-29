@@ -197,3 +197,14 @@ footer div.footer{
   width:100%;
   background-color: #fcfcfc;
 }
+
+#aspect_discovery_CollectionSearch_p_search-query,#aspect_discovery_CommunitySearch_p_search-query{
+  left:25%;
+ }
+div.secondary.search-browse{
+  text-align: center;
+  p{
+    font-size:16px;
+    color:$brand-primary;
+  }
+}

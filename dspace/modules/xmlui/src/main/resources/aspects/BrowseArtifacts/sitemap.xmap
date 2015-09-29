@@ -84,7 +84,6 @@ collections / items / and bitstreams.
 
                         <map:match type="HandleTypeMatcher" pattern="community">
                             <map:match pattern="handle/*/*">
-                                <map:transform type="CommunityBrowse"/>
                                 <map:transform type="CommunityRecentSubmissions"/>
                             </map:match>
                         </map:match>
@@ -92,7 +91,6 @@ collections / items / and bitstreams.
                         <map:match type="HandleTypeMatcher" pattern="collection">
                             <map:match pattern="handle/*/*">
                                 <map:match type="ContainerHomePageSelector" pattern="metadata">
-                                    <map:transform type="CollectionBrowse"/>
                                     <map:transform type="CollectionRecentSubmissions"/>
                                 </map:match>
                             </map:match>
