@@ -88,7 +88,6 @@ public class Navigation extends AbstractDSpaceTransformer implements CacheablePr
         options.addList("discovery");
         options.addList("context");
         options.addList("administrative");
-        options.addList("browse");
     }
 
     /**
