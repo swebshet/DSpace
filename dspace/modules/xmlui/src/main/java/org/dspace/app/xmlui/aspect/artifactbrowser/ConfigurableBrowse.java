@@ -730,6 +730,7 @@ public class ConfigurableBrowse extends AbstractDSpaceTransformer implements
             params.scope.setSortBy(sortBy);
 
             params.scope.setJumpToItem(RequestUtils.getIntParameter(request, BrowseParams.JUMPTO_ITEM));
+            params.scope.setOrder(request.getParameter(BrowseParams.ORDER));
             updateOffset(request, params);
             params.scope.setResultsPerPage(RequestUtils.getIntParameter(request, BrowseParams.RESULTS_PER_PAGE));
             params.scope.setStartsWith(decodeFromURL(request.getParameter(BrowseParams.STARTS_WITH)));
@@ -794,7 +795,6 @@ public class ConfigurableBrowse extends AbstractDSpaceTransformer implements
     }
 
     private void updateOffset(Request request, BrowseParams params) {
-        params.scope.setOrder(request.getParameter(BrowseParams.ORDER));
         int configuredOffset=-1;
         boolean retainOffset = false;
         if (request.getParameters().containsKey("update")) {
