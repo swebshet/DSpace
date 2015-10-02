@@ -820,20 +820,16 @@ DAMAGE.
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.country_mtdt">Countries</message>
 
 
-    <message key="cua.statlet.item-views">Last 6 months pageviews</message>
-    <message key="cua.statlet.homepage.item-views">Page Views</message>
+    <message key="cua.statlet.item-views">Page Views</message>
     <message key="cua.statlet.views">Views</message>
-    <message key="cua.statlet.bitstream-downloads">last 6 months downloads</message>
-    <message key="cua.statlet.homepage.bitstream-downloads">Downloads</message>
-    <message key="cua.statlet.views">Views</message>
-    <message key="cua.statlet.bitstream-downloads">last 6 months downloads</message>
+    <message key="cua.statlet.bitstream-downloads">Downloads</message>
     <message key="cua.statlet.downloads">Downloads</message>
     <message key="cua.statlet.type">Type</message>
     <message key="cua.statlet.total">Total</message>
     <message key="cua.statlet.total-hits">All Time Usage</message>
     <message key="cua.statlet.country">Country</message>
-    <message key="cua.statlet.top-5-country-views">Top 5 countries based on Item Page Views</message>
-    <message key="cua.statlet.top-5-country-downloads">Top 5 countries based on Item File Downloads</message>
+    <message key="cua.statlet.top-5-country-views">Last 6 months pageviews</message>
+    <message key="cua.statlet.top-5-country-downloads">last 6 months downloads</message>
     <message key="cua.statlet.item-views-month">Item Page Views by month</message>
     <message key="cua.statlet.bitstream-downloads-month">File Downloads by month</message>
     <message key="cua.statlet.top-items-views">Top items by number of views</message>
