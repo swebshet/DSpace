@@ -820,9 +820,13 @@ DAMAGE.
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.country_mtdt">Countries</message>
 
 
-    <message key="cua.statlet.item-views">Item Page Views</message>
+    <message key="cua.statlet.item-views">Last 6 months pageviews</message>
+    <message key="cua.statlet.homepage.item-views">Page Views</message>
     <message key="cua.statlet.views">Views</message>
-    <message key="cua.statlet.bitstream-downloads">File Downloads</message>
+    <message key="cua.statlet.bitstream-downloads">last 6 months downloads</message>
+    <message key="cua.statlet.homepage.bitstream-downloads">Downloads</message>
+    <message key="cua.statlet.views">Views</message>
+    <message key="cua.statlet.bitstream-downloads">last 6 months downloads</message>
     <message key="cua.statlet.downloads">Downloads</message>
     <message key="cua.statlet.type">Type</message>
     <message key="cua.statlet.total">Total</message>
