@@ -95,6 +95,7 @@
 
         <!-- Atmire CUA instead of DSpace Statistics -->
         <aspect name="CUA" path="resource://aspects/Statistics/" />
+        <aspect name="QualityAssurance" path="resource://aspects/MetadataQuality/" />
         <aspect name="Atmire Modules Aspect" path="resource://aspects/AtmireModules/" />
 
         <!--
@@ -193,7 +194,9 @@
         <!-- <theme name="Test Theme 2" regex="community-list" path="theme2/"/> -->
 
         <!-- Mirage theme, @mire contributed theme, default since DSpace 3.0 -->
-        <theme name="Atmire Mirage Theme" regex=".*" path="Mirage/" />
+        <!--<theme name="Atmire Mirage Theme" regex=".*" path="Mirage/" />-->
+        <theme name="CGIAR" regex=".*" path="CGIAR/" />
+
 
         <!-- Reference theme, the default Manakin XMLUI layout up to DSpace 1.8 -->
         <!-- <theme name="Default Reference Theme" regex=".*" path="Reference/" /> -->
