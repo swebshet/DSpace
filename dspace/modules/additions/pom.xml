@@ -72,6 +72,29 @@
    Runtime and Compile Time dependencies for DSpace.
    -->
    <dependencies>
+      <!-- dependencies on atmire modules before dependencies on dspace core-->
+      <dependency>
+         <groupId>com.atmire</groupId>
+         <artifactId>atmire-listings-and-reports-api</artifactId>
+         <version>${listings-and-reports.version.number}</version>
+      </dependency>
+      <dependency>
+         <groupId>com.atmire</groupId>
+         <artifactId>atmire-cua-api</artifactId>
+         <version>${cua.version.number}</version>
+         <exclusions>
+            <exclusion>
+               <artifactId>jsp-api</artifactId>
+               <groupId>javax.servlet.jsp</groupId>
+            </exclusion>
+         </exclusions>
+      </dependency>
+      <dependency>
+         <groupId>com.atmire</groupId>
+         <artifactId>atmire-metadata-quality-api</artifactId>
+         <version>${mqm.version.number}</version>
+      </dependency>
+
       <dependency>
          <groupId>org.dspace</groupId>
          <artifactId>dspace-api</artifactId>
@@ -96,27 +119,6 @@
             </exclusion>
          </exclusions>
       </dependency>
-      <dependency>
-         <groupId>com.atmire</groupId>
-         <artifactId>atmire-listings-and-reports-api</artifactId>
-         <version>${listings-and-reports.version.number}</version>
-      </dependency>
-      <dependency>
-         <groupId>com.atmire</groupId>
-         <artifactId>atmire-cua-api</artifactId>
-         <version>${cua.version.number}</version>
-         <exclusions>
-            <exclusion>
-               <artifactId>jsp-api</artifactId>
-               <groupId>javax.servlet.jsp</groupId>
-            </exclusion>
-         </exclusions>
-      </dependency>
-       <dependency>
-           <groupId>com.atmire</groupId>
-           <artifactId>atmire-metadata-quality-api</artifactId>
-           <version>${mqm.version.number}</version>
-       </dependency>
 
    </dependencies>
 

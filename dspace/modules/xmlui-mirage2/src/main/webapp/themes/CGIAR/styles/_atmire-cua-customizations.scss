@@ -1,0 +1,24 @@
+$abstract-views-color: #427730;
+$file-downloads-color: #7AB800;
+
+$cua-ct-series-names: (downloads, abstracts);
+$cua-ct-series-colors: ($file-downloads-color, $abstract-views-color);
+
+@for $i from 0 to length($cua-ct-series-names) {
+    $cua-serie-name: nth($cua-ct-series-names, $i + 1);
+    $cua-serie-color: nth($cua-ct-series-colors, $i + 1);
+
+    .ct-chart {
+        .ct-series.ct-series-#{$cua-serie-name} {
+            @include ct-chart-series-color($cua-serie-color);
+        }
+    }
+    .ct-legend {
+        .ct-legend-serie-#{$cua-serie-name} {
+            .fa {
+                color: $cua-serie-color;
+            }
+        }
+    }
+}
+

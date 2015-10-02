@@ -1,4 +1,8 @@
+$fa-font-path: "../vendor/fontawesome/fonts";
+
+@import "../vendor/fontawesome/scss/font-awesome";
 @import "atmire-cua";
+@import "atmire-cua-customizations";
 
 .navbar-brand {
   padding: 5px 15px;
@@ -126,6 +130,9 @@ button.navbar-toggle.visible-sm:hover {
   .navbar-toggle {
     display: inline;
   }
+  .community-browser-wrapper {
+    max-width: none;
+  }
 }
 
 .footermargin > a{
@@ -156,13 +163,48 @@ div.item-wrapper.row{
   margin-bottom:20px;
 }
 
-.artifact-description a{
-color:black;}
 
 .description-info{
   display:inline-table;
 width:85%
 }
-.thumbnail img{
-  max-width: 128px;
+.thumbnail>img, .thumbnail a>img{
+  width: 128px;
+  border:0;
+}
+#aspect_statistics_StatletTransformer_div_showStats{
+  display: none;
+}
+
+.orcid-icon-link img{
+  margin-left: 5px;
+  height:20px;
+  width:20px;
+}
+
+.ds-dc_contributor_author-authority {
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+
+
+.community-browser-row a[name='community-browser-link'] {
+  line-height: 20px;
+  font-size: 15px;
+}
+
+footer div.footer{
+  width:100%;
+  background-color: #fcfcfc;
+}
+
+#aspect_discovery_CollectionSearch_p_search-query,#aspect_discovery_CommunitySearch_p_search-query{
+  left:25%;
+ }
+div.secondary.search-browse{
+  text-align: center;
+  p{
+    font-size:16px;
+    color:$brand-primary;
+  }
 }
