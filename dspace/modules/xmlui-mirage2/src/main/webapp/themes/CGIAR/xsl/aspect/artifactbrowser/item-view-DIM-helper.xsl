@@ -40,8 +40,7 @@ such as authors, subject, citation, description, etc
         xmlns:rights="http://cosimo.stanford.edu/sdr/metsrights/"
         xmlns:confman="org.dspace.core.ConfigurationManager"
         xmlns:url="http://whatever/java/java.net.URLEncoder"
-        xmlns:orcid="org.dspace.app.xmlui.aspect.viewArtifacts.AuthorityToOrcidID"
-        exclude-result-prefixes="xalan encoder i18n dri mets dim xlink xsl util jstring rights confman url orcid">
+        exclude-result-prefixes="xalan encoder i18n dri mets dim xlink xsl util jstring rights confman url">
 
     <xsl:output indent="yes"/>
     <xsl:template name="itemSummaryView-DIM-citation">
@@ -247,10 +246,10 @@ such as authors, subject, citation, description, etc
                 </xsl:attribute>
                 <xsl:copy-of select="node()"/>
             </a>
-            <xsl:if test="@authority and orcid:getOrcidID(@authority)">
+            <xsl:if test="@authority">
                 <a class="orcid-icon-link" target="_blank">
                     <xsl:attribute name="href">
-                        <xsl:value-of select="concat('//orcid.org/',orcid:getOrcidID(@authority))"/>
+                        <xsl:value-of select="'//orcid.org/'"/>
                     </xsl:attribute>
 
                     <img alt="xmlui.mirage2.item-list.thumbnail" i18n:attr="alt"
