@@ -27,7 +27,7 @@ public class ORCIDMetadataPlugin implements ItemAdapterMetadataPlugin {
 	@Override
 	public Collection<? extends Metadatum> generateMetadataForItem(Request request,Context context,Item item) {
 		ConfigurationService confman = new DSpace().getConfigurationService();
-		String authorConfField = "authority.author.indexer.field";
+		String authorConfField = "authority.author.indexer.field.";
 
 		List<Metadatum> values = new ArrayList<>();
 		List<String> authorFields = new ArrayList<>();
@@ -40,23 +40,24 @@ public class ORCIDMetadataPlugin implements ItemAdapterMetadataPlugin {
 			Metadatum authors[] = item.getMetadataByMetadataString(authorField);
 
 			for(Metadatum author : authors) {
-				String authority = author.authority;
-				Metadatum md = new Metadatum();
-				md.value = getOrcidID(authority, context);
-				md.schema = "atmire";
-				md.element = "orcid";
-				md.qualifier = "id";
-				md.authority = authority;
+				if(author != null) {
+					String authority = author.authority;
+					Metadatum md = new Metadatum();
+					md.value = getOrcidID(authority, context);
+					md.schema = "atmire";
+					md.element = "orcid";
+					md.qualifier = "id";
+					md.authority = authority;
 
-				values.add(md);
+					values.add(md);
+				}
 			}
 		}
 
 		return values;
 	}
 
-	public String getOrcidID(String authorityValue, Context context) {
-		// Extra check for the authorityValue, should previously be checked in the xsl to see if authoriy even exist in the first place, <xsl:if test="@authority/>, only then call this method
+	private String getOrcidID(String authorityValue, Context context) {
 		if (StringUtils.isBlank(authorityValue)) {
 			return null;
 		}
