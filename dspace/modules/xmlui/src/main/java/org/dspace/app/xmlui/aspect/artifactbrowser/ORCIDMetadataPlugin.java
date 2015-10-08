@@ -49,7 +49,9 @@ public class ORCIDMetadataPlugin implements ItemAdapterMetadataPlugin {
 					md.qualifier = "id";
 					md.authority = authority;
 
-					values.add(md);
+					if(StringUtils.isNotBlank(md.value)) {
+						values.add(md);
+					}
 				}
 			}
 		}
