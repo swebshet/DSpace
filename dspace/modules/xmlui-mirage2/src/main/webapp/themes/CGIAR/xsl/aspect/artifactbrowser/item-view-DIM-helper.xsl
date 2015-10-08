@@ -246,10 +246,10 @@ such as authors, subject, citation, description, etc
                 </xsl:attribute>
                 <xsl:copy-of select="node()"/>
             </a>
-            <xsl:if test="@authority and dim:field[@mschema='atmire' and @element='orcid' and @qualifier='id']">
+            <xsl:if test="@authority and ../dim:field[@mdschema='atmire' and @element='orcid' and @qualifier='id']">
                 <a class="orcid-icon-link" target="_blank">
                     <xsl:attribute name="href">
-                        <xsl:value-of select="concat('//orcid.org/', dim:field[@mschema='atmire' and @element='orcid' and @qualifier='id'])"/>
+                        <xsl:value-of select="concat('//orcid.org/', ../dim:field[@mdschema='atmire' and @element='orcid' and @qualifier='id']/text())"/>
                     </xsl:attribute>
 
                     <img alt="xmlui.mirage2.item-list.thumbnail" i18n:attr="alt"
