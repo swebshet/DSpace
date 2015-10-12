@@ -44,49 +44,8 @@
     <!-- TODO: figure out why i18n tags break the go button -->
     <xsl:template match="dri:options">
         <div id="ds-options" class="word-break hidden-print">
-
             <xsl:apply-templates/>
-            <!-- DS-984 Add RSS Links to Options Box -->
-            <xsl:if test="count(/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='feed']) != 0">
-                <div>
-                    <h2 class="ds-option-set-head h6">
-                        <i18n:text>xmlui.feed.header</i18n:text>
-                    </h2>
-                    <div id="ds-feed-option" class="ds-option-set list-group">
-                        <xsl:call-template name="addRSSLinks"/>
-                    </div>
-                </div>
-
-            </xsl:if>
         </div>
-    </xsl:template>
-
-    <!-- Add each RSS feed from meta to a list -->
-    <xsl:template name="addRSSLinks">
-        <xsl:for-each select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='feed']">
-            <a class="list-group-item">
-                <xsl:attribute name="href">
-                    <xsl:value-of select="."/>
-                </xsl:attribute>
-
-                <img src="{concat($context-path, '/static/icons/feed.png')}" class="btn-xs" alt="xmlui.mirage2.navigation.rss.feed" i18n:attr="alt"/>
-
-                <xsl:choose>
-                    <xsl:when test="contains(., 'rss_1.0')">
-                        <xsl:text>RSS 1.0</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="contains(., 'rss_2.0')">
-                        <xsl:text>RSS 2.0</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="contains(., 'atom_1.0')">
-                        <xsl:text>Atom</xsl:text>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:value-of select="@qualifier"/>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </a>
-        </xsl:for-each>
     </xsl:template>
 
     <xsl:template match="dri:options//dri:list">

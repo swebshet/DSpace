@@ -103,18 +103,40 @@ such as authors, subject, citation, description, etc
                     <xsl:for-each select="dim:field[@element='crsubject' and @qualifier='crpsubject']">
                         <xsl:choose>
                             <xsl:when test="node()">
-                                <a target="_black" >
-                                    <xsl:attribute name="href">
-                                        <xsl:value-of select="concat($context-path,'/discover?filtertype=crpsubject&amp;filter_relational_operator=equals&amp;filter=',url:encode(node()))"></xsl:value-of>
-                                    </xsl:attribute>
-                                    <xsl:copy-of select="./node()"/>
-                                </a>
+                                <xsl:call-template name="discovery-link">
+                                    <xsl:with-param name="filtertype" select="'crpsubject'"/>
+                                </xsl:call-template>
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:text>&#160;</xsl:text>
                             </xsl:otherwise>
                         </xsl:choose>
                         <xsl:if test="count(following-sibling::dim:field[@element='crsubject' and @qualifier='crpsubject']) != 0">
+                            <xsl:text>; </xsl:text>
+                        </xsl:if>
+                    </xsl:for-each>
+
+                </div>
+            </div>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template name="itemSummaryView-DIM-subject">
+        <xsl:if test="dim:field[@element='subject' and not(@qualifier)]">
+            <div class="simple-item-view-description item-page-field-wrapper table">
+                <h5 class="bold"><i18n:text>xmlui.dri2xhtml.METS-1.0.item-agrovoc-terms</i18n:text></h5>
+                <div>
+                    <xsl:for-each select="dim:field[@element='subject' and not(@qualifier)]">
+                        <xsl:choose>
+                            <xsl:when test="node()">
+                                <xsl:call-template name="discovery-link">
+                                    <xsl:with-param name="filtertype" select="'subject'"/>
+                                </xsl:call-template>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:text>&#160;</xsl:text>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                        <xsl:if test="count(following-sibling::dim:field[@element='subject' and not(@qualifier)]) != 0">
                             <xsl:text>; </xsl:text>
                         </xsl:if>
                     </xsl:for-each>
@@ -237,15 +259,10 @@ such as authors, subject, citation, description, etc
             <xsl:if test="@authority">
                 <xsl:attribute name="class"><xsl:text>ds-dc_contributor_author-authority</xsl:text></xsl:attribute>
             </xsl:if>
-            <xsl:variable name="authorLink">
-                <xsl:value-of select="concat($context-path,'/discover?filtertype=author&amp;filter_relational_operator=equals&amp;filter=',url:encode(node()))"></xsl:value-of>
-            </xsl:variable>
-            <a target="_blank">
-                <xsl:attribute name="href" >
-                    <xsl:value-of select="$authorLink"/>
-                </xsl:attribute>
-                <xsl:copy-of select="node()"/>
-            </a>
+            <xsl:call-template name="discovery-link">
+                <xsl:with-param name="filtertype" select="'author'"/>
+            </xsl:call-template>
+
             <xsl:if test="@authority and ../dim:field[@mdschema='atmire' and @element='orcid' and @qualifier='id']">
                 <a class="orcid-icon-link" target="_blank">
                     <xsl:attribute name="href">
@@ -308,9 +325,7 @@ such as authors, subject, citation, description, etc
     </xsl:template>
     <xsl:template name="itemSummaryView-DIM-subjects">
         <xsl:variable name="subjectTest">
-            <xsl:value-of select="dim:field[@element='subject' and not(@qualifier)]
-        or dim:field[@element='crsubject' and @qualifier='crpsubject']
-        or dim:field[@element='ccsubject' and @qualifier='ccafsubject']
+            <xsl:value-of select="dim:field[@element='ccsubject' and @qualifier='ccafsubject']
         or dim:field[@element='cisubject' and @qualifier='ciforsubject']
         or dim:field[@element='cpsubject' and @qualifier='cpwfsubject']
         or dim:field[@element='isubject' and @qualifier='ilrisubject']
@@ -326,38 +341,40 @@ such as authors, subject, citation, description, etc
                     <i18n:text>xmlui.dri2xhtml.METS-1.0.item-subject</i18n:text>
                 </h5>
                 <span class="cgiar-subjects">
-                <xsl:for-each select="dim:field[@element='subject' and not(@qualifier)]">
-                    <xsl:copy-of select="./node()"/>
-                        <xsl:text>; </xsl:text>
-                </xsl:for-each>
-                <xsl:call-template name="crpsubject"/>
-                <xsl:call-template name="ccafsubject"/>
-                <xsl:call-template name="ciforsubject"/>
-                <xsl:call-template name="cpwfsubject"/>
-                <xsl:call-template name="ilrisubject"/>
-                <xsl:call-template name="iwmisubject"/>
-                <xsl:call-template name="wlesubject"/>
-                <xsl:call-template name="cipsubject"/>
-                <xsl:call-template name="drylandssubject"/>
-                <xsl:call-template name="icardasubject"/>
+                    <xsl:call-template name="ccafsubject"/>
+                    <xsl:call-template name="ciforsubject"/>
+                    <xsl:call-template name="cpwfsubject"/>
+                    <xsl:call-template name="ilrisubject"/>
+                    <xsl:call-template name="iwmisubject"/>
+                    <xsl:call-template name="wlesubject"/>
+                    <xsl:call-template name="cipsubject"/>
+                    <xsl:call-template name="drylandssubject"/>
+                    <xsl:call-template name="icardasubject"/>
                 </span>
             </div>
         </xsl:if>
     </xsl:template>
 
-
-    <xsl:template name="crpsubject">
-        <xsl:if test="dim:field[@element='crsubject' and @qualifier='crpsubject']">
-            <xsl:for-each select="dim:field[@element='crsubject' or @qualifier='crpsubject']">
-                <xsl:copy-of select="./node()"/>
-                    <xsl:text>; </xsl:text>
-            </xsl:for-each>
-        </xsl:if>
+    <!--Helper template that creates a link to the discovery page based on a given node and filtertype to inject into the link-->
+    <xsl:template name="discovery-link">
+        <xsl:param name="filtertype"/>
+        <xsl:variable name="filterlink">
+            <xsl:value-of select="concat($context-path,'/discover?filtertype=',$filtertype,'&amp;filter_relational_operator=equals&amp;filter=',url:encode(node()))"></xsl:value-of>
+        </xsl:variable>
+        <a target="_blank">
+            <xsl:attribute name="href" >
+                <xsl:value-of select="$filterlink"/>
+            </xsl:attribute>
+            <xsl:copy-of select="node()"/>
+        </a>
     </xsl:template>
+
     <xsl:template name="ccafsubject">
         <xsl:if test="dim:field[@element='ccsubject' and @qualifier='ccafsubject']">
             <xsl:for-each select="dim:field[@element='ccsubject' and @qualifier='ccafsubject']">
-                <xsl:copy-of select="./node()"/>
+                <xsl:call-template name="discovery-link">
+                    <xsl:with-param name="filtertype" select="'ccafsubject'"/>
+                </xsl:call-template>
                     <xsl:text>; </xsl:text>
             </xsl:for-each>
         </xsl:if>
@@ -365,7 +382,9 @@ such as authors, subject, citation, description, etc
     <xsl:template name="ciforsubject">
         <xsl:if test="dim:field[@element='cisubject' and @qualifier='ciforsubject']">
             <xsl:for-each select="dim:field[@element='cisubject' and @qualifier='ciforsubject']">
-                <xsl:copy-of select="./node()"/>
+                <xsl:call-template name="discovery-link">
+                    <xsl:with-param name="filtertype" select="'ccafsubject'"/>
+                </xsl:call-template>
                     <xsl:text>; </xsl:text>
             </xsl:for-each>
         </xsl:if>
@@ -373,7 +392,9 @@ such as authors, subject, citation, description, etc
     <xsl:template name="cpwfsubject">
         <xsl:if test="dim:field[@element='cpsubject' and @qualifier='cpwfsubject']">
             <xsl:for-each select="dim:field[@element='cpsubject' and @qualifier='cpwfsubject']">
-                <xsl:copy-of select="./node()"/>
+                <xsl:call-template name="discovery-link">
+                    <xsl:with-param name="filtertype" select="'cpwfsubject'"/>
+                </xsl:call-template>
                     <xsl:text>; </xsl:text>
             </xsl:for-each>
         </xsl:if>
@@ -381,17 +402,19 @@ such as authors, subject, citation, description, etc
     <xsl:template name="ilrisubject">
         <xsl:if test="dim:field[@element='isubject' and @qualifier='ilrisubject']">
             <xsl:for-each select="dim:field[@element='isubject' and @qualifier='ilrisubject']">
-                <xsl:copy-of select="./node()"/>
+                <xsl:call-template name="discovery-link">
+                    <xsl:with-param name="filtertype" select="'ilrisubject'"/>
+                </xsl:call-template>
                     <xsl:text>; </xsl:text>
-                <xsl:if test="count(following-sibling::dim:field[@element='isubject' and @qualifier='ilrisubject']) != 0">
-                </xsl:if>
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
     <xsl:template name="iwmisubject">
         <xsl:if test="dim:field[@element='iwsubject' and @qualifier='iwmisubject']">
             <xsl:for-each select="dim:field[@element='iwsubject' and @qualifier='iwmisubject']">
-                <xsl:copy-of select="./node()"/>
+                <xsl:call-template name="discovery-link">
+                    <xsl:with-param name="filtertype" select="'iwmisubject'"/>
+                </xsl:call-template>
                     <xsl:text>; </xsl:text>
             </xsl:for-each>
         </xsl:if>
@@ -399,7 +422,9 @@ such as authors, subject, citation, description, etc
     <xsl:template name="wlesubject">
         <xsl:if test="dim:field[@mdschema='cg' and @element='subject' and @qualifier='wle']">
             <xsl:for-each select="dim:field[@mdschema='cg' and @element='subject' and @qualifier='wle']">
-                <xsl:copy-of select="./node()"/>
+                <xsl:call-template name="discovery-link">
+                    <xsl:with-param name="filtertype" select="'wlesubject'"/>
+                </xsl:call-template>
                     <xsl:text>; </xsl:text>
             </xsl:for-each>
         </xsl:if>
@@ -407,7 +432,9 @@ such as authors, subject, citation, description, etc
     <xsl:template name="cipsubject">
         <xsl:if test="dim:field[@mdschema='cg' and @element='subject' and @qualifier='cip']">
             <xsl:for-each select="dim:field[@mdschema='cg' and @element='subject' and @qualifier='cip']">
-                <xsl:copy-of select="./node()"/>
+                <xsl:call-template name="discovery-link">
+                    <xsl:with-param name="filtertype" select="'cipsubject'"/>
+                </xsl:call-template>
                     <xsl:text>; </xsl:text>
             </xsl:for-each>
         </xsl:if>
@@ -415,7 +442,9 @@ such as authors, subject, citation, description, etc
     <xsl:template name="drylandssubject">
         <xsl:if test="dim:field[@mdschema='cg' and @element='subject' and @qualifier='drylands']">
             <xsl:for-each select="dim:field[@mdschema='cg' and @element='subject' and @qualifier='drylands']">
-                <xsl:copy-of select="./node()"/>
+                <xsl:call-template name="discovery-link">
+                    <xsl:with-param name="filtertype" select="'drylandssubject'"/>
+                </xsl:call-template>
                     <xsl:text>; </xsl:text>
             </xsl:for-each>
         </xsl:if>
@@ -423,7 +452,9 @@ such as authors, subject, citation, description, etc
     <xsl:template name="icardasubject">
         <xsl:if test="dim:field[@mdschema='cg' and @element='subject' and @qualifier='icarda']">
             <xsl:for-each select="dim:field[@mdschema='cg' and @element='subject' and @qualifier='icarda']">
-                <xsl:copy-of select="./node()"/>
+                <xsl:call-template name="discovery-link">
+                    <xsl:with-param name="filtertype" select="'icardasubject'"/>
+                </xsl:call-template>
                 <xsl:if test="count(following-sibling::dim:field[@mdschema='cg' and @element='subject' and @qualifier='icarda']) != 0">
                     <xsl:text>; </xsl:text>
                 </xsl:if>

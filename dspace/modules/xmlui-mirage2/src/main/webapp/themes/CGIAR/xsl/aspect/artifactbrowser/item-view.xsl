@@ -144,6 +144,7 @@
                     <xsl:call-template name="itemSummaryView-DIM-abstract"/>
                     <xsl:call-template name="itemSummaryView-DIM-notes"/>
                     <xsl:call-template name="itemSummaryView-DIM-affiliations"/>
+                    <xsl:call-template name="itemSummaryView-DIM-subject"/>
                     <xsl:call-template name="itemSummaryView-DIM-investors-sponsors"/>
                     <xsl:call-template name="itemSummaryView-DIM-identifiers"/>
                     <xsl:call-template name="itemSummaryView-DIM-related-material"/>
