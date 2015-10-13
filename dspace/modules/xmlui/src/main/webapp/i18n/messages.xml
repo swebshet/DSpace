@@ -119,15 +119,15 @@
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.conjunction">Conjunction</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.search_type">Search type</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.search_for">Search for</message>
-	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_author">Author</message>
-	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_title">Title</message>
-	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_subject">Subject</message>
-	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_abstract">Abstract</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_author">Authors</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_title">Titles</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_subject">Subjects</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_abstract">Abstracts</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_series">Series</message>
-	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_sponsor">Sponsor</message>
-	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_identifier">Identifier</message>
-	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_language">Language (ISO)</message>
-	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_keyword">Keyword</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_sponsor">Sponsors</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_identifier">Identifiers</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_language">Languages (ISO)</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_keyword">Keywords</message>
 
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_region">Regions</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_country">Countries</message>
@@ -2666,6 +2666,6 @@
     <message key="xmlui.mirage2.item-list.thumbnail">Thumbnail</message>
 
     <!-- Atmire CUA -->
-    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_issuedate">Date Issued</message>
-    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_accessioneddate">Date Accessioned</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_issuedate">Date issued</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_accessioneddate">Date accessioned</message>
 </catalogue>
