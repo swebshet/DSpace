@@ -127,6 +127,7 @@ and searching the repository.
 
             <!-- Display statistics -->
             <map:match pattern="statistics">
+				<map:transform type="Statistics" />
                 <map:serialize type="xml" />
             </map:match>
 
