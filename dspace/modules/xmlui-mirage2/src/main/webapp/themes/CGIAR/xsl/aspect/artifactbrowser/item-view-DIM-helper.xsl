@@ -335,7 +335,8 @@ such as authors, subject, citation, description, etc
         or dim:field[@mdschema='cg' and @element='subject' and @qualifier='drylands']
         or dim:field[@mdschema='cg' and @element='subject' and @qualifier='icarda']"/>
         </xsl:variable>
-        <xsl:if test="$subjectTest">
+
+        <xsl:if test="$subjectTest ='true'">
             <div class="word-break item-page-field-wrapper table">
                 <h5 class="bold">
                     <i18n:text>xmlui.dri2xhtml.METS-1.0.item-subject</i18n:text>
