@@ -446,7 +446,7 @@
             <div class="container">
                 <div class="row">
                     <!--TODO-->
-                    <div class="col-xs-11">
+                    <div class="col-xs-10">
                         <xsl:choose>
                             <xsl:when test="count(/dri:document/dri:meta/dri:pageMeta/dri:trail) > 1">
                                 <div class="breadcrumb dropdown visible-xs">
@@ -481,7 +481,7 @@
                             </xsl:otherwise>
                         </xsl:choose>
                     </div>
-                    <div class="col-xs-1 trail-toggle">
+                    <div class="col-xs-2 trail-toggle">
                     <button type="button" class="navbar-toggle hidden-lg hidden-md" data-toggle="offcanvas">
                         <span class="sr-only">
                             <i18n:text>xmlui.mirage2.page-structure.toggleNavigation</i18n:text>
@@ -900,6 +900,39 @@
         </xsl:if>
     </xsl:template>
 
+
+    <xsl:template match="dri:trail" mode="dropdown">
+        <!--put an arrow between the parts of the trail-->
+        <li role="presentation">
+            <!-- Determine whether we are dealing with a link or plain text trail link -->
+            <xsl:choose>
+                <xsl:when test="./@target">
+                    <a role="menuitem">
+                        <xsl:attribute name="href">
+                            <xsl:value-of select="./@target"/>
+                        </xsl:attribute>
+                        <xsl:if test="position()=1">
+                            <i class="glyphicon glyphicon-home" aria-hidden="true"/>&#160;
+                        </xsl:if>
+                        <xsl:apply-templates />
+                    </a>
+                </xsl:when>
+                <xsl:when test="position() > 1 and position() = last()">
+                    <xsl:attribute name="class">disabled</xsl:attribute>
+                    <a role="menuitem" href="#">
+                        <xsl:apply-templates />
+                    </a>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:attribute name="class">active</xsl:attribute>
+                    <xsl:if test="position()=1">
+                        <i class="glyphicon glyphicon-home" aria-hidden="true"/>&#160;
+                    </xsl:if>
+                    <xsl:apply-templates />
+                </xsl:otherwise>
+            </xsl:choose>
+        </li>
+    </xsl:template>
 
 
 </xsl:stylesheet>
