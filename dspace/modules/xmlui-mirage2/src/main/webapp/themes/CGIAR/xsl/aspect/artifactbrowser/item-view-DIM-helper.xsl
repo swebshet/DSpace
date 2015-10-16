@@ -263,15 +263,19 @@ such as authors, subject, citation, description, etc
                 <xsl:with-param name="filtertype" select="'author'"/>
             </xsl:call-template>
 
-            <xsl:if test="@authority and ../dim:field[@mdschema='atmire' and @element='orcid' and @qualifier='id']">
-                <a class="orcid-icon-link" target="_blank">
-                    <xsl:attribute name="href">
-                        <xsl:value-of select="concat('//orcid.org/', ../dim:field[@mdschema='atmire' and @element='orcid' and @qualifier='id']/text())"/>
-                    </xsl:attribute>
+            <xsl:if test="@authority">
+	            <xsl:variable name="authority" select="@authority"/>
 
-                    <img alt="xmlui.mirage2.item-list.thumbnail" i18n:attr="alt"
-                         src="{concat($theme-path, 'images/mini-icon.png')}"/>
-                </a>
+	            <xsl:if test="../dim:field[@authority=$authority and @mdschema='atmire' and @element='orcid' and @qualifier='id']">
+		            <a class="orcid-icon-link" target="_blank">
+			            <xsl:attribute name="href">
+				            <xsl:value-of select="concat('//orcid.org/', ../dim:field[@mdschema='atmire' and @element='orcid' and @qualifier='id']/text())"/>
+			            </xsl:attribute>
+
+			            <img alt="xmlui.mirage2.item-list.thumbnail" i18n:attr="alt"
+			                 src="{concat($theme-path, 'images/mini-icon.png')}"/>
+		            </a>
+	            </xsl:if>
             </xsl:if>
         </div>
     </xsl:template>
