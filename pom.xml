@@ -1296,6 +1296,16 @@
               <version>3.0.0</version>
               <scope>provided</scope>
           </dependency>
+	      <dependency>
+		      <groupId>com.atmire</groupId>
+		      <artifactId>atmire-dspace-api</artifactId>
+		      <version>5.1-1.15.4-0</version>
+	      </dependency>
+	      <dependency>
+		      <groupId>com.atmire</groupId>
+		      <artifactId>atmire-dspace-xmlui</artifactId>
+		      <version>5.1-1.15.2-0</version>
+	      </dependency>
       </dependencies>
    </dependencyManagement>
 
