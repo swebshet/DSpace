@@ -729,7 +729,21 @@
             <artifactId>additions</artifactId>
             <version>5.8</version>
          </dependency>
-
+          <dependency>
+              <groupId>com.atmire</groupId>
+              <artifactId>atmire-dspace-api</artifactId>
+              <version>5.1-1.15.3-0</version>
+          </dependency>
+          <dependency>
+              <groupId>com.atmire</groupId>
+              <artifactId>atmire-dspace-xmlui</artifactId>
+              <version>5.1-1.15.5-0</version>
+          </dependency>
+          <dependency>
+              <groupId>com.atmire</groupId>
+              <artifactId>datatables-api</artifactId>
+              <version>5.1-2.0.3-0</version>
+          </dependency>
          <dependency>
             <groupId>org.dspace</groupId>
             <artifactId>dspace-sword</artifactId>
