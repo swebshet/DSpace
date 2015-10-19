@@ -321,6 +321,16 @@
         <field>
           <dc-schema>cg</dc-schema>
           <dc-element>subject</dc-element>
+          <dc-qualifier>africarice</dc-qualifier>
+          <repeatable>true</repeatable>
+          <label>AfricaRice Subject Focus</label>
+          <input-type value-pairs-name="africarice-subject">dropdown</input-type>
+          <hint></hint>
+          <required></required>
+        </field>
+        <field>
+          <dc-schema>cg</dc-schema>
+          <dc-element>subject</dc-element>
           <dc-qualifier>bioversity</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Bioversity Subject Focus</label>
@@ -435,6 +445,16 @@
           <repeatable>true</repeatable>
           <label>ICARDA Subject Focus</label>
           <input-type value-pairs-name="icardasubject">dropdown</input-type>
+          <hint></hint>
+          <required></required>
+        </field>
+        <field>
+          <dc-schema>cg</dc-schema>
+          <dc-element>subject</dc-element>
+          <dc-qualifier>iita</dc-qualifier>
+          <repeatable>true</repeatable>
+          <label>IITA Subject Focus</label>
+          <input-type value-pairs-name="iita-subject">dropdown</input-type>
           <hint></hint>
           <required></required>
         </field>
@@ -3406,6 +3426,306 @@
       <pair>
         <displayed-value>SOCIAL LEARNING</displayed-value>
         <stored-value>SOCIAL LEARNING</stored-value>
+      </pair>
+    </value-pairs>
+    <value-pairs value-pairs-name="iita-subject" dc-term="iita-subject">
+      <pair>
+        <displayed-value>AFLATOXIN</displayed-value>
+        <stored-value>AFLATOXIN</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>AGRIBUSINESS</displayed-value>
+        <stored-value>AGRIBUSINESS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>AGRONOMY</displayed-value>
+        <stored-value>AGRONOMY</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>BANANA</displayed-value>
+        <stored-value>BANANA</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>BASELINE SURVEY</displayed-value>
+        <stored-value>BASELINE SURVEY</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>BIODIVERSITY</displayed-value>
+        <stored-value>BIODIVERSITY</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>BIOFORTIFICATION</displayed-value>
+        <stored-value>BIOFORTIFICATION</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>BIOMETRICS</displayed-value>
+        <stored-value>BIOMETRICS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>BIOSCIENCE</displayed-value>
+        <stored-value>BIOSCIENCE</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>CAPACITY DEVELOPMENT</displayed-value>
+        <stored-value>CAPACITY DEVELOPMENT</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>CASSAVA</displayed-value>
+        <stored-value>CASSAVA</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>CLIMATE CHANGE</displayed-value>
+        <stored-value>CLIMATE CHANGE</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>COCOA</displayed-value>
+        <stored-value>COCOA</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>COWPEA</displayed-value>
+        <stored-value>COWPEA</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>CROP HUSBANDRY</displayed-value>
+        <stored-value>CROP HUSBANDRY</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>CROP SYSTEMS</displayed-value>
+        <stored-value>CROP SYSTEMS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>DISEASE CONTROL</displayed-value>
+        <stored-value>DISEASE CONTROL</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>DOMESTIC TRADE</displayed-value>
+        <stored-value>DOMESTIC TRADE</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>FARM MANAGEMENT</displayed-value>
+        <stored-value>FARM MANAGEMENT</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>FARMING SYSTEMS</displayed-value>
+        <stored-value>FARMING SYSTEMS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>FOOD SCIENCE</displayed-value>
+        <stored-value>FOOD SCIENCE</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>FOOD SECURITY</displayed-value>
+        <stored-value>FOOD SECURITY</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>FOOD SYSTEMS</displayed-value>
+        <stored-value>FOOD SYSTEMS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>FORESTRY</displayed-value>
+        <stored-value>FORESTRY</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>GENDER</displayed-value>
+        <stored-value>GENDER</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>GENETIC IMPROVEMENT</displayed-value>
+        <stored-value>GENETIC IMPROVEMENT</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>GRAIN LEGUMES</displayed-value>
+        <stored-value>GRAIN LEGUMES</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>HANDLING, TRANSPORT, STORAGE AND PROTECTION OF AGRICULTURAL PRODUCTS</displayed-value>
+        <stored-value>HANDLING, TRANSPORT, STORAGE AND PROTECTION OF AGRICULTURAL PRODUCTS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>IMPACT ASSESSMENT</displayed-value>
+        <stored-value>IMPACT ASSESSMENT</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>INTEGRATED SOIL FERTILITY MANAGEMENT</displayed-value>
+        <stored-value>INTEGRATED SOIL FERTILITY MANAGEMENT</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>KNOWLEDGE MANAGEMENT</displayed-value>
+        <stored-value>KNOWLEDGE MANAGEMENT</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>LAND USE</displayed-value>
+        <stored-value>LAND USE</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>LIVELIHOODS</displayed-value>
+        <stored-value>LIVELIHOODS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>MAIZE</displayed-value>
+        <stored-value>MAIZE</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>MARKETS</displayed-value>
+        <stored-value>MARKETS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>METEOROLOGY AND CLIMATOLOGY</displayed-value>
+        <stored-value>METEOROLOGY AND CLIMATOLOGY</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>NATURAL RESOURCE MANAGEMENT</displayed-value>
+        <stored-value>NATURAL RESOURCE MANAGEMENT</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>NUTRITION</displayed-value>
+        <stored-value>NUTRITION</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>PESTS OF PLANTS</displayed-value>
+        <stored-value>PESTS OF PLANTS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>PLANT BREEDING</displayed-value>
+        <stored-value>PLANT BREEDING</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>PLANT DISEASES</displayed-value>
+        <stored-value>PLANT DISEASES</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>PLANT ECOLOGY</displayed-value>
+        <stored-value>PLANT ECOLOGY</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>PLANT GENETIC RESOURCES</displayed-value>
+        <stored-value>PLANT GENETIC RESOURCES</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>PLANT HEALTH</displayed-value>
+        <stored-value>PLANT HEALTH</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>PLANT PRODUCTION</displayed-value>
+        <stored-value>PLANT PRODUCTION</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>PLANTAIN</displayed-value>
+        <stored-value>PLANTAIN</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>POLICIES AND INSTITUTIONS</displayed-value>
+        <stored-value>POLICIES AND INSTITUTIONS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>POST-HARVESTING TECHNOLOGY</displayed-value>
+        <stored-value>POST-HARVESTING TECHNOLOGY</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>RESEARCH METHOD</displayed-value>
+        <stored-value>RESEARCH METHOD</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>SMALLHOLDER FARMERS</displayed-value>
+        <stored-value>SMALLHOLDER FARMERS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>SOCIOECONOMY</displayed-value>
+        <stored-value>SOCIOECONOMY</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>SOIL FERTILITY</displayed-value>
+        <stored-value>SOIL FERTILITY</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>SOIL HEALTH</displayed-value>
+        <stored-value>SOIL HEALTH</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>SOIL INFORMATION</displayed-value>
+        <stored-value>SOIL INFORMATION</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>SOIL SURVEYS AND MAPPING</displayed-value>
+        <stored-value>SOIL SURVEYS AND MAPPING</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>SOYBEAN</displayed-value>
+        <stored-value>SOYBEAN</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>TISSUE CULTURE</displayed-value>
+        <stored-value>TISSUE CULTURE</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>VALUE CHAINS</displayed-value>
+        <stored-value>VALUE CHAINS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>WEEDS</displayed-value>
+        <stored-value>WEEDS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>YAM</displayed-value>
+        <stored-value>YAM</stored-value>
+      </pair>
+    </value-pairs>
+    <value-pairs value-pairs-name="africarice-subject" dc-term="africarice-subject">
+      <pair>
+        <displayed-value>CROP ESTABLISHMENT</displayed-value>
+        <stored-value>CROP ESTABLISHMENT</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>CROP NUTRITION</displayed-value>
+        <stored-value>CROP NUTRITION</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>DISEASES AND PESTS</displayed-value>
+        <stored-value>DISEASES AND PESTS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>HARVEST</displayed-value>
+        <stored-value>HARVEST</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>LAND DEVELOPMENT</displayed-value>
+        <stored-value>LAND DEVELOPMENT</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>LAND PREPARATION</displayed-value>
+        <stored-value>LAND PREPARATION</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>MARKETING</displayed-value>
+        <stored-value>MARKETING</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>PLANNING</displayed-value>
+        <stored-value>PLANNING</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>POST HARVEST</displayed-value>
+        <stored-value>POST HARVEST</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>PROCESSING</displayed-value>
+        <stored-value>PROCESSING</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>VALUE ADDITION</displayed-value>
+        <stored-value>VALUE ADDITION</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>VARIETIES AND SEEDS</displayed-value>
+        <stored-value>VARIETIES AND SEEDS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>WATER MANAGEMENT</displayed-value>
+        <stored-value>WATER MANAGEMENT</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>WEEDS MANAGEMENT</displayed-value>
+        <stored-value>WEEDS MANAGEMENT</stored-value>
       </pair>
     </value-pairs>
     <value-pairs value-pairs-name="ccafsproject" dc-term="ccafsproject">
