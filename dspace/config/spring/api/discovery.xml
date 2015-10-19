@@ -104,6 +104,7 @@
                 <ref bean="searchFilterRegion" />
                 <ref bean="searchFilterCountry" />
                 <ref bean="searchFilterSubject" />
+                <ref bean="searchFilterAfricaRiceSubject"/>
                 <ref bean="searchFilterBioversity"/>
                 <ref bean="searchFilterCcafSubject"/>
                 <ref bean="searchFilterCiat"/>
@@ -114,6 +115,7 @@
                 <ref bean="searchFilterDrylandsSubject" />
                 <ref bean="searchFilterHumidtropics"/>
                 <ref bean="searchFilterIcardaSubject" />
+                <ref bean="searchFilterIitaSubject"/>
                 <ref bean="searchFilterIlriSubject"/>
                 <ref bean="searchFilterIwmiSubject"/>
                 <ref bean="searchFilterWlesubject"/>
@@ -133,6 +135,7 @@
                 <ref bean="searchFilterRegion" />
                 <ref bean="searchFilterCountry" />
                 <ref bean="searchFilterSubject" />
+                <ref bean="searchFilterAfricaRiceSubject"/>
                 <ref bean="searchFilterBioversity"/>
                 <ref bean="searchFilterCcafSubject"/>
                 <ref bean="searchFilterCiat"/>
@@ -143,6 +146,7 @@
                 <ref bean="searchFilterDrylandsSubject" />
                 <ref bean="searchFilterHumidtropics"/>
                 <ref bean="searchFilterIcardaSubject" />
+                <ref bean="searchFilterIitaSubject"/>
                 <ref bean="searchFilterIlriSubject"/>
                 <ref bean="searchFilterIwmiSubject"/>
                 <ref bean="searchFilterWlesubject"/>
@@ -237,6 +241,7 @@
                 <ref bean="searchFilterCountry" />
                 <ref bean="searchFilterSubject" />
                 <ref bean="searchFilterBreed" />
+                <ref bean="searchFilterAfricaRiceSubject"/>
                 <ref bean="searchFilterBioversity"/>
                 <ref bean="searchFilterCcafSubject"/>
                 <ref bean="searchFilterCiat"/>
@@ -246,6 +251,7 @@
                 <ref bean="searchFilterCta"/>
                 <ref bean="searchFilterDrylandsSubject" />
                 <ref bean="searchFilterHumidtropics"/>
+                <ref bean="searchFilterIitaSubject"/>
                 <ref bean="searchFilterIcardaSubject" />
                 <ref bean="searchFilterIlriSubject"/>
                 <ref bean="searchFilterIwmiSubject"/>
@@ -267,6 +273,7 @@
                 <ref bean="searchFilterCountry" />
                 <ref bean="searchFilterSubject" />
                 <ref bean="searchFilterBreed" />
+                <ref bean="searchFilterAfricaRiceSubject"/>
                 <ref bean="searchFilterBioversity"/>
                 <ref bean="searchFilterCcafSubject"/>
                 <ref bean="searchFilterCiat"/>
@@ -277,6 +284,7 @@
                 <ref bean="searchFilterDrylandsSubject" />
                 <ref bean="searchFilterHumidtropics"/>
                 <ref bean="searchFilterIcardaSubject" />
+                <ref bean="searchFilterIitaSubject"/>
                 <ref bean="searchFilterIlriSubject"/>
                 <ref bean="searchFilterIwmiSubject"/>
                 <ref bean="searchFilterWlesubject"/>
@@ -736,6 +744,30 @@
         <property name="metadataFields">
             <list>
                 <value>cg.subject.icarda</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+    </bean>
+
+    <bean id="searchFilterIitaSubject" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="iitasubject"/>
+        <property name="metadataFields">
+            <list>
+                <value>cg.subject.iita</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+    </bean>
+
+    <bean id="searchFilterAfricaRiceSubject" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="africaricesubject"/>
+        <property name="metadataFields">
+            <list>
+                <value>cg.subject.africarice</value>
             </list>
         </property>
         <property name="facetLimit" value="5"/>
