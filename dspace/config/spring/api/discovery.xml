@@ -654,8 +654,7 @@
             </list>
         </property>
         <property name="facetLimit" value="5"/>
-        <property name="sortOrderSidebar" value="COUNT"/>
-        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="sortOrder" value="COUNT"/>
     </bean>
 
     <bean id="searchFilterAffiliation" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
