@@ -127,6 +127,7 @@
     <message key="xmlui.Discovery.AbstractSearch.type_iwmisubject">Filter by: IWMI subject</message>
     <message key="xmlui.Discovery.AbstractSearch.type_wlesubject">Filter by: WLE subject</message>
     <message key="xmlui.Discovery.AbstractSearch.type_breed">Filter by: animal breed</message>
+    <message key="xmlui.Discovery.AbstractSearch.type_iitasubject">Filter by: IITA subject</message>
 
     <!-- org.dspace.app.xmlui.artifactbrowser.AdvancedSearch.java -->
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.title">Advanced Search</message>
@@ -172,6 +173,7 @@
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_affiliation">Author affiliations</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_status">Status</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_breed">Animal breed</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_iitasubject">IITA subjects</message>
 
    <!--  some common other possibilities for Advanced Search Fields -->
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_contributor">Contributor</message>
@@ -234,6 +236,7 @@
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.drylandssubject.column_heading">Dryland systems subjects</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.icardasubject.column_heading">ICARDA subjects</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.breed.column_heading">Animal breed</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.iitasubject.column_heading">IITA subjects</message>
 
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.region.column_heading">Region Name</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.subregion.column_heading">Sub Region</message>
@@ -443,6 +446,7 @@
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.region">Region</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.country">Country</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.breed">Animal breed</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.iitaasubject">IITA subject</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.RestrictedItem.java -->
 	<message key="xmlui.ArtifactBrowser.RestrictedItem.title">This resource is restricted</message>
@@ -2561,6 +2565,7 @@
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.drylandssubject">Dryland systems subject</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.icardasubject">ICARDA subject</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.breed">Animal breed</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.iitasubject">IITA subject</message>
 
     <message key="xmlui.reporting-suite.statistics.contentanalysis.dc.date.issued">Time</message>
     <message key="xmlui.reporting-suite.statistics.contentanalysis.ccafsubject">CCAFS subject</message>
@@ -2583,6 +2588,7 @@
     <message key="xmlui.reporting-suite.statistics.contentanalysis.icardasubject">ICARDA subject</message>
     <message key="xmlui.reporting-suite.statistics.contentanalysis.region">Region</message>
     <message key="xmlui.reporting-suite.statistics.contentanalysis.breed">Animal breed</message>
+    <message key="xmlui.reporting-suite.statistics.contentanalysis.iitasubject">IITA subject</message>
     <!--end CUA-->
 
 
