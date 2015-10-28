@@ -110,7 +110,7 @@
                         <datasetgenerator type="org.dspace.statistics.content.DatasetTypeGenerator">
                             <solrfield>countryCode</solrfield>
                             <limit type="top">
-                                <n>5</n>
+                                <n>3</n>
                             </limit>
                         </datasetgenerator>
                     </datasetgenerators>
