@@ -120,8 +120,8 @@
         -->
         <map:component-configurations>
             <global-variables>
-                <theme-path>CGIAR</theme-path>
-                <theme-name>CGIAR</theme-name>
+                <theme-path>0_CGIAR</theme-path>
+                <theme-name>0_CGIAR</theme-name>
             </global-variables>
         </map:component-configurations>
 
