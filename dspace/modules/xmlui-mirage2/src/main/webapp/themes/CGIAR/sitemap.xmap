@@ -94,7 +94,7 @@
             </map:match>
 
             <!-- Transform DRI to XHTML using the Theme's XSLT(s) -->
-            <map:transform src="CGIAR.xsl"/>
+            <map:transform src="xsl/theme.xsl"/>
 
             <!-- Localize the XHTML page (by replacing i18n tags) -->
             <map:act type="locale">
@@ -120,8 +120,8 @@
         -->
         <map:component-configurations>
             <global-variables>
-                <theme-path>0_CGIAR</theme-path>
-                <theme-name>0_CGIAR</theme-name>
+                <theme-path>CGIAR</theme-path>
+                <theme-name>CGIAR</theme-name>
             </global-variables>
         </map:component-configurations>
 
