@@ -178,6 +178,10 @@
             </meta>
 
             <!-- Add stylesheets -->
+            <!-- Use the theme path as provided by the metadata, not from the theme-path variable, as this needs to be able to take the child-themes without flickering -->
+            <xsl:variable name="current-theme-path">
+                <xsl:value-of select="concat($context-path,'/themes/',$pagemeta/dri:metadata[@element='theme'][@qualifier='path'])"/>
+            </xsl:variable>
 
             <!--TODO figure out a way to include these in the concat & minify-->
             <xsl:for-each select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='stylesheet']">
@@ -186,13 +190,13 @@
                         <xsl:value-of select="@qualifier"/>
                     </xsl:attribute>
                     <xsl:attribute name="href">
-                        <xsl:value-of select="$theme-path"/>
+                        <xsl:value-of select="$current-theme-path"/>
                         <xsl:value-of select="."/>
                     </xsl:attribute>
                 </link>
             </xsl:for-each>
 
-            <link rel="stylesheet" href="{concat($theme-path, 'styles/main.css')}"/>
+            <link rel="stylesheet" href="{concat($current-theme-path, 'styles/main.css')}"/>
 
             <!-- Add syndication feeds -->
             <xsl:for-each select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='feed']">
