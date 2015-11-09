@@ -1,0 +1,31 @@
+@import "../../0_CGIAR/styles/main";
+
+header .navbar-default {
+  color: $brand-primary-text;
+}
+
+.headerInfoName {
+  color: $brand-primary-text;
+}
+
+.headerInfoText {
+  color: $brand-primary-text;
+}
+
+.trail-wrapper {
+  background-color: $trail-bg;
+  color: $trail-text;
+  border-bottom: $trail-border-bottom;
+}
+
+// text on breadcrumb
+.breadcrumb > li,
+.breadcrumb > li > a,
+.trail-wrapper .breadcrumb > li + li::before {
+  color: $trail-text;
+}
+
+// hamburger menu on mobile navbar
+.trail-toggle .navbar-toggle .icon-bar {
+  background-color: $trail-text;
+}
