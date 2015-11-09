@@ -52,6 +52,7 @@
 	<xsl:import href="aspect/statistics/statlets.xsl"/>
     <xsl:import href="aspect/artifactbrowser/item-list-alterations.xsl"/>
     <xsl:import href="aspect/discovery/discovery-item-list-alterations.xsl"/>
+    <xsl:import href="core/page-structure-alterations.xsl"/>
     <xsl:output indent="yes"/>
 
 
