@@ -12,6 +12,11 @@
                     exclude-result-prefixes="i18n dri mets xlink xsl dim xhtml mods dc">
 
     <xsl:import href="../../0_CGIAR/xsl/theme.xsl"/>
+
+    <!-- Alterations for page-structure.xsl so we can use a custom Google Analytics ID in the child theme -->
+    <xsl:import href="core/page-structure-alterations.xsl"/>
+    <xsl:variable name="theme-google-analytics-id" select="'UA-10691096-8'"/>
+
     <xsl:variable name="theme-path" select="concat($context-path,'/themes/0_CGIAR/')"/>
     <xsl:output indent="yes"/>
 </xsl:stylesheet>
