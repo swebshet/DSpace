@@ -195,6 +195,7 @@
 
         <!-- Mirage theme, @mire contributed theme, default since DSpace 3.0 -->
         <!--<theme name="Atmire Mirage Theme" regex=".*" path="Mirage/" />-->
+        <theme name="ILRI" handle="10568/1" path="ILRI/" />
         <theme name="CGIAR" regex=".*" path="0_CGIAR/" />
 
 
