@@ -592,6 +592,38 @@ such as authors, subject, citation, description, etc
         </div>
     </xsl:template>
 
+    <xsl:template name="itemSummaryView-sharing">
+        <div class="item-page-field-wrapper table">
+            <h5 class="bold">
+                Share
+            </h5>
+            <a>
+                <xsl:attribute name="href"><xsl:text>https://twitter.com/home?status=</xsl:text><xsl:value-of select="dim:field[@element='identifier' and @qualifier='uri']"/></xsl:attribute>
+                <xsl:attribute name="title"><xsl:text>Tweet this</xsl:text></xsl:attribute>
+                <span class="fa fa-twitter-square fa-lg"></span>
+            </a>
+            <a>
+                <xsl:attribute name="href"><xsl:text>https://www.facebook.com/sharer/sharer.php?u=</xsl:text><xsl:value-of select="dim:field[@element='identifier' and @qualifier='uri']"/></xsl:attribute>
+                <xsl:attribute name="title"><xsl:text>Share on Facebook</xsl:text></xsl:attribute>
+                <span class="fa fa-facebook-square fa-lg"></span>
+            </a>
+            <a>
+                <xsl:attribute name="href"><xsl:text>https://plus.google.com/share?url=</xsl:text><xsl:value-of select="dim:field[@element='identifier' and @qualifier='uri']"/></xsl:attribute>
+                <xsl:attribute name="title"><xsl:text>Share on Google+</xsl:text></xsl:attribute>
+                <span class="fa fa-google-plus-square fa-lg"></span>
+            </a>
+            <a>
+                <xsl:attribute name="href"><xsl:text>https://www.linkedin.com/shareArticle?mini=true&amp;url=</xsl:text><xsl:value-of select="dim:field[@element='identifier' and @qualifier='uri']"/></xsl:attribute>
+                <xsl:attribute name="title"><xsl:text>Share on LinkedIn</xsl:text></xsl:attribute>
+                <span class="fa fa-linkedin-square fa-lg"></span>
+            </a>
+            <a>
+                <xsl:attribute name="href"><xsl:text>mailto:?&amp;body=</xsl:text><xsl:value-of select="dim:field[@element='identifier' and @qualifier='uri']"/><xsl:text>&amp;media=&amp;description=</xsl:text></xsl:attribute>
+                <xsl:attribute name="title"><xsl:text>Share via e-mail</xsl:text></xsl:attribute>
+                <span class="fa fa-envelope fa-lg"></span>
+            </a>
+        </div>
+    </xsl:template>
 
 
 
