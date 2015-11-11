@@ -130,6 +130,10 @@
                     <xsl:call-template name="itemSummaryView-DIM-accessibility"/>
 
 
+                    <xsl:if test="dim:field[@element='identifier' and @qualifier='uri']">
+                        <xsl:call-template name='itemSummaryView-sharing'/>
+                    </xsl:if>
+
                     <xsl:if test="$ds_item_view_toggle_url != ''">
                         <xsl:call-template name="itemSummaryView-show-full"/>
                     </xsl:if>
