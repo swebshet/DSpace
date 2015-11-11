@@ -341,7 +341,7 @@
                             </a>
                             </span>
                                 <span class="headerInfoName">CGSpace</span>
-                                <span class="headerInfoText">Repository of agricultural research outputs </span>
+                                <span class="headerInfoText">A Repository of Agricultural Research Outputs</span>
 
 
 
