@@ -192,7 +192,6 @@
         <theme name="ILRI" handle="10568/1" path="ILRI/"/>
         <theme name="CPWF" handle="10568/2983" path="CPWF/"/>
         <theme name="SLP" handle="10568/133" path="SLP/"/>
-        <theme name="RMG" handle="10568/173" path="RMG/"/>
         <theme name="EADD" handle="10568/2347" path="EADD/"/>
         <theme name="CCAFS" handle="10568/3530" path="CCAFS/"/>
         <theme name="AnGR" handle="10568/3545" path="AnGR/"/>
