@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/util
+    http://www.springframework.org/schema/util/spring-util.xsd">
+    <context:annotation-config/>
+    <context:component-scan base-package="com.atmire.statistics"/>
+
+    <util:map id="ipranges" key-type="java.lang.String" value-type="java.lang.String">
+        <entry key="127.0.0.1" value="local"/>
+        <entry key="41.204.190.40/32" value="ILRI Nairobi"/>
+        <entry key="213.55.99.121/32" value="ILRI Ethiopia"/>
+    </util:map>
+
+    <bean class="org.dspace.statistics.InteractiveStatisticsConfiguration">
+        <property name="hitTypeFilters" value="#{ T(org.dspace.core.Constants).BITSTREAM}"/>
+        <property name="field" value="continent"/>
+        <property name="valueMap">
+            <map>
+                <entry key="EU"><list><value>EU</value></list></entry>
+                <entry key="NA"><list><value>NA</value></list></entry>
+                <entry key="SA"><list><value>SA</value></list></entry>
+                <entry key="AF"><list><value>AF</value></list></entry>
+                <entry key="AS"><list><value>AS</value></list></entry>
+                <entry key="UN"><list><value>A1</value><value>A2</value><value>O1</value></list></entry>
+            </map>
+        </property>
+    </bean>
+
+    <util:map key-type="java.lang.String" value-type="java.lang.String" id="metadata_statistics">
+        <entry key="author">
+            <list>
+                <value>dc.contributor.author</value>
+                <value>dc.creator</value>
+            </list>
+        </entry>
+        <entry key="subject">
+            <list>
+                <value>dc.subject</value>
+                <value>dc.subject.*</value>
+            </list>
+        </entry>
+        <entry key="iso">
+            <list>
+                <value>dc.language.iso</value>
+            </list>
+        </entry>
+
+    </util:map>
+</beans>
