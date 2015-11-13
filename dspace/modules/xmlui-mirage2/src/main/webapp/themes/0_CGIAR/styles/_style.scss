@@ -46,7 +46,7 @@ a.list-group-item:hover{
 }
 .list-group-item{
   border:0;
-  padding: 5px 15px
+  padding: 4px 12px
 
 }
 .list-group-item.active{
@@ -54,12 +54,17 @@ a.list-group-item:hover{
     color: #636363;
   background: rgba(239,239,239,0.7);
   border-bottom:1px solid #dcdcdc;
-  padding:10px 15px;
+  padding:5px 12px 4px;
   pointer-events:none;
+  margin-bottom:1px;
+}
+
+.list-group-item.active:not(:first-child){
+  padding-top:10px;
 }
 
 span.h5.list-group-item-heading.h5{
-  font-size: 15px;
+  font-size: 14px;
 
 }span.h5.list-group-item-heading.h5:hover{
    text-decoration: none;
@@ -219,4 +224,12 @@ div.secondary.search-browse{
 #aspect_viewArtifacts_Navigation_list_discovery .list-group-item {
   font-size: 12px;
   line-height: 1;
+}
+#sidebar .list-group-item {
+  font-size: 12px;
+  line-height: 1;
+}
+
+.list-group {
+  margin-bottom: 8px;
 }
