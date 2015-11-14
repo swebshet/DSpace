@@ -7,11 +7,15 @@
  */
 // Preset Bootstrap variables
 // ----------------------
-// Drylands Prime color
+// Drylands dark brown
 $brand-primary: rgb(120, 70, 40) !default;
 
-// Drylands Secondary color
+// Drylands light brown
 $brand-secondary: rgb(168, 117, 85) !default;
+
+$drylands-white: #FFF !default;
+$drylands-black: #000 !default;
+$drylands-yellow: #CDA62D !default;
 
 $navbar-inverse-bg: #1F3F5E !default;
 $navbar-inverse-link-color: #eee !default;
