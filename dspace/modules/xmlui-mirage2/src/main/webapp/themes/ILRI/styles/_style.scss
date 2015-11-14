@@ -1,31 +1,30 @@
 @import "../../0_CGIAR/styles/main";
 
 header .navbar-default {
-  color: $brand-primary-text;
+  color: $ilri-white;
 }
 
 .headerInfoName {
-  color: $brand-primary-text;
+  color: $ilri-white;
 }
 
 .headerInfoText {
-  color: $brand-primary-text;
+  color: $ilri-white;
 }
 
 .trail-wrapper {
-  background-color: $trail-bg;
-  color: $trail-text;
-  border-bottom: $trail-border-bottom;
+  color: $ilri-gray;
+  border-bottom: none;
 }
 
 // text on breadcrumb
 .breadcrumb > li,
 .breadcrumb > li > a,
 .trail-wrapper .breadcrumb > li + li::before {
-  color: $trail-text;
+  color: $ilri-gray;
 }
 
 // hamburger menu on mobile navbar
 .trail-toggle .navbar-toggle .icon-bar {
-  background-color: $trail-text;
+  background-color: $ilri-gray;
 }

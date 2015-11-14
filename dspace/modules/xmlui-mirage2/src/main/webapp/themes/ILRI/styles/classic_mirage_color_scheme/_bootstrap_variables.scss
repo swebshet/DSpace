@@ -9,11 +9,13 @@
 // ----------------------
 // used for main header (dark ILRI red background, off-white text)
 $brand-primary: #702D3E !default;
-$brand-primary-text: #EBEBEB !default;
-// breadcrumb trail (light ILRI red background, blackish text)
-$trail-bg: #E3D7D7 !default;
-$trail-text: #333 !default;
-$trail-border-bottom: none;
+
+// ILRI light red
+$brand-secondary: #E3D7D7 !default;
+
+// a few colors we want to use more than once
+$ilri-white: #EBEBEB !default;
+$ilri-gray: #333 !default;
 
 $navbar-inverse-bg: #1F3F5E !default;
 $navbar-inverse-link-color: #eee !default;
