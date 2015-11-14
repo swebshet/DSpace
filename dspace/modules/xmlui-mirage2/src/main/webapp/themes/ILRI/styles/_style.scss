@@ -1,5 +1,9 @@
 @import "../../0_CGIAR/styles/main";
 
+body {
+  color: $ilri-gray;
+}
+
 header .navbar-default {
   color: $ilri-white;
 }
@@ -27,4 +31,8 @@ header .navbar-default {
 // hamburger menu on mobile navbar
 .trail-toggle .navbar-toggle .icon-bar {
   background-color: $ilri-gray;
+}
+
+.text-muted {
+  color: #666;
 }
