@@ -1,1 +1,24 @@
 @import "../../0_CGIAR/styles/main";
+
+body {
+  color: $ccafs-black-text;
+}
+
+.trail-wrapper {
+  background-color: $ccafs-blue;
+  color: #FFF;
+  border-bottom: 2px solid $brand-secondary;
+}
+
+header .navbar-default {
+  background-color: #FFF;
+  color: $ccafs-black-text;
+}
+
+.headerInfoName {
+  color: $ccafs-black-text;
+}
+
+.headerInfoText {
+  color: $ccafs-black-text;
+}
