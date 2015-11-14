@@ -1,5 +1,5 @@
-$abstract-views-color: #427730;
-$file-downloads-color: #7AB800;
+$abstract-views-color: $brand-secondary;
+$file-downloads-color: $brand-primary;
 
 $cua-ct-series-names: (downloads, abstracts);
 $cua-ct-series-colors: ($file-downloads-color, $abstract-views-color);
