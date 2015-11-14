@@ -6,12 +6,16 @@ body {
 
 .trail-wrapper {
   background-color: $ccafs-blue;
-  color: #FFF;
+  color: $ccafs-white;
   border-bottom: 5px solid $brand-secondary;
 }
 
+.breadcrumb .dropdown-toggle {
+  color: $ccafs-white;
+}
+
 header .navbar-default {
-  background-color: #FFF;
+  background-color: $ccafs-white;
   color: $ccafs-black-text;
 }
 
@@ -21,4 +25,11 @@ header .navbar-default {
 
 .headerInfoText {
   color: $ccafs-black-text;
+}
+
+// text on breadcrumb
+.breadcrumb > li,
+.breadcrumb > li > a,
+.trail-wrapper .breadcrumb > li + li::before {
+  color: $ccafs-white;
 }
