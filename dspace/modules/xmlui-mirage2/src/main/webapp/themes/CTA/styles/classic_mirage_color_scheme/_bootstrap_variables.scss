@@ -7,7 +7,13 @@
  */
 // Preset Bootstrap variables
 // ----------------------
-$brand-primary: #427730 !default;
+// CTA light green
+$brand-primary: #7BB010 !default;
+
+// CTA dark green
+$brand-secondary: #00662F !default;
+
+$cta-white: #FFF !default;
 
 $navbar-inverse-bg: #1F3F5E !default;
 $navbar-inverse-link-color: #eee !default;
