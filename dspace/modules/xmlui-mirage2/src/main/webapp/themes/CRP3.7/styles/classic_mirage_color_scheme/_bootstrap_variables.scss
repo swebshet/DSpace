@@ -7,7 +7,14 @@
  */
 // Preset Bootstrap variables
 // ----------------------
-$brand-primary: #427730 !default;
+// CRP3.7 light brown
+$brand-primary: rgb(208, 181, 121) !default;
+
+// CRP3.7 dark brown
+$brand-secondary: rgb(171, 133, 54) !default;
+
+$crp37-white: #FFF !default;
+$crp37-black-text: #262626 !default;
 
 $navbar-inverse-bg: #1F3F5E !default;
 $navbar-inverse-link-color: #eee !default;
