@@ -1,30 +1,30 @@
 @import "../../0_CGIAR/styles/main";
 
 .trail-wrapper {
-  color: white;
+  color: $iwmi-white;
   background-color: $brand-secondary;
   border-bottom: none;
 }
 
 .breadcrumb .dropdown-toggle {
-  color: white;
+  color: $iwmi-white;
 }
 
 header .navbar-default {
-  color: white;
+  color: $iwmi-white;
 }
 
 .headerInfoName {
-  color: white;
+  color: $iwmi-white;
 }
 
 .headerInfoText {
-  color: white;
+  color: $iwmi-white;
 }
 
 // text on breadcrumb
 .breadcrumb > li,
 .breadcrumb > li > a,
 .trail-wrapper .breadcrumb > li + li::before {
-  color: white;
+  color: $iwmi-white;
 }
