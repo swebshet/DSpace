@@ -1,1 +1,38 @@
 @import "../../0_CGIAR/styles/main";
+
+body {
+  color: #222;
+}
+
+.trail-wrapper {
+  background-color: $brand-secondary;
+  color: white;
+  border-bottom: none;
+}
+
+.breadcrumb .dropdown-toggle {
+  color: white;
+}
+
+header .navbar-default {
+  color: white;
+}
+
+.headerInfoName {
+  color: white;
+}
+
+.headerInfoText {
+  color: white;
+}
+
+// text on breadcrumb
+.breadcrumb > li,
+.breadcrumb > li > a,
+.trail-wrapper .breadcrumb > li + li::before {
+  color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #666;
+}
