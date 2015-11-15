@@ -7,7 +7,9 @@
  */
 // Preset Bootstrap variables
 // ----------------------
-$brand-primary: #427730 !default;
+// IWMI blue
+$brand-primary: #006CB7 !default;
+$brand-secondary: lighten($brand-primary, 10%);
 
 $navbar-inverse-bg: #1F3F5E !default;
 $navbar-inverse-link-color: #eee !default;
