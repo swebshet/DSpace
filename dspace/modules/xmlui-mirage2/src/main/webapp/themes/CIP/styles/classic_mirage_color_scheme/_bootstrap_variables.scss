@@ -7,7 +7,12 @@
  */
 // Preset Bootstrap variables
 // ----------------------
-$brand-primary: #427730 !default;
+// CIP orange
+$brand-primary: #FF6633 !default;
+$brand-secondary: lighten($brand-primary, 10%);
+
+$cip-black-text: #000 !default;
+$cip-white: #FFF !default;
 
 $navbar-inverse-bg: #1F3F5E !default;
 $navbar-inverse-link-color: #eee !default;
