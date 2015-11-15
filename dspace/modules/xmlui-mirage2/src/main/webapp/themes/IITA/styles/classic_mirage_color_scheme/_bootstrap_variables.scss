@@ -7,7 +7,12 @@
  */
 // Preset Bootstrap variables
 // ----------------------
-$brand-primary: #427730 !default;
+// IITA orange
+$brand-primary: #F77215 !default;
+$brand-secondary: lighten($brand-primary, 10%);
+
+$iita-black-text: #636363 !default;
+$iita-white: white !default;
 
 $navbar-inverse-bg: #1F3F5E !default;
 $navbar-inverse-link-color: #eee !default;
