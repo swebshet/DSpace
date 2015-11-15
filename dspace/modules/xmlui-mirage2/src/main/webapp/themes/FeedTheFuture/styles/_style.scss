@@ -6,31 +6,31 @@ body {
 
 .trail-wrapper {
   background-color: $brand-secondary;
-  color: white;
+  color: $ftf-white;
   border-bottom: none;
 }
 
 .breadcrumb .dropdown-toggle {
-  color: white;
+  color: $ftf-white;
 }
 
 header .navbar-default {
-  color: white;
+  color: $ftf-white;
 }
 
 .headerInfoName {
-  color: white;
+  color: $ftf-white;
 }
 
 .headerInfoText {
-  color: white;
+  color: $ftf-white;
 }
 
 // text on breadcrumb
 .breadcrumb > li,
 .breadcrumb > li > a,
 .trail-wrapper .breadcrumb > li + li::before {
-  color: white;
+  color: $ftf-white;
 }
 
 h1, h2, h3, h4, h5, h6 {
