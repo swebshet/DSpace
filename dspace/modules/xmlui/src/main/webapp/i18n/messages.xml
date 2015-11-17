@@ -2376,7 +2376,7 @@
 	<message key="xmlui.dri2xhtml.METS-1.0.item-related-audio">Related audio: </message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-related-photo">Related photo: </message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-related-reference">Related reference: </message>
-	<message key="xmlui.dri2xhtml.METS-1.0.item-agrovoc-terms">AGROVOC terms</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-agrovoc-terms">AGROVOC Keywords</message>
 
 	<message key="xmlui.dri2xhtml.METS-1.0.item-files-head">Files in this item</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-files-file">Files</message>
