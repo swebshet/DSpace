@@ -269,7 +269,7 @@ such as authors, subject, citation, description, etc
 	            <xsl:if test="../dim:field[@authority=$authority and @mdschema='atmire' and @element='orcid' and @qualifier='id']">
 		            <a class="orcid-icon-link" target="_blank">
 			            <xsl:attribute name="href">
-				            <xsl:value-of select="concat('//orcid.org/', ../dim:field[@mdschema='atmire' and @element='orcid' and @qualifier='id']/text())"/>
+				            <xsl:value-of select="concat('//orcid.org/', ../dim:field[@authority=$authority and @mdschema='atmire' and @element='orcid' and @qualifier='id']/text())"/>
 			            </xsl:attribute>
 
 			            <img alt="xmlui.mirage2.item-list.thumbnail" i18n:attr="alt"
