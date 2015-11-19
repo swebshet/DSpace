@@ -321,16 +321,6 @@
         <field>
           <dc-schema>cg</dc-schema>
           <dc-element>subject</dc-element>
-          <dc-qualifier>africarice</dc-qualifier>
-          <repeatable>true</repeatable>
-          <label>AfricaRice Subject Focus</label>
-          <input-type value-pairs-name="africarice-subject">dropdown</input-type>
-          <hint></hint>
-          <required></required>
-        </field>
-        <field>
-          <dc-schema>cg</dc-schema>
-          <dc-element>subject</dc-element>
           <dc-qualifier>bioversity</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Bioversity Subject Focus</label>
@@ -3668,64 +3658,6 @@
       <pair>
         <displayed-value>YAM</displayed-value>
         <stored-value>YAM</stored-value>
-      </pair>
-    </value-pairs>
-    <value-pairs value-pairs-name="africarice-subject" dc-term="africarice-subject">
-      <pair>
-        <displayed-value>CROP ESTABLISHMENT</displayed-value>
-        <stored-value>CROP ESTABLISHMENT</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>CROP NUTRITION</displayed-value>
-        <stored-value>CROP NUTRITION</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>DISEASES AND PESTS</displayed-value>
-        <stored-value>DISEASES AND PESTS</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>HARVEST</displayed-value>
-        <stored-value>HARVEST</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>LAND DEVELOPMENT</displayed-value>
-        <stored-value>LAND DEVELOPMENT</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>LAND PREPARATION</displayed-value>
-        <stored-value>LAND PREPARATION</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>MARKETING</displayed-value>
-        <stored-value>MARKETING</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>PLANNING</displayed-value>
-        <stored-value>PLANNING</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>POST HARVEST</displayed-value>
-        <stored-value>POST HARVEST</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>PROCESSING</displayed-value>
-        <stored-value>PROCESSING</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>VALUE ADDITION</displayed-value>
-        <stored-value>VALUE ADDITION</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>VARIETIES AND SEEDS</displayed-value>
-        <stored-value>VARIETIES AND SEEDS</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>WATER MANAGEMENT</displayed-value>
-        <stored-value>WATER MANAGEMENT</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>WEEDS MANAGEMENT</displayed-value>
-        <stored-value>WEEDS MANAGEMENT</stored-value>
       </pair>
     </value-pairs>
     <value-pairs value-pairs-name="ccafsproject" dc-term="ccafsproject">

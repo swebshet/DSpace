@@ -150,7 +150,6 @@
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_drylandssubject">Dryland Systems subjects</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_icardasubject">ICARDA subjects</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_iitasubject">IITA subjects</message>
-    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_africaricesubject">AfricaRice subjects</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_outputtype">Output types</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_affiliation">Author affiliations</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_status">Status</message>
@@ -428,7 +427,6 @@
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.iwmisubject">IWMI subject</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.wlesubject">WLE subject</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.iitasubject">IITA subject</message>
-	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.africaricesubject">AfricaRice subject</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.status">Status</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.region">Region</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.country">Country</message>
