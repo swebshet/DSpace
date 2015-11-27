@@ -13,6 +13,7 @@
     "holderjs": "2.4.1",
     "chartist" :"0.9.4",
     "fontawesome": "4.2.0",
+    "academicons": "1.6.0",
     "datatables": "1.10.3"
   },
   "devDependencies": {}
