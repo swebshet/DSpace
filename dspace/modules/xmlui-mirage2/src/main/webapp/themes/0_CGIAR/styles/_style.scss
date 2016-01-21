@@ -239,3 +239,9 @@ div.secondary.search-browse{
   color: $brand-primary;
   margin: 2px;
 }
+
+// fix for long URLs in item view
+// https://github.com/ilri/DSpace/issues/172
+.simple-item-view-description .marginleft {
+  text-align: left;
+}
