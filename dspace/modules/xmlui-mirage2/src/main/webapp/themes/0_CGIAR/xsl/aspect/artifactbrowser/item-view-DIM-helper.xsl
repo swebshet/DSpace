@@ -334,15 +334,15 @@ such as authors, subject, citation, description, etc
         or dim:field[@element='cpsubject' and @qualifier='cpwfsubject']
         or dim:field[@element='isubject' and @qualifier='ilrisubject']
         or dim:field[@element='iwsubject' and @qualifier='iwmisubject']
-        or dim:field[@mdschema='cg' and @element='subject' and @qualifier='wle']
-        or dim:field[@mdschema='cg' and @element='subject' and @qualifier='cip']
-        or dim:field[@mdschema='cg' and @element='subject' and @qualifier='drylands']
-        or dim:field[@mdschema='cg' and @element='subject' and @qualifier='icarda']
         or dim:field[@mdschema='cg' and @element='subject' and @qualifier='bioversity']
         or dim:field[@mdschema='cg' and @element='subject' and @qualifier='ciat']
+        or dim:field[@mdschema='cg' and @element='subject' and @qualifier='cip']
         or dim:field[@mdschema='cg' and @element='subject' and @qualifier='cta']
+        or dim:field[@mdschema='cg' and @element='subject' and @qualifier='drylands']
         or dim:field[@mdschema='cg' and @element='subject' and @qualifier='humidtropics']
-        or dim:field[@mdschema='cg' and @element='subject' and @qualifier='iita']"/>
+        or dim:field[@mdschema='cg' and @element='subject' and @qualifier='icarda']
+        or dim:field[@mdschema='cg' and @element='subject' and @qualifier='iita']
+        or dim:field[@mdschema='cg' and @element='subject' and @qualifier='wle']"/>
         </xsl:variable>
 
         <xsl:if test="$subjectTest ='true'">
@@ -351,20 +351,20 @@ such as authors, subject, citation, description, etc
                     <i18n:text>xmlui.dri2xhtml.METS-1.0.item-subject</i18n:text>
                 </h5>
                 <span class="cgiar-subjects">
+                    <xsl:call-template name="bioversitysubject"/>
                     <xsl:call-template name="ccafsubject"/>
+                    <xsl:call-template name="ciatsubject"/>
                     <xsl:call-template name="ciforsubject"/>
+                    <xsl:call-template name="cipsubject"/>
                     <xsl:call-template name="cpwfsubject"/>
+                    <xsl:call-template name="ctasubject"/>
+                    <xsl:call-template name="drylandssubject"/>
+                    <xsl:call-template name="humidtropicssubject"/>
+                    <xsl:call-template name="icardasubject"/>
+                    <xsl:call-template name="iitasubject"/>
                     <xsl:call-template name="ilrisubject"/>
                     <xsl:call-template name="iwmisubject"/>
                     <xsl:call-template name="wlesubject"/>
-                    <xsl:call-template name="cipsubject"/>
-                    <xsl:call-template name="drylandssubject"/>
-                    <xsl:call-template name="icardasubject"/>
-                    <xsl:call-template name="bioversitysubject"/>
-                    <xsl:call-template name="ciatsubject"/>
-                    <xsl:call-template name="ctasubject"/>
-                    <xsl:call-template name="humidtropicssubject"/>
-                    <xsl:call-template name="iitasubject"/>
                 </span>
             </div>
         </xsl:if>
