@@ -364,6 +364,7 @@ such as authors, subject, citation, description, etc
                     <xsl:call-template name="iitasubject"/>
                     <xsl:call-template name="ilrisubject"/>
                     <xsl:call-template name="iwmisubject"/>
+                    <!-- the last template called should not output ";" at the end -->
                     <xsl:call-template name="wlesubject"/>
                 </span>
             </div>
@@ -440,7 +441,9 @@ such as authors, subject, citation, description, etc
                 <xsl:call-template name="discovery-link">
                     <xsl:with-param name="filtertype" select="'wlesubject'"/>
                 </xsl:call-template>
+                <xsl:if test="count(following-sibling::dim:field[@mdschema='cg' and @element='subject' and @qualifier='wle']) != 0">
                     <xsl:text>; </xsl:text>
+                </xsl:if>
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
@@ -470,9 +473,7 @@ such as authors, subject, citation, description, etc
                 <xsl:call-template name="discovery-link">
                     <xsl:with-param name="filtertype" select="'icardasubject'"/>
                 </xsl:call-template>
-                <xsl:if test="count(following-sibling::dim:field[@mdschema='cg' and @element='subject' and @qualifier='icarda']) != 0">
                     <xsl:text>; </xsl:text>
-                </xsl:if>
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
@@ -482,9 +483,7 @@ such as authors, subject, citation, description, etc
                 <xsl:call-template name="discovery-link">
                     <xsl:with-param name="filtertype" select="'bioversitysubject'"/>
                 </xsl:call-template>
-                <xsl:if test="count(following-sibling::dim:field[@mdschema='cg' and @element='subject' and @qualifier='bioversity']) != 0">
                     <xsl:text>; </xsl:text>
-                </xsl:if>
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
@@ -494,9 +493,7 @@ such as authors, subject, citation, description, etc
                 <xsl:call-template name="discovery-link">
                     <xsl:with-param name="filtertype" select="'ciatsubject'"/>
                 </xsl:call-template>
-                <xsl:if test="count(following-sibling::dim:field[@mdschema='cg' and @element='subject' and @qualifier='ciat']) != 0">
                     <xsl:text>; </xsl:text>
-                </xsl:if>
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
@@ -506,9 +503,7 @@ such as authors, subject, citation, description, etc
                 <xsl:call-template name="discovery-link">
                     <xsl:with-param name="filtertype" select="'ctasubject'"/>
                 </xsl:call-template>
-                <xsl:if test="count(following-sibling::dim:field[@mdschema='cg' and @element='subject' and @qualifier='cta']) != 0">
                     <xsl:text>; </xsl:text>
-                </xsl:if>
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
@@ -518,9 +513,7 @@ such as authors, subject, citation, description, etc
                 <xsl:call-template name="discovery-link">
                     <xsl:with-param name="filtertype" select="'humidtropicssubject'"/>
                 </xsl:call-template>
-                <xsl:if test="count(following-sibling::dim:field[@mdschema='cg' and @element='subject' and @qualifier='humidtropics']) != 0">
                     <xsl:text>; </xsl:text>
-                </xsl:if>
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
