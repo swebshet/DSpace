@@ -70,7 +70,7 @@
           <dc-schema>cg</dc-schema>
           <dc-element>authorship</dc-element>
           <dc-qualifier>types</dc-qualifier>
-          <repeatable>false</repeatable>
+          <repeatable>true</repeatable>
           <label>Authorship types</label>
           <input-type value-pairs-name="Authorship_types">dropdown</input-type>
           <hint>Characterize the entire authorship based on author affilations.</hint>
