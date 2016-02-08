@@ -245,3 +245,19 @@ div.secondary.search-browse{
 .simple-item-view-description .marginleft {
   text-align: left;
 }
+
+// buttons on submit page should have brand colors
+.btn-success {
+  background-color: $brand-primary;
+  border-color: darken($brand-primary, 5%);
+}
+
+.btn-success:hover, .btn-success:focus, .btn-success:active {
+  background-color: lighten($brand-primary, 5%);
+  border-color: $brand-primary;
+}
+
+.btn-success[disabled] {
+  background-color: lighten($brand-primary, 10%);
+  border-color: lighten($brand-primary, 5%);
+}
