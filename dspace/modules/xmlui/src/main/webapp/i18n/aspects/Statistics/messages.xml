@@ -606,7 +606,7 @@ DAMAGE.
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.ciat">CIAT Subject (cg.subject.ciat)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.humidtropics">Humidtropics Subject (cg.subject.humidtropics)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.cipsubject">CIP Subject (cg.subject.cip)</message>
-    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.drylandssubject">Dryland Systems Subject (cg.subject.cip)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.drylandssubject">Dryland Systems Subject (cg.subject.drylands)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.icardasubject">ICARDA Subject (cg.subject.icarda)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dateAccessioned">Submit Date (dc.date.accessioned)</message>
 
