@@ -586,7 +586,6 @@ DAMAGE.
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.type">Type (dc.type)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.type">Type (dc.type.*)</message>
 
-    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.type">Submit Date (dc.date.accessioned)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.status">Status (dc.identifier.status)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.isijournal">ISI Journal (dc.isijournal.*)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.jtitle">Journal Title (dc.title.jtitle)</message>
