@@ -584,7 +584,7 @@ DAMAGE.
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.title">Title (dc.title)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.type.template">Type Template (dc.type.template)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.type">Type (dc.type)</message>
-    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.type">Type (dc.type)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.type">Type (dc.type.*)</message>
 
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.type">Submit Date (dc.date.accessioned)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.status">Status (dc.identifier.status)</message>
