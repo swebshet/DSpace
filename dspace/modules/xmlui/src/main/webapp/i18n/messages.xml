@@ -103,7 +103,7 @@
    <message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.dateissued">issue date</message>
    <message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.dateaccessioned">submit date</message>
 	<message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.relevance">relevance</message>
-	<message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.output">output type</message>
+	<message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.type">output type</message>
 	<message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by">Sort items by</message>
 	<message key="xmlui.ArtifactBrowser.AbstractSearch.order">in order</message>
 	<message key="xmlui.ArtifactBrowser.AbstractSearch.order.asc">ascending</message>
@@ -415,7 +415,7 @@
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.drylandssubject">Dryland Systems subject</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.icardasubject">ICARDA subject</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.affiliation">Author affiliation</message>
-	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.outputtype">Output type</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.type">Type</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.bioversity">Bioversity subject</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.ccafsubject">CCAFS subject</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.ciat">CIAT subject</message>
