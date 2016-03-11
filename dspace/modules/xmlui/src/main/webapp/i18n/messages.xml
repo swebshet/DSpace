@@ -140,7 +140,7 @@
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_subregion">Sub regions</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_crpsubject">CGIAR Research Programs</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_basin">River basins</message>
-    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_output">Output types</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_type">Output types</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_cta">CTA subjects</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_wlesubject">WLE subjects</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_bioversity">Bioversity subjects</message>
@@ -150,7 +150,6 @@
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_drylandssubject">Dryland Systems subjects</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_icardasubject">ICARDA subjects</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_iitasubject">IITA subjects</message>
-    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_outputtype">Output types</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_affiliation">Author affiliations</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_status">Status</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_breed">Animal breed</message>
