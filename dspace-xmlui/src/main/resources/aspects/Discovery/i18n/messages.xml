@@ -108,7 +108,7 @@
     <message key="xmlui.Discovery.AbstractSearch.type_bioversity">Filter by: Biodiversity subjects</message>
     <message key="xmlui.Discovery.AbstractSearch.type_country">Filter by: Country</message>
     <message key="xmlui.Discovery.AbstractSearch.type_region">Filter by: Region</message>
-    <message key="xmlui.Discovery.AbstractSearch.type_outputtype">Filter by: Outputtype</message>
+    <message key="xmlui.Discovery.AbstractSearch.type_type">Filter by: Output type</message>
     <message key="xmlui.Discovery.AbstractSearch.type_affiliation">Filter by: Author Affiliation</message>
 
     <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.author">Author</message>
