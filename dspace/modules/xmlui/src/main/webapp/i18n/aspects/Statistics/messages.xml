@@ -956,7 +956,7 @@ DAMAGE.
     <message key="xmlui.metadataquality.batch-edit.field.label.dc.title.alternative">Alternative Title (dc.title.alternative)</message>
     <message key="xmlui.metadataquality.batch-edit.field.label.dc.title">Title (dc.title)</message>
     <message key="xmlui.metadataquality.batch-edit.field.label.dc.type.template">Type Template (dc.type.template)</message>
-    <message key="xmlui.metadataquality.batch-edit.field.label.dc.type">Type (dc.type)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.type">Type (dc.type.*)</message>
     <message key="xmlui.metadataquality.batch-edit.field.label.workflow.batchedit.claimedby">Batch edit step claimed user identifier (workflow.batchedit.claimedby)</message>
 
 
