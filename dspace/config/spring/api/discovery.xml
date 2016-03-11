@@ -99,7 +99,7 @@
                 <ref bean="searchFilterAuthor" />
                 <ref bean="searchFilterAffiliation" />
                 <ref bean="searchFilterIssued" />
-                <ref bean="searchFilterOutputType" />
+                <ref bean="searchFilterOutput" />
                 <ref bean="searchFilterCrpsubject" />
                 <ref bean="searchFilterRegion" />
                 <ref bean="searchFilterCountry" />
@@ -129,7 +129,7 @@
                 <ref bean="searchFilterAuthor" />
                 <ref bean="searchFilterAffiliation" />
                 <ref bean="searchFilterIssued" />
-                <ref bean="searchFilterOutputType" />
+                <ref bean="searchFilterOutput" />
                 <ref bean="searchFilterCrpsubject" />
                 <ref bean="searchFilterRegion" />
                 <ref bean="searchFilterCountry" />
@@ -233,7 +233,7 @@
                 <ref bean="searchFilterAuthor" />
                 <ref bean="searchFilterAffiliation" />
                 <ref bean="searchFilterIssued" />
-                <ref bean="searchFilterOutputType" />
+                <ref bean="searchFilterOutput" />
                 <ref bean="searchFilterCrpsubject" />
                 <ref bean="searchFilterRegion" />
                 <ref bean="searchFilterCountry" />
@@ -264,7 +264,7 @@
                 <ref bean="searchFilterAuthor" />
                 <ref bean="searchFilterAffiliation" />
                 <ref bean="searchFilterIssued" />
-                <ref bean="searchFilterOutputType" />
+                <ref bean="searchFilterOutput" />
                 <ref bean="searchFilterCrpsubject" />
                 <ref bean="searchFilterRegion" />
                 <ref bean="searchFilterCountry" />
