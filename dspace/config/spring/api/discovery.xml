@@ -805,6 +805,12 @@
             </list>
         </property>
         <!--The search filters which can be used on the discovery search page-->
+
+        <!-- Note from Alan: indexes for search filters are only created if you
+             actually use them in a searchFilters property. Simply defining a
+             filter doesn't create the index! Atmire's strategy is to list the
+             filters here just in case we aren't using them in the site-wide
+             sidebarFacets configuration -->
         <property name="searchFilters">
             <list>
                 <ref bean="searchFilterTitle"/>
