@@ -600,7 +600,6 @@ DAMAGE.
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.subregion">Sub region (dc.srplace.*)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.crpsubject">CGIAR Research Program (dc.crsubject.*)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.basin">River Basin (dc.river.*)</message>
-    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.output">Output (dc.type)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.cta">CTA Subject (cg.subject.cta)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.wlesubject">WLE Subject (cg.subject.wle)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.bioversity">Bioversity Subject (cg.subject.bioversity)</message>
