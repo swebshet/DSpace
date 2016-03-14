@@ -219,7 +219,7 @@
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.region.column_heading">Region Name</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.subregion.column_heading">Sub Region</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.country.column_heading">Country Name</message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.output.column_heading">Output Type</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.type.column_heading">Output Type</message>
 
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.author">Browsing {0} by Author {1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.author">Browsing {0} by Author</message>
@@ -260,8 +260,8 @@
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.crpsubject">Browsing {0} by CGIAR Research Program</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.basin">Browsing {0} by River Basin {1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.basin">Browsing {0} by River Basin</message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.output">Browsing {0} by Output Type {1}</message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.output">Browsing {0} by Output Type</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.type">Browsing {0} by Output Type {1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.type">Browsing {0} by Output Type</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.cta">Browsing {0} by CTA Subject {1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.cta">Browsing {0} by CTA Subject</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.wlesubject">Browsing {0} WLE Subject {1}</message>
@@ -397,7 +397,7 @@
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_subregion">By Sub Region</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_crpsubject">By CRP Subject</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_basin">By River Basin</message>
-	<message key="xmlui.ArtifactBrowser.Navigation.browse_output">By Output Type</message>
+	<message key="xmlui.ArtifactBrowser.Navigation.browse_type">By Output Type</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_cipsubject">By CIP subject</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_drylandssubject">By Dryland systems subject</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_icardasubject">By ICARDA subjects</message>
