@@ -596,7 +596,7 @@ DAMAGE.
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.iwmisubject">IWMI subject (dc.iwsubject.*)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.region">Region (dc.rplace.*)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.country">Country (dc.cplace.*)</message>
-    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.subregion">Sub region (dc.srplace.*)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.subregion">Subregion (dc.srplace.*)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.crpsubject">CGIAR Research Program (dc.crsubject.*)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.basin">River basin (dc.river.*)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.cta">CTA subject (cg.subject.cta)</message>
