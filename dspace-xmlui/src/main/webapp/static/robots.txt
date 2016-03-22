@@ -22,15 +22,15 @@ Disallow: /handle/${handle.prefix}/*/browse
 #
 # If you have configured DSpace (Solr-based) Statistics to be publicly 
 # accessible, then you may not want this content to be indexed
-# Disallow: /statistics
+Disallow: /statistics
 #
 # You also may wish to disallow access to the following paths, in order
 # to stop web spiders from accessing user-based content
-# Disallow: /contact
-# Disallow: /feedback
-# Disallow: /forgot
-# Disallow: /login
-# Disallow: /register
+Disallow: /contact
+Disallow: /feedback
+Disallow: /forgot
+Disallow: /login
+Disallow: /register
 
 
 ##############################
