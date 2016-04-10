@@ -192,6 +192,7 @@
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.sort_by.title">title</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.sort_by.dateissued">issue date</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.sort_by.dateaccessioned">submit date</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.sort_by.type">type</message>
 
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.order.asc">ascending</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.order.desc">descending</message>
