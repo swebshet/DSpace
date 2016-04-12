@@ -589,11 +589,11 @@ DAMAGE.
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.status">Status (dc.identifier.status)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.isijournal">ISI journal (dc.isijournal.*)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.jtitle">Journal title (dc.title.jtitle)</message>
-    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.ilrisubject">ILRI subject (dc.isubject.*)</message>
-    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.cpwfsubject">CPWF subject (dc.cpsubject.*)</message>
-    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.ccafsubject">CCAFS subject (dc.ccsubject.*)</message>
-    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.ciforsubject">CIFOR subject (dc.cisubject.*)</message>
-    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.iwmisubject">IWMI subject (dc.iwsubject.*)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.ilrisubject">ILRI subject (cg.subject.ilri)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.cpwfsubject">CPWF subject (cg.subject.cpwf)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.ccafsubject">CCAFS subject (cg.subject.ccafs)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.ciforsubject">CIFOR subject (cg.subject.cifor)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.iwmisubject">IWMI subject (cg.subject.iwmi)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.region">Region (dc.rplace.*)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.country">Country (dc.cplace.*)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.subregion">Subregion (dc.srplace.*)</message>

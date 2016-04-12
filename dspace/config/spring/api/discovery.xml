@@ -523,7 +523,7 @@
         <property name="indexFieldName" value="ilrisubject"/>
         <property name="metadataFields">
             <list>
-                <value>dc.isubject.*</value>
+                <value>cg.subject.ilri</value>
             </list>
         </property>
         <property name="facetLimit" value="5"/>
@@ -535,7 +535,7 @@
         <property name="indexFieldName" value="cpwfsubject"/>
         <property name="metadataFields">
             <list>
-                <value>dc.cpsubject.*</value>
+                <value>cg.subject.cpwf</value>
             </list>
         </property>
         <property name="facetLimit" value="5"/>
@@ -547,7 +547,7 @@
         <property name="indexFieldName" value="ccafsubject"/>
         <property name="metadataFields">
             <list>
-                <value>dc.ccsubject.*</value>
+                <value>cg.subject.ccafs</value>
             </list>
         </property>
         <property name="facetLimit" value="5"/>
@@ -559,7 +559,7 @@
         <property name="indexFieldName" value="ciforsubject"/>
         <property name="metadataFields">
             <list>
-                <value>dc.cisubject.*</value>
+                <value>cg.subject.cifor</value>
             </list>
         </property>
         <property name="facetLimit" value="5"/>
@@ -571,7 +571,7 @@
         <property name="indexFieldName" value="iwmisubject"/>
         <property name="metadataFields">
             <list>
-                <value>dc.iwsubject.*</value>
+                <value>cg.subject.iwmi</value>
             </list>
         </property>
         <property name="facetLimit" value="5"/>

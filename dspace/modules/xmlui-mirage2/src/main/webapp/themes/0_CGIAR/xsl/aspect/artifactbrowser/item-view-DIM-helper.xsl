@@ -329,11 +329,11 @@ such as authors, subject, citation, description, etc
     </xsl:template>
     <xsl:template name="itemSummaryView-DIM-subjects">
         <xsl:variable name="subjectTest">
-            <xsl:value-of select="dim:field[@element='ccsubject' and @qualifier='ccafsubject']
-        or dim:field[@element='cisubject' and @qualifier='ciforsubject']
-        or dim:field[@element='cpsubject' and @qualifier='cpwfsubject']
-        or dim:field[@element='isubject' and @qualifier='ilrisubject']
-        or dim:field[@element='iwsubject' and @qualifier='iwmisubject']
+            <xsl:value-of select="dim:field[@mdschema='cg' and @element='subject' and @qualifier='ccafs']
+        or dim:field[@mdschema='cg' and @element='subject' and @qualifier='cifor']
+        or dim:field[@mdschema='cg' and @element='subject' and @qualifier='cpwf']
+        or dim:field[@mdschema='cg' and @element='subject' and @qualifier='ilri']
+        or dim:field[@mdschema='cg' and @element='subject' and @qualifier='iwmi']
         or dim:field[@mdschema='cg' and @element='subject' and @qualifier='bioversity']
         or dim:field[@mdschema='cg' and @element='subject' and @qualifier='ciat']
         or dim:field[@mdschema='cg' and @element='subject' and @qualifier='cip']
@@ -386,8 +386,8 @@ such as authors, subject, citation, description, etc
     </xsl:template>
 
     <xsl:template name="ccafsubject">
-        <xsl:if test="dim:field[@element='ccsubject' and @qualifier='ccafsubject']">
-            <xsl:for-each select="dim:field[@element='ccsubject' and @qualifier='ccafsubject']">
+        <xsl:if test="dim:field[@mdschema='cg' and @element='subject' and @qualifier='ccafs']">
+            <xsl:for-each select="dim:field[@mdschema='cg' and @element='subject' and @qualifier='ccafs']">
                 <xsl:call-template name="discovery-link">
                     <xsl:with-param name="filtertype" select="'ccafsubject'"/>
                 </xsl:call-template>
@@ -396,8 +396,8 @@ such as authors, subject, citation, description, etc
         </xsl:if>
     </xsl:template>
     <xsl:template name="ciforsubject">
-        <xsl:if test="dim:field[@element='cisubject' and @qualifier='ciforsubject']">
-            <xsl:for-each select="dim:field[@element='cisubject' and @qualifier='ciforsubject']">
+        <xsl:if test="dim:field[@mdschema='cg' and @element='subject' and @qualifier='cifor']">
+            <xsl:for-each select="dim:field[@mdschema='cg' and @element='subject' and @qualifier='cifor']">
                 <xsl:call-template name="discovery-link">
                     <xsl:with-param name="filtertype" select="'ccafsubject'"/>
                 </xsl:call-template>
@@ -406,8 +406,8 @@ such as authors, subject, citation, description, etc
         </xsl:if>
     </xsl:template>
     <xsl:template name="cpwfsubject">
-        <xsl:if test="dim:field[@element='cpsubject' and @qualifier='cpwfsubject']">
-            <xsl:for-each select="dim:field[@element='cpsubject' and @qualifier='cpwfsubject']">
+        <xsl:if test="dim:field[@mdschema='cg' and @element='subject' and @qualifier='cpwf']">
+            <xsl:for-each select="dim:field[@mdschema='cg' and @element='subject' and @qualifier='cpwf']">
                 <xsl:call-template name="discovery-link">
                     <xsl:with-param name="filtertype" select="'cpwfsubject'"/>
                 </xsl:call-template>
@@ -416,8 +416,8 @@ such as authors, subject, citation, description, etc
         </xsl:if>
     </xsl:template>
     <xsl:template name="ilrisubject">
-        <xsl:if test="dim:field[@element='isubject' and @qualifier='ilrisubject']">
-            <xsl:for-each select="dim:field[@element='isubject' and @qualifier='ilrisubject']">
+        <xsl:if test="dim:field[@mdschema='cg' and @element='subject' and @qualifier='ilri']">
+            <xsl:for-each select="dim:field[@mdschema='cg' and @element='subject' and @qualifier='ilri']">
                 <xsl:call-template name="discovery-link">
                     <xsl:with-param name="filtertype" select="'ilrisubject'"/>
                 </xsl:call-template>
@@ -426,8 +426,8 @@ such as authors, subject, citation, description, etc
         </xsl:if>
     </xsl:template>
     <xsl:template name="iwmisubject">
-        <xsl:if test="dim:field[@element='iwsubject' and @qualifier='iwmisubject']">
-            <xsl:for-each select="dim:field[@element='iwsubject' and @qualifier='iwmisubject']">
+        <xsl:if test="dim:field[@mdschema='cg' and @element='subject' and @qualifier='iwmi']">
+            <xsl:for-each select="dim:field[@mdschema='cg' and @element='subject' and @qualifier='iwmi']">
                 <xsl:call-template name="discovery-link">
                     <xsl:with-param name="filtertype" select="'iwmisubject'"/>
                 </xsl:call-template>
