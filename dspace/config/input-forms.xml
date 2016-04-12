@@ -742,9 +742,9 @@
         <field>
           <dc-schema>dc</dc-schema>
           <dc-element>type</dc-element>
-          <dc-qualifier>output</dc-qualifier>
+          <dc-qualifier></dc-qualifier>
           <repeatable>true</repeatable>
-          <label>Type</label>
+          <label>Item type (required)</label>
           <input-type value-pairs-name="common_types">dropdown</input-type>
           <hint>Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "Ctrl" or "Shift" key.</hint>
           <required></required>
