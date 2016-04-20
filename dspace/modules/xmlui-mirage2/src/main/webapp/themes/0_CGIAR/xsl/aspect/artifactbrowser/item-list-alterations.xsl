@@ -134,8 +134,8 @@
 
                     </div>
                 </xsl:if>
-                <xsl:if test="dim:field[@element = 'type' and @qualifier='output']">
-                    <xsl:variable name="type" select="dim:field[@element = 'type' and @qualifier='output']/node()"/>
+                <xsl:if test="dim:field[@element = 'type']">
+                    <xsl:variable name="type" select="dim:field[@element = 'type']/node()"/>
                     <div class="artifact-type">
                         <span class="descriptionlabel">Type :</span>
                         <xsl:value-of select="$type"/>

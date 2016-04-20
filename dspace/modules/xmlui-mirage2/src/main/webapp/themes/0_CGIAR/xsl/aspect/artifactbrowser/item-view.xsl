@@ -125,7 +125,7 @@
                     <xsl:call-template name="itemSummaryView-DIM-regions"/>
                     <xsl:call-template name="itemSummaryView-DIM-date"/>
                     <xsl:call-template name="itemSummaryView-DIM-language"/>
-                    <xsl:call-template name="itemSummaryView-DIM-output-type"/>
+                    <xsl:call-template name="itemSummaryView-DIM-type"/>
                     <xsl:call-template name="itemSummaryView-DIM-review-status"/>
                     <xsl:call-template name="itemSummaryView-DIM-accessibility"/>
 

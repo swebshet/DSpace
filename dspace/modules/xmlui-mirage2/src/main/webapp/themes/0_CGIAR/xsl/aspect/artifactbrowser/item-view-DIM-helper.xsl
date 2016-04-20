@@ -589,19 +589,19 @@ such as authors, subject, citation, description, etc
         </xsl:if>
 
     </xsl:template>
-    <xsl:template name="itemSummaryView-DIM-output-type">
-        <xsl:if test="dim:field[@element='type' and @qualifier='output' and descendant::text()]">
+    <xsl:template name="itemSummaryView-DIM-type">
+        <xsl:if test="dim:field[@element='type' and descendant::text()]">
             <div class="word-break item-page-field-wrapper table">
                 <h5 class="bold">
-                    <i18n:text>xmlui.dri2xhtml.METS-1.0.item-output-type</i18n:text>
+                    <i18n:text>xmlui.dri2xhtml.METS-1.0.item-type</i18n:text>
                 </h5>
-                <xsl:for-each select="dim:field[@element='type' and @qualifier='output' ]">
+                <xsl:for-each select="dim:field[@element='type']">
                     <a target="_black" >
                         <xsl:attribute name="href">
                             <xsl:value-of select="concat($context-path,'/discover?filtertype=type&amp;filter_relational_operator=equals&amp;filter=',url:encode(node()))"></xsl:value-of>
                         </xsl:attribute>
                         <xsl:copy-of select="./node()"/>
-                    </a>                    <xsl:if test="count(following-sibling::dim:field[@element='type' and @qualifier='output'] ) != 0">
+                    </a>                    <xsl:if test="count(following-sibling::dim:field[@element='type'] ) != 0">
                     <xsl:text>; </xsl:text>
                 </xsl:if>
                 </xsl:for-each>
