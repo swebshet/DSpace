@@ -132,7 +132,6 @@
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_region">Regions</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_country">Countries</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_ilrisubject">ILRI subjects</message>
-	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_icrafsubject">ICRAF subjects</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_cpwfsubject">CPWF subjects</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_ccafsubject">CCAFS subjects</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_ciforsubject">CIFOR subjects</message>
@@ -200,7 +199,6 @@
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.author.column_heading">Author</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.subject.column_heading">Subject</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.ilrisubject.column_heading">ILRI subject</message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.icrafsubject.column_heading">ICRAF subject</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.cpwfsubject.column_heading">CPWF subject</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.ccafsubject.column_heading">CCAFS subject</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.ciforsubject.column_heading">CIFOR subject</message>
@@ -385,7 +383,6 @@
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_region">By Region</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_country">By Country</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_ilrisubject">By ILRI subject</message>
-	<message key="xmlui.ArtifactBrowser.Navigation.browse_icrafsubject">By ICRAF subject</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_cpwfsubject">By CPWF subject</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_ccafsubject">By CCAFS subject</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_ciforsubject">By CIFOR subject</message>

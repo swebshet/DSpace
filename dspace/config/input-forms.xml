@@ -329,9 +329,9 @@
           <required></required>
         </field>
         <field>
-          <dc-schema>dc</dc-schema>
-          <dc-element>ccsubject</dc-element>
-          <dc-qualifier>ccafsubject</dc-qualifier>
+          <dc-schema>cg</dc-schema>
+          <dc-element>subject</dc-element>
+          <dc-qualifier>ccafs</dc-qualifier>
           <repeatable>true</repeatable>
           <label>CCAFS Subject Focus</label>
           <input-type value-pairs-name="ccafsubject">dropdown</input-type>
@@ -359,9 +359,9 @@
           <required></required>
         </field>
         <field>
-          <dc-schema>dc</dc-schema>
-          <dc-element>cisubject</dc-element>
-          <dc-qualifier>ciforsubject</dc-qualifier>
+          <dc-schema>cg</dc-schema>
+          <dc-element>subject</dc-element>
+          <dc-qualifier>cifor</dc-qualifier>
           <repeatable>true</repeatable>
           <label>CIFOR Subject Focus</label>
           <input-type value-pairs-name="ciforsubject">dropdown</input-type>
@@ -379,9 +379,9 @@
           <required></required>
         </field>
         <field>
-          <dc-schema>dc</dc-schema>
-          <dc-element>cpsubject</dc-element>
-          <dc-qualifier>cpwfsubject</dc-qualifier>
+          <dc-schema>cg</dc-schema>
+          <dc-element>subject</dc-element>
+          <dc-qualifier>cpwf</dc-qualifier>
           <repeatable>true</repeatable>
           <label>CPWF Subject Focus</label>
           <input-type value-pairs-name="cpwfsubject">dropdown</input-type>
@@ -449,9 +449,9 @@
           <required></required>
         </field>
         <field>
-          <dc-schema>dc</dc-schema>
-          <dc-element>isubject</dc-element>
-          <dc-qualifier>ilrisubject</dc-qualifier>
+          <dc-schema>cg</dc-schema>
+          <dc-element>subject</dc-element>
+          <dc-qualifier>ilri</dc-qualifier>
           <repeatable>true</repeatable>
           <label>ILRI Subject Focus</label>
           <input-type value-pairs-name="ilrisubject">dropdown</input-type>
@@ -459,9 +459,9 @@
           <required></required>
         </field>
         <field>
-          <dc-schema>dc</dc-schema>
-          <dc-element>iwsubject</dc-element>
-          <dc-qualifier>iwmisubject</dc-qualifier>
+          <dc-schema>cg</dc-schema>
+          <dc-element>subject</dc-element>
+          <dc-qualifier>iwmi</dc-qualifier>
           <repeatable>true</repeatable>
           <label>IWMI Subject Focus</label>
           <input-type value-pairs-name="iwmisubject">dropdown</input-type>
@@ -770,9 +770,9 @@
           <required></required>
         </field>
         <field>
-          <dc-schema>dc</dc-schema>
-          <dc-element>isubject</dc-element>
-          <dc-qualifier>ilrisubject</dc-qualifier>
+          <dc-schema>cg</dc-schema>
+          <dc-element>subject</dc-element>
+          <dc-qualifier>ilri</dc-qualifier>
           <repeatable>true</repeatable>
           <label>ILRI Subject Focus</label>
           <input-type value-pairs-name="ilrisubject">dropdown</input-type>
@@ -957,7 +957,7 @@
         <stored-value>WLI</stored-value>
       </pair>
     </value-pairs>
-    <value-pairs value-pairs-name="ilrisubject" dc-term="isubject_ilrisubject">
+    <value-pairs value-pairs-name="ilrisubject" dc-term="ilrisubject">
       <pair>
         <displayed-value>AGRICULTURE</displayed-value>
         <stored-value>AGRICULTURE</stored-value>
@@ -1596,7 +1596,7 @@
         <stored-value>Limited Access</stored-value>
       </pair>
     </value-pairs>
-    <value-pairs value-pairs-name="iwmisubject" dc-term="iwsubject_iwmisubject">
+    <value-pairs value-pairs-name="iwmisubject" dc-term="iwmisubject">
       <pair>
         <displayed-value>WELLS</displayed-value>
         <stored-value>WELLS</stored-value>
@@ -2688,7 +2688,7 @@
         <stored-value>WATERSHEDS</stored-value>
       </pair>
     </value-pairs>
-    <value-pairs value-pairs-name="cpwfsubject" dc-term="cpsubject_cpwfsubject">
+    <value-pairs value-pairs-name="cpwfsubject" dc-term="cpwfsubject">
       <pair>
         <displayed-value>AGRICULTURE</displayed-value>
         <stored-value>AGRICULTURE</stored-value>
@@ -2890,7 +2890,7 @@
         <stored-value>WOMEN</stored-value>
       </pair>
     </value-pairs>
-    <value-pairs value-pairs-name="ciforsubject" dc-term="cisubject_ciforsubject">
+    <value-pairs value-pairs-name="ciforsubject" dc-term="ciforsubject">
       <pair>
         <displayed-value>FOREST MANAGEMENT</displayed-value>
         <stored-value>FOREST MANAGEMENT</stored-value>
@@ -2970,7 +2970,7 @@
         <stored-value>CLIMATE CHANGE, AGRICULTURE AND FOOD SECURITY</stored-value>
       </pair>
     </value-pairs>
-    <value-pairs value-pairs-name="ccafsubject" dc-term="ccsubject_ccafsubject">
+    <value-pairs value-pairs-name="ccafsubject" dc-term="ccafsubject">
       <pair>
         <displayed-value>BASELINE SURVEY</displayed-value>
         <stored-value>BASELINE SURVEY</stored-value>
