@@ -24,10 +24,10 @@
     <!--  v1.8, V4 & V5 messages translated by Eva Braña (ebrana@arvo.es) and Emilio Lorenzo (elorenzo@arvo.es) at Arvo Consultores (http://www.arvo.es/)   -->
 	           
 <!-- General keys -->
-<message key="xmlui.general.dspace_home">DSpace Principal</message>
+<message key="xmlui.general.dspace_home">CGSpace Principal</message>
 <message key="xmlui.general.search">Búsquedas</message>
 <message key="xmlui.general.go">Ir</message>
-<message key="xmlui.general.go_home">Ir a página principal DSpace</message>
+<message key="xmlui.general.go_home">Ir a página principal CGSpace</message>
 <message key="xmlui.general.save">Guardar</message>
 <message key="xmlui.general.cancel">Cancelar</message>
 <message key="xmlui.general.return">Volver</message>
@@ -65,7 +65,7 @@
 	<!--
 		This section is for feed syndications (RSS, atom, etc)
 	-->
-<message key="xmlui.feed.general_description">El repositorio digital DSpace captura, almacena, indexa, preserva y distribuye materiales de investigación en formato digital.</message>
+<message key="xmlui.feed.general_description">El repositorio digital CGSpace captura, almacena, indexa, preserva y distribuye materiales de investigación en formato digital.</message>
 <message key="xmlui.feed.header">RSS Feeds</message>
 <message key="xmlui.feed.logo_title">Imagen</message>
 <message key="xmlui.feed.untitled">Sin título</message>
@@ -97,7 +97,7 @@
 <message key="xmlui.ArtifactBrowser.AbstractSearch.head2">Comunidades o colecciones que coinciden con la petición</message>
 <message key="xmlui.ArtifactBrowser.AbstractSearch.head3">Ítems que coinciden con la petición</message>
 <message key="xmlui.ArtifactBrowser.AbstractSearch.no_results">La búsqueda no produjo resultados</message>
-<message key="xmlui.ArtifactBrowser.AbstractSearch.all_of_dspace">Todo DSpace</message>
+<message key="xmlui.ArtifactBrowser.AbstractSearch.all_of_dspace">Todo CGSpace</message>
 
 <message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.title">título</message>
 <message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.dateissued">fecha de publicación</message>
@@ -188,7 +188,7 @@
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.CollectionViewer.java -->
 <message key="xmlui.ArtifactBrowser.CollectionViewer.search_scope">Ámbito de búsqueda</message>
-<message key="xmlui.ArtifactBrowser.CollectionViewer.all_of_dspace">Todo DSpace</message>
+<message key="xmlui.ArtifactBrowser.CollectionViewer.all_of_dspace">Todo CGSpace</message>
 <message key="xmlui.ArtifactBrowser.CollectionViewer.full_text_search">Búsqueda en esta colección:</message>
 <message key="xmlui.ArtifactBrowser.CollectionViewer.head_browse">Listar por</message>
 <message key="xmlui.ArtifactBrowser.CollectionViewer.browse_titles">Títulos</message>
@@ -200,12 +200,12 @@
 	<!-- org.dspace.app.xmlui.artifactbrowser.CommunityBrowser.java -->
 <message key="xmlui.ArtifactBrowser.CommunityBrowser.title">Lista de comunidades</message>
 <message key="xmlui.ArtifactBrowser.CommunityBrowser.trail">Lista de comunidades</message>
-<message key="xmlui.ArtifactBrowser.CommunityBrowser.head">Comunidades en DSpace</message>
+<message key="xmlui.ArtifactBrowser.CommunityBrowser.head">Comunidades en CGSpace</message>
 <message key="xmlui.ArtifactBrowser.CommunityBrowser.select">Elija una comunidad para listar sus colecciones</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.CommunityViewer.java -->
 <message key="xmlui.ArtifactBrowser.CommunityViewer.search_scope">Ámbito de búsqueda</message>
-<message key="xmlui.ArtifactBrowser.CommunityViewer.all_of_dspace">Todo DSpace</message>
+<message key="xmlui.ArtifactBrowser.CommunityViewer.all_of_dspace">Todo CGSpace</message>
 <message key="xmlui.ArtifactBrowser.CommunityViewer.full_text_search">Buscar en esta comunidad y sus colecciones:</message>
 <message key="xmlui.ArtifactBrowser.CommunityViewer.head_browse">Listar por</message>
 <message key="xmlui.ArtifactBrowser.CommunityViewer.browse_titles">Títulos</message>
@@ -230,7 +230,7 @@
 <message key="xmlui.ArtifactBrowser.FeedbackForm.title">Sugerencias</message>
 <message key="xmlui.ArtifactBrowser.FeedbackForm.trail">Sugerencias</message>
 <message key="xmlui.ArtifactBrowser.FeedbackForm.head">Sugerencias</message>
-<message key="xmlui.ArtifactBrowser.FeedbackForm.para1">Gracias por compartir sus sugerencias sobre DSpace. ¡Tendremos en cuenta sus comentarios!</message>
+<message key="xmlui.ArtifactBrowser.FeedbackForm.para1">Gracias por compartir sus sugerencias sobre CGSpace. ¡Tendremos en cuenta sus comentarios!</message>
 <message key="xmlui.ArtifactBrowser.FeedbackForm.email">Su correo electrónico</message>
 <message key="xmlui.ArtifactBrowser.FeedbackForm.email_help">Esta dirección será utilizada para seguimiento de su sugerencia.</message>
 <message key="xmlui.ArtifactBrowser.FeedbackForm.comments">Comentarios</message>
@@ -252,7 +252,7 @@
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.Navigation.java -->
 <message key="xmlui.ArtifactBrowser.Navigation.head_browse">Listar</message>
-<message key="xmlui.ArtifactBrowser.Navigation.head_all_of_dspace">Todo DSpace</message>
+<message key="xmlui.ArtifactBrowser.Navigation.head_all_of_dspace">Todo CGSpace</message>
 <message key="xmlui.ArtifactBrowser.Navigation.communities_and_collections">Comunidades &amp; Colecciones</message>
 <message key="xmlui.ArtifactBrowser.Navigation.browse_title">Títulos</message>
 <message key="xmlui.ArtifactBrowser.Navigation.browse_author">Autores</message>
@@ -438,7 +438,7 @@
 	<!-- org.dspace.app.xmlui.eperson.CannotRegister.java -->
 <message key="xmlui.EPerson.CannotRegister.title">Registro no disponible</message>
 <message key="xmlui.EPerson.CannotRegister.head">Registro no disponible</message>
-<message key="xmlui.EPerson.CannotRegister.para1">La configuración de este repositorio DSpace no permite registro en este contexto. Por favor, contacte con el </message>
+<message key="xmlui.EPerson.CannotRegister.para1">La configuración de este repositorio CGSpace no permite registro en este contexto. Por favor, contacte con el </message>
 
 	<!-- org.dspace.app.xmlui.eperson.EditProfile.java -->
 <message key="xmlui.EPerson.EditProfile.title_update">Modificar perfil</message>
@@ -498,20 +498,20 @@
 	<!-- org.dspace.app.xmlui.eperson.PasswordLogin.java -->
 <message key="xmlui.EPerson.PasswordLogin.title">Acceder</message>
 <message key="xmlui.EPerson.PasswordLogin.trail">Acceder</message>
-<message key="xmlui.EPerson.PasswordLogin.head1">Acceder a DSpace</message>
+<message key="xmlui.EPerson.PasswordLogin.head1">Acceder a CGSpace</message>
 <message key="xmlui.EPerson.PasswordLogin.email_address">Correo electrónico</message>
 <message key="xmlui.EPerson.PasswordLogin.error_bad_login">La dirección de correo electrónico introducida y/o la contraseña no son válidas.</message>
 <message key="xmlui.EPerson.PasswordLogin.password">Contraseña</message>
 <message key="xmlui.EPerson.PasswordLogin.forgot_link">¿Olvidó su contraseña?</message>
 <message key="xmlui.EPerson.PasswordLogin.submit">Acceder</message>
 <message key="xmlui.EPerson.PasswordLogin.head2">Registrar un nuevo usuario</message>
-<message key="xmlui.EPerson.PasswordLogin.para1">Registre una cuenta para suscribirse a las colecciones, para recibir notificación de modificaciones y de nuevas adquisiciones de ítems en DSpace.</message>
+<message key="xmlui.EPerson.PasswordLogin.para1">Registre una cuenta para suscribirse a las colecciones, para recibir notificación de modificaciones y de nuevas adquisiciones de ítems en CGSpace.</message>
 <message key="xmlui.EPerson.PasswordLogin.register_link">Pulse aquí para registrarse.</message>
 
 	<!-- org.dspace.app.xmlui.eperson.LDAPLogin.java -->
 <message key="xmlui.EPerson.LDAPLogin.title">Acceder</message>
 <message key="xmlui.EPerson.LDAPLogin.trail">Acceder</message>
-<message key="xmlui.EPerson.LDAPLogin.head1">Acceder a DSpace</message>
+<message key="xmlui.EPerson.LDAPLogin.head1">Acceder a CGSpace</message>
 <message key="xmlui.EPerson.LDAPLogin.username">Nombre de usuario</message>
 <message key="xmlui.EPerson.LDAPLogin.error_bad_login">El nombre de usuario o la contraseña no son validos</message>
 <message key="xmlui.EPerson.LDAPLogin.password">Contraseña</message>
@@ -550,7 +550,7 @@
 	<!-- org.dspace.app.xmlui.eperson.RegistrationFinished.java -->
 <message key="xmlui.EPerson.RegistrationFinished.title">Registro terminado</message>
 <message key="xmlui.EPerson.RegistrationFinished.head">Registro terminado</message>
-<message key="xmlui.EPerson.RegistrationFinished.para1">Ahora está registrado en el sistema DSpace. Puede suscribirse a colecciones para recibir por correo electrónico las modificaciones y las nuevas incorporaciones.</message>
+<message key="xmlui.EPerson.RegistrationFinished.para1">Ahora está registrado en el sistema CGSpace. Puede suscribirse a colecciones para recibir por correo electrónico las modificaciones y las nuevas incorporaciones.</message>
 
 	<!-- org.dspace.app.xmlui.eperson.ResetPassword.java -->
 <message key="xmlui.EPerson.ResetPassword.title">Restablecer contraseña</message>
@@ -566,7 +566,7 @@
 	<!-- org.dspace.app.xmlui.eperson.StartForgotPassword.java -->
 <message key="xmlui.EPerson.StartForgotPassword.title">¿Olvidó la contraseña?</message>
 <message key="xmlui.EPerson.StartForgotPassword.head">¿Olvidó la contraseña?</message>
-<message key="xmlui.EPerson.StartForgotPassword.para1">Introduzca la dirección de correo electrónico que proporcionó cuando se registró con DSpace. Se le enviará un mensaje a esa dirección con las instrucciones pertinentes.</message>
+<message key="xmlui.EPerson.StartForgotPassword.para1">Introduzca la dirección de correo electrónico que proporcionó cuando se registró con CGSpace. Se le enviará un mensaje a esa dirección con las instrucciones pertinentes.</message>
 <message key="xmlui.EPerson.StartForgotPassword.email_address">Dirección de correo electrónico</message>
 <message key="xmlui.EPerson.StartForgotPassword.email_address_help">Introduzca la misma dirección con la que se registró.</message>
 <message key="xmlui.EPerson.StartForgotPassword.error_not_found">Dirección de correo electrónico no encontrada.</message>
@@ -608,8 +608,8 @@
 
 
 	<!-- general submission aspect messages -->
-<message key="xmlui.Submission.general.mydspace_home">DSpace Principal</message>
-<message key="xmlui.Submission.general.go_mydspace">Mi DSpace</message>
+<message key="xmlui.Submission.general.mydspace_home">CGSpace Principal</message>
+<message key="xmlui.Submission.general.go_mydspace">Mi CGSpace</message>
 <message key="xmlui.Submission.general.submission.title">Envío de ítems</message>
 <message key="xmlui.Submission.general.submission.trail">Envío de ítems</message>
 <message key="xmlui.Submission.general.submission.head">Envío de ítems</message>
@@ -903,7 +903,7 @@
 
 	<!-- org.dspace.app.xmlui.Submission.submit.LicenseStep -->
 <message key="xmlui.Submission.submit.LicenseStep.head">Licencia de distribución</message>
-<message key="xmlui.Submission.submit.LicenseStep.info1"><strong>Queda un último paso:</strong> para permitir a DSpace reproducir, traducir y distribuir su envío a través del mundo, necesitamos su conformidad en los siguientes términos.</message>
+<message key="xmlui.Submission.submit.LicenseStep.info1"><strong>Queda un último paso:</strong> para permitir a CGSpace reproducir, traducir y distribuir su envío a través del mundo, necesitamos su conformidad en los siguientes términos.</message>
 <message key="xmlui.Submission.submit.LicenseStep.info2">Conceda la licencia de distribución estándar seleccionando 'Conceder licencia' y pulsando 'Completar envío'.</message>
 <message key="xmlui.Submission.submit.LicenseStep.info3">Si tiene alguna duda sobre la licencia, por favor, contacte con el administrador del sistema.</message>
 <message key="xmlui.Submission.submit.LicenseStep.decision_label">Licencia de distribución</message>
@@ -917,7 +917,7 @@
 
 	<!-- org.dspace.app.xmlui.Submission.submit.CompletedStep -->
 <message key="xmlui.Submission.submit.CompletedStep.head">Envío completado</message>
-<message key="xmlui.Submission.submit.CompletedStep.info1">Su envío pasará por el flujo de trabajo designado para la colección a la que lo está enviando. Recibirá una notificación vía correo electrónico tan pronto como su envío forme parte de la colección, o si por alguna razón hubiera algún problema con el envío. También puede verificar el estado de su envío accediendo a la página 'Mi DSpace'.</message>
+<message key="xmlui.Submission.submit.CompletedStep.info1">Su envío pasará por el flujo de trabajo designado para la colección a la que lo está enviando. Recibirá una notificación vía correo electrónico tan pronto como su envío forme parte de la colección, o si por alguna razón hubiera algún problema con el envío. También puede verificar el estado de su envío accediendo a la página 'Mi CGSpace'.</message>
 <message key="xmlui.Submission.submit.CompletedStep.go_submission">Ir a la página de envíos</message>
 <message key="xmlui.Submission.submit.CompletedStep.submit_again">Enviar otro ítem</message>
 
@@ -1294,7 +1294,7 @@
 	<!-- org.dspace.app.xmlui.administrative.registries.MetadatRegistryMain.java -->
 <message key="xmlui.administrative.registries.MetadataRegistryMain.title">Registro de metadatos</message>
 <message key="xmlui.administrative.registries.MetadataRegistryMain.head1">Registro de metadatos</message>
-<message key="xmlui.administrative.registries.MetadataRegistryMain.para1">El registro de metadatos mantiene una lista de todos los campos disponibles en el repositorio. Estos campos pueden distribuirse entre múltiples esquemas, sin embargo DSpace necesita el esquema de clasificación de Dublin Core. Puede extender el esquema Dublin Core con campos adicionales o añadir nuevos esquemas al registro.</message>
+<message key="xmlui.administrative.registries.MetadataRegistryMain.para1">El registro de metadatos mantiene una lista de todos los campos disponibles en el repositorio. Estos campos pueden distribuirse entre múltiples esquemas, sin embargo CGSpace necesita el esquema de clasificación de Dublin Core. Puede extender el esquema Dublin Core con campos adicionales o añadir nuevos esquemas al registro.</message>
 <message key="xmlui.administrative.registries.MetadataRegistryMain.column1"></message>
 <message key="xmlui.administrative.registries.MetadataRegistryMain.column2">ID</message>
 <message key="xmlui.administrative.registries.MetadataRegistryMain.column3">Espacio de Nombres</message>
@@ -1813,7 +1813,7 @@
 <message key="xmlui.administrative.collection.GeneralCollectionHarvestingForm.trail">Recolectando</message>
 <message key="xmlui.administrative.collection.GeneralCollectionHarvestingForm.options_harvest">Origen del Contenido</message>
 <message key="xmlui.administrative.collection.GeneralCollectionHarvestingForm.label_source">Origen del Contenido</message>
-<message key="xmlui.administrative.collection.GeneralCollectionHarvestingForm.source_normal">Esta es una colección DSpace estándar</message>
+<message key="xmlui.administrative.collection.GeneralCollectionHarvestingForm.source_normal">Esta es una colección CGSpace estándar</message>
 <message key="xmlui.administrative.collection.GeneralCollectionHarvestingForm.source_harvested">Esta colección recolecta sus contenidos de una fuente externa</message>
 <message key="xmlui.administrative.collection.GeneralCollectionHarvestingForm.submit_save">Guardar</message>
 
@@ -1971,9 +1971,9 @@
 <message key="xmlui.administrative.ControlPanel.cocoon_cache_clear">(Borrar inmediatamente el Caché)</message>
 <message key="xmlui.administrative.ControlPanel.cocoon_persistent_cache_size">Tamaño del Caché principal  ({0})</message>
 <message key="xmlui.administrative.ControlPanel.cocoon_transient_cache_size">Tamaño del Caché Transitorio  ({0})</message>
-<message key="xmlui.administrative.ControlPanel.dspace_head">Parámetros de DSpace</message>
+<message key="xmlui.administrative.ControlPanel.dspace_head">Parámetros de CGSpace</message>
 <message key="xmlui.administrative.ControlPanel.dspace_version">Versión de Dspace</message>
-<message key="xmlui.administrative.ControlPanel.dspace_dir">Directorio de instalación de DSpace</message>
+<message key="xmlui.administrative.ControlPanel.dspace_dir">Directorio de instalación de CGSpace</message>
 <message key="xmlui.administrative.ControlPanel.dspace_url">URL Base de Dspace</message>
 <message key="xmlui.administrative.ControlPanel.dspace_hostname">Nombre de Host Dspace</message>
 <message key="xmlui.administrative.ControlPanel.dspace_name">Nombre del sitio</message>
@@ -2160,7 +2160,7 @@ Para más infomación, visite
 <message key="xmlui.dri2xhtml.structural.logout">Logout</message>
 <message key="xmlui.dri2xhtml.structural.login">Login</message>
 
-<message key="xmlui.dri2xhtml.structural.search">Buscar en DSpace</message>
+<message key="xmlui.dri2xhtml.structural.search">Buscar en CGSpace</message>
 <message key="xmlui.dri2xhtml.structural.search-advanced">Búsqueda avanzada</message>
 <message key="xmlui.dri2xhtml.structural.search-in-community">Esta comunidad</message>
 <message key="xmlui.dri2xhtml.structural.search-in-collection">Esta colección</message>
@@ -2233,7 +2233,7 @@ La vista resumen de la comunidad no está actualmente en uso o implementada.
 		DS-METS-1.0-QDC.xsl -->
 <message key="xmlui.dri2xhtml.METS-1.0.qdc-not-applicable">
 Qualified Dublin Core (QDC) no se puede aplicar a las comunidades y colecciones de Dspace en este momento.  
-Cuando se usa QDC para los elementos de DSpace se recomienda el uso de crosswalks QDC
+Cuando se usa QDC para los elementos de CGSpace se recomienda el uso de crosswalks QDC
  o bien DIM o MODS para el procesamiento de las comunidades y colecciones.      
 	</message>
 
@@ -2369,7 +2369,7 @@ Cuando se usa QDC para los elementos de DSpace se recomienda el uso de crosswalk
 <message key="xmlui.ChoiceLookupTransformer.field.dc_contributor_author.nonauthority">Valor local "@1@" (no se encuentra en la Autoridad)</message>
 
   <!-- mobile theme -->
-<message key="xmlui.mobile.home_mobile">DSpace Móvil</message>
+<message key="xmlui.mobile.home_mobile">CGSpace Móvil</message>
 <message key="xmlui.mobile.search_all">Buscar TODO</message>
 <message key="xmlui.mobile.browse_all">Listar TODO por</message>
 <message key="xmlui.mobile.browse_date">Fecha</message>
