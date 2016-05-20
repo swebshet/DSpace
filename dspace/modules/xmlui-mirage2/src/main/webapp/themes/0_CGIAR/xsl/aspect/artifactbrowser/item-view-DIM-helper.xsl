@@ -538,7 +538,7 @@ such as authors, subject, citation, description, etc
                     <i18n:text>xmlui.dri2xhtml.METS-1.0.item-countries</i18n:text>
                 </h5>
                 <xsl:for-each select="dim:field[@element='cplace' and @qualifier='country' ]">
-                    <a target="_black" >
+                    <a target="_blank" >
                         <xsl:attribute name="href">
                             <xsl:value-of select="concat($context-path,'/discover?filtertype=country&amp;filter_relational_operator=equals&amp;filter=',url:encode(node()))"></xsl:value-of>
                         </xsl:attribute>
@@ -559,7 +559,7 @@ such as authors, subject, citation, description, etc
                     <i18n:text>xmlui.dri2xhtml.METS-1.0.item-regions</i18n:text>
                 </h5>
                 <xsl:for-each select="dim:field[@element='rplace' and @qualifier='region' ]">
-                    <a target="_black" >
+                    <a target="_blank" >
                         <xsl:attribute name="href">
                             <xsl:value-of select="concat($context-path,'/discover?filtertype=region&amp;filter_relational_operator=equals&amp;filter=',url:encode(node()))"></xsl:value-of>
                         </xsl:attribute>
@@ -596,7 +596,7 @@ such as authors, subject, citation, description, etc
                     <i18n:text>xmlui.dri2xhtml.METS-1.0.item-type</i18n:text>
                 </h5>
                 <xsl:for-each select="dim:field[@element='type']">
-                    <a target="_black" >
+                    <a target="_blank" >
                         <xsl:attribute name="href">
                             <xsl:value-of select="concat($context-path,'/discover?filtertype=type&amp;filter_relational_operator=equals&amp;filter=',url:encode(node()))"></xsl:value-of>
                         </xsl:attribute>
