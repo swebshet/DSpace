@@ -72,7 +72,7 @@
 
             </div>
             <div>
-                <span class="descriptionlabel">Authors :</span>
+                <span class="descriptionlabel">Authors:</span>
                 <span class="description-info">
                     <xsl:choose>
                         <xsl:when test="dim:field[@element='contributor'][@qualifier='author']">
@@ -125,7 +125,7 @@
             <div>
                 <xsl:if test="dim:field[@element='date' and @qualifier='issued']">
                     <div>
-                        <span class="descriptionlabel">Date :</span>
+                        <span class="descriptionlabel">Date:</span>
 
                         <span class="date">
                             <xsl:value-of
@@ -137,7 +137,7 @@
                 <xsl:if test="dim:field[@element = 'type']">
                     <xsl:variable name="type" select="dim:field[@element = 'type']/node()"/>
                     <div class="artifact-type">
-                        <span class="descriptionlabel">Type :</span>
+                        <span class="descriptionlabel">Type:</span>
                         <xsl:value-of select="$type"/>
                     </div>
                 </xsl:if>
@@ -145,7 +145,7 @@
                     <xsl:variable name="status"
                                   select="dim:field[@element = 'identifier' and @qualifier='status']/node()"/>
                     <div class="artifact-type">
-                        <span class="descriptionlabel">Status :</span>
+                        <span class="descriptionlabel">Status:</span>
                         <xsl:value-of select="$status"/>
                     </div>
                 </xsl:if>
