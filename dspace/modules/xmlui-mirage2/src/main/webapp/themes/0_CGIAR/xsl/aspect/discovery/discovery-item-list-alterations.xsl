@@ -100,7 +100,7 @@
 
                     </div>
                     <div >
-                        <span class="descriptionlabel" >Authors :</span>
+                        <span class="descriptionlabel" >Authors:</span>
                         <span class="description-info">
                             <xsl:choose>
                                 <xsl:when test="dri:list[@n=(concat($handle, ':dc.contributor.author'))]">
@@ -152,7 +152,7 @@
 
                         <xsl:if test="dri:list[@n=(concat($handle, ':dc.date.issued'))]">
                             <div>
-                                <span class="descriptionlabel">Date :</span>
+                                <span class="descriptionlabel">Date:</span>
 
                                 <span class="date">
                                     <xsl:value-of
@@ -164,14 +164,14 @@
                         <xsl:if test="dri:list[@n=(concat($handle, ':dc.type'))]">
                             <xsl:variable name="type" select="dri:list[@n=(concat($handle, ':dc.type'))]/dri:item"/>
                             <div class="artifact-type">
-                                <span class="descriptionlabel">Type :</span>
+                                <span class="descriptionlabel">Type:</span>
                                 <xsl:value-of select="$type"/>
                             </div>
                         </xsl:if>
                         <xsl:if test="dri:list[@n=(concat($handle, ':dc.identifier.status'))]">
                             <xsl:variable name="status" select="dri:list[@n=(concat($handle, ':dc.identifier.status'))]/dri:item"/>
                             <div class="artifact-type">
-                                <span class="descriptionlabel">Status :</span>
+                                <span class="descriptionlabel">Status:</span>
                                 <xsl:value-of select="$status"/>
                             </div>
                         </xsl:if>
