@@ -3592,6 +3592,10 @@
         <stored-value>WA_CASCAID</stored-value>
       </pair>
       <pair>
+        <displayed-value>WA_CINSERE</displayed-value>
+        <stored-value>WA_CINSERE</stored-value>
+      </pair>
+      <pair>
         <displayed-value>WA_CSA</displayed-value>
         <stored-value>WA_CSA</stored-value>
       </pair>
