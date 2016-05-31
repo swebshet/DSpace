@@ -1251,6 +1251,10 @@
         <stored-value>MARKETS</stored-value>
       </pair>
       <pair>
+        <displayed-value>MERS</displayed-value>
+        <stored-value>MERS</stored-value>
+      </pair>
+      <pair>
         <displayed-value>NRM</displayed-value>
         <stored-value>NRM</stored-value>
       </pair>
