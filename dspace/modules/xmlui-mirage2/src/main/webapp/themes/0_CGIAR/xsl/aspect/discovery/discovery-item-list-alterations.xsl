@@ -168,8 +168,8 @@
                                 <xsl:value-of select="$type"/>
                             </div>
                         </xsl:if>
-                        <xsl:if test="dri:list[@n=(concat($handle, ':dc.identifier.status'))]">
-                            <xsl:variable name="status" select="dri:list[@n=(concat($handle, ':dc.identifier.status'))]/dri:item"/>
+                        <xsl:if test="dri:list[@n=(concat($handle, ':cg.identifier.status'))]">
+                            <xsl:variable name="status" select="dri:list[@n=(concat($handle, ':cg.identifier.status'))]/dri:item"/>
                             <div class="artifact-type">
                                 <span class="descriptionlabel">Status:</span>
                                 <xsl:value-of select="$status"/>

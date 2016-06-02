@@ -141,9 +141,9 @@
                         <xsl:value-of select="$type"/>
                     </div>
                 </xsl:if>
-                <xsl:if test="dim:field[@element = 'identifier' and @qualifier='status']">
+                <xsl:if test="dim:field[@mdschema='cg' and @element = 'identifier' and @qualifier='status']">
                     <xsl:variable name="status"
-                                  select="dim:field[@element = 'identifier' and @qualifier='status']/node()"/>
+                                  select="dim:field[@mdschema='cg' and @element = 'identifier' and @qualifier='status']/node()"/>
                     <div class="artifact-type">
                         <span class="descriptionlabel">Status:</span>
                         <xsl:value-of select="$status"/>

@@ -532,19 +532,19 @@ such as authors, subject, citation, description, etc
 
 
     <xsl:template name="itemSummaryView-DIM-countries">
-        <xsl:if test="dim:field[@element='cplace' and @qualifier='country' and descendant::text()]">
+        <xsl:if test="dim:field[@mdschema='cg' and @element='coverage' and @qualifier='country' and descendant::text()]">
             <div class="word-break item-page-field-wrapper table">
                 <h5 class="bold">
                     <i18n:text>xmlui.dri2xhtml.METS-1.0.item-countries</i18n:text>
                 </h5>
-                <xsl:for-each select="dim:field[@element='cplace' and @qualifier='country' ]">
+                <xsl:for-each select="dim:field[@mdschema='cg' and @element='coverage' and @qualifier='country' ]">
                     <a target="_blank" >
                         <xsl:attribute name="href">
                             <xsl:value-of select="concat($context-path,'/discover?filtertype=country&amp;filter_relational_operator=equals&amp;filter=',url:encode(node()))"></xsl:value-of>
                         </xsl:attribute>
                         <xsl:copy-of select="./node()"/>
                     </a>
-                    <xsl:if test="count(following-sibling::dim:field[@element='cplace' and @qualifier='country']) != 0">
+                    <xsl:if test="count(following-sibling::dim:field[@mdschema='cg' and @element='coverage' and @qualifier='country']) != 0">
                         <xsl:text>; </xsl:text>
                     </xsl:if>
                 </xsl:for-each>
@@ -553,19 +553,19 @@ such as authors, subject, citation, description, etc
 
     </xsl:template>
     <xsl:template name="itemSummaryView-DIM-regions">
-        <xsl:if test="dim:field[@element='rplace' and @qualifier='region' and descendant::text()]">
+        <xsl:if test="dim:field[@mdschema='cg' and @element='coverage' and @qualifier='region' and descendant::text()]">
             <div class="word-break item-page-field-wrapper table">
                 <h5 class="bold">
                     <i18n:text>xmlui.dri2xhtml.METS-1.0.item-regions</i18n:text>
                 </h5>
-                <xsl:for-each select="dim:field[@element='rplace' and @qualifier='region' ]">
+                <xsl:for-each select="dim:field[@mdschema='cg' and @element='coverage' and @qualifier='region' ]">
                     <a target="_blank" >
                         <xsl:attribute name="href">
                             <xsl:value-of select="concat($context-path,'/discover?filtertype=region&amp;filter_relational_operator=equals&amp;filter=',url:encode(node()))"></xsl:value-of>
                         </xsl:attribute>
                         <xsl:copy-of select="./node()"/>
                     </a>
-                    <xsl:if test="count(following-sibling::dim:field[@element='rplace' and @qualifier='region']) != 0">
+                    <xsl:if test="count(following-sibling::dim:field[@mdschema='cg' and @element='coverage' and @qualifier='region']) != 0">
                         <xsl:text>; </xsl:text>
                     </xsl:if>
                 </xsl:for-each>
@@ -627,14 +627,14 @@ such as authors, subject, citation, description, etc
 
     </xsl:template>
     <xsl:template name="itemSummaryView-DIM-accessibility">
-        <xsl:if test="dim:field[@element='identifier' and @qualifier='status' and descendant::text()]">
+        <xsl:if test="dim:field[@mdschema='cg' and @element='identifier' and @qualifier='status' and descendant::text()]">
             <div class=" word-break item-page-field-wrapper table">
                 <h5 class="bold">
                     <i18n:text>xmlui.dri2xhtml.METS-1.0.item-accessibility</i18n:text>
                 </h5>
-                <xsl:for-each select="dim:field[@element='identifier' and @qualifier='status' ]">
+                <xsl:for-each select="dim:field[@mdschema='cg' and @element='identifier' and @qualifier='status' ]">
                     <xsl:copy-of select="./node()"/>
-                    <xsl:if test="count(following-sibling::dim:field[@element='identifier' and @qualifier='status'] ) != 0">
+                    <xsl:if test="count(following-sibling::dim:field[@mdschema='cg' and @element='identifier' and @qualifier='status'] ) != 0">
                         <xsl:text>; </xsl:text>
                     </xsl:if>
                 </xsl:for-each>
