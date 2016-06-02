@@ -97,8 +97,8 @@
           <required></required>
         </field>
         <field>
-          <dc-schema>dc</dc-schema>
-          <dc-element>editon</dc-element>
+          <dc-schema>cg</dc-schema>
+          <dc-element>edition</dc-element>
           <dc-qualifier></dc-qualifier>
           <repeatable>false</repeatable>
           <label>Edition</label>
@@ -147,7 +147,7 @@
           <required></required>
         </field>
         <field>
-          <dc-schema>dc</dc-schema>
+          <dc-schema>cg</dc-schema>
           <dc-element>place</dc-element>
           <dc-qualifier></dc-qualifier>
           <repeatable>false</repeatable>
@@ -268,8 +268,8 @@
           <required></required>
         </field>
         <field>
-          <dc-schema>dc</dc-schema>
-          <dc-element>cplace</dc-element>
+          <dc-schema>cg</dc-schema>
+          <dc-element>coverage</dc-element>
           <dc-qualifier>country</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Country Focus</label>
@@ -278,8 +278,8 @@
           <required></required>
         </field>
         <field>
-          <dc-schema>dc</dc-schema>
-          <dc-element>rplace</dc-element>
+          <dc-schema>cg</dc-schema>
+          <dc-element>coverage</dc-element>
           <dc-qualifier>region</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Region Focus</label>
@@ -298,7 +298,7 @@
           <required></required>
         </field>
         <field>
-          <dc-schema>dc</dc-schema>
+          <dc-schema>cg</dc-schema>
           <dc-element>river</dc-element>
           <dc-qualifier>basin</dc-qualifier>
           <repeatable>true</repeatable>
@@ -489,7 +489,7 @@
           <required></required>
         </field>
         <field>
-          <dc-schema>dc</dc-schema>
+          <dc-schema>cg</dc-schema>
           <dc-element>isijournal</dc-element>
           <dc-qualifier></dc-qualifier>
           <repeatable>false</repeatable>
@@ -498,7 +498,7 @@
           <required></required>
         </field>
         <field>
-          <dc-schema>dc</dc-schema>
+          <dc-schema>cg</dc-schema>
           <dc-element>fulltextstatus</dc-element>
           <dc-qualifier></dc-qualifier>
           <repeatable>false</repeatable>
@@ -517,7 +517,7 @@
           <required></required>
         </field>
         <field>
-          <dc-schema>dc</dc-schema>
+          <dc-schema>cg</dc-schema>
           <dc-element>targetaudience</dc-element>
           <dc-qualifier></dc-qualifier>
           <repeatable>true</repeatable>
@@ -527,7 +527,7 @@
           <required></required>
         </field>
         <field>
-          <dc-schema>dc</dc-schema>
+          <dc-schema>cg</dc-schema>
           <dc-element>identifier</dc-element>
           <dc-qualifier>status</dc-qualifier>
           <repeatable>false</repeatable>
@@ -548,8 +548,8 @@
         </field>
         <field>
           <dc-schema>dc</dc-schema>
-          <dc-element>identifier</dc-element>
-          <dc-qualifier>fund</dc-qualifier>
+          <dc-element>description</dc-element>
+          <dc-qualifier>sponsorship</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Sponsor identifier</label>
           <input-type>onebox</input-type>
@@ -750,7 +750,7 @@
           <required></required>
         </field>
         <field>
-          <dc-schema>dc</dc-schema>
+          <dc-schema>cg</dc-schema>
           <dc-element>place</dc-element>
           <dc-qualifier></dc-qualifier>
           <repeatable>true</repeatable>
@@ -760,7 +760,7 @@
           <required></required>
         </field>
         <field>
-          <dc-schema>dc</dc-schema>
+          <dc-schema>cg</dc-schema>
           <dc-element>identifier</dc-element>
           <dc-qualifier>status</dc-qualifier>
           <repeatable>false</repeatable>
