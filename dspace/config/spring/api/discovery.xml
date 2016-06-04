@@ -475,7 +475,7 @@
         <property name="indexFieldName" value="status"/>
         <property name="metadataFields">
             <list>
-                <value>dc.identifier.status</value>
+                <value>cg.identifier.status</value>
             </list>
         </property>
         <property name="facetLimit" value="5"/>
@@ -499,7 +499,7 @@
         <property name="indexFieldName" value="isijournal"/>
         <property name="metadataFields">
             <list>
-                <value>dc.isijournal.*</value>
+                <value>cg.isijournal</value>
             </list>
         </property>
         <property name="facetLimit" value="5"/>
@@ -583,7 +583,7 @@
         <property name="indexFieldName" value="region"/>
         <property name="metadataFields">
             <list>
-                <value>dc.rplace.*</value>
+                <value>cg.coverage.region</value>
             </list>
         </property>
         <property name="facetLimit" value="10"/>
@@ -595,7 +595,7 @@
         <property name="indexFieldName" value="country"/>
         <property name="metadataFields">
             <list>
-                <value>dc.cplace.*</value>
+                <value>cg.coverage.country</value>
             </list>
         </property>
         <property name="facetLimit" value="10"/>
@@ -631,7 +631,7 @@
         <property name="indexFieldName" value="basin"/>
         <property name="metadataFields">
             <list>
-                <value>dc.river.*</value>
+                <value>cg.river.basin</value>
             </list>
         </property>
         <property name="facetLimit" value="5"/>
