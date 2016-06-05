@@ -547,16 +547,6 @@
           <required></required>
         </field>
         <field>
-          <dc-schema>dc</dc-schema>
-          <dc-element>description</dc-element>
-          <dc-qualifier>sponsorship</dc-qualifier>
-          <repeatable>true</repeatable>
-          <label>Sponsor identifier</label>
-          <input-type>onebox</input-type>
-          <hint>Enter any project number(s) or funder(s) codes.</hint>
-          <required></required>
-        </field>
-        <field>
           <dc-schema>cg</dc-schema>
           <dc-element>link</dc-element>
           <dc-qualifier>video</dc-qualifier>
