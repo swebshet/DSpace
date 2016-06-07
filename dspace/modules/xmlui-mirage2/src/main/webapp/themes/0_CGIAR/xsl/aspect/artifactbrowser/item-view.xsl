@@ -120,19 +120,12 @@
                         </div>
                      </div>
                     <xsl:call-template name="itemSummaryView-DIM-authors"/>
-                    <xsl:call-template name="itemSummaryView-DIM-subjects"/>
-                    <xsl:call-template name="itemSummaryView-DIM-countries"/>
-                    <xsl:call-template name="itemSummaryView-DIM-regions"/>
                     <xsl:call-template name="itemSummaryView-DIM-date"/>
                     <xsl:call-template name="itemSummaryView-DIM-language"/>
                     <xsl:call-template name="itemSummaryView-DIM-type"/>
                     <xsl:call-template name="itemSummaryView-DIM-review-status"/>
                     <xsl:call-template name="itemSummaryView-DIM-accessibility"/>
 
-
-                    <xsl:if test="dim:field[@element='identifier' and @qualifier='uri']">
-                        <xsl:call-template name='itemSummaryView-sharing'/>
-                    </xsl:if>
 
                     <xsl:if test="$ds_item_view_toggle_url != ''">
                         <xsl:call-template name="itemSummaryView-show-full"/>
@@ -144,11 +137,18 @@
 
                 </div>
                 <div class="col-sm-8">
+                    <xsl:if test="dim:field[@element='identifier' and @qualifier='uri']">
+                        <xsl:call-template name='itemSummaryView-sharing'/>
+                    </xsl:if>
+
                     <xsl:call-template name="itemSummaryView-DIM-citation"/>
                     <xsl:call-template name="itemSummaryView-DIM-abstract"/>
                     <xsl:call-template name="itemSummaryView-DIM-notes"/>
                     <xsl:call-template name="itemSummaryView-DIM-affiliations"/>
                     <xsl:call-template name="itemSummaryView-DIM-subject"/>
+                    <xsl:call-template name="itemSummaryView-DIM-subjects"/>
+                    <xsl:call-template name="itemSummaryView-DIM-countries"/>
+                    <xsl:call-template name="itemSummaryView-DIM-regions"/>
                     <xsl:call-template name="itemSummaryView-DIM-investors-sponsors"/>
                     <xsl:call-template name="itemSummaryView-DIM-identifiers"/>
                     <xsl:call-template name="itemSummaryView-DIM-related-material"/>
