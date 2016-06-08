@@ -119,6 +119,11 @@
                             <xsl:call-template name="itemSummaryView-DIM-file-section"/>
                         </div>
                      </div>
+
+                    <xsl:if test="confman:getProperty('altmetrics', 'altmetric.enabled') and ($identifier_doi or $identifier_handle)">
+                        <xsl:call-template name='impact-altmetric'/>
+                    </xsl:if>
+
                     <xsl:call-template name="itemSummaryView-DIM-authors"/>
                     <xsl:call-template name="itemSummaryView-DIM-date"/>
                     <xsl:call-template name="itemSummaryView-DIM-language"/>
@@ -129,10 +134,6 @@
 
                     <xsl:if test="$ds_item_view_toggle_url != ''">
                         <xsl:call-template name="itemSummaryView-show-full"/>
-                    </xsl:if>
-
-                    <xsl:if test="confman:getProperty('altmetrics', 'altmetric.enabled') and ($identifier_doi or $identifier_handle)">
-                        <xsl:call-template name='impact-altmetric'/>
                     </xsl:if>
 
                 </div>
