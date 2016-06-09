@@ -623,6 +623,7 @@
           <repeatable>true</repeatable>
           <label>Animal breed</label>
           <input-type>onebox</input-type>
+          <vocabulary>cg-species-breed</vocabulary>
           <required></required>
         </field>
         <field>
