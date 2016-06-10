@@ -293,7 +293,8 @@
           <dc-qualifier>subregion</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Sub Region Focus</label>
-          <input-type value-pairs-name="subregion_types">dropdown</input-type>
+          <input-type>onebox</input-type>
+          <vocabulary>dc-srplace-subregion</vocabulary>
           <hint>Select the sub-regional focus</hint>
           <required></required>
         </field>
