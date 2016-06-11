@@ -544,6 +544,7 @@
           <repeatable>true</repeatable>
           <label>Sponsor</label>
           <input-type>onebox</input-type>
+          <vocabulary>dc-description-sponsorship</vocabulary>
           <hint>Enter full institution names who sponsored the item.</hint>
           <required></required>
         </field>
