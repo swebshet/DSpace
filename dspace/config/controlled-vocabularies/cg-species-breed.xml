@@ -65,7 +65,7 @@
     <node label="AZERBAIJAN" />
     <node label="AZI KHELI" />
     <node label="BA XUYEN" />
-    <node label="BÃ©RABICHE" />
+    <node label="BÉRABICHE" />
     <node label="BAGGARA" />
     <node label="BAHEIJ" />
     <node label="BAHERIE" />
@@ -86,9 +86,9 @@
     <node label="BANGLADESHI" />
     <node label="BANTU" />
     <node label="BANYO" />
-    <node label="BÃºFALO DE PANTANO" />
-    <node label="BÃºFALO DE RÃ­O" />
-    <node label="BÃºLGARO" />
+    <node label="BÚFALO DE PANTANO" />
+    <node label="BÚFALO DE RÍO" />
+    <node label="BÚLGARO" />
     <node label="BAOULE" />
     <node label="BARBARINE" />
     <node label="BARBARY" />
@@ -201,7 +201,7 @@
     <node label="DONGOLA" />
     <node label="DORMER" />
     <node label="DORPER" />
-    <node label="DOUFOWCHIÃ©" />
+    <node label="DOUFOWCHIÉ" />
     <node label="DOUKKALA" />
     <node label="DRAKENSBERGER" />
     <node label="DUROC" />
@@ -221,7 +221,7 @@
     <node label="ETHIOPIAN HIGHLAND" />
     <node label="FA YUEN HUA-HSIEN" />
     <node label="FALLAHI" />
-    <node label="FAMBOUGOURICHIÃ©" />
+    <node label="FAMBOUGOURICHIÉ" />
     <node label="FANNONG SPOTTED" />
     <node label="FARAFRA" />
     <node label="FARTA" />
@@ -396,10 +396,10 @@
     <node label="KIRDI" />
     <node label="KIVIRCIK" />
     <node label="KOEKOEK" />
-    <node label="KOKOCHIÃ" />
+    <node label="KOKOCHIÈ" />
     <node label="KOLBROEK" />
-    <node label="KOLOKOLOCHIÃ©" />
-    <node label="KOLONCHIÃ©" />
+    <node label="KOLOKOLOCHIÉ" />
+    <node label="KOLONCHIÉ" />
     <node label="KORHOGO" />
     <node label="KUCHI" />
     <node label="KUHZESTANI" />
@@ -450,7 +450,7 @@
     <node label="LUCHUAN" />
     <node label="LUGWARE" />
     <node label="LUTAI WHITE" />
-    <node label="MÃ©TIS DE BAMBEY" />
+    <node label="MÉTIS DE BAMBEY" />
     <node label="MAASAI" />
     <node label="MAASAI GREY" />
     <node label="MACHAERAS" />
@@ -508,7 +508,7 @@
     <node label="MONG CHICKEN" />
     <node label="MONGALLA" />
     <node label="MONOUFI" />
-    <node label="MONTBÃ©LIARD" />
+    <node label="MONTBÉLIARD" />
     <node label="MORKARAMAN" />
     <node label="MOROCCOAN BELDI" />
     <node label="MOROGORO-MEDIUM" />
@@ -570,7 +570,7 @@
     <node label="NKHUKU" />
     <node label="NKONE" />
     <node label="NOIRE DE THIBAR SHEEP" />
-    <node label="NOIRE PIE DE MEKNÃ¨S" />
+    <node label="NOIRE PIE DE MEKNÈS" />
     <node label="NONDESCRIPT" />
     <node label="NORDUZ" />
     <node label="NORFA" />
@@ -649,9 +649,9 @@
     <node label="RUZIZI" />
     <node label="RWANDA-BURUNDI" />
     <node label="RWANDA-BURUNDI-TANZANIA LONG-TAILED" />
-    <node label="SÃ©GÃ¨CHIÃ©" />
+    <node label="SÉGÈCHIÉ" />
     <node label="SABI" />
-    <node label="SAGACHIÃ©" />
+    <node label="SAGACHIÉ" />
     <node label="SAHELIAN" />
     <node label="SAHIWAL" />
     <node label="SAIDI" />
