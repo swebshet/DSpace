@@ -295,7 +295,7 @@
           <label>Subregion</label>
           <input-type>onebox</input-type>
           <vocabulary>dc-srplace-subregion</vocabulary>
-          <hint>Select the sub-regional focus</hint>
+          <hint>Click below to see a pre-populated list of subregions (or enter a new one in UPPER CASE).</hint>
           <required></required>
         </field>
         <field>
@@ -545,7 +545,7 @@
           <label>Sponsor</label>
           <input-type>onebox</input-type>
           <vocabulary>dc-description-sponsorship</vocabulary>
-          <hint>Enter full institution names who sponsored the item.</hint>
+          <hint>Enter full institution name(s) who sponsored the item. Click below to see a pre-populated list, or add one manually.</hint>
           <required></required>
         </field>
         <field>
