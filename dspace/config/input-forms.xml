@@ -43,7 +43,7 @@
           <repeatable>true</repeatable>
           <label>Authors</label>
           <input-type>name</input-type>
-          <hint>Enter the names of the authors of this item below.Enter each author individually</hint>
+          <hint>Enter the names of the authors of this item. Enter each author individually</hint>
           <required></required>
         </field>
         <field>
@@ -53,7 +53,7 @@
           <repeatable>true</repeatable>
           <label>Corporate authors</label>
           <input-type>onebox</input-type>
-          <hint>Enter the full names of the corporate authors of this item below. Enter each one individually.</hint>
+          <hint>Enter the full names of the corporate authors of this item. Enter each one individually.</hint>
           <required></required>
         </field>
         <field>
@@ -123,7 +123,7 @@
           <repeatable>true</repeatable>
           <label>Other titles</label>
           <input-type>onebox</input-type>
-          <hint>If the item has any alternative titles, please enter them below.</hint>
+          <hint>Enter any alternative titles for the item</hint>
           <required></required>
         </field>
         <field>
@@ -143,7 +143,7 @@
           <repeatable>true</repeatable>
           <label>Language</label>
           <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
-          <hint>Select the language of the main content of the item. If the language does not appear in the list below, please select 'Other'. If the content does not really have a language (for example, if it is a dataset or an image) please select 'N/A'.</hint>
+          <hint>Select the language of the main content of the item. If the language does not appear in the list, please select 'Other'. If the content does not really have a language (for example, if it is a dataset or an image) please select 'N/A'.</hint>
           <required></required>
         </field>
         <field>
@@ -203,7 +203,7 @@
           <repeatable>false</repeatable>
           <label>Abstract</label>
           <input-type>textarea</input-type>
-          <hint>Enter the abstract of the item below.</hint>
+          <hint>Enter the abstract of the item.</hint>
           <required></required>
         </field>
         <field>
@@ -305,7 +305,7 @@
           <repeatable>true</repeatable>
           <label>River basin</label>
           <input-type value-pairs-name="riverbasin">dropdown</input-type>
-          <hint>Select the focus Basin(s)</hint>
+          <hint>Select the focus basin(s)</hint>
           <required></required>
         </field>
         <!-- An input-type of twobox MUST be marked as repeatable -->
@@ -316,7 +316,7 @@
           <repeatable>true</repeatable>
           <label>AGROVOC keywords</label>
           <input-type>twobox</input-type>
-          <hint>Enter appropriate subject keywords or phrases below.</hint>
+          <hint>Enter appropriate subject keywords or phrases.</hint>
           <required></required>
         </field>
         <field>
@@ -555,7 +555,7 @@
           <repeatable>false</repeatable>
           <label>Related video</label>
           <input-type>onebox</input-type>
-          <hint>Enter Related video link</hint>
+          <hint>Enter related video link</hint>
           <required></required>
         </field>
         <field>
@@ -565,7 +565,7 @@
           <repeatable>false</repeatable>
           <label>Related audio</label>
           <input-type>onebox</input-type>
-          <hint>Enter Related audio link</hint>
+          <hint>Enter related audio link</hint>
           <required></required>
         </field>
         <field>
@@ -575,7 +575,7 @@
           <repeatable>false</repeatable>
           <label>Related photo</label>
           <input-type>onebox</input-type>
-          <hint>Enter Related photo link</hint>
+          <hint>Enter related photo link</hint>
           <required></required>
         </field>
         <field>
@@ -585,7 +585,7 @@
           <repeatable>false</repeatable>
           <label>Related reference</label>
           <input-type>onebox</input-type>
-          <hint>Enter Related reference link</hint>
+          <hint>Enter related reference link</hint>
           <required></required>
         </field>
         <field>
@@ -605,7 +605,7 @@
           <repeatable>false</repeatable>
           <label>URL for datafile</label>
           <input-type>onebox</input-type>
-          <hint>Enter URL for datafile.</hint>
+          <hint>Enter URL for datafile</hint>
           <required></required>
         </field>
         <field>
@@ -615,7 +615,7 @@
           <repeatable>true</repeatable>
           <label>Plant species</label>
           <input-type>twobox</input-type>
-          <hint>Enter a full Scientific or Latin name:</hint>
+          <hint>Enter a full scientific or Latin name</hint>
           <required></required>
         </field>
         <field>
@@ -659,7 +659,7 @@
           <repeatable>true</repeatable>
           <label>Authors</label>
           <input-type>name</input-type>
-          <hint>Enter the names of the authors of this item below.</hint>
+          <hint>Enter the names of the authors of this item.</hint>
           <required></required>
         </field>
         <field>
@@ -719,7 +719,7 @@
           <repeatable>false</repeatable>
           <label>Date of Publication</label>
           <input-type>date</input-type>
-          <hint>Please give the date of previous publication or public distribution below. You can leave out the day and/or month if they aren't applicable.</hint>
+          <hint>Please give the date of previous publication or public distribution. You can leave out the day and/or month if they aren't applicable.</hint>
           <required>You must enter at least the year.</required>
         </field>
         <field>
@@ -779,7 +779,7 @@
           <repeatable>false</repeatable>
           <label>Language</label>
           <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
-          <hint>Select the language of the main content of the item. If the language does not appear in the list below, please select 'Other'. If the content does not really have a language (for example, if it is a dataset or an image) please select 'N/A'.</hint>
+          <hint>Select the language of the main content of the item. If the language does not appear in the list, please select 'Other'. If the content does not really have a language (for example, if it is a dataset or an image) please select 'N/A'.</hint>
           <required></required>
         </field>
       </page>
