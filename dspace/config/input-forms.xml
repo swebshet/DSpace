@@ -43,7 +43,7 @@
           <repeatable>true</repeatable>
           <label>Authors</label>
           <input-type>name</input-type>
-          <hint>Enter the names of the authors of this item. Enter each author individually</hint>
+          <hint>Enter the names of the authors of this item. Enter each individually</hint>
           <required></required>
         </field>
         <field>
@@ -53,7 +53,7 @@
           <repeatable>true</repeatable>
           <label>Corporate authors</label>
           <input-type>onebox</input-type>
-          <hint>Enter the full names of the corporate authors of this item. Enter each one individually.</hint>
+          <hint>Enter the full names of the corporate authors of this item. Enter each individually.</hint>
           <required></required>
         </field>
         <field>
@@ -63,7 +63,7 @@
           <repeatable>true</repeatable>
           <label>Author affiliations</label>
           <input-type>onebox</input-type>
-          <hint>Enter the full names of the institutions that the author(s) work for. Enter each institution individually.</hint>
+          <hint>Enter the full names of the institutions that the author(s) work for. Enter each individually.</hint>
           <required></required>
         </field>
         <field>
@@ -93,7 +93,7 @@
           <repeatable>false</repeatable>
           <label>Journal title</label>
           <input-type>onebox</input-type>
-          <hint>Enter full journal title</hint>
+          <hint>Enter the full journal title.</hint>
           <required></required>
         </field>
         <field>
@@ -103,7 +103,7 @@
           <repeatable>false</repeatable>
           <label>Edition</label>
           <input-type>onebox</input-type>
-          <hint>Enter the edition of the item (3rd, 17th, Revised)</hint>
+          <hint>Enter the edition of the item (3rd, 17th, Revised).</hint>
           <required></required>
         </field>
         <field>
@@ -113,7 +113,7 @@
           <repeatable>false</repeatable>
           <label>Pagination</label>
           <input-type>onebox</input-type>
-          <hint>Enter the page range for an article or chapter (10-17); or the total pages for a report (120 p.)</hint>
+          <hint>Enter the page range for an article or chapter (10-17); or the total pages for a report (120 p.).</hint>
           <required></required>
         </field>
         <field>
@@ -123,7 +123,7 @@
           <repeatable>true</repeatable>
           <label>Other titles</label>
           <input-type>onebox</input-type>
-          <hint>Enter any alternative titles for the item</hint>
+          <hint>Enter any alternative titles for the item.</hint>
           <required></required>
         </field>
         <field>
@@ -193,7 +193,7 @@
           <repeatable>true</repeatable>
           <label>Series/Report No.</label>
           <input-type>series</input-type>
-          <hint>Enter the full official series name and any number</hint>
+          <hint>Enter the full official series name and number.</hint>
           <required></required>
         </field>
         <field>
@@ -254,7 +254,7 @@
           <repeatable>false</repeatable>
           <label>Document Object Identifier (DOI)</label>
           <input-type>onebox</input-type>
-          <hint>Enter the full address (append http://dx.doi.org/ before the doi.</hint>
+          <hint>Enter the full address (append https://dx.doi.org/ before the DOI).</hint>
           <required></required>
         </field>
         <field>
@@ -262,9 +262,9 @@
           <dc-element>crsubject</dc-element>
           <dc-qualifier>crpsubject</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>CRP focus</label>
+          <label>CGIAR Research Programs (CRP)</label>
           <input-type value-pairs-name="crpsubject">dropdown</input-type>
-          <hint>Select any CGIAR research program(s) associated with this item</hint>
+          <hint>Select any CGIAR Research Program(s) associated with this item.</hint>
           <required></required>
         </field>
         <field>
@@ -274,7 +274,7 @@
           <repeatable>true</repeatable>
           <label>Country</label>
           <input-type value-pairs-name="countrylist">dropdown</input-type>
-          <hint>Select a country or countries within the scope of the item</hint>
+          <hint>Select a country or countries within the scope of the item.</hint>
           <required></required>
         </field>
         <field>
@@ -305,7 +305,7 @@
           <repeatable>true</repeatable>
           <label>River basin</label>
           <input-type value-pairs-name="riverbasin">dropdown</input-type>
-          <hint>Select the focus basin(s)</hint>
+          <hint>Select the focus basin(s).</hint>
           <required></required>
         </field>
         <!-- An input-type of twobox MUST be marked as repeatable -->
@@ -523,7 +523,7 @@
           <dc-qualifier></dc-qualifier>
           <repeatable>true</repeatable>
           <label>Target audience</label>
-          <hint>Indicate the audience for whom the item is produced</hint>
+          <hint>Indicate the audience for whom the item is produced.</hint>
           <input-type value-pairs-name="TARGET_AUDIENCE">dropdown</input-type>
           <required></required>
         </field>
@@ -534,7 +534,7 @@
           <repeatable>false</repeatable>
           <label>Accessibility status (required)</label>
           <input-type value-pairs-name="common_status_identifier">dropdown</input-type>
-          <hint>Please indicate its accessibility.</hint>
+          <hint>Please indicate the accessibility of the item.</hint>
           <required>Accesibility status is required.</required>
         </field>
         <field>
@@ -555,7 +555,7 @@
           <repeatable>false</repeatable>
           <label>Related video</label>
           <input-type>onebox</input-type>
-          <hint>Enter related video link</hint>
+          <hint>Enter related video link.</hint>
           <required></required>
         </field>
         <field>
@@ -565,7 +565,7 @@
           <repeatable>false</repeatable>
           <label>Related audio</label>
           <input-type>onebox</input-type>
-          <hint>Enter related audio link</hint>
+          <hint>Enter related audio link.</hint>
           <required></required>
         </field>
         <field>
@@ -575,7 +575,7 @@
           <repeatable>false</repeatable>
           <label>Related photo</label>
           <input-type>onebox</input-type>
-          <hint>Enter related photo link</hint>
+          <hint>Enter related photo link.</hint>
           <required></required>
         </field>
         <field>
@@ -585,7 +585,7 @@
           <repeatable>false</repeatable>
           <label>Related reference</label>
           <input-type>onebox</input-type>
-          <hint>Enter related reference link</hint>
+          <hint>Enter related reference link.</hint>
           <required></required>
         </field>
         <field>
@@ -595,7 +595,7 @@
           <repeatable>false</repeatable>
           <label>Related citation</label>
           <input-type>onebox</input-type>
-          <hint>Enter related reference citation</hint>
+          <hint>Enter related reference citation.</hint>
           <required></required>
         </field>
         <field>
@@ -605,7 +605,7 @@
           <repeatable>false</repeatable>
           <label>URL for datafile</label>
           <input-type>onebox</input-type>
-          <hint>Enter URL for datafile</hint>
+          <hint>Enter URL for datafile.</hint>
           <required></required>
         </field>
         <field>
@@ -615,7 +615,7 @@
           <repeatable>true</repeatable>
           <label>Plant species</label>
           <input-type>twobox</input-type>
-          <hint>Enter a full scientific or Latin name</hint>
+          <hint>Enter a full scientific or Latin name.</hint>
           <required></required>
         </field>
         <field>
@@ -635,7 +635,7 @@
           <repeatable>false</repeatable>
           <label>Voice message</label>
           <input-type>textarea</input-type>
-          <hint>Enter a voice message text that would be recorded for extension</hint>
+          <hint>Enter a voice message text that would be recorded for extension.</hint>
           <required></required>
         </field>
         <field>
@@ -645,7 +645,7 @@
           <repeatable>false</repeatable>
           <label>SMS message</label>
           <input-type>textarea</input-type>
-          <hint>Enter an SMS message that would be distributed on mobile services</hint>
+          <hint>Enter an SMS message that would be distributed on mobile services.</hint>
           <required></required>
         </field>
       </page>
@@ -699,7 +699,7 @@
           <repeatable>false</repeatable>
           <label>Document Object Identifier (DOI)</label>
           <input-type>onebox</input-type>
-          <hint>Append http://dx.doi.org/ before the doi.</hint>
+          <hint>Enter the full address (append https://dx.doi.org/ before the DOI).</hint>
           <required></required>
         </field>
         <field>
