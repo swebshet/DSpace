@@ -53,7 +53,7 @@
           <repeatable>true</repeatable>
           <label>Corporate authors</label>
           <input-type>onebox</input-type>
-          <hint>Enter the full names of the corporate authors of this item. Enter each individually.</hint>
+          <hint>Enter the full name of an individual or corporation responsible for the content</hint>
           <required></required>
         </field>
         <field>
@@ -615,7 +615,7 @@
           <repeatable>true</repeatable>
           <label>Plant species</label>
           <input-type>twobox</input-type>
-          <hint>Enter a full scientific or Latin name.</hint>
+          <hint>Enter scientific name of organism</hint>
           <required></required>
         </field>
         <field>
