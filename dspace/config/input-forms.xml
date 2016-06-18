@@ -43,7 +43,7 @@
           <repeatable>true</repeatable>
           <label>Authors</label>
           <input-type>name</input-type>
-          <hint>Enter the names of the authors of this item. Enter each individually</hint>
+          <hint>Enter the names of the authors of this item. Enter each individually.</hint>
           <required></required>
         </field>
         <field>
@@ -53,7 +53,7 @@
           <repeatable>true</repeatable>
           <label>Corporate authors</label>
           <input-type>onebox</input-type>
-          <hint>Enter the full name of an individual or corporation responsible for the content</hint>
+          <hint>Enter the full name of an individual or corporation responsible for the content.</hint>
           <required></required>
         </field>
         <field>
@@ -534,7 +534,7 @@
           <repeatable>false</repeatable>
           <label>Accessibility status (required)</label>
           <input-type value-pairs-name="common_status_identifier">dropdown</input-type>
-          <hint>Please indicate the accessibility of the item.</hint>
+          <hint>Indicate the accessibility of the item.</hint>
           <required>Accesibility status is required.</required>
         </field>
         <field>
