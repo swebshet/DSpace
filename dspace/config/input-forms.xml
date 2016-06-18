@@ -272,7 +272,7 @@
           <dc-element>coverage</dc-element>
           <dc-qualifier>country</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>Country Focus</label>
+          <label>Country</label>
           <input-type value-pairs-name="countrylist">dropdown</input-type>
           <hint>Select a country or countries within the scope of the item</hint>
           <required></required>
@@ -282,7 +282,7 @@
           <dc-element>coverage</dc-element>
           <dc-qualifier>region</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>Region Focus</label>
+          <label>Region</label>
           <input-type value-pairs-name="region_types">dropdown</input-type>
           <hint>To select more than one region, you may have to hold down the "Ctrl" or "Shift" key.</hint>
           <required></required>
@@ -292,7 +292,7 @@
           <dc-element>srplace</dc-element>
           <dc-qualifier>subregion</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>Sub Region Focus</label>
+          <label>Subregion</label>
           <input-type>onebox</input-type>
           <vocabulary>dc-srplace-subregion</vocabulary>
           <hint>Select the sub-regional focus</hint>
@@ -303,7 +303,7 @@
           <dc-element>river</dc-element>
           <dc-qualifier>basin</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>River Basin Focus</label>
+          <label>River basin</label>
           <input-type value-pairs-name="riverbasin">dropdown</input-type>
           <hint>Select the focus Basin(s)</hint>
           <required></required>
@@ -314,7 +314,7 @@
           <dc-element>subject</dc-element>
           <dc-qualifier></dc-qualifier>
           <repeatable>true</repeatable>
-          <label>AGROVOC Keywords</label>
+          <label>AGROVOC keywords</label>
           <input-type>twobox</input-type>
           <hint>Enter appropriate subject keywords or phrases below.</hint>
           <required></required>
@@ -324,7 +324,7 @@
           <dc-element>subject</dc-element>
           <dc-qualifier>bioversity</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>Bioversity Subject Focus</label>
+          <label>Bioversity subject</label>
           <input-type value-pairs-name="bioversity">dropdown</input-type>
           <hint></hint>
           <required></required>
@@ -334,7 +334,7 @@
           <dc-element>subject</dc-element>
           <dc-qualifier>ccafs</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>CCAFS Subject Focus</label>
+          <label>CCAFS subject</label>
           <input-type value-pairs-name="ccafsubject">dropdown</input-type>
           <hint></hint>
           <required></required>
@@ -344,7 +344,7 @@
           <dc-element>identifier</dc-element>
           <dc-qualifier>ccafsproject</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>CCAFS Project Tag</label>
+          <label>CCAFS project tag</label>
           <input-type value-pairs-name="ccafsproject">dropdown</input-type>
           <hint></hint>
           <required></required>
@@ -354,7 +354,7 @@
           <dc-element>subject</dc-element>
           <dc-qualifier>ciat</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>CIAT Subject Focus</label>
+          <label>CIAT subject</label>
           <input-type value-pairs-name="ciat">dropdown</input-type>
           <hint></hint>
           <required></required>
@@ -364,7 +364,7 @@
           <dc-element>subject</dc-element>
           <dc-qualifier>cifor</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>CIFOR Subject Focus</label>
+          <label>CIFOR subject</label>
           <input-type value-pairs-name="ciforsubject">dropdown</input-type>
           <hint></hint>
           <required></required>
@@ -374,7 +374,7 @@
           <dc-element>subject</dc-element>
           <dc-qualifier>cip</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>CIP Subject Focus</label>
+          <label>CIP subject</label>
           <input-type value-pairs-name="cipsubject">dropdown</input-type>
           <hint></hint>
           <required></required>
@@ -384,7 +384,7 @@
           <dc-element>subject</dc-element>
           <dc-qualifier>cpwf</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>CPWF Subject Focus</label>
+          <label>CPWF subject</label>
           <input-type value-pairs-name="cpwfsubject">dropdown</input-type>
           <hint></hint>
           <required></required>
@@ -404,7 +404,7 @@
           <dc-element>subject</dc-element>
           <dc-qualifier>cta</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>CTA Subject Focus</label>
+          <label>CTA subject</label>
           <input-type value-pairs-name="cta">dropdown</input-type>
           <hint></hint>
           <required></required>
@@ -414,7 +414,7 @@
           <dc-element>subject</dc-element>
           <dc-qualifier>drylands</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>Drylands Subject Focus</label>
+          <label>Dryland Systems subject</label>
           <input-type value-pairs-name="drylandssubject">dropdown</input-type>
           <hint></hint>
           <required></required>
@@ -424,7 +424,7 @@
           <dc-element>subject</dc-element>
           <dc-qualifier>humidtropics</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>Humidtropics Subject Focus</label>
+          <label>Humidtropics subject</label>
           <input-type value-pairs-name="humidtropics">dropdown</input-type>
           <hint></hint>
           <required></required>
@@ -434,7 +434,7 @@
           <dc-element>subject</dc-element>
           <dc-qualifier>icarda</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>ICARDA Subject Focus</label>
+          <label>ICARDA subject</label>
           <input-type value-pairs-name="icardasubject">dropdown</input-type>
           <hint></hint>
           <required></required>
@@ -444,7 +444,7 @@
           <dc-element>subject</dc-element>
           <dc-qualifier>iita</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>IITA Subject Focus</label>
+          <label>IITA subject</label>
           <input-type value-pairs-name="iita-subject">dropdown</input-type>
           <hint></hint>
           <required></required>
@@ -454,7 +454,7 @@
           <dc-element>subject</dc-element>
           <dc-qualifier>ilri</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>ILRI Subject Focus</label>
+          <label>ILRI subject</label>
           <input-type value-pairs-name="ilrisubject">dropdown</input-type>
           <hint></hint>
           <required></required>
@@ -464,7 +464,7 @@
           <dc-element>subject</dc-element>
           <dc-qualifier>iwmi</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>IWMI Subject Focus</label>
+          <label>IWMI subject</label>
           <input-type value-pairs-name="iwmisubject">dropdown</input-type>
           <hint></hint>
           <required></required>
@@ -474,7 +474,7 @@
           <dc-element>subject</dc-element>
           <dc-qualifier>wle</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>WLE Subject Focus</label>
+          <label>WLE subject</label>
           <input-type value-pairs-name="wle">dropdown</input-type>
           <hint></hint>
           <required></required>
@@ -503,7 +503,7 @@
           <dc-element>fulltextstatus</dc-element>
           <dc-qualifier></dc-qualifier>
           <repeatable>false</repeatable>
-          <label>Grey Literature</label>
+          <label>Grey literature</label>
           <input-type value-pairs-name="GREY_LITERATURE">dropdown</input-type>
           <required></required>
         </field>
@@ -522,7 +522,7 @@
           <dc-element>targetaudience</dc-element>
           <dc-qualifier></dc-qualifier>
           <repeatable>true</repeatable>
-          <label>Target Audience</label>
+          <label>Target audience</label>
           <hint>Indicate the audience for whom the item is produced</hint>
           <input-type value-pairs-name="TARGET_AUDIENCE">dropdown</input-type>
           <required></required>
@@ -767,7 +767,7 @@
           <dc-element>subject</dc-element>
           <dc-qualifier>ilri</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>ILRI Subject Focus</label>
+          <label>ILRI subject</label>
           <input-type value-pairs-name="ilrisubject">dropdown</input-type>
           <hint></hint>
           <required></required>
