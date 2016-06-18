@@ -153,7 +153,7 @@
           <repeatable>false</repeatable>
           <label>Publication place</label>
           <input-type>onebox</input-type>
-          <hint>Enter the city and country eg: Nairobi, Kenya</hint>
+          <hint>Enter the city and country, for example: Nairobi, Kenya</hint>
           <required></required>
         </field>
         <field>
@@ -749,7 +749,7 @@
           <repeatable>true</repeatable>
           <label>Publication place</label>
           <input-type>onebox</input-type>
-          <hint>Enter the city and country eg: Nairobi, Kenya</hint>
+          <hint>Enter the city and country, for example: Nairobi, Kenya</hint>
           <required></required>
         </field>
         <field>
@@ -757,7 +757,7 @@
           <dc-element>identifier</dc-element>
           <dc-qualifier>status</dc-qualifier>
           <repeatable>false</repeatable>
-          <label>Status</label>
+          <label>Accessibility status</label>
           <input-type value-pairs-name="common_status_identifier">dropdown</input-type>
           <hint>Please select either Open Access or Limited Access.</hint>
           <required></required>
