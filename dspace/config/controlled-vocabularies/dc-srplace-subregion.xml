@@ -10,14 +10,14 @@
     <node label="GAMBELA" />
     <node label="HARARI" />
     <node label="KARNATAKA" />
-    <node label="OROMIA" />
     <node label="MADHYA PRADESH" />
     <node label="MAHARASHTRA" />
     <node label="NAGALAND" />
-    <node label="SOMALI" />
+    <node label="OROMIA" />
     <node label="SNNPR" />
+    <node label="SOMALI" />
     <node label="TIGRAY" />
-    <node label="UTTARAKHAND" />
     <node label="UTTAR PRADESH" />
+    <node label="UTTARAKHAND" />
   </isComposedBy>
 </node>
