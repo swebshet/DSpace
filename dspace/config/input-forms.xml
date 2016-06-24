@@ -41,10 +41,10 @@
           <dc-element>contributor</dc-element>
           <dc-qualifier>author</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>Authors</label>
+          <label>Authors (required)</label>
           <input-type>name</input-type>
-          <hint>Enter the names of the authors of this item. Enter each individually.</hint>
-          <required></required>
+          <hint>Enter the names of the authors of this item. Enter each individually. ALWAYS use the Lookup option to select from an existing author entry (author names in italics have ORCID records)</hint>
+          <required>Please enter the author(s).</required>
         </field>
         <field>
           <dc-schema>dc</dc-schema>
@@ -73,7 +73,7 @@
           <repeatable>false</repeatable>
           <label>Title (required)</label>
           <input-type>onebox</input-type>
-          <hint>Enter the full official title of the item.</hint>
+          <hint>Enter the full official title of the item (including any subtitles, etc).</hint>
           <required>You must enter a main title for this item.</required>
         </field>
         <field>
@@ -113,7 +113,7 @@
           <repeatable>true</repeatable>
           <label>Other titles</label>
           <input-type>onebox</input-type>
-          <hint>Enter any alternative titles for the item.</hint>
+          <hint>Enter any alternative titles for the item (other languages, etc).</hint>
           <required></required>
         </field>
         <field>
@@ -143,7 +143,7 @@
           <repeatable>false</repeatable>
           <label>Publication place</label>
           <input-type>onebox</input-type>
-          <hint>Enter the city and country, for example: Nairobi, Kenya</hint>
+          <hint>NOT for journal articles. Enter the city and country, for example: Nairobi, Kenya</hint>
           <required></required>
         </field>
         <field>
@@ -163,7 +163,7 @@
           <repeatable>false</repeatable>
           <label>Publisher</label>
           <input-type>onebox</input-type>
-          <hint>Enter the full name of the publisher (reports and books only).</hint>
+          <hint>NOT for journal articles. Enter the full name of the publisher.</hint>
           <required></required>
         </field>
         <field>
@@ -254,7 +254,7 @@
           <repeatable>true</repeatable>
           <label>CGIAR Research Programs (CRP)</label>
           <input-type value-pairs-name="crpsubject">dropdown</input-type>
-          <hint>Select any CGIAR Research Program(s) associated with this item.</hint>
+          <hint>Select any CGIAR Research Program(s) associated with this item. Use this to show that a CRP funded this item.</hint>
           <required></required>
         </field>
         <field>
@@ -264,7 +264,7 @@
           <repeatable>true</repeatable>
           <label>Country</label>
           <input-type value-pairs-name="countrylist">dropdown</input-type>
-          <hint>Select a country or countries within the scope of the item.</hint>
+          <hint>Select a country or countries within the scope of the item. To select more than one country, you have to hold down the "Ctrl" or "Shift" key.</hint>
           <required></required>
         </field>
         <field>
@@ -274,7 +274,7 @@
           <repeatable>true</repeatable>
           <label>Region</label>
           <input-type value-pairs-name="region_types">dropdown</input-type>
-          <hint>To select more than one region, you may have to hold down the "Ctrl" or "Shift" key.</hint>
+          <hint>Select a region or regions within the scope of the item. To select more than one region, you have to hold down the "Ctrl" or "Shift" key.</hint>
           <required></required>
         </field>
         <field>
@@ -285,7 +285,7 @@
           <label>Subregion</label>
           <input-type>onebox</input-type>
           <vocabulary>dc-srplace-subregion</vocabulary>
-          <hint>Click below to see a pre-populated list of subregions (or enter a new one in UPPER CASE).</hint>
+          <hint>Click below to see a pre-populated list of subregions — normally provinces, states, regions, etc WITHIN a country (or enter a new one in UPPER CASE).</hint>
           <required></required>
         </field>
         <field>
@@ -503,7 +503,7 @@
           <dc-qualifier>version</dc-qualifier>
           <repeatable>false</repeatable>
           <label>Review status</label>
-          <hint>Indicate its review position.</hint>
+          <hint>Indicate whether it has undergone internal or peer review.</hint>
           <input-type value-pairs-name="Review_status">dropdown</input-type>
           <required></required>
         </field>
@@ -513,7 +513,7 @@
           <dc-qualifier></dc-qualifier>
           <repeatable>true</repeatable>
           <label>Target audience</label>
-          <hint>Indicate the audience for whom the item is produced.</hint>
+          <hint>Indicate the main audience for whom the item is produced.</hint>
           <input-type value-pairs-name="TARGET_AUDIENCE">dropdown</input-type>
           <required></required>
         </field>
@@ -535,7 +535,7 @@
           <label>Sponsor</label>
           <input-type>onebox</input-type>
           <vocabulary>dc-description-sponsorship</vocabulary>
-          <hint>Enter full institution name(s) who sponsored the item. Click below to see a pre-populated list, or add one manually.</hint>
+          <hint>Enter full institution name(s) who sponsored the item. Click below to see a pre-populated list, or add one manually. CGIAR Research Program funding is identified in the field above.</hint>
           <required></required>
         </field>
         <field>
@@ -545,7 +545,7 @@
           <repeatable>false</repeatable>
           <label>Related video</label>
           <input-type>onebox</input-type>
-          <hint>Enter related video link.</hint>
+          <hint>Enter related video link (eg a video about this item).</hint>
           <required></required>
         </field>
         <field>
@@ -555,7 +555,7 @@
           <repeatable>false</repeatable>
           <label>Related audio</label>
           <input-type>onebox</input-type>
-          <hint>Enter related audio link.</hint>
+          <hint>Enter related audio link (eg an audio about this item).</hint>
           <required></required>
         </field>
         <field>
@@ -565,7 +565,7 @@
           <repeatable>false</repeatable>
           <label>Related photo</label>
           <input-type>onebox</input-type>
-          <hint>Enter related photo link.</hint>
+          <hint>Enter related photo link (eg a photo or image associated with this item).</hint>
           <required></required>
         </field>
         <field>
@@ -575,7 +575,7 @@
           <repeatable>false</repeatable>
           <label>Related reference</label>
           <input-type>onebox</input-type>
-          <hint>Enter related reference link.</hint>
+          <hint>Enter related reference link (normally a URL to another item).</hint>
           <required></required>
         </field>
         <field>
@@ -585,7 +585,7 @@
           <repeatable>false</repeatable>
           <label>Related citation</label>
           <input-type>onebox</input-type>
-          <hint>Enter related reference citation.</hint>
+          <hint>Enter related reference citation (normally a full citation, not a URL).</hint>
           <required></required>
         </field>
         <field>
@@ -595,7 +595,7 @@
           <repeatable>false</repeatable>
           <label>URL for datafile</label>
           <input-type>onebox</input-type>
-          <hint>Enter URL for datafile.</hint>
+          <hint>Enter a URL for any associated datafile, in a repository for example.</hint>
           <required></required>
         </field>
         <field>
@@ -603,9 +603,9 @@
           <dc-element>Species</dc-element>
           <dc-qualifier></dc-qualifier>
           <repeatable>true</repeatable>
-          <label>Plant species</label>
+          <label>Species</label>
           <input-type>twobox</input-type>
-          <hint>Enter scientific name of organism</hint>
+          <hint>Enter scientific name of organism, plant, animal, etc if it is a main focus of the item, for example: Lablab purpureus; Bos Taurus; Oryza sativa; Theileria parva)</hint>
           <required></required>
         </field>
         <field>
@@ -613,7 +613,7 @@
           <dc-element>species</dc-element>
           <dc-qualifier>breed</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>Animal breed</label>
+          <label>Animal breed type</label>
           <input-type>onebox</input-type>
           <vocabulary>cg-species-breed</vocabulary>
           <required></required>
