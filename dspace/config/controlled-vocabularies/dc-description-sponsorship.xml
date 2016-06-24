@@ -69,5 +69,7 @@
     <node label="Danish International Development Agency" />
     <node label="Alliance for a Green Revolution in Africa" />
     <node label="World Food Prize Foundation" />
+    <node label="Centre for International Migration and Development" />
+    <node label="German Research Foundation" />
   </isComposedBy>
 </node>
