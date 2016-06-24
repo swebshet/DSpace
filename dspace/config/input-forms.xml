@@ -49,16 +49,6 @@
         <field>
           <dc-schema>dc</dc-schema>
           <dc-element>contributor</dc-element>
-          <dc-qualifier>corporate</dc-qualifier>
-          <repeatable>true</repeatable>
-          <label>Corporate authors</label>
-          <input-type>onebox</input-type>
-          <hint>Enter the full name of an individual or corporation responsible for the content.</hint>
-          <required></required>
-        </field>
-        <field>
-          <dc-schema>dc</dc-schema>
-          <dc-element>contributor</dc-element>
           <dc-qualifier>affiliation</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Author affiliations</label>
