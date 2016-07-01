@@ -147,23 +147,21 @@ such as authors, subject, citation, description, etc
     </xsl:template>
     <xsl:template name="itemSummaryView-DIM-investors-sponsors">
         <xsl:if test="dim:field[@element='description' and @qualifier='sponsorship']">
-            <div class="simple-item-view-description item-page-field-wrapper table">
+            <div class="word-break item-page-field-wrapper table">
                 <h5 class="bold">
                     <i18n:text>xmlui.dri2xhtml.METS-1.0.item-investors-sponsors</i18n:text>
                 </h5>
-                <div>
-                    <xsl:for-each select="dim:field[@element='description' and @qualifier='sponsorship']">
-
-                            <xsl:copy-of select="./node()"/>
-
-                        <xsl:if test="count(following-sibling::dim:field[@element='description' and @qualifier='sponsorship']) != 0">
-                            <xsl:text>; </xsl:text>
-                        </xsl:if>
-                    </xsl:for-each>
-                </div>
-
-
-
+                <xsl:for-each select="dim:field[@element='description' and @qualifier='sponsorship' ]">
+                    <a target="_blank" >
+                        <xsl:attribute name="href">
+                            <xsl:value-of select="concat($context-path,'/discover?filtertype=sponsorship&amp;filter_relational_operator=equals&amp;filter=',url:encode(node()))"></xsl:value-of>
+                        </xsl:attribute>
+                        <xsl:copy-of select="./node()"/>
+                    </a>
+                    <xsl:if test="count(following-sibling::dim:field[@element='description' and @qualifier='sponsorship']) != 0">
+                        <xsl:text>; </xsl:text>
+                    </xsl:if>
+                </xsl:for-each>
             </div>
         </xsl:if>
     </xsl:template>
