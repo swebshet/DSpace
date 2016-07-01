@@ -124,7 +124,7 @@
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_subject">Subjects</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_abstract">Abstracts</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_series">Series</message>
-	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_sponsor">Sponsors</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_sponsorship">Investors</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_identifier">Identifiers</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_language">Languages (ISO)</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_keyword">Keywords</message>
@@ -428,6 +428,7 @@
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.region">Region</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.country">Country</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.breed">Animal breed</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.sponsorship">Investor</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.RestrictedItem.java -->
 	<message key="xmlui.ArtifactBrowser.RestrictedItem.title">This resource is restricted</message>
@@ -2688,4 +2689,5 @@
     <message key="xmlui.Discovery.AbstractSearch.type_icardasubject">Filter by: ICARDA subject</message>
     <message key="xmlui.Discovery.AbstractSearch.type_cipsubject">Filter by: CIP subject</message>
     <message key="xmlui.Discovery.AbstractSearch.type_drylandssubject">Filter by: Dryland Systems subject</message>
+    <message key="xmlui.Discovery.AbstractSearch.type_sponsorship">Filter by: Investor</message>
 </catalogue>
