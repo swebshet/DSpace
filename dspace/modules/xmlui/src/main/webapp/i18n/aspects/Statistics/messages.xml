@@ -588,7 +588,7 @@ DAMAGE.
 
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.status">Status (cg.identifier.status)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.isijournal">ISI journal (cg.isijournal)</message>
-    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.jtitle">Journal title (dc.title.jtitle)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.journaltitle">Journal title (dc.source)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.ilrisubject">ILRI subject (cg.subject.ilri)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.cpwfsubject">CPWF subject (cg.subject.cpwf)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.ccafsubject">CCAFS subject (cg.subject.ccafs)</message>
@@ -596,8 +596,8 @@ DAMAGE.
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.iwmisubject">IWMI subject (cg.subject.iwmi)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.region">Region (cg.coverage.region)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.country">Country (cg.coverage.country)</message>
-    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.subregion">Subregion (dc.srplace.*)</message>
-    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.crpsubject">CGIAR Research Program (dc.crsubject.*)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.subregion">Subregion (cg.coverage.subregion)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.crpsubject">CGIAR Research Program (cg.contributor.crp)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.basin">River basin (cg.river.basin)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.cta">CTA subject (cg.subject.cta)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.wlesubject">WLE subject (cg.subject.wle)</message>
@@ -798,7 +798,7 @@ DAMAGE.
     <message key="xmlui.reporting-suite.statistics.contentanalysis.dateAccessioned">Date Submitted</message>
     <message key="xmlui.reporting-suite.statistics.contentanalysis.status">Status</message>
     <message key="xmlui.reporting-suite.statistics.contentanalysis.isijournal">ISI journal</message>
-    <message key="xmlui.reporting-suite.statistics.contentanalysis.jtitle">Journal title</message>
+    <message key="xmlui.reporting-suite.statistics.contentanalysis.journaltitle">Journal title</message>
     <message key="xmlui.reporting-suite.statistics.contentanalysis.ilrisubject">ILRI subject</message>
     <message key="xmlui.reporting-suite.statistics.contentanalysis.cpwfsubject">CPWF subject</message>
     <message key="xmlui.reporting-suite.statistics.contentanalysis.ccafsubject">CCAFS subject</message>

@@ -153,7 +153,7 @@
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_status">Status</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_breed">Animal breed</message>
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_common_status_identifier">Status</message>
-   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_jtitle">Journal Title</message>
+   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_journaltitle">Journal title</message>
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_ISI_Journal">ISI Journal status</message>
 
    <!--  some common other possibilities for Advanced Search Fields -->
