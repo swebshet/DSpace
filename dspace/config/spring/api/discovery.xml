@@ -512,10 +512,10 @@
     </bean>
 
     <bean id="searchFilterJournalTitle" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
-        <property name="indexFieldName" value="jtitle"/>
+        <property name="indexFieldName" value="journaltitle"/>
         <property name="metadataFields">
             <list>
-                <value>dc.title.jtitle</value>
+                <value>dc.source</value>
             </list>
         </property>
         <property name="facetLimit" value="5"/>
@@ -611,7 +611,7 @@
         <property name="indexFieldName" value="subregion"/>
         <property name="metadataFields">
             <list>
-                <value>dc.srplace.*</value>
+                <value>cg.coverage.subregion</value>
             </list>
         </property>
         <property name="facetLimit" value="10"/>
@@ -623,7 +623,7 @@
         <property name="indexFieldName" value="crpsubject"/>
         <property name="metadataFields">
             <list>
-                <value>dc.crsubject.*</value>
+                <value>cg.contributor.crp</value>
             </list>
         </property>
         <property name="facetLimit" value="20"/>
@@ -779,7 +779,7 @@
         <property name="indexFieldName" value="affiliation"/>
         <property name="metadataFields">
             <list>
-                <value>dc.contributor.affiliation</value>
+                <value>cg.contributor.affiliation</value>
             </list>
         </property>
         <property name="facetLimit" value="10"/>
