@@ -47,7 +47,7 @@
           <required>Please enter the author(s).</required>
         </field>
         <field>
-          <dc-schema>dc</dc-schema>
+          <dc-schema>cg</dc-schema>
           <dc-element>contributor</dc-element>
           <dc-qualifier>affiliation</dc-qualifier>
           <repeatable>true</repeatable>
@@ -78,8 +78,8 @@
         </field>
         <field>
           <dc-schema>dc</dc-schema>
-          <dc-element>title</dc-element>
-          <dc-qualifier>jtitle</dc-qualifier>
+          <dc-element>source</dc-element>
+          <dc-qualifier></dc-qualifier>
           <repeatable>false</repeatable>
           <label>Journal title</label>
           <input-type>onebox</input-type>
@@ -208,7 +208,7 @@
           <required></required>
         </field>
         <field>
-          <dc-schema>dc</dc-schema>
+          <dc-schema>cg</dc-schema>
           <dc-element>identifier</dc-element>
           <dc-qualifier>url</dc-qualifier>
           <repeatable>false</repeatable>
@@ -218,7 +218,7 @@
           <required></required>
         </field>
         <field>
-          <dc-schema>dc</dc-schema>
+          <dc-schema>cg</dc-schema>
           <dc-element>identifier</dc-element>
           <dc-qualifier>googleurl</dc-qualifier>
           <repeatable>false</repeatable>
@@ -238,7 +238,7 @@
           <required></required>
         </field>
         <field>
-          <dc-schema>dc</dc-schema>
+          <dc-schema>cg</dc-schema>
           <dc-element>identifier</dc-element>
           <dc-qualifier>doi</dc-qualifier>
           <repeatable>false</repeatable>
@@ -248,9 +248,9 @@
           <required></required>
         </field>
         <field>
-          <dc-schema>dc</dc-schema>
-          <dc-element>crsubject</dc-element>
-          <dc-qualifier>crpsubject</dc-qualifier>
+          <dc-schema>cg</dc-schema>
+          <dc-element>contributor</dc-element>
+          <dc-qualifier>crp</dc-qualifier>
           <repeatable>true</repeatable>
           <label>CGIAR Research Programs (CRP)</label>
           <input-type value-pairs-name="crpsubject">dropdown</input-type>
@@ -278,13 +278,13 @@
           <required></required>
         </field>
         <field>
-          <dc-schema>dc</dc-schema>
-          <dc-element>srplace</dc-element>
+          <dc-schema>cg</dc-schema>
+          <dc-element>coverage</dc-element>
           <dc-qualifier>subregion</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Subregion</label>
           <input-type>onebox</input-type>
-          <vocabulary>dc-srplace-subregion</vocabulary>
+          <vocabulary>cg-coverage-subregion</vocabulary>
           <hint>Click below to see a pre-populated list of subregions — normally provinces, states, regions, etc WITHIN a country (or enter a new one in UPPER CASE).</hint>
           <required></required>
         </field>
@@ -589,7 +589,7 @@
           <required></required>
         </field>
         <field>
-          <dc-schema>dc</dc-schema>
+          <dc-schema>cg</dc-schema>
           <dc-element>identifier</dc-element>
           <dc-qualifier>dataurl</dc-qualifier>
           <repeatable>false</repeatable>
@@ -599,8 +599,8 @@
           <required></required>
         </field>
         <field>
-          <dc-schema>dc</dc-schema>
-          <dc-element>Species</dc-element>
+          <dc-schema>cg</dc-schema>
+          <dc-element>species</dc-element>
           <dc-qualifier></dc-qualifier>
           <repeatable>true</repeatable>
           <label>Species</label>
@@ -654,8 +654,8 @@
         </field>
         <field>
           <dc-schema>dc</dc-schema>
-          <dc-element>title</dc-element>
-          <dc-qualifier>jtitle</dc-qualifier>
+          <dc-element>source</dc-element>
+          <dc-qualifier></dc-qualifier>
           <repeatable>false</repeatable>
           <label>Journal Title</label>
           <input-type>onebox</input-type>
@@ -683,7 +683,7 @@
           <required>Standard citation is required.</required>
         </field>
         <field>
-          <dc-schema>dc</dc-schema>
+          <dc-schema>cg</dc-schema>
           <dc-element>identifier</dc-element>
           <dc-qualifier>doi</dc-qualifier>
           <repeatable>false</repeatable>
@@ -693,7 +693,7 @@
           <required></required>
         </field>
         <field>
-          <dc-schema>dc</dc-schema>
+          <dc-schema>cg</dc-schema>
           <dc-element>identifier</dc-element>
           <dc-qualifier>url</dc-qualifier>
           <repeatable>false</repeatable>
@@ -3987,7 +3987,7 @@
         <stored-value>WEST AND CENTRAL AFRICA</stored-value>
       </pair>
     </value-pairs>
-    <value-pairs value-pairs-name="subregion_types" dc-term="srplace_subregion">
+    <value-pairs value-pairs-name="subregion_types" dc-term="subregion_types">
       <pair>
         <displayed-value>AFAR</displayed-value>
         <stored-value>AFAR</stored-value>
