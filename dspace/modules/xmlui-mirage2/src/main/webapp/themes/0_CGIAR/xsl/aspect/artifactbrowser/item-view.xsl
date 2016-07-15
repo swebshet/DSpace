@@ -143,6 +143,7 @@
                     </xsl:if>
 
                     <xsl:call-template name="itemSummaryView-DIM-citation"/>
+                    <xsl:call-template name="itemSummaryView-DIM-identifiers"/>
                     <xsl:call-template name="itemSummaryView-DIM-abstract"/>
                     <xsl:call-template name="itemSummaryView-DIM-notes"/>
                     <xsl:call-template name="itemSummaryView-DIM-affiliations"/>
@@ -151,7 +152,6 @@
                     <xsl:call-template name="itemSummaryView-DIM-countries"/>
                     <xsl:call-template name="itemSummaryView-DIM-regions"/>
                     <xsl:call-template name="itemSummaryView-DIM-investors-sponsors"/>
-                    <xsl:call-template name="itemSummaryView-DIM-identifiers"/>
                     <xsl:call-template name="itemSummaryView-DIM-related-material"/>
                 </div>
             </div>
