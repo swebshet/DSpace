@@ -168,15 +168,10 @@ such as authors, subject, citation, description, etc
     <xsl:template name="itemSummaryView-DIM-identifiers">
         <xsl:if test="dim:field[@element='identifier' and @qualifier='uri']">
             <div class="simple-item-view-description item-page-field-wrapper table">
-                <h5 class="bold">
-                    <i18n:text>xmlui.dri2xhtml.METS-1.0.item-identifiers</i18n:text>
-                </h5>
-                <div class="marginleft">
-                    <xsl:call-template name="itemSummaryView-DIM-permanenturi"/>
-                    <xsl:call-template name="itemSummaryView-DIM-interneturl"/>
-                    <xsl:call-template name="itemSummaryView-DIM-googleurl"/>
-                    <xsl:call-template name="itemSummaryView-DIM-doi"/>
-                </div>
+                <xsl:call-template name="itemSummaryView-DIM-permanenturi"/>
+                <xsl:call-template name="itemSummaryView-DIM-interneturl"/>
+                <xsl:call-template name="itemSummaryView-DIM-googleurl"/>
+                <xsl:call-template name="itemSummaryView-DIM-doi"/>
             </div>
 
         </xsl:if>
@@ -874,9 +869,9 @@ such as authors, subject, citation, description, etc
     <xsl:template name="itemSummaryView-DIM-googleurl">
         <xsl:if test="dim:field[@mdschema='cg' and @element='identifier' and @qualifier='googleurl' ]">
             <div>
-                <span>
+                <strong>
                     <i18n:text>xmlui.dri2xhtml.METS-1.0.item-identifier-googleurl</i18n:text>
-                </span>
+                </strong>
 
                 <span >
                     <xsl:for-each select="dim:field[@mdschema='cg' and @element='identifier' and @qualifier='googleurl']">
@@ -907,9 +902,9 @@ such as authors, subject, citation, description, etc
  <xsl:template name="itemSummaryView-DIM-permanenturi">
         <xsl:if test="dim:field[@element='identifier' and @qualifier='uri' ]">
             <div>
-                <span>
+                <strong>
                     <i18n:text>xmlui.dri2xhtml.METS-1.0.item-identifier-permanenturi</i18n:text>
-                </span>
+                </strong>
 
                 <span >
                     <xsl:for-each select="dim:field[@element='identifier' and @qualifier='uri']">
@@ -940,9 +935,9 @@ such as authors, subject, citation, description, etc
     <xsl:template name="itemSummaryView-DIM-interneturl">
         <xsl:if test="dim:field[@mdschema='cg' and @element='identifier' and @qualifier='url' ]">
             <div>
-                <span>
+                <strong>
                     <i18n:text>xmlui.dri2xhtml.METS-1.0.item-identifier-interneturl</i18n:text>
-                </span>
+                </strong>
                 <span >
                     <xsl:for-each select="dim:field[@mdschema='cg' and @element='identifier' and @qualifier='url']">
                         <xsl:choose>
@@ -971,9 +966,9 @@ such as authors, subject, citation, description, etc
     </xsl:template>  <xsl:template name="itemSummaryView-DIM-doi">
         <xsl:if test="dim:field[@mdschema='cg' and @element='identifier' and @qualifier='doi' ]">
             <div>
-                <span>
+                <strong>
                     <i18n:text>xmlui.dri2xhtml.METS-1.0.item-identifier-doi</i18n:text>
-                </span>
+                </strong>
 
                 <span >
                     <xsl:for-each select="dim:field[@mdschema='cg' and @element='identifier' and @qualifier='doi']">
