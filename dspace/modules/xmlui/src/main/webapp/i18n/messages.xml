@@ -152,6 +152,7 @@
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_affiliation">Author affiliations</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_status">Status</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_breed">Animal breed</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_species">Species</message>
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_common_status_identifier">Status</message>
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_journaltitle">Journal title</message>
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_ISI_Journal">ISI Journal status</message>
@@ -428,6 +429,7 @@
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.region">Region</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.country">Country</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.breed">Animal breed</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.species">Species</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.sponsorship">Investor</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.RestrictedItem.java -->
@@ -2367,9 +2369,11 @@
 	<message key="xmlui.dri2xhtml.METS-1.0.item-investors-sponsors">Investors/sponsors</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-identifiers">Identifiers</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-identifier-googleurl">Google URL: </message>
-	<message key="xmlui.dri2xhtml.METS-1.0.item-identifier-permanenturi">Permanent URI: </message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-identifier-permanenturi">Permanent link to this item: </message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-identifier-interneturl">Internet URL: </message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-identifier-doi">DOI: </message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-species">Species</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-breeds">Livestock breed types</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-related-material">Related material</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-related-datafile">Related data file: </message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-related-video">Related video: </message>

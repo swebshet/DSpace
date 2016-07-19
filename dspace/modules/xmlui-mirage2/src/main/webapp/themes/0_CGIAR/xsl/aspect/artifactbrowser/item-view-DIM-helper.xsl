@@ -168,15 +168,10 @@ such as authors, subject, citation, description, etc
     <xsl:template name="itemSummaryView-DIM-identifiers">
         <xsl:if test="dim:field[@element='identifier' and @qualifier='uri']">
             <div class="simple-item-view-description item-page-field-wrapper table">
-                <h5 class="bold">
-                    <i18n:text>xmlui.dri2xhtml.METS-1.0.item-identifiers</i18n:text>
-                </h5>
-                <div class="marginleft">
-                    <xsl:call-template name="itemSummaryView-DIM-permanenturi"/>
-                    <xsl:call-template name="itemSummaryView-DIM-interneturl"/>
-                    <xsl:call-template name="itemSummaryView-DIM-googleurl"/>
-                    <xsl:call-template name="itemSummaryView-DIM-doi"/>
-                </div>
+                <xsl:call-template name="itemSummaryView-DIM-permanenturi"/>
+                <xsl:call-template name="itemSummaryView-DIM-interneturl"/>
+                <xsl:call-template name="itemSummaryView-DIM-googleurl"/>
+                <xsl:call-template name="itemSummaryView-DIM-doi"/>
             </div>
 
         </xsl:if>
@@ -571,6 +566,47 @@ such as authors, subject, citation, description, etc
         </xsl:if>
 
     </xsl:template>
+    <xsl:template name="itemSummaryView-DIM-species">
+        <xsl:if test="dim:field[@mdschema='cg' and @element='species' and descendant::text()]">
+            <div class="word-break item-page-field-wrapper table">
+                <h5 class="bold">
+                    <i18n:text>xmlui.dri2xhtml.METS-1.0.item-species</i18n:text>
+                </h5>
+                <xsl:for-each select="dim:field[@mdschema='cg' and @element='species' ]">
+                    <a target="_blank" >
+                        <xsl:attribute name="href">
+                            <xsl:value-of select="concat($context-path,'/discover?filtertype=species&amp;filter_relational_operator=equals&amp;filter=',url:encode(node()))"></xsl:value-of>
+                        </xsl:attribute>
+                        <xsl:copy-of select="./node()"/>
+                    </a>
+                    <xsl:if test="count(following-sibling::dim:field[@mdschema='cg' and @element='species']) != 0">
+                        <xsl:text>; </xsl:text>
+                    </xsl:if>
+                </xsl:for-each>
+            </div>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template name="itemSummaryView-DIM-breeds">
+        <xsl:if test="dim:field[@mdschema='cg' and @element='species' and @qualifier='breed' and descendant::text()]">
+            <div class="word-break item-page-field-wrapper table">
+                <h5 class="bold">
+                    <i18n:text>xmlui.dri2xhtml.METS-1.0.item-breeds</i18n:text>
+                </h5>
+                <xsl:for-each select="dim:field[@mdschema='cg' and @element='species' and @qualifier='breed' ]">
+                    <a target="_blank" >
+                        <xsl:attribute name="href">
+                            <xsl:value-of select="concat($context-path,'/discover?filtertype=breed&amp;filter_relational_operator=equals&amp;filter=',url:encode(node()))"></xsl:value-of>
+                        </xsl:attribute>
+                        <xsl:copy-of select="./node()"/>
+                    </a>
+                    <xsl:if test="count(following-sibling::dim:field[@mdschema='cg' and @element='species' and @qualifier='breed']) != 0">
+                        <xsl:text>; </xsl:text>
+                    </xsl:if>
+                </xsl:for-each>
+            </div>
+        </xsl:if>
+    </xsl:template>
+
     <xsl:template name="itemSummaryView-DIM-language">
         <xsl:if test="dim:field[@element='language' and @qualifier='iso' and descendant::text()]">
             <div class="word-break item-page-field-wrapper table">
@@ -873,10 +909,10 @@ such as authors, subject, citation, description, etc
     </xsl:template>
     <xsl:template name="itemSummaryView-DIM-googleurl">
         <xsl:if test="dim:field[@mdschema='cg' and @element='identifier' and @qualifier='googleurl' ]">
-            <div>
-                <span>
+            <div class="text-left">
+                <strong>
                     <i18n:text>xmlui.dri2xhtml.METS-1.0.item-identifier-googleurl</i18n:text>
-                </span>
+                </strong>
 
                 <span >
                     <xsl:for-each select="dim:field[@mdschema='cg' and @element='identifier' and @qualifier='googleurl']">
@@ -906,10 +942,10 @@ such as authors, subject, citation, description, etc
     </xsl:template>
  <xsl:template name="itemSummaryView-DIM-permanenturi">
         <xsl:if test="dim:field[@element='identifier' and @qualifier='uri' ]">
-            <div>
-                <span>
+            <div class="text-left">
+                <strong>
                     <i18n:text>xmlui.dri2xhtml.METS-1.0.item-identifier-permanenturi</i18n:text>
-                </span>
+                </strong>
 
                 <span >
                     <xsl:for-each select="dim:field[@element='identifier' and @qualifier='uri']">
@@ -939,10 +975,10 @@ such as authors, subject, citation, description, etc
     </xsl:template>
     <xsl:template name="itemSummaryView-DIM-interneturl">
         <xsl:if test="dim:field[@mdschema='cg' and @element='identifier' and @qualifier='url' ]">
-            <div>
-                <span>
+            <div class="text-left">
+                <strong>
                     <i18n:text>xmlui.dri2xhtml.METS-1.0.item-identifier-interneturl</i18n:text>
-                </span>
+                </strong>
                 <span >
                     <xsl:for-each select="dim:field[@mdschema='cg' and @element='identifier' and @qualifier='url']">
                         <xsl:choose>
@@ -970,10 +1006,10 @@ such as authors, subject, citation, description, etc
         </xsl:if>
     </xsl:template>  <xsl:template name="itemSummaryView-DIM-doi">
         <xsl:if test="dim:field[@mdschema='cg' and @element='identifier' and @qualifier='doi' ]">
-            <div>
-                <span>
+            <div class="text-left">
+                <strong>
                     <i18n:text>xmlui.dri2xhtml.METS-1.0.item-identifier-doi</i18n:text>
-                </span>
+                </strong>
 
                 <span >
                     <xsl:for-each select="dim:field[@mdschema='cg' and @element='identifier' and @qualifier='doi']">
