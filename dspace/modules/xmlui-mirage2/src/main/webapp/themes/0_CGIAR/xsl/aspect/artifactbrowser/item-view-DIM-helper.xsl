@@ -909,7 +909,7 @@ such as authors, subject, citation, description, etc
     </xsl:template>
     <xsl:template name="itemSummaryView-DIM-googleurl">
         <xsl:if test="dim:field[@mdschema='cg' and @element='identifier' and @qualifier='googleurl' ]">
-            <div>
+            <div class="text-left">
                 <strong>
                     <i18n:text>xmlui.dri2xhtml.METS-1.0.item-identifier-googleurl</i18n:text>
                 </strong>
@@ -942,7 +942,7 @@ such as authors, subject, citation, description, etc
     </xsl:template>
  <xsl:template name="itemSummaryView-DIM-permanenturi">
         <xsl:if test="dim:field[@element='identifier' and @qualifier='uri' ]">
-            <div>
+            <div class="text-left">
                 <strong>
                     <i18n:text>xmlui.dri2xhtml.METS-1.0.item-identifier-permanenturi</i18n:text>
                 </strong>
@@ -975,7 +975,7 @@ such as authors, subject, citation, description, etc
     </xsl:template>
     <xsl:template name="itemSummaryView-DIM-interneturl">
         <xsl:if test="dim:field[@mdschema='cg' and @element='identifier' and @qualifier='url' ]">
-            <div>
+            <div class="text-left">
                 <strong>
                     <i18n:text>xmlui.dri2xhtml.METS-1.0.item-identifier-interneturl</i18n:text>
                 </strong>
@@ -1006,7 +1006,7 @@ such as authors, subject, citation, description, etc
         </xsl:if>
     </xsl:template>  <xsl:template name="itemSummaryView-DIM-doi">
         <xsl:if test="dim:field[@mdschema='cg' and @element='identifier' and @qualifier='doi' ]">
-            <div>
+            <div class="text-left">
                 <strong>
                     <i18n:text>xmlui.dri2xhtml.METS-1.0.item-identifier-doi</i18n:text>
                 </strong>
