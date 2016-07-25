@@ -808,7 +808,7 @@
                                 <li>Bram Luyten (Atmire) ― confirmed the technical feasibility of a co-tenant application; provides ongoing state of the art advice and inputs and connections to the core DSpace developers.</li>
                                 <li>Vanessa Meadu (CCAFS) ― joined forces and motivated DSpace to Drupal interface.</li>
                                 <li>Abenet Yabowork (ILRI) ― curates and quality checks the ILRI content; supports partner content.</li>
-                                <li>Tezira Lore (ILRI) ― from the beginning, she systematically published ILRI’s food safety and zoonotic disease research through CGSpace.</li>
+                                <li>Tezira Lore (ILRI) ― from the beginning, she systematically published ILRI's food safety and zoonotic disease research through CGSpace.</li>
                                 <li>Chris Addison (CTA) ― identified CGSpace as a suitable platform to host archive, and now also current, content from CTA.</li>
                                 <li>Bizuwork Mulat, Abeba Desta and Goshu Cherinet (ILRI), Megan Zandstra and Leroy Mwanzia (CIAT), Udana Ariyawansa and Chandima Gunadasa (IWMI), Sufiet Erlita (CIFOR), Joel Ranck and Cecilia Ferreyra (CIP), Maria Garruccio (Bioversity), Martin Mueller (IITA), Ryan Miller (IFPRI), Thierry Lewyllie (CTA) and Daniel Haile-Michael and Tsega Tassema (ILRI web team) all brought their specific expertise and dedication to help move the collaboration forward.</li>
                               </ul>
