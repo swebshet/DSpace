@@ -771,8 +771,6 @@
 					   It is a tool to archive, curate, disseminate and permanently preserve research outputs and information products. CGSpace is both a repository 
 					   of open access content and a complete index of research outputs.<br/><br/>
                        The collaboration is built across different initiatives with partners contributing to the core technical costs and working together to expand access to their products.<br/><br/>  
-                       CGSpace is built on DSpace. It is interoperable with other repositories and supports content discovery and re-use through use of international Dublin Core Metadata standards
-					   as well as CGIAR-wide metadata standards. CGSpace metadata is exposed through the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH).
                        Note: Not all content is inside CGSpace; it links to much content on other platforms. All efforts have been made to provide high quality information.
 					   Links off the site are not the responsibility of CGSpace content partners and collaborators.
 					   Please send feedback on any broken links or errors to the contact email address listed below.<br/><br/>
