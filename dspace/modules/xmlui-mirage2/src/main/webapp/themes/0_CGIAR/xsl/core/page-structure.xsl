@@ -765,7 +765,7 @@
             <xsl:choose>
                 <xsl:when test="starts-with($request-uri, 'page/about')">
                     <div class="hero-unit">
-					<h1>About CGSpace</h1>
+					<h2>About CGSpace</h2>
                        <p>
                        CGSpace is a joint repository of several CGIAR centers, research programs and partners’ agricultural research outputs and knowledge products. 
 					   It is a tool to archive, curate, disseminate and permanently preserve research outputs and information products. CGSpace is both a repository 
@@ -779,14 +779,14 @@
 					   Please send feedback on any broken links or errors to the contact email address listed below.<br/><br/>
 					   </p>
 					   
-					  <h1>Information for developers</h1>
+					  <h2>Information for developers</h2>
 					  <p>CGSpace is built on DSpace.<br/><br/>
 					    It is interoperable with other repositories and supports content discovery and re-use through use of international Dublin Core Metadata standards as
 						well as CGIAR-wide metadata standards.<br/><br/>
 					    CGSpace metadata is exposed through the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH).<br/><br/>
 					    The CGSpace codebase is managed on <a href="https://github.com/ilri/DSpace">GitHub</a>.<br/><br/>
 					   </p>
-					  <h1>History and evolution</h1>
+					  <h2>History and evolution</h2>
                               <p>
                                 A little history and some credits
                                 CGSpace emerged from work by the International Livestock Research Institute (ILRI) to make its products public in a state of the art repository.<br/><br/>
