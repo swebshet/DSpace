@@ -767,20 +767,19 @@
                     <div class="hero-unit">
 					<h2>About CGSpace</h2>
                        <p>
-                       CGSpace is a joint repository of several CGIAR centers, research programs and partners’ agricultural research outputs and knowledge products. 
+                       CGSpace is a joint repository of several <a href="https://www.cgiar.org" title="CGIAR homepage">CGIAR</a> centers, research programs and partners' agricultural research outputs and knowledge products. 
 					   It is a tool to archive, curate, disseminate and permanently preserve research outputs and information products. CGSpace is both a repository 
 					   of open access content and a complete index of research outputs.<br/><br/>
                        The collaboration is built across different initiatives with partners contributing to the core technical costs and working together to expand access to their products.<br/><br/>  
                        CGSpace is built on DSpace. It is interoperable with other repositories and supports content discovery and re-use through use of international Dublin Core Metadata standards
 					   as well as CGIAR-wide metadata standards. CGSpace metadata is exposed through the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH).
-					   The CGSpace codebase is managed on GitHub.<br/><br/>
                        Note: Not all content is inside CGSpace; it links to much content on other platforms. All efforts have been made to provide high quality information.
 					   Links off the site are not the responsibility of CGSpace content partners and collaborators.
 					   Please send feedback on any broken links or errors to the contact email address listed below.<br/><br/>
 					   </p>
 					   
 					  <h2>Information for Developers</h2>
-					  <p>CGSpace is built on DSpace.<br/><br/>
+					  <p>CGSpace is built on <a href="http://www.dspace.org" title="DSpace homepage">DSpace</a>.<br/><br/>
 					    It is interoperable with other repositories and supports content discovery and re-use through use of international Dublin Core Metadata standards as
 						well as CGIAR-wide metadata standards.<br/><br/>
 					    CGSpace metadata is exposed through the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH).<br/><br/>
@@ -789,12 +788,12 @@
 					  <h2>History and Evolution</h2>
                               <p>
                                 A little history and some credits
-                                CGSpace emerged from work by the International Livestock Research Institute (ILRI) to make its products public in a state of the art repository.<br/><br/>
+                                CGSpace emerged from work by the <a href="https://www.ilri.org" title="ILRI homepage">International Livestock Research Institute (ILRI)</a> to make its products public in a state of the art repository.<br/><br/>
 								Starting in late 2009, ILRI set up a DSpace repository. Looking for ways to capture products of projects hosted by, but not belonging to ILRI,
 								communities were set up for other initiatives, such as the CGIAR System-wide Livestock Program.<br/><br/>
-								In 2010 and 2011, the CGIAR Challenge Program on Water and Food and the CGIAR Research Program on Climate Change, Agriculture and Food Security joined 
-								this effort and agreed to work on a ‘co-tenant’ application of a single DSpace.<br/><br/>
-								With technical assistance and training from Atmire, the collaboration has grown to include other centers and initiatives seeking to have such
+								In 2010 and 2011, the <a href="https://waterandfood.org" title="CGIAR Challenge Program on Water and Food homepage">CGIAR Challenge Program on Water and Food</a> and the <a href="https://ccafs.cgiar.org/" title="CGIAR Research Program on Climate Change, Agriculture and Food Security homepage">CGIAR Research Program on Climate Change, Agriculture and Food Security</a> joined 
+								this effort and agreed to work on a 'co-tenant' application of a single DSpace.<br/><br/>
+								With technical assistance and training from <a href="https://www.atmire.com" title="Atmire homepage">Atmire</a>, the collaboration has grown to include other centers and initiatives seeking to have such
 								a repository while sharing costs and achieving synergies.
                                 Some of this work has been documented in a series of presentations and blogposts
 								(<a href="http://www.slideshare.net/search/slideshow?searchfrom=header&amp;q=cgspace;">Slideshare</a> 
