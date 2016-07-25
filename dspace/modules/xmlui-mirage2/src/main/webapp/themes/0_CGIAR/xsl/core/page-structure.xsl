@@ -777,7 +777,7 @@
 					  <h2>Information for Developers</h2>
 					  <p>CGSpace is built on <a href="http://www.dspace.org" title="DSpace homepage">DSpace</a>. It is interoperable with other repositories and supports content discovery and re-use through use of international Dublin Core Metadata standards as well as CGIAR-wide metadata standards.</p>
 
-					    <p>CGSpace metadata is exposed through the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH).</p>
+					    <p>The repository's metadata is exposed through both the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH) and a REST API interface — <code>/oai</code> and <code>/rest</code>, respectively. For more information see the <a href="https://wiki.duraspace.org/display/DSDOC5x/DSpace+5.x+Documentation" title="DSpace wiki">DSpace documentation</a>.</p>
 
 					    <p>The CGSpace codebase is managed on <a href="https://github.com/ilri/DSpace">GitHub</a>.</p>
 
