@@ -772,7 +772,7 @@
 
                        <p>Note: Not all content is inside CGSpace; it links to much content on other platforms. All efforts have been made to provide high quality information. Links off the site are not the responsibility of CGSpace content partners and collaborators.</p>
 
-					   <p>Please send feedback on any broken links or errors to us via the "Send Feedback" link below.</p>
+					   <p>Please send feedback on any broken links or errors to us via the <a href="/feedback">Send Feedback</a> link below.</p>
 
 					  <h2>Information for Developers</h2>
 					  <p>CGSpace is built on <a href="http://www.dspace.org" title="DSpace homepage">DSpace</a>. It is interoperable with other repositories and supports content discovery and re-use through use of international Dublin Core Metadata standards as well as CGIAR-wide metadata standards.</p>
