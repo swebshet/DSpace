@@ -773,7 +773,7 @@
                        The collaboration is built across different initiatives with partners contributing to the core technical costs and working together to expand access to their products.<br/><br/>  
                        Note: Not all content is inside CGSpace; it links to much content on other platforms. All efforts have been made to provide high quality information.
 					   Links off the site are not the responsibility of CGSpace content partners and collaborators.
-					   Please send feedback on any broken links or errors to the contact email address listed below.<br/><br/>
+					   Please send feedback on any broken links or errors to us via the "Send Feedback" link below.<br/><br/>
 					   </p>
 					   
 					  <h2>Information for Developers</h2>
