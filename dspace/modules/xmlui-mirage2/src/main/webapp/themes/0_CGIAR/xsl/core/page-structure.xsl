@@ -804,7 +804,7 @@
                                 <li>Peter Ballantyne (ILRI) ― instigated the repository, leads the overall effort.</li>
                                 <li>Sisay Webshet (ILRI) ― set up the first ILRI DSpace, involved in all the technical developments.</li>
                                 <li>Michael Victor (CPWF then WLE) ― saw the early opportunity to join forces.</li>
-                                <li>Alan Orth (ILRI) ― moved DSpace to Linux and GitHub; troubleshoots and manages systems, upgrades, code, servers and more.</li>
+                                <li>Alan Orth (ILRI) ― moved DSpace to GNU/Linux and GitHub; troubleshoots and manages systems, upgrades, code, servers and more.</li>
                                 <li>Bram Luyten (Atmire) ― confirmed the technical feasibility of a co-tenant application; provides ongoing state of the art advice and inputs and connections to the core DSpace developers.</li>
                                 <li>Vanessa Meadu (CCAFS) ― joined forces and motivated DSpace to Drupal interface.</li>
                                 <li>Abenet Yabowork (ILRI) ― curates and quality checks the ILRI content; supports partner content.</li>
