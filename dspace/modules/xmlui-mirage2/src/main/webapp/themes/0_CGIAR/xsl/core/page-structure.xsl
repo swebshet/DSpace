@@ -779,14 +779,14 @@
 					   Please send feedback on any broken links or errors to the contact email address listed below.<br/><br/>
 					   </p>
 					   
-					  <h2>Information for developers</h2>
+					  <h2>Information for Developers</h2>
 					  <p>CGSpace is built on DSpace.<br/><br/>
 					    It is interoperable with other repositories and supports content discovery and re-use through use of international Dublin Core Metadata standards as
 						well as CGIAR-wide metadata standards.<br/><br/>
 					    CGSpace metadata is exposed through the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH).<br/><br/>
 					    The CGSpace codebase is managed on <a href="https://github.com/ilri/DSpace">GitHub</a>.<br/><br/>
 					   </p>
-					  <h2>History and evolution</h2>
+					  <h2>History and Evolution</h2>
                               <p>
                                 A little history and some credits
                                 CGSpace emerged from work by the International Livestock Research Institute (ILRI) to make its products public in a state of the art repository.<br/><br/>
