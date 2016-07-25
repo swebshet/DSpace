@@ -771,29 +771,29 @@
 					   It is a tool to archive, curate, disseminate and permanently preserve research outputs and information products. CGSpace is both a repository 
 					   of open access content and a complete index of research outputs.<br/><br/>
                        The collaboration is built across different initiatives with partners contributing to the core technical costs and working together to expand access to their products.<br/><br/>  
-                       CGSpace is built on Dspace. It is interoperable with other repositories and supports content discovery and re-use through use of international Dublin Core Metadata standards
+                       CGSpace is built on DSpace. It is interoperable with other repositories and supports content discovery and re-use through use of international Dublin Core Metadata standards
 					   as well as CGIAR-wide metadata standards. CGSpace metadata is exposed through the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH).
-					   The CGSpace codebase is managed on Github.<br/><br/>
+					   The CGSpace codebase is managed on GitHub.<br/><br/>
                        Note: Not all content is inside CGSpace; it links to much content on other platforms. All efforts have been made to provide high quality information.
 					   Links off the site are not the responsibility of CGSpace content partners and collaborators.
 					   Please send feedback on any broken links or errors to the contact email address listed below.<br/><br/>
 					   </p>
 					   
 					  <h1>Information for developers</h1>
-					  <p>CGSpace is built on Dspace.<br/><br/> 
+					  <p>CGSpace is built on DSpace.<br/><br/>
 					    It is interoperable with other repositories and supports content discovery and re-use through use of international Dublin Core Metadata standards as
 						well as CGIAR-wide metadata standards.<br/><br/>
 					    CGSpace metadata is exposed through the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH).<br/><br/>
-					    The CGSpace codebase is managed on <a href="https://github.com/ilri/DSpace">Github.</a><br/><br/>
+					    The CGSpace codebase is managed on <a href="https://github.com/ilri/DSpace">GitHub</a>.<br/><br/>
 					   </p>
 					  <h1>History and evolution</h1>
                               <p>
                                 A little history and some credits
                                 CGSpace emerged from work by the International Livestock Research Institute (ILRI) to make its products public in a state of the art repository.<br/><br/>
-								Starting in late 2009, ILRI set up a Dspace repository. Looking for ways to capture products of projects hosted by, but not belonging to ILRI,
+								Starting in late 2009, ILRI set up a DSpace repository. Looking for ways to capture products of projects hosted by, but not belonging to ILRI,
 								communities were set up for other initiatives, such as the CGIAR System-wide Livestock Program.<br/><br/>
 								In 2010 and 2011, the CGIAR Challenge Program on Water and Food and the CGIAR Research Program on Climate Change, Agriculture and Food Security joined 
-								this effort and agreed to work on a ‘co-tenant’ application of a single Dspace.<br/><br/>
+								this effort and agreed to work on a ‘co-tenant’ application of a single DSpace.<br/><br/>
 								With technical assistance and training from Atmire, the collaboration has grown to include other centers and initiatives seeking to have such
 								a repository while sharing costs and achieving synergies.
                                 Some of this work has been documented in a series of presentations and blogposts
@@ -803,11 +803,11 @@
                               <p>The key individuals involved included:</p>
                               <ul>
                                 <li>Peter Ballantyne (ILRI), instigated the repository, leads the overall effort.</li>
-                                <li>Sisay Webshet (ILRI), set up the first ILRI Dspace, involved in all the technical developments.</li>
+                                <li>Sisay Webshet (ILRI), set up the first ILRI DSpace, involved in all the technical developments.</li>
                                 <li>Michael Victor (CPWF then WLE), saw the early opportunity to join forces.</li>
-                                <li>Alan Orth (ILRI), moved Dspace to linux and GIThub; troubleshoots and manages systems, upgrades, code, servers and more.</li>
-                                <li>Bram Luyten (Atmire), confirmed the technical feasibility of a co-tenant application; provides ongoing state of the art advice and inputs and connections to the core Dspace developers.</li>
-                                <li>Vanessa Meadu (CCAFS), joined forces and motivated Dspace to Drupal interface.</li>
+                                <li>Alan Orth (ILRI), moved DSpace to Linux and GitHub; troubleshoots and manages systems, upgrades, code, servers and more.</li>
+                                <li>Bram Luyten (Atmire), confirmed the technical feasibility of a co-tenant application; provides ongoing state of the art advice and inputs and connections to the core DSpace developers.</li>
+                                <li>Vanessa Meadu (CCAFS), joined forces and motivated DSpace to Drupal interface.</li>
                                 <li>Abenet Yabowork (ILRI), curates and quality checks the ILRI content; supports partner content.</li>
                                 <li>Tezira Lore (ILRI), from the beginning, she systematically published ILRI’s food safety and zoonotic disease research through CGSpace.</li>
                                 <li>Chris Addison (CTA), identified CGSpace as a suitable platform to host archive, and now also current, content from CTA.</li>
