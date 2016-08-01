@@ -112,8 +112,6 @@
                 <ref bean="searchFilterCipSubject" />
                 <ref bean="searchFilterCpwfSubject"/>
                 <ref bean="searchFilterCta"/>
-                <ref bean="searchFilterDrylandsSubject" />
-                <ref bean="searchFilterHumidtropics"/>
                 <ref bean="searchFilterIcardaSubject" />
                 <ref bean="searchFilterIitaSubject"/>
                 <ref bean="searchFilterIlriSubject"/>
@@ -250,8 +248,6 @@
                 <ref bean="searchFilterCipSubject" />
                 <ref bean="searchFilterCpwfSubject"/>
                 <ref bean="searchFilterCta"/>
-                <ref bean="searchFilterDrylandsSubject" />
-                <ref bean="searchFilterHumidtropics"/>
                 <ref bean="searchFilterIitaSubject"/>
                 <ref bean="searchFilterIcardaSubject" />
                 <ref bean="searchFilterIlriSubject"/>
