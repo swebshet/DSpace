@@ -121,7 +121,7 @@
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.search_for">Search for</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_author">Authors</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_title">Titles</message>
-	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_subject">Subjects</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_subject">AGROVOC keywords</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_abstract">Abstracts</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_series">Series</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_sponsorship">Investors</message>
@@ -198,7 +198,7 @@
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.order.desc">descending</message>
 
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.author.column_heading">Author</message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.subject.column_heading">Subject</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.subject.column_heading">By AGROVOC keyword</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.ilrisubject.column_heading">ILRI subject</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.cpwfsubject.column_heading">CPWF subject</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.ccafsubject.column_heading">CCAFS subject</message>
@@ -208,11 +208,9 @@
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.wlesubject.column_heading">WLE subject</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.bioversity.column_heading">Bioversity subject</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.ciat.column_heading">CIAT subject</message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.humidtropics.column_heading">Humidtropics subject</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.crpsubject.column_heading">CGIAR Research Program</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.basin.column_heading">River basin</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.cipsubject.column_heading">CIP subject</message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.drylandssubject.column_heading">Dryland Systems subject</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.icardasubject.column_heading">ICARDA subject</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.breed.column_heading">Animal breed</message>
 
@@ -224,8 +222,8 @@
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.author">Browsing {0} by Author {1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.author">Browsing {0} by Author</message>
 
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.subject">Browsing {0} by Subject {1}</message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.subject">Browsing {0} by Subject</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.subject">Browsing {0} by AGROVOC keyword {1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.subject">Browsing {0} by AGROVOC keyword</message>
 
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.item.title">Browsing {0} by Title {1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.item.title">Browsing {0} by Title</message>
@@ -270,12 +268,8 @@
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.bioversity">Browsing {0} by Bioversity subject</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.ciat">Browsing {0} by CIAT subject {1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.ciat">Browsing {0} by CIAT subject</message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.humidtropics">Browsing {0} by Humidtropics subject {1}</message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.humidtropics">Browsing {0} by Humidtropics subject</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.cipsubject">Browsing {0} by CIP subject {1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.cipsubject">Browsing {0} by CIP subject</message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.drylandssubject">Browsing {0} by Dryland Systems subject {1}</message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.drylandssubject">Browsing {0} by Dryland Systems subject</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.icardasubject">Browsing {0} by ICARDA subject {1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.icardasubject">Browsing {0} by ICARDA subject</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.breed">Browsing {0} by animal breed {1}</message>
@@ -375,7 +369,7 @@
 	<message key="xmlui.ArtifactBrowser.Navigation.communities_and_collections">Communities &amp; Collections</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_title">Titles</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_author">Authors</message>
-	<message key="xmlui.ArtifactBrowser.Navigation.browse_subject">Subjects</message>
+	<message key="xmlui.ArtifactBrowser.Navigation.browse_subject">By AGROVOC keyword</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_dateissued">By Issue Date</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_dateaccessioned">By Submit Date</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.head_this_collection">This Collection</message>
@@ -392,13 +386,11 @@
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_wlesubject">By WLE subject</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_bioversity">By Bioversity subject</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_ciat">By CIAT subject</message>
-	<message key="xmlui.ArtifactBrowser.Navigation.browse_humidtropics">By Humidtropics subject</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_subregion">By Subregion</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_crpsubject">By CRP subject</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_basin">By River basin</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_type">By Output type</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_cipsubject">By CIP subject</message>
-	<message key="xmlui.ArtifactBrowser.Navigation.browse_drylandssubject">By Dryland systems subject</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_icardasubject">By ICARDA subject</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_breed">By animal breed</message>
 
@@ -2678,7 +2670,6 @@
     <message key="xmlui.Discovery.AbstractSearch.type_wlesubject">Filter by: WLE subject</message>
     <message key="xmlui.Discovery.AbstractSearch.type_iwmisubject">Filter by: IWMI subject</message>
     <message key="xmlui.Discovery.AbstractSearch.type_ilrisubject">Filter by: ILRI subject</message>
-    <message key="xmlui.Discovery.AbstractSearch.type_humidtropics">Filter by: Humidtropics subject</message>
     <message key="xmlui.Discovery.AbstractSearch.type_cta">Filter by: CTA subject</message>
     <message key="xmlui.Discovery.AbstractSearch.type_cpwfsubject">Filter by: CPWF subject</message>
     <message key="xmlui.Discovery.AbstractSearch.type_ciforsubject">Filter by: CIFOR subject</message>
@@ -2692,6 +2683,10 @@
     <message key="xmlui.Discovery.AbstractSearch.type_iitasubject">Filter by: IITA subject</message>
     <message key="xmlui.Discovery.AbstractSearch.type_icardasubject">Filter by: ICARDA subject</message>
     <message key="xmlui.Discovery.AbstractSearch.type_cipsubject">Filter by: CIP subject</message>
-    <message key="xmlui.Discovery.AbstractSearch.type_drylandssubject">Filter by: Dryland Systems subject</message>
     <message key="xmlui.Discovery.AbstractSearch.type_sponsorship">Filter by: Investor</message>
+
+    <!-- overridden from dspace-xmlui/src/main/resources/aspects/Discovery/i18n/messages.xml -->
+    <message key="xmlui.Discovery.AbstractSearch.type_subject">Filter by: AGROVOC keyword</message>
+    <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.subject">Subject</message>
+    <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.subject_filter">Subject</message>
 </catalogue>
