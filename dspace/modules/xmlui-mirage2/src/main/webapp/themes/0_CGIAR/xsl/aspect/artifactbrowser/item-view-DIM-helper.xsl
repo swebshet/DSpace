@@ -567,19 +567,19 @@ such as authors, subject, citation, description, etc
 
     </xsl:template>
     <xsl:template name="itemSummaryView-DIM-species">
-        <xsl:if test="dim:field[@mdschema='cg' and @element='species' and descendant::text()]">
+        <xsl:if test="dim:field[@mdschema='cg' and @element='species' and not(@qualifier)]">
             <div class="word-break item-page-field-wrapper table">
                 <h5 class="bold">
                     <i18n:text>xmlui.dri2xhtml.METS-1.0.item-species</i18n:text>
                 </h5>
-                <xsl:for-each select="dim:field[@mdschema='cg' and @element='species' ]">
+                <xsl:for-each select="dim:field[@mdschema='cg' and @element='species' and not(@qualifier)]">
                     <a target="_blank" >
                         <xsl:attribute name="href">
                             <xsl:value-of select="concat($context-path,'/discover?filtertype=species&amp;filter_relational_operator=equals&amp;filter=',url:encode(node()))"></xsl:value-of>
                         </xsl:attribute>
                         <xsl:copy-of select="./node()"/>
                     </a>
-                    <xsl:if test="count(following-sibling::dim:field[@mdschema='cg' and @element='species']) != 0">
+                    <xsl:if test="count(following-sibling::dim:field[@mdschema='cg' and @element='species' and not(@qualifier)]) != 0">
                         <xsl:text>; </xsl:text>
                     </xsl:if>
                 </xsl:for-each>
