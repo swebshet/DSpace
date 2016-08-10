@@ -261,7 +261,6 @@
                 <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
             </h5>
 
-            <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-bitstreams</i18n:text>
             <xsl:variable name="label-1">
                 <xsl:choose>
                     <xsl:when test="confman:getProperty('mirage2.item-view.bitstream.href.label.1')">
