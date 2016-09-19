@@ -52,8 +52,9 @@
           <dc-qualifier>affiliation</dc-qualifier>
           <repeatable>true</repeatable>
           <label>Author affiliations</label>
+          <vocabulary>cg-contributor-affiliation</vocabulary>
           <input-type>onebox</input-type>
-          <hint>Enter the full names of the institutions that the author(s) work for. Enter each individually.</hint>
+          <hint>Click below to see a pre-populated list of author affiliations, or enter the full name of the institutions that the author(s) work for (enter each individually).</hint>
           <required></required>
         </field>
         <field>
