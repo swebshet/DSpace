@@ -18,7 +18,7 @@
     <node label="Australian National University" />
     <node label="Bahir Dar University" />
     <node label="Basque Centre for Climate Change" />
-    <node label="Bill & Melinda Gates Foundation" />
+    <node label="Bill &amp; Melinda Gates Foundation" />
     <node label="Bioversity International" />
     <node label="CAB International" />
     <node label="Cambodia Supreme National Economic Council" />
@@ -203,7 +203,7 @@
     <node label="Technical Centre for Agricultural and Rural Cooperation" />
     <node label="Technical University of Denmark" />
     <node label="Terra Nuova" />
-    <node label="Texas A&M University" />
+    <node label="Texas A&amp;M University" />
     <node label="Tigray Agricultural Research Institute, Ethiopia" />
     <node label="Tonle Sap Authority" />
     <node label="United Nations Development Programme" />
