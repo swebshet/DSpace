@@ -419,6 +419,7 @@
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.breed">Animal breed</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.species">Species</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.sponsorship">Investor</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.dateAccessioned">Date accessioned</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.RestrictedItem.java -->
 	<message key="xmlui.ArtifactBrowser.RestrictedItem.title">This resource is restricted</message>
