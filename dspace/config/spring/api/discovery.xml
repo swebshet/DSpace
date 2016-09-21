@@ -128,6 +128,7 @@
                 <ref bean="searchFilterAuthor" />
                 <ref bean="searchFilterAffiliation" />
                 <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterDateAccessioned" />
                 <ref bean="searchFilterTitle"/>
                 <ref bean="searchFilterType" />
                 <ref bean="searchFilterCrpsubject" />
@@ -265,6 +266,7 @@
                 <ref bean="searchFilterAuthor" />
                 <ref bean="searchFilterAffiliation" />
                 <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterDateAccessioned" />
                 <ref bean="searchFilterTitle"/>
                 <ref bean="searchFilterType" />
                 <ref bean="searchFilterCrpsubject" />
