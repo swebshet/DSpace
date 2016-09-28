@@ -579,7 +579,7 @@ DAMAGE.
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.subject.lcsh">LCSH (dc.subject.lcsh)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.subject.mesh">Mesh (dc.subject.mesh)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.subject.other">Other Subject (dc.subject.other)</message>
-    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.subject">Subject (dc.subject)</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.subject">AGROVOC keyword (dc.subject)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.title.alternative">Alternative Title (dc.title.alternative)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.title">Title (dc.title)</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.dataset.option.dc.type.template">Type Template (dc.type.template)</message>
@@ -793,7 +793,7 @@ DAMAGE.
     <message key="xmlui.reporting-suite.statistics.contentanalysis.comcol">Communities or collections</message>
     <message key="xmlui.reporting-suite.statistics.contentanalysis.iso">ISO 639 Language</message>
     <message key="xmlui.reporting-suite.statistics.contentanalysis.author">Author</message>
-    <message key="xmlui.reporting-suite.statistics.contentanalysis.subject">Subject</message>
+    <message key="xmlui.reporting-suite.statistics.contentanalysis.subject">AGROVOC keyword</message>
     <message key="xmlui.reporting-suite.statistics.contentanalysis.type">Type</message>
     <message key="xmlui.reporting-suite.statistics.contentanalysis.dateAccessioned">Date Submitted</message>
     <message key="xmlui.reporting-suite.statistics.contentanalysis.status">Status</message>
@@ -843,8 +843,8 @@ DAMAGE.
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.author">Authors</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.author_mtdt">Authors</message>
 
-    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.subject">Subjects</message>
-    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.subject_mtdt">Subjects</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.subject">AGROVOC keywords</message>
+    <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.subject_mtdt">AGROVOC keywords</message>
 
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.iso">Languages</message>
     <message key="xmlui.reporting-suite.statistics.graph-editor.data-source.type.metadata.param.iso_mtdt">Languages</message>
@@ -973,7 +973,7 @@ DAMAGE.
     <message key="xmlui.metadataquality.batch-edit.field.label.dc.subject.lcsh">LCSH (dc.subject.lcsh)</message>
     <message key="xmlui.metadataquality.batch-edit.field.label.dc.subject.mesh">Mesh (dc.subject.mesh)</message>
     <message key="xmlui.metadataquality.batch-edit.field.label.dc.subject.other">Other Subject (dc.subject.other)</message>
-    <message key="xmlui.metadataquality.batch-edit.field.label.dc.subject">Subject (dc.subject)</message>
+    <message key="xmlui.metadataquality.batch-edit.field.label.dc.subject">AGROVOC keyword (dc.subject)</message>
     <message key="xmlui.metadataquality.batch-edit.field.label.dc.title.alternative">Alternative Title (dc.title.alternative)</message>
     <message key="xmlui.metadataquality.batch-edit.field.label.dc.title">Title (dc.title)</message>
     <message key="xmlui.metadataquality.batch-edit.field.label.dc.type.template">Type Template (dc.type.template)</message>
