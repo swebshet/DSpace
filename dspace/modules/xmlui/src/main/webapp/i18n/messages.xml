@@ -2684,6 +2684,6 @@
 
     <!-- overridden from dspace-xmlui/src/main/resources/aspects/Discovery/i18n/messages.xml -->
     <message key="xmlui.Discovery.AbstractSearch.type_subject">Filter by: AGROVOC keyword</message>
-    <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.subject">Subject</message>
-    <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.subject_filter">Subject</message>
+    <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.subject">AGROVOC keyword</message>
+    <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.subject_filter">AGROVOC keyword</message>
 </catalogue>
