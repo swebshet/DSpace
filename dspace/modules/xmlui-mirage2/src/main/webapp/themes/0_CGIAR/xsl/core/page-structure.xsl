@@ -801,6 +801,8 @@
                                 <li>Chris Addison (CTA) ― identified CGSpace as a suitable platform to host archive, and now also current, content from CTA.</li>
                                 <li>Bizuwork Mulat, Abeba Desta and Goshu Cherinet (ILRI), Megan Zandstra and Leroy Mwanzia (CIAT), Udana Ariyawansa and Chandima Gunadasa (IWMI), Sufiet Erlita (CIFOR), Joel Ranck and Cecilia Ferreyra (CIP), Maria Garruccio (Bioversity), Martin Mueller (IITA), Ryan Miller (IFPRI), Thierry Lewyllie (CTA) and Daniel Haile-Michael and Tsega Tassema (ILRI web team) all brought their specific expertise and dedication to help move the collaboration forward.</li>
                               </ul>
+					  <h2>Disclaimer</h2>
+					    <p>CGSpace content providers and partners accept no liability to any consequence resulting from use of the content or data made available in this repository. Users of this content assume full responsibility for compliance with all relevant national or international regulations and legislation.</p>
                         
                     </div>
                 </xsl:when>
