@@ -113,19 +113,6 @@ and searching the repository.
 
                 <map:serialize type="xml"/>
             </map:match>
-            <map:match pattern="about">
-                <!--
-                    DSpacePropertyFileReader will read the DSpace property file and
-                    place the selected properties' value in this scope
-                -->
-                <map:act type="DSpacePropertyFileReader">
-                    <map:parameter name="dspace.dir" value="dspace.dir"/>
-                    <map:transform type="Include" src="file://{dspace.dir}/config/about.xml"/>
-                </map:act>
-
-                <map:serialize type="xml"/>
-            </map:match>
-
 
             <!-- Display statistics -->
             <map:match pattern="statistics">
