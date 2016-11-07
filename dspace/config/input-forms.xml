@@ -969,6 +969,10 @@
         <stored-value>AFLATOXINS</stored-value>
       </pair>
       <pair>
+        <displayed-value>AMR</displayed-value>
+        <stored-value>AMR</stored-value>
+      </pair>
+      <pair>
         <displayed-value>ANIMAL BREEDING</displayed-value>
         <stored-value>ANIMAL BREEDING</stored-value>
       </pair>
