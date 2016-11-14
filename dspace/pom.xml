@@ -197,6 +197,16 @@
             <version>${mqm.version.number}</version>
         </dependency>
         <dependency>
+            <groupId>com.atmire</groupId>
+            <artifactId>atmire-cua-common</artifactId>
+            <version>${cua.version.number}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.atmire</groupId>
+            <artifactId>atmire-datatables-common</artifactId>
+            <version>${datatables.version.number}</version>
+        </dependency>
+        <dependency>
             <groupId>org.dspace</groupId>
             <artifactId>dspace-api</artifactId>
         </dependency>
