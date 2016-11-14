@@ -31,24 +31,49 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
         </property>
     </bean>
 
-    <util:map key-type="java.lang.String" value-type="java.lang.String" id="metadata_statistics">
-        <entry key="author">
+    <bean class="com.atmire.statistics.MetadataStorageInfo">
+        <property name="metadataFields">
             <list>
                 <value>dc.contributor.author</value>
                 <value>dc.creator</value>
             </list>
-        </entry>
-        <entry key="subject">
+        </property>
+        <property name="solrSearchField">
+            <value>author</value>
+        </property>
+        <property name="solrStatisticsField">
+            <value>author</value>
+        </property>
+    </bean>
+
+    <bean class="com.atmire.statistics.MetadataStorageInfo">
+        <property name="metadataFields">
             <list>
                 <value>dc.subject.*</value>
             </list>
-        </entry>
-        <entry key="iso">
+        </property>
+        <property name="solrSearchField">
+            <value>subject</value>
+        </property>
+        <property name="solrStatisticsField">
+            <value>subject</value>
+        </property>
+    </bean>
+
+    <bean class="com.atmire.statistics.MetadataStorageInfo">
+        <property name="metadataFields">
             <list>
                 <value>dc.language.iso</value>
             </list>
-        </entry>
+        </property>
+        <property name="solrSearchField">
+            <value>language</value>
+        </property>
+        <property name="solrStatisticsField">
+            <value>iso</value>
+        </property>
+    </bean>
 
-    </util:map>
+    <bean id="MetadataStorageInfoService" class="com.atmire.statistics.MetadataStorageInfoService"/>
 
 </beans>
