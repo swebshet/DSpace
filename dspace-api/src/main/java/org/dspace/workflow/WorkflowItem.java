@@ -98,6 +98,10 @@ public class WorkflowItem implements InProgressSubmission
         WorkflowItem fromCache = (WorkflowItem) context.fromCache(
                 WorkflowItem.class, id);
 
+        // Ugly hack to fix issue with "take task" by skipping the cache
+        // See: https://jira.duraspace.org/browse/DS-2920
+        fromCache = null;
+
         if (fromCache != null)
         {
             return fromCache;
