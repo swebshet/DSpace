@@ -155,6 +155,10 @@
                     <xsl:call-template name="itemSummaryView-DIM-breeds"/>
                     <xsl:call-template name="itemSummaryView-DIM-investors-sponsors"/>
                     <xsl:call-template name="itemSummaryView-DIM-related-material"/>
+
+                    <div class="simple-item-view-collections item-page-field-wrapper table">
+                        <xsl:call-template name="itemSummaryView-collections"/>
+                    </div>
                 </div>
             </div>
         </div>
@@ -245,7 +249,7 @@
 <xsl:template name="itemSummaryView-collections">
 <xsl:if test="$document//dri:referenceSet[@id='aspect.artifactbrowser.ItemViewer.referenceSet.collection-viewer']">
     <div class="simple-item-view-collections item-page-field-wrapper table">
-        <h5>
+        <h5 class="bold">
             <i18n:text>xmlui.mirage2.itemSummaryView.Collections</i18n:text>
         </h5>
         <xsl:apply-templates select="$document//dri:referenceSet[@id='aspect.artifactbrowser.ItemViewer.referenceSet.collection-viewer']/dri:reference"/>
