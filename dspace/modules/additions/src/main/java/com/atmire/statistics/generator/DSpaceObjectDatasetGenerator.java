@@ -1,10 +1,12 @@
 package com.atmire.statistics.generator;
 
 import com.atmire.statistics.content.DatasetQuery;
+import com.atmire.statistics.content.filter.FilterWithLabel;
 import com.atmire.statistics.content.filter.StatisticsDsoFilter;
 import com.atmire.statistics.params.SolrLoggerParams;
 import com.atmire.statistics.util.SolrResultAttributesResolver;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.collections.CollectionUtils;
+import org.apache.commons.lang3.ArrayUtils;
 import org.apache.solr.client.solrj.SolrServerException;
 import org.apache.solr.client.solrj.response.QueryResponse;
 import org.apache.solr.client.solrj.util.ClientUtils;
@@ -21,7 +23,6 @@ import org.dspace.statistics.content.DatasetGenerator;
 import org.dspace.statistics.content.DatasetTimeGenerator;
 import org.dspace.statistics.content.StatisticsData;
 import org.dspace.statistics.content.filter.StatisticsFilter;
-import org.dspace.statistics.content.filter.StatisticsSolrDateFilter;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -54,7 +55,7 @@ public class DSpaceObjectDatasetGenerator extends DatasetGenerator {
      */
     protected int max;
     protected boolean useFacetTerms = false;
-    private String columnLabel;
+    private boolean showLinks;
 
     public boolean isUseFacetTerms() {
         return useFacetTerms;
@@ -80,25 +81,25 @@ public class DSpaceObjectDatasetGenerator extends DatasetGenerator {
         this.type = type;
     }
 
-    public DatasetQuery toDatasetQuery() {
+    public DatasetQuery toDatasetQuery(Context context) {
         DatasetQuery datasetQuery = new DatasetQuery();
         datasetQuery.setMax(getMax());
 
         switch (type){
             case Constants.COMMUNITY:
-                datasetQuery.setFacetField("containerCommunity");
-                datasetQuery.setLabel("Community");
+                datasetQuery.setFacetField(getSolrField());
+                datasetQuery.setLabel("All Communities");
                 break;
             case Constants.COLLECTION:
-                datasetQuery.setFacetField("containerCollection");
-                datasetQuery.setLabel("Collection");
+                datasetQuery.setFacetField(getSolrField());
+                datasetQuery.setLabel("All Collections");
                 break;
             case Constants.ITEM:
-                datasetQuery.setFacetField(isShareVersionStats() ? "version_id" : "containerItem");
+                datasetQuery.setFacetField(getSolrField());
                 datasetQuery.setLabel("All Items");
                 break;
             case Constants.BITSTREAM:
-                datasetQuery.setFacetField(isShareVersionStats() ? "file_id" : "containerBitstream");
+                datasetQuery.setFacetField(getSolrField());
                 datasetQuery.setLabel("All Bitstreams");
                 break;
             case Constants.SITE:
@@ -106,13 +107,26 @@ public class DSpaceObjectDatasetGenerator extends DatasetGenerator {
                 break;
         }
 
-
         return datasetQuery;
     }
 
-//    public String getRowLabel(int rowNr){
-//        return
-//    }
+    protected String getSolrField() {
+
+        switch (type) {
+            case Constants.COMMUNITY:
+                return "containerCommunity";
+            case Constants.COLLECTION:
+                return "containerCollection";
+            case Constants.ITEM:
+                return isShareVersionStats() ? "version_id" : "containerItem";
+            case Constants.BITSTREAM:
+                return isShareVersionStats() ? "file_id" : "containerBitstream";
+            case Constants.SITE:
+                return ConfigurationManager.getProperty("dspace.name");
+            default:
+                return null;
+        }
+    }
 
     public void toXML(Document doc, Element root) {
         super.toXML(doc, root);
@@ -124,7 +138,7 @@ public class DSpaceObjectDatasetGenerator extends DatasetGenerator {
         type.appendChild(doc.createTextNode("" + this.type));
 
         Element facetterm = doc.createElement("facetterm");
-            root.appendChild(facetterm);
+        root.appendChild(facetterm);
         facetterm.appendChild(doc.createTextNode("" + this.useFacetTerms));
 
         Element percentOfTotal = doc.createElement("percent-of-total");
@@ -135,7 +149,7 @@ public class DSpaceObjectDatasetGenerator extends DatasetGenerator {
         root.appendChild(splitByYear);
         splitByYear.appendChild(doc.createTextNode("" + this.splitByYear));
 
-        if (getMax() > -1) {
+        if(getMax()>-1){
             Element limit = doc.createElement("limit");
             root.appendChild(limit);
 
@@ -143,11 +157,8 @@ public class DSpaceObjectDatasetGenerator extends DatasetGenerator {
             Element nNode = doc.createElement("n");
             limit.appendChild(nNode);
             nNode.appendChild(doc.createTextNode("" + getMax()));
-        }
 
-        Element columnLabel = doc.createElement("columnLabel");
-        root.appendChild(splitByYear);
-        columnLabel.appendChild(doc.createTextNode(getColumnLabel()));
+        }
 
     }
 
@@ -161,6 +172,13 @@ public class DSpaceObjectDatasetGenerator extends DatasetGenerator {
 
     public void parseXML(Node generatorNode) throws TransformerException {
         super.parseXML(generatorNode);
+
+        Node showLinksNode = generatorNode.getAttributes().getNamedItem("showLinks");
+        if (showLinksNode != null && "false".equals(showLinksNode.getNodeValue())) {
+            this.showLinks = false;
+        } else {
+            this.showLinks = true;
+        }
 
         Node typeNode = XPathAPI.selectSingleNode(generatorNode, "dsotype/text()");
         setType(Integer.parseInt(typeNode.getNodeValue()));
@@ -187,11 +205,6 @@ public class DSpaceObjectDatasetGenerator extends DatasetGenerator {
         }
         else{
             setMax(-1);
-        }
-
-        Node columnLabel = XPathAPI.selectSingleNode(generatorNode, "column-label/text()");
-        if (columnLabel != null) {
-            setColumnLabel(columnLabel.getNodeValue());
         }
     }
 
@@ -226,38 +239,17 @@ public class DSpaceObjectDatasetGenerator extends DatasetGenerator {
         }
     }
 
-    public Dataset generate(Context context, Dataset dataset, DatasetTimeGenerator dateFacet, List<String> filterQuery, List<StatisticsFilter> filters, DSpaceObject currentDso, boolean showTotal) throws DatasetGenerator.DeletedObjectRequiresRerunException, SQLException, ParseException, SolrServerException {
+    public Dataset generate(Context context, Dataset dataset, DatasetTimeGenerator dateFacet, List<String> filterQuery, List<StatisticsFilter> filters, DSpaceObject currentDso, boolean showTotal) throws DeletedObjectRequiresRerunException, SQLException, ParseException, SolrServerException {
 
-        DatasetQuery dataSetQuery = toDatasetQuery();
+        DatasetQuery dataSetQuery = toDatasetQuery(context);
         String facetField = dataSetQuery.getFacetField();
+        List<String> facetQueries = dataSetQuery.getFacetQueries();
 
+        int max = dataSetQuery.getMax();
         if (dateFacet != null) {
 
             //We need to get the max objects and the next part of the query on them (next part beeing the datasettimequery
-            if (facetField == null) {
-                //Since we are querying on facet date no need for a max since our facets limit is forced by a filter query
-                ObjectCount[] results = SolrLogger.queryFacetDate("*:*", filterQuery, -1, dateFacet.getDateType(), dateFacet.getStartDate(), dateFacet.getEndDate(), showTotal);
-                dataset = new Dataset(1, results.length);
-                //Now that we have our results put em in a matrix
-                for (int j = 0; j < results.length; j++) {
-                    dataset.setColLabel(j, results[j].getValue());
-                    dataset.setColLabelAttr(j,"type","date");
-
-                    dataset.addValueToMatrix(0, j, results[j].getCount());
-                    dataset.setCellAttr(0, j, "type","number");
-
-                }
-                //TODO: change this !
-                //Now add the column label
-                try {
-                    dataset.setRowLabel(0, SolrResultAttributesResolver.getResultName("" + -1, getType(), facetField, context));
-                } catch (IllegalStateException e) {
-                    //We have an object that was deleted, remove it from solr & rerun the query
-//                            SolrLogger.removeByQuery("type:" + generator.getType() + " AND id: " + -1, true);
-//                            createDataset(context);
-                }
-                dataset.setRowLabelAttr(0, SolrResultAttributesResolver.getAttributes("" + -1, getType(), facetField, context));
-            } else {
+            if (facetField != null || CollectionUtils.isNotEmpty(facetQueries)) {
 
                 List<String> facetTerms = null;
 
@@ -267,11 +259,10 @@ public class DSpaceObjectDatasetGenerator extends DatasetGenerator {
                             StatisticsDsoFilter dsoFilter = (StatisticsDsoFilter) filter;
                             for (Integer id : dsoFilter.getIdsByType(this.type)) {
                                 if (facetTerms == null) {
-                                    facetTerms = new ArrayList<String>();
+                                    facetTerms = new ArrayList<>();
                                 }
                                 facetTerms.add("" + id);
                             }
-
                         }
                     }
                 }
@@ -280,27 +271,30 @@ public class DSpaceObjectDatasetGenerator extends DatasetGenerator {
                 params.setQuery("*:*");
                 params.setFilterQuery(filterQuery);
                 params.setFacetFields(Collections.singletonList(facetField));
-                params.setMax(dataSetQuery.getMax());
+                params.setFacetQueries(facetQueries);
+                params.setMax(max);
                 params.setShowTotal(false);
-                params.setFacetTerms(facetTerms);
                 params.setFacetSort(true);
 
-//                SolrLoggerParametersBuilder builder = new SolrLoggerParametersBuilder()
-//                        .withQuery("*:*");
+                ObjectCount[] maxObjectCounts;
+                if (CollectionUtils.isEmpty(facetQueries)) {
+                    maxObjectCounts = SolrLogger.queryFacetField(params);
+                } else {
+                    maxObjectCounts = SolrLogger.queryFacetQuery(params);
+                }
 
-                ObjectCount[] maxObjectCounts = SolrLogger.queryFacetField(params);
                 for (int j = 0; j < maxObjectCounts.length; j++) {
                     ObjectCount firstCount = maxObjectCounts[j];
                     String newQuery = facetField + ":\"" + ClientUtils.escapeQueryChars(firstCount.getValue())+"\"";
                     //Since we are querying on facet date no need for a max since our facets limit is forced by a filter query
-                    ObjectCount[] maxDateFacetCounts = SolrLogger.queryFacetDate(newQuery, filterQuery, -1, dateFacet.getDateType(), dateFacet.getStartDate(), dateFacet.getEndDate(), showTotal);
+                    ObjectCount[] maxDateFacetCounts = SolrLogger.queryFacetDate(newQuery, filterQuery, facetQueries, -1, dateFacet.getDateType(), dateFacet.getStartDate(), dateFacet.getEndDate(), showTotal);
 
                     //Make sure we have a dataSet
                     if (dataset == null)
                         dataset = new Dataset(maxObjectCounts.length, maxDateFacetCounts.length);
                     String value = firstCount.getValue();
                     Map<String,String> rowLabelAttr = new HashMap<String, String>();
-                    String rlabel = SolrResultAttributesResolver.getResultName(value, getType(), facetField, context);
+                    String rlabel = SolrResultAttributesResolver.getResultName(value, getType(), getAttributesResolverField(), context);
                     dataset.setRowLabel(j, rlabel);
                     dataset.setRowLabelAttr(j,rowLabelAttr);
 
@@ -316,22 +310,45 @@ public class DSpaceObjectDatasetGenerator extends DatasetGenerator {
 
                     }
                 }
+            } else {
+                //Since we are querying on facet date no need for a max since our facets limit is forced by a filter query
+                ObjectCount[] results = SolrLogger.queryFacetDate("*:*", filterQuery, facetQueries, -1, dateFacet.getDateType(), dateFacet.getStartDate(), dateFacet.getEndDate(), showTotal);
+
+                dataset = new Dataset(1, results.length);
+                //Now that we have our results put em in a matrix
+                for (int j = 0; j < results.length; j++) {
+                    dataset.setColLabel(j, results[j].getValue());
+                    dataset.setColLabelAttr(j,"type","date");
+
+                    dataset.addValueToMatrix(0, j, results[j].getCount());
+                    dataset.setCellAttr(0, j, "type","number");
+
+                }
+                //TODO: change this !
+                //Now add the column label
+                try {
+                    dataset.setRowLabel(0, SolrResultAttributesResolver.getResultName("" + -1, getType(), getAttributesResolverField(), context));
+                } catch (IllegalStateException e) {
+                    //We have an object that was deleted, remove it from solr & rerun the query
+//                            SolrLogger.removeByQuery("type:" + generator.getType() + " AND id: " + -1, true);
+//                            createDataset(context);
+                }
+                dataset.setRowLabelAttr(0, SolrResultAttributesResolver.getAttributes("" + -1, getType(), getAttributesResolverField(), currentDso, context));
             }
 
 
         } else {
             //We need to get the max objects and the next part of the query on them (next part beeing the datasettimequery
-            String colLabel = getColumnLabel();
-            if (facetField == null) {
-                QueryResponse queryResponse = SolrLogger.query("*:*", filterQuery, null, true, dataSetQuery.getMax(), null, null, null, null);
+            if (facetField == null && CollectionUtils.isEmpty(facetQueries)) {
+                QueryResponse queryResponse = SolrLogger.query("*:*", filterQuery, null, true, max, null, null, null, null);
                 SolrDocumentList result = queryResponse.getResults();
                 if (dataset == null)
                     dataset = new Dataset(1, 1);
                 //Now that we have our results put em in a matrix
-                dataset.setColLabel(0, colLabel);
+                dataset.setColLabel(0, "Overall");
                 for (StatisticsFilter filter : filters) {
-                    if (filter instanceof StatisticsSolrDateFilter) {
-                        String label = ((StatisticsSolrDateFilter) filter).generateLabel();
+                    if (filter instanceof FilterWithLabel) {
+                        String label = ((FilterWithLabel) filter).generateLabel();
                         if (label != null) {
                             dataset.setColLabel(0, label);
                             break;
@@ -339,7 +356,7 @@ public class DSpaceObjectDatasetGenerator extends DatasetGenerator {
                     }
                 }
                 dataset.addValueToMatrix(0, 0, result.getNumFound());
-                dataset.setCellAttr(0, 0, "type","number");
+                dataset.setCellAttr(0, 0, "type", "number");
 
                 try {
                     dataset.setRowLabel(0, StatisticsData.getResultName(-1, getType(), context));
@@ -348,12 +365,34 @@ public class DSpaceObjectDatasetGenerator extends DatasetGenerator {
 //                            SolrLogger.removeByQuery("type:" + getType() + " AND id: " + -1, true);
 //                            createDataset(context);
                 }
-                dataset.setRowLabelAttr(0, SolrResultAttributesResolver.getAttributes("" + -1, getType(), facetField, context));
+                dataset.setRowLabelAttr(0, SolrResultAttributesResolver.getAttributes("" + -1, getType(), getAttributesResolverField(), currentDso, context));
             } else {
-                ObjectCount[] maxObjectCounts = SolrLogger.queryFacetField("*:*", filterQuery, facetField, dataSetQuery.getMax(), showTotal, null);
+                SolrLoggerParams params = new SolrLoggerParams();
+                params.setQuery("*:*");
+                params.setFilterQuery(filterQuery);
+                params.setFacetFields(Collections.singletonList(facetField));
+                params.setFacetQueries(facetQueries);
+                params.setMax(max +1);
+                params.setShowTotal(false);
+                params.setFacetSort(true);
+                ObjectCount[] maxObjectCounts;
+                if (CollectionUtils.isEmpty(facetQueries)) {
+                    maxObjectCounts = SolrLogger.queryFacetField(params);
+                } else {
+                    maxObjectCounts = SolrLogger.queryFacetQuery(params);
+                }
+
+
+                boolean hasMore = false;
+                if (maxObjectCounts.length > this.max) {
+                    hasMore = true;
+                    ArrayUtils.remove(maxObjectCounts, maxObjectCounts.length - 1);
+                }
                 //Make sure we have a dataSet
                 if (dataset == null)
                     dataset = new Dataset(maxObjectCounts.length, 1);
+
+                dataset.setHasMore(hasMore);
 
                 for (int j = 0; j < maxObjectCounts.length; j++) {
                     ObjectCount firstCount = maxObjectCounts[j];
@@ -361,16 +400,16 @@ public class DSpaceObjectDatasetGenerator extends DatasetGenerator {
                     String value = firstCount.getValue();
                     if (showTotal && j == (maxObjectCounts.length - 1)) {
                         dataset.addValueToMatrix(j, 0, firstCount.getCount());
-                        dataset.setCellAttr(j, 0, "type","number");
+                        dataset.setCellAttr(j, 0, "type", "number");
                         dataset.setRowLabel(j, value);
 
                     } else {
-                        String rlabel = SolrResultAttributesResolver.getResultName(value, getType(), facetField, context);
+                        String rlabel = SolrResultAttributesResolver.getResultName(value, getType(), getAttributesResolverField(), context);
                         dataset.setRowLabel(j, rlabel);
-                        dataset.setColLabel(0, colLabel);
+                        dataset.setColLabel(0, "Overall");
                         for (StatisticsFilter filter : filters) {
-                            if (filter instanceof StatisticsSolrDateFilter) {
-                                String label = ((StatisticsSolrDateFilter) filter).generateLabel();
+                            if (filter instanceof FilterWithLabel) {
+                                String label = ((FilterWithLabel) filter).generateLabel();
                                 if (label != null) {
                                     dataset.setColLabel(0, label);
                                     break;
@@ -378,8 +417,10 @@ public class DSpaceObjectDatasetGenerator extends DatasetGenerator {
                             }
                         }
                         dataset.addValueToMatrix(j, 0, firstCount.getCount());
-                        dataset.setCellAttr(j, 0, "type","number");
-
+                        dataset.setCellAttr(j, 0, "type", "number");
+                        if (showLinks) {
+                            dataset.setRowLabelAttr(j, SolrResultAttributesResolver.getAttributes(firstCount.getValue(), getType(), getAttributesResolverField(), currentDso, context));
+                        }
                     }
                 }
             }
@@ -394,15 +435,11 @@ public class DSpaceObjectDatasetGenerator extends DatasetGenerator {
 
         }
 
-
         return dataset;
     }
 
-    public void setColumnLabel(String columnLabel) {
-        this.columnLabel = columnLabel;
+    protected String getAttributesResolverField() {
+        return getSolrField();
     }
 
-    public String getColumnLabel() {
-        return StringUtils.defaultIfBlank(columnLabel, "Overall");
-    }
 }
