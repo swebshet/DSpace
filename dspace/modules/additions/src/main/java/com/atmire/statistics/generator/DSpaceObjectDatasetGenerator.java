@@ -6,6 +6,7 @@ import com.atmire.statistics.content.filter.StatisticsDsoFilter;
 import com.atmire.statistics.params.SolrLoggerParams;
 import com.atmire.statistics.util.SolrResultAttributesResolver;
 import org.apache.commons.collections.CollectionUtils;
+import org.apache.commons.lang.*;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.solr.client.solrj.SolrServerException;
 import org.apache.solr.client.solrj.response.QueryResponse;
@@ -56,6 +57,7 @@ public class DSpaceObjectDatasetGenerator extends DatasetGenerator {
     protected int max;
     protected boolean useFacetTerms = false;
     private boolean showLinks;
+    private String columnLabel;
 
     public boolean isUseFacetTerms() {
         return useFacetTerms;
@@ -88,11 +90,11 @@ public class DSpaceObjectDatasetGenerator extends DatasetGenerator {
         switch (type){
             case Constants.COMMUNITY:
                 datasetQuery.setFacetField(getSolrField());
-                datasetQuery.setLabel("All Communities");
+                datasetQuery.setLabel("Community");
                 break;
             case Constants.COLLECTION:
                 datasetQuery.setFacetField(getSolrField());
-                datasetQuery.setLabel("All Collections");
+                datasetQuery.setLabel("Collection");
                 break;
             case Constants.ITEM:
                 datasetQuery.setFacetField(getSolrField());
@@ -160,6 +162,10 @@ public class DSpaceObjectDatasetGenerator extends DatasetGenerator {
 
         }
 
+        Element columnLabel = doc.createElement("columnLabel");
+        root.appendChild(splitByYear);
+        columnLabel.appendChild(doc.createTextNode(getColumnLabel()));
+
     }
 
     public boolean isSplitByYear() {
@@ -205,6 +211,11 @@ public class DSpaceObjectDatasetGenerator extends DatasetGenerator {
         }
         else{
             setMax(-1);
+        }
+
+        Node columnLabel = XPathAPI.selectSingleNode(generatorNode, "column-label/text()");
+        if (columnLabel != null) {
+            setColumnLabel(columnLabel.getNodeValue());
         }
     }
 
@@ -339,13 +350,14 @@ public class DSpaceObjectDatasetGenerator extends DatasetGenerator {
 
         } else {
             //We need to get the max objects and the next part of the query on them (next part beeing the datasettimequery
+            String colLabel = getColumnLabel();
             if (facetField == null && CollectionUtils.isEmpty(facetQueries)) {
                 QueryResponse queryResponse = SolrLogger.query("*:*", filterQuery, null, true, max, null, null, null, null);
                 SolrDocumentList result = queryResponse.getResults();
                 if (dataset == null)
                     dataset = new Dataset(1, 1);
                 //Now that we have our results put em in a matrix
-                dataset.setColLabel(0, "Overall");
+                dataset.setColLabel(0, colLabel);
                 for (StatisticsFilter filter : filters) {
                     if (filter instanceof FilterWithLabel) {
                         String label = ((FilterWithLabel) filter).generateLabel();
@@ -406,7 +418,7 @@ public class DSpaceObjectDatasetGenerator extends DatasetGenerator {
                     } else {
                         String rlabel = SolrResultAttributesResolver.getResultName(value, getType(), getAttributesResolverField(), context);
                         dataset.setRowLabel(j, rlabel);
-                        dataset.setColLabel(0, "Overall");
+                        dataset.setColLabel(0, colLabel);
                         for (StatisticsFilter filter : filters) {
                             if (filter instanceof FilterWithLabel) {
                                 String label = ((FilterWithLabel) filter).generateLabel();
@@ -442,4 +454,12 @@ public class DSpaceObjectDatasetGenerator extends DatasetGenerator {
         return getSolrField();
     }
 
+
+    public void setColumnLabel(String columnLabel) {
+        this.columnLabel = columnLabel;
+    }
+
+    public String getColumnLabel() {
+        return StringUtils.defaultIfBlank(columnLabel, "Overall");
+    }
 }
