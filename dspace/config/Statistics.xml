@@ -37,7 +37,7 @@
 
         <item-display>
             <graphs>
-                <graph id="Total_Hits_Donut" type="" title="StatletTotalHits"> <!-- line graph with line for item and line per bitstream -->
+                <graph id="Total_Hits_Donut" type=""><title>StatletTotalHits</title> <!-- line graph with line for item and line per bitstream -->
                     <styles/>
                     <frame color-style="bgcolor" height="300" width="585"/>
                     <background color-style="fgcolor"/>
@@ -80,7 +80,7 @@
             </graphs>
 
             <tables>
-                <table id="tab1" title="StatletTop5CountryViews">
+                <table id="tab1"><title>StatletTop5CountryViews</title>
                     <datasetgenerators>
 
                         <datasetgenerator type="org.dspace.statistics.content.DatasetTypeGenerator">
@@ -104,7 +104,7 @@
                         <column>StatletViews</column>
                     </labels>
                 </table>
-                <table id="tab2" title="StatletTop5CountryDownloads">
+                <table id="tab2"><title>StatletTop5CountryDownloads</title>
                     <datasetgenerators>
 
                         <datasetgenerator type="org.dspace.statistics.content.DatasetTypeGenerator">
@@ -156,7 +156,7 @@
 
         <collection-home>
             <tables>
-                <table id="tab2" title="StatletCollectionTopFileDownloads">
+                <table id="tab2"><title>StatletCollectionTopFileDownloads</title>
                     <datasetgenerators>
                         <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
                             <dsotype>2</dsotype>
@@ -181,7 +181,7 @@
                     </labels>
 
                 </table>
-                <table id="tab1" title="StatletCollectionTopItemPageViews">
+                <table id="tab1"><title>StatletCollectionTopItemPageViews</title>
                     <datasetgenerators>
                         <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
                             <dsotype>2</dsotype>
@@ -205,7 +205,7 @@
                         <column>StatletViews</column>
                     </labels>
                 </table>
-                <table id="tab3" title="StatletCollectionMostPopularAuthors">
+                <table id="tab3"><title>StatletCollectionMostPopularAuthors</title>
                     <datasetgenerators>
                         <datasetgenerator type="com.atmire.statistics.generator.TopNConfigurableFacetFieldDatasetGenerator" facetField="author_mtdt">
                             <dsotype>2</dsotype>
@@ -236,7 +236,7 @@
         <community-home>
 
             <graphs>
-                <graph id="graph1" type="" title="StatletItemViewsMonth">
+                <graph id="graph1" type=""><title>StatletItemViewsMonth</title>
                     <styles/>
                     <style-mapping/>
                     <datasetgenerators>
@@ -263,7 +263,7 @@
                         <row>StatletThisCommunity</row>
                     </labels>
                 </graph>
-                <graph id="graph2" type="" title="StatletBitstreamDownloadsMonth">
+                <graph id="graph2" type=""><title>StatletBitstreamDownloadsMonth</title>
                     <styles/>
                     <style-mapping/>
                     <datasetgenerators>
@@ -298,7 +298,7 @@
 
         <dspace-home>
             <graphs>
-                <graph id="Total_Hits_Donut" type="" title="StatletTotalHits"> <!-- line graph with line for item and line per bitstream -->
+                <graph id="Total_Hits_Donut" type=""><title>StatletTotalHits</title> <!-- line graph with line for item and line per bitstream -->
                     <styles/>
                     <frame color-style="bgcolor" height="300" width="585"/>
                     <background color-style="fgcolor"/>
@@ -341,7 +341,7 @@
             </graphs>
 
             <tables>
-                <table id="tab1" title="StatletTopCommunitiesViews">
+                <table id="tab1"><title>StatletTopCommunitiesViews</title>
                     <datasetgenerators>
                         <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
                             <dsotype>4</dsotype>
@@ -359,7 +359,7 @@
                     <position/>
                 </table>
 
-                <table id="tab2" title="StatletTopCommunitiesDownloads">
+                <table id="tab2"><title>StatletTopCommunitiesDownloads</title>
                     <datasetgenerators>
                         <datasetgenerator type="com.atmire.statistics.generator.DSpaceObjectDatasetGenerator">
                             <dsotype>4</dsotype>
@@ -379,7 +379,7 @@
             </tables>
 
             <graphs>
-                <graph id="graph1" type="" title="StatletTop5CountryViews">
+                <graph id="graph1" type=""><title>StatletTop5CountryViews</title>
                     <styles/>
                     <style-mapping/>
 
@@ -390,13 +390,16 @@
                             <limit type="top">
                                 <n>5</n>
                             </limit>
-
                         </datasetgenerator>
+
                     </datasetgenerators>
+
                     <filters>
+
                         <filter type="com.atmire.statistics.content.filter.StatisticsHitTypeFilter">
                             <dsotype>2</dsotype>
                         </filter>
+
                     </filters>
 
                     <render>
@@ -404,6 +407,7 @@
                             <graph-type>bar_countries</graph-type>
                         </default>
                     </render>
+
                 </graph>
 
             </graphs>
