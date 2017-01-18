@@ -1304,6 +1304,13 @@
           <dependency>
               <groupId>com.atmire</groupId>
               <artifactId>atmire-dspace-xmlui</artifactId>
+              <type>war</type>
+              <version>5.5-1.15.13-0</version>
+          </dependency>
+          <dependency>
+              <groupId>com.atmire</groupId>
+              <artifactId>atmire-dspace-xmlui</artifactId>
+              <classifier>classes</classifier>
               <version>5.5-1.15.13-0</version>
           </dependency>
           <dependency>
