@@ -17,6 +17,12 @@
                 <!--no size or size="" = default-->
                 <!--no source-format or source-format="" = default-->
                 <format size="" type="number">0,0</format>
+
+                <format size="xs" type="number">0,0</format>
+                <format size="sm" type="number">0,0</format>
+                <format size="md" type="number">0,0</format>
+                <format size="lg" type="number">0,0</format>
+
                 <!--type="1" = Constants.BITSTREAM-->
                 <!--limit = limit number of chars-->
                 <!--supported formats: bitstreamName, bitstream, bitstreamExtension, bitstreamSize, containerBundle,containerBundleName,containerItem,containerItemName,owningColl,...-->
