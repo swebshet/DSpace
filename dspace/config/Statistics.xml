@@ -33,8 +33,8 @@
                 <format type="2" size="" limit="-1">containerItemName</format>
             </formatting>
             <templates>
-                <listing>table/table_statlet</listing>
-                <table>table/table_statlet</table>
+                <table>table/table_statlet_flex</table>
+                <!--<table>table/table_statlet_legacy</table>-->
             </templates>
         </defaults>
     </config>
@@ -213,7 +213,9 @@
                 </table>
                 <table id="tab3"><title>StatletCollectionMostPopularAuthors</title>
                     <datasetgenerators>
-                        <datasetgenerator type="com.atmire.statistics.generator.TopNConfigurableFacetFieldDatasetGenerator" facetField="author_mtdt">
+                        <datasetgenerator
+                                type="com.atmire.statistics.generator.TopNConfigurableMetadataFieldDatasetGenerator"
+                                statisticsField="author">
                             <dsotype>2</dsotype>
                             <limit type="top">
                                 <n>5</n>
