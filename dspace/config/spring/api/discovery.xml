@@ -429,7 +429,7 @@
     </bean>
     
     <!--Search filter configuration beans-->
-    <bean id="searchFilterTitle" class="org.dspace.discovery.configuration.DiscoverySearchFilter">
+    <bean id="searchFilterTitle" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
         <property name="indexFieldName" value="title"/>
         <property name="metadataFields">
             <list>
