@@ -83,8 +83,9 @@
           <dc-qualifier></dc-qualifier>
           <repeatable>false</repeatable>
           <label>Journal title</label>
+          <vocabulary>dc-source</vocabulary>
           <input-type>onebox</input-type>
-          <hint>Enter the full journal title.</hint>
+          <hint>Click below to see a pre-populated list of journal titles, or enter the full journal title manually.</hint>
           <required></required>
         </field>
         <field>
