@@ -3641,7 +3641,7 @@
         <stored-value>WA_SciencePolicyExchange</stored-value>
       </pair>
     </value-pairs>
-    <value-pairs value-pairs-name="ciatprojectpii" dc-term="ciatprojectpii">
+    <value-pairs value-pairs-name="ccafsprojectpii" dc-term="ccafsprojectpii">
       <pair>
         <displayed-value>PII-FP1_ICRISATWA</displayed-value>
         <stored-value>PII-FP1_ICRISATWA</stored-value>
