@@ -1314,6 +1314,10 @@
         <stored-value>RVF</stored-value>
       </pair>
       <pair>
+        <displayed-value>SCALING</displayed-value>
+        <stored-value>SCALING</stored-value>
+      </pair>
+      <pair>
         <displayed-value>SEEDS</displayed-value>
         <stored-value>SEEDS</stored-value>
       </pair>
