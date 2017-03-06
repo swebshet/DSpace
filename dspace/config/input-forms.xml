@@ -336,7 +336,7 @@
           <dc-element>identifier</dc-element>
           <dc-qualifier>ccafsproject</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>CCAFS project tag</label>
+          <label>CCAFS project tag (phase I)</label>
           <input-type value-pairs-name="ccafsproject">dropdown</input-type>
           <hint></hint>
           <required></required>
