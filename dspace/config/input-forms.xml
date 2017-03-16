@@ -434,16 +434,6 @@
         <field>
           <dc-schema>cg</dc-schema>
           <dc-element>subject</dc-element>
-          <dc-qualifier>icarda</dc-qualifier>
-          <repeatable>true</repeatable>
-          <label>ICARDA subject</label>
-          <input-type value-pairs-name="icardasubject">dropdown</input-type>
-          <hint></hint>
-          <required></required>
-        </field>
-        <field>
-          <dc-schema>cg</dc-schema>
-          <dc-element>subject</dc-element>
           <dc-qualifier>iita</dc-qualifier>
           <repeatable>true</repeatable>
           <label>IITA subject</label>
@@ -914,52 +904,6 @@
       <pair>
         <displayed-value>TREE-BASED SYSTEMS</displayed-value>
         <stored-value>TREE-BASED SYSTEMS</stored-value>
-      </pair>
-    </value-pairs>
-    <value-pairs value-pairs-name="icardasubject" dc-term="subject_icarda">
-      <pair>
-        <displayed-value>ARAB FOOD SECURITY</displayed-value>
-        <stored-value>ARAB FOOD SECURITY</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>BIODIVERSITY AND INTEGRATED GENE MANAGEMENT</displayed-value>
-        <stored-value>BIODIVERSITY AND INTEGRATED GENE MANAGEMENT</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>CGIAR RESEARCH PROGRAM ON DRYLAND SYSTEMS</displayed-value>
-        <stored-value>CGIAR RESEARCH PROGRAM ON DRYLAND SYSTEMS</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>DIVERSIFICATION AND SUSTAINABLE INTENSIFICATION</displayed-value>
-        <stored-value>DIVERSIFICATION AND SUSTAINABLE INTENSIFICATION</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>GEO-INFORMATICS</displayed-value>
-        <stored-value>GEO-INFORMATICS</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>HSAD</displayed-value>
-        <stored-value>HSAD</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>INTEGRATED WATER AND LAND MANAGEMENT</displayed-value>
-        <stored-value>INTEGRATED WATER AND LAND MANAGEMENT</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>IRAQ SALINITY</displayed-value>
-        <stored-value>IRAQ SALINITY</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>MENARID</displayed-value>
-        <stored-value>MENARID</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>SOCIAL, ECONOMIC, AND POLICY RESEARCH</displayed-value>
-        <stored-value>SOCIAL, ECONOMIC, AND POLICY RESEARCH</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>WLI</displayed-value>
-        <stored-value>WLI</stored-value>
       </pair>
     </value-pairs>
     <value-pairs value-pairs-name="ilrisubject" dc-term="ilrisubject">
