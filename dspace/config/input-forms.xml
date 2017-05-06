@@ -1348,6 +1348,10 @@
         <stored-value>Blog</stored-value>
       </pair>
       <pair>
+        <displayed-value>Blog Post</displayed-value>
+        <stored-value>Blog Post</stored-value>
+      </pair>
+      <pair>
         <displayed-value>Book</displayed-value>
         <stored-value>Book</stored-value>
       </pair>
