@@ -3001,12 +3001,24 @@
     </value-pairs>
     <value-pairs value-pairs-name="ccafsubject" dc-term="ccafsubject">
       <pair>
-        <displayed-value>BASELINE SURVEY</displayed-value>
-        <stored-value>BASELINE SURVEY</stored-value>
+        <displayed-value>PRIORITIES AND POLICIES FOR CSA</displayed-value>
+        <stored-value>PRIORITIES AND POLICIES FOR CSA</stored-value>
       </pair>
       <pair>
         <displayed-value>CLIMATE-SMART TECHNOLOGIES AND PRACTICES</displayed-value>
         <stored-value>CLIMATE-SMART TECHNOLOGIES AND PRACTICES</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>LOW EMISSIONS DEVELOPMENT</displayed-value>
+        <stored-value>LOW EMISSIONS DEVELOPMENT</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>GENDER AND SOCIAL INCLUSION</displayed-value>
+        <stored-value>GENDER AND SOCIAL INCLUSION</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>BASELINE SURVEY</displayed-value>
+        <stored-value>BASELINE SURVEY</stored-value>
       </pair>
       <pair>
         <displayed-value>DATA AND TOOLS FOR ANALYSIS AND PLANNING</displayed-value>
@@ -3015,18 +3027,6 @@
       <pair>
         <displayed-value>EDUCATION AND OUTREACH</displayed-value>
         <stored-value>EDUCATION AND OUTREACH</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>GENDER AND SOCIAL INCLUSION</displayed-value>
-        <stored-value>GENDER AND SOCIAL INCLUSION</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>LOW EMISSIONS DEVELOPMENT</displayed-value>
-        <stored-value>LOW EMISSIONS DEVELOPMENT</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>PRIORITIES AND POLICIES FOR CSA</displayed-value>
-        <stored-value>PRIORITIES AND POLICIES FOR CSA</stored-value>
       </pair>
       <pair>
         <displayed-value>SCENARIOS</displayed-value>
