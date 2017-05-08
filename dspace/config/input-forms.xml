@@ -3625,6 +3625,10 @@
         <stored-value>WA_CSA</stored-value>
       </pair>
       <pair>
+        <displayed-value>WA_CSV</displayed-value>
+        <stored-value>WA_CSV</stored-value>
+      </pair>
+      <pair>
         <displayed-value>WA_Incomes</displayed-value>
         <stored-value>WA_Incomes</stored-value>
       </pair>
@@ -3713,6 +3717,10 @@
       <pair>
         <displayed-value>PII-WA_IntegratedInterventions</displayed-value>
         <stored-value>PII-WA_IntegratedInterventions</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>PII-WA_CSV</displayed-value>
+        <stored-value>PII-WA_CSV</stored-value>
       </pair>
       <pair>
         <displayed-value>PII-EA_PAR_CSA_Portfolios</displayed-value>
