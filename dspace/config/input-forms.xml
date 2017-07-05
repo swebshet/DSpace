@@ -366,7 +366,7 @@
           <dc-element>identifier</dc-element>
           <dc-qualifier>wletheme</dc-qualifier>
           <repeatable>true</repeatable>
-          <label>WLE research theme (phase II)</label>
+          <label>WLE research theme</label>
           <input-type value-pairs-name="wletheme">dropdown</input-type>
           <hint></hint>
           <required></required>
@@ -4729,6 +4729,10 @@
     </value-pairs>
     <value-pairs value-pairs-name="wletheme" dc-term="wletheme">
       <pair>
+        <displayed-value>Phase II</displayed-value>
+        <stored-value></stored-value>
+      </pair>
+      <pair>
         <displayed-value>Gender, Youth and Inclusivity</displayed-value>
         <stored-value>Gender, Youth and Inclusivity</stored-value>
       </pair>
@@ -4747,6 +4751,38 @@
       <pair>
         <displayed-value>Variability, Risks and Competing Uses</displayed-value>
         <stored-value>Variability, Risks and Competing Uses</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>Phase I</displayed-value>
+        <stored-value></stored-value>
+      </pair>
+      <pair>
+        <displayed-value>Decision Analysis and Information</displayed-value>
+        <stored-value>Decision Analysis and Information</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>Ecosystems Service and Resilience</displayed-value>
+        <stored-value>Ecosystems Service and Resilience</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>Gender, Poverty and Institutions</displayed-value>
+        <stored-value>Gender, Poverty and Institutions</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>Land and Water Productivity</displayed-value>
+        <stored-value>Land and Water Productivity</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>Managing Resource Variability and Competing Use</displayed-value>
+        <stored-value>Managing Resource Variability and Competing Use</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>Recovering and Reusing Resources in Urbanized Ecosystems</displayed-value>
+        <stored-value>Recovering and Reusing Resources in Urbanized Ecosystems</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>Regenerating Degraded Agricultural Ecosystems</displayed-value>
+        <stored-value>Regenerating Degraded Agricultural Ecosystems</stored-value>
       </pair>
     </value-pairs>
     <value-pairs value-pairs-name="cpwfproject" dc-term="identifier_fund">
