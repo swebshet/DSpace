@@ -1441,6 +1441,10 @@
         <displayed-value>Newsletter</displayed-value>
         <stored-value>Newsletter</stored-value>
       </pair>
+       <pair>
+        <displayed-value>Photo Report</displayed-value>
+        <stored-value>Photo Report</stored-value>
+      </pair>
       <pair>
         <displayed-value>Poster</displayed-value>
         <stored-value>Poster</stored-value>
