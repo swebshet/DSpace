@@ -212,6 +212,7 @@
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.basin.column_heading">River basin</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.cipsubject.column_heading">CIP subject</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.breed.column_heading">Animal breed</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.systemsubject.column_heading">CGIAR System subject</message>
 
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.region.column_heading">Region</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.subregion.column_heading">Subregion</message>
@@ -271,6 +272,8 @@
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.cipsubject">Browsing {0} by CIP subject</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.breed">Browsing {0} by animal breed {1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.breed">Browsing {0} by animal breed</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.systemsubject">Browsing {0} by CGIAR System subject {1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.systemsubject">Browsing {0} by CGIAR System subject</message>
 
 	<!-- org.dspace.app.xmlui.administrative.WithdrawnItems.java -->
 	<message key="xmlui.Administrative.WithdrawnItems.title.item.title">Withdrawn Items by Title</message>
@@ -385,6 +388,7 @@
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_type">By Output type</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_cipsubject">By CIP subject</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_breed">By animal breed</message>
+	<message key="xmlui.ArtifactBrowser.Navigation.browse_systemsubject">By CGIAR System subject</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.SimpleSearch.java -->
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.title">Search</message>
