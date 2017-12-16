@@ -348,8 +348,8 @@
 
                             <span>
                                 <a href="//www.cgiar.org" class="navbar-brand" target="_blank">
-                                <!-- allow child themes to use a different logo in page-structure-alterations.xsl -->
-                                <xsl:call-template name="headerLogo" />
+                                <!-- allow child themes to use a different logo by setting $headerLogoSrc in theme.xsl -->
+                                <img src="{concat($theme-path, $headerLogoSrc)}" />
                             </a>
                             </span>
                                 <span class="headerInfoName">CGSpace</span>
