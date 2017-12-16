@@ -107,5 +107,7 @@
 
     <!-- allow themes to override headerLogo image by setting this in their theme.xsl -->
     <xsl:variable name='headerLogoSrc' select="'/images/logo-white.png'"/>
+    <!-- allow themes to override headerLogo link by setting this in their theme.xsl -->
+    <xsl:variable name='headerLogoLink' select="'https://www.cgiar.org'"/>
 
 </xsl:stylesheet>
