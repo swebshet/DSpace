@@ -105,5 +105,7 @@
     <xsl:variable name='identifier_handle'
                   select='//dri:meta/dri:pageMeta/dri:metadata[@element="identifier" and @qualifier="handle"]'/>
 
+    <!-- allow themes to override headerLogo image -->
+    <xsl:variable name='headerLogoSrc' select="'/images/logo-white.png'"/>
 
 </xsl:stylesheet>
