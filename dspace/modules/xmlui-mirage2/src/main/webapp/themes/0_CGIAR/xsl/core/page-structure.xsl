@@ -347,7 +347,10 @@
 
 
                             <span>
-                                <a href="//www.cgiar.org" class="navbar-brand" target="_blank">
+                                <a class="navbar-brand" target="_blank">
+                                    <xsl:attribute name="href">
+                                        <xsl:value-of select="$headerLogoLink"/>
+                                    </xsl:attribute>
                                 <!-- allow child themes to use a different logo by setting $headerLogoSrc in theme.xsl -->
                                 <img src="{concat($theme-path, $headerLogoSrc)}" />
                             </a>
