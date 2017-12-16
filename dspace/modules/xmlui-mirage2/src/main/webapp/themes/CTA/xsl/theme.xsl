@@ -18,6 +18,7 @@
     <xsl:import href="core/page-structure-alterations.xsl"/>
     <xsl:variable name="theme-google-analytics-id" select="'UA-724238-37'"/>
     <xsl:variable name="headerLogoSrc" select="'/images/cta.svg'"/>
+    <xsl:variable name='headerLogoLink' select="'http://www.cta.int'"/>
 
     <xsl:variable name="theme-path" select="concat($context-path,'/themes/0_CGIAR/')"/>
     <xsl:output indent="yes"/>
