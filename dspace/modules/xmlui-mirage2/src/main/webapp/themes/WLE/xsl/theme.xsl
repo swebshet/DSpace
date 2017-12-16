@@ -17,6 +17,7 @@
     <!-- Alterations for page-structure.xsl so we can use a custom Google Analytics ID in the child theme -->
     <xsl:import href="core/page-structure-alterations.xsl"/>
     <xsl:variable name="theme-google-analytics-id" select="'UA-69640998-1'"/>
+    <xsl:variable name='headerLogoSrc' select="'/images/logo-black.png'"/>
 
     <xsl:variable name="theme-path" select="concat($context-path,'/themes/0_CGIAR/')"/>
     <xsl:output indent="yes"/>
