@@ -14,7 +14,7 @@
 
     <!-- white CGIAR logo -->
     <xsl:template name="headerLogo">
-        <img src="{concat($theme-path, '/images/logo-white.png')}" />
+        <img src="{concat($theme-path, $headerLogoSrc)}" />
     </xsl:template>
 
     <!-- Add a google analytics script if the key is present -->
