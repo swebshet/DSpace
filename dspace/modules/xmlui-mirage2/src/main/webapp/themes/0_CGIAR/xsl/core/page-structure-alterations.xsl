@@ -12,11 +12,6 @@
 
     <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
 
-    <!-- white CGIAR logo -->
-    <xsl:template name="headerLogo">
-        <img src="{concat($theme-path, '/images/logo-white.png')}" />
-    </xsl:template>
-
     <!-- Add a google analytics script if the key is present -->
     <xsl:template name="googleAnalytics">
         <xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='google'][@qualifier='analytics']">

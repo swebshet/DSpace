@@ -12,11 +12,6 @@
 
     <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
 
-    <!-- black CGIAR logo -->
-    <xsl:template name="headerLogo">
-        <img src="{concat($theme-path, '/images/logo-black.png')}" />
-    </xsl:template>
-
     <!-- Add a google analytics script -->
     <xsl:template name="googleAnalytics">
         <script><xsl:text>
