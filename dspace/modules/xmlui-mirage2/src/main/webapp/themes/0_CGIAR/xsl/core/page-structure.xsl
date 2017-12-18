@@ -780,6 +780,8 @@
 
 					    <p>The repository's metadata is exposed through both the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH) and a REST API interface — <code>/oai</code> and <code>/rest</code>, respectively. For more information see the <a href="https://wiki.duraspace.org/display/DSDOC5x/DSpace+5.x+Documentation" title="DSpace wiki">DSpace documentation</a>.</p>
 
+					    <p>Please try to exercise restraint when using these resources. For example, it is a great help to us if your programmatic use of the server can respect our <a href="/robots.txt"><code>robots.txt</code></a>, specify a user agent for its requests, and reuse its <code>JSESSIONID</code> cookie. Also note that we have a public test server at dspacetest.cgiar.org which is running a recent snapshot of the production CGSpace software and data — please use this if you're testing a new integration or harvesting process! Lastly, if you are using our data we would love to <a href="/feedback">hear from you</a>.</p>
+
 					    <p>The CGSpace codebase is managed on <a href="https://github.com/ilri/DSpace">GitHub</a>.</p>
 
 					  <h2>History and Evolution</h2>
