@@ -25,7 +25,7 @@
     <task:scheduled-tasks scheduler="atmireDSpaceScheduler">
         <!--<task:scheduled method="doTask" cron="*/5 * * * * *" ref="taskTest"/>-->
         <task:scheduled method="doTask" cron="0 30 2 * * *" ref="taskUpdateSolrStorageReports"/>
-        <task:scheduled method="doTask" cron="0 0 3 * * *" ref="taskUpdateSolrStatsMetadata"/>
+        <task:scheduled method="doTask" cron="0 0 15 * * *" ref="taskUpdateSolrStatsMetadata"/>
         <task:scheduled method="doTask" cron="0 0 5 * * * " ref="taskSendEmailReports"/>
     </task:scheduled-tasks>
 
