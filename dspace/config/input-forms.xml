@@ -43,8 +43,19 @@
           <repeatable>true</repeatable>
           <label>Authors (required)</label>
           <input-type>name</input-type>
-          <hint>Enter the names of individual or full corporate authors of this item. Enter each individually. ALWAYS use the Lookup option to select from an existing author entry (author names in italics have ORCID records)</hint>
+          <hint>Enter the names of individual or full corporate authors of this item. Enter each individually.</hint>
           <required>Please enter the author(s).</required>
+        </field>
+        <field>
+          <dc-schema>cg</dc-schema>
+          <dc-element>creator</dc-element>
+          <dc-qualifier>id</dc-qualifier>
+          <repeatable>true</repeatable>
+          <label>CGIAR author ORCID iDs</label>
+          <vocabulary>cg-creator-id</vocabulary>
+          <input-type>onebox</input-type>
+          <hint>Enter ORCID iDs for CGIAR authors. Click below to see a pre-populated list of author ORCID iDs that you can select from. Enter one per author. If an iD is missing, enter a new one in the exact same format (Name: 0000-0002-1735-7458). Use the exact name style the author uses at https://orcid.org</hint>
+          <required></required>
         </field>
         <field>
           <dc-schema>cg</dc-schema>
