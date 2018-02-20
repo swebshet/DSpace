@@ -273,6 +273,47 @@ such as authors, subject, citation, description, etc
         </div>
     </xsl:template>
 
+    <xsl:template name="itemSummaryView-DIM-orcids">
+        <xsl:if test="dim:field[@mdschema='cg' and @element='creator'][@qualifier='id' and descendant::text()]">
+            <div class="simple-item-view-authors item-page-field-wrapper table">
+                <h5 class="bold"><i18n:text>xmlui.dri2xhtml.METS-1.0.item-orcid</i18n:text></h5>
+
+                <xsl:for-each select="dim:field[@mdschema='cg' and @element='creator'][@qualifier='id']">
+                    <xsl:call-template name="itemSummaryView-DIM-orcids-entry" />
+                </xsl:for-each>
+            </div>
+        </xsl:if>
+    </xsl:template>
+
+    <xsl:template name="itemSummaryView-DIM-orcids-entry">
+        <!-- extract and strip orcid from cg.creator.id and build profile link -->
+        <xsl:variable name="orcid-link" select="concat('https://orcid.org/', normalize-space(substring-after(node(), ':')))"/>
+        <!-- extract and strip author name from cg.creator.id -->
+        <xsl:variable name="orcid-name" select="normalize-space(substring-before(node(), ':'))"/>
+
+        <div>
+            <xsl:attribute name="class"><xsl:text>ds-cg_creator_orcid</xsl:text></xsl:attribute>
+
+            <xsl:value-of select="$orcid-name"/>
+
+		    <a>
+			    <xsl:attribute name="target">_blank</xsl:attribute>
+			    <xsl:attribute name="rel">noopener</xsl:attribute>
+
+			    <xsl:attribute name="href">
+                    <xsl:value-of select="$orcid-link"/>
+			    </xsl:attribute>
+
+                <span>
+                    <xsl:attribute name="class">ai ai-orcid</xsl:attribute>
+                    <xsl:attribute name="aria-hidden">true</xsl:attribute>
+                </span>
+
+                <xsl:value-of select="$orcid-link"/>
+		    </a>
+        </div>
+    </xsl:template>
+
     <xsl:template name="itemSummaryView-DIM-URI">
         <xsl:if test="dim:field[@element='identifier' and @qualifier='uri' and descendant::text()]">
             <div class="item-page-field-wrapper table">

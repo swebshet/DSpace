@@ -145,6 +145,7 @@
                     <xsl:call-template name="itemSummaryView-DIM-citation"/>
                     <xsl:call-template name="itemSummaryView-DIM-identifiers"/>
                     <xsl:call-template name="itemSummaryView-DIM-abstract"/>
+                    <xsl:call-template name="itemSummaryView-DIM-orcids"/>
                     <xsl:call-template name="itemSummaryView-DIM-notes"/>
                     <xsl:call-template name="itemSummaryView-DIM-affiliations"/>
                     <xsl:call-template name="itemSummaryView-DIM-subject"/>

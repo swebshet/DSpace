@@ -193,7 +193,8 @@ width:85%
   width:20px;
 }
 
-.ds-dc_contributor_author-authority {
+.ds-dc_contributor_author-authority,
+.ds-cg_creator_orcid {
   margin-bottom: 2px;
   margin-top: 2px;
 }
@@ -286,4 +287,11 @@ div.secondary.search-browse{
 /* @ icon should be redish, like the old image it replaces */
 .fa-at {
   color: maroon;
+}
+
+/* ORCID branding guidelines: https://orcid.org/trademark-and-id-display-guidelines */
+.item-summary-view-metadata .ai-orcid {
+  color: #A6CE39;
+  margin-left: .25em; /* left and right margin should be 25% of size */
+  margin-right: .25em;
 }
