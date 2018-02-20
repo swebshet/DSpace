@@ -905,7 +905,7 @@
 	<message key="xmlui.Submission.submit.DescribeStep.report_no">Report or paper No.</message>
 	<message key="xmlui.Submission.submit.DescribeStep.controlledvocabulary.link">Click to see available values</message>
 	<message key="xmlui.Submission.submit.DescribeStep.controlledvocabulary.title">Controlled vocabulary</message>
-	<message key="xmlui.Submission.submit.DescribeStep.controlledvocabulary.filter.label">Filter terms</message>
+	<message key="xmlui.Submission.submit.DescribeStep.controlledvocabulary.filter.label">Filter terms (enter part of any name or term you seek)</message>
 	<message key="xmlui.Submission.submit.DescribeStep.controlledvocabulary.filter.button">Filter</message>
 	<message key="xmlui.Submission.submit.DescribeStep.controlledvocabulary.loading">Please wait while the controlled vocabulary is loading.</message>
 	<message key="xmlui.Submission.submit.DescribeStep.controlledvocabulary.error">There was an issue when loading the controlled vocabulary, please try again later.</message>
@@ -2371,6 +2371,7 @@
 	<message key="xmlui.dri2xhtml.METS-1.0.item-related-photo">Related photo: </message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-related-reference">Related reference: </message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-agrovoc-terms">AGROVOC Keywords</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-orcid">CGIAR Author ORCID iDs</message>
 
 	<message key="xmlui.dri2xhtml.METS-1.0.item-files-head">Files in this item</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-files-file">Files</message>
