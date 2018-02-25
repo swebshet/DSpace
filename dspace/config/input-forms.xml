@@ -424,16 +424,6 @@
         <field>
           <dc-schema>cg</dc-schema>
           <dc-element>subject</dc-element>
-          <dc-qualifier>drylands</dc-qualifier>
-          <repeatable>true</repeatable>
-          <label>Dryland Systems subject</label>
-          <input-type value-pairs-name="drylandssubject">dropdown</input-type>
-          <hint></hint>
-          <required></required>
-        </field>
-        <field>
-          <dc-schema>cg</dc-schema>
-          <dc-element>subject</dc-element>
           <dc-qualifier>iita</dc-qualifier>
           <repeatable>true</repeatable>
           <label>IITA subject</label>
@@ -882,28 +872,6 @@
       <pair>
         <displayed-value>FOOD SUPPLY</displayed-value>
         <stored-value>FOOD SUPPLY</stored-value>
-      </pair>
-    </value-pairs>
-    <value-pairs value-pairs-name="drylandssubject" dc-term="subject_drylands">
-      <pair>
-        <displayed-value>AGRO-PASTORAL SYSTEMS</displayed-value>
-        <stored-value>AGRO-PASTORAL SYSTEMS</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>IRRIGATED SYSTEMS</displayed-value>
-        <stored-value>IRRIGATED SYSTEMS</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>PASTORAL SYSTEMS</displayed-value>
-        <stored-value>PASTORAL SYSTEMS</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>RAINFED SYSTEMS</displayed-value>
-        <stored-value>RAINFED SYSTEMS</stored-value>
-      </pair>
-      <pair>
-        <displayed-value>TREE-BASED SYSTEMS</displayed-value>
-        <stored-value>TREE-BASED SYSTEMS</stored-value>
       </pair>
     </value-pairs>
     <value-pairs value-pairs-name="ilrisubject" dc-term="ilrisubject">
