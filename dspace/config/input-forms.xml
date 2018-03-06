@@ -2523,6 +2523,10 @@
         <stored-value>GRAIN LEGUMES</stored-value>
       </pair>
       <pair>
+        <displayed-value>GRAIN LEGUMES AND DRYLAND CEREALS</displayed-value>
+        <stored-value>GRAIN LEGUMES AND DRYLAND CEREALS</stored-value>
+      </pair>
+      <pair>
         <displayed-value>HUMIDTROPICS</displayed-value>
         <stored-value>HUMIDTROPICS</stored-value>
       </pair>
