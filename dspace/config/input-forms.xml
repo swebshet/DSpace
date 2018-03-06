@@ -3450,6 +3450,18 @@
         <displayed-value>PII-WA_Cowpeas</displayed-value>
         <stored-value>PII-WA_Cowpeas</stored-value>
       </pair>
+      <pair>
+        <displayed-value>PII-FP4_CSRD</displayed-value>
+        <stored-value>PII-FP4_CSRD</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>PII-WA_FAO_SIDS</displayed-value>
+        <stored-value>PII-WA_FAO_SIDS</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>PII-FP4_Gender_CS</displayed-value>
+        <stored-value>PII-FP4_Gender_CS</stored-value>
+      </pair>
     </value-pairs>
     <value-pairs value-pairs-name="ciatproject" dc-term="ciatproject">
       <pair>
