@@ -249,27 +249,9 @@ such as authors, subject, citation, description, etc
 
     <xsl:template name="itemSummaryView-DIM-authors-entry">
         <div>
-            <xsl:if test="@authority">
-                <xsl:attribute name="class"><xsl:text>ds-dc_contributor_author-authority</xsl:text></xsl:attribute>
-            </xsl:if>
             <xsl:call-template name="discovery-link">
                 <xsl:with-param name="filtertype" select="'author'"/>
             </xsl:call-template>
-
-            <xsl:if test="@authority">
-	            <xsl:variable name="authority" select="@authority"/>
-
-	            <xsl:if test="../dim:field[@authority=$authority and @mdschema='atmire' and @element='orcid' and @qualifier='id']">
-		            <a class="orcid-icon-link" target="_blank">
-			            <xsl:attribute name="href">
-				            <xsl:value-of select="concat('//orcid.org/', ../dim:field[@authority=$authority and @mdschema='atmire' and @element='orcid' and @qualifier='id']/text())"/>
-			            </xsl:attribute>
-
-			            <img alt="xmlui.mirage2.item-list.thumbnail" i18n:attr="alt"
-			                 src="{concat($theme-path, 'images/mini-icon.png')}"/>
-		            </a>
-	            </xsl:if>
-            </xsl:if>
         </div>
     </xsl:template>
 

@@ -78,11 +78,6 @@
                         <xsl:when test="dim:field[@element='contributor'][@qualifier='author']">
                             <xsl:for-each select="dim:field[@element='contributor'][@qualifier='author']">
                                 <span>
-                                    <xsl:if test="@authority">
-                                        <xsl:attribute name="class">
-                                            <xsl:text>ds-dc_contributor_author-authority</xsl:text>
-                                        </xsl:attribute>
-                                    </xsl:if>
                                     <xsl:variable name="authorLink">
                                         <xsl:value-of
                                                 select="concat($context-path,'/discover?filtertype=author&amp;filter_relational_operator=equals&amp;filter=',url:encode(node()))"></xsl:value-of>

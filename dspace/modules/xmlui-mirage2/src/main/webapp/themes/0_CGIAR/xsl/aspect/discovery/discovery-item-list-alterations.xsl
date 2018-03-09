@@ -106,9 +106,6 @@
                                 <xsl:when test="dri:list[@n=(concat($handle, ':dc.contributor.author'))]">
                                     <xsl:for-each select="dri:list[@n=(concat($handle, ':dc.contributor.author'))]/dri:item">
                                         <span>
-                                            <xsl:if test="@authority">
-                                                <xsl:attribute name="class"><xsl:text>ds-dc_contributor_author-authority</xsl:text></xsl:attribute>
-                                            </xsl:if>
                                             <xsl:variable name="authorLink">
                                                 <xsl:value-of select="concat($context-path,'/discover?filtertype=author&amp;filter_relational_operator=equals&amp;filter=',url:encode(node()))"></xsl:value-of>
                                             </xsl:variable>
