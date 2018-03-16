@@ -2490,88 +2490,92 @@
     </value-pairs>
     <value-pairs value-pairs-name="crpsubject" dc-term="crsubject_crpsubject">
       <pair>
-        <displayed-value>AGRICULTURE FOR NUTRITION AND HEALTH</displayed-value>
-        <stored-value>AGRICULTURE FOR NUTRITION AND HEALTH</stored-value>
+        <displayed-value>Agriculture for Nutrition and Health</displayed-value>
+        <stored-value>Agriculture for Nutrition and Health</stored-value>
       </pair>
       <pair>
-        <displayed-value>AQUATIC AGRICULTURAL SYSTEMS</displayed-value>
-        <stored-value>AQUATIC AGRICULTURAL SYSTEMS</stored-value>
+        <displayed-value>Big Data</displayed-value>
+        <stored-value>Big Data</stored-value>
       </pair>
       <pair>
-        <displayed-value>BIG DATA</displayed-value>
-        <stored-value>BIG DATA</stored-value>
+        <displayed-value>Climate Change, Agriculture and Food Security</displayed-value>
+        <stored-value>Climate Change, Agriculture and Food Security</stored-value>
       </pair>
       <pair>
-        <displayed-value>CLIMATE CHANGE, AGRICULTURE AND FOOD SECURITY</displayed-value>
-        <stored-value>CLIMATE CHANGE, AGRICULTURE AND FOOD SECURITY</stored-value>
+        <displayed-value>Excellence in Breeding</displayed-value>
+        <stored-value>Excellence in Breeding</stored-value>
       </pair>
       <pair>
-        <displayed-value>DRYLAND CEREALS</displayed-value>
-        <stored-value>DRYLAND CEREALS</stored-value>
+        <displayed-value>Fish</displayed-value>
+        <stored-value>Fish</stored-value>
       </pair>
       <pair>
-        <displayed-value>DRYLAND SYSTEMS</displayed-value>
-        <stored-value>DRYLAND SYSTEMS</stored-value>
+        <displayed-value>Forests, Trees and Agroforestry</displayed-value>
+        <stored-value>Forests, Trees and Agroforestry</stored-value>
       </pair>
       <pair>
-        <displayed-value>EXCELLENCE IN BREEDING</displayed-value>
-        <stored-value>EXCELLENCE IN BREEDING</stored-value>
+        <displayed-value>Genebanks</displayed-value>
+        <stored-value>Genebanks</stored-value>
       </pair>
       <pair>
-        <displayed-value>FISH</displayed-value>
-        <stored-value>FISH</stored-value>
+        <displayed-value>Grain Legumes and Dryland Cereals</displayed-value>
+        <stored-value>Grain Legumes and Dryland Cereals</stored-value>
       </pair>
       <pair>
-        <displayed-value>FORESTS, TREES AND AGROFORESTRY</displayed-value>
-        <stored-value>FORESTS, TREES AND AGROFORESTRY</stored-value>
+        <displayed-value>Livestock</displayed-value>
+        <stored-value>Livestock</stored-value>
       </pair>
       <pair>
-        <displayed-value>GENEBANKS</displayed-value>
-        <stored-value>GENEBANKS</stored-value>
+        <displayed-value>Maize</displayed-value>
+        <stored-value>Maize</stored-value>
       </pair>
       <pair>
-        <displayed-value>GRAIN LEGUMES</displayed-value>
-        <stored-value>GRAIN LEGUMES</stored-value>
+        <displayed-value>Policies, Institutions and Markets</displayed-value>
+        <stored-value>Policies, Institutions and Markets</stored-value>
       </pair>
       <pair>
-        <displayed-value>GRAIN LEGUMES AND DRYLAND CEREALS</displayed-value>
-        <stored-value>GRAIN LEGUMES AND DRYLAND CEREALS</stored-value>
+        <displayed-value>Rice</displayed-value>
+        <stored-value>Rice</stored-value>
       </pair>
       <pair>
-        <displayed-value>HUMIDTROPICS</displayed-value>
-        <stored-value>HUMIDTROPICS</stored-value>
+        <displayed-value>Roots, Tubers and Bananas</displayed-value>
+        <stored-value>Roots, Tubers and Bananas</stored-value>
       </pair>
       <pair>
-        <displayed-value>LIVESTOCK</displayed-value>
-        <stored-value>LIVESTOCK</stored-value>
+        <displayed-value>Water, Land and Ecosystems</displayed-value>
+        <stored-value>Water, Land and Ecosystems</stored-value>
       </pair>
       <pair>
-        <displayed-value>LIVESTOCK AND FISH</displayed-value>
-        <stored-value>LIVESTOCK AND FISH</stored-value>
+        <displayed-value>Wheat</displayed-value>
+        <stored-value>Wheat</stored-value>
       </pair>
       <pair>
-        <displayed-value>MAIZE</displayed-value>
-        <stored-value>MAIZE</stored-value>
+        <displayed-value>--- Old CRPs ---</displayed-value>
+        <stored-value></stored-value>
       </pair>
       <pair>
-        <displayed-value>POLICIES, INSTITUTIONS, AND MARKETS</displayed-value>
-        <stored-value>POLICIES, INSTITUTIONS, AND MARKETS</stored-value>
+        <displayed-value>Aquatic Agricultural Systems</displayed-value>
+        <stored-value>Aquatic Agricultural Systems</stored-value>
       </pair>
       <pair>
-        <displayed-value>RICE</displayed-value>
-        <stored-value>RICE</stored-value>
+        <displayed-value>Dryland Cereals</displayed-value>
+        <stored-value>Dryland Cereals</stored-value>
       </pair>
       <pair>
-        <displayed-value>ROOTS, TUBERS AND BANANAS</displayed-value>
-        <stored-value>ROOTS, TUBERS AND BANANAS</stored-value>
+        <displayed-value>Dryland Systems</displayed-value>
+        <stored-value>Dryland Systems</stored-value>
       </pair>
       <pair>
-        <displayed-value>WATER, LAND AND ECOSYSTEMS</displayed-value>
-        <stored-value>WATER, LAND AND ECOSYSTEMS</stored-value>
+        <displayed-value>Grain Legumes</displayed-value>
+        <stored-value>Grain Legumes</stored-value>
       </pair>
       <pair>
-        <displayed-value>WHEAT</displayed-value>
-        <stored-value>WHEAT</stored-value>
+        <displayed-value>Integrated Systems for the Humid Tropics</displayed-value>
+        <stored-value>Integrated Systems for the Humid Tropics</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>Livestock and Fish</displayed-value>
+        <stored-value>Livestock and Fish</stored-value>
       </pair>
     </value-pairs>
     <value-pairs value-pairs-name="ccafsubject" dc-term="ccafsubject">
