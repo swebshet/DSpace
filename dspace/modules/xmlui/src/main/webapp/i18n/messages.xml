@@ -2682,6 +2682,7 @@
     <message key="xmlui.Discovery.AbstractSearch.type_iitasubject">Filter by: IITA subject</message>
     <message key="xmlui.Discovery.AbstractSearch.type_cipsubject">Filter by: CIP subject</message>
     <message key="xmlui.Discovery.AbstractSearch.type_sponsorship">Filter by: Investor</message>
+    <message key="xmlui.Discovery.AbstractSearch.type_status">Filter by: Status</message>
 
     <!-- overridden from dspace-xmlui/src/main/resources/aspects/Discovery/i18n/messages.xml -->
     <message key="xmlui.Discovery.AbstractSearch.type_subject">Filter by: AGROVOC keyword</message>
