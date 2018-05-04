@@ -167,16 +167,16 @@
            <artifactId>lucene-analyzers-smartcn</artifactId>
            <version>${solr.version}</version>
        </dependency>
-       
-       <dependency>
-           <groupId>org.apache.lucene</groupId>
-           <artifactId>lucene-analyzers-stempel</artifactId>
-           <version>${solr.version}</version>
-       </dependency>
 
        <dependency>
            <groupId>org.apache.solr</groupId>
            <artifactId>solr-dataimporthandler</artifactId>
+           <version>${solr.version}</version>
+       </dependency>
+       
+       <dependency>
+           <groupId>org.apache.lucene</groupId>
+           <artifactId>lucene-analyzers-stempel</artifactId>
            <version>${solr.version}</version>
        </dependency>
 

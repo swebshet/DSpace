@@ -36,118 +36,117 @@
         <jena.version>2.12.0</jena.version>
         <slf4j.version>1.6.1</slf4j.version>
         <listings-and-reports.version.number>5.5-2.10.7-0</listings-and-reports.version.number>
-        <cua.version.number>5.5-4.1.2-0</cua.version.number>
         <!-- 'root.basedir' is the path to the root [dspace-src] dir. It must be redefined by each child POM,
              as it is used to reference the LICENSE_HEADER and *.properties file(s) in that directory. -->
         <root.basedir>${basedir}</root.basedir>
         <mqm.version.number>5.5-2.10.1-0</mqm.version.number>
-        <datatables.version.number>5.5-2.0.8-0</datatables.version.number>
-
+        <cua.version.number>${project.version}-4.1.6-0-RC5-SNAPSHOT</cua.version.number>
+        <datatables.version.number>${project.version}-2.0.10-0-SNAPSHOT</datatables.version.number>
     </properties>
 
     <build>
-      <!-- Define Maven Plugin Settings that should be inherited to ALL submodule POMs.
-           (NOTE: individual POMs can override specific settings). -->
-      <pluginManagement>
-          <plugins>
-              <plugin>
-                  <artifactId>maven-compiler-plugin</artifactId>
-                  <version>3.1</version>
-                  <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
-                  </configuration>
-              </plugin>
-              <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>2.5</version>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                            <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
-                        </manifest>
-                    </archive>
-                </configuration>
-              </plugin>
-              <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>2.4</version>
-                <configuration>
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
-                    <archive>
-                        <manifest>
-                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                            <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
-                        </manifest>
-                    </archive>
-                </configuration>
-             </plugin>
-             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.17</version>
-                <configuration>
-                    <!-- Allow for the ability to pass JVM memory flags for Unit Tests. Since
-                         maven-surefire-plugin forks a new JVM, it ignores MAVEN_OPTS.-->
-                    <argLine>${surefire.argLine}</argLine>
-                    <!-- tests whose name starts by Abstract will be ignored -->
-                    <excludes>
-                        <exclude>**/Abstract*</exclude>
-                    </excludes>
-                    <!-- Detailed logs in reportsDirectory/testName-output.txt instead of stdout -->
-                    <redirectTestOutputToFile>true</redirectTestOutputToFile>
-                    <!--
-                    Enable to debug Maven Surefire tests in remote proces
-                    <debugForkedProcess>true</debugForkedProcess>
-                    -->
-                </configuration>
-             </plugin>
-             <plugin>
-                  <groupId>org.codehaus.mojo</groupId>
-                  <artifactId>findbugs-maven-plugin</artifactId>
-                  <version>3.0.0</version>
-                  <configuration>
-                      <effort>Max</effort>
-                      <threshold>Low</threshold>
-                      <xmlOutput>true</xmlOutput>
-                  </configuration>
-                  <executions>
-                      <execution>
-                          <phase>compile</phase>
-                          <goals>
-                              <goal>check</goal>
-                          </goals>
-                      </execution>
-                  </executions>
-             </plugin>
-             <plugin>
-                <artifactId>maven-antrun-plugin</artifactId>
-                <version>1.7</version>
-             </plugin>
-             <plugin>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <version>2.4.1</version>
-             </plugin>
-             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-dependency-plugin</artifactId>
-                <version>2.8</version>
-             </plugin>
-             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
-                <version>2.6</version>
-              </plugin>
-             <plugin>
-                <groupId>com.mycila</groupId>
-                <artifactId>license-maven-plugin</artifactId>
-                <version>2.6</version>
-             </plugin>
-          </plugins>
-      </pluginManagement>
+        <!-- Define Maven Plugin Settings that should be inherited to ALL submodule POMs.
+             (NOTE: individual POMs can override specific settings). -->
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.1</version>
+                    <configuration>
+                        <source>${java.version}</source>
+                        <target>${java.version}</target>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>2.5</version>
+                    <configuration>
+                        <archive>
+                            <manifest>
+                                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                                <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+                            </manifest>
+                        </archive>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>2.4</version>
+                    <configuration>
+                        <failOnMissingWebXml>false</failOnMissingWebXml>
+                        <archive>
+                            <manifest>
+                                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                                <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+                            </manifest>
+                        </archive>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>2.17</version>
+                    <configuration>
+                        <!-- Allow for the ability to pass JVM memory flags for Unit Tests. Since
+                             maven-surefire-plugin forks a new JVM, it ignores MAVEN_OPTS.-->
+                        <argLine>${surefire.argLine}</argLine>
+                        <!-- tests whose name starts by Abstract will be ignored -->
+                        <excludes>
+                            <exclude>**/Abstract*</exclude>
+                        </excludes>
+                        <!-- Detailed logs in reportsDirectory/testName-output.txt instead of stdout -->
+                        <redirectTestOutputToFile>true</redirectTestOutputToFile>
+                        <!--
+                        Enable to debug Maven Surefire tests in remote proces
+                        <debugForkedProcess>true</debugForkedProcess>
+                        -->
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>findbugs-maven-plugin</artifactId>
+                    <version>3.0.0</version>
+                    <configuration>
+                        <effort>Max</effort>
+                        <threshold>Low</threshold>
+                        <xmlOutput>true</xmlOutput>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <phase>compile</phase>
+                            <goals>
+                                <goal>check</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-antrun-plugin</artifactId>
+                    <version>1.7</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-assembly-plugin</artifactId>
+                    <version>2.4.1</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <version>2.8</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>2.6</version>
+                </plugin>
+                <plugin>
+                    <groupId>com.mycila</groupId>
+                    <artifactId>license-maven-plugin</artifactId>
+                    <version>2.6</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
 
       <!-- These plugin settings only apply to this single POM and are not inherited
            to any submodules. -->
@@ -206,10 +205,10 @@
                     <includes>
                         <include>src/**</include>
                     </includes>
-                    <!--Use all default exclusions for IDE files & Maven files, see: 
+                    <!--Use all default exclusions for IDE files & Maven files, see:
                         http://code.google.com/p/maven-license-plugin/wiki/Configuration#Default_excludes -->
                     <useDefaultExcludes>true</useDefaultExcludes>
-                    <!-- Add some default DSpace exclusions not covered by <useDefaultExcludes> 
+                    <!-- Add some default DSpace exclusions not covered by <useDefaultExcludes>
                          Individual Maven projects may choose to override these defaults. -->
                     <excludes>
                         <exclude>**/src/test/resources/**</exclude>
@@ -225,8 +224,8 @@
                         <exclude>**/.gitignore</exclude>
                         <exclude>**/build.properties*</exclude>
                     </excludes>
-                    <mapping> 
-                        <!-- Custom DSpace file extensions which are not recognized by maven-release-plugin: 
+                    <mapping>
+                        <!-- Custom DSpace file extensions which are not recognized by maven-release-plugin:
                              *.xmap, *.xslt, *.wsdd, *.wsdl, *.ttl, *.LICENSE -->
                         <xmap>XML_STYLE</xmap>
                         <xslt>XML_STYLE</xslt>
@@ -234,7 +233,7 @@
                         <wsdl>XML_STYLE</wsdl>
                         <ttl>SCRIPT_STYLE</ttl>
                         <LICENSE>TEXT</LICENSE>
-                    </mapping>  
+                    </mapping>
                     <encoding>UTF-8</encoding>
                     <!-- maven-license-plugin recommends a strict check (e.g. check spaces/tabs too) -->
                     <strictCheck>true</strictCheck>
@@ -249,9 +248,29 @@
                     </execution>
                 </executions>
          </plugin>
+          <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-enforcer-plugin</artifactId>
+              <version>1.4</version>
+              <executions>
+                  <execution>
+                      <id>enforce-maven</id>
+                      <goals>
+                          <goal>enforce</goal>
+                      </goals>
+                      <configuration>
+                          <rules>
+                              <requireMavenVersion>
+                                  <version>[3.2,)</version>
+                              </requireMavenVersion>
+                          </rules>
+                      </configuration>
+                  </execution>
+              </executions>
+          </plugin>
       </plugins>
    </build>
-   
+
    <profiles>
 
        <!-- By default the main dspace.cfg file will be filtered during the build
@@ -272,7 +291,7 @@
        </profile>
 
        <!-- Users can pass in an environment flag "-Denv" to tell DSpace to use
-            a different properties file during its build process. 
+            a different properties file during its build process.
             For example: "mvn package -Denv=test" would build DSpace using the
             settings in "test.properties" instead of those in "build.properties" -->
        <profile>
@@ -306,8 +325,8 @@
        </profile>
 
         <!-- Allow for passing extra memory to Unit tests (via maven-surefire-plugin).
-             By default this gives unit tests 512MB of memory (when tests are enabled), 
-             unless tweaked on commandline (e.g. "-Dsurefire.argLine=-Xmx512m"). Since 
+             By default this gives unit tests 512MB of memory (when tests are enabled),
+             unless tweaked on commandline (e.g. "-Dsurefire.argLine=-Xmx512m"). Since
              m-surefire-p forks a new JVM for testing, it ignores MAVEN_OPTS. -->
         <profile>
             <id>surefire-argLine</id>
@@ -322,8 +341,8 @@
         </profile>
 
         <!-- This profile ensures that we ONLY generate the Unit Test Environment,
-             if the testEnvironment.xml file is found AND we are not skipping Unit 
-             Tests (see also skiptests profile). That way the Test Environment is 
+             if the testEnvironment.xml file is found AND we are not skipping Unit
+             Tests (see also skiptests profile). That way the Test Environment is
              also NOT built when running a 'mvn package' on a "binary" release. -->
         <profile>
             <id>generate-test-env</id>
@@ -368,7 +387,7 @@
             </build>
         </profile>
 
-        <!-- 
+        <!--
              Generate a list of all THIRD PARTY open source licenses for all DSpace dependencies.
              This list is automatically written to the [src]/LICENSES_THIRD_PARTY file.
              Third party tools whose licenses are unknown by Maven are maintained in
@@ -648,7 +667,7 @@
                <module>dspace-xmlui-mirage2</module>
            </modules>
         </profile>
-        
+
         <!--
            Builds XMLUI WAR for DSpace
         -->
@@ -719,17 +738,107 @@
    -->
    <dependencyManagement>
       <dependencies>
-         <!-- DSpace core and endorsed Addons -->
-         <dependency>
-            <groupId>org.dspace</groupId>
-            <artifactId>dspace-api</artifactId>
-            <version>5.8</version>
-         </dependency>
-         <dependency>
-            <groupId>org.dspace.modules</groupId>
-            <artifactId>additions</artifactId>
-            <version>5.8</version>
-         </dependency>
+
+          <!-- Atmire Modules -->
+          <dependency>
+              <groupId>com.atmire</groupId>
+              <artifactId>atmire-cua-api</artifactId>
+              <version>${cua.version.number}</version>
+          </dependency>
+          <dependency>
+              <groupId>com.atmire</groupId>
+              <artifactId>atmire-cua-xmlui-mirage2</artifactId>
+              <type>war</type>
+              <version>${cua.version.number}</version>
+          </dependency>
+          <dependency>
+              <groupId>com.atmire</groupId>
+              <artifactId>atmire-cua-xmlui-webapp</artifactId>
+              <type>war</type>
+              <version>${cua.version.number}</version>
+          </dependency>
+          <dependency>
+              <groupId>com.atmire</groupId>
+              <artifactId>atmire-cua-xmlui-api</artifactId>
+              <version>${cua.version.number}</version>
+          </dependency>
+          <dependency>
+              <groupId>com.atmire</groupId>
+              <artifactId>atmire-cua-rest-webapp</artifactId>
+              <type>war</type>
+              <version>${cua.version.number}</version>
+          </dependency>
+          <dependency>
+              <groupId>com.atmire</groupId>
+              <artifactId>atmire-cua-rest-api</artifactId>
+              <version>${cua.version.number}</version>
+          </dependency>
+          <dependency>
+              <groupId>com.atmire</groupId>
+              <artifactId>atmire-cua-common</artifactId>
+              <version>${cua.version.number}</version>
+          </dependency>
+          <dependency>
+              <groupId>it.ipzs</groupId>
+              <artifactId>fins-core</artifactId>
+              <version>${project.version}-1.7.4-0</version>
+          </dependency>
+          <dependency>
+              <groupId>com.atmire</groupId>
+              <artifactId>datatables-api</artifactId>
+              <version>${datatables.version.number}</version>
+          </dependency>
+          <dependency>
+              <groupId>com.atmire</groupId>
+              <artifactId>datatables-xmlui-webapp</artifactId>
+              <type>war</type>
+              <version>${datatables.version.number}</version>
+          </dependency>
+          <dependency>
+              <groupId>com.atmire</groupId>
+              <artifactId>datatables-xmlui-api</artifactId>
+              <version>${datatables.version.number}</version>
+          </dependency>
+          <dependency>
+              <groupId>com.atmire</groupId>
+              <artifactId>atmire-datatables-common</artifactId>
+              <version>${datatables.version.number}</version>
+          </dependency>
+          <dependency>
+              <groupId>com.atmire</groupId>
+              <artifactId>modules-theme</artifactId>
+              <type>war</type>
+              <version>${project.version}-1.9.3-0-SNAPSHOT</version>
+          </dependency>
+          <dependency>
+              <groupId>com.atmire</groupId>
+              <artifactId>atmire-dspace-api</artifactId>
+              <version>${project.version}-1.15.14-0-SNAPSHOT</version>
+          </dependency>
+          <dependency>
+              <groupId>com.atmire</groupId>
+              <artifactId>atmire-dspace-xmlui</artifactId>
+              <type>war</type>
+              <version>${project.version}-1.15.14-0</version>
+          </dependency>
+          <dependency>
+              <groupId>com.atmire</groupId>
+              <artifactId>atmire-dspace-xmlui</artifactId>
+              <classifier>classes</classifier>
+              <version>${project.version}-1.15.14-0</version>
+          </dependency>
+
+          <!-- DSpace core and endorsed Addons -->
+          <dependency>
+              <groupId>org.dspace</groupId>
+              <artifactId>dspace-api</artifactId>
+              <version>5.8</version>
+          </dependency>
+          <dependency>
+              <groupId>org.dspace.modules</groupId>
+              <artifactId>additions</artifactId>
+              <version>5.8</version>
+          </dependency>
          <dependency>
             <groupId>org.dspace</groupId>
             <artifactId>dspace-sword</artifactId>
@@ -941,6 +1050,16 @@
             <version>${lucene.version}</version>
          </dependency>
         <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>lucene-queries</artifactId>
+            <version>${lucene.version}</version>
+        </dependency>
+          <dependency>
+              <groupId>org.apache.lucene</groupId>
+              <artifactId>lucene-sandbox</artifactId>
+              <version>${lucene.version}</version>
+          </dependency>
+          <dependency>
             <groupId>org.apache.jena</groupId>
             <artifactId>apache-jena-libs</artifactId>
             <type>pom</type>
@@ -1302,33 +1421,6 @@
               <version>3.0.0</version>
               <scope>provided</scope>
           </dependency>
-          <dependency>
-              <groupId>com.atmire</groupId>
-              <artifactId>atmire-dspace-api</artifactId>
-              <version>5.5-1.15.13-0</version>
-          </dependency>
-          <dependency>
-              <groupId>com.atmire</groupId>
-              <artifactId>atmire-dspace-xmlui</artifactId>
-              <type>war</type>
-              <version>5.5-1.15.13-0</version>
-          </dependency>
-          <dependency>
-              <groupId>com.atmire</groupId>
-              <artifactId>atmire-dspace-xmlui</artifactId>
-              <classifier>classes</classifier>
-              <version>5.5-1.15.13-0</version>
-          </dependency>
-          <dependency>
-              <groupId>com.atmire</groupId>
-              <artifactId>datatables-api</artifactId>
-              <version>5.5-2.0.8-0</version>
-          </dependency>
-          <dependency>
-              <groupId>com.atmire</groupId>
-              <artifactId>datatables-xmlui-api</artifactId>
-              <version>5.5-2.0.8-0</version>
-          </dependency>
       </dependencies>
    </dependencyManagement>
 
@@ -1657,8 +1749,18 @@
             </releases>
             <snapshots>
                 <enabled>false</enabled>
-                <updatePolicy>never</updatePolicy>
-                <checksumPolicy>fail</checksumPolicy>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>atmire.com-snapshots</id>
+            <name>atmire.com-snapshots</name>
+            <url>https://atmire.com/artifactory/atmire.com-snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
             </snapshots>
         </repository>
     </repositories>

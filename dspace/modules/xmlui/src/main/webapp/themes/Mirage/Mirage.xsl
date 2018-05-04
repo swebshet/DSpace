@@ -40,7 +40,7 @@
     <xsl:import href="lib/xsl/aspect/artifactbrowser/item-view.xsl"/>
     <xsl:import href="lib/xsl/aspect/artifactbrowser/community-list.xsl"/>
     <xsl:import href="lib/xsl/aspect/artifactbrowser/collection-list.xsl"/>
-    <xsl:import href="../ReportingSuite/statistics-public.xsl"/>
+    <xsl:import href="../ReportingSuite/lib/xsl/Mirage_additions_atmire_cua.xsl"/>
     <xsl:output indent="yes"/>
     
 

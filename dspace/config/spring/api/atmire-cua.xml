@@ -14,8 +14,7 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
         <entry key="213.55.99.121/32" value="ILRI Ethiopia"/>
     </util:map>
 
-    <bean class="com.atmire.statistics.util.InteractiveStatisticsConfiguration">
-        <property name="hitTypeFilters" value="#{ T(org.dspace.core.Constants).BITSTREAM}"/>
+    <bean class="com.atmire.statistics.util.MostPopularLocationConfiguration">
         <property name="field" value="continent"/>
         <property name="valueMap">
             <map>

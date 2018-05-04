@@ -1839,7 +1839,16 @@
   <updateRequestProcessorChain name="uuid">    
     <processor class="solr.UUIDUpdateProcessorFactory">
       <str name="fieldName">uid</str>
-    </processor>    
+    </processor><processor class="solr.RunUpdateProcessorFactory" />
+  </updateRequestProcessorChain>
+
+  <updateRequestProcessorChain name="suppressversion">
+    <processor class="solr.UUIDUpdateProcessorFactory">
+      <str name="fieldName">uid</str>
+    </processor>
+    <processor class="solr.IgnoreFieldUpdateProcessorFactory">
+      <str name="fieldRegex">_version_</str>
+    </processor>
     <processor class="solr.RunUpdateProcessorFactory" />
   </updateRequestProcessorChain>
 
@@ -1852,7 +1861,7 @@
     </processor>
     <processor class="solr.RunUpdateProcessorFactory" />
   </updateRequestProcessorChain>
-   
+
   <!-- Response Writers
 
        http://wiki.apache.org/solr/QueryResponseWriter

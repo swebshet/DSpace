@@ -46,6 +46,7 @@
 
                <!--Use site to override the default configuration for the home page & default discovery page-->
                <entry key="site" value-ref="homepageConfiguration" />
+                <entry key="general_cua" value-ref="cuaConfig"/>
                <!--<entry key="123456789/7621" value-ref="defaultConfiguration"/>-->
             </map>
         </property>
@@ -939,5 +940,5 @@
     <bean class="com.atmire.dspace.discovery.AtmireSolrService" id="org.dspace.discovery.SearchService"/>
     <bean class="com.atmire.dspace.discovery.HasBitstreamsSSIPlugin" id="hasBitstreamsSSIPlugin"/>
     <bean class="com.atmire.dspace.discovery.ItemCollectionPlugin" id="itemCollectionPlugin"/>
-    
+
 </beans>
