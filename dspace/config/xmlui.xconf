@@ -196,13 +196,6 @@
         <!-- <theme name="Test Theme 1" handle="123456789/1" path="theme1/"/>    -->
         <!-- <theme name="Test Theme 2" regex="community-list" path="theme2/"/> -->
 
-        <!--for Mirage 2 based themes, use this line-->
-        <!--<theme name="ReportingSuite" regex="(reporting-suite/(graph-editor|content-editor)/)" path="ReportingSuite/" />-->
-
-        <!--for non Mirage 2 based themes, use this line-->
-
-        <!--<theme name="Atmire Mirage 2 Theme" regex=".*" path="Mirage2/" />-->
-
         <!-- Mirage theme, @mire contributed theme, default since DSpace 3.0 -->
         <!--<theme name="Atmire Mirage Theme" regex=".*" path="Mirage/" />-->
 
