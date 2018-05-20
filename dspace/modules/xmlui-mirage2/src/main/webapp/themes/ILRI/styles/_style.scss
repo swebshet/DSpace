@@ -36,3 +36,8 @@ header .navbar-default {
 .text-muted {
   color: #666;
 }
+
+// color of text on cookieconsent accept button
+.cc-btn.cc-allow, .cc-btn.cc-allow:hover {
+  color: $ilri-gray;
+}

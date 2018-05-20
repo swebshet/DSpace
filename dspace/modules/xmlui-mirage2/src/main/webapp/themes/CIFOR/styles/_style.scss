@@ -33,3 +33,8 @@ header .navbar-default {
 .trail-wrapper .breadcrumb > li + li::before {
   color: $brand-primary;
 }
+
+// color of text on cookieconsent accept button
+.cc-btn.cc-allow, .cc-btn.cc-allow:hover {
+  color: $brand-primary;
+}

@@ -21,6 +21,20 @@
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
             })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+            // Attempt to get status of cookieconsent cookie
+            var cookieConsentStatus = getCookie('cookieconsent_status');
+
+            // Initialize cookieconsent popup (will only show popup if cookieconsent has not been dismissed with allow or disallow)
+            initializeCookieConsent();
+
+            // If user has not explicitly allowed we should set a property to disable Google Analytics
+            // If user has explicitly allowed the value of the cookieconsent cookie will be "allow", if not it will be "dismiss"
+            // See: https://developers.google.com/analytics/devguides/collection/analyticsjs/user-opt-out
+            if ( cookieConsentStatus != 'allow' ) {
+            window['ga-disable-</xsl:text><xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='google'][@qualifier='analytics']"/><xsl:text>'] = true;
+            }
+
+            // Initialize Google Analytics with IP anonymization (will not actually send any data to Google if ga-disable-XXXXX-Y property is set)
             ga('create', '</xsl:text><xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='google'][@qualifier='analytics']"/><xsl:text>', '</xsl:text><xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='request'][@qualifier='serverName']"/><xsl:text>');
             ga('send', 'pageview', {
               'anonymizeIp': true

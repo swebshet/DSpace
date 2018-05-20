@@ -28,3 +28,8 @@ header .navbar-default {
 .trail-toggle .navbar-toggle .icon-bar {
   background-color: $brand-primary;
 }
+
+// color of text on cookieconsent accept button
+.cc-btn.cc-allow, .cc-btn.cc-allow:hover {
+  color: $brand-primary;
+}

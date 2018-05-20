@@ -38,3 +38,8 @@ header .navbar-default {
 .trail-wrapper .breadcrumb > li + li::before {
   color: $ccafs-white;
 }
+
+// color of text on cookieconsent accept button
+.cc-btn.cc-allow, .cc-btn.cc-allow:hover {
+  color: $ccafs-black-text;
+}
