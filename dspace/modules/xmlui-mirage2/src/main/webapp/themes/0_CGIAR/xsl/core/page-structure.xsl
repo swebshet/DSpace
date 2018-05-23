@@ -711,6 +711,7 @@
 
                             <i18n:text>xmlui.dri2xhtml.structural.about-link</i18n:text>
                         </a>
+                        <a href="https://www.ilri.org/privacy-cookies-statement" title="ILRI privacy statement" target="_blank" rel="noopener">Privacy Policy</a>
                         <a>
                             <xsl:attribute name="href">
                                 <xsl:value-of
