@@ -258,19 +258,6 @@
 
         <dependency>
             <groupId>com.atmire</groupId>
-            <artifactId>atmire-metadata-quality-webapp</artifactId>
-            <type>war</type>
-            <version>${mqm.version.number}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.atmire</groupId>
-            <artifactId>atmire-metadata-quality-xmlui-api</artifactId>
-            <version>${mqm.version.number}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.atmire</groupId>
             <artifactId>datatables-xmlui-webapp</artifactId>
             <type>war</type>
             <version>${datatables.version.number}</version>

@@ -95,7 +95,6 @@
 
         <!-- Atmire CUA instead of DSpace Statistics -->
         <aspect name="CUA" path="resource://aspects/Statistics/" />
-        <aspect name="QualityAssurance" path="resource://aspects/MetadataQuality/" />
         <aspect name="Atmire Modules Aspect" path="resource://aspects/AtmireModules/" />
         <aspect name="Datatables" path="resource://aspects/Datatables/"/>
 

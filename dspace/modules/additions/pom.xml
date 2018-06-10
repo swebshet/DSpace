@@ -85,11 +85,6 @@
       </dependency>
       <dependency>
          <groupId>com.atmire</groupId>
-         <artifactId>atmire-metadata-quality-api</artifactId>
-         <version>${mqm.version.number}</version>
-      </dependency>
-      <dependency>
-         <groupId>com.atmire</groupId>
          <artifactId>datatables-api</artifactId>
       </dependency>
       <dependency>
