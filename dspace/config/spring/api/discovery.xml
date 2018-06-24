@@ -154,6 +154,7 @@
                 <ref bean="searchFilterWlesubject"/>
                 <ref bean="searchFilterStatus" />
                 <ref bean="searchFilterOrcid" />
+                <ref bean="searchFilterLanguage"/>
             </list>
         </property>
         <!--The sort filters for the discovery search-->
@@ -294,6 +295,7 @@
                 <ref bean="searchFilterWlesubject"/>
                 <ref bean="searchFilterStatus" />
                 <ref bean="searchFilterOrcid" />
+                <ref bean="searchFilterLanguage"/>
             </list>
         </property>
         <!--The sort filters for the discovery search (same as defaultConfiguration above)-->

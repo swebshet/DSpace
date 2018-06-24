@@ -422,6 +422,7 @@
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.dateAccessioned">Date accessioned</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.isijournal">ISI journal</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.orcid">ORCID identifier</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.iso">Language</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.RestrictedItem.java -->
 	<message key="xmlui.ArtifactBrowser.RestrictedItem.title">This resource is restricted</message>
