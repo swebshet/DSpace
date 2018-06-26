@@ -938,10 +938,5 @@
         <property name="sortOrderFilterPage" value="VALUE"/>
     </bean>
     <bean class="com.atmire.dspace.discovery.AtmireSolrService" id="org.dspace.discovery.SearchService"/>
-    <bean class="com.atmire.dspace.discovery.HasBitstreamsSSIPlugin" id="hasBitstreamsSSIPlugin"/>
-    <!-- 2018-06-10: disabled in DSpace 5.8 testing due to spring service manager errors
-         // added by Roeland Dillen in 2015, git commit: community search plugin for solr indexing
-    <bean class="com.atmire.dspace.discovery.ItemCollectionPlugin" id="itemCollectionPlugin"/>
-    -->
 
 </beans>
