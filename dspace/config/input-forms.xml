@@ -3266,6 +3266,10 @@
         <stored-value>PII-FP2_Finance</stored-value>
       </pair>
       <pair>
+        <displayed-value>PII-FP2_MSCCCAFS</displayed-value>
+        <stored-value>PII-FP2_MSCCCAFS</stored-value>
+      </pair>
+      <pair>
         <displayed-value>PII-FP2_ValueChains</displayed-value>
         <stored-value>PII-FP2_ValueChains</stored-value>
       </pair>
