@@ -40,8 +40,8 @@
              as it is used to reference the LICENSE_HEADER and *.properties file(s) in that directory. -->
         <root.basedir>${basedir}</root.basedir>
         <mqm.version.number>5.5-2.10.1-0</mqm.version.number>
-        <cua.version.number>${project.version}-4.1.6-0-RC5-SNAPSHOT</cua.version.number>
-        <datatables.version.number>${project.version}-2.0.10-0-SNAPSHOT</datatables.version.number>
+        <cua.version.number>${project.version}-4.1.6-0</cua.version.number>
+        <datatables.version.number>${project.version}-2.0.10-0</datatables.version.number>
     </properties>
 
     <build>
@@ -808,12 +808,12 @@
               <groupId>com.atmire</groupId>
               <artifactId>modules-theme</artifactId>
               <type>war</type>
-              <version>${project.version}-1.9.3-0-SNAPSHOT</version>
+              <version>${project.version}-1.9.4-0</version>
           </dependency>
           <dependency>
               <groupId>com.atmire</groupId>
               <artifactId>atmire-dspace-api</artifactId>
-              <version>${project.version}-1.15.14-0-SNAPSHOT</version>
+              <version>${project.version}-1.15.14-0</version>
           </dependency>
           <dependency>
               <groupId>com.atmire</groupId>
