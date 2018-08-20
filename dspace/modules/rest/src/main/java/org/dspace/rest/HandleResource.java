@@ -74,9 +74,9 @@ public class HandleResource extends Resource {
             context.complete();
 
         } catch (SQLException e) {
-            processException("Could not read handle(" + prefix  + "/" + suffix + "), SQLException. Message: " + e.getMessage(), context,e);
+            processException("Could not read handle(" + prefix  + "/" + suffix + "), SQLException. Message: " + e.getMessage(), context);
         } catch (ContextException e) {
-            processException("Could not read handle(" + prefix  + "/" + suffix + "), ContextException. Message: " + e.getMessage(), context,e);
+            processException("Could not read handle(" + prefix  + "/" + suffix + "), ContextException. Message: " + e.getMessage(), context);
         } finally{
            processFinally(context);
         }

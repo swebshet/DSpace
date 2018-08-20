@@ -75,7 +75,7 @@
              to you before enabling versioning.
         -->
         <!--<aspect name="Versioning Aspect" path="resource://aspects/Versioning/" />-->
-        
+
         <!-- =====================
              Base Features/Aspects
              ===================== -->
@@ -97,6 +97,11 @@
         <aspect name="CUA" path="resource://aspects/Statistics/" />
         <aspect name="QualityAssurance" path="resource://aspects/MetadataQuality/" />
         <aspect name="Atmire Modules Aspect" path="resource://aspects/AtmireModules/" />
+        <aspect name="Datatables" path="resource://aspects/Datatables/"/>
+
+
+        <!-- Atmire Listings and Reports -->
+        <aspect name="ListingsAndReports" path="resource://aspects/ListingsAndReports/" />
 
         <!--
              If you prefer to use "Elastic Search" Statistics, you can uncomment the below
@@ -128,7 +133,7 @@
             Also make sure to comment out the above 'Discovery' aspect
             (in the "Basic Features/Aspects" group) as leaving it on together
             with Searching Artifacts aspect will cause UI overlap issues
-            
+
 			@deprecated Since DSpace 4 the system use an abstraction layer named
  			Discovery to provide access to different search providers. The
  			legacy system built upon Apache Lucene is likely to be removed in
@@ -154,8 +159,6 @@
         -->
         <!-- <aspect name="XML Tests" path="resource://aspects/XMLTest/"/> -->
 
-        <!-- Atmire Listings and Reports -->
-        <aspect name="ListingsAndReports" path="resource://aspects/ListingsAndReports/" />
     </aspects>
 
     <!--
@@ -196,7 +199,7 @@
         <!-- Mirage theme, @mire contributed theme, default since DSpace 3.0 -->
         <!--<theme name="Atmire Mirage Theme" regex=".*" path="Mirage/" />-->
 
-		<!-- Community themes -->
+        <!-- Community themes -->
         <theme name="AfricaRising" handle="10568/16498" path="AfricaRising/" />
         <theme name="AgriFood" handle="10568/24754" path="AgriFood/" />
         <theme name="Bioversity" handle="10568/35442" path="Bioversity/" />

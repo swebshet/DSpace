@@ -53,6 +53,10 @@
                             <groupId>com.atmire</groupId>
                             <artifactId>atmire-cua-rest-webapp</artifactId>
                         </overlay>
+                        <overlay>
+                            <groupId>org.dspace</groupId>
+                            <artifactId>dspace-rest</artifactId>
+                        </overlay>
                     </overlays>
                 </configuration>
                 <executions>
@@ -90,32 +94,29 @@
             <artifactId>additions</artifactId>
         </dependency>
 
-        <!-- DSpace REST Webapp -->
-        <dependency>
-            <groupId>com.atmire</groupId>
-            <artifactId>atmire-cua-rest-api</artifactId>
-            <version>${cua.version.number}</version>
-            <type>jar</type>
-        </dependency>
-
         <dependency>
             <groupId>com.atmire</groupId>
             <artifactId>atmire-cua-rest-webapp</artifactId>
-            <version>${cua.version.number}</version>
+            <type>war</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.atmire</groupId>
+            <artifactId>atmire-cua-rest-api</artifactId>
+        </dependency>
+
+        <!-- DSpace REST Webapp -->
+        <dependency>
+            <groupId>org.dspace</groupId>
+            <artifactId>dspace-rest</artifactId>
             <type>war</type>
         </dependency>
 
         <dependency>
             <groupId>org.dspace</groupId>
             <artifactId>dspace-rest</artifactId>
-            <classifier>classes</classifier>
             <type>jar</type>
-        </dependency>
-
-        <dependency>
-            <groupId>org.dspace</groupId>
-            <artifactId>dspace-rest</artifactId>
-            <type>war</type>
+            <classifier>classes</classifier>
         </dependency>
 
         <dependency>
