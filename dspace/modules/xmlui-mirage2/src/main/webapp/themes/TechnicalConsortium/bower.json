@@ -6,7 +6,7 @@
     "bootstrap-sass-official": "3.3.0",
     "fontawesome": "4.5.0",
     "academicons": "1.8.0",
-    "cookieconsent": "^3.0.6"
+    "cookieconsent": "3.0.6"
   },
   "devDependencies": {}
 }
